@@ -25,7 +25,9 @@
 		<suite-file
 			path="./src/main/resources/suitefile/testcases.xml" />
 		<suite-file
-			path="./src/main/resources/suitefile/percentagecompleted.xml" />							
+			path="./src/main/resources/suitefile/percentagecompleted.xml" />	
+		<suite-file
+			path="./src/main/resources/suitefile/component.xml" />								
 	</suite-files>
 
 </suite>

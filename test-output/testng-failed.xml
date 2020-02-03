@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [FalconDemo-Sample-WIN_10_chrome_77 (9)]">
+<suite name="Failed suite [FalconDemo-Sample-WIN_10_chrome_77]">
   <parameter name="os" value="WIN"/>
   <parameter name="osVersion" value="10"/>
   <parameter name="browser" value="chrome"/>
@@ -17,4 +17,4 @@
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC11_PercentageOfProduct -->
     </classes>
   </test> <!-- SampleTest(failed) -->
-</suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_chrome_77 (9)] -->
+</suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_chrome_77] -->

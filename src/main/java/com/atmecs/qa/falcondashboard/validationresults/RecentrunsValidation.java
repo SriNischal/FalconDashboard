@@ -11,52 +11,64 @@ public class RecentrunsValidation {
 		this.browser = browser;
 	}
 
-	public void validatetext() throws Exception {
+	public void validateText() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC06_Recent Runs", "Validation Text", "Text");
 		helper.getdata(expectedData, "validate.text.txt");
 	}
-	public void validatepaneltitle() throws Exception {
+	public void validatePanelTitle() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC06_Recent Runs", "Validation Text", "Panel Text");
 		helper.getdata(expectedData, "validate.recentrunspaneltitle.txt");
 	}
-	public void validatecomponent() throws Exception {
+	public void validateProductName() throws Exception {
+		Pageactions page = new Pageactions(browser);
+		ValidationHelper helper = new ValidationHelper(browser);
+		String expectedData=page.getdata_fromExcel("TC06_Recent Runs", "Validation Text", "Product");
+		helper.getdata(expectedData, "validate.productnamme.txt");
+	}
+	public void validateComponent() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC06_Recent Runs", "Validation Text", "Component");
 		helper.getdata(expectedData, "validate.component.txt");
 	}
-	public void validatetestcase() throws Exception {
+	public void validateTestCase() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC06_Recent Runs", "Validation Text", "Testcase");
 		helper.getdata(expectedData, "validate.testcases.txt");
 	}
-	public void validatepasspercent() throws Exception {
+	public void validatePassPercent() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC06_Recent Runs", "Validation Text", "Pass Percent");
 		helper.getdata(expectedData, "validate.passpercent.txt");
 	}
-	public void validatelastrun() throws Exception {
+	public void validateLastRun() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC06_Recent Runs", "Validation Text", "Last Run");
 		helper.getdata(expectedData, "validate.lastrun.txt");
 	}
-	public void validatepercentagecompleted() throws Exception {
+	public void validatePercentageCompleted() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC06_Recent Runs", "Validation Text", "Percentage Completed");
 		helper.getdata(expectedData, "validate.percentagecompleted.txt");
 	}
-	public void validatesortingpasspercent() throws Exception {
+	public void validateSortingPassPercent() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC06_Recent Runs", "Validation Text", "Sorting percentage");
 		helper.getdata(expectedData, "validate.percentagecompleted.txt");
+	}
+	public void validateSortingPoductName() throws Exception {
+		Pageactions page = new Pageactions(browser);
+		ValidationHelper helper = new ValidationHelper(browser);
+		String expectedData=page.getdata_fromExcel("TC06_Recent Runs", "Validation Text", "Sorting percentage");
+		helper.getdata(expectedData, "validate.productname.txt");
 	}
 }

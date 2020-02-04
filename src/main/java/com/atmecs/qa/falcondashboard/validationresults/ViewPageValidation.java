@@ -10,55 +10,55 @@ public class ViewPageValidation {
 	public ViewPageValidation(Browser browser) {
 		this.browser = browser;
 	}
-	public void validatetext() throws Exception {
+	public void validateText() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC08_Views", "Validation Text", "Text");
 		helper.getdata(expectedData, "validate.view.txt");
 	}
-	public void validatetestcases() throws Exception {
+	public void validateTestCases() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC08_Views", "Validation Text", "Test Cases");
 		helper.getdata(expectedData, "validate.viewtests.txt");
 	}
-	public void validatetime() throws Exception {
+	public void validateTime() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC08_Views", "Validation Text", "Time");
 		helper.getdata(expectedData, "validate.time.txt");
 	}
-	public void validatepasstestcases() throws Exception {
+	public void validatePassTestCases() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC08_Views", "Validation Text", "Passed Test Cases");
 		helper.getdata(expectedData, "validate.passtestcases.txt");
 	}
-	public void validatepasspercent() throws Exception {
+	public void validatePassPercent() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC08_Views", "Validation Text", "Pass Percent");
 		helper.getdata(expectedData, "validate.viewpasspercent.txt");
 	}
-	public void validatefailtestcases() throws Exception {
+	public void validateFailTestCases() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC08_Views", "Validation Text", "Failed Test Cases");
 		helper.getdata(expectedData, "validate.failtestcases.txt");
 	}
-	public void validatefailmessage() throws Exception {
+	public void validateFailMessage() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC08_Views", "Validation Text", "Fail message");
 		helper.getdata(expectedData, "validate.failmessage.txt");
 	}
-	public void validateskiptestcases() throws Exception {
+	public void validateSkipTestCases() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC08_Views", "Validation Text", "Skipped Test Cases");
 		helper.getdata(expectedData, "validate.skiptestcases.txt");
 	}
-	public void validateskipmessage() throws Exception {
+	public void validateSkipMessage() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC08_Views", "Validation Text", "Skip message");

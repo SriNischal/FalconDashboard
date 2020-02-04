@@ -12,13 +12,13 @@ public class ProductPageValidation {
 		this.browser = browser;
 	}
 
-	public void validateproduct() throws Exception {
+	public void validateProduct() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC04_Product Page", "Validation Text", "Product");
 		helper.getdata(expectedData, "validate.product.txt");
 	}
-	public void validatepanelitle() throws Exception {
+	public void validatePanelTitle() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC04_Product Page", "Validation Text", "Panel title");

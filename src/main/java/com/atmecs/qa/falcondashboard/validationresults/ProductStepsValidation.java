@@ -11,21 +11,21 @@ public class ProductStepsValidation {
 		this.browser = browser;
 	}
 
-	public void validateStatusoption() throws Exception {
+	public void validateStatusOption() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData = page.getdata_fromExcel("TC09_StepsOfProduct", "Validation Text", "Status option");
 		helper.getdata(expectedData, "validate.productstatus.txt");
 	}
 	
-	public void validateDetailsoption() throws Exception {
+	public void validateDetailsOption() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData = page.getdata_fromExcel("TC09_StepsOfProduct", "Validation Text", "Details option");
 		helper.getdata(expectedData, "validate.details.txt");
 	}
 	
-	public void validateTestcase() throws Exception {
+	public void validateTestCase() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData = page.getdata_fromExcel("TC09_StepsOfProduct", "Validation Text", "Test Case");

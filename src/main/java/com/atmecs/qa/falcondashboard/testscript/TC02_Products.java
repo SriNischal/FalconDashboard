@@ -19,6 +19,7 @@ import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
+import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.RandomNumber;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
@@ -26,9 +27,10 @@ import com.atmecs.qa.falcondashboard.utils.ReadingData;
 public class TC02_Products extends SampleTestSuiteBase {
 	ReadLocators read=new ReadLocators();
 	ReadingData data=new ReadingData();
-	LoadProperties properties;
-	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
+	LoadProperties load=new LoadProperties();
 	LogReport log = new LogReport();
+	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
+	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	final String moduleName = "Publish";
 	XlsReader xlsReader = null;
 	String adminUsername = null;
@@ -37,24 +39,27 @@ public class TC02_Products extends SampleTestSuiteBase {
 
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
-	public void setup(String os, String osVersion, String br, String browserVersion) {
+	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
 		report.info("Opening browser: " + br);
-		browser.openURL("http://10.10.10.231:8082/#/app/dashboard", os, osVersion, br, browserVersion);
+		@SuppressWarnings("static-access")
+		String url=load.readConfigfile("Dashboard_URL", ProjectBaseConstantPaths.CONFIG_FILE);
+		browser.openURL(url, os, osVersion, br, browserVersion);
 		report.info("Maximizing browser window");
 		browser.maximizeWindow();
 	}
-	@SuppressWarnings("static-access")
+	@SuppressWarnings({ "static-access", "deprecation" })
 	@Test
-	public void numberrofproducts() throws Exception {
+	public void numberrOfProducts() throws Exception {
 		Pageactions page=new Pageactions(browser);
-		@SuppressWarnings("deprecation")
-		List<WebElement> list = browser.getFindFromBrowser()
-				.findElementsByXpath("//h4[@class='media-box-heading ng-binding']");
+	log.info("STEP#1: List to get all the products and size of elements  present on the dashboard page");
+	    String products=propReader.getValue("loc.products.txt");
+		List<WebElement> list = browser.getFindFromBrowser().findElementsByXpath(products);
 		log.dateinfo(list.size());
 		List<String> texts = list.stream().map(WebElement::getText).collect(Collectors.toList());
 		log.info(texts);
         //String locator=page.randomnumber("loc.product.btn");
 		//page.clickOnElement(locator);
+	log.info("STEP#2: Clicking on the product");
         page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
 		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

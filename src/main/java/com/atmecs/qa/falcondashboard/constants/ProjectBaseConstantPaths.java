@@ -10,7 +10,7 @@ public class ProjectBaseConstantPaths {
 	
 	public final static String IE_FILE = USER_HOME + "lib" + File.separator + "IEDriverServer.exe";
 
-	public final static String CONFIG_FILE = USER_HOME + "src/test/resources" + File.separator + "config.properties";
+	public final static String CONFIG_FILE = USER_HOME + "src/main/resources" + File.separator + "config.properties";
 
 	public final static String LOCATORS_FILE = USER_HOME + "src/main/resources" + File.separator + "locators"
 			+ File.separator + "falcondashboard.properties";

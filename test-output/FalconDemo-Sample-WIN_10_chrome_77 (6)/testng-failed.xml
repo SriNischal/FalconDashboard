@@ -12,7 +12,7 @@
           <include name="setup"/>
           <include name="preSetup"/>
           <include name="teardown"/>
-          <include name="view"/>
+          <include name="viewPage"/>
         </methods>
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC08_ViewPage -->
     </classes>

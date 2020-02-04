@@ -13,31 +13,31 @@ public class DropdownValidation {
 		this.browser = browser;
 	}
 
-	public void validatecustomer() throws Exception {
+	public void validateCustomer() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC05_Dropdowns", "Validation Text", "Customer");
 		helper.getdata(expectedData, "validate.customer.txt");
 	}
-	public void validatemodule() throws Exception {
+	public void validateModule() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC05_Dropdowns", "Validation Text", "Module");
 		helper.getdata(expectedData, "validate.module.txt");
 	}
-	public void validatestatus() throws Exception {
+	public void validateStatus() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC05_Dropdowns", "Validation Text", "Status");
 		helper.getdata(expectedData, "validate.failselectstatus.btn");
 	}
-	public void validateproductpaneltitle() throws Exception {
+	public void validateProductPanelTitle() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC05_Dropdowns", "Validation Text", "Title");
 		helper.getdata(expectedData, "validate.paneltitle.txt");
 	}
-	public void validateerrormessage() throws Exception {
+	public void validateErrorMessage() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC05_Dropdowns", "Validation Text", "Error Message");

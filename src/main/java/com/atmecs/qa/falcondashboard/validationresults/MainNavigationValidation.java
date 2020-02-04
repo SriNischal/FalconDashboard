@@ -35,19 +35,19 @@ public class MainNavigationValidation {
 		String expectedData=page.getdata_fromExcel("TC07_Main Navigation", "Validation Text", "Productsnap");
 		helper.getdata(expectedData, "validate.productsnapshot.txt");
 	}
-	public void validaterecentrunstext() throws Exception {
+	public void validateRecentRunsText() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC07_Main Navigation", "Validation Text", "Recentruns Page");
 		helper.getdata(expectedData, "validate.recentrunstext.txt");
 	}
-	public void validaterecentrunspaneltitle() throws Exception {
+	public void validateRecentRunsPanelTitle() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC07_Main Navigation", "Validation Text", "Panel Title");
 		helper.getdata(expectedData, "validate.recentrunspaneltitle.txt");
 	}
-	public void validateviewpaneltitle() throws Exception {
+	public void validateViewPanelTitle() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData=page.getdata_fromExcel("TC07_Main Navigation", "Validation Text", "Viewpanel");

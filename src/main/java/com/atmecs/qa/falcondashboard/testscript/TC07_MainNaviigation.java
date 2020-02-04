@@ -15,6 +15,8 @@ import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.utils.LoadProperties;
+import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
@@ -22,42 +24,56 @@ import com.atmecs.qa.falcondashboard.validationresults.MainNavigationValidation;
 import com.google.common.collect.Range;
 
 public class TC07_MainNaviigation extends SampleTestSuiteBase{
+	LoadProperties load=new LoadProperties();
 	ReadLocators read=new ReadLocators();
+	LogReport log=new LogReport();
 	ReadingData data=new ReadingData();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
-	public void setup(String os, String osVersion, String br, String browserVersion) {
+	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
 		report.info("Opening browser: " + br);
-		browser.openURL("http://10.10.10.231:8082/#/app/dashboard", os, osVersion, br, browserVersion);
+		@SuppressWarnings("static-access")
+		String url=load.readConfigfile("Dashboard_URL", ProjectBaseConstantPaths.CONFIG_FILE);
+		browser.openURL(url, os, osVersion, br, browserVersion);
 		report.info("Maximizing browser window");
 		browser.maximizeWindow();
 	}
 	@SuppressWarnings("static-access")
 	@Test
-	public void mainnavigation() throws Exception {
+	public void mainNavigation() throws Exception {
 		MainNavigationValidation validate=new MainNavigationValidation(browser);
 		Pageactions page=new Pageactions(browser);
+	log.info("STEP#1: Clicking on the main navigation bar");	
 		page.clickOnElement(read.getPropertyvalue("loc.mainnavigation.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		page.clickOnElement(read.getPropertyvalue("loc.mainnavigation.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		browser.getWait().safeWait(2000);
+	log.info("STEP#2: Validating the dashboard text");	
 		validate.validateDashboard();
 		report.info("Successfully validated dashboard");  
+	log.info("STEP#3: Validating on the recent runs option");	
 		validate.validateRecentruns();
 		report.info("Successfully validated recent runs");
+	log.info("STEP#4: Clicking on the recent runs option");	
 	    page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	    browser.getWait().safeWait(2000);
-		validate.validaterecentrunstext();
+	log.info("STEP#5: Validating the recent runs text");	
+		validate.validateRecentruns();
 		report.info("Successfully validated recentruns");
-		validate.validaterecentrunspaneltitle();
+	log.info("STEP#6: Validating the recent runs panel title");	
+		validate.validateRecentRunsPanelTitle();
 		report.info("Successfully validated recent runs panel title");
+	log.info("STEP#7: Validating the view option in main navigation");		
 		validate.validateView();
 		report.info("Successfully validated View");
+	log.info("STEP#8: Clicking on the views option");	
 		page.clickOnElement(read.getPropertyvalue("loc.view.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		browser.getWait().safeWait(2000);
-		validate.validateviewpaneltitle();
+	log.info("STEP#9: Validating the views panel title");	
+		validate.validateViewPanelTitle();
 		report.info("Successfully validated panelview");
+	log.info("STEP#10: Validating the product snapshot text");	
 		validate.validateProductSnapshot();
 		report.info("Successfully validated product snapshot");
 	}

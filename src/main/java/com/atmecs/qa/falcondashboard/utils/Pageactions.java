@@ -1,12 +1,5 @@
 package com.atmecs.qa.falcondashboard.utils;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
-
-import org.openqa.selenium.By;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,7 +7,6 @@ import org.openqa.selenium.interactions.Actions;
 
 import com.atmecs.falcon.automation.ui.selenium.Browser;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
-import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
 
 public class Pageactions  {
 	RandomNumber random=new RandomNumber();
@@ -107,7 +99,6 @@ public class Pageactions  {
 			action.moveToElement(webElement).click().perform();
 
 		}
-		
 		public String randomnumber(String locator) throws Exception {
 			int randomnumber = random.generateRandomNumber();
 			System.out.println(randomnumber);

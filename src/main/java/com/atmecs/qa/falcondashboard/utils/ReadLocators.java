@@ -1,9 +1,7 @@
 package com.atmecs.qa.falcondashboard.utils;
 
 import java.io.File;
-
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
@@ -11,14 +9,16 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 
 public class ReadLocators {
-    static Properties properties;
-    static FileReader reader;
-    static File file;
-    WebDriver driver;
-	public static String getPropertyvalue(String key, String path) throws IOException {
+	static Properties properties;
+	static FileReader reader;
+	static File file;
+	WebDriver driver;
 
+
+
+	public static String getPropertyvalue(String key, String path) throws IOException {
 		Properties prop = new Properties();
-		FileInputStream input = new FileInputStream(key);
+		FileInputStream input = new FileInputStream(path);
 		try {
 			prop.load(input);
 
@@ -28,6 +28,7 @@ public class ReadLocators {
 
 		String data = prop.getProperty(key);
 		return data;
-}
+	}
+	
 }
 

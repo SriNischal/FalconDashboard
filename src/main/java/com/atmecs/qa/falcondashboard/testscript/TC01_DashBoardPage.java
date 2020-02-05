@@ -58,11 +58,11 @@ public class TC01_DashBoardPage extends SampleTestSuiteBase {
 		Verify.verifyString(actualtitle, expectedtitle, "Verifying String Message ");
 		report.info("successfully validated page title");
 		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-	log.info("STEP#2: Clicking on the refresh option");
+	log.info("STEP#2: Dashboard Text validation");
+		validate.validateDashboardtext();
+	log.info("STEP#3: Clicking on the refresh option");
 		page.clickOnElement(read.getPropertyvalue("loc.refresh.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("clicked on refresh option");
-	log.info("STEP#3: Dashboard Text validation");
-		validate.validateDashboardtext();
 		report.info("Successfully validated dashboard text");
 	log.info("STEP#4: Atmecs Text validation");
 		validate.validatefalconlogo();

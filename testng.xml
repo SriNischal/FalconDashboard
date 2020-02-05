@@ -9,7 +9,7 @@
 		<suite-file
 			path="./src/main/resources/suitefile/numberofproducts.xml" />
 		<suite-file
-			path="./src/main/resources/suitefile/latestexecution.xml" />
+			path="./src/main/resources/suitefile/testcase.xml" />
 		<suite-file
 			path="./src/main/resources/suitefile/productpage.xml" />
 		<suite-file
@@ -29,7 +29,23 @@
 		<suite-file
 			path="./src/main/resources/suitefile/component.xml" />	
 		<suite-file
-			path="./src/main/resources/suitefile/productName.xml" />									
+			path="./src/main/resources/suitefile/productName.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/coloroftotaltestcases.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/colorofpasstestcases.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/coloroffailtestcases.xml" />		
+		<suite-file
+			path="./src/main/resources/suitefile/colorofskiptestcases.xml" />	
+		<suite-file
+			path="./src/main/resources/suitefile/totaltestcases.xml" />	
+		<suite-file
+			path="./src/main/resources/suitefile/skiptestcases.xml" />	
+		<suite-file
+			path="./src/main/resources/suitefile/passtestcases.xml" />	
+		<suite-file
+			path="./src/main/resources/suitefile/failtestcases.xml" />									
 	</suite-files>
 
 </suite>

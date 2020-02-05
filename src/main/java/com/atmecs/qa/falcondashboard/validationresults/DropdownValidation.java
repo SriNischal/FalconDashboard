@@ -25,11 +25,23 @@ public class DropdownValidation {
 		String expectedData=page.getdata_fromExcel("TC05_Dropdowns", "Validation Text", "Module");
 		helper.getdata(expectedData, "validate.module.txt");
 	}
-	public void validateStatus() throws Exception {
+	public void validatePassStatus() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
-		String expectedData=page.getdata_fromExcel("TC05_Dropdowns", "Validation Text", "Status");
+		String expectedData=page.getdata_fromExcel("TC05_Dropdowns", "Validation Text", "Pass Status");
+		helper.getdata(expectedData, "validate.passselectstatus.btn");
+	}
+	public void validateFailStatus() throws Exception {
+		Pageactions page = new Pageactions(browser);
+		ValidationHelper helper = new ValidationHelper(browser);
+		String expectedData=page.getdata_fromExcel("TC05_Dropdowns", "Validation Text", "Fail Status");
 		helper.getdata(expectedData, "validate.failselectstatus.btn");
+	}
+	public void validateSkipStatus() throws Exception {
+		Pageactions page = new Pageactions(browser);
+		ValidationHelper helper = new ValidationHelper(browser);
+		String expectedData=page.getdata_fromExcel("TC05_Dropdowns", "Validation Text", "Skip Status");
+		helper.getdata(expectedData, "validate.skipselectstatus.btn");
 	}
 	public void validateProductPanelTitle() throws Exception {
 		Pageactions page = new Pageactions(browser);

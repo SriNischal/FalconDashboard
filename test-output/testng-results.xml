@@ -5,7 +5,7 @@
       <![CDATA[INFO: The value found with Environment variable FalconDemo is: FalconDemo]]>
     </line>
     <line>
-      <![CDATA[INFO: The value found with Environment Module variable productName is: productName]]>
+      <![CDATA[INFO: The value found with Environment Module variable testcase is: testcase]]>
     </line>
     <line>
       <![CDATA[The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77]]>
@@ -15,7 +15,7 @@
 ]]>
     </line>
     <line>
-      <![CDATA[INFO: Modules Selected: [productName]
+      <![CDATA[INFO: Modules Selected: [testcase]
 ]]>
     </line>
     <line>
@@ -31,7 +31,7 @@
   <parameter name="browserVersion" value="77"/>
   <test thread-count="5" name="SampleTest">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC13_ProductName"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
     </classes>
   </test> <!-- SampleTest -->
 </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
@@ -44,31 +44,22 @@
       <![CDATA[Maximizing browser window]]>
     </line>
     <line>
-      <![CDATA[Successfully clicked on the recent runs]]>
+      <![CDATA[Successfully clicked on the test cases]]>
     </line>
     <line>
-      <![CDATA[Successfully validated the recentruns text]]>
-    </line>
-    <line>
-      <![CDATA[Successfully validated panel title]]>
-    </line>
-    <line>
-      <![CDATA[Successfully validated the product name]]>
-    </line>
-    <line>
-      <![CDATA[Succesfully clicked on the product]]>
+      <![CDATA[PASS : Successfully displayed the test cases message : ACTUAL : Total Test Cases EXPECTED :Total Test Cases]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-02-04T14:45:17Z" name="FalconDemo-Sample-WIN_10_chrome_77" finished-at="2020-02-04T14:45:38Z" duration-ms="21194">
+  <suite started-at="2020-02-05T12:48:20Z" name="FalconDemo-Sample-WIN_10_chrome_77" finished-at="2020-02-05T12:48:34Z" duration-ms="14812">
     <groups>
     </groups>
-    <test started-at="2020-02-04T14:45:17Z" name="SampleTest" finished-at="2020-02-04T14:45:38Z" duration-ms="21194">
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC13_ProductName">
-        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC13_ProductName@3c50eef2]" started-at="2020-02-04T14:45:17Z" name="preSetup" finished-at="2020-02-04T14:45:17Z" duration-ms="69" status="PASS">
+    <test started-at="2020-02-05T12:48:20Z" name="SampleTest" finished-at="2020-02-05T12:48:34Z" duration-ms="14812">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases">
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC03_TestCases@ddc6588]" started-at="2020-02-05T12:48:20Z" name="preSetup" finished-at="2020-02-05T12:48:20Z" duration-ms="48" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC13_ProductName@3c50eef2]" started-at="2020-02-04T14:45:17Z" name="setup" finished-at="2020-02-04T14:45:30Z" duration-ms="13194" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC03_TestCases@ddc6588]" started-at="2020-02-05T12:48:20Z" name="setup" finished-at="2020-02-05T12:48:33Z" duration-ms="13175" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -100,30 +91,21 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="productName()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC13_ProductName@3c50eef2]" started-at="2020-02-04T14:45:30Z" name="productName" finished-at="2020-02-04T14:45:38Z" duration-ms="7980" status="PASS">
+        <test-method signature="executionTimeOfProduct()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC03_TestCases@ddc6588]" started-at="2020-02-05T12:48:33Z" name="executionTimeOfProduct" finished-at="2020-02-05T12:48:34Z" duration-ms="1614" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Successfully clicked on the recent runs]]>
+              <![CDATA[Successfully clicked on the test cases]]>
             </line>
             <line>
-              <![CDATA[Successfully validated the recentruns text]]>
-            </line>
-            <line>
-              <![CDATA[Successfully validated panel title]]>
-            </line>
-            <line>
-              <![CDATA[Successfully validated the product name]]>
-            </line>
-            <line>
-              <![CDATA[Succesfully clicked on the product]]>
+              <![CDATA[PASS : Successfully displayed the test cases message : ACTUAL : Total Test Cases EXPECTED :Total Test Cases]]>
             </line>
           </reporter-output>
-        </test-method> <!-- productName -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC13_ProductName@3c50eef2]" started-at="2020-02-04T14:45:38Z" name="teardown" finished-at="2020-02-04T14:45:39Z" duration-ms="757" status="PASS">
+        </test-method> <!-- executionTimeOfProduct -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC03_TestCases@ddc6588]" started-at="2020-02-05T12:48:35Z" name="teardown" finished-at="2020-02-05T12:48:39Z" duration-ms="4357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC13_ProductName -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC03_TestCases -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
 </testng-results>

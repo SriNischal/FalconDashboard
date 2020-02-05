@@ -10114,3 +10114,1244 @@
   </test> <!-- SampleTest -->
 </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
 
+2020-02-05 11:40:27 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 11:40:27 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable testcase is: testcase
+2020-02-05 11:40:27 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 11:40:28 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 11:40:28 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [testcase]
+
+2020-02-05 11:40:28 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 11:40:28 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 11:43:54 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 11:43:54 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable testcase is: testcase
+2020-02-05 11:43:54 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 11:43:54 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 11:43:54 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [testcase]
+
+2020-02-05 11:43:54 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 11:43:54 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 11:46:19 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 11:46:19 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable testcase is: testcase
+2020-02-05 11:46:19 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 11:46:20 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 11:46:20 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [testcase]
+
+2020-02-05 11:46:20 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 11:46:20 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 11:47:19 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 11:47:19 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable testcase is: testcase
+2020-02-05 11:47:19 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 11:47:19 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 11:47:19 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [testcase]
+
+2020-02-05 11:47:19 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 11:47:19 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 12:06:12 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 12:06:12 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable testcase is: testcase
+2020-02-05 12:06:12 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 12:06:12 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 12:06:12 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [testcase]
+
+2020-02-05 12:06:12 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 12:06:12 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 12:08:49 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 12:08:49 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable testcase is: testcase
+2020-02-05 12:08:49 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 12:08:49 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 12:08:49 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [testcase]
+
+2020-02-05 12:08:49 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 12:08:49 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 12:10:37 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 12:10:37 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable testcase is: testcase
+2020-02-05 12:10:37 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 12:10:37 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 12:10:37 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [testcase]
+
+2020-02-05 12:10:37 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 12:10:37 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 12:13:27 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 12:13:27 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable testcase is: testcase
+2020-02-05 12:13:27 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 12:13:28 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 12:13:28 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [testcase]
+
+2020-02-05 12:13:28 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 12:13:28 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 12:15:43 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 12:15:43 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable testcase is: testcase
+2020-02-05 12:15:43 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 12:15:43 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 12:15:43 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [testcase]
+
+2020-02-05 12:15:43 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 12:15:43 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 16:04:12 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 16:04:12 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable coloroftotaltestcases is: coloroftotaltestcases
+2020-02-05 16:04:12 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 16:04:13 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 16:04:13 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [coloroftotaltestcases]
+
+2020-02-05 16:04:13 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 16:04:13 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 16:08:15 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 16:08:15 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable coloroftotaltestcases is: coloroftotaltestcases
+2020-02-05 16:08:15 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 16:08:15 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 16:08:15 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [coloroftotaltestcases]
+
+2020-02-05 16:08:15 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 16:08:15 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 16:09:22 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 16:09:22 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable coloroftotaltestcases is: coloroftotaltestcases
+2020-02-05 16:09:22 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 16:09:22 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 16:09:22 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [coloroftotaltestcases]
+
+2020-02-05 16:09:22 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 16:09:22 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 16:10:24 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 16:10:24 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable coloroftotaltestcases is: coloroftotaltestcases
+2020-02-05 16:10:24 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 16:10:24 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 16:10:24 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [coloroftotaltestcases]
+
+2020-02-05 16:10:24 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 16:10:24 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 16:13:21 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 16:13:21 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable coloroftotaltestcases is: coloroftotaltestcases
+2020-02-05 16:13:21 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 16:13:21 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 16:13:21 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [coloroftotaltestcases]
+
+2020-02-05 16:13:21 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 16:13:21 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 16:19:28 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 16:19:28 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable coloroftotaltestcases is: coloroftotaltestcases
+2020-02-05 16:19:28 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 16:19:29 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 16:19:29 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [coloroftotaltestcases]
+
+2020-02-05 16:19:29 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 16:19:29 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 16:24:14 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 16:24:14 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable coloroftotaltestcases is: coloroftotaltestcases
+2020-02-05 16:24:14 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 16:24:14 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 16:24:14 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [coloroftotaltestcases]
+
+2020-02-05 16:24:14 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 16:24:14 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 16:25:20 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 16:25:20 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable coloroftotaltestcases is: coloroftotaltestcases
+2020-02-05 16:25:20 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 16:25:20 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 16:25:20 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [coloroftotaltestcases]
+
+2020-02-05 16:25:20 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 16:25:20 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 16:32:06 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 16:32:06 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable colorofpasstestcases is: colorofpasstestcases
+2020-02-05 16:32:06 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 16:32:06 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 16:32:06 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [colorofpasstestcases]
+
+2020-02-05 16:32:06 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 16:32:06 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 16:34:56 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 16:34:56 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable colorofpasstestcases is: colorofpasstestcases
+2020-02-05 16:34:56 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 16:34:57 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 16:34:57 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [colorofpasstestcases]
+
+2020-02-05 16:34:57 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 16:34:57 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 16:40:11 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 16:40:11 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable coloroffailtestcases is: coloroffailtestcases
+2020-02-05 16:40:11 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 16:40:11 DEBUG TestNGEngineForDesiredSuites:38 - IO Exception occurred :C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\coloroffailtestcases.xml (The system cannot find the file specified)
+2020-02-05 16:41:09 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 16:41:09 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable coloroffailtestcases is: coloroffailtestcases
+2020-02-05 16:41:09 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 16:41:09 DEBUG TestNGEngineForDesiredSuites:38 - IO Exception occurred :C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\coloroffailtestcases.xml (The system cannot find the file specified)
+2020-02-05 16:48:14 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 16:48:14 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable coloroffailtestcases is: coloroffailtestcases
+2020-02-05 16:48:14 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 16:48:15 DEBUG TestNGEngineForDesiredSuites:38 - IO Exception occurred :C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\coloroffailtestcases.xml (The system cannot find the file specified)
+2020-02-05 16:49:16 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 16:49:16 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable coloroffailtestcases is: coloroffailtestcases
+2020-02-05 16:49:16 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 16:49:17 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 16:49:17 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [coloroffailtestcases]
+
+2020-02-05 16:49:17 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 16:49:17 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 16:50:51 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 16:50:51 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable coloroffailtestcases is: coloroffailtestcases
+2020-02-05 16:50:51 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 16:50:51 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 16:50:51 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [coloroffailtestcases]
+
+2020-02-05 16:50:51 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 16:50:51 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 16:54:28 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 16:54:28 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable colorofskiptestcases is: colorofskiptestcases
+2020-02-05 16:54:28 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 16:54:29 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 16:54:29 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [colorofskiptestcases]
+
+2020-02-05 16:54:29 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 16:54:29 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 16:55:24 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 16:55:24 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable colorofskiptestcases is: colorofskiptestcases
+2020-02-05 16:55:24 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 16:55:24 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 16:55:24 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [colorofskiptestcases]
+
+2020-02-05 16:55:24 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 16:55:24 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:26:44 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 17:26:44 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable colorofskiptestcases,coloroftotaltestcases,colorofpasstestcases,coloroffailtestcases,totaltestcases,passtestcases,failtestcases,skiptestcases is: colorofskiptestcases,coloroftotaltestcases,colorofpasstestcases,coloroffailtestcases,totaltestcases,passtestcases,failtestcases,skiptestcases
+2020-02-05 17:26:44 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 17:26:44 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 17:26:44 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [coloroffailtestcases, colorofpasstestcases, colorofskiptestcases, coloroftotaltestcases, failtestcases, passtestcases, skiptestcases, totaltestcases]
+
+2020-02-05 17:26:45 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:26:45 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:26:45 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:26:45 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:26:45 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:26:45 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:26:45 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:26:45 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:26:45 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:26:45 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:26:45 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:26:45 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:26:45 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:26:45 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:26:45 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:26:45 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:29:17 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 17:29:17 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable colorofskiptestcases,coloroftotaltestcases,colorofpasstestcases,coloroffailtestcases,totaltestcases,passtestcases,failtestcases,skiptestcases is: colorofskiptestcases,coloroftotaltestcases,colorofpasstestcases,coloroffailtestcases,totaltestcases,passtestcases,failtestcases,skiptestcases
+2020-02-05 17:29:17 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 17:29:17 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 17:29:17 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [coloroffailtestcases, colorofpasstestcases, colorofskiptestcases, coloroftotaltestcases, failtestcases, passtestcases, skiptestcases, totaltestcases]
+
+2020-02-05 17:29:17 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:29:17 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:29:17 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:29:17 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:29:17 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:29:17 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:29:17 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:29:17 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:29:17 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:29:17 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:29:17 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:29:17 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:29:17 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:29:17 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:29:17 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:29:17 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:40:22 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 17:40:22 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable colorofskiptestcases,coloroftotaltestcases,colorofpasstestcases,coloroffailtestcases,totaltestcases,passtestcases,failtestcases,skiptestcases is: colorofskiptestcases,coloroftotaltestcases,colorofpasstestcases,coloroffailtestcases,totaltestcases,passtestcases,failtestcases,skiptestcases
+2020-02-05 17:40:22 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 17:40:23 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 17:40:23 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [coloroffailtestcases, colorofpasstestcases, colorofskiptestcases, coloroftotaltestcases, failtestcases, passtestcases, skiptestcases, totaltestcases]
+
+2020-02-05 17:40:23 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:40:23 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:40:23 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:40:23 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:40:23 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:40:23 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:40:23 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:40:23 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:40:23 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:40:23 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:40:23 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:40:23 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:40:23 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:40:23 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:40:23 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:40:23 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:45:05 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 17:45:05 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable colorofskiptestcases,coloroftotaltestcases,colorofpasstestcases,coloroffailtestcases,totaltestcases,passtestcases,failtestcases,skiptestcases is: colorofskiptestcases,coloroftotaltestcases,colorofpasstestcases,coloroffailtestcases,totaltestcases,passtestcases,failtestcases,skiptestcases
+2020-02-05 17:45:05 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 17:45:05 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 17:45:05 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [coloroffailtestcases, colorofpasstestcases, colorofskiptestcases, coloroftotaltestcases, failtestcases, passtestcases, skiptestcases, totaltestcases]
+
+2020-02-05 17:45:05 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:45:05 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:45:05 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:45:05 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:45:05 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:45:05 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:45:05 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:45:05 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:45:05 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:45:05 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:45:05 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:45:05 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:45:05 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:45:05 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:45:05 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:45:05 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:49:36 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 17:49:36 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable colorofskiptestcases,coloroftotaltestcases,colorofpasstestcases,coloroffailtestcases,totaltestcases,passtestcases,failtestcases,skiptestcases is: colorofskiptestcases,coloroftotaltestcases,colorofpasstestcases,coloroffailtestcases,totaltestcases,passtestcases,failtestcases,skiptestcases
+2020-02-05 17:49:36 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 17:49:36 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 17:49:36 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [coloroffailtestcases, colorofpasstestcases, colorofskiptestcases, coloroftotaltestcases, failtestcases, passtestcases, skiptestcases, totaltestcases]
+
+2020-02-05 17:49:36 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:49:36 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:49:36 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:49:36 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:49:36 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:49:36 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:49:36 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:49:36 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:49:36 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:49:36 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:49:36 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:49:36 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:49:36 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:49:36 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 17:49:36 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 17:49:36 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 18:09:20 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 18:09:20 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable testcase is: testcase
+2020-02-05 18:09:20 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 18:09:20 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 18:09:20 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [testcase]
+
+2020-02-05 18:09:20 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 18:09:20 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 18:14:05 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 18:14:05 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable testcase is: testcase
+2020-02-05 18:14:05 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 18:14:06 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 18:14:06 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [testcase]
+
+2020-02-05 18:14:06 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 18:14:06 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 18:17:13 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 18:17:13 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable testcase is: testcase
+2020-02-05 18:17:13 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 18:17:13 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 18:17:13 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [testcase]
+
+2020-02-05 18:17:13 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 18:17:13 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+
+2020-02-05 18:18:19 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment variable FalconDemo is: FalconDemo
+2020-02-05 18:18:19 INFO  TestNGEngineForDesiredSuites:49 - INFO: The value found with Environment Module variable testcase is: testcase
+2020-02-05 18:18:19 INFO  TestNGEngineForDesiredSuites:49 - The value found with Environment variable WIN_10_chrome_77 is: WIN_10_chrome_77
+2020-02-05 18:18:19 INFO  TestNGEngineForDesiredSuites:49 - INFO: Clients Found: [FalconDemo]
+
+2020-02-05 18:18:19 INFO  TestNGEngineForDesiredSuites:49 - INFO: Modules Selected: [testcase]
+
+2020-02-05 18:18:19 INFO  TestNGEngineForDesiredSuites:49 - INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77
+2020-02-05 18:18:19 INFO  TestNGEngineForDesiredSuites:49 - <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+

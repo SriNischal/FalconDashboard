@@ -24,4 +24,11 @@ public class TestCasesValidation {
 			String expectedData = page.getdata_fromExcel("TC10_TestCases", "Validation Text", "Passed Test Case");
 			helper.getdata(expectedData, "validate.passtestcase.txt");
 		}
+		
+		public void validatecolorOfTestCases() throws Exception {
+			Pageactions page = new Pageactions(browser);
+			ValidationHelper helper = new ValidationHelper(browser);
+			String expectedData = page.getdata_fromExcel("TC10_TestCases", "Validation Text", "Color of total test cases");
+			helper.getdata(expectedData, "validate.coloroftestcases.txt");
+		}
 }

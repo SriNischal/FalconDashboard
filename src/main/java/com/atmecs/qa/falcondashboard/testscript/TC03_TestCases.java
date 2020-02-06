@@ -47,13 +47,13 @@ public class TC03_TestCases extends SampleTestSuiteBase {
 		browser.maximizeWindow();
 	}
 
-	@SuppressWarnings({ "deprecation", "static-access" })
+	@SuppressWarnings( "static-access" )
 	@Test
 	public void executionTimeOfProduct() throws Exception {
 		Pageactions page = new Pageactions(browser);
-	log.info("STEP#1: Clicking the testcases for the products");
-	     page.clickOnElement(read.getPropertyvalue("loc.testcases.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-	     report.info("Successfully clicked on the test cases");
+	log.info("STEP#1: Mouse hovering the testcases for the products");
+	     page.mouseOver(read.getPropertyvalue("loc.testcases.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+	     report.info("Successfully mouse hovered the test cases");
 	log.info("STEP#2: Displaying the testcases message for the products");	
 	     String actualtooltipmessage=propReader.getValue("loc.testcasemessage.txt");
 	     String message=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();

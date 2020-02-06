@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
@@ -36,6 +37,7 @@ public class TC23_Refresh extends SampleTestSuiteBase{
 		browser.maximizeWindow();
 	}
 	@SuppressWarnings("static-access")
+	@Test
 	public void refresh() throws Exception {
 		DashboardPageValidation validate=new DashboardPageValidation(browser);
 		Pageactions page=new Pageactions(browser);

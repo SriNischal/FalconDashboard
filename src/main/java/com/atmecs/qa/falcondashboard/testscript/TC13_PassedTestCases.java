@@ -1,10 +1,13 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.io.IOException;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -13,16 +16,16 @@ import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
+import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.validationresults.DropdownValidation;
-import com.atmecs.qa.falcondashboard.validationresults.RecentrunsValidation;
 
 public class TC13_PassedTestCases extends SampleTestSuiteBase{
 	LogReport log=new LogReport();
 	ReadLocators read = new ReadLocators();
 	LoadProperties load=new LoadProperties();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-
+	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
 	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
@@ -33,7 +36,8 @@ public class TC13_PassedTestCases extends SampleTestSuiteBase{
 		report.info("Maximizing browser window");
 		browser.maximizeWindow();
 	}
-	@SuppressWarnings("static-access")
+	@SuppressWarnings({ "static-access", "deprecation" })
+	@Test
 	public void passedTestCases() throws Exception {
 		DropdownValidation validate=new DropdownValidation(browser);
 		Pageactions page=new Pageactions(browser);
@@ -47,6 +51,13 @@ public class TC13_PassedTestCases extends SampleTestSuiteBase{
 	log.info("STEP#3: Validating the status option");	
 		 validate.validatePassStatus();
 		report.info("Successfully validated pass status");
+		browser.getWait().safeWait(2000);
+	log.info("STEP#4: Creating a list to display the passed test cases");
+	    String testcases=propReader.getValue("loc.numberoftestcases.txt");;
+		List<WebElement> passlist = browser.getFindFromBrowser().findElementsByXpath(testcases);
+		log.dateinfo(passlist.size());
+		List<String> passtexts = passlist.stream().map(WebElement::getText).collect(Collectors.toList());
+		log.info(passtexts);
 		/*
 		 * log.info("STEP#1: Clicking on the recent runs option");
 		 * page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn",

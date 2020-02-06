@@ -4,7 +4,9 @@ import java.io.IOException;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
+import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.enums.LocatorType;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -33,18 +35,24 @@ public class TC06_MediumOfProduct extends SampleTestSuiteBase{
 		browser.maximizeWindow();
 	}
 	@SuppressWarnings("static-access")
+	@Test
 	public void mediumOfProduct() throws Exception {
 		Pageactions page=new Pageactions(browser);
-		log.info("STEP#1: Clicking on the product");
+	log.info("STEP#1: Clicking on the product");
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
 		browser.getWait().safeWait(2000);
-		log.info("STEP#2: Splitting the array");
+	log.info("STEP#2: Splitting the array and displaying the medium of the product");
 		String product = propReader.getValue("loc.product.txt");
 		String value = browser.getTextField().readTextByXPath(LocatorType.XPATH, product);
 		String[] arrOfStr = value.split(":", 3);
-		System.out.println(arrOfStr[1]);
+		String medium=arrOfStr[1];
+		System.out.println(medium);
 		report.info("Successfully displayed medium of product");
+	log.info("STEP#3: validating the medium of the project");
+        String expectedmedium=page.getdata_fromExcel("TC04_Product Page", "Validation Text", "Medium"); 
+        Verify.verifyString(medium, expectedmedium, "Successfully validated the medium of the product");
+        System.out.println(expectedmedium);
+        report.info("Successfully validated the medium of the product"); 
 	}
-
 }

@@ -45,12 +45,13 @@ public class TC19_ComponentOfProduct extends SampleTestSuiteBase {
 	public void componentOfProduct() throws Exception {
 		RecentrunsValidation validate = new RecentrunsValidation(browser);
 		Pageactions page = new Pageactions(browser);
-	log.info("STEP#1: Creating the list to display the components of the products ");
-	    String componentslist=propReader.getValue("loc.componentofproduct.btn"); 
+		log.info("STEP#1: Creating the list to display the components of the products ");
+		String componentslist = propReader.getValue("loc.componentofproduct.btn");
 		List<WebElement> component = browser.getFindFromBrowser().findElementsByXpath(componentslist);
 		log.dateinfo(component.size());
 		List<String> componenttexts = component.stream().map(WebElement::getText).collect(Collectors.toList());
 		log.info(componenttexts);
+
 		/*
 		 * log.info("STEP#2: Clicking on the product");
 		 * page.clickOnElement(read.getPropertyvalue("loc.product.btn",
@@ -59,34 +60,37 @@ public class TC19_ComponentOfProduct extends SampleTestSuiteBase {
 		 * browser.getWait().safeWait(2000); log.info("STEP#3: Splitting the array");
 		 * String product = propReader.getValue("loc.product.txt"); String value =
 		 * browser.getTextField().readTextByXPath(LocatorType.XPATH, product); String[]
-		 * arrOfStr = value.split(":", 3); System.out.println(arrOfStr[1]);
+		 * arrOfStr = value.split(":", 3); System.out.println(arrOfStr[1]); String
+		 * text=arrOfStr[2]; String[] values=text.split(",",2);
+		 * System.out.println("values[1]"+values[0]);
+		 * System.out.println("values[2]"+values[1]);
 		 * report.info("Successfully displayed component of product");
 		 */
-	log.info("STEP#2: Clicking on the recent runs option");
+		log.info("STEP#2: Clicking on the recent runs option");
 		page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on recent runs");
 		browser.getWait().safeWait(2000);
-	log.info("STEP#3: Creating the list to display the components of the products");
-	    String components=propReader.getValue("loc.componentlist.txt"); 
+		log.info("STEP#3: Creating the list to display the components of the products");
+		String components = propReader.getValue("loc.componentlist.txt");
 		List<WebElement> componentlist = browser.getFindFromBrowser().findElementsByXpath(components);
 		log.dateinfo(componentlist.size());
 		List<String> componenttext = componentlist.stream().map(WebElement::getText).collect(Collectors.toList());
 		log.info(componenttext);
-	log.info("STEP#4: Clicking on the component for sorting the data");
+		log.info("STEP#4: Clicking on the component for sorting the data");
 		page.clickOnElement(read.getPropertyvalue("loc.component.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on component");
-	log.info("STEP#5: Validating the component of the product");
+		log.info("STEP#5: Validating the component of the product");
 		validate.validateComponent();
 		report.info("Successfully validated component text");
-	log.info("STEP#6: Clicking on the component of the project for sorting the data ");
+		log.info("STEP#6: Clicking on the component of the project for sorting the data ");
 		page.clickOnElement(read.getPropertyvalue("loc.component.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on component");
-	log.info("STEP#7: Creating the list to display the component of the products");
+		log.info("STEP#7: Creating the list to display the component of the products");
 		List<WebElement> componentlists = browser.getFindFromBrowser().findElementsByXpath(components);
 		log.dateinfo(componentlists.size());
 		List<String> componentstext = componentlists.stream().map(WebElement::getText).collect(Collectors.toList());
 		log.info(componentstext);
-	log.info("STEP#8: Comparing the lists to see whether both the list are same or  not");
+		log.info("STEP#8: Comparing the lists to see whether both the list are same or  not");
 		boolean compare = componenttext.equals(componentstext);
 		System.out.println(compare);
 	}

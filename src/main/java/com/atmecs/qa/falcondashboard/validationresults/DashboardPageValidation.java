@@ -32,5 +32,20 @@ public class DashboardPageValidation {
 		helper.getdata(expectedData, "validated.productsnapshotbar.txt");
 		
 	}
+	public void validateListOfProducts() throws Exception {
+		Pageactions page = new Pageactions(browser);
+		ValidationHelper helper = new ValidationHelper(browser);
+		String expectedData= page.getdata_fromExcel("TC01_DasBoardPage", "Validation Text", "Number of products");
+		helper.getdata(expectedData, "loc.products.txt");
+		
+	}
+	
+	public void validateRecentExecutionTime() throws Exception {
+		Pageactions page = new Pageactions(browser);
+		ValidationHelper helper = new ValidationHelper(browser);
+		String expectedData= page.getdata_fromExcel("TC01_DasBoardPage", "Validation Text", "Recent Execution time");
+		helper.getdata(expectedData, "loc.executiontime.txt");
+		
+	}
 
 }

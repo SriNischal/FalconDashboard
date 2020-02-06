@@ -64,24 +64,6 @@ public class TC07_Dropdowns extends SampleTestSuiteBase {
 		 validate.validateFailStatus();
 		report.info("Successfully validated status");
 		browser.getDriver().manage().timeouts().setScriptTimeout(5, TimeUnit.SECONDS);
-		/*
-		 * log.info("STEP#8: Clicking on the test case of the product");
-		 * page.clickOnElement(read.getPropertyvalue("loc.testcase.btn",
-		 * ProjectBaseConstantPaths.LOCATORS_FILE));
-		 * report.info("Successfully clicked on test case");
-		 * log.info("STEP#9: Validating the panel title of the test case");
-		 * validate.validateProductPanelTitle();
-		 * report.info("Successfully validated paneltitle");
-		 * log.info("STEP#10: Clicking on the error option of the test case");
-		 * page.clickOnElement(read.getPropertyvalue("loc.error.btn",
-		 * ProjectBaseConstantPaths.LOCATORS_FILE));
-		 * browser.getDriver().manage().timeouts().setScriptTimeout(5,
-		 * TimeUnit.SECONDS);
-		 * log.info("STEP#11: Validating the error message of the test case ");
-		 * validate.validateErrorMessage();
-		 * report.info("Successfully validated error message");
-		 */
-
 	}
 
 }

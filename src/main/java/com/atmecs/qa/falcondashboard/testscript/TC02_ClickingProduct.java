@@ -23,6 +23,7 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.RandomNumber;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
+import com.atmecs.qa.falcondashboard.validationresults.DashboardPageValidation;
 
 public class TC02_ClickingProduct extends SampleTestSuiteBase {
 	ReadLocators read=new ReadLocators();
@@ -50,6 +51,7 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 	@SuppressWarnings({ "static-access", "deprecation" })
 	@Test
 	public void numberrOfProducts() throws Exception {
+		DashboardPageValidation validate=new DashboardPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: List to get all the products and size of elements  present on the dashboard page");
 	    String products=propReader.getValue("loc.products.txt");
@@ -57,6 +59,8 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 		log.dateinfo(list.size());
 		List<String> texts = list.stream().map(WebElement::getText).collect(Collectors.toList());
 		log.info(texts);
+		validate.validateListOfProducts();
+		report.info("Successfully valdated all the products");
 	log.info("STEP#2: To get list of product on dashboard page according to the recent execution time");
 	    String component=propReader.getValue("loc.executiontime.txt");
 		List<WebElement> executiontime = browser.getFindFromBrowser()
@@ -64,6 +68,8 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 		log.dateinfo(executiontime.size());
 		List<String> executedtime = executiontime.stream().map(WebElement::getText).collect(Collectors.toList());
 		log.info(executedtime);
+		validate.validateRecentExecutionTime();
+		report.info("Succcessfully validated the products according to recent execution time");
 		report.info("Latest execution and medium of the product are displayed");
 	log.info("STEP#3: Clicking on the product");
         page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));

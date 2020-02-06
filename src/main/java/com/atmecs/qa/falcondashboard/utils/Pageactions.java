@@ -10,13 +10,10 @@ import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 
 public class Pageactions  {
 	RandomNumber random=new RandomNumber();
-	JavascriptExecutor execute;
 	LogReport log = new LogReport();
 	WebElement webElement;
 	Browser browser = null;
-	 
 	ReadDataFromExcel reader = getsheet(ProjectBaseConstantPaths.EXCEL_FILE);
-	
 	
 	public Pageactions(Browser browser) {
 		this.browser = browser;
@@ -93,10 +90,9 @@ public class Pageactions  {
 		}
 		
 		public void mouseOver(String element) {
-			WebDriver driver=null;
-			Actions action = new Actions(driver);
+			Actions action = new Actions(browser.getDriver());
 			webElement = selectLocators(element);
-			action.moveToElement(webElement).click().perform();
+			action.moveToElement(webElement).perform();
 
 		}
 		public String randomnumber(String locator) throws Exception {

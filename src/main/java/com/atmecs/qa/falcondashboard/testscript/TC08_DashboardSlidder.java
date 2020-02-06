@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -31,6 +32,7 @@ public class TC08_DashboardSlidder extends SampleTestSuiteBase{
 		browser.maximizeWindow();
 	}
 	@SuppressWarnings("static-access")
+	@Test
 	public void dashboardSlidder() throws Exception {
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: Clicking on the product");	

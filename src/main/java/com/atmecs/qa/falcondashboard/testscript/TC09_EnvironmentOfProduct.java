@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -33,6 +34,7 @@ public class TC09_EnvironmentOfProduct extends SampleTestSuiteBase{
 		browser.maximizeWindow();
 	}
 	@SuppressWarnings("static-access")
+	@Test
 	public void environmentOfProduct() throws Exception {
 		ProductPageValidation validate=new ProductPageValidation(browser);
 		Pageactions page=new Pageactions(browser);

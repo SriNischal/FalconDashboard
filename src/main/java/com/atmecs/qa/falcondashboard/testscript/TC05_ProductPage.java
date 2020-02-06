@@ -65,6 +65,12 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 		List<String> texts = list.stream().map(WebElement::getText).collect(Collectors.toList());
 		log.info(texts);
 		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    log.info("STEP#5: Clicking on the download option");
+		page.clickOnElement(read.getPropertyvalue("loc.download.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		report.info("Clicked on download option");	
+	log.info("STEP#6: Selecting the dashboard slider option");
+	    page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		report.info("Successfully selected dashboard option");	
 
 		// logic
 

@@ -5,47 +5,73 @@
 
 	<suite-files>
 		<suite-file
-			path="./src/main/resources/suitefile/dashboardpage.xml" />
+			path="./src/main/resources/suitefile/01_dashboardpage.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/04_percentagecompleted.xml" />	
+		<suite-file
+			path="./src/main/resources/suitefile/05_productpage.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/06_mediumofproduct.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/07_dropdown.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/08_dashboardslidder.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/09_environment.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/10_testphase.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/11_download.xml" />	
+		<suite-file
+			path="./src/main/resources/suitefile/13_passtestcase.xml" />	
+		<suite-file
+			path="./src/main/resources/suitefile/14_failtestcase.xml" />	
+		<suite-file
+			path="./src/main/resources/suitefile/15_skiptestcase.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/16_mainnavigation.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/17_recentruns.xml" />	
+		<suite-file
+			path="./src/main/resources/suitefile/18_productName.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/19_component.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/20_failtestcase.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/21_passpercentage.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/22_deleteoption.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/23_refresh.xml" />	
+		<suite-file
+			path="./src/main/resources/suitefile/24_productsnapshot.xml" />	
+		<suite-file
+			path="./src/main/resources/suitefile/25_stepsofproduct.xml" />	
+		<suite-file
+			path="./src/main/resources/suitefile/26_coloroftotaltestcases.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/27_totaltestcases.xml" />	
+		<suite-file
+			path="./src/main/resources/suitefile/28_colorofpasstestcases.xml" />			
+		<suite-file
+			path="./src/main/resources/suitefile/29_passtestcases.xml" />	
+		<suite-file
+			path="./src/main/resources/suitefile/30_coloroffailtestcases.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/31_failtestcases.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/32_colorofskiptestcases.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/33_skiptestcases.xml" />	
+		<suite-file
+			path="./src/main/resources/suitefile/34_views.xml" />	
+		<suite-file
+			path="./src/main/resources/suitefile/35_lastruns.xml" />			
 		<suite-file
 			path="./src/main/resources/suitefile/numberofproducts.xml" />
 		<suite-file
-			path="./src/main/resources/suitefile/testcase.xml" />
-		<suite-file
-			path="./src/main/resources/suitefile/productpage.xml" />
-		<suite-file
-			path="./src/main/resources/suitefile/dropdown.xml" />	
-		<suite-file
-			path="./src/main/resources/suitefile/recentruns.xml" />	
-		<suite-file
-			path="./src/main/resources/suitefile/mainnavigation.xml" />
-		<suite-file
-			path="./src/main/resources/suitefile/views.xml" />		
-		<suite-file
-			path="./src/main/resources/suitefile/productsteps.xml" />
-		<suite-file
-			path="./src/main/resources/suitefile/testcases.xml" />
-		<suite-file
-			path="./src/main/resources/suitefile/percentagecompleted.xml" />	
-		<suite-file
-			path="./src/main/resources/suitefile/component.xml" />	
-		<suite-file
-			path="./src/main/resources/suitefile/productName.xml" />
-		<suite-file
-			path="./src/main/resources/suitefile/coloroftotaltestcases.xml" />
-		<suite-file
-			path="./src/main/resources/suitefile/colorofpasstestcases.xml" />
-		<suite-file
-			path="./src/main/resources/suitefile/coloroffailtestcases.xml" />		
-		<suite-file
-			path="./src/main/resources/suitefile/colorofskiptestcases.xml" />	
-		<suite-file
-			path="./src/main/resources/suitefile/totaltestcases.xml" />	
-		<suite-file
-			path="./src/main/resources/suitefile/skiptestcases.xml" />	
-		<suite-file
-			path="./src/main/resources/suitefile/passtestcases.xml" />	
-		<suite-file
-			path="./src/main/resources/suitefile/failtestcases.xml" />									
+			path="./src/main/resources/suitefile/testcase.xml" />							
 	</suite-files>
 
 </suite>

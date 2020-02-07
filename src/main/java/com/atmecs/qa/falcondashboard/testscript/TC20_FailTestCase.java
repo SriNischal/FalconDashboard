@@ -42,7 +42,7 @@ public class TC20_FailTestCase extends SampleTestSuiteBase {
 
 	@SuppressWarnings({ "static-access", "deprecation" })
 	@Test
-	public void testCasesOfProduct() throws Exception {
+	public void failTestCasesOfProduct() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		DropdownValidation validate=new DropdownValidation(browser);
 	log.info("STEP#1: Clicking on the product");
@@ -60,6 +60,7 @@ public class TC20_FailTestCase extends SampleTestSuiteBase {
 		page.clickOnElement(read.getPropertyvalue("loc.testcase.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on test case");
 	log.info("STEP#3: Validating the panel title of the test case");
+	    browser.getWait().safeWait(2000);
 		validate.validateProductPanelTitle();
 		report.info("Successfully validated paneltitle");
 	log.info("STEP#5: Clicking on the error option of the test case");

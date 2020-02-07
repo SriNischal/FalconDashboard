@@ -2,6 +2,7 @@ package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -33,13 +34,14 @@ public class TC24_ProductSnapShot extends SampleTestSuiteBase{
 		browser.maximizeWindow();
 	}
 	@SuppressWarnings("static-access")
+	@Test
 	public void productSnapShot() throws Exception {
 		MainNavigationValidation validate=new MainNavigationValidation(browser);
 		Pageactions page=new Pageactions(browser);
-	log.info("STEP#4: Clicking on the product snapshot option");
+	log.info("STEP#1: Clicking on the product snapshot option");
 		page.clickOnElement(read.getPropertyvalue("loc.snapshotbar.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product snapshot bar");
-	log.info("STEP#10: Validating the product snapshot text");	
+	log.info("STEP#2: Validating the product snapshot text");	
 		validate.validateProductSnapshot();
 		report.info("Successfully validated product snapshot");
 	

@@ -38,7 +38,7 @@ public class TC13_PassedTestCases extends SampleTestSuiteBase{
 	}
 	@SuppressWarnings({ "static-access", "deprecation" })
 	@Test
-	public void passedTestCases() throws Exception {
+	public void dropdownPassedTestCases() throws Exception {
 		DropdownValidation validate=new DropdownValidation(browser);
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: Clicking on the product");
@@ -51,27 +51,13 @@ public class TC13_PassedTestCases extends SampleTestSuiteBase{
 	log.info("STEP#3: Validating the status option");	
 		 validate.validatePassStatus();
 		report.info("Successfully validated pass status");
-		browser.getWait().safeWait(2000);
+		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	log.info("STEP#4: Creating a list to display the passed test cases");
 	    String testcases=propReader.getValue("loc.numberoftestcases.txt");;
 		List<WebElement> passlist = browser.getFindFromBrowser().findElementsByXpath(testcases);
 		log.dateinfo(passlist.size());
 		List<String> passtexts = passlist.stream().map(WebElement::getText).collect(Collectors.toList());
 		log.info(passtexts);
-		/*
-		 * log.info("STEP#1: Clicking on the recent runs option");
-		 * page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn",
-		 * ProjectBaseConstantPaths.LOCATORS_FILE));
-		 * report.info("Successfully clicked on recent runs");
-		 * browser.getWait().safeWait(2000);
-		 * log.info("STEP#2: Validating the title of the page");
-		 * validate.validateText();
-		 * log.info("STEP#3: Validating the product title in the recent runs page");
-		 * validate.validateProductName();
-		 * report.info("Successfully validated product name");
-		 * log.info("STEP#4: Validating the pass percent of the page");
-		 * validate.validatePassPercent();
-		 * report.info("Successfully validated the passpercent with % symbol");
-		 */
+		
 	}
 }

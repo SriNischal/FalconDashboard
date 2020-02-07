@@ -40,7 +40,7 @@ public class TC29_PassedTestCases extends SampleTestSuiteBase{
 	}
 	@SuppressWarnings({ "static-access", "deprecation" })
 	@Test
-	public void passtestcases() throws Exception {
+	public void passTestCases() throws Exception {
 		ViewPageValidation validate=new ViewPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: Clicking on the product");

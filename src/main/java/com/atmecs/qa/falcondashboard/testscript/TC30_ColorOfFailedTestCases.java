@@ -47,7 +47,7 @@ public class TC30_ColorOfFailedTestCases extends SampleTestSuiteBase{
 	    page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");
 	log.info("STEP#3: Displaying the color of the total test case box");
-	    browser.getWait().safeWait(2000);
+	    browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	    String color=propReader.getValue("validate.coloroffailtestcases.txt");
 	    String actualcolor=browser.getFindFromBrowser().findElementByXpath(color).getCssValue("background-color");
 	    System.out.println("Color:"+actualcolor);

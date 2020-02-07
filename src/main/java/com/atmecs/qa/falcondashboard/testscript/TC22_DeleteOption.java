@@ -1,6 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -43,7 +44,7 @@ public class TC22_DeleteOption extends SampleTestSuiteBase{
 	log.info("STEP#1: Clicking on the recent runs option");	
 	     page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		 report.info("Successfully clicked on recent runs");
-		 browser.getWait().safeWait(2000);
+		 browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	log.info("STEP#2: Mouse hovering over the delete option");	 
 		 page.mouseOver(read.getPropertyvalue("loc.deleteoption.btn",ProjectBaseConstantPaths.LOCATORS_FILE));
 		 report.info("Successfully mouse hovered over the deletet option");

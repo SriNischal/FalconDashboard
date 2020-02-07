@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.enums.LocatorType;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -64,11 +65,26 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 		log.dateinfo(list.size());
 		List<String> texts = list.stream().map(WebElement::getText).collect(Collectors.toList());
 		log.info(texts);
+    log.info("STEP#5: Converting the list of products into string products");	
+		String separate = ",";
+		StringBuilder sb = new StringBuilder();
+		int index = 0;
+		while (index < texts.size() - 1) {
+			sb.append(texts.get(index));
+			sb.append(separate);
+			index++;
+		}
+		sb.append(texts.get(index));
+   log.info("STEP#6: Verifying the list of products");
+		String result = sb.toString();
+		String expedctedproducts=page.getdata_fromExcel("TC04_Product Page", "Validation Text", "Test Cases");
+		Verify.verifyString(result, expedctedproducts, "Successfully validaetd the test cases");
+		report.info("Successfully valdated all the test cases");
 		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-    log.info("STEP#5: Clicking on the download option");
+    log.info("STEP#7: Clicking on the download option");
 		page.clickOnElement(read.getPropertyvalue("loc.download.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Clicked on download option");	
-	log.info("STEP#6: Selecting the dashboard slider option");
+	log.info("STEP#8: Selecting the dashboard slider option");
 	    page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");	
 

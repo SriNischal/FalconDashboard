@@ -51,21 +51,6 @@ public class TC19_ComponentOfProduct extends SampleTestSuiteBase {
 		log.dateinfo(component.size());
 		List<String> componenttexts = component.stream().map(WebElement::getText).collect(Collectors.toList());
 		log.info(componenttexts);
-
-		/*
-		 * log.info("STEP#2: Clicking on the product");
-		 * page.clickOnElement(read.getPropertyvalue("loc.product.btn",
-		 * ProjectBaseConstantPaths.LOCATORS_FILE));
-		 * report.info("Successfully clicked on product");
-		 * browser.getWait().safeWait(2000); log.info("STEP#3: Splitting the array");
-		 * String product = propReader.getValue("loc.product.txt"); String value =
-		 * browser.getTextField().readTextByXPath(LocatorType.XPATH, product); String[]
-		 * arrOfStr = value.split(":", 3); System.out.println(arrOfStr[1]); String
-		 * text=arrOfStr[2]; String[] values=text.split(",",2);
-		 * System.out.println("values[1]"+values[0]);
-		 * System.out.println("values[2]"+values[1]);
-		 * report.info("Successfully displayed component of product");
-		 */
 		log.info("STEP#2: Clicking on the recent runs option");
 		page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on recent runs");

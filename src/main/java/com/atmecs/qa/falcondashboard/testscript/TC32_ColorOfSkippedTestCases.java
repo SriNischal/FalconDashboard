@@ -37,7 +37,7 @@ public class TC32_ColorOfSkippedTestCases extends SampleTestSuiteBase{
 	}
 	@SuppressWarnings("static-access")
 	@Test
-	public void colorofFailedTestCases() throws Exception {
+	public void colorofSkippedTestCases() throws Exception {
 	    Pageactions page=new Pageactions(browser);
     log.info("STEP#1: Clicking on the product");
         page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
@@ -47,7 +47,7 @@ public class TC32_ColorOfSkippedTestCases extends SampleTestSuiteBase{
 	    page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");
 	log.info("STEP#3: Displaying the color of the total test case box");
-	    browser.getWait().safeWait(2000);
+	browser.getDriver().manage().timeouts().setScriptTimeout(5, TimeUnit.SECONDS);
 	    String color=propReader.getValue("validate.colorofskiptestcases.txt");
 	    String actualcolor=browser.getFindFromBrowser().findElementByXpath(color).getCssValue("background-color");
 	    System.out.println("Color:"+actualcolor);

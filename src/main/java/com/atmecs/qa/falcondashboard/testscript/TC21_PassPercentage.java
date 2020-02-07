@@ -1,6 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import org.openqa.selenium.WebElement;
@@ -40,13 +41,13 @@ public class TC21_PassPercentage extends SampleTestSuiteBase{
 
 	@SuppressWarnings({ "static-access", "deprecation" })
 	@Test
-	public void productName() throws Exception {
+	public void rececntPassPercentage() throws Exception {
 		RecentrunsValidation validate=new RecentrunsValidation(browser);
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: Clicking on the Recentruns");
 		page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the recent runs");
-		browser.getWait().safeWait(2000);
+		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	log.info("STEP#2: Validating the pass percent");
 	    validate.validatePassPercent();
 	    report.info("Successfully validated the pass percent");
@@ -56,7 +57,7 @@ public class TC21_PassPercentage extends SampleTestSuiteBase{
 		log.dateinfo(productnameslist.size());
 		List<String> productnamestext = productnameslist.stream().map(WebElement::getText).collect(Collectors.toList());
 		log.info(productnamestext);
-		browser.getWait().safeWait(2000);
+		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	log.info("STEP#4 Clicking on the pass percentage");
 	    page.clickOnElement(read.getPropertyvalue("loc.recentpasspercent.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	    report.info("Successfully clicked on the pass percentage");

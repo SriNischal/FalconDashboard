@@ -7,14 +7,14 @@
   <parameter name="browserVersion" value="77"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase">
         <methods>
-          <include name="colorofFailedTestCases"/>
-          <include name="setup"/>
           <include name="preSetup"/>
           <include name="teardown"/>
+          <include name="setup"/>
+          <include name="failTestCasesOfProduct"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_chrome_77 (1)] -->

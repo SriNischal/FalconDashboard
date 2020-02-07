@@ -2,6 +2,7 @@ package com.atmecs.qa.falcondashboard.testscript;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import org.openqa.selenium.WebDriver;
@@ -47,7 +48,7 @@ public class TC35_LastRun extends SampleTestSuiteBase{
 	log.info("STEP#1: Clicking on the Recentruns");
 		page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the recent runs");
-		browser.getWait().safeWait(2000);
+		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	log.info("STEP#2: Validating the last run");
 	    validate.validateLastRun();
 	    report.info("Successfully validated the last run");
@@ -57,12 +58,12 @@ public class TC35_LastRun extends SampleTestSuiteBase{
 		log.dateinfo(lastrunslist.size());
 		List<String> lastrunstext = lastrunslist.stream().map(WebElement::getText).collect(Collectors.toList());
 		log.info(lastrunstext);
-		browser.getWait().safeWait(2000);
+		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	log.info("STEP#4 Clicking on the last run");
 	    page.clickOnElement(read.getPropertyvalue("loc.lastruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	    page.clickOnElement(read.getPropertyvalue("loc.lastruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	    report.info("Successfully clicked on the last runs");
-	    browser.getWait().safeWait(2000);
+	    browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	log.info("STEP#5: Creating the list to display the last runs after sorting");
 	    String lastrunsaftersorting=propReader.getValue("loc.lastrun.txt");
 	    List<WebElement> lastrunlist = browser.getFindFromBrowser().findElementsByXpath(lastrunsaftersorting);

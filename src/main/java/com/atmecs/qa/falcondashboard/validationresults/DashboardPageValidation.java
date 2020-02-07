@@ -36,7 +36,7 @@ public class DashboardPageValidation {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		String expectedData= page.getdata_fromExcel("TC01_DasBoardPage", "Validation Text", "Number of products");
-		helper.getdata(expectedData, "loc.products.txt");
+		helper.getdata(expectedData, "validate.product.txt");
 		
 	}
 	

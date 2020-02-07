@@ -41,7 +41,7 @@ public class TC27_TotalTestCases extends SampleTestSuiteBase{
 	}
 	@SuppressWarnings({ "static-access", "deprecation" })
 	@Test
-	public void totaltestcases() throws Exception {
+	public void totalTestCases() throws Exception {
 		ViewPageValidation validate=new ViewPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: Clicking on the product");
@@ -60,7 +60,7 @@ public class TC27_TotalTestCases extends SampleTestSuiteBase{
 	log.info("STEP#5: Validating the time taken to run the product");	
 		validate.validateTime();
 		report.info("Successfully validated the run time");
-		browser.getWait().safeWait(2000);
+		browser.getDriver().manage().timeouts().setScriptTimeout(5, TimeUnit.SECONDS);
 	log.info("STEP#6: Creating a list to display all the test cases present");
 	    String testcases=propReader.getValue("loc.numberoftestcases.txt");
 		List<WebElement> totallist = browser.getFindFromBrowser().findElementsByXpath(testcases);

@@ -7,6 +7,10 @@
 		<suite-file
 			path="./src/main/resources/suitefile/01_dashboardpage.xml" />
 		<suite-file
+			path="./src/main/resources/suitefile/02_productclicking.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/03_testcases.xml" />
+		<suite-file
 			path="./src/main/resources/suitefile/04_percentagecompleted.xml" />	
 		<suite-file
 			path="./src/main/resources/suitefile/05_productpage.xml" />
@@ -22,6 +26,8 @@
 			path="./src/main/resources/suitefile/10_testphase.xml" />
 		<suite-file
 			path="./src/main/resources/suitefile/11_download.xml" />	
+		<suite-file
+			path="./src/main/resources/suitefile/12_dateofexecution.xml" />	
 		<suite-file
 			path="./src/main/resources/suitefile/13_passtestcase.xml" />	
 		<suite-file
@@ -67,11 +73,7 @@
 		<suite-file
 			path="./src/main/resources/suitefile/34_views.xml" />	
 		<suite-file
-			path="./src/main/resources/suitefile/35_lastruns.xml" />			
-		<suite-file
-			path="./src/main/resources/suitefile/numberofproducts.xml" />
-		<suite-file
-			path="./src/main/resources/suitefile/testcase.xml" />							
+			path="./src/main/resources/suitefile/35_lastruns.xml" />									
 	</suite-files>
 
 </suite>

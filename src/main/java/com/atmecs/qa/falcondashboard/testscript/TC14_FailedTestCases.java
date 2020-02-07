@@ -38,7 +38,7 @@ public class TC14_FailedTestCases extends SampleTestSuiteBase{
 	}
 	@SuppressWarnings("static-access")
 	@Test
-	public void passedTestCases() throws Exception {
+	public void dropdownFailedTestCases() throws Exception {
 		DropdownValidation validate=new DropdownValidation(browser);
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: Clicking on the product");

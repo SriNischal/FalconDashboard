@@ -48,7 +48,7 @@ public class TC16_MainNaviigation extends SampleTestSuiteBase{
 	log.info("STEP#1: Clicking on the main navigation bar");	
 		page.clickOnElement(read.getPropertyvalue("loc.mainnavigation.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		page.clickOnElement(read.getPropertyvalue("loc.mainnavigation.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		browser.getWait().safeWait(2000);
+		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	log.info("STEP#2: Validating the dashboard text");	
 		validate.validateDashboard();
 		report.info("Successfully validated dashboard");  
@@ -69,7 +69,7 @@ public class TC16_MainNaviigation extends SampleTestSuiteBase{
 		report.info("Successfully validated View");
 	log.info("STEP#8: Clicking on the views option");	
 		page.clickOnElement(read.getPropertyvalue("loc.view.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		browser.getWait().safeWait(2000);
+		browser.getDriver().manage().timeouts().setScriptTimeout(5, TimeUnit.SECONDS);
 	log.info("STEP#9: Validating the views panel title");	
 		validate.validateViewPanelTitle();
 		report.info("Successfully validated panelview");

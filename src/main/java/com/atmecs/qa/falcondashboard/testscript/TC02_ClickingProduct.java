@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.enums.LocatorType;
 import com.atmecs.falcon.automation.util.parser.XlsReader;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
@@ -50,8 +51,7 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 	}
 	@SuppressWarnings({ "static-access", "deprecation" })
 	@Test
-	public void numberrOfProducts() throws Exception {
-		DashboardPageValidation validate=new DashboardPageValidation(browser);
+	public void clickingProduct() throws Exception{
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: List to get all the products and size of elements  present on the dashboard page");
 	    String products=propReader.getValue("loc.products.txt");
@@ -59,19 +59,34 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 		log.dateinfo(list.size());
 		List<String> texts = list.stream().map(WebElement::getText).collect(Collectors.toList());
 		log.info(texts);
-		validate.validateListOfProducts();
+	log.info("STEP#2: Converting the list of products into string products");	
+		String separate = ",";
+		StringBuilder sb = new StringBuilder();
+		int index = 0;
+		while (index < texts.size() - 1) {
+			sb.append(texts.get(index));
+			sb.append(separate);
+			index++;
+		}
+		sb.append(texts.get(index));
+   log.info("STEP#3: Verifying the list of products");
+		String result = sb.toString();
+		String expedctedproducts=page.getdata_fromExcel("TC01_DasBoardPage", "Validation Text", "Number of products");
+		Verify.verifyString(result, expedctedproducts, "Successfully validaetd the products");
 		report.info("Successfully valdated all the products");
-	log.info("STEP#2: To get list of product on dashboard page according to the recent execution time");
-	    String component=propReader.getValue("loc.executiontime.txt");
+	log.info("STEP#4: To get list of product on dashboard page according to the recent execution time");
+	    String time=propReader.getValue("loc.executiontime.txt");
 		List<WebElement> executiontime = browser.getFindFromBrowser()
-				.findElementsByXpath(component);
+				.findElementsByXpath(time);
 		log.dateinfo(executiontime.size());
 		List<String> executedtime = executiontime.stream().map(WebElement::getText).collect(Collectors.toList());
 		log.info(executedtime);
-		validate.validateRecentExecutionTime();
-		report.info("Succcessfully validated the products according to recent execution time");
-		report.info("Latest execution and medium of the product are displayed");
-	log.info("STEP#3: Clicking on the product");
+	log.info("STEP#5: Verifying the list of execution time");
+	    String actualresult = sb.toString();
+		String expedctedexecutiontime=page.getdata_fromExcel("TC01_DasBoardPage", "Validation Text", "Number of products");
+		Verify.verifyString(actualresult, expedctedexecutiontime, "Successfully validaetd the products");
+		report.info("Successfully valdated all the execution times");
+	log.info("STEP#6: Clicking on the product");
         page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
 		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

@@ -38,7 +38,7 @@ public class TC15_SkippedTestCases extends SampleTestSuiteBase{
 	}
 	@SuppressWarnings("static-access")
 	@Test
-	public void passedTestCases() throws Exception {
+	public void dropdownSkippedTestCases() throws Exception {
 		DropdownValidation validate=new DropdownValidation(browser);
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: Clicking on the product");
@@ -51,7 +51,7 @@ public class TC15_SkippedTestCases extends SampleTestSuiteBase{
 	log.info("STEP#3: Validating the status option");	
 		 validate.validateSkipStatus();
 		report.info("Successfully validated skip status");
-		browser.getWait().safeWait(2000);
+		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	log.info("STEP#4: Creating a list to display the skipped test cases");
 	    String testcases=propReader.getValue("loc.numberoftestcases.txt");;
 		List<WebElement> skiplist = browser.getFindFromBrowser().findElementsByXpath(testcases);

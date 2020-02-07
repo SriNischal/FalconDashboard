@@ -47,14 +47,35 @@ public class TC03_TestCases extends SampleTestSuiteBase {
 		browser.maximizeWindow();
 	}
 
-	@SuppressWarnings( "static-access" )
+	@SuppressWarnings( { "static-access", "deprecation" } )
 	@Test
-	public void executionTimeOfProduct() throws Exception {
+	public void numberofTestCasesOfProduct() throws Exception {
 		Pageactions page = new Pageactions(browser);
-	log.info("STEP#1: Mouse hovering the testcases for the products");
+	log.info("STEP#1: Creating list to display total test cases of the products");	
+		String products=propReader.getValue("loc.totaltestcase.txt");
+		List<WebElement> list = browser.getFindFromBrowser().findElementsByXpath(products);
+		log.dateinfo(list.size());
+		List<String> texts = list.stream().map(WebElement::getText).collect(Collectors.toList());
+		log.info(texts);
+	log.info("STEP#2: Converting the list of products into string products");	
+		String separate = ",";
+		StringBuilder sb = new StringBuilder();
+		int index = 0;
+		while (index < texts.size() - 1) {
+			sb.append(texts.get(index));
+			sb.append(separate);
+			index++;
+		}
+		sb.append(texts.get(index));
+   log.info("STEP#3: Verifying the list of products");
+		String result = sb.toString();
+		String expedctedproducts=page.getdata_fromExcel("TC01_DasBoardPage", "Validation Text", "Total test cases");
+		Verify.verifyString(result, expedctedproducts, "Successfully validaetd the test cases");
+		report.info("Successfully valdated all the test cases");
+	log.info("STEP#4: Mouse hovering the testcases for the products");
 	     page.mouseOver(read.getPropertyvalue("loc.testcases.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	     report.info("Successfully mouse hovered the test cases");
-	log.info("STEP#2: Displaying the testcases message for the products");	
+	log.info("STEP#5: Displaying the testcases message for the products");	
 	     String actualtooltipmessage=propReader.getValue("loc.testcasemessage.txt");
 	     String message=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();
 	     System.out.println(message);

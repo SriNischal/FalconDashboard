@@ -72,14 +72,5 @@ public class TC17_RecentRuns extends SampleTestSuiteBase{
 	log.info("STEP#8: Validating the last run of the page");
 		validate.validateLastRun();
 		report.info("Successfully validated lastruns");
-		/*
-		 * log.info("STEP#9: List to find how many products are avialable in one page");
-		 * String products=propReader.getValue("loc.numberoftestcases.txt");
-		 * List<WebElement> list =
-		 * browser.getFindFromBrowser().findElementsByXpath(products);
-		 * log.dateinfo(list.size()); List<String> texts =
-		 * list.stream().map(WebElement::getText).collect(Collectors.toList());
-		 * log.info(texts);
-		 */
 	}
 }

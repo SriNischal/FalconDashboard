@@ -40,7 +40,7 @@ public class TC33_SkippedTestCases extends SampleTestSuiteBase{
 	}
 	@SuppressWarnings({ "static-access", "deprecation" })
 	@Test
-	public void skiptestcases() throws Exception {
+	public void skippedTestCases() throws Exception {
 		ViewPageValidation validate=new ViewPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: Clicking on the product");

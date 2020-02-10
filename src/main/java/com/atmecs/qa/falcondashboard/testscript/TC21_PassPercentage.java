@@ -19,7 +19,7 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.validationresults.RecentrunsValidation;
-
+//In this class the pass percent of the products is displalyed 
 public class TC21_PassPercentage extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
@@ -28,6 +28,7 @@ public class TC21_PassPercentage extends SampleTestSuiteBase{
 
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 
+	//In this method the browser is invoked and the url is opened 
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
 	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
@@ -39,6 +40,12 @@ public class TC21_PassPercentage extends SampleTestSuiteBase{
 		browser.maximizeWindow();
 	}
 
+	/*
+	 * In this method the recent runs is clicked and validated the pass percent
+	 * title and and created a list to display the pass percentages of the products
+	 * and clicked on the pass percent for sorting the values and created another
+	 * list to get the sorted list and compared both the lists
+	 */
 	@SuppressWarnings({ "static-access", "deprecation" })
 	@Test
 	public void rececntPassPercentage() throws Exception {

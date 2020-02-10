@@ -17,7 +17,7 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.validationresults.DashboardPageValidation;
-
+//In this class the refresh option is verified
 public class TC23_Refresh extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
@@ -26,6 +26,7 @@ public class TC23_Refresh extends SampleTestSuiteBase{
 
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 
+	//In this method the browser is invoked and the url is opened 
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
 	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
@@ -36,6 +37,11 @@ public class TC23_Refresh extends SampleTestSuiteBase{
 		report.info("Maximizing browser window");
 		browser.maximizeWindow();
 	}
+
+	/*
+	 * In this method the the dashboard text is validated and the refresh option is
+	 * successfully clicked
+	 */
 	@SuppressWarnings("static-access")
 	@Test
 	public void refresh() throws Exception {
@@ -47,7 +53,7 @@ public class TC23_Refresh extends SampleTestSuiteBase{
 	log.info("STEP#2: Clicking on the refresh option");
 		page.clickOnElement(read.getPropertyvalue("loc.refresh.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("clicked on refresh option");
-		report.info("Successfully validated dashboard text");
+		report.info("Successfully clicked on the refresh option");
 	}
 
 }

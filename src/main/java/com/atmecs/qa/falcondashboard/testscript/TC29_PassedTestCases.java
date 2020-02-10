@@ -19,7 +19,7 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation;
-
+//In this the content of passed test cases is displayed and validated
 public class TC29_PassedTestCases extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
@@ -28,6 +28,7 @@ public class TC29_PassedTestCases extends SampleTestSuiteBase{
 
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 
+	//In this the browser is invoked and url is opened 
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
 	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
@@ -38,6 +39,12 @@ public class TC29_PassedTestCases extends SampleTestSuiteBase{
 		report.info("Maximizing browser window");
 		browser.maximizeWindow();
 	}
+	
+	/*
+	 * In this method the product is clicked and the dashboard slider is selected
+	 * and pass test cases is selected and validated the number of pass test cases
+	 * and pass percentage and created the list to display the passed test cases
+	 */
 	@SuppressWarnings({ "static-access", "deprecation" })
 	@Test
 	public void passTestCases() throws Exception {

@@ -20,6 +20,9 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
 import com.atmecs.qa.falcondashboard.validationresults.DashboardPageValidation;
+   
+
+  //In this class dashboard page is tested
 
 public class TC01_DashBoardPage extends SampleTestSuiteBase {
 	
@@ -34,7 +37,7 @@ public class TC01_DashBoardPage extends SampleTestSuiteBase {
 	String adminPassword = null;
 	int row = 0;
 	
-
+    //In this method the browser is invoked and url is opened
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
 	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
@@ -48,6 +51,11 @@ public class TC01_DashBoardPage extends SampleTestSuiteBase {
 
 	@SuppressWarnings("static-access")
 	@Test
+	/*
+	 * In this method we test whether the user landed on the dashboard page by
+	 * validating the title of the page, dashboard text, falcon text validation and
+	 * clicking on the refresh option
+	 */
 	public void dashboardPage() throws Exception {
 		
 		Pageactions page=new Pageactions(browser);

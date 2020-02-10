@@ -19,13 +19,15 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.validationresults.DropdownValidation;
-
+//In this class the fail test cases are displayed 
 public class TC14_FailedTestCases extends SampleTestSuiteBase{
 	LogReport log=new LogReport();
 	ReadLocators read = new ReadLocators();
 	LoadProperties load=new LoadProperties();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
+
+	//In this method the browser is invoked and url is opened
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
 	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
@@ -36,6 +38,11 @@ public class TC14_FailedTestCases extends SampleTestSuiteBase{
 		report.info("Maximizing browser window");
 		browser.maximizeWindow();
 	}
+
+	/*
+	 * In this method product is clicked and fail option from the status dropdown is
+	 * selected and created a list to display the fail test cases
+	 */ 
 	@SuppressWarnings("static-access")
 	@Test
 	public void dropdownFailedTestCases() throws Exception {

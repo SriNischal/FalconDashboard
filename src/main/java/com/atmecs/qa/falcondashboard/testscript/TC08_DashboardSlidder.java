@@ -16,11 +16,15 @@ import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 
+//In this class dashboard slidder is checked
 public class TC08_DashboardSlidder extends SampleTestSuiteBase{
 	LoadProperties load=new LoadProperties();
 	ReadLocators read=new ReadLocators();
 	LogReport log=new LogReport();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
+	
+	//In this method the browser is invoked and url is opened
+	
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
 	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
@@ -31,6 +35,8 @@ public class TC08_DashboardSlidder extends SampleTestSuiteBase{
 		report.info("Maximizing browser window");
 		browser.maximizeWindow();
 	}
+
+	/* In this method checked whether the dashboard slidder is clicked or not */
 	@SuppressWarnings("static-access")
 	@Test
 	public void dashboardSlidder() throws Exception {

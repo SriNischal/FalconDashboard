@@ -25,7 +25,7 @@ import com.atmecs.qa.falcondashboard.utils.RandomNumber;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
 import com.atmecs.qa.falcondashboard.validationresults.DashboardPageValidation;
-
+//In this class we test the product is clicked or not 
 public class TC02_ClickingProduct extends SampleTestSuiteBase {
 	ReadLocators read=new ReadLocators();
 	ReadingData data=new ReadingData();
@@ -39,6 +39,7 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 	String adminPassword = null;
 	int row = 0;
 
+	//In this method the browser is invoked and url is opened
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
 	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
@@ -49,6 +50,11 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 		report.info("Maximizing browser window");
 		browser.maximizeWindow();
 	}
+	
+	/*
+	 * In this we generate a list to see whether all the products are persent
+	 * according to the recent execution times and click on the project
+	 */
 	@SuppressWarnings({ "static-access", "deprecation" })
 	@Test
 	public void clickingProduct() throws Exception{

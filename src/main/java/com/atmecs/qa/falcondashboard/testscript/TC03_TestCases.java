@@ -24,6 +24,7 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 
+//In this class the total test cases of the product are displayed
 public class TC03_TestCases extends SampleTestSuiteBase {
 	public static WebDriver driver;
 	ReadLocators read = new ReadLocators();
@@ -36,6 +37,9 @@ public class TC03_TestCases extends SampleTestSuiteBase {
 	String adminUsername = null;
 	String adminPassword = null;
 	int row = 0;
+	
+	//In this method the browser is invoked and url is opened
+	
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
 	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
@@ -47,6 +51,10 @@ public class TC03_TestCases extends SampleTestSuiteBase {
 		browser.maximizeWindow();
 	}
 
+	/*
+	 * In this method we create list to display the test cases and validate the test
+	 * cases and validate the tool tip message by mouse hovering over the test cases
+	 */ 
 	@SuppressWarnings( { "static-access", "deprecation" } )
 	@Test
 	public void numberofTestCasesOfProduct() throws Exception {

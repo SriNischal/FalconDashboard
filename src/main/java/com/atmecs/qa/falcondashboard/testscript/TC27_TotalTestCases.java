@@ -20,7 +20,7 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation;
-
+//In this class the content of total test cases is displayed
 public class TC27_TotalTestCases extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
@@ -29,6 +29,7 @@ public class TC27_TotalTestCases extends SampleTestSuiteBase{
 
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 
+	//In this class the browser is invoked and the url is opened
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
 	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
@@ -39,6 +40,12 @@ public class TC27_TotalTestCases extends SampleTestSuiteBase{
 		report.info("Maximizing browser window");
 		browser.maximizeWindow();
 	}
+	
+	/*
+	 * In this the product is clicked and the dash board slider is selected and
+	 * clicked on the total test cases and validated the time taken to run and
+	 * validate total test cases and list to display all the test cases
+	 */
 	@SuppressWarnings({ "static-access", "deprecation" })
 	@Test
 	public void totalTestCases() throws Exception {
@@ -53,7 +60,7 @@ public class TC27_TotalTestCases extends SampleTestSuiteBase{
 		report.info("Successfully clicked dashboard slider");
 	log.info("STEP#3: Clicking on total test cases");
 		page.clickOnElement(read.getPropertyvalue("loc.totaltestcases.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
-		report.info("Successfully clicked fail test cases");
+		report.info("Successfully clicked total test cases");
 	log.info("STEP#4: Validating the test cases text");	
 		validate.validateTestCases();
 		report.info("Successfully validated test cases");

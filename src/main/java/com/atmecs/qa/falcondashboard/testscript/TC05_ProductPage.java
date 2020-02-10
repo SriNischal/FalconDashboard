@@ -24,7 +24,7 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
 import com.atmecs.qa.falcondashboard.validationresults.ProductPageValidation;
-
+//In this class product page is tested
 public class TC05_ProductPage extends SampleTestSuiteBase {
 	LoadProperties load=new LoadProperties();
 	ReadLocators read = new ReadLocators();
@@ -32,7 +32,9 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 	LogReport log = new LogReport();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-
+	
+	//In this method the browser is invoked and url is opened
+	
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
 	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
@@ -44,6 +46,10 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 		browser.maximizeWindow();
 	}
 
+	/*
+	 * In this method the product name is validated and clicked on the product and
+	 * checking user landed on the product page and validate the list of products
+	 */
 	@SuppressWarnings({ "static-access", "deprecation" })
 	@Test
 	public void productPage() throws Exception {

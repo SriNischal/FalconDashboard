@@ -16,7 +16,7 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
 import com.atmecs.qa.falcondashboard.validationresults.DropdownValidation;
-
+//In this class the dropdowns are checked
 public class TC07_Dropdowns extends SampleTestSuiteBase {
 	LoadProperties load=new LoadProperties();
 	LogReport log=new LogReport();
@@ -26,6 +26,7 @@ public class TC07_Dropdowns extends SampleTestSuiteBase {
 	//Filters filters = readData.getFiltersData(browser).get(locator);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 
+	//In this method the browser is invoked and url is opened
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
 	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
@@ -37,6 +38,10 @@ public class TC07_Dropdowns extends SampleTestSuiteBase {
 		browser.maximizeWindow();
 	}
 
+	/*
+	 * In this method the value from the dropdowns are selected and validated the
+	 * values of the dropdowns
+	 */
 	@SuppressWarnings("static-access")
 	@Test
 	public void dropdown() throws Exception {

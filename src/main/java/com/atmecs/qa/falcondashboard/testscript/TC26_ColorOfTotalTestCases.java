@@ -18,7 +18,7 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.validationresults.TestCasesValidation;
-
+//In this class the color of the total test cases is displayed
 public class TC26_ColorOfTotalTestCases extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
@@ -27,6 +27,7 @@ public class TC26_ColorOfTotalTestCases extends SampleTestSuiteBase{
 
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 
+	//In this method the browser is invoked and the url is opened
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
 	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
@@ -37,6 +38,12 @@ public class TC26_ColorOfTotalTestCases extends SampleTestSuiteBase{
 		report.info("Maximizing browser window");
 		browser.maximizeWindow();
 	}
+	
+	/*
+	 * In this method the product is clicked and dashboard slider is selected and
+	 * displayed the color of the total test cases and validated the color of total
+	 * test cases
+	 */
 	@SuppressWarnings("static-access")
 	@Test
 	public void colorofTotalTestCases() throws Exception {

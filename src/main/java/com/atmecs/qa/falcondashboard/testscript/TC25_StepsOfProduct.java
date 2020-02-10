@@ -19,13 +19,15 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.validationresults.ProductStepsValidation;
-
+//In this class the steps of the product are displayed and validated 
 public class TC25_StepsOfProduct extends SampleTestSuiteBase{
 	LoadProperties load=new LoadProperties();
 	LogReport log=new LogReport();
 	ReadLocators read=new ReadLocators();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
+	
+	//In this method the browser is invoked and the url is opened
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
 	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
@@ -36,6 +38,12 @@ public class TC25_StepsOfProduct extends SampleTestSuiteBase{
 		report.info("Maximizing browser window");
 		browser.maximizeWindow();
 	}
+	
+	/*
+	 * In this method the product is clicked and selected the status option from the
+	 * drop down and created a list to display the test cases and clicked on the test
+	 * case and validated the data present under the steps option
+	 */
 	@SuppressWarnings({ "static-access", "deprecation" })
 	@Test
 	public void stepsOfProduct() throws Exception {
@@ -73,7 +81,7 @@ public class TC25_StepsOfProduct extends SampleTestSuiteBase{
 	log.info("STEP#8: Validating the test case option");
 		validate.validateTestCase();
 		report.info("Successfully validated the test case");
-	log.info("STEP#9: Validating the Request bpody text");
+	log.info("STEP#9: Validating the Request body text");
 		validate.validateRequestBody();
 		report.info("Successfully validated Request Body");
 		

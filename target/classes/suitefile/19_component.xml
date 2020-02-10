@@ -6,7 +6,7 @@
 
 	<test name="SampleTest">
 		<classes>
-			<class name="com.atmecs.qa.falcondashboard.testscript.TC19_ComponentOfProduct" />
+			<class name="com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent" />
 		</classes>
 	</test>
 

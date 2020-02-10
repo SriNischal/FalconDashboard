@@ -20,13 +20,15 @@ import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
-
+//In this class the delete option is validated
 public class TC22_DeleteOption extends SampleTestSuiteBase{
 	ReadLocators read=new ReadLocators();
 	LoadProperties load=new LoadProperties();
 	LogReport log=new LogReport();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
+	
+	//In this method the browser is invoked and the url is opened 
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
 	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
@@ -37,6 +39,12 @@ public class TC22_DeleteOption extends SampleTestSuiteBase{
 		report.info("Maximizing browser window");
 		browser.maximizeWindow();
 	}
+	
+	/*
+	 * In this method the recent runs option is clicked and mouse hovered over the
+	 * delete option and displayed the tool tip message and validated the tooltip
+	 * message
+	 */
 	@SuppressWarnings("static-access")
 	@Test
 	public void deleteOption() throws Exception {
@@ -47,7 +55,7 @@ public class TC22_DeleteOption extends SampleTestSuiteBase{
 		 browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	log.info("STEP#2: Mouse hovering over the delete option");	 
 		 page.mouseOver(read.getPropertyvalue("loc.deleteoption.btn",ProjectBaseConstantPaths.LOCATORS_FILE));
-		 report.info("Successfully mouse hovered over the deletet option");
+		 report.info("Successfully mouse hovered over the delete option");
 	log.info("STEP#3: Displaying the delete run message for the products");	
 	     String actualtooltipmessage=propReader.getValue("loc.delete.txt");
 	     String message=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();

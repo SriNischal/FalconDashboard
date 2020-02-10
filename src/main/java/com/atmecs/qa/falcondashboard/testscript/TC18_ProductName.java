@@ -20,7 +20,7 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.validationresults.RecentrunsValidation;
-
+//In this  class the product name is validated
 public class TC18_ProductName extends SampleTestSuiteBase {
 	LoadProperties load = new LoadProperties();
 	LogReport log=new LogReport();
@@ -28,6 +28,7 @@ public class TC18_ProductName extends SampleTestSuiteBase {
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 
+	//In this method the browser is invoked and url is opened
 	@SuppressWarnings("static-access")
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
@@ -38,6 +39,13 @@ public class TC18_ProductName extends SampleTestSuiteBase {
 		report.info("Maximizing browser window");
 		browser.maximizeWindow();
 	}
+
+	/*
+	 * In this method the recent runs option is clicked and the list is created to
+	 * display the product names and clicked on the product names to sort the values
+	 * and created another list to display the sorted names and compared both the
+	 * values to see that both the lists are different
+	 */	
 	@SuppressWarnings({ "static-access", "deprecation" })
 	@Test
 	public void productName() throws Exception {

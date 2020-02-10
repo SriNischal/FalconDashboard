@@ -21,7 +21,7 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.validationresults.DropdownValidation;
 import com.atmecs.qa.falcondashboard.validationresults.TestCasesValidation;
-
+//In this class the error message of the fail test case is displayed and validated 
 public class TC20_FailTestCase extends SampleTestSuiteBase {
 	LoadProperties load = new LoadProperties();
 	LogReport log = new LogReport();
@@ -29,6 +29,8 @@ public class TC20_FailTestCase extends SampleTestSuiteBase {
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 
+	/* In this method the browser is invoked 
+	 * and url is opened */
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
 	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
@@ -40,7 +42,12 @@ public class TC20_FailTestCase extends SampleTestSuiteBase {
 		browser.maximizeWindow();
 	}
 
-	@SuppressWarnings({ "static-access", "deprecation" })
+	/*
+	 * In this method the product is clicked and selected the fail test case and
+	 * validated the test case name and clicked on the test case name and clicked on
+	 * the error option and validated the error message
+	 */
+	@SuppressWarnings("static-access")
 	@Test
 	public void failTestCasesOfProduct() throws Exception {
 		Pageactions page = new Pageactions(browser);

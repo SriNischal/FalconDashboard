@@ -27,7 +27,7 @@
 		<suite-file
 			path="./src/main/resources/suitefile/11_download.xml" />	
 		<suite-file
-			path="./src/main/resources/suitefile/12_dateofexecution.xml" />	
+			path="./src/main/resources/suitefile/12_executiondate.xml" />	
 		<suite-file
 			path="./src/main/resources/suitefile/13_passtestcase.xml" />	
 		<suite-file
@@ -73,7 +73,11 @@
 		<suite-file
 			path="./src/main/resources/suitefile/34_views.xml" />	
 		<suite-file
-			path="./src/main/resources/suitefile/35_lastruns.xml" />									
+			path="./src/main/resources/suitefile/35_lastruns.xml" />
+		<suite-file
+			path="./src/main/resources/suitefile/36_starttime.xml" />	
+		<suite-file
+			path="./src/main/resources/suitefile/37_endtime.xml" />									
 	</suite-files>
 
 </suite>

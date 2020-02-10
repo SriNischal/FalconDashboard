@@ -23,7 +23,7 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
 import com.atmecs.qa.falcondashboard.validationresults.RecentrunsValidation;
-
+//In this class the recent runs is clicked and validated 
 public class TC17_RecentRuns extends SampleTestSuiteBase{
 	LoadProperties load=new LoadProperties();
 	ReadLocators read=new ReadLocators();
@@ -32,6 +32,7 @@ public class TC17_RecentRuns extends SampleTestSuiteBase{
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 
+	//In this method the browser is invoked and url is opened
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
 	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
@@ -42,7 +43,13 @@ public class TC17_RecentRuns extends SampleTestSuiteBase{
 		report.info("Maximizing browser window");
 		browser.maximizeWindow();
 	}
-	@SuppressWarnings({ "static-access", "deprecation" })
+
+	/*
+	 * In this method the recent runs option is clicked and validated whether the
+	 * user landed on to the recent runs page and validated the content present in
+	 * the recent runs page
+	 */
+	@SuppressWarnings( "static-access" )
 	@Test
 	public void recentrun() throws Exception {
 		RecentrunsValidation validate=new RecentrunsValidation(browser);

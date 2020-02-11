@@ -32,10 +32,8 @@ public class ProductPageValidation {
 	}
 	public void validateTestPhase() throws Exception {
 		Pageactions page = new Pageactions(browser);
-		//String locator = page.randomnumber("loc.product.btn");
 		ValidationHelper helper = new ValidationHelper(browser);
-		//String expectedData=page.getdata_fromExcel("TC04_Product Page", "Validation Text", "Test Phase");
-		String expectedData=page.getdatabycellvalue("Products", 6, 1);
+		String expectedData=page.getdata_fromExcel("TC04_Product Page", "Validation Text", "Test Phase");
 		helper.getdata(expectedData, "validate.testphase.txt");
 	}
 }

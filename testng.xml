@@ -77,7 +77,9 @@
 		<suite-file
 			path="./src/main/resources/suitefile/36_starttime.xml" />	
 		<suite-file
-			path="./src/main/resources/suitefile/37_endtime.xml" />									
+			path="./src/main/resources/suitefile/37_endtime.xml" />	
+		<suite-file
+			path="./src/main/resources/suitefile/38_maximizewindow.xml" />									
 	</suite-files>
 
 </suite>

@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.file.Path;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -27,9 +28,11 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.atmecs.falcon.automation.ui.selenium.Browser;
+import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 
 public class ReadDataFromExcel {
 	private Workbook workBook = null;
@@ -83,11 +86,18 @@ public class ReadDataFromExcel {
 			}
 			String rowI = findRow(sheet, string2);
 			int rowInd = Integer.parseInt(rowI);
+			System.out.println("rowNumber:"+rowInd);
 			return verifyCellData(rowInd, columnIndex);
 		} catch (Exception exception) {
 
 			return "row " + string2 + " or column " + columnIndex + " does not exist  in xlsx";
 		}
+	}
+	
+	public Filters getFiltersData(Browser browser) {
+		HashMap<String,String> map=new HashMap<String,String>();
+		map.put(fileExtensionName, path);
+		return null;
 	}
 
 	private String findRow(Sheet sheet, String string2) {
@@ -99,12 +109,12 @@ public class ReadDataFromExcel {
 					}
 		return sheet + " doesn't exist with given name " + string2;
 	}
-	 public String getCellData(String sheetName,int colNum,int locator)
+	 public String getCellData(String sheetName,int colNum,int rowNum)
 	    {
 	        try
 	        {
 	            sheet = workBook.getSheet(sheetName);
-	            row = sheet.getRow(locator);
+	            row = sheet.getRow(rowNum);
 	            cell = row.getCell(colNum);
 	            if(cell.getCellTypeEnum() == CellType.STRING)
 	                return cell.getStringCellValue();
@@ -126,7 +136,7 @@ public class ReadDataFromExcel {
 	        catch(Exception e)
 	        {
 	            e.printStackTrace();
-	            return "row "+locator+" or column "+colNum +" does not exist  in Excel";
+	            return "row "+rowNum+" or column "+colNum +" does not exist  in Excel";
 	        }
 	    }
 

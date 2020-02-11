@@ -2,6 +2,7 @@ package com.atmecs.qa.falcondashboard.testscript;
 
 import java.util.concurrent.TimeUnit;
 
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -17,14 +18,12 @@ import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
-import com.atmecs.qa.falcondashboard.utils.ReadingData;
 import com.atmecs.qa.falcondashboard.validationresults.MainNavigationValidation;
 import com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation;
 
 public class TC34_ViewPage extends SampleTestSuiteBase{
 	LoadProperties load=new LoadProperties();
 	ReadLocators read=new ReadLocators();
-	ReadingData data=new ReadingData();
 	LogReport log=new LogReport();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);

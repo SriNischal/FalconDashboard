@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 import com.atmecs.falcon.automation.ui.selenium.Browser;
+import com.atmecs.falcon.automation.util.enums.LocatorType;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 
 public class Pageactions  {
@@ -30,7 +31,6 @@ public class Pageactions  {
 		return read;
 	}
 	  public String getdata_fromExcel(String sheetname, String columnname, String rowname) {
-	 
 	  String datavalue = reader.getCellDataByColumnName(sheetname, columnname, rowname); 
 	  return datavalue;
 	  }

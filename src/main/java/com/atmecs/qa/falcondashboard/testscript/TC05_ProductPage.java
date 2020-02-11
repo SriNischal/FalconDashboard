@@ -21,6 +21,7 @@ import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
+import com.atmecs.qa.falcondashboard.utils.ReadDataFromExcel;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
 import com.atmecs.qa.falcondashboard.validationresults.ProductPageValidation;
@@ -96,11 +97,12 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 
 		// logic
 
+		
 		/*
 		 * String productName = "read from ui"; ReadDataFromExcel readData = new
 		 * ReadDataFromExcel(); Filters
 		 * filters=readData.getFiltersData(browser).get(productName);
-		 * filters.getCustomerName();
+		 * filters.getEnvironmentName();
 		 */
 
 	}

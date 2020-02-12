@@ -20,13 +20,6 @@ public class DashboardPageValidation {
 	public DashboardPageValidation(Browser browser) {
 		this.browser = browser;
 	}
-
-	public void validateDashboardtext() throws Exception {
-		Pageactions page = new Pageactions(browser);
-		ValidationHelper helper = new ValidationHelper(browser);
-		String expectedData = page.getdata_fromExcel("TC01_DasBoardPage", "Validation Text", "Dashboard Page");
-		helper.getdata(expectedData, "validate.dashboardpage.txt");
-	}
 	public void validatefalconlogo() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
@@ -42,22 +35,20 @@ public class DashboardPageValidation {
 		
 	}
 	public void validateListOfProducts() throws Exception {
-		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
-		String expectedData= page.getdata_fromExcel("TC01_DasBoardPage", "Validation Text", "Number of products");
+		String expectedData= readingdata.getData(3, 4, 2);
 		helper.getdata(expectedData, "validate.product.txt");
 		
 	}
 	public void validateDashboard() throws Exception {
-		String data=readingdata.getData(3, 1, 1);
-		System.out.println(data);
-	    helper.getdata(data, "loc.product.btn");	
+		ValidationHelper helper=new ValidationHelper(browser);
+		String data=readingdata.getData(3, 2, 2);
+	    helper.getdata(data, "validate.dashboardpage.txt");	
 	}
 	
 	public void validateRecentExecutionTime() throws Exception {
-		Pageactions page = new Pageactions(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
-		String expectedData= page.getdata_fromExcel("TC01_DasBoardPage", "Validation Text", "Recent Execution time");
+		String expectedData= readingdata.getData(3, 3, 2);
 		helper.getdata(expectedData, "loc.executiontime.txt");
 		
 	}

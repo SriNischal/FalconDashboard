@@ -48,7 +48,7 @@ public class TC23_Refresh extends SampleTestSuiteBase{
 		DashboardPageValidation validate=new DashboardPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: Dashboard Text validation");
-		validate.validateDashboardtext();
+		validate.validateDashboard();
 		report.info("Successfully validated dashboard text");
 	log.info("STEP#2: Clicking on the refresh option");
 		page.clickOnElement(read.getPropertyvalue("loc.refresh.btn", ProjectBaseConstantPaths.LOCATORS_FILE));

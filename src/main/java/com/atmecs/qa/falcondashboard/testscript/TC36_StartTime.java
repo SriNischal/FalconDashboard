@@ -17,7 +17,7 @@ import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
-
+//In this the start time of the product is dispalyed and validated 
 public class TC36_StartTime extends SampleTestSuiteBase {
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
@@ -38,6 +38,11 @@ public class TC36_StartTime extends SampleTestSuiteBase {
 		browser.maximizeWindow();
 	}
 
+	/*
+	 * In this method the product is clicked and dash board slider is selected and
+	 * displayed the start time text and splited the date and time of the product
+	 * and validated the start date of the product
+	 */
 	@SuppressWarnings("static-access")
 	@Test
 	public void startTime() throws Exception {

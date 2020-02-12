@@ -17,7 +17,7 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.validationresults.DashboardPageValidation;
-
+//In this class the expand option is clicked and validated 
 public class TC38_MaximizingWindow extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
@@ -37,7 +37,11 @@ public class TC38_MaximizingWindow extends SampleTestSuiteBase{
 		report.info("Maximizing browser window");
 		browser.maximizeWindow();
 	}
-	@SuppressWarnings("static-access")
+
+	/*
+	 * In this method the expand option is clicked and validated whether all the
+	 * content is displayed correctly by expanding option
+	 */	@SuppressWarnings("static-access")
 	@Test
 	public void maximizeWindow() throws Exception {
 		Pageactions page=new Pageactions(browser);
@@ -46,7 +50,7 @@ public class TC38_MaximizingWindow extends SampleTestSuiteBase{
 		page.clickOnElement(read.getPropertyvalue("loc.expand.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the expand button");
 	log.info("STEP#2: Dashboard Text validation");
-		validate.validateDashboardtext();
+		validate.validateDashboard();
 	log.info("STEP#3: Clicking on the refresh option");
 		page.clickOnElement(read.getPropertyvalue("loc.refresh.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("clicked on refresh option");

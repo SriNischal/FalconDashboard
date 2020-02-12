@@ -37,17 +37,13 @@ public class ReadExcelFile {
 			e.printStackTrace();
 		}
 	}
-
 	public String getData(int index, int rowNum, int cellNum) throws Exception {
         
 		sheet1 = workbook.getSheetAt(index);
 		String number = Integer.toString(rowNum);
 		System.out.println(number);
 		String data = sheet1.getRow(rowNum).getCell(cellNum).getStringCellValue();
-		String locatorvalue = ReadLocators.getPropertyvalue(data, ProjectBaseConstantPaths.LOCATORS_FILE);
-		System.out.println(locatorvalue + ".....xpath");
-		String Locator = locatorvalue.replace("*", number);
-		System.out.println(Locator);
+		System.out.println("data: "+data);
 		return data;
 	}
 	public   int totalRowsinSheet(int sheet) {
@@ -66,28 +62,17 @@ public class ReadExcelFile {
 		
 		ref.totalRowsinSheet(8);
 		System.out.println("total cols in rows "+ref.totalColsinSheet(0,8));
-         System.out.println("Data in row is"+ref.getData(3, 3, 1));
-         System.out.println("Data in row is"+ref.getData(3, 3, 2));
-         System.out.println("Data in row is"+ref.getData(3, 3, 3));
-         System.out.println("Data in row is"+ref.getData(3, 3, 4));
-         System.out.println("Data in row is"+ref.getData(3, 3, 5));
-         System.out.println("Data in row is"+ref.getData(3, 3, 6));
-         System.out.println("Data in row is"+ref.getData(3, 3, 7));
+         System.out.println("Data in row is"+ref.getData(3, 42, 1));
+         System.out.println("Data in row is"+ref.getData(3, 42, 2));
+         System.out.println("Data in row is"+ref.getData(3, 42, 3));
+         System.out.println("Data in row is"+ref.getData(3, 42, 4));
+         System.out.println("Data in row is"+ref.getData(3, 42, 5));
+         System.out.println("Data in row is"+ref.getData(3, 42, 6));
+         System.out.println("Data in row is"+ref.getData(3, 42, 7));
+         System.out.println("Data in row is"+ref.getData(3, 42, 8));
+         System.out.println("Data in row is"+ref.getData(3, 42, 9));
+         System.out.println("Data in row is"+ref.getData(3, 1, 1));
 		
-	}
-	
-	
-	
-	public String randomnumber(String locator) throws Exception {
-		int randomnumber = random.generateRandomNumber();
-		System.out.println(randomnumber);
-		String number = Integer.toString(randomnumber);
-		System.out.println(number);
-		String locatorvalue = ReadLocators.getPropertyvalue(locator, ProjectBaseConstantPaths.LOCATORS_FILE);
-		System.out.println(locatorvalue + ".....xpath");
-		String Locator = locatorvalue.replace("*", number);
-		System.out.println(Locator);
-		return Locator;
 	}
 
 }

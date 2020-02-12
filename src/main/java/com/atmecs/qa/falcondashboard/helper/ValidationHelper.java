@@ -24,7 +24,6 @@ public class ValidationHelper {
 		Pageactions page=new Pageactions(browser);
 		String actualproduct;
         actualproduct=page.getText(read.getPropertyvalue(validationMessage,ProjectBaseConstantPaths.LOCATORS_FILE));
-        System.out.println(actualproduct);
 		Assert.assertEquals(actualproduct, expectedString);
 		log.info("Successfully validated " + expectedString);
 		System.out.println(actualproduct);

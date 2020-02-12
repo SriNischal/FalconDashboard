@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SampleTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Feb 11 20:03:17 IST 2020</td>
+<td>Started on:</td><td>Wed Feb 12 19:18:16 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>15 seconds (15185 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15509 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,91 +76,23 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage.percentageOfProduct()'><b>percentageOfProduct</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage<br/>
-<a href="#Output-1269989777" onClick='toggleBox("Output-1269989777", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2113735657" onClick='toggleBox("Output-2113735657", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1269989777" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1269989777">
+<a href="#Output-2113735657" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2113735657">
 Successfully mouse hovered the pass%trend<br/>
 PASS : Successfully displayed the test cases message : ACTUAL : Pass % Trend 	EXPECTED :Pass % Trend<br/>
 Successfully mouse hovered over the pass percent<br/>
-Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77 (2)\Screenshots\percentageOfProduct_1_.png<br/>
+PASS : Successfully validated the color of the skip test cases box : ACTUAL : rgba(76, 175, 80, 1) 	EXPECTED :rgba(76, 175, 80, 1)<br/>
+Successfully validated the color of the skip test cases box<br/>
+Successfully mouse hovered over the fail percent and displayed the value<br/>
+PASS : Successfully validated the color of the skip test cases box : ACTUAL : rgba(244, 67, 54, 1) 	EXPECTED :rgba(244, 67, 54, 1)<br/>
+Successfully validated the color of the skip test cases box<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.130)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ATMECSINLT-060&apos;, ip: &apos;55.55.52.253&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SRINIS~1.THI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51772}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6be153d90180c7654ab984c6a8e628f5
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
-	at com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage.percentageOfProduct(TC04_ProductPercentage.java:70)
-	at com.atmecs.qa.falcondashboard.runner.TestNGRunner.main(TestNGRunner.java:59)
-	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:294)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1269989777", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1269989777'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=79.0.3945.130)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ATMECSINLT-060&apos;, ip: &apos;55.55.52.253&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SRINIS~1.THI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51772}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6be153d90180c7654ab984c6a8e628f5
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
-	at com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage.percentageOfProduct(TC04_ProductPercentage.java:70)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at com.atmecs.qa.falcondashboard.runner.TestNGRunner.main(TestNGRunner.java:59)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:294)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-</pre></div></td>
+<td></td>
 <td>2</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage@49d07636</td></tr>
+<td>com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage@559ec2b4</td></tr>
 </table><p>
 </body>
 </html>

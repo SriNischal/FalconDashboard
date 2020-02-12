@@ -17,7 +17,7 @@ import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
-
+//In this class the end time of the product is displayed and validated 
 public class TC37_EndTime extends SampleTestSuiteBase {
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
@@ -38,7 +38,11 @@ public class TC37_EndTime extends SampleTestSuiteBase {
 		browser.maximizeWindow();
 	}
 
-	@SuppressWarnings("static-access")
+	/*
+	 * In this the product is clicked and selected the dash board slider and
+	 * validated the end time text and splitted the time and date of the product and
+	 * validated the end time of the product
+	 */	@SuppressWarnings("static-access")
 	@Test
 	public void startTime() throws Exception {
 		Pageactions page = new Pageactions(browser);

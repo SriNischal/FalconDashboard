@@ -19,7 +19,7 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation;
-
+//In this class the content of the skip test cases is displayed and validated
 public class TC33_SkippedTestCases extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
@@ -27,7 +27,7 @@ public class TC33_SkippedTestCases extends SampleTestSuiteBase{
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
-
+//In this method the browser os invoked and the url is opened
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
 	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
@@ -38,6 +38,12 @@ public class TC33_SkippedTestCases extends SampleTestSuiteBase{
 		report.info("Maximizing browser window");
 		browser.maximizeWindow();
 	}
+
+	/*
+	 * In this method the product is clicked and dash board slider is selected and
+	 * clicked on the skip test cases and validated the skip message and displayed
+	 * the skipped test cases
+	 */
 	@SuppressWarnings({ "static-access", "deprecation" })
 	@Test
 	public void skippedTestCases() throws Exception {

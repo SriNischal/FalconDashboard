@@ -20,14 +20,14 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.validationresults.MainNavigationValidation;
 import com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation;
-
+//In this class the view page is clicked and validated 
 public class TC34_ViewPage extends SampleTestSuiteBase{
 	LoadProperties load=new LoadProperties();
 	ReadLocators read=new ReadLocators();
 	LogReport log=new LogReport();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-
+//In this the method the browser is invoked and url is opened
 	@BeforeTest
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
 	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
@@ -38,6 +38,12 @@ public class TC34_ViewPage extends SampleTestSuiteBase{
 		report.info("Maximizing browser window");
 		browser.maximizeWindow();
 	}
+
+	/*
+	 * In this the views is clicked and validated the user landed on the page and
+	 * validated the panel title and clicked on the dpwnload and the dashboard
+	 * slider option
+	 */
 	@SuppressWarnings("static-access")
 	@Test
 	public void viewPage() throws Exception {

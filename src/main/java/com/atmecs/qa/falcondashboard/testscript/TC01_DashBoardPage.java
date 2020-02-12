@@ -66,7 +66,7 @@ public class TC01_DashBoardPage extends SampleTestSuiteBase {
 		report.info("successfully validated page title");
 		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		log.info("STEP#2: Dashboard Text validation");
-		validate.validateDashboardtext();
+		validate.validateDashboard();
 		log.info("STEP#3: Clicking on the refresh option");
 		page.clickOnElement(read.getPropertyvalue("loc.refresh.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("clicked on refresh option");

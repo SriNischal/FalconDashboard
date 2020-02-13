@@ -29,19 +29,6 @@ public class TC16_MainNavigation extends SampleTestSuiteBase{
 	LogReport log=new LogReport();
 	ReadingData data=new ReadingData();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-
-	//In this method the browser is invoked and url is opened
-	@BeforeTest
-	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
-	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
-		report.info("Opening browser: " + br);
-		@SuppressWarnings("static-access")
-		String url=load.readConfigfile("Dashboard_URL", ProjectBaseConstantPaths.CONFIG_FILE);
-		browser.openURL(url, os, osVersion, br, browserVersion);
-		report.info("Maximizing browser window");
-		browser.maximizeWindow();
-	}
-	
 	//In this method the main navigation option is clicked and validated the contents present in the main navigation 
 	
 	@SuppressWarnings("static-access")
@@ -63,7 +50,7 @@ public class TC16_MainNavigation extends SampleTestSuiteBase{
 	    page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	    browser.getWait().safeWait(2000);
 	log.info("STEP#5: Validating the recent runs text");	
-		validate.validateRecentruns();
+		validate.validateRecentRunsText();
 		report.info("Successfully validated recentruns");
 	log.info("STEP#6: Validating the recent runs panel title");	
 		validate.validateRecentRunsPanelTitle();

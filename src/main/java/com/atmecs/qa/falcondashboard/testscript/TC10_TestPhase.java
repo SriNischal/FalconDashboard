@@ -22,17 +22,6 @@ public class TC10_TestPhase extends SampleTestSuiteBase{
 	ReadLocators read = new ReadLocators();
 	LoadProperties load=new LoadProperties();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-	//In this method the browser is invoked and url is opened
-	@BeforeTest
-	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
-	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
-		report.info("Opening browser: " + br);
-		@SuppressWarnings("static-access")
-		String url=load.readConfigfile("Dashboard_URL", ProjectBaseConstantPaths.CONFIG_FILE);
-		browser.openURL(url, os, osVersion, br, browserVersion);
-		report.info("Maximizing browser window");
-		browser.maximizeWindow();
-	}
 	//In this method the validation of the test phase is done by clicking on the dashboard slidder
 	@SuppressWarnings("static-access")
 	@Test

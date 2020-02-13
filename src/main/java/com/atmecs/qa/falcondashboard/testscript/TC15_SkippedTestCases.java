@@ -26,19 +26,6 @@ public class TC15_SkippedTestCases extends SampleTestSuiteBase{
 	LoadProperties load=new LoadProperties();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
-	
-	//In this method the browser is invoked and url is opened
-	@BeforeTest
-	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
-	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
-		report.info("Opening browser: " + br);
-		@SuppressWarnings("static-access")
-		String url=load.readConfigfile("Dashboard_URL", ProjectBaseConstantPaths.CONFIG_FILE);
-		browser.openURL(url, os, osVersion, br, browserVersion);
-		report.info("Maximizing browser window");
-		browser.maximizeWindow();
-	}
-	
 	/*
 	 * In this method the product is clicked and the skip option from the status
 	 * drop down is selected and created a list to display the skip test cases of a
@@ -59,7 +46,7 @@ public class TC15_SkippedTestCases extends SampleTestSuiteBase{
 	log.info("STEP#3: Validating the status option");	
 		 validate.validateSkipStatus();
 		report.info("Successfully validated skip status");
-		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		browser.getWait().safeWait(2000);
 	log.info("STEP#4: Creating a list to display the skipped test cases");
 	    String testcases=propReader.getValue("loc.numberoftestcases.txt");;
 		List<WebElement> skiplist = browser.getFindFromBrowser().findElementsByXpath(testcases);

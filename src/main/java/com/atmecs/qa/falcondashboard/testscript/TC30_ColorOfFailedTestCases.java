@@ -24,19 +24,6 @@ public class TC30_ColorOfFailedTestCases extends SampleTestSuiteBase{
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
-
-	//In this method the browser is invoked and url is opened
-	@BeforeTest
-	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
-	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
-		report.info("Opening browser: " + br);
-		@SuppressWarnings("static-access")
-		String url = load.readConfigfile("Dashboard_URL", ProjectBaseConstantPaths.CONFIG_FILE);
-		browser.openURL(url, os, osVersion, br, browserVersion);
-		report.info("Maximizing browser window");
-		browser.maximizeWindow();
-	}
-	
 	/*
 	 * In this method the product is clicked and the dash board slider is selected and
 	 * displayed the color of the failed test cases and validated the color of the
@@ -59,7 +46,11 @@ public class TC30_ColorOfFailedTestCases extends SampleTestSuiteBase{
 	    String actualcolor=browser.getFindFromBrowser().findElementByXpath(color).getCssValue("background-color");
 	    System.out.println("Color:"+actualcolor);
 	log.info("STEP#4: Veifying the color of the total test case box"); 
-	    String expectedcolor= page.getdata_fromExcel("TC10_TestCases", "Validation Text", "Color of fail test cases");
+	    String pagetitle = page.getText(read.getPropertyvalue("loc.recentrunspagetitle.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
+	    String[] arrOfStr = pagetitle.split(":", 3);
+	    String productname=arrOfStr[0].trim();
+	    System.out.println(productname);
+	    String expectedcolor= page.getdata_fromExcel(productname, "Validation Text", "Color of fail test cases");
 	    Verify.verifyString(actualcolor, expectedcolor, "Successfully validated the color of the fail test cases box");
 	    System.out.println(expectedcolor);
 	    report.info("Successfully validated the color of the fail test cases box");

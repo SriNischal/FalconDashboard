@@ -37,20 +37,6 @@ public class TC03_TestCases extends SampleTestSuiteBase {
 	String adminUsername = null;
 	String adminPassword = null;
 	int row = 0;
-	
-	//In this method the browser is invoked and url is opened
-	
-	@BeforeTest
-	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
-	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
-		report.info("Opening browser: " + br);
-		@SuppressWarnings("static-access")
-		String url = load.readConfigfile("Dashboard_URL", ProjectBaseConstantPaths.CONFIG_FILE);
-		browser.openURL(url, os, osVersion, br, browserVersion);
-		report.info("Maximizing browser window");
-		browser.maximizeWindow();
-	}
-
 	/*
 	 * In this method we create list to display the test cases and validate the test
 	 * cases and validate the tool tip message by mouse hovering over the test cases

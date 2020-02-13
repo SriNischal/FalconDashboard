@@ -33,20 +33,6 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 	LogReport log = new LogReport();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-	
-	//In this method the browser is invoked and url is opened
-	
-	@BeforeTest
-	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
-	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
-		report.info("Opening browser: " + br);
-		@SuppressWarnings("static-access")
-		String url=load.readConfigfile("Dashboard_URL", ProjectBaseConstantPaths.CONFIG_FILE);
-		browser.openURL(url, os, osVersion, br, browserVersion);
-		report.info("Maximizing browser window");
-		browser.maximizeWindow();
-	}
-
 	/*
 	 * In this method the product name is validated and clicked on the product and
 	 * checking user landed on the product page and validate the list of products
@@ -56,13 +42,15 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 	public void productPage() throws Exception {
 		Pageactions page = new Pageactions(browser);
 		ProductPageValidation validate = new ProductPageValidation(browser);
-	log.info("STEP#1: Validating the product name");
+	log.info("STEP#1: Validating and displaying the product name");
 		validate.validateProduct();
+		String product=page.getText(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		 System.out.println("productname: "+product);
 		report.info("Successfully validated product");
 	log.info("STEP#2: Clicking on the product");	
         page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
-		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		browser.getWait().safeWait(2000);
 	log.info("STEP#3: Validating the product page panel title");
 		validate.validatePanelTitle();
 		report.info("Successfully validated panel title");
@@ -84,7 +72,7 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 		sb.append(texts.get(index));
    log.info("STEP#6: Verifying the list of products");
 		String result = sb.toString();
-		String expedctedproducts=page.getdata_fromExcel("TC04_Product Page", "Validation Text", "Test Cases");
+		String expedctedproducts=page.getdata_fromExcel(product, "Validation Text", "List of Test Cases");
 		Verify.verifyString(result, expedctedproducts, "Successfully validaetd the test cases");
 		report.info("Successfully valdated all the test cases");
 		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

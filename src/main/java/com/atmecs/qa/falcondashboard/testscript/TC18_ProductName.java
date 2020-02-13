@@ -27,19 +27,6 @@ public class TC18_ProductName extends SampleTestSuiteBase {
 	ReadLocators read=new ReadLocators();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-
-	//In this method the browser is invoked and url is opened
-	@SuppressWarnings("static-access")
-	@BeforeTest
-	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
-	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
-		report.info("Opening browser: " + br);
-		String url = load.readConfigfile("Dashboard_URL", ProjectBaseConstantPaths.CONFIG_FILE);
-		browser.openURL(url, os, osVersion, br, browserVersion);
-		report.info("Maximizing browser window");
-		browser.maximizeWindow();
-	}
-
 	/*
 	 * In this method the recent runs option is clicked and the list is created to
 	 * display the product names and clicked on the product names to sort the values

@@ -28,20 +28,6 @@ public class TC20_FailTestCase extends SampleTestSuiteBase {
 	ReadLocators read = new ReadLocators();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-
-	/* In this method the browser is invoked 
-	 * and url is opened */
-	@BeforeTest
-	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
-	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
-		report.info("Opening browser: " + br);
-		@SuppressWarnings("static-access")
-		String url = load.readConfigfile("Dashboard_URL", ProjectBaseConstantPaths.CONFIG_FILE);
-		browser.openURL(url, os, osVersion, br, browserVersion);
-		report.info("Maximizing browser window");
-		browser.maximizeWindow();
-	}
-
 	/*
 	 * In this method the product is clicked and selected the fail test case and
 	 * validated the test case name and clicked on the test case name and clicked on

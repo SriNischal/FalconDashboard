@@ -31,19 +31,6 @@ public class TC17_RecentRuns extends SampleTestSuiteBase{
 	ReadingData data=new ReadingData();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-
-	//In this method the browser is invoked and url is opened
-	@BeforeTest
-	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
-	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
-		report.info("Opening browser: " + br);
-		@SuppressWarnings("static-access")
-		String url=load.readConfigfile("Dashboard_URL", ProjectBaseConstantPaths.CONFIG_FILE);
-		browser.openURL(url, os, osVersion, br, browserVersion);
-		report.info("Maximizing browser window");
-		browser.maximizeWindow();
-	}
-
 	/*
 	 * In this method the recent runs option is clicked and validated whether the
 	 * user landed on to the recent runs page and validated the content present in

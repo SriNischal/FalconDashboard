@@ -10,7 +10,6 @@
       <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot">
         <methods>
           <include name="productSnapShot"/>
-          <include name="setup"/>
           <include name="preSetup"/>
           <include name="teardown"/>
         </methods>

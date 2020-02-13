@@ -30,8 +30,8 @@ public class Pageactions  {
 		}
 		return read;
 	}
-	  public String getdata_fromExcel(String sheetname, String columnname, String rowname) {
-	  String datavalue = reader.getCellDataByColumnName(sheetname, columnname, rowname); 
+	  public String getdata_fromExcel(String sheetname,String columnname, String rowname) {
+	  String datavalue = reader.getCellDataByColumnName(sheetname,columnname, rowname); 
 	  return datavalue;
 	  }
 	 public String getdatabycellvalue(String sheetName,int colNum,int i) {

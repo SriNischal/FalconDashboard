@@ -35,18 +35,6 @@ public class TC01_DashBoardPage extends SampleTestSuiteBase {
 	String adminPassword = null;
 	int row = 0;
 
-	// In this method the browser is invoked and url is opened
-	@BeforeTest
-	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
-	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
-		report.info("Opening browser: " + br);
-		@SuppressWarnings("static-access")
-		String url = load.readConfigfile("Dashboard_URL", ProjectBaseConstantPaths.CONFIG_FILE);
-		browser.openURL(url, os, osVersion, br, browserVersion);
-		report.info("Maximizing browser window");
-		browser.maximizeWindow();
-	}
-
 	@SuppressWarnings("static-access")
 	@Test
 	/*
@@ -57,23 +45,23 @@ public class TC01_DashBoardPage extends SampleTestSuiteBase {
 	public void dashboardPage() throws Exception {
 
 		Pageactions page = new Pageactions(browser);
-		DashboardPageValidation validate = new DashboardPageValidation(browser);
-
-		log.info("STEP#1: Page title validation");
+		DashboardPageValidation validate = new DashboardPageValidation(browser);	
+	log.info("STEP#1: Page title validation");
 		String actualtitle = browser.getCurrentPageTitle();
 		String expectedtitle = data.getdata_fromExcel("TC01_DasBoardPage", "Validation Text", "Page URL");
 		Verify.verifyString(actualtitle, expectedtitle, "Verifying String Message ");
-		report.info("successfully validated page title");
+		report.info("successfully validated page title"); 
 		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		log.info("STEP#2: Dashboard Text validation");
+	log.info("STEP#2: Dashboard Text validation");
 		validate.validateDashboard();
-		log.info("STEP#3: Clicking on the refresh option");
+	log.info("STEP#3: Clicking on the refresh option");
 		page.clickOnElement(read.getPropertyvalue("loc.refresh.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("clicked on refresh option");
 		report.info("Successfully validated dashboard text");
-		log.info("STEP#4: Atmecs Text validation");
+	log.info("STEP#4: Atmecs Text validation");
 		validate.validatefalconlogo();
 		report.info("Successfully validated falcon");
+		 
 
 	}
 

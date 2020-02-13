@@ -36,19 +36,6 @@ public class TC12_ExecutionDate extends SampleTestSuiteBase{
 	String adminUsername = null;
 	String adminPassword = null; 
 	int row = 0;
-	
-	//In this method the browser is invoked and url is opened
-	@BeforeTest
-	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
-	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
-		report.info("Opening browser: " + br);
-		@SuppressWarnings("static-access")
-		String url=load.readConfigfile("Dashboard_URL", ProjectBaseConstantPaths.CONFIG_FILE);
-		browser.openURL(url, os, osVersion, br, browserVersion);
-		report.info("Maximizing browser window");
-		browser.maximizeWindow();
-	}
-
 	/*
 	 * In this method splitting of the product is clicked and the date and time of
 	 * the product are splpitted and the date of the product is displayed
@@ -71,7 +58,9 @@ public class TC12_ExecutionDate extends SampleTestSuiteBase{
 		 String result=s1[1] + s1[2] + s1[3];
 		 System.out.println(result);
 	log.info("STEP#3: Validating the date of the product");	 
-		 String expected=page.getdata_fromExcel("TC04_Product Page", "Validation Text", "Date");
+	     String productname=arrOfStr[0].trim();
+	     System.out.println(productname);
+		 String expected=page.getdata_fromExcel(productname, "Validation Text", "Date");
 		 Verify.verifyString(result, expected, "Successfully validated the date");
 		 report.info("Successfully validated the date");
 	}

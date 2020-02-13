@@ -29,20 +29,6 @@ public class TC04_ProductPercentage extends SampleTestSuiteBase {
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	WebDriver driver = null;
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-	
-	//In this method the browser is invoked and url is opened
-	
-	@BeforeTest
-	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
-	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
-		report.info("Opening browser: " + br);
-		@SuppressWarnings("static-access")
-		String url=load.readConfigfile("Dashboard_URL", ProjectBaseConstantPaths.CONFIG_FILE);
-		browser.openURL(url, os, osVersion, br, browserVersion);
-		report.info("Maximizing browser window");
-		browser.maximizeWindow();
-	}
-
 	/*
 	 * In this method a list is created to display the tooltip message by mouse
 	 * hovering and validate the message and display the color of the pass
@@ -57,10 +43,11 @@ public class TC04_ProductPercentage extends SampleTestSuiteBase {
 	     report.info("Successfully mouse hovered the pass%trend");
 	     browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	log.info("STEP#2: Displaying the pass%trend message for the products");	
+	     String product=page.getText(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		 System.out.println("productname: "+product);
 	     String actualtooltipmessage=propReader.getValue("loc.pass%trendmessage.txt");
 	     String message=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();
-	     System.out.println(message);
-	     String expectedtooltipmessage=page.getdata_fromExcel("TC01_DasBoardPage", "Validation Text", "Pass%Trend");
+	     String expectedtooltipmessage=page.getdata_fromExcel(product, "Validation Text", "Pass%Trend");
 	     Verify.verifyString(message, expectedtooltipmessage, "Successfully displayed the test cases message");
 	     System.out.println(expectedtooltipmessage);
 	log.info("STEP#3: Mouse hovering the pass percent of the product and diplayed the value");
@@ -74,22 +61,23 @@ public class TC04_ProductPercentage extends SampleTestSuiteBase {
 		 String actualcolor=browser.getFindFromBrowser().findElementByXpath(color).getCssValue("background-color");
 		 System.out.println("Color:"+actualcolor);
 	log.info("STEP#5: Veifying the color of the pass percentage"); 
-		 String expectedcolor= page.getdata_fromExcel("TC10_TestCases", "Validation Text", "Pass percent color");
+		 String expectedcolor= page.getdata_fromExcel(product, "Validation Text", "Pass percent color");
 		 Verify.verifyString(actualcolor, expectedcolor, "Successfully validated the color of the skip test cases box");
 		 System.out.println(expectedcolor);
 		 report.info("Successfully validated the color of the skip test cases box");  
+		 browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	log.info("STEP#6: Mouse hovering the fail percent of the product");
 	     page.mouseOver(read.getPropertyvalue("loc.failpercent.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	     report.info("Successfully mouse hovered over the fail percent and displayed the value");
 	     String actualfailpercentmessage=propReader.getValue("loc.failpercent.txt");
 	     String failpercentmessage=browser.getFindFromBrowser().findElementByXpath(actualfailpercentmessage).getText();
 	     System.out.println(failpercentmessage);
-    log.info("STEP#4: Displaying the color of the pass pecrntage");
+    log.info("STEP#7: Displaying the color of the fail pecrntage");
 	     String failcolor=propReader.getValue("loc.failpercentcolor.txt");
 	     String actualfailcolor=browser.getFindFromBrowser().findElementByXpath(failcolor).getCssValue("background-color");
 	     System.out.println("Color:"+actualfailcolor);
-    log.info("STEP#5: Veifying the color of the pass percentage"); 
-	     String expectedfailcolor= page.getdata_fromExcel("TC10_TestCases", "Validation Text", "Fail percent color");
+    log.info("STEP#8: Veifying the color of the pass percentage"); 
+	     String expectedfailcolor= page.getdata_fromExcel(product, "Validation Text", "Fail percent color");
 	     Verify.verifyString(actualfailcolor, expectedfailcolor, "Successfully validated the color of the skip test cases box");
 	     System.out.println(expectedfailcolor);
 	     report.info("Successfully validated the color of the skip test cases box"); 

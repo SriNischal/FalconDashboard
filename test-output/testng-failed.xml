@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [FalconDemo-Sample-WIN_10_chrome_77 (23)]">
+<suite name="Failed suite [FalconDemo-Sample-WIN_10_chrome_77]">
   <parameter name="os" value="WIN"/>
   <parameter name="osVersion" value="10"/>
   <parameter name="browser" value="chrome"/>
   <parameter name="browserVersion" value="77"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage">
         <methods>
-          <include name="stepsOfProduct"/>
-          <include name="setup"/>
+          <include name="dashboardPage"/>
           <include name="preSetup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage -->
     </classes>
   </test> <!-- SampleTest(failed) -->
-</suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_chrome_77 (23)] -->
+</suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_chrome_77] -->

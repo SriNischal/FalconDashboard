@@ -25,19 +25,6 @@ public class TC37_EndTime extends SampleTestSuiteBase {
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
-
-	// In this method the browser is invoked and url is opened
-	@BeforeTest
-	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
-	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
-		report.info("Opening browser: " + br);
-		@SuppressWarnings("static-access")
-		String url = load.readConfigfile("Dashboard_URL", ProjectBaseConstantPaths.CONFIG_FILE);
-		browser.openURL(url, os, osVersion, br, browserVersion);
-		report.info("Maximizing browser window");
-		browser.maximizeWindow();
-	}
-
 	/*
 	 * In this the product is clicked and selected the dash board slider and
 	 * validated the end time text and splitted the time and date of the product and
@@ -59,7 +46,11 @@ public class TC37_EndTime extends SampleTestSuiteBase {
 	    report.info(time);
 	    report.info("Successfully displayed the end time text");
 	log.info("STEP#4: Validating the start time text");
-	    String expectedendtext=page.getdata_fromExcel("TC04_Product Page", "Validation Text", "End Text");
+	    String pagetitle = page.getText(read.getPropertyvalue("loc.recentrunspagetitle.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
+	    String[] arrOfStr = pagetitle.split(":", 3);
+	    String productname=arrOfStr[0].trim();
+	    System.out.println(productname);
+	    String expectedendtext=page.getdata_fromExcel(productname, "Validation Text", "End Text");
 	    Verify.verifyString(expectedendtext, time, "Successfully validated the text");
 	    report.info("Successfully validated the text");
 	log.info("STEP#5: Splitting the array and displaying the day and  date of the product");
@@ -71,7 +62,7 @@ public class TC37_EndTime extends SampleTestSuiteBase {
 		 String result=s1[0] + s1[1] + s1[2];
 		 report.info(result);
 	log.info("STEP#6: Validating the date of execution of the product");
-	     String expected=page.getdata_fromExcel("TC04_Product Page", "Validation Text", "Date");
+	     String expected=page.getdata_fromExcel(productname, "Validation Text", "Date");
 	     Verify.verifyString(result, expected, "Successfully validated the date");
 	     report.info("Successfully validated the date");
 	}

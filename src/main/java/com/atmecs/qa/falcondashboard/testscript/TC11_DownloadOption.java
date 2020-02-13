@@ -24,17 +24,6 @@ public class TC11_DownloadOption extends SampleTestSuiteBase{
 	LoadProperties load=new LoadProperties();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
-	//In this method the browser is invoked and url is opened
-	@BeforeTest
-	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
-	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
-		report.info("Opening browser: " + br);
-		@SuppressWarnings("static-access")
-		String url=load.readConfigfile("Dashboard_URL", ProjectBaseConstantPaths.CONFIG_FILE);
-		browser.openURL(url, os, osVersion, br, browserVersion);
-		report.info("Maximizing browser window");
-		browser.maximizeWindow();
-	}
 	//In this method the download message is validated by mouse hovering and the checked if download option is clicked
 	@SuppressWarnings("static-access")
 	@Test
@@ -51,7 +40,11 @@ public class TC11_DownloadOption extends SampleTestSuiteBase{
 	    String actualtooltipmessage=propReader.getValue("loc.downloadmessage.txt");
 	    String message=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();
 	    System.out.println(message);
-	    String expectedtooltipmessage=page.getdata_fromExcel("TC05_Dropdowns", "Validation Text", "Dowload Message");
+	    String pagetitle = page.getText(read.getPropertyvalue("loc.recentrunspagetitle.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
+		String[] arrOfStr = pagetitle.split(":", 3);
+		String productname=arrOfStr[0].trim();
+		System.out.println(productname);
+	    String expectedtooltipmessage=page.getdata_fromExcel(productname, "Validation Text", "Dowload Message");
 	    Verify.verifyString(message, expectedtooltipmessage, "Successfully displayed the test cases message");
 	    System.out.println(expectedtooltipmessage);
 	    report.info("Sucessfully validated the tooltip message");

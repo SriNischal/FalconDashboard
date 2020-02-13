@@ -1,5 +1,7 @@
 package com.atmecs.qa.falcondashboard.helper;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import com.atmecs.falcon.automation.ui.selenium.Browser;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
@@ -28,5 +30,13 @@ public class ValidationHelper {
 		log.info("Successfully validated " + expectedString);
 		System.out.println(actualproduct);
 		System.out.println(expectedString);
+	}
+	
+	@SuppressWarnings("static-access")
+	public String getData() throws Exception {
+		Pageactions page = new Pageactions(browser);
+		String product=page.getText(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		System.out.println("productname: "+product);
+		return product;
 	}
 }

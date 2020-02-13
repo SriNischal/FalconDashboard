@@ -38,19 +38,6 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 	String adminUsername = null;
 	String adminPassword = null;
 	int row = 0;
-
-	//In this method the browser is invoked and url is opened
-	@BeforeTest
-	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
-	public void setup(String os, String osVersion, String br, String browserVersion) throws Exception {
-		report.info("Opening browser: " + br);
-		@SuppressWarnings("static-access")
-		String url=load.readConfigfile("Dashboard_URL", ProjectBaseConstantPaths.CONFIG_FILE);
-		browser.openURL(url, os, osVersion, br, browserVersion);
-		report.info("Maximizing browser window");
-		browser.maximizeWindow();
-	}
-	
 	/*
 	 * In this we generate a list to see whether all the products are persent
 	 * according to the recent execution times and click on the project
@@ -96,15 +83,15 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
         page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
 		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-	log.info("STEP#7: Clicking on each every product "); 
+	/*log.info("STEP#7: Clicking on each every product "); 
 		for (int x = 0; x < index; x++) {
-			WebElement client = list.get(x); // client.click();
+			WebElement client = list.get(x); 
+			 client.click();
 			page.clickOnElement(read.getPropertyvalue("loc.product.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
 			report.info("Successfully clicked on product");
 			browser.getWait().safeWait(3000);
 			page.clickOnElement(read.getPropertyvalue("loc.dashboard.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-			browser.getWait().safeWait(2000);
-		}
+			browser.getWait().safeWait(2000);*/
 		 
 	}
 }

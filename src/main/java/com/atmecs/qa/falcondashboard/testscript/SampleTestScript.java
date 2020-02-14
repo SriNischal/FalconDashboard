@@ -1,6 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Parameters;
+
 import org.testng.annotations.Test;
 
 import com.atmecs.falcon.automation.ui.selenium.Verify;
@@ -8,7 +9,6 @@ import com.atmecs.falcon.automation.ui.seleniuminterfaces.IKeys.KeyType;
 import com.atmecs.falcon.automation.util.enums.LocatorType;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
-import com.atmecs.falcon.automation.verifyresult.VerificationManager;
 import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
 
 public class SampleTestScript extends SampleTestSuiteBase{

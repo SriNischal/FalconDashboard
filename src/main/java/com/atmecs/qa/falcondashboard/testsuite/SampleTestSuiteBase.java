@@ -3,12 +3,9 @@
  */
 package com.atmecs.qa.falcondashboard.testsuite;
 
-import java.io.IOException;
-
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
-
 import com.atmecs.falcon.automation.ui.selenium.Browser;
 import com.atmecs.falcon.automation.util.logging.LogLevel;
 import com.atmecs.falcon.automation.util.logging.LogManager;
@@ -18,7 +15,6 @@ import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 import com.atmecs.qa.falcondashboard.testscript.SampleTestScript;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
-import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 
 public class SampleTestSuiteBase {
 	

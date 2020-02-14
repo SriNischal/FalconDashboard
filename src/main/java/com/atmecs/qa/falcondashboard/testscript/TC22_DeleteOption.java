@@ -1,15 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
-import com.atmecs.falcon.automation.ui.selenium.Browser;
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -46,9 +38,7 @@ public class TC22_DeleteOption extends SampleTestSuiteBase{
 	log.info("STEP#3: Displaying the delete run message for the products");	
 	     String actualtooltipmessage=propReader.getValue("loc.delete.txt");
 	     String message=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();
-	     System.out.println(message);
 	     String expectedtooltipmessage=page.getdata_fromExcel("TC01_DasBoardPage", "Validation Text", "Delete option");
 	     Verify.verifyString(message, expectedtooltipmessage, "Successfully displayed the test cases message");
-	     System.out.println(expectedtooltipmessage);
 	}
 }

@@ -7,14 +7,13 @@
   <parameter name="browserVersion" value="77"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC37_EndTime">
         <methods>
-          <include name="productSnapShot"/>
-          <include name="setup"/>
+          <include name="startTime"/>
           <include name="preSetup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC37_EndTime -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_chrome_77 (0)] -->

@@ -1,11 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import java.util.concurrent.TimeUnit;
-
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.enums.LocatorType;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
@@ -17,6 +13,7 @@ import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
+import com.atmecs.qa.falcondashboard.utils.Splitting;
 //In this the start time of the product is dispalyed and validated 
 public class TC36_StartTime extends SampleTestSuiteBase {
 	LoadProperties load = new LoadProperties();
@@ -33,6 +30,7 @@ public class TC36_StartTime extends SampleTestSuiteBase {
 	@SuppressWarnings("static-access")
 	@Test
 	public void startTime() throws Exception {
+		Splitting split=new Splitting(browser);
 		Pageactions page = new Pageactions(browser);
 	log.info("STEP#1: Clicking on the product");
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
@@ -47,10 +45,7 @@ public class TC36_StartTime extends SampleTestSuiteBase {
 	    report.info(time);
 	    report.info("Successfully displayed the start time text");
 	log.info("STEP#4: Validating the start time text");
-	    String pagetitle = page.getText(read.getPropertyvalue("loc.recentrunspagetitle.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
-	    String[] arrOfStr = pagetitle.split(":", 3);
-	    String productname=arrOfStr[0].trim();
-	    System.out.println(productname);
+	    String productname=split.splitofarray(0).trim();
 	    String expectedstarttext=page.getdata_fromExcel(productname, "Validation Text", "Start Text");
 	    Verify.verifyString(expectedstarttext, time, "Successfully validated the text");
 	    report.info("Successfully validated the text");
@@ -63,7 +58,6 @@ public class TC36_StartTime extends SampleTestSuiteBase {
 		 String result=s1[0] + s1[1] + s1[2];
 		 report.info(result);
 	log.info("STEP#6: Validating the date of execution of the product");
-	     System.out.println(productname);
 	     String expected=page.getdata_fromExcel(productname, "Validation Text", "Date");
 	     Verify.verifyString(result, expected, "Successfully validated the date");
 	     report.info("Successfully validated the date");

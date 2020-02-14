@@ -1,18 +1,12 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
-import java.util.stream.Collectors;
-
-import org.openqa.selenium.WebElement;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.utils.ElementsList;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
@@ -34,6 +28,7 @@ public class TC14_FailedTestCases extends SampleTestSuiteBase{
 	@SuppressWarnings("static-access")
 	@Test
 	public void dropdownFailedTestCases() throws Exception {
+		ElementsList list=new ElementsList(browser);
 		DropdownValidation validate=new DropdownValidation(browser);
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: Clicking on the product");
@@ -48,10 +43,8 @@ public class TC14_FailedTestCases extends SampleTestSuiteBase{
 		report.info("Successfully validated fail status");
 		browser.getWait().safeWait(2000);
 	log.info("STEP#4: Creating a list to display the failed test cases");
-	    String testcases=propReader.getValue("loc.numberoftestcases.txt");;
-		List<WebElement> faillist = browser.getFindFromBrowser().findElementsByXpath(testcases);
-		log.dateinfo(faillist.size());
-		List<String> failtexts = faillist.stream().map(WebElement::getText).collect(Collectors.toList());
-		log.info(failtexts);
+	    String products=propReader.getValue("loc.numberoftestcases.txt");
+		list.listofElements(products);
+	   report.info("Successfully displayed the fail test cases");
 }
 }

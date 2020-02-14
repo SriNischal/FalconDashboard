@@ -1,27 +1,17 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
-import java.util.stream.Collectors;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.ui.selenium.Verify;
-import com.atmecs.falcon.automation.util.enums.LocatorType;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
-import com.atmecs.qa.falcondashboard.utils.Filters;
+import com.atmecs.qa.falcondashboard.utils.ElementsList;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
-import com.atmecs.qa.falcondashboard.utils.ReadDataFromExcel;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
 import com.atmecs.qa.falcondashboard.validationresults.ProductPageValidation;
@@ -37,15 +27,15 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 	 * In this method the product name is validated and clicked on the product and
 	 * checking user landed on the product page and validate the list of products
 	 */
-	@SuppressWarnings({ "static-access", "deprecation" })
+	@SuppressWarnings("static-access")
 	@Test
 	public void productPage() throws Exception {
+		ElementsList lists=new ElementsList(browser);
 		Pageactions page = new Pageactions(browser);
 		ProductPageValidation validate = new ProductPageValidation(browser);
 	log.info("STEP#1: Validating and displaying the product name");
 		validate.validateProduct();
 		String product=page.getText(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		 System.out.println("productname: "+product);
 		report.info("Successfully validated product");
 	log.info("STEP#2: Clicking on the product");	
         page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
@@ -56,22 +46,11 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 		report.info("Successfully validated panel title");
 	log.info("STEP#4: List to display number of test cases present for a product");			
 	    String testcases=propReader.getValue("loc.numberoftestcases.txt");
-		List<WebElement> list = browser.getFindFromBrowser().findElementsByXpath(testcases);
-		log.dateinfo(list.size());
-		List<String> texts = list.stream().map(WebElement::getText).collect(Collectors.toList());
-		log.info(texts);
+        lists.listofElements(testcases);
     log.info("STEP#5: Converting the list of products into string products");	
-		String separate = ",";
-		StringBuilder sb = new StringBuilder();
-		int index = 0;
-		while (index < texts.size() - 1) {
-			sb.append(texts.get(index));
-			sb.append(separate);
-			index++;
-		}
-		sb.append(texts.get(index));
+		lists.separatingElements(testcases);
    log.info("STEP#6: Verifying the list of products");
-		String result = sb.toString();
+		String result = lists.separatingElements(testcases);
 		String expedctedproducts=page.getdata_fromExcel(product, "Validation Text", "List of Test Cases");
 		Verify.verifyString(result, expedctedproducts, "Successfully validaetd the test cases");
 		report.info("Successfully valdated all the test cases");

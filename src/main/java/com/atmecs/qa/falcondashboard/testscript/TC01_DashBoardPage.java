@@ -1,13 +1,8 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import java.util.concurrent.TimeUnit;
-
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.ui.selenium.Verify;
-import com.atmecs.falcon.automation.util.enums.LocatorType;
 import com.atmecs.falcon.automation.util.parser.XlsReader;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -20,7 +15,7 @@ import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
 import com.atmecs.qa.falcondashboard.validationresults.DashboardPageValidation;
 
-//In this class dashboard page is tested
+//In this class dash board page is tested
 
 public class TC01_DashBoardPage extends SampleTestSuiteBase {
 
@@ -43,7 +38,6 @@ public class TC01_DashBoardPage extends SampleTestSuiteBase {
 	 * clicking on the refresh option
 	 */
 	public void dashboardPage() throws Exception {
-
 		Pageactions page = new Pageactions(browser);
 		DashboardPageValidation validate = new DashboardPageValidation(browser);	
 	log.info("STEP#1: Page title validation");

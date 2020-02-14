@@ -3,16 +3,13 @@ package com.atmecs.qa.falcondashboard.testscript;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
-
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.utils.ElementsList;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
@@ -25,16 +22,16 @@ public class TC31_FailedTestCases extends SampleTestSuiteBase{
 	ReadLocators read = new ReadLocators();
 	LogReport log = new LogReport();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	/*
 	 * In this method the product is clicked and dash board slider is selected and
 	 * clicked on the failed test cases and validated the failed test cases and the
 	 * fail message and displayed the failed test cases
 	 */
-	@SuppressWarnings({ "static-access", "deprecation" })
+	@SuppressWarnings("static-access")
 	@Test
 	public void failTestCases() throws Exception {
+		ElementsList list=new ElementsList(browser);
 		ViewPageValidation validate=new ViewPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: Clicking on the product");
@@ -56,9 +53,6 @@ public class TC31_FailedTestCases extends SampleTestSuiteBase{
 		browser.getWait().safeWait(2000);
 	log.info("STEP#7: Creating a list to display all the test cases present");
 	    String testcases=propReader.getValue("loc.numberoftestcases.txt");
-		List<WebElement> totallist = browser.getFindFromBrowser().findElementsByXpath(testcases);
-		log.dateinfo(totallist.size());
-		List<String> totaltexts = totallist.stream().map(WebElement::getText).collect(Collectors.toList());
-		log.info(totaltexts);	
+		list.listofElements(testcases);	
 	}
 }

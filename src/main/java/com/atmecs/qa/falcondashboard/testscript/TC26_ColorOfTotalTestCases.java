@@ -1,12 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -17,7 +12,7 @@ import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
-import com.atmecs.qa.falcondashboard.validationresults.TestCasesValidation;
+import com.atmecs.qa.falcondashboard.utils.Splitting;
 //In this class the color of the total test cases is displayed
 public class TC26_ColorOfTotalTestCases extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
@@ -34,6 +29,7 @@ public class TC26_ColorOfTotalTestCases extends SampleTestSuiteBase{
 	@SuppressWarnings("static-access")
 	@Test
 	public void colorofTotalTestCases() throws Exception {
+		Splitting split=new Splitting(browser);
 	    Pageactions page=new Pageactions(browser);
     log.info("STEP#1: Clicking on the product");
         page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
@@ -46,15 +42,10 @@ public class TC26_ColorOfTotalTestCases extends SampleTestSuiteBase{
 	    browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	    String color=propReader.getValue("validate.coloroftestcases.txt");
 	    String actualcolor=browser.getFindFromBrowser().findElementByXpath(color).getCssValue("background-color");
-	    System.out.println("Color:"+actualcolor);
 	log.info("STEP#4: Veifying the color of the total test case box"); 
-	    String pagetitle = page.getText(read.getPropertyvalue("loc.recentrunspagetitle.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
-	    String[] arrOfStr = pagetitle.split(":", 3);
-	    String productname=arrOfStr[0].trim();
-	    System.out.println(productname);
+	    String productname=split.splitofarray(0).trim();
 	    String expectedcolor= page.getdata_fromExcel(productname, "Validation Text", "Color of total test cases");
 	    Verify.verifyString(actualcolor, expectedcolor, "Successfully validated the color of the total test cases box");
-	    System.out.println(expectedcolor);
 	    report.info("Successfully validated the color of the total  test cases box");
 	}
 }

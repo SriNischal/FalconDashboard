@@ -9,7 +9,6 @@
     <classes>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage">
         <methods>
-          <include name="setup"/>
           <include name="preSetup"/>
           <include name="teardown"/>
           <include name="viewPage"/>

@@ -1,41 +1,23 @@
 package com.atmecs.qa.falcondashboard.utils;
 
 import java.io.File;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.nio.file.Path;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-import java.util.stream.Collectors;
-
-import javax.print.attribute.HashAttributeSet;
-
 import org.apache.commons.io.FilenameUtils;
 import org.apache.poi.hssf.usermodel.HSSFDateUtil;
-import org.apache.poi.hssf.usermodel.HSSFRow;
-import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
 import com.atmecs.falcon.automation.ui.selenium.Browser;
-import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 
 public class ReadDataFromExcel {
 	private Workbook workBook = null;
@@ -46,7 +28,6 @@ public class ReadDataFromExcel {
 	public String path = null;
 	private FileInputStream fileInputStream = null;
 	private String fileExtensionName;
-	private Browser browser;
 	LogReport log = new LogReport();
 
 	public void setPath(String path) throws IOException {

@@ -1,11 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import java.util.concurrent.TimeUnit;
-
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.enums.LocatorType;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
@@ -17,6 +13,7 @@ import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
+import com.atmecs.qa.falcondashboard.utils.Splitting;
 //In this class the end time of the product is displayed and validated 
 public class TC37_EndTime extends SampleTestSuiteBase {
 	LoadProperties load = new LoadProperties();
@@ -31,7 +28,8 @@ public class TC37_EndTime extends SampleTestSuiteBase {
 	 * validated the end time of the product
 	 */	@SuppressWarnings("static-access")
 	@Test
-	public void startTime() throws Exception {
+	public void endTime() throws Exception {
+		 Splitting split=new Splitting(browser);
 		Pageactions page = new Pageactions(browser);
 	log.info("STEP#1: Clicking on the product");
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
@@ -46,9 +44,7 @@ public class TC37_EndTime extends SampleTestSuiteBase {
 	    report.info(time);
 	    report.info("Successfully displayed the end time text");
 	log.info("STEP#4: Validating the start time text");
-	    String pagetitle = page.getText(read.getPropertyvalue("loc.recentrunspagetitle.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
-	    String[] arrOfStr = pagetitle.split(":", 3);
-	    String productname=arrOfStr[0].trim();
+	    String productname=split.splitofarray(0).trim();
 	    System.out.println(productname);
 	    String expectedendtext=page.getdata_fromExcel(productname, "Validation Text", "End Text");
 	    Verify.verifyString(expectedendtext, time, "Successfully validated the text");

@@ -1,15 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.io.IOException;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
-import java.util.stream.Collectors;
-
-import org.openqa.selenium.WebElement;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
@@ -20,7 +12,6 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.validationresults.DropdownValidation;
-import com.atmecs.qa.falcondashboard.validationresults.TestCasesValidation;
 //In this class the error message of the fail test case is displayed and validated 
 public class TC20_FailTestCase extends SampleTestSuiteBase {
 	LoadProperties load = new LoadProperties();

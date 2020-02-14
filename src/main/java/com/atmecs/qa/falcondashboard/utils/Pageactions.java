@@ -1,12 +1,8 @@
 package com.atmecs.qa.falcondashboard.utils;
 
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-
 import com.atmecs.falcon.automation.ui.selenium.Browser;
-import com.atmecs.falcon.automation.util.enums.LocatorType;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 
 public class Pageactions  {
@@ -86,6 +82,11 @@ public class Pageactions  {
 		public String getText(String element) {
 			webElement = selectLocators(element);
 			return webElement.getText();
+
+		}
+		public String getCssValue(String element,String value) {
+			webElement = selectLocators(element);
+			return webElement.getCssValue(value);
 
 		}
 		

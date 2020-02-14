@@ -3,16 +3,13 @@ package com.atmecs.qa.falcondashboard.testscript;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
-
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.utils.ElementsList;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
@@ -36,6 +33,7 @@ public class TC21_PassPercentage extends SampleTestSuiteBase{
 	@SuppressWarnings({ "static-access", "deprecation" })
 	@Test
 	public void rececntPassPercentage() throws Exception {
+		ElementsList list=new ElementsList(browser);
 		RecentrunsValidation validate=new RecentrunsValidation(browser);
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: Clicking on the Recentruns");
@@ -47,22 +45,16 @@ public class TC21_PassPercentage extends SampleTestSuiteBase{
 	    report.info("Successfully validated the pass percent");
 	log.info("STEP#3: Creating a list to display the test cases of the product");
 	    String productnames=propReader.getValue("loc.passpercentage.txt");
-		List<WebElement> productnameslist = browser.getFindFromBrowser().findElementsByXpath(productnames);
-		log.dateinfo(productnameslist.size());
-		List<String> productnamestext = productnameslist.stream().map(WebElement::getText).collect(Collectors.toList());
-		log.info(productnamestext);
+		list.listofElements(productnames);
 		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	log.info("STEP#4 Clicking on the pass percentage");
 	    page.clickOnElement(read.getPropertyvalue("loc.recentpasspercent.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	    report.info("Successfully clicked on the pass percentage");
 	log.info("STEP#6: Creating the list to display the product names after sorting");
 	    String productnamesaftersorting=propReader.getValue("loc.passpercentage.txt");
-	    List<WebElement> productnamelist = browser.getFindFromBrowser().findElementsByXpath(productnamesaftersorting);
-	    log.dateinfo(productnamelist.size());
-	    List<String> productnametext = productnamelist.stream().map(WebElement::getText).collect(Collectors.toList());
-	    log.info(productnametext);
+	   list.listofElements(productnamesaftersorting);
 	log.info("STEP#7: Comparing the product names before and after sorting");
-	    boolean compare=productnametext.equals(productnamestext);
+	    boolean compare=productnamesaftersorting.equals(productnames);
 	    System.out.println(compare);
 	}
 

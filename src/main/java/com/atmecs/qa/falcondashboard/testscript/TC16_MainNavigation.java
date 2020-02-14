@@ -1,16 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.io.IOException;
-import java.sql.Driver;
 import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
-import com.atmecs.falcon.automation.ui.selenium.Verify;
-import com.atmecs.falcon.automation.util.enums.LocatorType;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
@@ -21,7 +12,6 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
 import com.atmecs.qa.falcondashboard.validationresults.MainNavigationValidation;
-import com.google.common.collect.Range;
 //In this class the main navigation is clicked and validated 
 public class TC16_MainNavigation extends SampleTestSuiteBase{
 	LoadProperties load=new LoadProperties();
@@ -65,7 +55,7 @@ public class TC16_MainNavigation extends SampleTestSuiteBase{
 		validate.validateViewPanelTitle();
 		report.info("Successfully validated panelview");
 	log.info("STEP#10: Validating the product snapshot text");	
-		validate.validateProductSnapshot();
+		validate.validateProductSnapshotText();
 		report.info("Successfully validated product snapshot");
 	}
 

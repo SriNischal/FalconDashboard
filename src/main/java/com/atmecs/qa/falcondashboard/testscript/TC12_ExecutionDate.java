@@ -1,17 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
-
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.ui.selenium.Verify;
-import com.atmecs.falcon.automation.util.enums.LocatorType;
 import com.atmecs.falcon.automation.util.parser.XlsReader;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -23,6 +13,7 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
+import com.atmecs.qa.falcondashboard.utils.Splitting;
 //In this class the date of last execution of the product is displayed and validated
 public class TC12_ExecutionDate extends SampleTestSuiteBase{
 	ReadLocators read=new ReadLocators();
@@ -38,27 +29,20 @@ public class TC12_ExecutionDate extends SampleTestSuiteBase{
 	int row = 0;
 	/*
 	 * In this method splitting of the product is clicked and the date and time of
-	 * the product are splpitted and the date of the product is displayed
+	 * the product are splitted and the date of the product is displayed
 	 */	@SuppressWarnings("static-access")
 	@Test
 	public void dateOfExecution() throws Exception {
+		 Splitting split=new Splitting(browser);
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: Clicking on the product");
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
 		browser.getWait().safeWait(2000);
 	log.info("STEP#2: Splitting the array and displaying the day and  date of the product");
-		String product = propReader.getValue("loc.product.txt");
-		String value = browser.getTextField().readTextByXPath(LocatorType.XPATH, product);
-		String[] arrOfStr = value.split(":", 3);
-		String date=arrOfStr[2];
-		System.out.println(date);
-		report.info("Successfully displayed day and date of product");
-		 String s1[]=date.split("[ ]");
-		 String result=s1[1] + s1[2] + s1[3];
-		 System.out.println(result);
+		String result=split.splitofdatetime(2);
 	log.info("STEP#3: Validating the date of the product");	 
-	     String productname=arrOfStr[0].trim();
+	     String productname=split.splitofarray(0).trim();
 	     System.out.println(productname);
 		 String expected=page.getdata_fromExcel(productname, "Validation Text", "Date");
 		 Verify.verifyString(result, expected, "Successfully validated the date");

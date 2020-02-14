@@ -3,16 +3,13 @@ package com.atmecs.qa.falcondashboard.testscript;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
-
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.utils.ElementsList;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
@@ -34,6 +31,7 @@ public class TC25_StepsOfProduct extends SampleTestSuiteBase{
 	@SuppressWarnings({ "static-access", "deprecation" })
 	@Test
 	public void stepsOfProduct() throws Exception {
+		ElementsList list=new ElementsList(browser);
 		Pageactions page=new Pageactions(browser);
 		ProductStepsValidation validate=new ProductStepsValidation(browser);
 	log.info("STEP#1: Clicking on the product");	
@@ -45,16 +43,10 @@ public class TC25_StepsOfProduct extends SampleTestSuiteBase{
 		report.info("Successfully selected pass option");
 	log.info("STEP#3: Creating the list for the test cases and duration of each test case of the product");	
 	    String duration=propReader.getValue("loc.duration.txt");
-		List<WebElement> list = browser.getFindFromBrowser().findElementsByXpath(duration);
-		log.dateinfo(list.size());
-		List<String> texts = list.stream().map(WebElement::getText).collect(Collectors.toList());
-		log.info(texts);
+		list.listofElements(duration);
 	log.info("STEP#4: Creating the list for the status of the product");
 	     String passtestcases=propReader.getValue("loc.passtestcases.txt");
-		List<WebElement> statuslist = browser.getFindFromBrowser().findElementsByXpath(passtestcases);
-		log.dateinfo(statuslist.size());
-		List<String> statustexts = statuslist.stream().map(WebElement::getText).collect(Collectors.toList());
-		log.info(statustexts);
+		list.listofElements(passtestcases);
 	log.info("STEP#5: Clicking on the test case of the product");
 		page.clickOnElement(read.getPropertyvalue("loc.testcase.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected the testcase");

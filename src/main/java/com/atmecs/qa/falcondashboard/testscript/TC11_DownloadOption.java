@@ -1,12 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -17,6 +12,7 @@ import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
+import com.atmecs.qa.falcondashboard.utils.Splitting;
 //In this class download option is verified
 public class TC11_DownloadOption extends SampleTestSuiteBase{
 	LogReport log=new LogReport();
@@ -28,6 +24,7 @@ public class TC11_DownloadOption extends SampleTestSuiteBase{
 	@SuppressWarnings("static-access")
 	@Test
 	public void downloadOption() throws Exception {
+		Splitting split=new Splitting(browser);
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: Clicking on the product");	
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
@@ -39,12 +36,8 @@ public class TC11_DownloadOption extends SampleTestSuiteBase{
 	log.info("STEP#3: Displaying the Download message for the products");	
 	    String actualtooltipmessage=propReader.getValue("loc.downloadmessage.txt");
 	    String message=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();
-	    System.out.println(message);
-	    String pagetitle = page.getText(read.getPropertyvalue("loc.recentrunspagetitle.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
-		String[] arrOfStr = pagetitle.split(":", 3);
-		String productname=arrOfStr[0].trim();
-		System.out.println(productname);
-	    String expectedtooltipmessage=page.getdata_fromExcel(productname, "Validation Text", "Dowload Message");
+	   String productname=split.splitofarray(0).trim();
+	    String expectedtooltipmessage=page.getdata_fromExcel(productname, "Validation Text", "Download Message");
 	    Verify.verifyString(message, expectedtooltipmessage, "Successfully displayed the test cases message");
 	    System.out.println(expectedtooltipmessage);
 	    report.info("Sucessfully validated the tooltip message");

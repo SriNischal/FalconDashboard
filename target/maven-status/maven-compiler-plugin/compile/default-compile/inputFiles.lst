@@ -1,6 +1,7 @@
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\utils\PropReader.java
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\testscript\TC22_DeleteOption.java
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\utils\Filters.java
+C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\utils\ElementsList.java
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\testscript\TC18_ProductName.java
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\testscript\TC21_PassPercentage.java
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\utils\ReadLocators.java
@@ -15,6 +16,7 @@ C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\testscript\TC34_ViewPage.java
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\testscript\TC33_SkippedTestCases.java
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\utils\ReadingData.java
+C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\utils\Splitting.java
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\utils\ReadDataFromExcel.java
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\helper\ValidationHelper.java
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\testscript\TC16_MainNavigation.java

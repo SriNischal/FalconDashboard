@@ -7,14 +7,13 @@
   <parameter name="browserVersion" value="77"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium">
         <methods>
-          <include name="setup"/>
           <include name="preSetup"/>
+          <include name="mediumOfProduct"/>
           <include name="teardown"/>
-          <include name="totaltestcases"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_chrome_77 (4)] -->

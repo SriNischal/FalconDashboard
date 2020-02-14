@@ -1,27 +1,23 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.utils.ElementsList;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.validationresults.RecentrunsValidation;
-//In this classs the last runs in the recent runs page is clicked and validated 
+//In this classes the last runs in the recent runs page is clicked and validated 
 public class TC35_LastRun extends SampleTestSuiteBase{
 	ReadLocators read=new ReadLocators();
 	WebDriver driver; 
@@ -37,9 +33,10 @@ public class TC35_LastRun extends SampleTestSuiteBase{
 	 * text for sorting and created a list to display the sorted list and compared
 	 * both the lists
 	 */
-	@SuppressWarnings({ "static-access", "deprecation" })
+	@SuppressWarnings("static-access")
 	@Test
 	public void lastRun() throws Exception {
+		ElementsList list=new ElementsList(browser);
 		RecentrunsValidation validate=new RecentrunsValidation(browser);
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: Clicking on the Recentruns");
@@ -51,10 +48,7 @@ public class TC35_LastRun extends SampleTestSuiteBase{
 	    report.info("Successfully validated the last run");
 	log.info("STEP#3: Creating a list to display the last run of the product");
 	    String lastruns=propReader.getValue("loc.lastrun.txt");
-		List<WebElement> lastrunslist = browser.getFindFromBrowser().findElementsByXpath(lastruns);
-		log.dateinfo(lastrunslist.size());
-		List<String> lastrunstext = lastrunslist.stream().map(WebElement::getText).collect(Collectors.toList());
-		log.info(lastrunstext);
+		list.listofElements(lastruns);
 		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	log.info("STEP#4 Clicking on the last run");
 	    page.clickOnElement(read.getPropertyvalue("loc.lastruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
@@ -63,12 +57,9 @@ public class TC35_LastRun extends SampleTestSuiteBase{
 	    browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	log.info("STEP#5: Creating the list to display the last runs after sorting");
 	    String lastrunsaftersorting=propReader.getValue("loc.lastrun.txt");
-	    List<WebElement> lastrunlist = browser.getFindFromBrowser().findElementsByXpath(lastrunsaftersorting);
-	    log.dateinfo(lastrunlist.size());
-	    List<String> lastruntext = lastrunlist.stream().map(WebElement::getText).collect(Collectors.toList());
-	    log.info(lastruntext);
+	   list.listofElements(lastrunsaftersorting);
 	log.info("STEP#6: Comparing the last runs before and after sorting");
-	    boolean compare=lastruntext.equals(lastrunstext);
+	    boolean compare=lastrunsaftersorting.equals(lastruns);
 	    System.out.println(compare);
 	}
 }

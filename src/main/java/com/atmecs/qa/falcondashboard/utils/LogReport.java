@@ -2,12 +2,9 @@ package com.atmecs.qa.falcondashboard.utils;
 
 import java.util.List;
 import java.util.Spliterator;
-
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebElement;
-
-import com.relevantcodes.extentreports.LogStatus;
 
 /**
  * Configure the log4j file path.

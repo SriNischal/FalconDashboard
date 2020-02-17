@@ -18,16 +18,11 @@ public class TestCasesValidation {
 		public void validateFailedTestCase() throws Exception {
 			String product=helper.getData();
 			String expectedData = page.getdata_fromExcel(product, "Validation Text", "Failed Test Case");
-			helper.getdata(expectedData, "validate.failtestcase.txt");
+			helper.getDataofRow(expectedData, "validate.failtestcase.txt",54);
 		}
 		public void validatePassedTestCase() throws Exception {
 			String product=helper.getData();
 			String expectedData = page.getdata_fromExcel(product, "Validation Text", "Passed Test Case");
-			helper.getdata(expectedData, "validate.passtestcase.txt");
-		}
-		public void validatecolorOfTestCases() throws Exception {
-			String product=helper.getData();
-			String expectedData = page.getdata_fromExcel(product, "Validation Text", "Color of total test cases");
-			helper.getdata(expectedData, "validate.coloroftestcases.txt");
+			helper.getDataofRow(expectedData, "validate.passtestcase.txt",55);
 		}
 }

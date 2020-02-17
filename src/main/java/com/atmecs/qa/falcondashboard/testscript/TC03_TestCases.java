@@ -1,6 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.parser.XlsReader;
@@ -18,8 +17,6 @@ import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 
 //In this class the total test cases of the product are displayed
 public class TC03_TestCases extends SampleTestSuiteBase {
-	public static WebDriver driver;
-	ReadLocators read = new ReadLocators();
 	LoadProperties load = new LoadProperties();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
@@ -33,7 +30,6 @@ public class TC03_TestCases extends SampleTestSuiteBase {
 	 * In this method we create list to display the test cases and validate the test
 	 * cases and validate the tool tip message by mouse hovering over the test cases
 	 */ 
-	@SuppressWarnings( "static-access" )
 	@Test
 	public void numberofTestCasesOfProduct() throws Exception {
 		ValidationHelper helper=new ValidationHelper(browser);
@@ -44,19 +40,21 @@ public class TC03_TestCases extends SampleTestSuiteBase {
 		lists.listofElements(products);
 	log.info("STEP#2: Converting the list of products into string products");	
 		lists.separatingElements(products);
-    log.info("STEP#3: Verifying the list of products");
+    log.info("STEP#3: Verifying the list of product test cases");
         String product=helper.getData();
 		String result = lists.separatingElements(products);
+		page.writedata_toExcel(product,"Validation Text", 13, result);
 		String expedctedproducts=page.getdata_fromExcel(product, "Validation Text", "Total test cases");
 		Verify.verifyString(result, expedctedproducts, "Successfully validaetd the test cases");
 		report.info("Successfully valdated all the test cases");
 	log.info("STEP#4: Mouse hovering the testcases for the products");
-	     page.mouseOver(read.getPropertyvalue("loc.testcases.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+	     page.mouseOver(ReadLocators.getPropertyvalue("loc.testcases.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	     report.info("Successfully mouse hovered the test cases");
 	log.info("STEP#5: Displaying the testcases message for the products");	
 	     String actualtooltipmessage=propReader.getValue("loc.testcasemessage.txt");
 	     String message=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();
-	     String expectedtooltipmessage=page.getdata_fromExcel("TC10_TestCases", "Validation Text", "Tooltip message");
+	     page.writedata_toExcel(product, "Validation Text", 56, message);
+	     String expectedtooltipmessage=page.getdata_fromExcel(product, "Validation Text", "Tooltip message");
 	     Verify.verifyString(message, expectedtooltipmessage, "Successfully displayed the test cases message");
 	}
 

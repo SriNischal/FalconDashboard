@@ -30,6 +30,12 @@ public class Pageactions  {
 	  String datavalue = reader.getCellDataByColumnName(sheetname,columnname, rowname); 
 	  return datavalue;
 	  }
+	  
+	  public String writedata_toExcel(String sheetname,String columnname, int rownumber, String value) {
+		  String datavalue =reader.setCellData(sheetname, columnname, rownumber, value); 
+		  return datavalue;
+		  }
+	  
 	 public String getdatabycellvalue(String sheetName,int colNum,int i) {
 		 String datavalue=reader.getCellData(sheetName, colNum, i);
 		 return datavalue;	 

@@ -21,36 +21,36 @@ public class DropdownValidation {
 	public void validateCustomer() throws Exception {
 		String productname=helper.getDataFromUi();
 		String expectedData=page.getdata_fromExcel(productname, "Validation Text", "Customer");
-		helper.getdata(expectedData, "validate.customer.txt");
+		helper.getDataofRow(expectedData, "validate.customer.txt",24);
 	}
 	public void validateModule() throws Exception {
 		String productname=helper.getDataFromUi();
 		String expectedData=page.getdata_fromExcel(productname, "Validation Text", "Module");
-		helper.getdata(expectedData, "validate.module.txt");
+		helper.getDataofRow(expectedData, "validate.module.txt",25);
 	}
 	public void validatePassStatus() throws Exception {
 		String productname=helper.getDataFromUi();
 		String expectedData=page.getdata_fromExcel(productname, "Validation Text", "Pass Status");
-		helper.getdata(expectedData, "validate.passselectstatus.btn");
+		helper.getDataofRow(expectedData, "validate.passselectstatus.btn",26);
 	}
 	public void validateFailStatus() throws Exception {
 		String productname=helper.getDataFromUi();
 		String expectedData=page.getdata_fromExcel(productname, "Validation Text", "Fail Status");
-		helper.getdata(expectedData, "validate.failselectstatus.btn");
+		helper.getDataofRow(expectedData, "validate.failselectstatus.btn",27);
 	}
 	public void validateSkipStatus() throws Exception {
 		String productname=helper.getDataFromUi();
 		String expectedData=page.getdata_fromExcel(productname, "Validation Text", "Skip Status");
-		helper.getdata(expectedData, "validate.skipselectstatus.btn");
+		helper.getDataofRow(expectedData, "validate.skipselectstatus.btn",28);
 	}
 	public void validateProductPanelTitle() throws Exception {
 		String productname=helper.getDataFromUi();
 		String expectedData=page.getdata_fromExcel(productname, "Validation Text", "Status Title");
-		helper.getdata(expectedData, "validate.paneltitle.txt");
+		helper.getDataofRow(expectedData, "validate.paneltitle.txt",29);
 	}
 	public void validateErrorMessage() throws Exception {
 		String productname=helper.getDataFromUi();
 		String expectedData=page.getdata_fromExcel(productname, "Validation Text", "Error Message");
-		helper.getdata(expectedData, "validate.errormessage.txt");
+		helper.getDataofRow(expectedData, "validate.errormessage.txt",30);
 	}
 }

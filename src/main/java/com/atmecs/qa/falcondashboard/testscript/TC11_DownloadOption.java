@@ -36,10 +36,10 @@ public class TC11_DownloadOption extends SampleTestSuiteBase{
 	log.info("STEP#3: Displaying the Download message for the products");	
 	    String actualtooltipmessage=propReader.getValue("loc.downloadmessage.txt");
 	    String message=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();
-	   String productname=split.splitofarray(0).trim();
+	    String productname=split.splitofarray(0).trim();
+	    page.writedata_toExcel(productname, "Validation Text", 36, message);
 	    String expectedtooltipmessage=page.getdata_fromExcel(productname, "Validation Text", "Download Message");
 	    Verify.verifyString(message, expectedtooltipmessage, "Successfully displayed the test cases message");
-	    System.out.println(expectedtooltipmessage);
 	    report.info("Sucessfully validated the tooltip message");
 	}
 

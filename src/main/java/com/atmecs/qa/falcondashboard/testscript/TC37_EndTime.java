@@ -50,14 +50,9 @@ public class TC37_EndTime extends SampleTestSuiteBase {
 	    Verify.verifyString(expectedendtext, time, "Successfully validated the text");
 	    report.info("Successfully validated the text");
 	log.info("STEP#5: Splitting the array and displaying the day and  date of the product");
-		String product = propReader.getValue("validate.starttime.txt");
-		String value = browser.getTextField().readTextByXPath(LocatorType.XPATH, product);
-		report.info(value);
-		report.info("Successfully displayed day and date of product");
-		 String s1[]=value.split("[ ]");
-		 String result=s1[0] + s1[1] + s1[2];
-		 report.info(result);
+	     String result=split.splitofdatetime(2);
 	log.info("STEP#6: Validating the date of execution of the product");
+	     page.writedata_toExcel(productname, "Validation Text",21, result);
 	     String expected=page.getdata_fromExcel(productname, "Validation Text", "Date");
 	     Verify.verifyString(result, expected, "Successfully validated the date");
 	     report.info("Successfully validated the date");

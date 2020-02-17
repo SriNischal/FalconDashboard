@@ -9,7 +9,6 @@
     <classes>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases">
         <methods>
-          <include name="setup"/>
           <include name="preSetup"/>
           <include name="teardown"/>
           <include name="skippedTestCases"/>

@@ -3,6 +3,7 @@ package com.atmecs.qa.falcondashboard.utils;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -27,6 +28,7 @@ public class ReadDataFromExcel {
 	private String cellValue;
 	public String path = null;
 	private FileInputStream fileInputStream = null;
+	private FileOutputStream fileOutputStream = null;
 	private String fileExtensionName;
 	LogReport log = new LogReport();
 
@@ -71,16 +73,52 @@ public class ReadDataFromExcel {
 			}
 			String rowI = findRow(sheet, string2);
 			int rowInd = Integer.parseInt(rowI);
-			System.out.println("rowNumber:"+rowInd);
+			System.out.println("rowNumber:" + rowInd);
 			return verifyCellData(rowInd, columnIndex);
 		} catch (Exception exception) {
 
 			return "row " + string2 + " or column " + columnIndex + " does not exist  in xlsx";
 		}
 	}
-	
+
+	public String setCellData(String sheetName, String colName, int rowNum, String value) {
+
+		try {
+			int col_Num = -1;
+			sheet = workBook.getSheet(sheetName);
+
+			row = sheet.getRow(0);
+			for (int i = 0; i < row.getLastCellNum(); i++) {
+				if (row.getCell(i).getStringCellValue().trim().equals(colName)) {
+					col_Num = i;
+				}
+			}
+			if (col_Num == -1) {
+				return "Column doesn't exist with given name " + colName;
+			}
+			sheet.autoSizeColumn(col_Num);
+			row = sheet.getRow(rowNum - 1);
+			if (row == null)
+				row = sheet.createRow(rowNum - 1);
+
+			cell = row.getCell(col_Num);
+			if (cell == null)
+				cell = row.createCell(col_Num);
+
+			cell.setCellValue(value);
+
+			fileOutputStream = new FileOutputStream(path);
+			workBook.write(fileOutputStream);
+			fileOutputStream.close();
+		} catch (Exception ex) {
+			ex.printStackTrace();
+
+		}
+		return value;
+	}
+
 	public Filters getFiltersData(Browser browser) {
-		HashMap<String,String> map=new HashMap<String,String>();
+		HashMap<String, String> map = new HashMap<String, String>();
 		map.put(fileExtensionName, path);
 		return null;
 	}
@@ -94,36 +132,31 @@ public class ReadDataFromExcel {
 					}
 		return sheet + " doesn't exist with given name " + string2;
 	}
-	 public String getCellData(String sheetName,int colNum,int rowNum)
-	    {
-	        try
-	        {
-	            sheet = workBook.getSheet(sheetName);
-	            row = sheet.getRow(rowNum);
-	            cell = row.getCell(colNum);
-	            if(cell.getCellTypeEnum() == CellType.STRING)
-	                return cell.getStringCellValue();
-	            else if(cell.getCellTypeEnum() == CellType.NUMERIC || cell.getCellTypeEnum() == CellType.FORMULA)
-	            {
-	                String cellValue  = String.valueOf(cell.getNumericCellValue());
-	                if (HSSFDateUtil.isCellDateFormatted(cell))
-	                {
-	                    DateFormat df = new SimpleDateFormat("dd/MM/yy");
-	                    Date date = cell.getDateCellValue();
-	                    cellValue = df.format(date);
-	                }
-	                return cellValue;
-	            }else if(cell.getCellTypeEnum() == CellType.BLANK)
-	                return "";
-	            else
-	                return String.valueOf(cell.getBooleanCellValue());
-	        }
-	        catch(Exception e)
-	        {
-	            e.printStackTrace();
-	            return "row "+rowNum+" or column "+colNum +" does not exist  in Excel";
-	        }
-	    }
+
+	public String getCellData(String sheetName, int colNum, int rowNum) {
+		try {
+			sheet = workBook.getSheet(sheetName);
+			row = sheet.getRow(rowNum);
+			cell = row.getCell(colNum);
+			if (cell.getCellTypeEnum() == CellType.STRING)
+				return cell.getStringCellValue();
+			else if (cell.getCellTypeEnum() == CellType.NUMERIC || cell.getCellTypeEnum() == CellType.FORMULA) {
+				String cellValue = String.valueOf(cell.getNumericCellValue());
+				if (HSSFDateUtil.isCellDateFormatted(cell)) {
+					DateFormat df = new SimpleDateFormat("dd/MM/yy");
+					Date date = cell.getDateCellValue();
+					cellValue = df.format(date);
+				}
+				return cellValue;
+			} else if (cell.getCellTypeEnum() == CellType.BLANK)
+				return "";
+			else
+				return String.valueOf(cell.getBooleanCellValue());
+		} catch (Exception e) {
+			e.printStackTrace();
+			return "row " + rowNum + " or column " + colNum + " does not exist  in Excel";
+		}
+	}
 
 	private String verifyCellData(int rowIndex, int columnIndex) {
 		row = sheet.getRow(rowIndex);

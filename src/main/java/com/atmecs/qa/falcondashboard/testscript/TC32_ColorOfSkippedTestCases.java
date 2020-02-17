@@ -44,6 +44,7 @@ public class TC32_ColorOfSkippedTestCases extends SampleTestSuiteBase{
 	    String actualcolor=browser.getFindFromBrowser().findElementByXpath(color).getCssValue("background-color");
 	log.info("STEP#4: Veifying the color of the total test case box"); 
 	    String productname = split.splitofarray(0).trim();
+	    page.writedata_toExcel(productname, "Validation Text", 34, actualcolor);
 	    String expectedcolor= page.getdata_fromExcel(productname, "Validation Text", "Color of skip test cases");
 	    Verify.verifyString(actualcolor, expectedcolor, "Successfully validated the color of the skip test cases box");
 	    report.info("Successfully validated the color of the skip test cases box");

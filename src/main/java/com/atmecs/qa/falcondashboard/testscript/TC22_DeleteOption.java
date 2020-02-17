@@ -38,6 +38,7 @@ public class TC22_DeleteOption extends SampleTestSuiteBase{
 	log.info("STEP#3: Displaying the delete run message for the products");	
 	     String actualtooltipmessage=propReader.getValue("loc.delete.txt");
 	     String message=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();
+	     page.writedata_toExcel("TC01_DasBoardPage", "Validation Text", 35, message);
 	     String expectedtooltipmessage=page.getdata_fromExcel("TC01_DasBoardPage", "Validation Text", "Delete option");
 	     Verify.verifyString(message, expectedtooltipmessage, "Successfully displayed the test cases message");
 	}

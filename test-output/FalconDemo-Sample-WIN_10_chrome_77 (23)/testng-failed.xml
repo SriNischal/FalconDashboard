@@ -10,7 +10,6 @@
       <class name="com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct">
         <methods>
           <include name="stepsOfProduct"/>
-          <include name="setup"/>
           <include name="preSetup"/>
           <include name="teardown"/>
         </methods>

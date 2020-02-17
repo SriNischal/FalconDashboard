@@ -6,6 +6,7 @@ import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
+import com.atmecs.qa.falcondashboard.helper.ValidationHelper;
 import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.ElementsList;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
@@ -31,11 +32,11 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 	@Test
 	public void productPage() throws Exception {
 		ElementsList lists=new ElementsList(browser);
+		ValidationHelper helper=new ValidationHelper(browser);
 		Pageactions page = new Pageactions(browser);
 		ProductPageValidation validate = new ProductPageValidation(browser);
 	log.info("STEP#1: Validating and displaying the product name");
 		validate.validateProduct();
-		String product=page.getText(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully validated product");
 	log.info("STEP#2: Clicking on the product");	
         page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
@@ -50,7 +51,9 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
     log.info("STEP#5: Converting the list of products into string products");	
 		lists.separatingElements(testcases);
    log.info("STEP#6: Verifying the list of products");
+        String product=helper.getData();
 		String result = lists.separatingElements(testcases);
+		page.writedata_toExcel(product, "Validation Text", 20, result);
 		String expedctedproducts=page.getdata_fromExcel(product, "Validation Text", "List of Test Cases");
 		Verify.verifyString(result, expedctedproducts, "Successfully validaetd the test cases");
 		report.info("Successfully valdated all the test cases");

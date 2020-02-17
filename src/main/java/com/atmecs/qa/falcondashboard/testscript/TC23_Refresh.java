@@ -20,7 +20,7 @@ public class TC23_Refresh extends SampleTestSuiteBase{
 
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	/*
-	 * In this method the the dashboard text is validated and the refresh option is
+	 * In this method the the dash board text is validated and the refresh option is
 	 * successfully clicked
 	 */
 	@SuppressWarnings("static-access")
@@ -33,7 +33,6 @@ public class TC23_Refresh extends SampleTestSuiteBase{
 		report.info("Successfully validated dashboard text");
 	log.info("STEP#2: Clicking on the refresh option");
 		page.clickOnElement(read.getPropertyvalue("loc.refresh.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		report.info("clicked on refresh option");
 		report.info("Successfully clicked on the refresh option");
 	}
 

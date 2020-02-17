@@ -43,7 +43,7 @@ public class TC12_ExecutionDate extends SampleTestSuiteBase{
 		String result=split.splitofdatetime(2);
 	log.info("STEP#3: Validating the date of the product");	 
 	     String productname=split.splitofarray(0).trim();
-	     System.out.println(productname);
+	     page.writedata_toExcel(productname, "Validation Text",21, result);
 		 String expected=page.getdata_fromExcel(productname, "Validation Text", "Date");
 		 Verify.verifyString(result, expected, "Successfully validated the date");
 		 report.info("Successfully validated the date");

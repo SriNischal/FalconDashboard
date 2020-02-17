@@ -1,9 +1,6 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
-import java.util.stream.Collectors;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -30,7 +27,7 @@ public class TC21_PassPercentage extends SampleTestSuiteBase{
 	 * and clicked on the pass percent for sorting the values and created another
 	 * list to get the sorted list and compared both the lists
 	 */
-	@SuppressWarnings({ "static-access", "deprecation" })
+	@SuppressWarnings("static-access")
 	@Test
 	public void rececntPassPercentage() throws Exception {
 		ElementsList list=new ElementsList(browser);

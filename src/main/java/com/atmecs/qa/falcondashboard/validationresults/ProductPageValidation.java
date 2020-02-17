@@ -23,21 +23,21 @@ public class ProductPageValidation {
 	public void validateProduct() throws Exception {
 		String product=helper.getData();
 		String expectedData=page.getdata_fromExcel(product, "Validation Text", "Product Name");
-		helper.getdata(expectedData, "validate.product.txt");
+		helper.getDataofRow(expectedData, "validate.product.txt",10);
 	}
 	public void validatePanelTitle() throws Exception {
 		String productname=helper.getDataFromUi();
 		String expectedData=page.getdata_fromExcel(productname, "Validation Text", "View Panel Title");
-		helper.getdata(expectedData, "validate.productpaneltitle.txt");
+		helper.getDataofRow(expectedData, "validate.productpaneltitle.txt",8);
 	}
 	public void validateEnvironment() throws Exception {
 		String productname=helper.getDataFromUi();
 		String expectedData=page.getdata_fromExcel(productname, "Validation Text", "Environment");
-		helper.getdata(expectedData, "validate.environment.txt");
+		helper.getDataofRow(expectedData, "validate.environment.txt",17);
 	}
 	public void validateTestPhase() throws Exception {
 		String productname=helper.getDataFromUi();
 		String expectedData=page.getdata_fromExcel(productname, "Validation Text", "Test Phase");
-		helper.getdata(expectedData, "validate.testphase.txt");
+		helper.getDataofRow(expectedData, "validate.testphase.txt",18);
 	}
 }

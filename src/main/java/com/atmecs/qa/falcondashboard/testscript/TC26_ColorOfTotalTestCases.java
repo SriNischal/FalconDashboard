@@ -44,6 +44,7 @@ public class TC26_ColorOfTotalTestCases extends SampleTestSuiteBase{
 	    String actualcolor=browser.getFindFromBrowser().findElementByXpath(color).getCssValue("background-color");
 	log.info("STEP#4: Veifying the color of the total test case box"); 
 	    String productname=split.splitofarray(0).trim();
+	    page.writedata_toExcel(productname, "Validation Text",31, actualcolor);
 	    String expectedcolor= page.getdata_fromExcel(productname, "Validation Text", "Color of total test cases");
 	    Verify.verifyString(actualcolor, expectedcolor, "Successfully validated the color of the total test cases box");
 	    report.info("Successfully validated the color of the total  test cases box");

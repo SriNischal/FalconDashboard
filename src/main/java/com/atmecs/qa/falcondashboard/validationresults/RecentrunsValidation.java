@@ -50,8 +50,4 @@ public class RecentrunsValidation {
 		String expectedData=page.getdata_fromExcel("TC06_Recent Runs", "Validation Text", "Sorting percentage");
 		helper.getdata(expectedData, "validate.percentagecompleted.txt");
 	}
-	public void validateSortingPoductName() throws Exception {
-		String expectedData=page.getdata_fromExcel("TC06_Recent Runs", "Validation Text", "Sorting percentage");
-		helper.getdata(expectedData, "validate.productname.txt");
-	}
 }

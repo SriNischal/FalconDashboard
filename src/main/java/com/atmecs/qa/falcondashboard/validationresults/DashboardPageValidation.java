@@ -25,29 +25,29 @@ public class DashboardPageValidation {
 	public void validatefalconlogo() throws Exception {
 		String product=helper.getData();
 		String expectedData= page.getdata_fromExcel(product, "Validation Text", "Atmecs Logo");
-		helper.getdata(expectedData, "validate.logo.txt");
+		helper.getDataofRow(expectedData, "validate.logo.txt",3);
 
 	}
 	public void validateproductsnapshot() throws Exception {
 		String product=helper.getData();
 		String expectedData= page.getdata_fromExcel(product, "Validation Text", "Product Snapshot Text");
-		helper.getdata(expectedData, "validated.productsnapshotbar.txt");
+		helper.getDataofRow(expectedData, "validated.productsnapshotbar.txt",9);
 
 	}
 	public void validateListOfProducts() throws Exception {
 		String product=helper.getData();
 		String expectedData= page.getdata_fromExcel(product, "Validation Text", "Products Texts");
-		helper.getdata(expectedData, "validate.product.txt");
+		helper.getDataofRow(expectedData, "validate.product.txt",11);
 	}
 	public void validateDashboard() throws Exception {
 		String product=helper.getData();
 		String data=page.getdata_fromExcel(product,"Validation Text", "Dashboard Text");
-		helper.getdata(data, "validate.dashboardpage.txt");	
+		helper.getDataofRow(data, "validate.dashboardpage.txt",2);	
 	}
 	public void validateRecentExecutionTime() throws Exception {
 		String product=helper.getData();
 		String expectedData= page.getdata_fromExcel(product, "Validation Text", "Products Recent Execution time");
-		helper.getdata(expectedData, "loc.executiontime.txt");
+		helper.getDataofRow(expectedData, "loc.executiontime.txt",12);
 
 	}
 

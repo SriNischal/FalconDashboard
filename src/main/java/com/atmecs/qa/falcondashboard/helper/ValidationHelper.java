@@ -21,6 +21,18 @@ public class ValidationHelper {
 	}
 	
 	@SuppressWarnings("static-access")
+	public void getDataofRow(String expectedString,String validationMessage,int i) throws Exception
+	{
+		String actualproduct;
+        actualproduct=page.getText(read.getPropertyvalue(validationMessage,ProjectBaseConstantPaths.LOCATORS_FILE));
+        page.writedata_toExcel("REST API TEST RESULT", "Validation Text", i, actualproduct);
+		Assert.assertEquals(actualproduct, expectedString);
+		log.info("Successfully validated " + expectedString);
+		System.out.println(actualproduct);
+		System.out.println(expectedString);
+	}
+	
+	@SuppressWarnings("static-access")
 	public void getdata(String expectedString,String validationMessage) throws Exception
 	{
 		String actualproduct;

@@ -9,9 +9,9 @@
     <classes>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC37_EndTime">
         <methods>
-          <include name="startTime"/>
           <include name="preSetup"/>
           <include name="teardown"/>
+          <include name="endTime"/>
         </methods>
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC37_EndTime -->
     </classes>

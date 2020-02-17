@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="38" passed="38" failed="0" skipped="0">
+<testng-results ignored="0" total="38" passed="35" failed="3" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[INFO: The value found with Environment variable FalconDemo is: FalconDemo]]>
@@ -777,6 +777,12 @@
       <![CDATA[Successfully displayed the execution times]]>
     </line>
     <line>
+      <![CDATA[PASS : Successfully validaetd the products : ACTUAL : 3 hours ago,38 days ago,46 days ago,48 days ago,53 days ago,201 days ago,214 days ago,214 days ago,216 days ago,235 days ago,241 days ago,241 days ago,243 days ago,248 days ago,250 days ago,258 days ago,264 days ago,264 days ago,272 days ago,333 days ago,348 days ago,355 days ago,370 days ago,378 days ago,378 days ago,383 days ago,399 days ago,438 days ago,444 days ago,473 days ago,524 days ago,591 days ago,600 days ago,605 days ago,607 days ago,607 days ago,607 days ago,627 days ago,633 days ago,633 days ago,662 days ago,703 days ago,703 days ago,739 days ago,746 days ago,761 days ago,761 days ago,762 days ago,766 days ago,795 days ago,798 days ago,803 days ago,811 days ago,822 days ago,836 days ago EXPECTED :3 hours ago,38 days ago,46 days ago,48 days ago,53 days ago,201 days ago,214 days ago,214 days ago,216 days ago,235 days ago,241 days ago,241 days ago,243 days ago,248 days ago,250 days ago,258 days ago,264 days ago,264 days ago,272 days ago,333 days ago,348 days ago,355 days ago,370 days ago,378 days ago,378 days ago,383 days ago,399 days ago,438 days ago,444 days ago,473 days ago,524 days ago,591 days ago,600 days ago,605 days ago,607 days ago,607 days ago,607 days ago,627 days ago,633 days ago,633 days ago,662 days ago,703 days ago,703 days ago,739 days ago,746 days ago,761 days ago,761 days ago,762 days ago,766 days ago,795 days ago,798 days ago,803 days ago,811 days ago,822 days ago,836 days ago]]>
+    </line>
+    <line>
+      <![CDATA[Successfully valdated all the recent execution times]]>
+    </line>
+    <line>
       <![CDATA[Successfully clicked on product]]>
     </line>
     <line>
@@ -840,25 +846,7 @@
       <![CDATA[Maximizing browser window]]>
     </line>
     <line>
-      <![CDATA[Successfully validated product]]>
-    </line>
-    <line>
-      <![CDATA[Successfully clicked on the product]]>
-    </line>
-    <line>
-      <![CDATA[Successfully validated panel title]]>
-    </line>
-    <line>
-      <![CDATA[PASS : Successfully validaetd the test cases : ACTUAL : deleteProjectApiTest 0 Sec Pass,downloadImageApiTest 0 Sec Pass,exportToExcelApiTest 0 Sec Pass,getDashboardApiTest 1 Sec Pass,invalidLinkApiTest 0 Sec Fail,recentRunsApiTest 0 Sec Pass,reportViewApiTest 0 Sec Pass,uploadImageApiTest 2 Sec Pass,uploadTestngResultFileApiTest 0 Sec Pass,viewReportApiTest 5 Sec Pass EXPECTED :deleteProjectApiTest 0 Sec Pass,downloadImageApiTest 0 Sec Pass,exportToExcelApiTest 0 Sec Pass,getDashboardApiTest 1 Sec Pass,invalidLinkApiTest 0 Sec Fail,recentRunsApiTest 0 Sec Pass,reportViewApiTest 0 Sec Pass,uploadImageApiTest 2 Sec Pass,uploadTestngResultFileApiTest 0 Sec Pass,viewReportApiTest 5 Sec Pass]]>
-    </line>
-    <line>
-      <![CDATA[Successfully valdated all the test cases]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on download option]]>
-    </line>
-    <line>
-      <![CDATA[Successfully selected dashboard option]]>
+      <![CDATA[Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77 (3)\Screenshots\productPage_1_.png]]>
     </line>
     <line>
       <![CDATA[Opening browser: chrome]]>
@@ -987,7 +975,7 @@
       <![CDATA[Successfully displayed day and date of product]]>
     </line>
     <line>
-      <![CDATA[PASS : Successfully validated the date : ACTUAL : Feb14,2020 EXPECTED :Feb14,2020]]>
+      <![CDATA[PASS : Successfully validated the date : ACTUAL : Feb17,2020 EXPECTED :Feb17,2020]]>
     </line>
     <line>
       <![CDATA[Successfully validated the date]]>
@@ -1056,22 +1044,7 @@
       <![CDATA[Successfully validated dashboard]]>
     </line>
     <line>
-      <![CDATA[Successfully validated recent runs]]>
-    </line>
-    <line>
-      <![CDATA[Successfully validated recentruns]]>
-    </line>
-    <line>
-      <![CDATA[Successfully validated recent runs panel title]]>
-    </line>
-    <line>
-      <![CDATA[Successfully validated View]]>
-    </line>
-    <line>
-      <![CDATA[Successfully validated panelview]]>
-    </line>
-    <line>
-      <![CDATA[Successfully validated product snapshot]]>
+      <![CDATA[Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77 (14)\Screenshots\mainNavigation_1_.png]]>
     </line>
     <line>
       <![CDATA[Opening browser: chrome]]>
@@ -1200,9 +1173,6 @@
       <![CDATA[Successfully validated dashboard text]]>
     </line>
     <line>
-      <![CDATA[clicked on refresh option]]>
-    </line>
-    <line>
       <![CDATA[Successfully clicked on the refresh option]]>
     </line>
     <line>
@@ -1281,10 +1251,7 @@
       <![CDATA[Successfully clicked total test cases]]>
     </line>
     <line>
-      <![CDATA[Successfully validated test cases]]>
-    </line>
-    <line>
-      <![CDATA[Successfully validated the run time]]>
+      <![CDATA[Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77 (25)\Screenshots\totalTestCases_1_.png]]>
     </line>
     <line>
       <![CDATA[Opening browser: chrome]]>
@@ -1473,16 +1440,10 @@
       <![CDATA[Successfully validated the text]]>
     </line>
     <line>
-      <![CDATA[Feb 14, 2020 4:29:13 PM]]>
-    </line>
-    <line>
       <![CDATA[Successfully displayed day and date of product]]>
     </line>
     <line>
-      <![CDATA[Feb14,2020]]>
-    </line>
-    <line>
-      <![CDATA[PASS : Successfully validated the date : ACTUAL : Feb14,2020 EXPECTED :Feb14,2020]]>
+      <![CDATA[PASS : Successfully validated the date : ACTUAL : Feb17,2020 EXPECTED :Feb17,2020]]>
     </line>
     <line>
       <![CDATA[Successfully validated the date]]>
@@ -1515,16 +1476,10 @@
       <![CDATA[Successfully validated the text]]>
     </line>
     <line>
-      <![CDATA[Feb 14, 2020 4:29:13 PM]]>
-    </line>
-    <line>
       <![CDATA[Successfully displayed day and date of product]]>
     </line>
     <line>
-      <![CDATA[Feb14,2020]]>
-    </line>
-    <line>
-      <![CDATA[PASS : Successfully validated the date : ACTUAL : Feb14,2020 EXPECTED :Feb14,2020]]>
+      <![CDATA[PASS : Successfully validated the date : ACTUAL : Feb17,2020 EXPECTED :Feb17,2020]]>
     </line>
     <line>
       <![CDATA[Successfully validated the date]]>
@@ -1551,12 +1506,12 @@
       <![CDATA[Successfully clicked on the expand button]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-02-14T13:43:16Z" name="FalconDemo-Sample-WIN_10_chrome_77 (15)" finished-at="2020-02-14T13:43:18Z" duration-ms="2808">
+  <suite started-at="2020-02-17T14:29:04Z" name="FalconDemo-Sample-WIN_10_chrome_77 (15)" finished-at="2020-02-17T14:29:07Z" duration-ms="2817">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:43:16Z" name="SampleTest" finished-at="2020-02-14T13:43:18Z" duration-ms="2808">
+    <test started-at="2020-02-17T14:29:04Z" name="SampleTest" finished-at="2020-02-17T14:29:07Z" duration-ms="2817">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns@59d254c1]" started-at="2020-02-14T13:43:03Z" name="preSetup" finished-at="2020-02-14T13:43:16Z" duration-ms="12091" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns@604a9ef4]" started-at="2020-02-17T14:28:52Z" name="preSetup" finished-at="2020-02-17T14:29:04Z" duration-ms="12175" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1588,7 +1543,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="recentrun()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns@59d254c1]" started-at="2020-02-14T13:43:16Z" name="recentrun" finished-at="2020-02-14T13:43:18Z" duration-ms="2807" status="PASS">
+        <test-method signature="recentrun()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns@604a9ef4]" started-at="2020-02-17T14:29:04Z" name="recentrun" finished-at="2020-02-17T14:29:07Z" duration-ms="2816" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on recent runs]]>
@@ -1616,19 +1571,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- recentrun -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns@59d254c1]" started-at="2020-02-14T13:43:18Z" name="teardown" finished-at="2020-02-14T13:43:21Z" duration-ms="2665" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns@604a9ef4]" started-at="2020-02-17T14:29:07Z" name="teardown" finished-at="2020-02-17T14:29:07Z" duration-ms="612" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (15) -->
-  <suite started-at="2020-02-14T13:46:32Z" name="FalconDemo-Sample-WIN_10_chrome_77 (27)" finished-at="2020-02-14T13:46:37Z" duration-ms="4973">
+  <suite started-at="2020-02-17T14:32:25Z" name="FalconDemo-Sample-WIN_10_chrome_77 (27)" finished-at="2020-02-17T14:32:30Z" duration-ms="5331">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:46:32Z" name="SampleTest" finished-at="2020-02-14T13:46:37Z" duration-ms="4973">
+    <test started-at="2020-02-17T14:32:25Z" name="SampleTest" finished-at="2020-02-17T14:32:30Z" duration-ms="5331">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases@26fbf051]" started-at="2020-02-14T13:46:19Z" name="preSetup" finished-at="2020-02-14T13:46:32Z" duration-ms="12597" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases@496680bf]" started-at="2020-02-17T14:32:13Z" name="preSetup" finished-at="2020-02-17T14:32:25Z" duration-ms="12198" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1660,7 +1615,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="passTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases@26fbf051]" started-at="2020-02-14T13:46:32Z" name="passTestCases" finished-at="2020-02-14T13:46:37Z" duration-ms="4971" status="PASS">
+        <test-method signature="passTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases@496680bf]" started-at="2020-02-17T14:32:25Z" name="passTestCases" finished-at="2020-02-17T14:32:30Z" duration-ms="5331" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on product]]>
@@ -1679,19 +1634,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- passTestCases -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases@26fbf051]" started-at="2020-02-14T13:46:37Z" name="teardown" finished-at="2020-02-14T13:46:38Z" duration-ms="580" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases@496680bf]" started-at="2020-02-17T14:32:30Z" name="teardown" finished-at="2020-02-17T14:32:31Z" duration-ms="438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (27) -->
-  <suite started-at="2020-02-14T13:43:48Z" name="FalconDemo-Sample-WIN_10_chrome_77 (17)" finished-at="2020-02-14T13:43:54Z" duration-ms="5343">
+  <suite started-at="2020-02-17T14:29:36Z" name="FalconDemo-Sample-WIN_10_chrome_77 (17)" finished-at="2020-02-17T14:29:41Z" duration-ms="5252">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:43:48Z" name="SampleTest" finished-at="2020-02-14T13:43:54Z" duration-ms="5343">
+    <test started-at="2020-02-17T14:29:36Z" name="SampleTest" finished-at="2020-02-17T14:29:41Z" duration-ms="5252">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent@39cec540]" started-at="2020-02-14T13:43:36Z" name="preSetup" finished-at="2020-02-14T13:43:48Z" duration-ms="12718" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent@1f985dc4]" started-at="2020-02-17T14:29:24Z" name="preSetup" finished-at="2020-02-17T14:29:36Z" duration-ms="12055" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1723,7 +1678,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="componentOfProduct()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent@39cec540]" started-at="2020-02-14T13:43:48Z" name="componentOfProduct" finished-at="2020-02-14T13:43:54Z" duration-ms="5343" status="PASS">
+        <test-method signature="componentOfProduct()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent@1f985dc4]" started-at="2020-02-17T14:29:36Z" name="componentOfProduct" finished-at="2020-02-17T14:29:41Z" duration-ms="5252" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on recent runs]]>
@@ -1739,19 +1694,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- componentOfProduct -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent@39cec540]" started-at="2020-02-14T13:43:54Z" name="teardown" finished-at="2020-02-14T13:43:55Z" duration-ms="790" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent@1f985dc4]" started-at="2020-02-17T14:29:41Z" name="teardown" finished-at="2020-02-17T14:29:42Z" duration-ms="1441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (17) -->
-  <suite started-at="2020-02-14T13:47:05Z" name="FalconDemo-Sample-WIN_10_chrome_77 (29)" finished-at="2020-02-14T13:47:10Z" duration-ms="4736">
+  <suite started-at="2020-02-17T14:32:58Z" name="FalconDemo-Sample-WIN_10_chrome_77 (29)" finished-at="2020-02-17T14:33:03Z" duration-ms="5570">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:47:05Z" name="SampleTest" finished-at="2020-02-14T13:47:10Z" duration-ms="4736">
+    <test started-at="2020-02-17T14:32:58Z" name="SampleTest" finished-at="2020-02-17T14:33:03Z" duration-ms="5570">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases@69ae365]" started-at="2020-02-14T13:46:53Z" name="preSetup" finished-at="2020-02-14T13:47:05Z" duration-ms="12407" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases@c4137cb]" started-at="2020-02-17T14:32:46Z" name="preSetup" finished-at="2020-02-17T14:32:58Z" duration-ms="12274" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1783,7 +1738,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="failTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases@69ae365]" started-at="2020-02-14T13:47:05Z" name="failTestCases" finished-at="2020-02-14T13:47:10Z" duration-ms="4736" status="PASS">
+        <test-method signature="failTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases@c4137cb]" started-at="2020-02-17T14:32:58Z" name="failTestCases" finished-at="2020-02-17T14:33:03Z" duration-ms="5569" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on product]]>
@@ -1802,19 +1757,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- failTestCases -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases@69ae365]" started-at="2020-02-14T13:47:10Z" name="teardown" finished-at="2020-02-14T13:47:11Z" duration-ms="810" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases@c4137cb]" started-at="2020-02-17T14:33:03Z" name="teardown" finished-at="2020-02-17T14:33:04Z" duration-ms="1005" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (29) -->
-  <suite started-at="2020-02-14T13:41:56Z" name="FalconDemo-Sample-WIN_10_chrome_77 (11)" finished-at="2020-02-14T13:42:00Z" duration-ms="4132">
+  <suite started-at="2020-02-17T14:27:49Z" name="FalconDemo-Sample-WIN_10_chrome_77 (11)" finished-at="2020-02-17T14:27:53Z" duration-ms="4043">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:41:56Z" name="SampleTest" finished-at="2020-02-14T13:42:00Z" duration-ms="4132">
+    <test started-at="2020-02-17T14:27:49Z" name="SampleTest" finished-at="2020-02-17T14:27:53Z" duration-ms="4043">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases@55dd6f2e]" started-at="2020-02-14T13:41:43Z" name="preSetup" finished-at="2020-02-14T13:41:56Z" duration-ms="12309" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases@6292834b]" started-at="2020-02-17T14:27:37Z" name="preSetup" finished-at="2020-02-17T14:27:49Z" duration-ms="11814" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1846,7 +1801,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="dropdownPassedTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases@55dd6f2e]" started-at="2020-02-14T13:41:56Z" name="dropdownPassedTestCases" finished-at="2020-02-14T13:42:00Z" duration-ms="4132" status="PASS">
+        <test-method signature="dropdownPassedTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases@6292834b]" started-at="2020-02-17T14:27:49Z" name="dropdownPassedTestCases" finished-at="2020-02-17T14:27:53Z" duration-ms="4043" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on product]]>
@@ -1862,19 +1817,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- dropdownPassedTestCases -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases@55dd6f2e]" started-at="2020-02-14T13:42:00Z" name="teardown" finished-at="2020-02-14T13:42:01Z" duration-ms="860" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases@6292834b]" started-at="2020-02-17T14:27:53Z" name="teardown" finished-at="2020-02-17T14:27:54Z" duration-ms="1489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (11) -->
-  <suite started-at="2020-02-14T13:48:24Z" name="FalconDemo-Sample-WIN_10_chrome_77 (33)" finished-at="2020-02-14T13:48:27Z" duration-ms="2757">
+  <suite started-at="2020-02-17T14:34:11Z" name="FalconDemo-Sample-WIN_10_chrome_77 (33)" finished-at="2020-02-17T14:34:15Z" duration-ms="3997">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:48:24Z" name="SampleTest" finished-at="2020-02-14T13:48:27Z" duration-ms="2757">
+    <test started-at="2020-02-17T14:34:11Z" name="SampleTest" finished-at="2020-02-17T14:34:15Z" duration-ms="3997">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC35_LastRun">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC35_LastRun@1d20673b]" started-at="2020-02-14T13:48:12Z" name="preSetup" finished-at="2020-02-14T13:48:24Z" duration-ms="12335" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC35_LastRun@476510bc]" started-at="2020-02-17T14:33:58Z" name="preSetup" finished-at="2020-02-17T14:34:11Z" duration-ms="12122" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1906,7 +1861,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="lastRun()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC35_LastRun@1d20673b]" started-at="2020-02-14T13:48:24Z" name="lastRun" finished-at="2020-02-14T13:48:27Z" duration-ms="2756" status="PASS">
+        <test-method signature="lastRun()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC35_LastRun@476510bc]" started-at="2020-02-17T14:34:11Z" name="lastRun" finished-at="2020-02-17T14:34:15Z" duration-ms="3996" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on the recent runs]]>
@@ -1919,19 +1874,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- lastRun -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC35_LastRun@1d20673b]" started-at="2020-02-14T13:48:27Z" name="teardown" finished-at="2020-02-14T13:48:28Z" duration-ms="846" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC35_LastRun@476510bc]" started-at="2020-02-17T14:34:15Z" name="teardown" finished-at="2020-02-17T14:34:16Z" duration-ms="1601" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC35_LastRun -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (33) -->
-  <suite started-at="2020-02-14T13:39:01Z" name="FalconDemo-Sample-WIN_10_chrome_77 (1)" finished-at="2020-02-14T13:39:06Z" duration-ms="4658">
+  <suite started-at="2020-02-17T14:24:58Z" name="FalconDemo-Sample-WIN_10_chrome_77 (1)" finished-at="2020-02-17T14:25:03Z" duration-ms="4921">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:39:01Z" name="SampleTest" finished-at="2020-02-14T13:39:06Z" duration-ms="4658">
+    <test started-at="2020-02-17T14:24:58Z" name="SampleTest" finished-at="2020-02-17T14:25:03Z" duration-ms="4921">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC03_TestCases@1ff32951]" started-at="2020-02-14T13:38:49Z" name="preSetup" finished-at="2020-02-14T13:39:01Z" duration-ms="11799" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC03_TestCases@50a69d1b]" started-at="2020-02-17T14:24:46Z" name="preSetup" finished-at="2020-02-17T14:24:58Z" duration-ms="12307" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1963,7 +1918,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="numberofTestCasesOfProduct()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC03_TestCases@1ff32951]" started-at="2020-02-14T13:39:01Z" name="numberofTestCasesOfProduct" finished-at="2020-02-14T13:39:06Z" duration-ms="4658" status="PASS">
+        <test-method signature="numberofTestCasesOfProduct()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC03_TestCases@50a69d1b]" started-at="2020-02-17T14:24:58Z" name="numberofTestCasesOfProduct" finished-at="2020-02-17T14:25:03Z" duration-ms="4919" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[PASS : Successfully validaetd the test cases : ACTUAL : 10,1,2,2,1,1,4,10,2,12,1,1,4,1,1,0,2,2,1,4,4,0,1,6,6,6,4,1,1,1,7,9,2,1,8,10,10,1,4,2,1,8,4,2,1,1,1,1,6,2,1,2,2,1,5 EXPECTED :10,1,2,2,1,1,4,10,2,12,1,1,4,1,1,0,2,2,1,4,4,0,1,6,6,6,4,1,1,1,7,9,2,1,8,10,10,1,4,2,1,8,4,2,1,1,1,1,6,2,1,2,2,1,5]]>
@@ -1979,19 +1934,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- numberofTestCasesOfProduct -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC03_TestCases@1ff32951]" started-at="2020-02-14T13:39:06Z" name="teardown" finished-at="2020-02-14T13:39:08Z" duration-ms="2473" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC03_TestCases@50a69d1b]" started-at="2020-02-17T14:25:03Z" name="teardown" finished-at="2020-02-17T14:25:08Z" duration-ms="4683" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC03_TestCases -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (1) -->
-  <suite started-at="2020-02-14T13:45:26Z" name="FalconDemo-Sample-WIN_10_chrome_77 (23)" finished-at="2020-02-14T13:45:31Z" duration-ms="5346">
+  <suite started-at="2020-02-17T14:31:18Z" name="FalconDemo-Sample-WIN_10_chrome_77 (23)" finished-at="2020-02-17T14:31:24Z" duration-ms="5804">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:45:26Z" name="SampleTest" finished-at="2020-02-14T13:45:31Z" duration-ms="5346">
+    <test started-at="2020-02-17T14:31:18Z" name="SampleTest" finished-at="2020-02-17T14:31:24Z" duration-ms="5804">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct@4a168b71]" started-at="2020-02-14T13:45:13Z" name="preSetup" finished-at="2020-02-14T13:45:26Z" duration-ms="12282" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct@b7988a6]" started-at="2020-02-17T14:31:06Z" name="preSetup" finished-at="2020-02-17T14:31:18Z" duration-ms="11831" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2023,7 +1978,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="stepsOfProduct()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct@4a168b71]" started-at="2020-02-14T13:45:26Z" name="stepsOfProduct" finished-at="2020-02-14T13:45:31Z" duration-ms="5346" status="PASS">
+        <test-method signature="stepsOfProduct()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct@b7988a6]" started-at="2020-02-17T14:31:18Z" name="stepsOfProduct" finished-at="2020-02-17T14:31:24Z" duration-ms="5804" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on the product]]>
@@ -2048,19 +2003,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- stepsOfProduct -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct@4a168b71]" started-at="2020-02-14T13:45:31Z" name="teardown" finished-at="2020-02-14T13:45:32Z" duration-ms="708" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct@b7988a6]" started-at="2020-02-17T14:31:24Z" name="teardown" finished-at="2020-02-17T14:31:25Z" duration-ms="1267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (23) -->
-  <suite started-at="2020-02-14T13:42:35Z" name="FalconDemo-Sample-WIN_10_chrome_77 (13)" finished-at="2020-02-14T13:42:44Z" duration-ms="9263">
+  <suite started-at="2020-02-17T14:28:26Z" name="FalconDemo-Sample-WIN_10_chrome_77 (13)" finished-at="2020-02-17T14:28:34Z" duration-ms="8635">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:42:35Z" name="SampleTest" finished-at="2020-02-14T13:42:44Z" duration-ms="9263">
+    <test started-at="2020-02-17T14:28:26Z" name="SampleTest" finished-at="2020-02-17T14:28:34Z" duration-ms="8635">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases@5b30c6be]" started-at="2020-02-14T13:42:22Z" name="preSetup" finished-at="2020-02-14T13:42:35Z" duration-ms="12367" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases@672d74af]" started-at="2020-02-17T14:28:14Z" name="preSetup" finished-at="2020-02-17T14:28:26Z" duration-ms="12224" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2092,7 +2047,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="dropdownSkippedTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases@5b30c6be]" started-at="2020-02-14T13:42:35Z" name="dropdownSkippedTestCases" finished-at="2020-02-14T13:42:44Z" duration-ms="9263" status="PASS">
+        <test-method signature="dropdownSkippedTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases@672d74af]" started-at="2020-02-17T14:28:26Z" name="dropdownSkippedTestCases" finished-at="2020-02-17T14:28:34Z" duration-ms="8633" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on product]]>
@@ -2108,19 +2063,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- dropdownSkippedTestCases -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases@5b30c6be]" started-at="2020-02-14T13:42:44Z" name="teardown" finished-at="2020-02-14T13:42:45Z" duration-ms="787" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases@672d74af]" started-at="2020-02-17T14:28:34Z" name="teardown" finished-at="2020-02-17T14:28:35Z" duration-ms="737" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (13) -->
-  <suite started-at="2020-02-14T13:48:57Z" name="FalconDemo-Sample-WIN_10_chrome_77 (35)" finished-at="2020-02-14T13:49:00Z" duration-ms="3154">
+  <suite started-at="2020-02-17T14:34:44Z" name="FalconDemo-Sample-WIN_10_chrome_77 (35)" finished-at="2020-02-17T14:34:46Z" duration-ms="2357">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:48:57Z" name="SampleTest" finished-at="2020-02-14T13:49:00Z" duration-ms="3154">
+    <test started-at="2020-02-17T14:34:44Z" name="SampleTest" finished-at="2020-02-17T14:34:46Z" duration-ms="2357">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC37_EndTime">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC37_EndTime@63d54bc8]" started-at="2020-02-14T13:48:44Z" name="preSetup" finished-at="2020-02-14T13:48:57Z" duration-ms="12696" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC37_EndTime@796b028c]" started-at="2020-02-17T14:34:32Z" name="preSetup" finished-at="2020-02-17T14:34:44Z" duration-ms="12293" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2152,7 +2107,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="endTime()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC37_EndTime@63d54bc8]" started-at="2020-02-14T13:48:57Z" name="endTime" finished-at="2020-02-14T13:49:00Z" duration-ms="3154" status="PASS">
+        <test-method signature="endTime()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC37_EndTime@796b028c]" started-at="2020-02-17T14:34:44Z" name="endTime" finished-at="2020-02-17T14:34:46Z" duration-ms="2357" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on product]]>
@@ -2176,35 +2131,29 @@
               <![CDATA[Successfully validated the text]]>
             </line>
             <line>
-              <![CDATA[Feb 14, 2020 4:29:13 PM]]>
-            </line>
-            <line>
               <![CDATA[Successfully displayed day and date of product]]>
             </line>
             <line>
-              <![CDATA[Feb14,2020]]>
-            </line>
-            <line>
-              <![CDATA[PASS : Successfully validated the date : ACTUAL : Feb14,2020 EXPECTED :Feb14,2020]]>
+              <![CDATA[PASS : Successfully validated the date : ACTUAL : Feb17,2020 EXPECTED :Feb17,2020]]>
             </line>
             <line>
               <![CDATA[Successfully validated the date]]>
             </line>
           </reporter-output>
         </test-method> <!-- endTime -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC37_EndTime@63d54bc8]" started-at="2020-02-14T13:49:00Z" name="teardown" finished-at="2020-02-14T13:49:01Z" duration-ms="1478" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC37_EndTime@796b028c]" started-at="2020-02-17T14:34:46Z" name="teardown" finished-at="2020-02-17T14:34:48Z" duration-ms="1854" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC37_EndTime -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (35) -->
-  <suite started-at="2020-02-14T13:39:37Z" name="FalconDemo-Sample-WIN_10_chrome_77 (3)" finished-at="2020-02-14T13:39:42Z" duration-ms="4436">
+  <suite started-at="2020-02-17T14:25:38Z" name="FalconDemo-Sample-WIN_10_chrome_77 (3)" finished-at="2020-02-17T14:25:39Z" duration-ms="1039">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:39:37Z" name="SampleTest" finished-at="2020-02-14T13:39:42Z" duration-ms="4436">
+    <test started-at="2020-02-17T14:25:38Z" name="SampleTest" finished-at="2020-02-17T14:25:39Z" duration-ms="1039">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage@36bbad97]" started-at="2020-02-14T13:39:25Z" name="preSetup" finished-at="2020-02-14T13:39:37Z" duration-ms="12444" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage@f1b898b]" started-at="2020-02-17T14:25:26Z" name="preSetup" finished-at="2020-02-17T14:25:38Z" duration-ms="11801" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2236,44 +2185,73 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="productPage()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage@36bbad97]" started-at="2020-02-14T13:39:37Z" name="productPage" finished-at="2020-02-14T13:39:42Z" duration-ms="4435" status="PASS">
+        <test-method signature="productPage()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage@f1b898b]" started-at="2020-02-17T14:25:38Z" name="productPage" finished-at="2020-02-17T14:25:38Z" duration-ms="579" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Product Name] but found [REST API TEST RESULT]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Product Name] but found [REST API TEST RESULT]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:29)
+at com.atmecs.qa.falcondashboard.validationresults.ProductPageValidation.validateProduct(ProductPageValidation.java:26)
+at com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage.productPage(TC05_ProductPage.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.atmecs.qa.falcondashboard.runner.TestNGRunner.main(TestNGRunner.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:294)
+at java.base/java.lang.Thread.run(Thread.java:830)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Successfully validated product]]>
-            </line>
-            <line>
-              <![CDATA[Successfully clicked on the product]]>
-            </line>
-            <line>
-              <![CDATA[Successfully validated panel title]]>
-            </line>
-            <line>
-              <![CDATA[PASS : Successfully validaetd the test cases : ACTUAL : deleteProjectApiTest 0 Sec Pass,downloadImageApiTest 0 Sec Pass,exportToExcelApiTest 0 Sec Pass,getDashboardApiTest 1 Sec Pass,invalidLinkApiTest 0 Sec Fail,recentRunsApiTest 0 Sec Pass,reportViewApiTest 0 Sec Pass,uploadImageApiTest 2 Sec Pass,uploadTestngResultFileApiTest 0 Sec Pass,viewReportApiTest 5 Sec Pass EXPECTED :deleteProjectApiTest 0 Sec Pass,downloadImageApiTest 0 Sec Pass,exportToExcelApiTest 0 Sec Pass,getDashboardApiTest 1 Sec Pass,invalidLinkApiTest 0 Sec Fail,recentRunsApiTest 0 Sec Pass,reportViewApiTest 0 Sec Pass,uploadImageApiTest 2 Sec Pass,uploadTestngResultFileApiTest 0 Sec Pass,viewReportApiTest 5 Sec Pass]]>
-            </line>
-            <line>
-              <![CDATA[Successfully valdated all the test cases]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on download option]]>
-            </line>
-            <line>
-              <![CDATA[Successfully selected dashboard option]]>
+              <![CDATA[Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77 (3)\Screenshots\productPage_1_.png]]>
             </line>
           </reporter-output>
         </test-method> <!-- productPage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage@36bbad97]" started-at="2020-02-14T13:39:42Z" name="teardown" finished-at="2020-02-14T13:39:42Z" duration-ms="229" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage@f1b898b]" started-at="2020-02-17T14:25:39Z" name="teardown" finished-at="2020-02-17T14:25:41Z" duration-ms="1632" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (3) -->
-  <suite started-at="2020-02-14T13:45:59Z" name="FalconDemo-Sample-WIN_10_chrome_77 (25)" finished-at="2020-02-14T13:46:02Z" duration-ms="3169">
+  <suite started-at="2020-02-17T14:31:53Z" name="FalconDemo-Sample-WIN_10_chrome_77 (25)" finished-at="2020-02-17T14:31:56Z" duration-ms="2843">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:45:59Z" name="SampleTest" finished-at="2020-02-14T13:46:02Z" duration-ms="3169">
+    <test started-at="2020-02-17T14:31:53Z" name="SampleTest" finished-at="2020-02-17T14:31:56Z" duration-ms="2843">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases@119fcac3]" started-at="2020-02-14T13:45:47Z" name="preSetup" finished-at="2020-02-14T13:45:59Z" duration-ms="11896" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases@77e4d0cb]" started-at="2020-02-17T14:31:40Z" name="preSetup" finished-at="2020-02-17T14:31:53Z" duration-ms="12558" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2305,7 +2283,54 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="totalTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases@119fcac3]" started-at="2020-02-14T13:45:59Z" name="totalTestCases" finished-at="2020-02-14T13:46:02Z" duration-ms="3169" status="PASS">
+        <test-method signature="totalTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases@77e4d0cb]" started-at="2020-02-17T14:31:53Z" name="totalTestCases" finished-at="2020-02-17T14:31:55Z" duration-ms="2393" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Testcases #] but found [10 TEST(S)]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Testcases #] but found [10 TEST(S)]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:29)
+at com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation.validateTestCases(ViewPageValidation.java:26)
+at com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases.totalTestCases(TC27_TotalTestCases.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.atmecs.qa.falcondashboard.runner.TestNGRunner.main(TestNGRunner.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:294)
+at java.base/java.lang.Thread.run(Thread.java:830)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on product]]>
@@ -2317,26 +2342,23 @@
               <![CDATA[Successfully clicked total test cases]]>
             </line>
             <line>
-              <![CDATA[Successfully validated test cases]]>
-            </line>
-            <line>
-              <![CDATA[Successfully validated the run time]]>
+              <![CDATA[Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77 (25)\Screenshots\totalTestCases_1_.png]]>
             </line>
           </reporter-output>
         </test-method> <!-- totalTestCases -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases@119fcac3]" started-at="2020-02-14T13:46:02Z" name="teardown" finished-at="2020-02-14T13:46:04Z" duration-ms="1699" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases@77e4d0cb]" started-at="2020-02-17T14:31:56Z" name="teardown" finished-at="2020-02-17T14:31:57Z" duration-ms="950" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (25) -->
-  <suite started-at="2020-02-14T13:44:27Z" name="FalconDemo-Sample-WIN_10_chrome_77 (19)" finished-at="2020-02-14T13:44:30Z" duration-ms="2863">
+  <suite started-at="2020-02-17T14:30:15Z" name="FalconDemo-Sample-WIN_10_chrome_77 (19)" finished-at="2020-02-17T14:30:17Z" duration-ms="1947">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:44:27Z" name="SampleTest" finished-at="2020-02-14T13:44:30Z" duration-ms="2863">
+    <test started-at="2020-02-17T14:30:15Z" name="SampleTest" finished-at="2020-02-17T14:30:17Z" duration-ms="1947">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage@4aacf0c0]" started-at="2020-02-14T13:44:14Z" name="preSetup" finished-at="2020-02-14T13:44:27Z" duration-ms="12597" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage@5b6ce2c1]" started-at="2020-02-17T14:30:03Z" name="preSetup" finished-at="2020-02-17T14:30:15Z" duration-ms="12424" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2368,7 +2390,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="rececntPassPercentage()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage@4aacf0c0]" started-at="2020-02-14T13:44:27Z" name="rececntPassPercentage" finished-at="2020-02-14T13:44:30Z" duration-ms="2863" status="PASS">
+        <test-method signature="rececntPassPercentage()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage@5b6ce2c1]" started-at="2020-02-17T14:30:15Z" name="rececntPassPercentage" finished-at="2020-02-17T14:30:17Z" duration-ms="1946" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on the recent runs]]>
@@ -2381,19 +2403,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- rececntPassPercentage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage@4aacf0c0]" started-at="2020-02-14T13:44:30Z" name="teardown" finished-at="2020-02-14T13:44:31Z" duration-ms="980" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage@5b6ce2c1]" started-at="2020-02-17T14:30:17Z" name="teardown" finished-at="2020-02-17T14:30:19Z" duration-ms="2156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (19) -->
-  <suite started-at="2020-02-14T13:38:24Z" name="FalconDemo-Sample-WIN_10_chrome_77" finished-at="2020-02-14T13:38:25Z" duration-ms="1410">
+  <suite started-at="2020-02-17T14:24:17Z" name="FalconDemo-Sample-WIN_10_chrome_77" finished-at="2020-02-17T14:24:20Z" duration-ms="2796">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:38:24Z" name="SampleTest" finished-at="2020-02-14T13:38:25Z" duration-ms="1410">
+    <test started-at="2020-02-17T14:24:17Z" name="SampleTest" finished-at="2020-02-17T14:24:20Z" duration-ms="2796">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage@52549aaa]" started-at="2020-02-14T13:38:11Z" name="preSetup" finished-at="2020-02-14T13:38:24Z" duration-ms="12977" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage@b727194]" started-at="2020-02-17T14:24:03Z" name="preSetup" finished-at="2020-02-17T14:24:17Z" duration-ms="13753" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2425,7 +2447,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="dashboardPage()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage@52549aaa]" started-at="2020-02-14T13:38:24Z" name="dashboardPage" finished-at="2020-02-14T13:38:25Z" duration-ms="1388" status="PASS">
+        <test-method signature="dashboardPage()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage@b727194]" started-at="2020-02-17T14:24:17Z" name="dashboardPage" finished-at="2020-02-17T14:24:20Z" duration-ms="2772" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[PASS : Verifying String Message  : ACTUAL : ATMECS - Falcon Test Repotrs EXPECTED :ATMECS - Falcon Test Repotrs]]>
@@ -2444,19 +2466,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- dashboardPage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage@52549aaa]" started-at="2020-02-14T13:38:25Z" name="teardown" finished-at="2020-02-14T13:38:30Z" duration-ms="4838" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage@b727194]" started-at="2020-02-17T14:24:20Z" name="teardown" finished-at="2020-02-17T14:24:22Z" duration-ms="2915" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
-  <suite started-at="2020-02-14T13:40:12Z" name="FalconDemo-Sample-WIN_10_chrome_77 (5)" finished-at="2020-02-14T13:40:15Z" duration-ms="2142">
+  <suite started-at="2020-02-17T14:26:08Z" name="FalconDemo-Sample-WIN_10_chrome_77 (5)" finished-at="2020-02-17T14:26:11Z" duration-ms="3313">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:40:12Z" name="SampleTest" finished-at="2020-02-14T13:40:15Z" duration-ms="2142">
+    <test started-at="2020-02-17T14:26:08Z" name="SampleTest" finished-at="2020-02-17T14:26:11Z" duration-ms="3313">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns@79252509]" started-at="2020-02-14T13:40:00Z" name="preSetup" finished-at="2020-02-14T13:40:12Z" duration-ms="12127" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns@94bf5ce]" started-at="2020-02-17T14:25:55Z" name="preSetup" finished-at="2020-02-17T14:26:08Z" duration-ms="12607" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2488,7 +2510,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="dropdown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns@79252509]" started-at="2020-02-14T13:40:12Z" name="dropdown" finished-at="2020-02-14T13:40:15Z" duration-ms="2141" status="PASS">
+        <test-method signature="dropdown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns@94bf5ce]" started-at="2020-02-17T14:26:08Z" name="dropdown" finished-at="2020-02-17T14:26:11Z" duration-ms="3313" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on the product]]>
@@ -2513,19 +2535,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- dropdown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns@79252509]" started-at="2020-02-14T13:40:15Z" name="teardown" finished-at="2020-02-14T13:40:15Z" duration-ms="919" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns@94bf5ce]" started-at="2020-02-17T14:26:11Z" name="teardown" finished-at="2020-02-17T14:26:13Z" duration-ms="1602" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (5) -->
-  <suite started-at="2020-02-14T13:47:42Z" name="FalconDemo-Sample-WIN_10_chrome_77 (31)" finished-at="2020-02-14T13:47:51Z" duration-ms="9817">
+  <suite started-at="2020-02-17T14:33:32Z" name="FalconDemo-Sample-WIN_10_chrome_77 (31)" finished-at="2020-02-17T14:33:41Z" duration-ms="9819">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:47:42Z" name="SampleTest" finished-at="2020-02-14T13:47:51Z" duration-ms="9817">
+    <test started-at="2020-02-17T14:33:32Z" name="SampleTest" finished-at="2020-02-17T14:33:41Z" duration-ms="9819">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases@69a44595]" started-at="2020-02-14T13:47:30Z" name="preSetup" finished-at="2020-02-14T13:47:42Z" duration-ms="11929" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases@168fc65f]" started-at="2020-02-17T14:33:20Z" name="preSetup" finished-at="2020-02-17T14:33:32Z" duration-ms="11851" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2557,7 +2579,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="skippedTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases@69a44595]" started-at="2020-02-14T13:47:42Z" name="skippedTestCases" finished-at="2020-02-14T13:47:51Z" duration-ms="9817" status="PASS">
+        <test-method signature="skippedTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases@168fc65f]" started-at="2020-02-17T14:33:32Z" name="skippedTestCases" finished-at="2020-02-17T14:33:41Z" duration-ms="9819" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on product]]>
@@ -2576,19 +2598,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- skippedTestCases -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases@69a44595]" started-at="2020-02-14T13:47:51Z" name="teardown" finished-at="2020-02-14T13:47:52Z" duration-ms="582" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases@168fc65f]" started-at="2020-02-17T14:33:41Z" name="teardown" finished-at="2020-02-17T14:33:43Z" duration-ms="1341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (31) -->
-  <suite started-at="2020-02-14T13:40:46Z" name="FalconDemo-Sample-WIN_10_chrome_77 (7)" finished-at="2020-02-14T13:40:49Z" duration-ms="2549">
+  <suite started-at="2020-02-17T14:26:40Z" name="FalconDemo-Sample-WIN_10_chrome_77 (7)" finished-at="2020-02-17T14:26:43Z" duration-ms="2462">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:40:46Z" name="SampleTest" finished-at="2020-02-14T13:40:49Z" duration-ms="2549">
+    <test started-at="2020-02-17T14:26:40Z" name="SampleTest" finished-at="2020-02-17T14:26:43Z" duration-ms="2462">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment@668ad06b]" started-at="2020-02-14T13:40:35Z" name="preSetup" finished-at="2020-02-14T13:40:46Z" duration-ms="11947" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment@4a6e3737]" started-at="2020-02-17T14:26:28Z" name="preSetup" finished-at="2020-02-17T14:26:40Z" duration-ms="12148" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2620,7 +2642,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="environmentOfProduct()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment@668ad06b]" started-at="2020-02-14T13:40:46Z" name="environmentOfProduct" finished-at="2020-02-14T13:40:49Z" duration-ms="2548" status="PASS">
+        <test-method signature="environmentOfProduct()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment@4a6e3737]" started-at="2020-02-17T14:26:40Z" name="environmentOfProduct" finished-at="2020-02-17T14:26:43Z" duration-ms="2462" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on the product]]>
@@ -2633,19 +2655,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- environmentOfProduct -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment@668ad06b]" started-at="2020-02-14T13:40:49Z" name="teardown" finished-at="2020-02-14T13:40:51Z" duration-ms="1689" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment@4a6e3737]" started-at="2020-02-17T14:26:43Z" name="teardown" finished-at="2020-02-17T14:26:44Z" duration-ms="1130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (7) -->
-  <suite started-at="2020-02-14T13:44:58Z" name="FalconDemo-Sample-WIN_10_chrome_77 (21)" finished-at="2020-02-14T13:44:58Z" duration-ms="570">
+  <suite started-at="2020-02-17T14:30:46Z" name="FalconDemo-Sample-WIN_10_chrome_77 (21)" finished-at="2020-02-17T14:30:47Z" duration-ms="536">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:44:58Z" name="SampleTest" finished-at="2020-02-14T13:44:58Z" duration-ms="570">
+    <test started-at="2020-02-17T14:30:46Z" name="SampleTest" finished-at="2020-02-17T14:30:47Z" duration-ms="536">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC23_Refresh@48b28e42]" started-at="2020-02-14T13:44:45Z" name="preSetup" finished-at="2020-02-14T13:44:58Z" duration-ms="12235" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC23_Refresh@2659e824]" started-at="2020-02-17T14:30:34Z" name="preSetup" finished-at="2020-02-17T14:30:46Z" duration-ms="12132" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2677,32 +2699,29 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="refresh()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC23_Refresh@48b28e42]" started-at="2020-02-14T13:44:58Z" name="refresh" finished-at="2020-02-14T13:44:58Z" duration-ms="569" status="PASS">
+        <test-method signature="refresh()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC23_Refresh@2659e824]" started-at="2020-02-17T14:30:46Z" name="refresh" finished-at="2020-02-17T14:30:47Z" duration-ms="536" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully validated dashboard text]]>
-            </line>
-            <line>
-              <![CDATA[clicked on refresh option]]>
             </line>
             <line>
               <![CDATA[Successfully clicked on the refresh option]]>
             </line>
           </reporter-output>
         </test-method> <!-- refresh -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC23_Refresh@48b28e42]" started-at="2020-02-14T13:44:58Z" name="teardown" finished-at="2020-02-14T13:44:59Z" duration-ms="716" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC23_Refresh@2659e824]" started-at="2020-02-17T14:30:47Z" name="teardown" finished-at="2020-02-17T14:30:52Z" duration-ms="4985" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC23_Refresh -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (21) -->
-  <suite started-at="2020-02-14T13:41:22Z" name="FalconDemo-Sample-WIN_10_chrome_77 (9)" finished-at="2020-02-14T13:41:25Z" duration-ms="3170">
+  <suite started-at="2020-02-17T14:27:12Z" name="FalconDemo-Sample-WIN_10_chrome_77 (9)" finished-at="2020-02-17T14:27:15Z" duration-ms="3095">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:41:22Z" name="SampleTest" finished-at="2020-02-14T13:41:25Z" duration-ms="3170">
+    <test started-at="2020-02-17T14:27:12Z" name="SampleTest" finished-at="2020-02-17T14:27:15Z" duration-ms="3095">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption@f045a4b]" started-at="2020-02-14T13:41:10Z" name="preSetup" finished-at="2020-02-14T13:41:22Z" duration-ms="11735" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption@3199a10d]" started-at="2020-02-17T14:27:00Z" name="preSetup" finished-at="2020-02-17T14:27:12Z" duration-ms="12171" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2734,7 +2753,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="downloadOption()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption@f045a4b]" started-at="2020-02-14T13:41:22Z" name="downloadOption" finished-at="2020-02-14T13:41:25Z" duration-ms="3169" status="PASS">
+        <test-method signature="downloadOption()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption@3199a10d]" started-at="2020-02-17T14:27:12Z" name="downloadOption" finished-at="2020-02-17T14:27:15Z" duration-ms="3094" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on the product]]>
@@ -2753,19 +2772,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- downloadOption -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption@f045a4b]" started-at="2020-02-14T13:41:25Z" name="teardown" finished-at="2020-02-14T13:41:28Z" duration-ms="2347" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption@3199a10d]" started-at="2020-02-17T14:27:15Z" name="teardown" finished-at="2020-02-17T14:27:20Z" duration-ms="5202" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (9) -->
-  <suite started-at="2020-02-14T13:46:16Z" name="FalconDemo-Sample-WIN_10_chrome_77 (26)" finished-at="2020-02-14T13:46:19Z" duration-ms="2448">
+  <suite started-at="2020-02-17T14:32:09Z" name="FalconDemo-Sample-WIN_10_chrome_77 (26)" finished-at="2020-02-17T14:32:11Z" duration-ms="2277">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:46:16Z" name="SampleTest" finished-at="2020-02-14T13:46:19Z" duration-ms="2448">
+    <test started-at="2020-02-17T14:32:09Z" name="SampleTest" finished-at="2020-02-17T14:32:11Z" duration-ms="2277">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases@24525b5]" started-at="2020-02-14T13:46:04Z" name="preSetup" finished-at="2020-02-14T13:46:16Z" duration-ms="11908" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases@1155d022]" started-at="2020-02-17T14:31:57Z" name="preSetup" finished-at="2020-02-17T14:32:09Z" duration-ms="12535" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2797,7 +2816,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="colorofPassedTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases@24525b5]" started-at="2020-02-14T13:46:16Z" name="colorofPassedTestCases" finished-at="2020-02-14T13:46:19Z" duration-ms="2448" status="PASS">
+        <test-method signature="colorofPassedTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases@1155d022]" started-at="2020-02-17T14:32:09Z" name="colorofPassedTestCases" finished-at="2020-02-17T14:32:11Z" duration-ms="2277" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on product]]>
@@ -2816,19 +2835,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- colorofPassedTestCases -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases@24525b5]" started-at="2020-02-14T13:46:19Z" name="teardown" finished-at="2020-02-14T13:46:19Z" duration-ms="874" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases@1155d022]" started-at="2020-02-17T14:32:11Z" name="teardown" finished-at="2020-02-17T14:32:13Z" duration-ms="1520" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (26) -->
-  <suite started-at="2020-02-14T13:43:33Z" name="FalconDemo-Sample-WIN_10_chrome_77 (16)" finished-at="2020-02-14T13:43:35Z" duration-ms="2171">
+  <suite started-at="2020-02-17T14:29:20Z" name="FalconDemo-Sample-WIN_10_chrome_77 (16)" finished-at="2020-02-17T14:29:23Z" duration-ms="2590">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:43:33Z" name="SampleTest" finished-at="2020-02-14T13:43:35Z" duration-ms="2171">
+    <test started-at="2020-02-17T14:29:20Z" name="SampleTest" finished-at="2020-02-17T14:29:23Z" duration-ms="2590">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC18_ProductName">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC18_ProductName@ce2fe76]" started-at="2020-02-14T13:43:21Z" name="preSetup" finished-at="2020-02-14T13:43:33Z" duration-ms="11689" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC18_ProductName@6a63ca12]" started-at="2020-02-17T14:29:07Z" name="preSetup" finished-at="2020-02-17T14:29:20Z" duration-ms="12963" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2860,7 +2879,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="productName()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC18_ProductName@ce2fe76]" started-at="2020-02-14T13:43:33Z" name="productName" finished-at="2020-02-14T13:43:35Z" duration-ms="2170" status="PASS">
+        <test-method signature="productName()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC18_ProductName@6a63ca12]" started-at="2020-02-17T14:29:20Z" name="productName" finished-at="2020-02-17T14:29:23Z" duration-ms="2589" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on the recent runs]]>
@@ -2873,19 +2892,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- productName -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC18_ProductName@ce2fe76]" started-at="2020-02-14T13:43:35Z" name="teardown" finished-at="2020-02-14T13:43:36Z" duration-ms="848" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC18_ProductName@6a63ca12]" started-at="2020-02-17T14:29:23Z" name="teardown" finished-at="2020-02-17T14:29:24Z" duration-ms="1007" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC18_ProductName -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (16) -->
-  <suite started-at="2020-02-14T13:46:50Z" name="FalconDemo-Sample-WIN_10_chrome_77 (28)" finished-at="2020-02-14T13:46:52Z" duration-ms="1994">
+  <suite started-at="2020-02-17T14:32:43Z" name="FalconDemo-Sample-WIN_10_chrome_77 (28)" finished-at="2020-02-17T14:32:45Z" duration-ms="2205">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:46:50Z" name="SampleTest" finished-at="2020-02-14T13:46:52Z" duration-ms="1994">
+    <test started-at="2020-02-17T14:32:43Z" name="SampleTest" finished-at="2020-02-17T14:32:45Z" duration-ms="2205">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases@19351ffb]" started-at="2020-02-14T13:46:38Z" name="preSetup" finished-at="2020-02-14T13:46:50Z" duration-ms="12314" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases@6b7e15e]" started-at="2020-02-17T14:32:31Z" name="preSetup" finished-at="2020-02-17T14:32:43Z" duration-ms="11862" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2917,7 +2936,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="colorofFailedTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases@19351ffb]" started-at="2020-02-14T13:46:50Z" name="colorofFailedTestCases" finished-at="2020-02-14T13:46:52Z" duration-ms="1994" status="PASS">
+        <test-method signature="colorofFailedTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases@6b7e15e]" started-at="2020-02-17T14:32:43Z" name="colorofFailedTestCases" finished-at="2020-02-17T14:32:45Z" duration-ms="2204" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on product]]>
@@ -2936,19 +2955,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- colorofFailedTestCases -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases@19351ffb]" started-at="2020-02-14T13:46:52Z" name="teardown" finished-at="2020-02-14T13:46:53Z" duration-ms="819" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases@6b7e15e]" started-at="2020-02-17T14:32:45Z" name="teardown" finished-at="2020-02-17T14:32:46Z" duration-ms="571" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (28) -->
-  <suite started-at="2020-02-14T13:44:07Z" name="FalconDemo-Sample-WIN_10_chrome_77 (18)" finished-at="2020-02-14T13:44:13Z" duration-ms="6209">
+  <suite started-at="2020-02-17T14:29:55Z" name="FalconDemo-Sample-WIN_10_chrome_77 (18)" finished-at="2020-02-17T14:30:02Z" duration-ms="6891">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:44:07Z" name="SampleTest" finished-at="2020-02-14T13:44:13Z" duration-ms="6209">
+    <test started-at="2020-02-17T14:29:55Z" name="SampleTest" finished-at="2020-02-17T14:30:02Z" duration-ms="6891">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase@2e963e37]" started-at="2020-02-14T13:43:55Z" name="preSetup" finished-at="2020-02-14T13:44:07Z" duration-ms="11976" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase@75fc6471]" started-at="2020-02-17T14:29:42Z" name="preSetup" finished-at="2020-02-17T14:29:55Z" duration-ms="12388" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2980,7 +2999,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="failTestCasesOfProduct()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase@2e963e37]" started-at="2020-02-14T13:44:07Z" name="failTestCasesOfProduct" finished-at="2020-02-14T13:44:13Z" duration-ms="6207" status="PASS">
+        <test-method signature="failTestCasesOfProduct()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase@75fc6471]" started-at="2020-02-17T14:29:55Z" name="failTestCasesOfProduct" finished-at="2020-02-17T14:30:02Z" duration-ms="6890" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on product]]>
@@ -3002,19 +3021,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- failTestCasesOfProduct -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase@2e963e37]" started-at="2020-02-14T13:44:13Z" name="teardown" finished-at="2020-02-14T13:44:14Z" duration-ms="1383" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase@75fc6471]" started-at="2020-02-17T14:30:02Z" name="teardown" finished-at="2020-02-17T14:30:03Z" duration-ms="759" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (18) -->
-  <suite started-at="2020-02-14T13:38:42Z" name="FalconDemo-Sample-WIN_10_chrome_77 (0)" finished-at="2020-02-14T13:38:48Z" duration-ms="6236">
+  <suite started-at="2020-02-17T14:24:35Z" name="FalconDemo-Sample-WIN_10_chrome_77 (0)" finished-at="2020-02-17T14:24:42Z" duration-ms="7016">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:38:42Z" name="SampleTest" finished-at="2020-02-14T13:38:48Z" duration-ms="6236">
+    <test started-at="2020-02-17T14:24:35Z" name="SampleTest" finished-at="2020-02-17T14:24:42Z" duration-ms="7016">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct@1c93bb1e]" started-at="2020-02-14T13:38:30Z" name="preSetup" finished-at="2020-02-14T13:38:42Z" duration-ms="12018" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct@36802952]" started-at="2020-02-17T14:24:22Z" name="preSetup" finished-at="2020-02-17T14:24:35Z" duration-ms="12023" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -3046,7 +3065,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="clickingProduct()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct@1c93bb1e]" started-at="2020-02-14T13:38:42Z" name="clickingProduct" finished-at="2020-02-14T13:38:48Z" duration-ms="6235" status="PASS">
+        <test-method signature="clickingProduct()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct@36802952]" started-at="2020-02-17T14:24:35Z" name="clickingProduct" finished-at="2020-02-17T14:24:42Z" duration-ms="7016" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[PASS : Successfully validaetd the products : ACTUAL : REST API TEST RESULT,WebServices,FALCON,WebServicesDemo,FalconMobileDemo,ObjectExtractor,SampleFalconAPITest,Falcon,DotComUI_Mobile,MWB,MWB_iOS,JB_Native_App_iOS,Falcon2,Fal,MWB,FalconDemo41,CreditSightsMobile,CHS,CHS,HEATCLINIC RESULT,UI WEB TEST RESULT,HEAT CLINIC RESULT,DotComUITablet,HRIS,HRIS_Cloud,HRIS_Local,Falcon,CreditSights,BrowserstackDemo,FalconSampleProj,DotComUITablet,GreyHealthGroup,FluorCorporation,AndroidDemoApp,MWBooking,AutomationDemoClient,APIAutomationDemoClient,APIAutomationClient,FLUOR,Atmecs,CHS,Atmecs,Atmecs,demo,CHS,Atmecs,CHS,TestMobileWeb,TestFalcon_runSessionId,swathi_signup account,Pooja_USAUTOPARTS,USAutoParts,USAutoParts_MUJ,TestMobileWeb_CnameDemo,IOSDemoApp,Mobile_Demo,TestDemoApp,UI BrowserStack Test Result,dbTesting EXPECTED :REST API TEST RESULT,WebServices,FALCON,WebServicesDemo,FalconMobileDemo,ObjectExtractor,SampleFalconAPITest,Falcon,DotComUI_Mobile,MWB,MWB_iOS,JB_Native_App_iOS,Falcon2,Fal,MWB,FalconDemo41,CreditSightsMobile,CHS,CHS,HEATCLINIC RESULT,UI WEB TEST RESULT,HEAT CLINIC RESULT,DotComUITablet,HRIS,HRIS_Cloud,HRIS_Local,Falcon,CreditSights,BrowserstackDemo,FalconSampleProj,DotComUITablet,GreyHealthGroup,FluorCorporation,AndroidDemoApp,MWBooking,AutomationDemoClient,APIAutomationDemoClient,APIAutomationClient,FLUOR,Atmecs,CHS,Atmecs,Atmecs,demo,CHS,Atmecs,CHS,TestMobileWeb,TestFalcon_runSessionId,swathi_signup account,Pooja_USAUTOPARTS,USAutoParts,USAutoParts_MUJ,TestMobileWeb_CnameDemo,IOSDemoApp,Mobile_Demo,TestDemoApp,UI BrowserStack Test Result,dbTesting]]>
@@ -3058,23 +3077,29 @@
               <![CDATA[Successfully displayed the execution times]]>
             </line>
             <line>
+              <![CDATA[PASS : Successfully validaetd the products : ACTUAL : 3 hours ago,38 days ago,46 days ago,48 days ago,53 days ago,201 days ago,214 days ago,214 days ago,216 days ago,235 days ago,241 days ago,241 days ago,243 days ago,248 days ago,250 days ago,258 days ago,264 days ago,264 days ago,272 days ago,333 days ago,348 days ago,355 days ago,370 days ago,378 days ago,378 days ago,383 days ago,399 days ago,438 days ago,444 days ago,473 days ago,524 days ago,591 days ago,600 days ago,605 days ago,607 days ago,607 days ago,607 days ago,627 days ago,633 days ago,633 days ago,662 days ago,703 days ago,703 days ago,739 days ago,746 days ago,761 days ago,761 days ago,762 days ago,766 days ago,795 days ago,798 days ago,803 days ago,811 days ago,822 days ago,836 days ago EXPECTED :3 hours ago,38 days ago,46 days ago,48 days ago,53 days ago,201 days ago,214 days ago,214 days ago,216 days ago,235 days ago,241 days ago,241 days ago,243 days ago,248 days ago,250 days ago,258 days ago,264 days ago,264 days ago,272 days ago,333 days ago,348 days ago,355 days ago,370 days ago,378 days ago,378 days ago,383 days ago,399 days ago,438 days ago,444 days ago,473 days ago,524 days ago,591 days ago,600 days ago,605 days ago,607 days ago,607 days ago,607 days ago,627 days ago,633 days ago,633 days ago,662 days ago,703 days ago,703 days ago,739 days ago,746 days ago,761 days ago,761 days ago,762 days ago,766 days ago,795 days ago,798 days ago,803 days ago,811 days ago,822 days ago,836 days ago]]>
+            </line>
+            <line>
+              <![CDATA[Successfully valdated all the recent execution times]]>
+            </line>
+            <line>
               <![CDATA[Successfully clicked on product]]>
             </line>
           </reporter-output>
         </test-method> <!-- clickingProduct -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct@1c93bb1e]" started-at="2020-02-14T13:38:48Z" name="teardown" finished-at="2020-02-14T13:38:49Z" duration-ms="1081" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct@36802952]" started-at="2020-02-17T14:24:42Z" name="teardown" finished-at="2020-02-17T14:24:46Z" duration-ms="4592" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (0) -->
-  <suite started-at="2020-02-14T13:45:11Z" name="FalconDemo-Sample-WIN_10_chrome_77 (22)" finished-at="2020-02-14T13:45:12Z" duration-ms="519">
+  <suite started-at="2020-02-17T14:31:04Z" name="FalconDemo-Sample-WIN_10_chrome_77 (22)" finished-at="2020-02-17T14:31:05Z" duration-ms="757">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:45:11Z" name="SampleTest" finished-at="2020-02-14T13:45:12Z" duration-ms="519">
+    <test started-at="2020-02-17T14:31:04Z" name="SampleTest" finished-at="2020-02-17T14:31:05Z" duration-ms="757">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot@22d67735]" started-at="2020-02-14T13:44:59Z" name="preSetup" finished-at="2020-02-14T13:45:11Z" duration-ms="12373" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot@2b495b66]" started-at="2020-02-17T14:30:52Z" name="preSetup" finished-at="2020-02-17T14:31:04Z" duration-ms="12383" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -3106,7 +3131,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="productSnapShot()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot@22d67735]" started-at="2020-02-14T13:45:11Z" name="productSnapShot" finished-at="2020-02-14T13:45:12Z" duration-ms="519" status="PASS">
+        <test-method signature="productSnapShot()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot@2b495b66]" started-at="2020-02-17T14:31:04Z" name="productSnapShot" finished-at="2020-02-17T14:31:05Z" duration-ms="757" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on product snapshot bar]]>
@@ -3116,19 +3141,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- productSnapShot -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot@22d67735]" started-at="2020-02-14T13:45:12Z" name="teardown" finished-at="2020-02-14T13:45:13Z" duration-ms="1417" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot@2b495b66]" started-at="2020-02-17T14:31:05Z" name="teardown" finished-at="2020-02-17T14:31:06Z" duration-ms="1567" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (22) -->
-  <suite started-at="2020-02-14T13:42:13Z" name="FalconDemo-Sample-WIN_10_chrome_77 (12)" finished-at="2020-02-14T13:42:18Z" duration-ms="4169">
+  <suite started-at="2020-02-17T14:28:08Z" name="FalconDemo-Sample-WIN_10_chrome_77 (12)" finished-at="2020-02-17T14:28:12Z" duration-ms="4159">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:42:13Z" name="SampleTest" finished-at="2020-02-14T13:42:18Z" duration-ms="4169">
+    <test started-at="2020-02-17T14:28:08Z" name="SampleTest" finished-at="2020-02-17T14:28:12Z" duration-ms="4159">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases@4464ce3]" started-at="2020-02-14T13:42:01Z" name="preSetup" finished-at="2020-02-14T13:42:13Z" duration-ms="12742" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases@2aac339d]" started-at="2020-02-17T14:27:54Z" name="preSetup" finished-at="2020-02-17T14:28:08Z" duration-ms="14012" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -3160,7 +3185,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="dropdownFailedTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases@4464ce3]" started-at="2020-02-14T13:42:13Z" name="dropdownFailedTestCases" finished-at="2020-02-14T13:42:18Z" duration-ms="4169" status="PASS">
+        <test-method signature="dropdownFailedTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases@2aac339d]" started-at="2020-02-17T14:28:08Z" name="dropdownFailedTestCases" finished-at="2020-02-17T14:28:12Z" duration-ms="4159" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on product]]>
@@ -3176,19 +3201,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- dropdownFailedTestCases -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases@4464ce3]" started-at="2020-02-14T13:42:18Z" name="teardown" finished-at="2020-02-14T13:42:22Z" duration-ms="4654" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases@2aac339d]" started-at="2020-02-17T14:28:12Z" name="teardown" finished-at="2020-02-17T14:28:14Z" duration-ms="1268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (12) -->
-  <suite started-at="2020-02-14T13:48:40Z" name="FalconDemo-Sample-WIN_10_chrome_77 (34)" finished-at="2020-02-14T13:48:42Z" duration-ms="2529">
+  <suite started-at="2020-02-17T14:34:29Z" name="FalconDemo-Sample-WIN_10_chrome_77 (34)" finished-at="2020-02-17T14:34:31Z" duration-ms="2334">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:48:40Z" name="SampleTest" finished-at="2020-02-14T13:48:42Z" duration-ms="2529">
+    <test started-at="2020-02-17T14:34:29Z" name="SampleTest" finished-at="2020-02-17T14:34:31Z" duration-ms="2334">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC36_StartTime">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC36_StartTime@55795125]" started-at="2020-02-14T13:48:28Z" name="preSetup" finished-at="2020-02-14T13:48:40Z" duration-ms="12131" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC36_StartTime@1206932d]" started-at="2020-02-17T14:34:16Z" name="preSetup" finished-at="2020-02-17T14:34:29Z" duration-ms="12459" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -3220,7 +3245,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="startTime()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC36_StartTime@55795125]" started-at="2020-02-14T13:48:40Z" name="startTime" finished-at="2020-02-14T13:48:42Z" duration-ms="2528" status="PASS">
+        <test-method signature="startTime()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC36_StartTime@1206932d]" started-at="2020-02-17T14:34:29Z" name="startTime" finished-at="2020-02-17T14:34:31Z" duration-ms="2333" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on product]]>
@@ -3244,35 +3269,29 @@
               <![CDATA[Successfully validated the text]]>
             </line>
             <line>
-              <![CDATA[Feb 14, 2020 4:29:13 PM]]>
-            </line>
-            <line>
               <![CDATA[Successfully displayed day and date of product]]>
             </line>
             <line>
-              <![CDATA[Feb14,2020]]>
-            </line>
-            <line>
-              <![CDATA[PASS : Successfully validated the date : ACTUAL : Feb14,2020 EXPECTED :Feb14,2020]]>
+              <![CDATA[PASS : Successfully validated the date : ACTUAL : Feb17,2020 EXPECTED :Feb17,2020]]>
             </line>
             <line>
               <![CDATA[Successfully validated the date]]>
             </line>
           </reporter-output>
         </test-method> <!-- startTime -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC36_StartTime@55795125]" started-at="2020-02-14T13:48:42Z" name="teardown" finished-at="2020-02-14T13:48:44Z" duration-ms="1816" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC36_StartTime@1206932d]" started-at="2020-02-17T14:34:31Z" name="teardown" finished-at="2020-02-17T14:34:32Z" duration-ms="716" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC36_StartTime -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (34) -->
-  <suite started-at="2020-02-14T13:39:21Z" name="FalconDemo-Sample-WIN_10_chrome_77 (2)" finished-at="2020-02-14T13:39:24Z" duration-ms="2997">
+  <suite started-at="2020-02-17T14:25:20Z" name="FalconDemo-Sample-WIN_10_chrome_77 (2)" finished-at="2020-02-17T14:25:24Z" duration-ms="4216">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:39:21Z" name="SampleTest" finished-at="2020-02-14T13:39:24Z" duration-ms="2997">
+    <test started-at="2020-02-17T14:25:20Z" name="SampleTest" finished-at="2020-02-17T14:25:24Z" duration-ms="4216">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage@4d1f6fec]" started-at="2020-02-14T13:39:08Z" name="preSetup" finished-at="2020-02-14T13:39:21Z" duration-ms="12357" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage@1d51042d]" started-at="2020-02-17T14:25:08Z" name="preSetup" finished-at="2020-02-17T14:25:20Z" duration-ms="12036" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -3304,7 +3323,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="percentageOfProduct()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage@4d1f6fec]" started-at="2020-02-14T13:39:21Z" name="percentageOfProduct" finished-at="2020-02-14T13:39:24Z" duration-ms="2997" status="PASS">
+        <test-method signature="percentageOfProduct()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage@1d51042d]" started-at="2020-02-17T14:25:20Z" name="percentageOfProduct" finished-at="2020-02-17T14:25:24Z" duration-ms="4216" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully mouse hovered the pass%trend]]>
@@ -3338,19 +3357,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- percentageOfProduct -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage@4d1f6fec]" started-at="2020-02-14T13:39:24Z" name="teardown" finished-at="2020-02-14T13:39:25Z" duration-ms="1186" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage@1d51042d]" started-at="2020-02-17T14:25:24Z" name="teardown" finished-at="2020-02-17T14:25:26Z" duration-ms="1708" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (2) -->
-  <suite started-at="2020-02-14T13:45:44Z" name="FalconDemo-Sample-WIN_10_chrome_77 (24)" finished-at="2020-02-14T13:45:46Z" duration-ms="2450">
+  <suite started-at="2020-02-17T14:31:37Z" name="FalconDemo-Sample-WIN_10_chrome_77 (24)" finished-at="2020-02-17T14:31:39Z" duration-ms="2269">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:45:44Z" name="SampleTest" finished-at="2020-02-14T13:45:46Z" duration-ms="2450">
+    <test started-at="2020-02-17T14:31:37Z" name="SampleTest" finished-at="2020-02-17T14:31:39Z" duration-ms="2269">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases@1423ceb8]" started-at="2020-02-14T13:45:32Z" name="preSetup" finished-at="2020-02-14T13:45:44Z" duration-ms="12021" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases@3b9eee2e]" started-at="2020-02-17T14:31:25Z" name="preSetup" finished-at="2020-02-17T14:31:37Z" duration-ms="11697" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -3382,7 +3401,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="colorofTotalTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases@1423ceb8]" started-at="2020-02-14T13:45:44Z" name="colorofTotalTestCases" finished-at="2020-02-14T13:45:46Z" duration-ms="2450" status="PASS">
+        <test-method signature="colorofTotalTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases@3b9eee2e]" started-at="2020-02-17T14:31:37Z" name="colorofTotalTestCases" finished-at="2020-02-17T14:31:39Z" duration-ms="2269" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on product]]>
@@ -3401,19 +3420,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- colorofTotalTestCases -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases@1423ceb8]" started-at="2020-02-14T13:45:46Z" name="teardown" finished-at="2020-02-14T13:45:47Z" duration-ms="1228" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases@3b9eee2e]" started-at="2020-02-17T14:31:39Z" name="teardown" finished-at="2020-02-17T14:31:40Z" duration-ms="1070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (24) -->
-  <suite started-at="2020-02-14T13:42:57Z" name="FalconDemo-Sample-WIN_10_chrome_77 (14)" finished-at="2020-02-14T13:43:02Z" duration-ms="5296">
+  <suite started-at="2020-02-17T14:28:48Z" name="FalconDemo-Sample-WIN_10_chrome_77 (14)" finished-at="2020-02-17T14:28:50Z" duration-ms="1995">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:42:57Z" name="SampleTest" finished-at="2020-02-14T13:43:02Z" duration-ms="5296">
+    <test started-at="2020-02-17T14:28:48Z" name="SampleTest" finished-at="2020-02-17T14:28:50Z" duration-ms="1995">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation@3e555e2]" started-at="2020-02-14T13:42:45Z" name="preSetup" finished-at="2020-02-14T13:42:57Z" duration-ms="12255" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation@4beb43ef]" started-at="2020-02-17T14:28:35Z" name="preSetup" finished-at="2020-02-17T14:28:48Z" duration-ms="12366" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -3445,44 +3464,76 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="mainNavigation()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation@3e555e2]" started-at="2020-02-14T13:42:57Z" name="mainNavigation" finished-at="2020-02-14T13:43:02Z" duration-ms="5295" status="PASS">
+        <test-method signature="mainNavigation()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation@4beb43ef]" started-at="2020-02-17T14:28:48Z" name="mainNavigation" finished-at="2020-02-17T14:28:49Z" duration-ms="1527" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Component] but found [Recent Runs]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Component] but found [Recent Runs]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:29)
+at com.atmecs.qa.falcondashboard.validationresults.MainNavigationValidation.validateRecentruns(MainNavigationValidation.java:26)
+at com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation.mainNavigation(TC16_MainNavigation.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.atmecs.qa.falcondashboard.runner.TestNGRunner.main(TestNGRunner.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:294)
+at java.base/java.lang.Thread.run(Thread.java:830)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
               <![CDATA[Successfully validated dashboard]]>
             </line>
             <line>
-              <![CDATA[Successfully validated recent runs]]>
-            </line>
-            <line>
-              <![CDATA[Successfully validated recentruns]]>
-            </line>
-            <line>
-              <![CDATA[Successfully validated recent runs panel title]]>
-            </line>
-            <line>
-              <![CDATA[Successfully validated View]]>
-            </line>
-            <line>
-              <![CDATA[Successfully validated panelview]]>
-            </line>
-            <line>
-              <![CDATA[Successfully validated product snapshot]]>
+              <![CDATA[Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77 (14)\Screenshots\mainNavigation_1_.png]]>
             </line>
           </reporter-output>
         </test-method> <!-- mainNavigation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation@3e555e2]" started-at="2020-02-14T13:43:02Z" name="teardown" finished-at="2020-02-14T13:43:03Z" duration-ms="1151" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation@4beb43ef]" started-at="2020-02-17T14:28:50Z" name="teardown" finished-at="2020-02-17T14:28:52Z" duration-ms="1950" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (14) -->
-  <suite started-at="2020-02-14T13:49:14Z" name="FalconDemo-Sample-WIN_10_chrome_77 (36)" finished-at="2020-02-14T13:49:18Z" duration-ms="4184">
+  <suite started-at="2020-02-17T14:35:01Z" name="FalconDemo-Sample-WIN_10_chrome_77 (36)" finished-at="2020-02-17T14:35:05Z" duration-ms="3762">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:49:14Z" name="SampleTest" finished-at="2020-02-14T13:49:18Z" duration-ms="4184">
+    <test started-at="2020-02-17T14:35:01Z" name="SampleTest" finished-at="2020-02-17T14:35:05Z" duration-ms="3762">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow@2f9b9045]" started-at="2020-02-14T13:49:01Z" name="preSetup" finished-at="2020-02-14T13:49:14Z" duration-ms="12244" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow@7c20c0f6]" started-at="2020-02-17T14:34:48Z" name="preSetup" finished-at="2020-02-17T14:35:01Z" duration-ms="13068" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -3514,7 +3565,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="maximizeWindow()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow@2f9b9045]" started-at="2020-02-14T13:49:14Z" name="maximizeWindow" finished-at="2020-02-14T13:49:18Z" duration-ms="4183" status="PASS">
+        <test-method signature="maximizeWindow()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow@7c20c0f6]" started-at="2020-02-17T14:35:01Z" name="maximizeWindow" finished-at="2020-02-17T14:35:05Z" duration-ms="3761" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on the expand button]]>
@@ -3533,19 +3584,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- maximizeWindow -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow@2f9b9045]" started-at="2020-02-14T13:49:18Z" name="teardown" finished-at="2020-02-14T13:49:19Z" duration-ms="1480" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow@7c20c0f6]" started-at="2020-02-17T14:35:05Z" name="teardown" finished-at="2020-02-17T14:35:06Z" duration-ms="1456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (36) -->
-  <suite started-at="2020-02-14T13:39:54Z" name="FalconDemo-Sample-WIN_10_chrome_77 (4)" finished-at="2020-02-14T13:39:55Z" duration-ms="1664">
+  <suite started-at="2020-02-17T14:25:53Z" name="FalconDemo-Sample-WIN_10_chrome_77 (4)" finished-at="2020-02-17T14:25:54Z" duration-ms="1769">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:39:54Z" name="SampleTest" finished-at="2020-02-14T13:39:55Z" duration-ms="1664">
+    <test started-at="2020-02-17T14:25:53Z" name="SampleTest" finished-at="2020-02-17T14:25:54Z" duration-ms="1769">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium@353111f9]" started-at="2020-02-14T13:39:42Z" name="preSetup" finished-at="2020-02-14T13:39:54Z" duration-ms="11682" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium@6e02d09f]" started-at="2020-02-17T14:25:41Z" name="preSetup" finished-at="2020-02-17T14:25:53Z" duration-ms="12112" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -3577,7 +3628,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="mediumOfProduct()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium@353111f9]" started-at="2020-02-14T13:39:54Z" name="mediumOfProduct" finished-at="2020-02-14T13:39:55Z" duration-ms="1663" status="PASS">
+        <test-method signature="mediumOfProduct()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium@6e02d09f]" started-at="2020-02-17T14:25:53Z" name="mediumOfProduct" finished-at="2020-02-17T14:25:54Z" duration-ms="1768" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on product]]>
@@ -3596,19 +3647,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- mediumOfProduct -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium@353111f9]" started-at="2020-02-14T13:39:55Z" name="teardown" finished-at="2020-02-14T13:40:00Z" duration-ms="4877" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium@6e02d09f]" started-at="2020-02-17T14:25:54Z" name="teardown" finished-at="2020-02-17T14:25:55Z" duration-ms="1057" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (4) -->
-  <suite started-at="2020-02-14T13:47:23Z" name="FalconDemo-Sample-WIN_10_chrome_77 (30)" finished-at="2020-02-14T13:47:25Z" duration-ms="2028">
+  <suite started-at="2020-02-17T14:33:16Z" name="FalconDemo-Sample-WIN_10_chrome_77 (30)" finished-at="2020-02-17T14:33:18Z" duration-ms="2157">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:47:23Z" name="SampleTest" finished-at="2020-02-14T13:47:25Z" duration-ms="2028">
+    <test started-at="2020-02-17T14:33:16Z" name="SampleTest" finished-at="2020-02-17T14:33:18Z" duration-ms="2157">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases@3e5b0c7a]" started-at="2020-02-14T13:47:11Z" name="preSetup" finished-at="2020-02-14T13:47:23Z" duration-ms="11931" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases@63741d62]" started-at="2020-02-17T14:33:04Z" name="preSetup" finished-at="2020-02-17T14:33:16Z" duration-ms="11894" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -3640,7 +3691,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="colorofSkippedTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases@3e5b0c7a]" started-at="2020-02-14T13:47:23Z" name="colorofSkippedTestCases" finished-at="2020-02-14T13:47:25Z" duration-ms="2028" status="PASS">
+        <test-method signature="colorofSkippedTestCases()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases@63741d62]" started-at="2020-02-17T14:33:16Z" name="colorofSkippedTestCases" finished-at="2020-02-17T14:33:18Z" duration-ms="2156" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on product]]>
@@ -3659,19 +3710,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- colorofSkippedTestCases -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases@3e5b0c7a]" started-at="2020-02-14T13:47:25Z" name="teardown" finished-at="2020-02-14T13:47:30Z" duration-ms="4941" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases@63741d62]" started-at="2020-02-17T14:33:18Z" name="teardown" finished-at="2020-02-17T14:33:20Z" duration-ms="1355" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (30) -->
-  <suite started-at="2020-02-14T13:40:28Z" name="FalconDemo-Sample-WIN_10_chrome_77 (6)" finished-at="2020-02-14T13:40:30Z" duration-ms="2211">
+  <suite started-at="2020-02-17T14:26:25Z" name="FalconDemo-Sample-WIN_10_chrome_77 (6)" finished-at="2020-02-17T14:26:27Z" duration-ms="2308">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:40:28Z" name="SampleTest" finished-at="2020-02-14T13:40:30Z" duration-ms="2211">
+    <test started-at="2020-02-17T14:26:25Z" name="SampleTest" finished-at="2020-02-17T14:26:27Z" duration-ms="2308">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder@b465437]" started-at="2020-02-14T13:40:15Z" name="preSetup" finished-at="2020-02-14T13:40:28Z" duration-ms="12307" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder@8ea1bc0]" started-at="2020-02-17T14:26:13Z" name="preSetup" finished-at="2020-02-17T14:26:25Z" duration-ms="12010" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -3703,7 +3754,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="dashboardSlidder()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder@b465437]" started-at="2020-02-14T13:40:28Z" name="dashboardSlidder" finished-at="2020-02-14T13:40:30Z" duration-ms="2210" status="PASS">
+        <test-method signature="dashboardSlidder()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder@8ea1bc0]" started-at="2020-02-17T14:26:25Z" name="dashboardSlidder" finished-at="2020-02-17T14:26:27Z" duration-ms="2307" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on the product]]>
@@ -3713,19 +3764,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- dashboardSlidder -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder@b465437]" started-at="2020-02-14T13:40:30Z" name="teardown" finished-at="2020-02-14T13:40:35Z" duration-ms="4498" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder@8ea1bc0]" started-at="2020-02-17T14:26:27Z" name="teardown" finished-at="2020-02-17T14:26:28Z" duration-ms="743" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (6) -->
-  <suite started-at="2020-02-14T13:44:43Z" name="FalconDemo-Sample-WIN_10_chrome_77 (20)" finished-at="2020-02-14T13:44:44Z" duration-ms="1734">
+  <suite started-at="2020-02-17T14:30:31Z" name="FalconDemo-Sample-WIN_10_chrome_77 (20)" finished-at="2020-02-17T14:30:33Z" duration-ms="1920">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:44:43Z" name="SampleTest" finished-at="2020-02-14T13:44:44Z" duration-ms="1734">
+    <test started-at="2020-02-17T14:30:31Z" name="SampleTest" finished-at="2020-02-17T14:30:33Z" duration-ms="1920">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption@4c31e61]" started-at="2020-02-14T13:44:31Z" name="preSetup" finished-at="2020-02-14T13:44:43Z" duration-ms="11994" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption@74e4c767]" started-at="2020-02-17T14:30:19Z" name="preSetup" finished-at="2020-02-17T14:30:31Z" duration-ms="12022" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -3757,7 +3808,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="deleteOption()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption@4c31e61]" started-at="2020-02-14T13:44:43Z" name="deleteOption" finished-at="2020-02-14T13:44:44Z" duration-ms="1734" status="PASS">
+        <test-method signature="deleteOption()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption@74e4c767]" started-at="2020-02-17T14:30:31Z" name="deleteOption" finished-at="2020-02-17T14:30:33Z" duration-ms="1919" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on recent runs]]>
@@ -3770,19 +3821,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- deleteOption -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption@4c31e61]" started-at="2020-02-14T13:44:44Z" name="teardown" finished-at="2020-02-14T13:44:45Z" duration-ms="1101" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption@74e4c767]" started-at="2020-02-17T14:30:33Z" name="teardown" finished-at="2020-02-17T14:30:34Z" duration-ms="806" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (20) -->
-  <suite started-at="2020-02-14T13:41:40Z" name="FalconDemo-Sample-WIN_10_chrome_77 (10)" finished-at="2020-02-14T13:41:43Z" duration-ms="2751">
+  <suite started-at="2020-02-17T14:27:33Z" name="FalconDemo-Sample-WIN_10_chrome_77 (10)" finished-at="2020-02-17T14:27:36Z" duration-ms="2697">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:41:40Z" name="SampleTest" finished-at="2020-02-14T13:41:43Z" duration-ms="2751">
+    <test started-at="2020-02-17T14:27:33Z" name="SampleTest" finished-at="2020-02-17T14:27:36Z" duration-ms="2697">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate@2748b705]" started-at="2020-02-14T13:41:28Z" name="preSetup" finished-at="2020-02-14T13:41:40Z" duration-ms="12221" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate@3424998f]" started-at="2020-02-17T14:27:20Z" name="preSetup" finished-at="2020-02-17T14:27:33Z" duration-ms="12610" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -3814,7 +3865,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="dateOfExecution()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate@2748b705]" started-at="2020-02-14T13:41:40Z" name="dateOfExecution" finished-at="2020-02-14T13:41:43Z" duration-ms="2751" status="PASS">
+        <test-method signature="dateOfExecution()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate@3424998f]" started-at="2020-02-17T14:27:33Z" name="dateOfExecution" finished-at="2020-02-17T14:27:36Z" duration-ms="2697" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on product]]>
@@ -3826,26 +3877,26 @@
               <![CDATA[Successfully displayed day and date of product]]>
             </line>
             <line>
-              <![CDATA[PASS : Successfully validated the date : ACTUAL : Feb14,2020 EXPECTED :Feb14,2020]]>
+              <![CDATA[PASS : Successfully validated the date : ACTUAL : Feb17,2020 EXPECTED :Feb17,2020]]>
             </line>
             <line>
               <![CDATA[Successfully validated the date]]>
             </line>
           </reporter-output>
         </test-method> <!-- dateOfExecution -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate@2748b705]" started-at="2020-02-14T13:41:43Z" name="teardown" finished-at="2020-02-14T13:41:43Z" duration-ms="762" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate@3424998f]" started-at="2020-02-17T14:27:36Z" name="teardown" finished-at="2020-02-17T14:27:37Z" duration-ms="1105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (10) -->
-  <suite started-at="2020-02-14T13:48:04Z" name="FalconDemo-Sample-WIN_10_chrome_77 (32)" finished-at="2020-02-14T13:48:07Z" duration-ms="2668">
+  <suite started-at="2020-02-17T14:33:55Z" name="FalconDemo-Sample-WIN_10_chrome_77 (32)" finished-at="2020-02-17T14:33:58Z" duration-ms="3289">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:48:04Z" name="SampleTest" finished-at="2020-02-14T13:48:07Z" duration-ms="2668">
+    <test started-at="2020-02-17T14:33:55Z" name="SampleTest" finished-at="2020-02-17T14:33:58Z" duration-ms="3289">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage@7d84255d]" started-at="2020-02-14T13:47:52Z" name="preSetup" finished-at="2020-02-14T13:48:04Z" duration-ms="12303" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage@2e1eef67]" started-at="2020-02-17T14:33:43Z" name="preSetup" finished-at="2020-02-17T14:33:55Z" duration-ms="11991" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -3877,7 +3928,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="viewPage()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage@7d84255d]" started-at="2020-02-14T13:48:04Z" name="viewPage" finished-at="2020-02-14T13:48:07Z" duration-ms="2668" status="PASS">
+        <test-method signature="viewPage()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage@2e1eef67]" started-at="2020-02-17T14:33:55Z" name="viewPage" finished-at="2020-02-17T14:33:58Z" duration-ms="3289" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully validated views]]>
@@ -3893,19 +3944,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- viewPage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage@7d84255d]" started-at="2020-02-14T13:48:07Z" name="teardown" finished-at="2020-02-14T13:48:12Z" duration-ms="4747" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage@2e1eef67]" started-at="2020-02-17T14:33:58Z" name="teardown" finished-at="2020-02-17T14:33:58Z" duration-ms="285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage -->
     </test> <!-- SampleTest -->
   </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 (32) -->
-  <suite started-at="2020-02-14T13:41:03Z" name="FalconDemo-Sample-WIN_10_chrome_77 (8)" finished-at="2020-02-14T13:41:06Z" duration-ms="2611">
+  <suite started-at="2020-02-17T14:26:57Z" name="FalconDemo-Sample-WIN_10_chrome_77 (8)" finished-at="2020-02-17T14:26:59Z" duration-ms="2160">
     <groups>
     </groups>
-    <test started-at="2020-02-14T13:41:03Z" name="SampleTest" finished-at="2020-02-14T13:41:06Z" duration-ms="2611">
+    <test started-at="2020-02-17T14:26:57Z" name="SampleTest" finished-at="2020-02-17T14:26:59Z" duration-ms="2160">
       <class name="com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase">
-        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase@5475923a]" started-at="2020-02-14T13:40:51Z" name="preSetup" finished-at="2020-02-14T13:41:03Z" duration-ms="12288" status="PASS">
+        <test-method is-config="true" signature="preSetup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase@7ff004b5]" started-at="2020-02-17T14:26:44Z" name="preSetup" finished-at="2020-02-17T14:26:57Z" duration-ms="12771" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -3937,7 +3988,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="testPhase()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase@5475923a]" started-at="2020-02-14T13:41:03Z" name="testPhase" finished-at="2020-02-14T13:41:06Z" duration-ms="2611" status="PASS">
+        <test-method signature="testPhase()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase@7ff004b5]" started-at="2020-02-17T14:26:57Z" name="testPhase" finished-at="2020-02-17T14:26:59Z" duration-ms="2160" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully clicked on the product]]>
@@ -3950,7 +4001,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testPhase -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase@5475923a]" started-at="2020-02-14T13:41:06Z" name="teardown" finished-at="2020-02-14T13:41:10Z" duration-ms="4782" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase@7ff004b5]" started-at="2020-02-17T14:26:59Z" name="teardown" finished-at="2020-02-17T14:27:00Z" duration-ms="1063" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

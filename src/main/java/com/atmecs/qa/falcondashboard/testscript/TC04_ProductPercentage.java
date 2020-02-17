@@ -7,6 +7,7 @@ import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
+import com.atmecs.qa.falcondashboard.helper.ValidationHelper;
 import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
@@ -33,14 +34,16 @@ public class TC04_ProductPercentage extends SampleTestSuiteBase {
 	@SuppressWarnings( "static-access" )
 	@Test
 	public void percentageOfProduct() throws Exception {
+		ValidationHelper helper=new ValidationHelper(browser);
 		Pageactions page = new Pageactions(browser);
 	log.info("STEP#1: Mouse hovering over the pass%Trend of the product");
 	     page.mouseOver(read.getPropertyvalue("loc.pass%trend.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	     report.info("Successfully mouse hovered the pass%trend");
 	     browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	log.info("STEP#2: Displaying and validating the pass%trend message for the products");	
-	     String product=page.getText(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+	     String product=helper.getData();
 	     String actualtooltipmessage=page.getText(read.getPropertyvalue("loc.pass%trendmessage.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
+	     page.writedata_toExcel(product, "Validation Text", 14, actualtooltipmessage);
 	     String expectedtooltipmessage=page.getdata_fromExcel(product, "Validation Text", "Pass%Trend");
 	     Verify.verifyString(actualtooltipmessage, expectedtooltipmessage, "Successfully displayed the test cases message");
 	log.info("STEP#3: Mouse hovering the pass percent of the product and diplayed the value");
@@ -50,6 +53,7 @@ public class TC04_ProductPercentage extends SampleTestSuiteBase {
 		 String actualcolor=page.getCssValue(read.getPropertyvalue("loc.passpercent.txt", ProjectBaseConstantPaths.LOCATORS_FILE),"background-color");
 		 report.info(actualcolor);
 	log.info("STEP#5: Veifying the color of the pass percentage"); 
+	     page.writedata_toExcel(product, "Validation Text", 15, actualcolor);
 		 String expectedcolor= page.getdata_fromExcel(product, "Validation Text", "Pass percent color");
 		 Verify.verifyString(actualcolor, expectedcolor, "Successfully validated the color of the pass percentage");
 		 report.info("Successfully validated the color of the pass percentage");  
@@ -61,6 +65,7 @@ public class TC04_ProductPercentage extends SampleTestSuiteBase {
 	     String actualfailcolor=page.getCssValue(read.getPropertyvalue("loc.failpercentcolor.txt", ProjectBaseConstantPaths.LOCATORS_FILE), "background-color");
 	     report.info(actualfailcolor);
     log.info("STEP#8: Veifying the color of the pass percentage"); 
+         page.writedata_toExcel(product, "Validation Text", 16, actualfailcolor);
 	     String expectedfailcolor= page.getdata_fromExcel(product, "Validation Text", "Fail percent color");
 	     Verify.verifyString(actualfailcolor, expectedfailcolor, "Successfully validated the color of the fail percentage");
 	     report.info("Successfully validated the color of the fail percentage"); 

@@ -19,22 +19,22 @@ public class ProductStepsValidation {
 	public void validateStatusOption() throws Exception {
 		String productname = helper.getDataFromUi();
 		String expectedData = page.getdata_fromExcel(productname, "Validation Text", "Status option");
-		helper.getdata(expectedData, "validate.productstatus.txt");
+		helper.getDataofRow(expectedData, "validate.productstatus.txt",50);
 	}
     public void validateDetailsOption() throws Exception {
 		String productname = helper.getDataFromUi();
 		String expectedData = page.getdata_fromExcel(productname, "Validation Text", "Details option");
-		helper.getdata(expectedData, "validate.details.txt");
+		helper.getDataofRow(expectedData, "validate.details.txt",51);
 	}
 	public void validateTestCase() throws Exception {
 		String productname=helper.getDataFromUi();
 		String expectedData = page.getdata_fromExcel(productname, "Validation Text", "Test Case");
-		helper.getdata(expectedData, "validate.testcase.txt");
+		helper.getDataofRow(expectedData, "validate.testcase.txt",52);
 	}
 	public void validateRequestBody() throws Exception {
 		String productname=helper.getDataFromUi();
 		String expectedData = page.getdata_fromExcel(productname, "Validation Text", "Request Body");
-		helper.getdata(expectedData, "validate.request.txt");
+		helper.getDataofRow(expectedData, "validate.request.txt",53);
 	}
 
 }

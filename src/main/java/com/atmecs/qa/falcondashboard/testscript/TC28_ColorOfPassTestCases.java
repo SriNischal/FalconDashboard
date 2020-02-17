@@ -44,6 +44,7 @@ public class TC28_ColorOfPassTestCases extends SampleTestSuiteBase{
 	    System.out.println("Color:"+actualcolor);
 	log.info("STEP#4: Veifying the color of the total test case box");
 	    String productname=split.splitofarray(0).trim();
+	    page.writedata_toExcel(productname, "Validation Text", 32, actualcolor);
 	    String expectedcolor= page.getdata_fromExcel(productname, "Validation Text", "Color of pass test cases");
 	    Verify.verifyString(actualcolor, expectedcolor, "Successfully validated the color of the pass test cases box");
 	    System.out.println(expectedcolor);

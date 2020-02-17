@@ -45,6 +45,7 @@ public class TC30_ColorOfFailedTestCases extends SampleTestSuiteBase{
 	    System.out.println("Color:"+actualcolor);
 	log.info("STEP#4: Veifying the color of the total test case box"); 
 	    String productname = split.splitofarray(0).trim();
+	    page.writedata_toExcel(productname, "Validation Text", 33, actualcolor);
 	    String expectedcolor= page.getdata_fromExcel(productname, "Validation Text", "Color of fail test cases");
 	    Verify.verifyString(actualcolor, expectedcolor, "Successfully validated the color of the fail test cases box");
 	    report.info("Successfully validated the color of the fail test cases box");

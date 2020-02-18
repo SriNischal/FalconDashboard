@@ -9,7 +9,6 @@
     <classes>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase">
         <methods>
-          <include name="setup"/>
           <include name="preSetup"/>
           <include name="teardown"/>
           <include name="testPhase"/>

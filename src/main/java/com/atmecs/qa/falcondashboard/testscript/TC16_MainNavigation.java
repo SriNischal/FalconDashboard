@@ -1,6 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.util.concurrent.TimeUnit;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -11,6 +10,7 @@ import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
+import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.MainNavigationValidation;
 //In this class the main navigation is clicked and validated 
 public class TC16_MainNavigation extends SampleTestSuiteBase{
@@ -24,12 +24,13 @@ public class TC16_MainNavigation extends SampleTestSuiteBase{
 	@SuppressWarnings("static-access")
 	@Test
 	public void mainNavigation() throws Exception {
+		Waits wait=new Waits(browser);
 		MainNavigationValidation validate=new MainNavigationValidation(browser);
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: Clicking on the main navigation bar");	
 		page.clickOnElement(read.getPropertyvalue("loc.mainnavigation.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		page.clickOnElement(read.getPropertyvalue("loc.mainnavigation.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		wait.implicitWait();
 	log.info("STEP#2: Validating the dashboard text");	
 		validate.validateDashboard();
 		report.info("Successfully validated dashboard");  
@@ -38,7 +39,7 @@ public class TC16_MainNavigation extends SampleTestSuiteBase{
 		report.info("Successfully validated recent runs");
 	log.info("STEP#4: Clicking on the recent runs option");	
 	    page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-	    browser.getWait().safeWait(2000);
+	    wait.safeWait();
 	log.info("STEP#5: Validating the recent runs text");	
 		validate.validateRecentRunsText();
 		report.info("Successfully validated recentruns");
@@ -50,7 +51,7 @@ public class TC16_MainNavigation extends SampleTestSuiteBase{
 		report.info("Successfully validated View");
 	log.info("STEP#8: Clicking on the views option");	
 		page.clickOnElement(read.getPropertyvalue("loc.view.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		browser.getDriver().manage().timeouts().setScriptTimeout(5, TimeUnit.SECONDS);
+		wait.implicitWait();
 	log.info("STEP#9: Validating the views panel title");	
 		validate.validateViewPanelTitle();
 		report.info("Successfully validated panelview");

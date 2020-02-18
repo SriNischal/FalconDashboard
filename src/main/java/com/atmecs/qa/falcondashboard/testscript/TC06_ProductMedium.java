@@ -1,7 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.util.concurrent.TimeUnit;
-
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
@@ -15,6 +13,7 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Splitting;
+import com.atmecs.qa.falcondashboard.utils.Waits;
 //In this class the medium of the product is displayed and validated
 public class TC06_ProductMedium extends SampleTestSuiteBase{
 	LogReport log=new LogReport();
@@ -29,13 +28,14 @@ public class TC06_ProductMedium extends SampleTestSuiteBase{
 	@SuppressWarnings("static-access")
 	@Test
 	public void mediumOfProduct() throws Exception {
+		Waits wait=new Waits(browser);
 		ValidationHelper helper=new ValidationHelper(browser);
 		Splitting split=new Splitting(browser);
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: Clicking on the product");
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
-		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		wait.implicitWait();
 	log.info("STEP#2: Splitting the array and displaying the medium of the product");
 		String product = split.splitofarray(1);
 		report.info("Successfully displayed medium of product");

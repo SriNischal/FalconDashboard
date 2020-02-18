@@ -14,6 +14,7 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
 import com.atmecs.qa.falcondashboard.utils.Splitting;
+import com.atmecs.qa.falcondashboard.utils.Waits;
 //In this class the date of last execution of the product is displayed and validated
 public class TC12_ExecutionDate extends SampleTestSuiteBase{
 	ReadLocators read=new ReadLocators();
@@ -33,12 +34,13 @@ public class TC12_ExecutionDate extends SampleTestSuiteBase{
 	 */	@SuppressWarnings("static-access")
 	@Test
 	public void dateOfExecution() throws Exception {
+		 Waits wait=new Waits(browser);
 		 Splitting split=new Splitting(browser);
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: Clicking on the product");
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
-		browser.getWait().safeWait(2000);
+		wait.safeWait();
 	log.info("STEP#2: Splitting the array and displaying the day and  date of the product");
 		String result=split.splitofdatetime(2);
 	log.info("STEP#3: Validating the date of the product");	 

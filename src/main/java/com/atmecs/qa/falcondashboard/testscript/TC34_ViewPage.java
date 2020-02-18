@@ -1,6 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.util.concurrent.TimeUnit;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -11,6 +10,7 @@ import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
+import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.MainNavigationValidation;
 import com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation;
 //In this class the view page is clicked and validated 
@@ -28,6 +28,7 @@ public class TC34_ViewPage extends SampleTestSuiteBase{
 	@SuppressWarnings("static-access")
 	@Test
 	public void viewPage() throws Exception {
+		Waits wait=new Waits(browser);
 		ViewPageValidation validate=new ViewPageValidation(browser);
 		MainNavigationValidation validation=new MainNavigationValidation(browser);
 		Pageactions page=new Pageactions(browser);
@@ -36,7 +37,7 @@ public class TC34_ViewPage extends SampleTestSuiteBase{
 		report.info("Successfully validated views");
 	log.info("STEP#2: Clicking on the views option");	
 		page.clickOnElement(read.getPropertyvalue("loc.view.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		wait.implicitWait();
 	log.info("STEP#3: Validating the panel title of the views page");
 	    validation.validateViewPanelTitle();
 	    report.info("Successfully validated the views panel title");

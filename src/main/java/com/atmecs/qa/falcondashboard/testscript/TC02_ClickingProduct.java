@@ -1,6 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.util.concurrent.TimeUnit;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.parser.XlsReader;
@@ -16,6 +15,7 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
+import com.atmecs.qa.falcondashboard.utils.Waits;
 
 //In this class we test the product is clicked or not 
 public class TC02_ClickingProduct extends SampleTestSuiteBase {
@@ -36,6 +36,7 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 	 */
 	@Test
 	public void clickingProduct() throws Exception {
+		Waits wait=new Waits(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		ElementsList lists = new ElementsList(browser);
 		Pageactions page = new Pageactions(browser);
@@ -63,7 +64,7 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 	log.info("STEP#5: Clicking on the product");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
-		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		wait.implicitWait();
 		/*
 		 * log.info("STEP#7: Clicking on each every product "); for (int x = 0; x <
 		 * index; x++) { WebElement client = list.get(x); client.click();

@@ -1,6 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.util.concurrent.TimeUnit;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -11,6 +10,7 @@ import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
+import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.MainNavigationValidation;
 //In this class the product snapshot bar is clicked and validated 
 public class TC24_ProductSnapShot extends SampleTestSuiteBase{
@@ -28,12 +28,13 @@ public class TC24_ProductSnapShot extends SampleTestSuiteBase{
 	@SuppressWarnings("static-access")
 	@Test
 	public void productSnapShot() throws Exception {
+		Waits wait=new Waits(browser);
 		MainNavigationValidation validate=new MainNavigationValidation(browser);
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: Clicking on the product snapshot option");
 		page.clickOnElement(read.getPropertyvalue("loc.snapshotbar.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product snapshot bar");
-		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		wait.implicitWait();
 	log.info("STEP#2: Validating the product snapshot text");	
 		validate.validateProductSnapshot();
 		report.info("Successfully validated product snapshot");

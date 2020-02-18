@@ -2,10 +2,10 @@
 <testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-17T14:23:59Z" name="com.atmecs.qa.falcondashboard.AppTest" finished-at="2020-02-17T14:23:59Z" duration-ms="7">
+  <suite started-at="2020-02-18T13:45:29Z" name="com.atmecs.qa.falcondashboard.AppTest" finished-at="2020-02-18T13:45:29Z" duration-ms="7">
     <groups>
     </groups>
-    <test started-at="2020-02-17T14:23:59Z" name="Command line test" finished-at="2020-02-17T14:23:59Z" duration-ms="7">
+    <test started-at="2020-02-18T13:45:29Z" name="Command line test" finished-at="2020-02-18T13:45:29Z" duration-ms="7">
     </test> <!-- Command line test -->
   </suite> <!-- com.atmecs.qa.falcondashboard.AppTest -->
 </testng-results>

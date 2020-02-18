@@ -1,6 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.util.concurrent.TimeUnit;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.parser.XlsReader;
@@ -13,6 +12,7 @@ import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
+import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.DashboardPageValidation;
 
 //In this class dash board page is tested
@@ -38,14 +38,15 @@ public class TC01_DashBoardPage extends SampleTestSuiteBase {
 	 * clicking on the refresh option
 	 */
 	public void dashboardPage() throws Exception {
+		Waits wait=new Waits(browser);
 		Pageactions page = new Pageactions(browser);
 		DashboardPageValidation validate = new DashboardPageValidation(browser);	
 	log.info("STEP#1: Page title validation");
 		String actualtitle = browser.getCurrentPageTitle();
-		String expectedtitle = data.getdata_fromExcel("TC01_DasBoardPage", "Validation Text", "Page URL");
+		String expectedtitle = data.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Page URL");
 		Verify.verifyString(actualtitle, expectedtitle, "Verifying String Message ");
 		report.info("successfully validated page title"); 
-		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		wait.implicitWait();
 	log.info("STEP#2: Dashboard Text validation");
 		validate.validateDashboard();
 	log.info("STEP#3: Clicking on the refresh option");

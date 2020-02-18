@@ -23,30 +23,25 @@ public class DashboardPageValidation {
 		helper = new ValidationHelper(browser);
 	}
 	public void validatefalconlogo() throws Exception {
-		String product=helper.getData();
-		String expectedData= page.getdata_fromExcel(product, "Validation Text", "Atmecs Logo");
+		String expectedData= page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Atmecs Logo");
 		helper.getDataofRow(expectedData, "validate.logo.txt",3);
 
 	}
 	public void validateproductsnapshot() throws Exception {
-		String product=helper.getData();
-		String expectedData= page.getdata_fromExcel(product, "Validation Text", "Product Snapshot Text");
+		String expectedData= page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Product Snapshot Text");
 		helper.getDataofRow(expectedData, "validated.productsnapshotbar.txt",9);
 
 	}
 	public void validateListOfProducts() throws Exception {
-		String product=helper.getData();
-		String expectedData= page.getdata_fromExcel(product, "Validation Text", "Products Texts");
+		String expectedData= page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Products Texts");
 		helper.getDataofRow(expectedData, "validate.product.txt",11);
 	}
 	public void validateDashboard() throws Exception {
-		String product=helper.getData();
-		String data=page.getdata_fromExcel(product,"Validation Text", "Dashboard Text");
+		String data=page.getdata_fromExcel("REST API TEST RESULT","Validation Text", "Dashboard Text");
 		helper.getDataofRow(data, "validate.dashboardpage.txt",2);	
 	}
 	public void validateRecentExecutionTime() throws Exception {
-		String product=helper.getData();
-		String expectedData= page.getdata_fromExcel(product, "Validation Text", "Products Recent Execution time");
+		String expectedData= page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Products Recent Execution time");
 		helper.getDataofRow(expectedData, "loc.executiontime.txt",12);
 
 	}

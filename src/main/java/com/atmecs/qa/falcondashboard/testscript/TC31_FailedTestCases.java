@@ -1,9 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.util.List;
-import java.util.concurrent.TimeUnit;
-import java.util.stream.Collectors;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -15,6 +11,7 @@ import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
+import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation;
 //In this class the content of the failed test cases is displayed and validated
 public class TC31_FailedTestCases extends SampleTestSuiteBase{
@@ -31,13 +28,14 @@ public class TC31_FailedTestCases extends SampleTestSuiteBase{
 	@SuppressWarnings("static-access")
 	@Test
 	public void failTestCases() throws Exception {
+		Waits wait=new Waits(browser);
 		ElementsList list=new ElementsList(browser);
 		ViewPageValidation validate=new ViewPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: Clicking on the product");
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
-		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		wait.implicitWait();
 	log.info("STEP#2: Selecting the dashboard slider option");
 		page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked dashboard slider");
@@ -50,7 +48,7 @@ public class TC31_FailedTestCases extends SampleTestSuiteBase{
 	log.info("STEP#6: Validating the fail message ");	
 		validate.validateFailMessage();
 		report.info("Successfully validated fail message");
-		browser.getWait().safeWait(2000);
+		wait.safeWait();
 	log.info("STEP#7: Creating a list to display all the test cases present");
 	    String testcases=propReader.getValue("loc.numberoftestcases.txt");
 		list.listofElements(testcases);	

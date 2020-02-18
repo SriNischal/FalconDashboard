@@ -1,6 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.ui.selenium.Verify;
@@ -15,6 +14,7 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.RandomNumber;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
+import com.atmecs.qa.falcondashboard.utils.Waits;
 
 //In this class tool tip message is validated and color of the pass and fail percentages
 
@@ -34,12 +34,13 @@ public class TC04_ProductPercentage extends SampleTestSuiteBase {
 	@SuppressWarnings( "static-access" )
 	@Test
 	public void percentageOfProduct() throws Exception {
+		Waits wait=new Waits(browser);
 		ValidationHelper helper=new ValidationHelper(browser);
 		Pageactions page = new Pageactions(browser);
 	log.info("STEP#1: Mouse hovering over the pass%Trend of the product");
 	     page.mouseOver(read.getPropertyvalue("loc.pass%trend.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	     report.info("Successfully mouse hovered the pass%trend");
-	     browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	     wait.implicitWait();
 	log.info("STEP#2: Displaying and validating the pass%trend message for the products");	
 	     String product=helper.getData();
 	     String actualtooltipmessage=page.getText(read.getPropertyvalue("loc.pass%trendmessage.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
@@ -57,7 +58,7 @@ public class TC04_ProductPercentage extends SampleTestSuiteBase {
 		 String expectedcolor= page.getdata_fromExcel(product, "Validation Text", "Pass percent color");
 		 Verify.verifyString(actualcolor, expectedcolor, "Successfully validated the color of the pass percentage");
 		 report.info("Successfully validated the color of the pass percentage");  
-		 browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		 wait.implicitWait();
 	log.info("STEP#6: Mouse hovering the fail percent of the product");
 	     page.mouseOver(read.getPropertyvalue("loc.failpercent.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	     report.info("Successfully mouse hovered over the fail percent and displayed the value");

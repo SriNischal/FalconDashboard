@@ -12,7 +12,6 @@
           <include name="dropdownSkippedTestCases"/>
           <include name="preSetup"/>
           <include name="teardown"/>
-          <include name="setup"/>
         </methods>
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases -->
     </classes>

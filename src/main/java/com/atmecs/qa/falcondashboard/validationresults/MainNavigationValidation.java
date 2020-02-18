@@ -16,40 +16,35 @@ public class MainNavigationValidation {
 		helper=new ValidationHelper(browser);
 	}
 	public void validateDashboard() throws Exception {
-		String product=helper.getData();
-		String expectedData=page.getdata_fromExcel(product, "Validation Text", "Dashboard Text");
+		String expectedData=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Dashboard Text");
 		helper.getDataofRow(expectedData, "validate.dashboardpage.txt",2);
 	}
 	public void validateRecentruns() throws Exception {
-		String product=helper.getData();
-		String expectedData=page.getdata_fromExcel(product, "Validation Text", "Recentruns Page title");
+		String expectedData=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Recentruns Page title");
 		helper.getDataofRow(expectedData, "validate.recentruns.txt",5);
 	}
 	public void validateView() throws Exception {
-		String expectedData=page.getdata_fromExcel("TC07_Main Navigation", "Validation Text", "View option");
-		helper.getdata(expectedData, "validate.view.txt");
+		String expectedData=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "View option");
+		helper.getDataofRow(expectedData, "validate.view.txt",6);
 	}
 	public void validateProductSnapshot() throws Exception {
-		String productname=helper.getData();
-		String expectedData=page.getdata_fromExcel(productname, "Validation Text", "Product Snapshot Text");
+		String expectedData=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Product Snapshot Text");
 		helper.getDataofRow(expectedData, "validate.productsnapshot.txt",9);
 	}
 	public void validateProductSnapshotText() throws Exception {
-		String productname=helper.getDataFromUi();
-		String expectedData=page.getdata_fromExcel(productname, "Validation Text", "Product Snapshot Text");
+		String expectedData=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Product Snapshot Text");
 		helper.getDataofRow(expectedData, "validate.productsnapshot.txt",9);
 	}
 	public void validateRecentRunsText() throws Exception {
-		String expectedData=page.getdata_fromExcel("TC06_Recent Runs", "Validation Text", "Text");
-		helper.getdata(expectedData, "validate.text.txt");
+		String expectedData=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Recentruns Page title");
+		helper.getDataofRow(expectedData, "validate.text.txt",5);
 	}
 	public void validateRecentRunsPanelTitle() throws Exception {
-		String expectedData=page.getdata_fromExcel("TC06_Recent Runs", "Validation Text", "Panel Text");
-		helper.getdata(expectedData, "validate.recentrunspaneltitle.txt");
+		String expectedData=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Recent Runs Panel Title");
+		helper.getDataofRow(expectedData, "validate.recentrunspaneltitle.txt",7);
 	}
 	public void validateViewPanelTitle() throws Exception {
-		String productname=helper.getDataFromUi();
-		String expectedData=page.getdata_fromExcel(productname, "Validation Text", "View Panel Title");
+		String expectedData=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "View Panel Title");
 		helper.getDataofRow(expectedData, "validate.productpaneltitle.txt",8);
 	}
 }

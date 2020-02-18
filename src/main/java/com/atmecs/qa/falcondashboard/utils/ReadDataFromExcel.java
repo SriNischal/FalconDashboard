@@ -73,7 +73,6 @@ public class ReadDataFromExcel {
 			}
 			String rowI = findRow(sheet, string2);
 			int rowInd = Integer.parseInt(rowI);
-			System.out.println("rowNumber:" + rowInd);
 			return verifyCellData(rowInd, columnIndex);
 		} catch (Exception exception) {
 

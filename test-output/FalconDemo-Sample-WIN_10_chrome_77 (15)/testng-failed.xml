@@ -10,7 +10,6 @@
       <class name="com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns">
         <methods>
           <include name="recentrun"/>
-          <include name="setup"/>
           <include name="preSetup"/>
           <include name="teardown"/>
         </methods>

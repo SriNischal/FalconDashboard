@@ -33,17 +33,6 @@ public class ValidationHelper {
 	}
 	
 	@SuppressWarnings("static-access")
-	public void getdata(String expectedString,String validationMessage) throws Exception
-	{
-		String actualproduct;
-        actualproduct=page.getText(read.getPropertyvalue(validationMessage,ProjectBaseConstantPaths.LOCATORS_FILE));
-		Assert.assertEquals(actualproduct, expectedString);
-		log.info("Successfully validated " + expectedString);
-		System.out.println(actualproduct);
-		System.out.println(expectedString);
-	}
-	
-	@SuppressWarnings("static-access")
 	public String getData() throws Exception {
 		String product=page.getText(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		System.out.println("productname: "+product);

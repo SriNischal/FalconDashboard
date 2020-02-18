@@ -1,14 +1,18 @@
 package com.atmecs.qa.falcondashboard.utils;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import com.atmecs.falcon.automation.ui.selenium.Browser;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 
 public class Pageactions  {
 	RandomNumber random=new RandomNumber();
 	LogReport log = new LogReport();
-	WebElement webElement;
 	Browser browser = null;
 	ReadDataFromExcel reader = getsheet(ProjectBaseConstantPaths.EXCEL_FILE);
 	
@@ -41,7 +45,7 @@ public class Pageactions  {
 		 return datavalue;	 
 	 }
 	  
-	  public WebElement selectLocators(String locatorType) {
+	  public WebElement getLocator(String locatorType) {
 			String[] locator = locatorType.split(":");
 			
 		/*
@@ -50,6 +54,8 @@ public class Pageactions  {
 		 * System.out.println("value::"+locator[1]);
 		 */
 			
+			
+			WebElement webElement = null;	
 			
 			switch (locator[0]) {
 			case "id":
@@ -81,24 +87,24 @@ public class Pageactions  {
 		}
 
 		public void clickOnElement(String element) {
-			webElement = selectLocators(element);
+			WebElement webElement = getLocator(element);
 			webElement.click();
 		}
-		
+		 
 		public String getText(String element) {
-			webElement = selectLocators(element);
+			WebElement webElement = getLocator(element);
 			return webElement.getText();
 
 		}
 		public String getCssValue(String element,String value) {
-			webElement = selectLocators(element);
+			WebElement webElement = getLocator(element);
 			return webElement.getCssValue(value);
 
 		}
 		
 		public void mouseOver(String element) {
 			Actions action = new Actions(browser.getDriver());
-			webElement = selectLocators(element);
+			WebElement webElement = getLocator(element);
 			action.moveToElement(webElement).perform();
 
 		}
@@ -112,5 +118,23 @@ public class Pageactions  {
 			String Locator = locatorvalue.replace("*", number);
 			System.out.println(Locator);
 			return Locator;
+		}
+		
+		
+		public WebElement waitElementToBeClickable(Browser browser, String locator, long waitingTime) {
+			WebDriverWait wait = new WebDriverWait(browser.getDriver(), waitingTime);
+			WebElement element = wait.until(ExpectedConditions.elementToBeClickable(getLocator(locator)));
+			return element;
+		}
+		
+		public WebElement textToBePresentInElement(Browser browser, String locator, long waitingTime) {
+			WebDriverWait wait = new WebDriverWait(browser.getDriver(), waitingTime);
+			WebElement webElement = getLocator(locator);
+			wait.until(ExpectedConditions.textToBePresentInElement(getLocator(locator) , "text to be present"));
+			return webElement;
+			
+		}
+		public void pageLoadTimeout(long waitingTime) {
+			browser.getDriver().manage().timeouts().pageLoadTimeout(waitingTime, TimeUnit.SECONDS);
 		}
 }

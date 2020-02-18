@@ -1,6 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.util.concurrent.TimeUnit;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -11,6 +10,7 @@ import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
+import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.DropdownValidation;
 //In this class the dropdowns are checked
 public class TC07_Dropdowns extends SampleTestSuiteBase {
@@ -28,12 +28,13 @@ public class TC07_Dropdowns extends SampleTestSuiteBase {
 	@SuppressWarnings("static-access")
 	@Test
 	public void dropdown() throws Exception {
+		Waits wait=new Waits(browser);
 		DropdownValidation validate = new DropdownValidation(browser);
 		Pageactions page = new Pageactions(browser);
 	log.info("STEP#1: Clicking on the product");	
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
-		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		wait.implicitWait();
 	log.info("STEP#2: Selecting the customer option from the dropdown");		
 		page.clickOnElement(read.getPropertyvalue("loc.customer.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected customer option");
@@ -52,7 +53,6 @@ public class TC07_Dropdowns extends SampleTestSuiteBase {
 	log.info("STEP#7: Validating the status option");	
 		 validate.validateFailStatus();
 		report.info("Successfully validated status");
-		browser.getDriver().manage().timeouts().setScriptTimeout(5, TimeUnit.SECONDS);
 	}
 
 }

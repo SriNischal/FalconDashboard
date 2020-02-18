@@ -1,6 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.util.concurrent.TimeUnit;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -12,6 +11,7 @@ import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
+import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.RecentrunsValidation;
 //In this class the pass percent of the products is displalyed 
 public class TC21_PassPercentage extends SampleTestSuiteBase{
@@ -30,20 +30,21 @@ public class TC21_PassPercentage extends SampleTestSuiteBase{
 	@SuppressWarnings("static-access")
 	@Test
 	public void rececntPassPercentage() throws Exception {
+		Waits wait=new Waits(browser);
 		ElementsList list=new ElementsList(browser);
 		RecentrunsValidation validate=new RecentrunsValidation(browser);
 		Pageactions page=new Pageactions(browser);
 	log.info("STEP#1: Clicking on the Recentruns");
 		page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the recent runs");
-		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		wait.implicitWait();
 	log.info("STEP#2: Validating the pass percent");
 	    validate.validatePassPercent();
 	    report.info("Successfully validated the pass percent");
 	log.info("STEP#3: Creating a list to display the test cases of the product");
 	    String productnames=propReader.getValue("loc.passpercentage.txt");
 		list.listofElements(productnames);
-		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		wait.implicitWait();
 	log.info("STEP#4 Clicking on the pass percentage");
 	    page.clickOnElement(read.getPropertyvalue("loc.recentpasspercent.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	    report.info("Successfully clicked on the pass percentage");

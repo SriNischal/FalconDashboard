@@ -10,6 +10,7 @@ import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
+import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.DashboardPageValidation;
 //In this class the expand option is clicked and validated 
 public class TC38_MaximizingWindow extends SampleTestSuiteBase{
@@ -25,6 +26,7 @@ public class TC38_MaximizingWindow extends SampleTestSuiteBase{
 	 */	@SuppressWarnings("static-access")
 	@Test
 	public void maximizeWindow() throws Exception {
+		 Waits wait=new Waits(browser);
 		Pageactions page=new Pageactions(browser);
 		DashboardPageValidation validate = new DashboardPageValidation(browser);
 	log.info("STEP#1: Clicking on the expand button");	
@@ -39,7 +41,7 @@ public class TC38_MaximizingWindow extends SampleTestSuiteBase{
 	log.info("STEP#4: Atmecs Text validation");
 		validate.validatefalconlogo();
 		report.info("Successfully validated falcon");
-		browser.getWait().safeWait(2000);
+		wait.safeWait();
 	log.info("STEP#5: Clicking on the expand button");	
 		page.clickOnElement(read.getPropertyvalue("loc.expand.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the expand button");

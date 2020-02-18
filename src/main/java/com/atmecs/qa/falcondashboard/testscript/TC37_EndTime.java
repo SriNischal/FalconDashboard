@@ -1,6 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import java.util.concurrent.TimeUnit;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.enums.LocatorType;
@@ -14,6 +13,7 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Splitting;
+import com.atmecs.qa.falcondashboard.utils.Waits;
 //In this class the end time of the product is displayed and validated 
 public class TC37_EndTime extends SampleTestSuiteBase {
 	LoadProperties load = new LoadProperties();
@@ -29,12 +29,13 @@ public class TC37_EndTime extends SampleTestSuiteBase {
 	 */	@SuppressWarnings("static-access")
 	@Test
 	public void endTime() throws Exception {
+		 Waits wait=new Waits(browser);
 		 Splitting split=new Splitting(browser);
 		Pageactions page = new Pageactions(browser);
 	log.info("STEP#1: Clicking on the product");
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
-		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		wait.implicitWait();
 	log.info("STEP#2: Selecting the dashboard slider option");
 		page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");
@@ -44,16 +45,14 @@ public class TC37_EndTime extends SampleTestSuiteBase {
 	    report.info(time);
 	    report.info("Successfully displayed the end time text");
 	log.info("STEP#4: Validating the start time text");
-	    String productname=split.splitofarray(0).trim();
-	    System.out.println(productname);
-	    String expectedendtext=page.getdata_fromExcel(productname, "Validation Text", "End Text");
+	    String expectedendtext=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "End Text");
 	    Verify.verifyString(expectedendtext, time, "Successfully validated the text");
 	    report.info("Successfully validated the text");
 	log.info("STEP#5: Splitting the array and displaying the day and  date of the product");
 	     String result=split.splitofdatetime(2);
 	log.info("STEP#6: Validating the date of execution of the product");
-	     page.writedata_toExcel(productname, "Validation Text",21, result);
-	     String expected=page.getdata_fromExcel(productname, "Validation Text", "Date");
+	     page.writedata_toExcel("REST API TEST RESULT", "Validation Text",21, result);
+	     String expected=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Date");
 	     Verify.verifyString(result, expected, "Successfully validated the date");
 	     report.info("Successfully validated the date");
 	}

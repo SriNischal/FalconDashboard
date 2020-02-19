@@ -24,13 +24,15 @@ public class TC08_DashboardSlidder extends SampleTestSuiteBase{
 	public void dashboardSlidder() throws Exception {
 		Waits wait=new Waits(browser);
 		Pageactions page=new Pageactions(browser);
+		wait.safeWait();
 	log.info("STEP#1: Clicking on the product");	
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
-		wait.implicitWait();
+        wait.safeWait();
 	log.info("STEP#2: Selecting the dashboard slider option");
 	    page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");
+		wait.safeWait();
 	}
 
 }

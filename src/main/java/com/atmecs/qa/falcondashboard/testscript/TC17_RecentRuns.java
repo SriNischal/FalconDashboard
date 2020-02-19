@@ -30,10 +30,11 @@ public class TC17_RecentRuns extends SampleTestSuiteBase{
 		Waits wait=new Waits(browser);
 		RecentrunsValidation validate=new RecentrunsValidation(browser);
 		Pageactions page=new Pageactions(browser);
+		wait.safeWait();
 	log.info("STEP#1: Clicking on the recent runs option");	
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on recent runs");
-		wait.safeWait();
+		wait.implicitWait();
 	log.info("STEP#2: Validating the title of the page");	
 	    validate.validateText();
 		report.info("Successfully validated recentruns");

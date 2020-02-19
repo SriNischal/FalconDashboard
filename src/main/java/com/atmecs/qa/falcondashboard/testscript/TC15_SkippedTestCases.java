@@ -32,6 +32,7 @@ public class TC15_SkippedTestCases extends SampleTestSuiteBase{
 		ElementsList list=new ElementsList(browser);
 		DropdownValidation validate=new DropdownValidation(browser);
 		Pageactions page=new Pageactions(browser);
+		wait.safeWait();
 	log.info("STEP#1: Clicking on the product");
         page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");

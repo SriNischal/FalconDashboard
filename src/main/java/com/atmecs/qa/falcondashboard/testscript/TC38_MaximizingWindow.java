@@ -29,6 +29,7 @@ public class TC38_MaximizingWindow extends SampleTestSuiteBase{
 		 Waits wait=new Waits(browser);
 		Pageactions page=new Pageactions(browser);
 		DashboardPageValidation validate = new DashboardPageValidation(browser);
+		wait.safeWait();
 	log.info("STEP#1: Clicking on the expand button");	
 		page.clickOnElement(read.getPropertyvalue("loc.expand.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the expand button");

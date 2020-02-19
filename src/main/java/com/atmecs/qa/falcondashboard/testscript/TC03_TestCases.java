@@ -15,6 +15,7 @@ import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
+import com.atmecs.qa.falcondashboard.utils.Waits;
 
 //In this class the total test cases of the product are displayed
 public class TC03_TestCases extends SampleTestSuiteBase {
@@ -36,6 +37,8 @@ public class TC03_TestCases extends SampleTestSuiteBase {
 		ValidationHelper helper=new ValidationHelper(browser);
 		ElementsList lists=new ElementsList(browser);
 		Pageactions page = new Pageactions(browser);
+		Waits wait=new Waits(browser);
+		wait.safeWait();
 	log.info("STEP#1: Creating list to display total test cases of the products");	
 		String products=propReader.getValue("loc.totaltestcase.txt");
 		lists.listofElements(products);

@@ -40,6 +40,7 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 		ValidationHelper helper = new ValidationHelper(browser);
 		ElementsList lists = new ElementsList(browser);
 		Pageactions page = new Pageactions(browser);
+		wait.safeWait();
 	log.info("STEP#1: List to get all the products and size of elements  present on the dashboard page");
 		String products = propReader.getValue("loc.products.txt");
 		lists.listofElements(products);

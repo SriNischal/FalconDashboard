@@ -38,25 +38,25 @@ public class TC01_DashBoardPage extends SampleTestSuiteBase {
 	 * clicking on the refresh option
 	 */
 	public void dashboardPage() throws Exception {
-		Waits wait=new Waits(browser);
+		Waits wait = new Waits(browser);
 		Pageactions page = new Pageactions(browser);
-		DashboardPageValidation validate = new DashboardPageValidation(browser);	
-	log.info("STEP#1: Page title validation");
+		DashboardPageValidation validate = new DashboardPageValidation(browser);
+		log.info("STEP#1: Page title validation");
 		String actualtitle = browser.getCurrentPageTitle();
 		String expectedtitle = data.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Page URL");
 		Verify.verifyString(actualtitle, expectedtitle, "Verifying String Message ");
-		report.info("successfully validated page title"); 
+		report.info("successfully validated page title");
 		wait.implicitWait();
-	log.info("STEP#2: Dashboard Text validation");
+		log.info("STEP#2: Dashboard Text validation");
 		validate.validateDashboard();
-	log.info("STEP#3: Clicking on the refresh option");
+		report.info("Successfully validated the dashboard text");
+		wait.safeWait();
+		log.info("STEP#3: Clicking on the refresh option");
 		page.clickOnElement(read.getPropertyvalue("loc.refresh.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("clicked on refresh option");
-		report.info("Successfully validated dashboard text");
-	log.info("STEP#4: Atmecs Text validation");
+		log.info("STEP#4: Atmecs Text validation");
 		validate.validatefalconlogo();
 		report.info("Successfully validated falcon");
-		 
 
 	}
 

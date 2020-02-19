@@ -10,6 +10,7 @@ import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
+import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.DashboardPageValidation;
 //In this class the refresh option is verified
 public class TC23_Refresh extends SampleTestSuiteBase{
@@ -26,8 +27,10 @@ public class TC23_Refresh extends SampleTestSuiteBase{
 	@SuppressWarnings("static-access")
 	@Test
 	public void refresh() throws Exception {
+		Waits wait=new Waits(browser);
 		DashboardPageValidation validate=new DashboardPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
+		wait.safeWait();
 	log.info("STEP#1: Dashboard Text validation");
 		validate.validateDashboard();
 		report.info("Successfully validated dashboard text");

@@ -22,13 +22,13 @@ public class SampleTestSuiteBase {
 	LoadProperties load = new LoadProperties();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	// In this method the browser is invoked and url is opened
-    @BeforeSuite
+    @SuppressWarnings("static-access")
+	@BeforeSuite
     @Parameters({ "os", "osVersion", "browser", "browserVersion" })
     public void preSetup(String os, String osVersion, String br, String browserVersion) throws Exception {
         browser = new Browser();
         LogManager.setLogLevel(LogLevel.valueOf(PropertyParser.readEnvOrConfigProperty("LOG_LEVEL")));
         report.info("Opening browser: " + br);
-		@SuppressWarnings("static-access")
 		String url = load.readConfigfile("Dashboard_URL", ProjectBaseConstantPaths.CONFIG_FILE);
 		browser.openURL(url, os, osVersion, br, browserVersion);
 		report.info("Maximizing browser window");

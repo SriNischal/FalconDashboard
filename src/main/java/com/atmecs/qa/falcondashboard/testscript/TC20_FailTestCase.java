@@ -30,6 +30,7 @@ public class TC20_FailTestCase extends SampleTestSuiteBase {
 		Waits wait=new Waits(browser);
 		Pageactions page = new Pageactions(browser);
 		DropdownValidation validate=new DropdownValidation(browser);
+		wait.safeWait();
 	log.info("STEP#1: Clicking on the product");
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
@@ -50,7 +51,7 @@ public class TC20_FailTestCase extends SampleTestSuiteBase {
 		report.info("Successfully validated paneltitle");
 	log.info("STEP#5: Clicking on the error option of the test case");
 		page.clickOnElement(read.getPropertyvalue("loc.error.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		wait.implicitWait();
+		wait.safeWait();
 	log.info("STEP#6: Validating the error message of the test case ");
 		validate.validateErrorMessage();
 		report.info("Successfully validated error message");

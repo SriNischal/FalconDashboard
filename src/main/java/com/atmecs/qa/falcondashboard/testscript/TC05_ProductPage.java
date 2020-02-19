@@ -34,6 +34,7 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 		ElementsList lists=new ElementsList(browser);
 		Pageactions page = new Pageactions(browser);
 		ProductPageValidation validate = new ProductPageValidation(browser);
+		wait.safeWait();
 	log.info("STEP#1: Validating and displaying the product name");
 		validate.validateProduct();
 		report.info("Successfully validated product");
@@ -62,7 +63,7 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 	log.info("STEP#8: Selecting the dashboard slider option");
 	    page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");	
-
+        browser.getWait().setScriptTimeout(2000);
 		// logic
 
 		

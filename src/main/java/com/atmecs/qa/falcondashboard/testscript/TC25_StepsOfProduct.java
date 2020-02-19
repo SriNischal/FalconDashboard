@@ -32,6 +32,7 @@ public class TC25_StepsOfProduct extends SampleTestSuiteBase{
 		ElementsList list=new ElementsList(browser);
 		Pageactions page=new Pageactions(browser);
 		ProductStepsValidation validate=new ProductStepsValidation(browser);
+		wait.safeWait();
 	log.info("STEP#1: Clicking on the product");	
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");

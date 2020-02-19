@@ -27,8 +27,10 @@ public class TC16_MainNavigation extends SampleTestSuiteBase{
 		Waits wait=new Waits(browser);
 		MainNavigationValidation validate=new MainNavigationValidation(browser);
 		Pageactions page=new Pageactions(browser);
+		wait.safeWait();
 	log.info("STEP#1: Clicking on the main navigation bar");	
 		page.clickOnElement(read.getPropertyvalue("loc.mainnavigation.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		wait.safeWait();
 		page.clickOnElement(read.getPropertyvalue("loc.mainnavigation.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		wait.implicitWait();
 	log.info("STEP#2: Validating the dashboard text");	

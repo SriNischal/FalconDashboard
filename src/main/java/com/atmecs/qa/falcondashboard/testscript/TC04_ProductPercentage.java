@@ -37,6 +37,7 @@ public class TC04_ProductPercentage extends SampleTestSuiteBase {
 		Waits wait=new Waits(browser);
 		ValidationHelper helper=new ValidationHelper(browser);
 		Pageactions page = new Pageactions(browser);
+		wait.safeWait();
 	log.info("STEP#1: Mouse hovering over the pass%Trend of the product");
 	     page.mouseOver(read.getPropertyvalue("loc.pass%trend.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	     report.info("Successfully mouse hovered the pass%trend");

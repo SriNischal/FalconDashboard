@@ -33,6 +33,7 @@ public class TC25_StepsOfProduct extends SampleTestSuiteBase{
 		Pageactions page=new Pageactions(browser);
 		ProductStepsValidation validate=new ProductStepsValidation(browser);
 		wait.safeWait();
+		Thread.sleep(7000);
 	log.info("STEP#1: Clicking on the product");	
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
@@ -40,6 +41,7 @@ public class TC25_StepsOfProduct extends SampleTestSuiteBase{
 	log.info("STEP#2: Selecting the pass option from the status dropdown");	
 		page.clickOnElement(read.getPropertyvalue("loc.passselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected pass option");
+		 Thread.sleep(5000);
 	log.info("STEP#3: Creating the list for the test cases and duration of each test case of the product");	
 	    String duration=propReader.getValue("loc.duration.txt");
 		list.listofElements(duration);
@@ -49,7 +51,6 @@ public class TC25_StepsOfProduct extends SampleTestSuiteBase{
 	log.info("STEP#5: Clicking on the test case of the product");
 		page.clickOnElement(read.getPropertyvalue("loc.testcase.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected the testcase");
-		wait.safeWait();
 	log.info("STEP#6: Validating the status option");
 		validate.validateStatusOption();
 		report.info("Successfully validated Status option");

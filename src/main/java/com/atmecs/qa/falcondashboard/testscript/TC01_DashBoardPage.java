@@ -1,5 +1,6 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.parser.XlsReader;
@@ -32,6 +33,7 @@ public class TC01_DashBoardPage extends SampleTestSuiteBase {
 
 	@SuppressWarnings("static-access")
 	@Test
+	@Parameters()
 	/*
 	 * In this method we test whether the user landed on the dash board page by
 	 * validating the title of the page, dash board text, falcon text validation and

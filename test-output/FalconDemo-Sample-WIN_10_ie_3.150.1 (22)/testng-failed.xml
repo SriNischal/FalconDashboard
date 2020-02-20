@@ -7,13 +7,13 @@
   <parameter name="browserVersion" value="3.150.1"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot">
         <methods>
+          <include name="productSnapShot"/>
           <include name="preSetup"/>
           <include name="teardown"/>
-          <include name="skippedTestCases"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_ie_3.150.1 (22)] -->

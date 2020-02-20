@@ -33,6 +33,7 @@ public class TC34_ViewPage extends SampleTestSuiteBase{
 		MainNavigationValidation validation=new MainNavigationValidation(browser);
 		Pageactions page=new Pageactions(browser);
 		wait.safeWait();
+		Thread.sleep(7000);
 	log.info("STEP#1: Validating the view  option");	
 		validate.validateText();
 		report.info("Successfully validated views");
@@ -42,12 +43,12 @@ public class TC34_ViewPage extends SampleTestSuiteBase{
 	log.info("STEP#3: Validating the panel title of the views page");
 	    validation.validateViewPanelTitle();
 	    report.info("Successfully validated the views panel title");
-	log.info("STEP#4: Clicking on the download option");
-		page.clickOnElement(read.getPropertyvalue("loc.download.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		report.info("Clicked on download option");	
-	log.info("STEP#5: Selecting the dashboard slider option");
+    log.info("STEP#4: Selecting the dashboard slider option");
 	    page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");
+	log.info("STEP#5: Clicking on the download option");
+		page.clickOnElement(read.getPropertyvalue("loc.download.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		report.info("Clicked on download option");	
 
 	}
 }

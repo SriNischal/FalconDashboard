@@ -34,6 +34,7 @@ public class TC33_SkippedTestCases extends SampleTestSuiteBase{
 		ViewPageValidation validate=new ViewPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
 		wait.safeWait();
+		Thread.sleep(7000);
 	log.info("STEP#1: Clicking on the product");
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");

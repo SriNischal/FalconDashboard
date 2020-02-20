@@ -31,6 +31,7 @@ public class TC20_FailTestCase extends SampleTestSuiteBase {
 		Pageactions page = new Pageactions(browser);
 		DropdownValidation validate=new DropdownValidation(browser);
 		wait.safeWait();
+		Thread.sleep(7000);
 	log.info("STEP#1: Clicking on the product");
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");

@@ -34,6 +34,7 @@ public class TC18_ProductName extends SampleTestSuiteBase {
 		RecentrunsValidation validate=new RecentrunsValidation(browser);
 		Pageactions page=new Pageactions(browser);
 		wait.safeWait();
+		Thread.sleep(7000);
 	log.info("STEP#1: Clicking on the Recentruns");
 		page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the recent runs");

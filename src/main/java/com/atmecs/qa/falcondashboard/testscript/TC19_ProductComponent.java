@@ -35,6 +35,7 @@ public class TC19_ProductComponent extends SampleTestSuiteBase {
 		RecentrunsValidation validate = new RecentrunsValidation(browser);
 		Pageactions page = new Pageactions(browser);
 		wait.safeWait();
+		Thread.sleep(7000);
 	log.info("STEP#1: Creating the list to display the components of the products ");
 		String componentslist = propReader.getValue("loc.componentofproduct.btn");
 		list.listofElements(componentslist);

@@ -32,11 +32,11 @@ public class TC06_ProductMedium extends SampleTestSuiteBase{
 		ValidationHelper helper=new ValidationHelper(browser);
 		Splitting split=new Splitting(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.safeWait();
+		Thread.sleep(7000);
 	log.info("STEP#1: Clicking on the product");
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
-		wait.safeWait();
+		Thread.sleep(5000);
 	log.info("STEP#2: Splitting the array and displaying the medium of the product");
 		String product = split.splitofarray(1);
 		report.info("Successfully displayed medium of product");

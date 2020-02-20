@@ -33,6 +33,7 @@ public class TC30_ColorOfFailedTestCases extends SampleTestSuiteBase{
 		Splitting split=new Splitting(browser);
 	    Pageactions page=new Pageactions(browser);
 	    wait.safeWait();
+	    Thread.sleep(7000);
     log.info("STEP#1: Clicking on the product");
         wait.safeWait();
         page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));

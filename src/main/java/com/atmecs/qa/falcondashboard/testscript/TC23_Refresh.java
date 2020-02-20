@@ -31,6 +31,7 @@ public class TC23_Refresh extends SampleTestSuiteBase{
 		DashboardPageValidation validate=new DashboardPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
 		wait.safeWait();
+		Thread.sleep(7000);
 	log.info("STEP#1: Dashboard Text validation");
 		validate.validateDashboard();
 		report.info("Successfully validated dashboard text");

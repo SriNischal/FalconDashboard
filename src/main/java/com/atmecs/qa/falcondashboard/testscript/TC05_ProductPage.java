@@ -56,14 +56,12 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 		String expedctedproducts=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "List of Test Cases");
 		Verify.verifyString(result, expedctedproducts, "Successfully validaetd the test cases");
 		report.info("Successfully valdated all the test cases");
-		wait.implicitWait();
-    log.info("STEP#7: Clicking on the download option");
-		page.clickOnElement(read.getPropertyvalue("loc.download.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		report.info("Clicked on download option");	
-	log.info("STEP#8: Selecting the dashboard slider option");
+	log.info("STEP#7: Selecting the dashboard slider option");
 	    page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");	
-        browser.getWait().setScriptTimeout(2000);
+    log.info("STEP#8: Clicking on the download option");
+		page.clickOnElement(read.getPropertyvalue("loc.download.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		report.info("Clicked on download option");	
 		// logic
 
 		

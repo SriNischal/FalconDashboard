@@ -30,6 +30,7 @@ public class TC22_DeleteOption extends SampleTestSuiteBase{
 		Waits wait=new Waits(browser);
 		 Pageactions page=new Pageactions(browser);
 		 wait.safeWait();
+		 Thread.sleep(7000);
 	log.info("STEP#1: Clicking on the recent runs option");	
 	     page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		 report.info("Successfully clicked on recent runs");

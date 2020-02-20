@@ -7,13 +7,13 @@
   <parameter name="browserVersion" value="3.150.1"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage">
         <methods>
-          <include name="environmentOfProduct"/>
+          <include name="percentageOfProduct"/>
           <include name="preSetup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_ie_3.150.1 (2)] -->

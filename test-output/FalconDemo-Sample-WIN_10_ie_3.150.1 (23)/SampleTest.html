@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Feb 19 20:09:32 IST 2020</td>
+<td>Started on:</td><td>Thu Feb 20 19:29:05 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12345 ms)</td>
+<tr><td>Total time:</td><td>26 seconds (26864 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,25 +76,34 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct.stepsOfProduct()'><b>stepsOfProduct</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct<br/>
-<a href="#Output-262201713" onClick='toggleBox("Output-262201713", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1897629491" onClick='toggleBox("Output-1897629491", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-262201713" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-262201713">
+<a href="#Output-1897629491" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1897629491">
 Successfully clicked on the product<br/>
-No such element found with xpath //select[@name='status']/option[2]<br/>
+Successfully selected pass option<br/>
+Successfully selected the testcase<br/>
 Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1 (23)\Screenshots\stepsOfProduct_1_.png<br/>
 </div>
 </td>
-<td><div><pre>java.lang.NullPointerException
-	at com.atmecs.qa.falcondashboard.utils.Pageactions.clickOnElement(Pageactions.java:91)
-	at com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct.stepsOfProduct(TC25_StepsOfProduct.java:41)
+<td><div><pre>java.lang.AssertionError: expected [] but found [Status]
+	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:29)
+	at com.atmecs.qa.falcondashboard.validationresults.ProductStepsValidation.validateStatusOption(ProductStepsValidation.java:21)
+	at com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct.stepsOfProduct(TC25_StepsOfProduct.java:55)
 	at com.atmecs.qa.falcondashboard.runner.TestNGRunner.main(TestNGRunner.java:59)
 	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:294)
 	at java.base/java.lang.Thread.run(Thread.java:830)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace262201713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace262201713'><pre>java.lang.NullPointerException
-	at com.atmecs.qa.falcondashboard.utils.Pageactions.clickOnElement(Pageactions.java:91)
-	at com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct.stepsOfProduct(TC25_StepsOfProduct.java:41)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1897629491", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1897629491'><pre>java.lang.AssertionError: expected [] but found [Status]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:29)
+	at com.atmecs.qa.falcondashboard.validationresults.ProductStepsValidation.validateStatusOption(ProductStepsValidation.java:21)
+	at com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct.stepsOfProduct(TC25_StepsOfProduct.java:55)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -125,8 +134,8 @@ Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAut
 	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:294)
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </pre></div></td>
-<td>11</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct@5a29bda3</td></tr>
+<td>26</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct@3a5fd925</td></tr>
 </table><p>
 </body>
 </html>

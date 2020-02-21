@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 21 12:55:17 IST 2020</td>
+<td>Started on:</td><td>Fri Feb 21 19:58:02 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>21 seconds (21996 ms)</td>
+<tr><td>Total time:</td><td>113 seconds (113358 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,58 +76,24 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases.failTestCases()'><b>failTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases<br/>
-<a href="#Output-716626490" onClick='toggleBox("Output-716626490", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1112888256" onClick='toggleBox("Output-1112888256", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-716626490" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-716626490">
-Successfully clicked on product<br/>
-Successfully clicked dashboard slider<br/>
+<a href="#Output-1112888256" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1112888256">
+No such element found with xpath (//h4[@class='media-box-heading ng-binding'])[1]<br/>
 Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77 (29)\Screenshots\failTestCases_1_.png<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=79.0.3945.130)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ATMECSINLT-060&apos;, ip: &apos;55.55.52.253&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SRINIS~1.THI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51557}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ccce4b19a640ab0617aaab448535c430
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+<td><div><pre>java.lang.NullPointerException
 	at com.atmecs.qa.falcondashboard.utils.Pageactions.clickOnElement(Pageactions.java:91)
-	at com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases.failTestCases(TC31_FailedTestCases.java:44)
-	at com.atmecs.qa.falcondashboard.runner.TestNGRunner.main(TestNGRunner.java:59)
-	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:294)
+	at com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases.failTestCases(TC31_FailedTestCases.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:830)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace716626490", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace716626490'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=79.0.3945.130)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ATMECSINLT-060&apos;, ip: &apos;55.55.52.253&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SRINIS~1.THI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51557}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ccce4b19a640ab0617aaab448535c430
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1112888256", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1112888256'><pre>java.lang.NullPointerException
 	at com.atmecs.qa.falcondashboard.utils.Pageactions.clickOnElement(Pageactions.java:91)
-	at com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases.failTestCases(TC31_FailedTestCases.java:44)
+	at com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases.failTestCases(TC31_FailedTestCases.java:37)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -146,20 +112,12 @@ Session ID: ccce4b19a640ab0617aaab448535c430
 	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at com.atmecs.qa.falcondashboard.runner.TestNGRunner.main(TestNGRunner.java:59)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:294)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </pre></div></td>
-<td>21</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases@4dbf6690</td></tr>
+<td>57</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases@64e4aa5</td></tr>
 </table><p>
 </body>
 </html>

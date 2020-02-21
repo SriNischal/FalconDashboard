@@ -5,15 +5,15 @@
   <parameter name="osVersion" value="10"/>
   <parameter name="browser" value="firefox"/>
   <parameter name="browserVersion" value="0.26.0"/>
-  <test thread-count="5" name="SampleTest(failed)">
+  <test thread-count="5" name="Dashboard(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage">
         <methods>
-          <include name="percentageOfProduct"/>
+          <include name="dashboardPage"/>
           <include name="preSetup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage -->
     </classes>
-  </test> <!-- SampleTest(failed) -->
+  </test> <!-- Dashboard(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_firefox_0.26.0] -->

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SampleTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 21 12:37:58 IST 2020</td>
+<td>Started on:</td><td>Fri Feb 21 19:58:42 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>23 seconds (23117 ms)</td>
+<tr><td>Total time:</td><td>109 seconds (109074 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,22 +76,52 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage.productPage()'><b>productPage</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage<br/>
-<a href="#Output-204123202" onClick='toggleBox("Output-204123202", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-233924082" onClick='toggleBox("Output-233924082", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-204123202" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-204123202">
-Successfully validated product<br/>
-Successfully clicked on the product<br/>
-Successfully validated panel title<br/>
-PASS : Successfully validaetd the test cases : ACTUAL : deleteProjectApiTest 0 Sec Pass,downloadImageApiTest 0 Sec Pass,exportToExcelApiTest 0 Sec Pass,getDashboardApiTest 1 Sec Pass,invalidLinkApiTest 0 Sec Fail,recentRunsApiTest 0 Sec Pass,reportViewApiTest 0 Sec Pass,uploadImageApiTest 2 Sec Pass,uploadTestngResultFileApiTest 0 Sec Pass,viewReportApiTest 5 Sec Pass 	EXPECTED :deleteProjectApiTest 0 Sec Pass,downloadImageApiTest 0 Sec Pass,exportToExcelApiTest 0 Sec Pass,getDashboardApiTest 1 Sec Pass,invalidLinkApiTest 0 Sec Fail,recentRunsApiTest 0 Sec Pass,reportViewApiTest 0 Sec Pass,uploadImageApiTest 2 Sec Pass,uploadTestngResultFileApiTest 0 Sec Pass,viewReportApiTest 5 Sec Pass<br/>
-Successfully valdated all the test cases<br/>
-Successfully selected dashboard option<br/>
-Clicked on download option<br/>
+<a href="#Output-233924082" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-233924082">
+No such element found with xpath (//h4[@class='media-box-heading ng-binding'])<br/>
+Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77 (3)\Screenshots\productPage_1_.png<br/>
 </div>
 </td>
-<td></td>
-<td>23</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage@204dd3fe</td></tr>
+<td><div><pre>java.lang.NullPointerException
+	at com.atmecs.qa.falcondashboard.utils.Pageactions.getText(Pageactions.java:96)
+	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:27)
+	at com.atmecs.qa.falcondashboard.validationresults.ProductPageValidation.validateProduct(ProductPageValidation.java:25)
+	at com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage.productPage(TC05_ProductPage.java:39)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace233924082", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace233924082'><pre>java.lang.NullPointerException
+	at com.atmecs.qa.falcondashboard.utils.Pageactions.getText(Pageactions.java:96)
+	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:27)
+	at com.atmecs.qa.falcondashboard.validationresults.ProductPageValidation.validateProduct(ProductPageValidation.java:25)
+	at com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage.productPage(TC05_ProductPage.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+</pre></div></td>
+<td>43</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage@64b86cd4</td></tr>
 </table><p>
 </body>
 </html>

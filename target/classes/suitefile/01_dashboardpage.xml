@@ -5,10 +5,11 @@
 <suite name="Sample">
 
 	<test name="Dashboard">
-	<parameter name="dashboard" value="chrome"/>
 		<classes>
 			<class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage" />
 		</classes>
 	</test>
 
 </suite>
+
+

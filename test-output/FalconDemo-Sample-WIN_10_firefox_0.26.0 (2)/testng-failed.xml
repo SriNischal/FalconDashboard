@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FalconDemo-Sample-WIN_10_firefox_0.26.0 (2)]">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest(failed)">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage">
+        <methods>
+          <include name="percentageOfProduct"/>
+          <include name="preSetup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage -->
+    </classes>
+  </test> <!-- SampleTest(failed) -->
+</suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_firefox_0.26.0 (2)] -->

@@ -7,14 +7,13 @@
   <parameter name="browserVersion" value="77"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder">
         <methods>
-          <include name="setup"/>
-          <include name="totaltestcases"/>
+          <include name="dashboardSlidder"/>
           <include name="preSetup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_chrome_77 (6)] -->

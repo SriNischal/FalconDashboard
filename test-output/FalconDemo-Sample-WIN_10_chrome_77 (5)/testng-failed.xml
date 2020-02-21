@@ -10,7 +10,6 @@
       <class name="com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns">
         <methods>
           <include name="dropdown"/>
-          <include name="setup"/>
           <include name="preSetup"/>
           <include name="teardown"/>
         </methods>

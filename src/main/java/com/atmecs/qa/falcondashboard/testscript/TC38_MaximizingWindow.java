@@ -29,8 +29,7 @@ public class TC38_MaximizingWindow extends SampleTestSuiteBase{
 		 Waits wait=new Waits(browser);
 		Pageactions page=new Pageactions(browser);
 		DashboardPageValidation validate = new DashboardPageValidation(browser);
-		wait.safeWait();
-		Thread.sleep(7000);
+		wait.isElementVisible(browser.getDriver(), "loc.expand.btn");
 	log.info("STEP#1: Clicking on the expand button");	
 		page.clickOnElement(read.getPropertyvalue("loc.expand.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the expand button");
@@ -43,7 +42,7 @@ public class TC38_MaximizingWindow extends SampleTestSuiteBase{
 	log.info("STEP#4: Atmecs Text validation");
 		validate.validatefalconlogo();
 		report.info("Successfully validated falcon");
-		wait.safeWait();
+		wait.isElementVisible(browser.getDriver(), "loc.expand.btn");
 	log.info("STEP#5: Clicking on the expand button");	
 		page.clickOnElement(read.getPropertyvalue("loc.expand.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the expand button");

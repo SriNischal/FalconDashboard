@@ -32,13 +32,14 @@ public class TC03_TestCases extends SampleTestSuiteBase {
 	 * In this method we create list to display the test cases and validate the test
 	 * cases and validate the tool tip message by mouse hovering over the test cases
 	 */ 
+	@SuppressWarnings("static-access")
 	@Test
 	public void numberofTestCasesOfProduct() throws Exception {
 		ValidationHelper helper=new ValidationHelper(browser);
 		ElementsList lists=new ElementsList(browser);
 		Pageactions page = new Pageactions(browser);
 		Waits wait=new Waits(browser);
-		wait.safeWait();
+		wait.isElementVisible(browser.getDriver(), "loc.totaltestcase.txt");
 	log.info("STEP#1: Creating list to display total test cases of the products");	
 		String products=propReader.getValue("loc.totaltestcase.txt");
 		lists.listofElements(products);

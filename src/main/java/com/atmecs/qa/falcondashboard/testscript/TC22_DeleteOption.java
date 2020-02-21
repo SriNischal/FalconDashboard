@@ -29,12 +29,11 @@ public class TC22_DeleteOption extends SampleTestSuiteBase{
 	public void deleteOption() throws Exception {
 		Waits wait=new Waits(browser);
 		 Pageactions page=new Pageactions(browser);
-		 wait.safeWait();
-		 Thread.sleep(7000);
+		 wait.isElementVisible(browser.getDriver(), "loc.recentruns.btn");
 	log.info("STEP#1: Clicking on the recent runs option");	
 	     page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		 report.info("Successfully clicked on recent runs");
-		 wait.implicitWait();
+		 wait.isElementVisible(browser.getDriver(), "loc.deleteoption.btn");
 	log.info("STEP#2: Mouse hovering over the delete option");	 
 		 page.mouseOver(read.getPropertyvalue("loc.deleteoption.btn",ProjectBaseConstantPaths.LOCATORS_FILE));
 		 report.info("Successfully mouse hovered over the delete option");

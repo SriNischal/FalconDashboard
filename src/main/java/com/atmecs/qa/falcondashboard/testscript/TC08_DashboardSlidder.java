@@ -25,17 +25,17 @@ public class TC08_DashboardSlidder extends SampleTestSuiteBase{
 	public void dashboardSlidder() throws Exception {
 		Waits wait=new Waits(browser);
 		Pageactions page=new Pageactions(browser);
-		Thread.sleep(7000);
+		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
 		log.info("STEP#1: Clicking on the product");	
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
-		Thread.sleep(5000);
+		wait.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
 		log.info("STEP#2: Selecting the dashboard slider option");
 		String locatorValue = read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE);
 		System.out.println("locator value ------ " + locatorValue);
 		page.clickOnElement(locatorValue);
 		report.info("Successfully selected dashboard option");
-		wait.safeWait();
+		wait.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
 	}
 
 }

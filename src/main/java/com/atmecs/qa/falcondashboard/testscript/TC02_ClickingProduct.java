@@ -34,13 +34,14 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 	 * In this we generate a list to see whether all the products are present
 	 * according to the recent execution times and click on the project
 	 */
+	@SuppressWarnings("static-access")
 	@Test
 	public void clickingProduct() throws Exception {
 		Waits wait=new Waits(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		ElementsList lists = new ElementsList(browser);
 		Pageactions page = new Pageactions(browser);
-		wait.safeWait();
+		wait.isElementVisible(browser.getDriver(), "loc.products.txt");
 	log.info("STEP#1: List to get all the products and size of elements  present on the dashboard page");
 		String products = propReader.getValue("loc.products.txt");
 		lists.listofElements(products);
@@ -65,7 +66,6 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 	log.info("STEP#5: Clicking on the product");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
-		wait.implicitWait();
 		/*
 		 * log.info("STEP#7: Clicking on each every product "); for (int x = 0; x <
 		 * index; x++) { WebElement client = list.get(x); client.click();

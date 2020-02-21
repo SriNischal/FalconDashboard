@@ -27,11 +27,10 @@ public class TC16_MainNavigation extends SampleTestSuiteBase{
 		Waits wait=new Waits(browser);
 		MainNavigationValidation validate=new MainNavigationValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.safeWait();
-		Thread.sleep(7000);
+		wait.isElementVisible(browser.getDriver(), "loc.mainnavigation.btn");
 	log.info("STEP#1: Clicking on the main navigation bar");	
 		page.clickOnElement(read.getPropertyvalue("loc.mainnavigation.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		wait.safeWait();
+		wait.isElementVisible(browser.getDriver(), "loc.mainnavigation.btn");
 		page.clickOnElement(read.getPropertyvalue("loc.mainnavigation.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		wait.implicitWait();
 	log.info("STEP#2: Validating the dashboard text");	
@@ -42,7 +41,7 @@ public class TC16_MainNavigation extends SampleTestSuiteBase{
 		report.info("Successfully validated recent runs");
 	log.info("STEP#4: Clicking on the recent runs option");	
 	    page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-	    wait.safeWait();
+	    wait.isElementVisible(browser.getDriver(), "validate.text.txt");
 	log.info("STEP#5: Validating the recent runs text");	
 		validate.validateRecentRunsText();
 		report.info("Successfully validated recentruns");

@@ -1,6 +1,10 @@
 package com.atmecs.qa.falcondashboard.utils;
 
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.atmecs.falcon.automation.ui.selenium.Browser;
@@ -14,11 +18,15 @@ public class Waits {
 		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);	
 	}
 	
-	public void safeWait() {
-		browser.getWait().safeWait(2000);
-	}
-	public void pageLoadTimeout() {
-		WebDriverWait wait=new WebDriverWait(browser.getDriver(), 20);
-		System.out.println("Waiting time is: "+wait);
+	public static boolean isElementVisible(WebDriver driver, String xpath) {
+
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		try {
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
+		} catch (Exception exception) {
+
+			return false;
+		}
+		return true;
 	}
 }

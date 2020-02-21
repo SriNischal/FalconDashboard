@@ -7,13 +7,13 @@
   <parameter name="browserVersion" value="0.26.0"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage">
         <methods>
+          <include name="percentageOfProduct"/>
           <include name="preSetup"/>
-          <include name="clickingProduct"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_firefox_0.26.0] -->

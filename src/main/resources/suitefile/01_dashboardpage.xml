@@ -2,12 +2,11 @@
 
 <!-- Sample Suite File -->
 
-<suite name="Sample" thread-count="3" parallel="tests">
+<suite name="Sample">
 
 	<test name="Dashboard">
 	<parameter name="dashboard" value="chrome"/>
 		<classes>
-			<class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage" />
 			<class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage" />
 		</classes>
 	</test>

@@ -32,8 +32,7 @@ public class TC34_ViewPage extends SampleTestSuiteBase{
 		ViewPageValidation validate=new ViewPageValidation(browser);
 		MainNavigationValidation validation=new MainNavigationValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.safeWait();
-		Thread.sleep(7000);
+		wait.isElementVisible(browser.getDriver(), "loc.view.btn");
 	log.info("STEP#1: Validating the view  option");	
 		validate.validateText();
 		report.info("Successfully validated views");

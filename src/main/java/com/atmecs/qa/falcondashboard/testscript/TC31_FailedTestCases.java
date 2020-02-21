@@ -32,12 +32,11 @@ public class TC31_FailedTestCases extends SampleTestSuiteBase{
 		ElementsList list=new ElementsList(browser);
 		ViewPageValidation validate=new ViewPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.safeWait();
-		Thread.sleep(7000);
+		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
-		wait.implicitWait();
+		wait.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
 	log.info("STEP#2: Selecting the dashboard slider option");
 		page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked dashboard slider");
@@ -50,7 +49,7 @@ public class TC31_FailedTestCases extends SampleTestSuiteBase{
 	log.info("STEP#6: Validating the fail message ");	
 		validate.validateFailMessage();
 		report.info("Successfully validated fail message");
-		wait.safeWait();
+		wait.isElementVisible(browser.getDriver(), "loc.numberoftestcases.txt");
 	log.info("STEP#7: Creating a list to display all the test cases present");
 	    String testcases=propReader.getValue("loc.numberoftestcases.txt");
 		list.listofElements(testcases);	

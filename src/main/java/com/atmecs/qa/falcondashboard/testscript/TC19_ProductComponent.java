@@ -34,15 +34,14 @@ public class TC19_ProductComponent extends SampleTestSuiteBase {
 		ElementsList list=new ElementsList(browser);
 		RecentrunsValidation validate = new RecentrunsValidation(browser);
 		Pageactions page = new Pageactions(browser);
-		wait.safeWait();
-		Thread.sleep(7000);
+		wait.isElementVisible(browser.getDriver(), "loc.componentofproduct.btn");
 	log.info("STEP#1: Creating the list to display the components of the products ");
 		String componentslist = propReader.getValue("loc.componentofproduct.btn");
 		list.listofElements(componentslist);
 	log.info("STEP#2: Clicking on the recent runs option");
 		page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on recent runs");
-		wait.safeWait();
+		wait.isElementVisible(browser.getDriver(), "loc.component.btn");
 	log.info("STEP#3: Creating the list to display the components of the products");
 		String components = propReader.getValue("loc.componentlist.txt");
 		list.listofElements(components);

@@ -30,11 +30,11 @@ public class TC23_Refresh extends SampleTestSuiteBase{
 		Waits wait=new Waits(browser);
 		DashboardPageValidation validate=new DashboardPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.safeWait();
-		Thread.sleep(7000);
+		wait.isElementVisible(browser.getDriver(), "validate.dashboardpage.txt");
 	log.info("STEP#1: Dashboard Text validation");
 		validate.validateDashboard();
 		report.info("Successfully validated dashboard text");
+		wait.isElementVisible(browser.getDriver(), "loc.refresh.btn");
 	log.info("STEP#2: Clicking on the refresh option");
 		page.clickOnElement(read.getPropertyvalue("loc.refresh.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the refresh option");

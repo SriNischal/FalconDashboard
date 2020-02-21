@@ -27,12 +27,11 @@ public class TC11_DownloadOption extends SampleTestSuiteBase{
 		Waits wait=new Waits(browser);
 		Splitting split=new Splitting(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.safeWait();
-		Thread.sleep(7000);
+		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");	
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
-		wait.implicitWait();
+		wait.isElementVisible(browser.getDriver(), "loc.download.btn");
 	log.info("STEP#2: Clicking on the download option");
 		page.clickOnElement(read.getPropertyvalue("loc.download.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Clicked on download option");	

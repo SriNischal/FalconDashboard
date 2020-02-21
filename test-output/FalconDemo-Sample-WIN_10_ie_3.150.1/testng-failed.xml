@@ -1,32 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" parallel="methods" name="Failed suite [FalconDemo-Sample-WIN_10_ie_3.150.1]">
+<suite name="Failed suite [FalconDemo-Sample-WIN_10_ie_3.150.1]">
   <parameter name="os" value="WIN"/>
   <parameter name="osVersion" value="10"/>
   <parameter name="browser" value="ie"/>
   <parameter name="browserVersion" value="3.150.1"/>
-  <test thread-count="3" parallel="methods" name="Dashboard(failed)">
-    <parameter name="dashboard" value="chrome"/>
+  <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage">
         <methods>
-          <include name="dashboardPage"/>
+          <include name="percentageOfProduct"/>
           <include name="preSetup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage -->
     </classes>
-  </test> <!-- Dashboard(failed) -->
-  <test thread-count="3" parallel="methods" name="DashboardPage(failed)">
-    <parameter name="dashboard" value="ie"/>
-    <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage">
-        <methods>
-          <include name="dashboardPage"/>
-          <include name="preSetup"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage -->
-    </classes>
-  </test> <!-- DashboardPage(failed) -->
+  </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_ie_3.150.1] -->

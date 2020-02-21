@@ -37,7 +37,7 @@ public class TC04_ProductPercentage extends SampleTestSuiteBase {
 		Waits wait=new Waits(browser);
 		ValidationHelper helper=new ValidationHelper(browser);
 		Pageactions page = new Pageactions(browser);
-		wait.safeWait();
+		wait.isElementVisible(browser.getDriver(), "loc.pass%trend.btn");
 	log.info("STEP#1: Mouse hovering over the pass%Trend of the product");
 	     page.mouseOver(read.getPropertyvalue("loc.pass%trend.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	     report.info("Successfully mouse hovered the pass%trend");
@@ -59,7 +59,7 @@ public class TC04_ProductPercentage extends SampleTestSuiteBase {
 		 String expectedcolor= page.getdata_fromExcel(product, "Validation Text", "Pass percent color");
 		 Verify.verifyString(actualcolor, expectedcolor, "Successfully validated the color of the pass percentage");
 		 report.info("Successfully validated the color of the pass percentage");  
-		 wait.safeWait();
+		 wait.isElementVisible(browser.getDriver(), "loc.failpercent.btn");
 	log.info("STEP#6: Mouse hovering the fail percent of the product");
 	     page.mouseOver(read.getPropertyvalue("loc.failpercent.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	     report.info("Successfully mouse hovered over the fail percent and displayed the value");

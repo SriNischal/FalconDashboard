@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" parallel="methods" name="Failed suite [FalconDemo-Sample-WIN_10_chrome_77]">
+<suite name="Failed suite [FalconDemo-Sample-WIN_10_firefox_0.26.0]">
   <parameter name="os" value="WIN"/>
   <parameter name="osVersion" value="10"/>
-  <parameter name="browser" value="chrome"/>
-  <parameter name="browserVersion" value="77"/>
-  <test thread-count="3" parallel="methods" name="Dashboard(failed)">
-    <parameter name="dashboard" value="chrome"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage">
         <methods>
-          <include name="dashboardPage"/>
+          <include name="percentageOfProduct"/>
           <include name="preSetup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage -->
     </classes>
-  </test> <!-- Dashboard(failed) -->
-</suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_chrome_77] -->
+  </test> <!-- SampleTest(failed) -->
+</suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_firefox_0.26.0] -->

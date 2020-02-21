@@ -1,9 +1,24 @@
 <h2>Reporter output</h2><table><tr><td>INFO: The value found with Environment variable FalconDemo is: FalconDemo</td></tr>
-<tr><td>INFO: The value found with Environment Module variable 02_productclicking is: 02_productclicking</td></tr>
-<tr><td>The value found with Environment variable WIN_10_firefox_0.26.0 is: WIN_10_firefox_0.26.0</td></tr>
+<tr><td>INFO: The value found with Environment Module variable 04_percentagecompleted is: 04_percentagecompleted</td></tr>
+<tr><td>The value found with Environment variable WIN_10_firefox_0.26.0,WIN_10_ie_3.150.1,WIN_10_chrome_77 is: WIN_10_firefox_0.26.0,WIN_10_ie_3.150.1,WIN_10_chrome_77</td></tr>
 <tr><td>INFO: Clients Found: [FalconDemo]
 </td></tr>
-<tr><td>INFO: Modules Selected: [02_productclicking]
+<tr><td>INFO: Modules Selected: [04_percentagecompleted]
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
 </td></tr>
 <tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
 <tr><td><?xml version="1.0" encoding="UTF-8"?>
@@ -15,12 +30,60 @@
   <parameter name="browserVersion" value="0.26.0"/>
   <test thread-count="5" name="SampleTest">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage"/>
     </classes>
   </test> <!-- SampleTest -->
 </suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
 </td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_ie_3.150.1">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="browserVersion" value="3.150.1"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
+</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully mouse hovered the pass%trend</td></tr>
+<tr><td>PASS : Successfully displayed the test cases message : ACTUAL : Pass % Trend 	EXPECTED :Pass % Trend</td></tr>
+<tr><td>Successfully mouse hovered over the pass percent</td></tr>
+<tr><td>rgba(34, 34, 34, 1)</td></tr>
+<tr><td>PASS : Successfully validated the color of the pass percentage : ACTUAL : rgba(34, 34, 34, 1) 	EXPECTED :rgba(34, 34, 34, 1)</td></tr>
+<tr><td>Successfully validated the color of the pass percentage</td></tr>
+<tr><td>Successfully mouse hovered over the fail percent and displayed the value</td></tr>
+<tr><td>rgba(244, 67, 54, 1)</td></tr>
+<tr><td>PASS : Successfully validated the color of the fail percentage : ACTUAL : rgba(244, 67, 54, 1) 	EXPECTED :rgba(244, 67, 54, 1)</td></tr>
+<tr><td>Successfully validated the color of the fail percentage</td></tr>
 <tr><td>Opening browser: firefox</td></tr>
 <tr><td>Maximizing browser window</td></tr>
-<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_firefox_0.26.0\Screenshots\clickingProduct_1_.png</td></tr>
+<tr><td>Successfully mouse hovered the pass%trend</td></tr>
+<tr><td>PASS : Successfully displayed the test cases message : ACTUAL :  	EXPECTED :</td></tr>
+<tr><td>Successfully mouse hovered over the pass percent</td></tr>
+<tr><td>rgb(34, 34, 34)</td></tr>
+<tr><td>PASS : Successfully validated the color of the pass percentage : ACTUAL : rgb(34, 34, 34) 	EXPECTED :rgb(34, 34, 34)</td></tr>
+<tr><td>Successfully validated the color of the pass percentage</td></tr>
+<tr><td>Successfully mouse hovered over the fail percent and displayed the value</td></tr>
+<tr><td>rgb(244, 67, 54)</td></tr>
+<tr><td>PASS : Successfully validated the color of the fail percentage : ACTUAL : rgb(244, 67, 54) 	EXPECTED :rgb(244, 67, 54)</td></tr>
+<tr><td>Successfully validated the color of the fail percentage</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully mouse hovered the pass%trend</td></tr>
+<tr><td>PASS : Successfully displayed the test cases message : ACTUAL : Pass % Trend 	EXPECTED :Pass % Trend</td></tr>
+<tr><td>Successfully mouse hovered over the pass percent</td></tr>
+<tr><td>rgba(34, 34, 34, 1)</td></tr>
+<tr><td>PASS : Successfully validated the color of the pass percentage : ACTUAL : rgba(34, 34, 34, 1) 	EXPECTED :rgba(34, 34, 34, 1)</td></tr>
+<tr><td>Successfully validated the color of the pass percentage</td></tr>
+<tr><td>Successfully mouse hovered over the fail percent and displayed the value</td></tr>
+<tr><td>rgba(244, 67, 54, 1)</td></tr>
+<tr><td>PASS : Successfully validated the color of the fail percentage : ACTUAL : rgba(244, 67, 54, 1) 	EXPECTED :rgba(244, 67, 54, 1)</td></tr>
+<tr><td>Successfully validated the color of the fail percentage</td></tr>
 </table>

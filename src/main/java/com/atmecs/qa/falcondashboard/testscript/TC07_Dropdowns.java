@@ -31,11 +31,11 @@ public class TC07_Dropdowns extends SampleTestSuiteBase {
 		Waits wait=new Waits(browser);
 		DropdownValidation validate = new DropdownValidation(browser);
 		Pageactions page = new Pageactions(browser);
-		Thread.sleep(7000);
+		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");	
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
-	    Thread.sleep(5000);
+	    wait.isElementVisible(browser.getDriver(), "loc.customer.txt");
 	log.info("STEP#2: Selecting the customer option from the dropdown");
 	String locatorvalue=read.getPropertyvalue("loc.customer.txt", ProjectBaseConstantPaths.LOCATORS_FILE);
 	    System.out.println(locatorvalue);

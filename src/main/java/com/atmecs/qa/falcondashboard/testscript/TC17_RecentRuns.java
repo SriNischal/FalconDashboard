@@ -25,13 +25,13 @@ public class TC17_RecentRuns extends SampleTestSuiteBase{
 	 * user landed on to the recent runs page and validated the content present in
 	 * the recent runs page
 	 */
+	@SuppressWarnings("static-access")
 	@Test
 	public void recentrun() throws Exception {
 		Waits wait=new Waits(browser);
 		RecentrunsValidation validate=new RecentrunsValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.safeWait();
-		Thread.sleep(7000);
+		wait.isElementVisible(browser.getDriver(), "loc.recentruns.btn");
 	log.info("STEP#1: Clicking on the recent runs option");	
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on recent runs");

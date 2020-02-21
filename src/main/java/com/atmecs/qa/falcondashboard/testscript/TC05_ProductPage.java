@@ -34,14 +34,14 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 		ElementsList lists=new ElementsList(browser);
 		Pageactions page = new Pageactions(browser);
 		ProductPageValidation validate = new ProductPageValidation(browser);
-		wait.safeWait();
+		wait.isElementVisible(browser.getDriver(),"loc.product.btn");
 	log.info("STEP#1: Validating and displaying the product name");
 		validate.validateProduct();
 		report.info("Successfully validated product");
 	log.info("STEP#2: Clicking on the product");	
         page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
-		wait.safeWait();
+		wait.isElementVisible(browser.getDriver(), "loc.numberoftestcases.txt");
 	log.info("STEP#3: Validating the product page panel title");
 		validate.validatePanelTitle();
 		report.info("Successfully validated panel title");

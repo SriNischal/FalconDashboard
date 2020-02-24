@@ -38,7 +38,7 @@ public class TC34_ViewPage extends SampleTestSuiteBase{
 		report.info("Successfully validated views");
 	log.info("STEP#2: Clicking on the views option");	
 		page.clickOnElement(read.getPropertyvalue("loc.view.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		wait.implicitWait();
+		wait.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
 	log.info("STEP#3: Validating the panel title of the views page");
 	    validation.validateViewPanelTitle();
 	    report.info("Successfully validated the views panel title");

@@ -36,7 +36,7 @@ public class TC25_StepsOfProduct extends SampleTestSuiteBase{
 	log.info("STEP#1: Clicking on the product");	
 		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
-		wait.implicitWait();
+		wait.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
 	log.info("STEP#2: Selecting the pass option from the status dropdown");	
 		page.clickOnElement(read.getPropertyvalue("loc.passselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected pass option");

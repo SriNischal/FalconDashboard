@@ -18,19 +18,17 @@ public class TC10_TestPhase extends SampleTestSuiteBase{
 	LoadProperties load=new LoadProperties();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	//In this method the validation of the test phase is done by clicking on the dashboard slidder
-	@SuppressWarnings("static-access")
 	@Test
 	public void testPhase() throws Exception {
-		Waits wait=new Waits(browser);
 		ProductPageValidation validate=new ProductPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");	
-		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
-		wait.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
 	log.info("STEP#2: Selecting the dashboard slider option");
-	    page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+	    page.clickOnElement(ReadLocators.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");
 	log.info("STEP#3: Validating the test phase of the product");
 	     validate.validateTestPhase();

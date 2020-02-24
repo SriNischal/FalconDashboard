@@ -21,19 +21,17 @@ public class TC11_DownloadOption extends SampleTestSuiteBase{
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	//In this method the download message is validated by mouse hovering and the checked if download option is clicked
-	@SuppressWarnings("static-access")
 	@Test
 	public void downloadOption() throws Exception {
-		Waits wait=new Waits(browser);
 		Splitting split=new Splitting(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");	
-		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
-		wait.isElementVisible(browser.getDriver(), "loc.download.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.download.btn");
 	log.info("STEP#2: Clicking on the download option");
-		page.clickOnElement(read.getPropertyvalue("loc.download.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.download.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Clicked on download option");	
 	log.info("STEP#3: Displaying the Download message for the products");	
 	    String actualtooltipmessage=propReader.getValue("loc.downloadmessage.txt");

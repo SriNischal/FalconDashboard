@@ -41,7 +41,7 @@ public class SampleTestSuiteBase {
 
 	@AfterSuite
 	public void teardown() {
-		browser.closeBrowser();
+		browser.quitBrowser();
 	}
 
 }

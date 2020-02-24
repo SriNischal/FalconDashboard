@@ -20,22 +20,20 @@ public class TC08_DashboardSlidder extends SampleTestSuiteBase{
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 
 	/* In this method checked whether the dash board slider is clicked or not */
-	@SuppressWarnings("static-access")
 	@Test
 	public void dashboardSlidder() throws Exception {
-		Waits wait=new Waits(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 		log.info("STEP#1: Clicking on the product");	
-		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
-		wait.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
 		log.info("STEP#2: Selecting the dashboard slider option");
-		String locatorValue = read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE);
+		String locatorValue = ReadLocators.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE);
 		System.out.println("locator value ------ " + locatorValue);
 		page.clickOnElement(locatorValue);
 		report.info("Successfully selected dashboard option");
-		wait.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
 	}
 
 }

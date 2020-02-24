@@ -20,18 +20,16 @@ public class TC16_MainNavigation extends SampleTestSuiteBase{
 	ReadingData data=new ReadingData();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	//In this method the main navigation option is clicked and validated the contents present in the main navigation 
-	
-	@SuppressWarnings("static-access")
 	@Test
 	public void mainNavigation() throws Exception {
 		Waits wait=new Waits(browser);
 		MainNavigationValidation validate=new MainNavigationValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.mainnavigation.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.mainnavigation.btn");
 	log.info("STEP#1: Clicking on the main navigation bar");	
-		page.clickOnElement(read.getPropertyvalue("loc.mainnavigation.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		wait.isElementVisible(browser.getDriver(), "loc.mainnavigation.btn");
-		page.clickOnElement(read.getPropertyvalue("loc.mainnavigation.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.mainnavigation.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		Waits.isElementVisible(browser.getDriver(), "loc.mainnavigation.btn");
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.mainnavigation.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		wait.implicitWait();
 	log.info("STEP#2: Validating the dashboard text");	
 		validate.validateDashboard();
@@ -40,8 +38,8 @@ public class TC16_MainNavigation extends SampleTestSuiteBase{
 		validate.validateRecentruns();
 		report.info("Successfully validated recent runs");
 	log.info("STEP#4: Clicking on the recent runs option");	
-	    page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-	    wait.isElementVisible(browser.getDriver(), "validate.text.txt");
+	    page.clickOnElement(ReadLocators.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+	    Waits.isElementVisible(browser.getDriver(), "validate.text.txt");
 	log.info("STEP#5: Validating the recent runs text");	
 		validate.validateRecentRunsText();
 		report.info("Successfully validated recentruns");
@@ -52,7 +50,7 @@ public class TC16_MainNavigation extends SampleTestSuiteBase{
 		validate.validateView();
 		report.info("Successfully validated View");
 	log.info("STEP#8: Clicking on the views option");	
-		page.clickOnElement(read.getPropertyvalue("loc.view.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.view.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		wait.implicitWait();
 	log.info("STEP#9: Validating the views panel title");	
 		validate.validateViewPanelTitle();

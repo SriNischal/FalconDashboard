@@ -25,19 +25,17 @@ public class TC07_Dropdowns extends SampleTestSuiteBase {
 	 * In this method the value from the drop downs are selected and validated the
 	 * values of the drop downs
 	 */
-	@SuppressWarnings("static-access")
 	@Test
 	public void dropdown() throws Exception {
-		Waits wait=new Waits(browser);
 		DropdownValidation validate = new DropdownValidation(browser);
 		Pageactions page = new Pageactions(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");	
-		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
-	    wait.isElementVisible(browser.getDriver(), "loc.customer.txt");
+	    Waits.isElementVisible(browser.getDriver(), "loc.customer.txt");
 	log.info("STEP#2: Selecting the customer option from the dropdown");
-	String locatorvalue=read.getPropertyvalue("loc.customer.txt", ProjectBaseConstantPaths.LOCATORS_FILE);
+	String locatorvalue=ReadLocators.getPropertyvalue("loc.customer.txt", ProjectBaseConstantPaths.LOCATORS_FILE);
 	    System.out.println(locatorvalue);
 		page.clickOnElement(locatorvalue);
 		report.info("Successfully selected customer option");
@@ -45,13 +43,13 @@ public class TC07_Dropdowns extends SampleTestSuiteBase {
 		validate.validateCustomer();
 		report.info("Successfully validated customer");
 	log.info("STEP#4: Selecting the module option from the dropdown");	
-		page.clickOnElement(read.getPropertyvalue("loc.module.ddn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.module.ddn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected the module option");
 	log.info("STEP#5: Validating the module value");	
 		 validate.validateModule(); 
 		 report.info("Successfully validated module");
 	log.info("STEP#6: Slecting the status option from the dropdown");	
-		page.clickOnElement(read.getPropertyvalue("loc.failselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.failselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Selected the status option"); 
 	log.info("STEP#7: Validating the status option");	
 		 validate.validateFailStatus();

@@ -24,24 +24,22 @@ public class TC22_DeleteOption extends SampleTestSuiteBase{
 	 * delete option and displayed the tool tip message and validated the tooltip
 	 * message
 	 */
-	@SuppressWarnings("static-access")
 	@Test
 	public void deleteOption() throws Exception {
-		Waits wait=new Waits(browser);
 		 Pageactions page=new Pageactions(browser);
-		 wait.isElementVisible(browser.getDriver(), "loc.recentruns.btn");
+		 Waits.isElementVisible(browser.getDriver(), "loc.recentruns.btn");
 	log.info("STEP#1: Clicking on the recent runs option");	
-	     page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+	     page.clickOnElement(ReadLocators.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		 report.info("Successfully clicked on recent runs");
-		 wait.isElementVisible(browser.getDriver(), "loc.deleteoption.btn");
+		 Waits.isElementVisible(browser.getDriver(), "loc.deleteoption.btn");
 	log.info("STEP#2: Mouse hovering over the delete option");	 
-		 page.mouseOver(read.getPropertyvalue("loc.deleteoption.btn",ProjectBaseConstantPaths.LOCATORS_FILE));
+		 page.mouseOver(ReadLocators.getPropertyvalue("loc.deleteoption.btn",ProjectBaseConstantPaths.LOCATORS_FILE));
 		 report.info("Successfully mouse hovered over the delete option");
 	log.info("STEP#3: Displaying the delete run message for the products");	
 	     String actualtooltipmessage=propReader.getValue("loc.delete.txt");
 	     String message=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();
-	     page.writedata_toExcel("TC01_DasBoardPage", "Validation Text", 35, message);
-	     String expectedtooltipmessage=page.getdata_fromExcel("TC01_DasBoardPage", "Validation Text", "Delete option");
+	     page.writedata_toExcel("REST API TEST RESULT", "Validation Text", 35, message);
+	     String expectedtooltipmessage=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Delete Product");
 	     Verify.verifyString(message, expectedtooltipmessage, "Successfully displayed the test cases message");
 	}
 }

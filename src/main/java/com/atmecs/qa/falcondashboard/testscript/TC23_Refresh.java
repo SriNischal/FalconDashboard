@@ -24,19 +24,17 @@ public class TC23_Refresh extends SampleTestSuiteBase{
 	 * In this method the the dash board text is validated and the refresh option is
 	 * successfully clicked
 	 */
-	@SuppressWarnings("static-access")
 	@Test
 	public void refresh() throws Exception {
-		Waits wait=new Waits(browser);
 		DashboardPageValidation validate=new DashboardPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.isElementVisible(browser.getDriver(), "validate.dashboardpage.txt");
+		Waits.isElementVisible(browser.getDriver(), "validate.dashboardpage.txt");
 	log.info("STEP#1: Dashboard Text validation");
 		validate.validateDashboard();
 		report.info("Successfully validated dashboard text");
-		wait.isElementVisible(browser.getDriver(), "loc.refresh.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.refresh.btn");
 	log.info("STEP#2: Clicking on the refresh option");
-		page.clickOnElement(read.getPropertyvalue("loc.refresh.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.refresh.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the refresh option");
 	}
 

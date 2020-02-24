@@ -31,17 +31,16 @@ public class TC12_ExecutionDate extends SampleTestSuiteBase{
 	/*
 	 * In this method splitting of the product is clicked and the date and time of
 	 * the product are splitted and the date of the product is displayed
-	 */	@SuppressWarnings("static-access")
+	 */
 	@Test
 	public void dateOfExecution() throws Exception {
-		 Waits wait=new Waits(browser);
 		 Splitting split=new Splitting(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");
-		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
-		wait.isElementVisible(browser.getDriver(), "loc.product.txt");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.txt");
 	log.info("STEP#2: Splitting the array and displaying the day and  date of the product");
 		String result=split.splitofdatetime(2);
 	log.info("STEP#3: Validating the date of the product");	 

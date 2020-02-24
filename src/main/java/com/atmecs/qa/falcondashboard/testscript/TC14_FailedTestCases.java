@@ -25,25 +25,23 @@ public class TC14_FailedTestCases extends SampleTestSuiteBase{
 	 * In this method product is clicked and fail option from the status dropdown is
 	 * selected and created a list to display the fail test cases
 	 */ 
-	@SuppressWarnings("static-access")
 	@Test
 	public void dropdownFailedTestCases() throws Exception {
-		Waits wait=new Waits(browser);
 		ElementsList list=new ElementsList(browser);
 		DropdownValidation validate=new DropdownValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");
-        page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+        page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
-		wait.isElementVisible(browser.getDriver(), "loc.failselectstatus.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.failselectstatus.btn");
 	log.info("STEP#2: Slecting the status option from the dropdown");	
-		page.clickOnElement(read.getPropertyvalue("loc.failselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.failselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Selected the fail status option"); 
 	log.info("STEP#3: Validating the status option");	
 		 validate.validateFailStatus();
 		report.info("Successfully validated fail status");
-		wait.isElementVisible(browser.getDriver(), "loc.numberoftestcases.txt");
+		Waits.isElementVisible(browser.getDriver(), "loc.numberoftestcases.txt");
 	log.info("STEP#4: Creating a list to display the failed test cases");
 	    String products=propReader.getValue("loc.numberoftestcases.txt");
 		list.listofElements(products);

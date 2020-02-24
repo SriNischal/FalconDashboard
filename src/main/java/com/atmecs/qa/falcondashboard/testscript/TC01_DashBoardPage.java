@@ -1,6 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.parser.XlsReader;

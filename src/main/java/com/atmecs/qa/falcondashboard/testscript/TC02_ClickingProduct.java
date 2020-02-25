@@ -66,6 +66,7 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 	log.info("STEP#5: Clicking on the product");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
+		page.windowHandle();
 		/*
 		 * log.info("STEP#7: Clicking on each every product "); for (int x = 0; x <
 		 * index; x++) { WebElement client = list.get(x); client.click();

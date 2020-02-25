@@ -5,11 +5,13 @@
   <parameter name="osVersion" value="10"/>
   <parameter name="browser" value="chrome"/>
   <parameter name="browserVersion" value="77"/>
-  <test thread-count="5" name="Dashboard(failed)">
+  <test thread-count="5" parallel="methods" name="Dashboard(failed)">
+    <parameter name="browser" value="ie"/>
     <classes>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage">
         <methods>
           <include name="dashboardPage"/>
+          <include name="preSetup"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage -->

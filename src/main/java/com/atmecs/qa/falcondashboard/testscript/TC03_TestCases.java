@@ -61,6 +61,7 @@ public class TC03_TestCases extends SampleTestSuiteBase {
 	     page.writedata_toExcel(product, "Validation Text", 56, message);
 	     String expectedtooltipmessage=page.getdata_fromExcel(product, "Validation Text", "Tooltip message");
 	     Verify.verifyString(message, expectedtooltipmessage, "Successfully displayed the test cases message");
+	     page.windowHandle();
 	}
 
 }

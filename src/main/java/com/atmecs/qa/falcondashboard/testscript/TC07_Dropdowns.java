@@ -54,6 +54,7 @@ public class TC07_Dropdowns extends SampleTestSuiteBase {
 	log.info("STEP#7: Validating the status option");	
 		 validate.validateFailStatus();
 		report.info("Successfully validated status");
+		page.windowHandle();
 	}
 
 }

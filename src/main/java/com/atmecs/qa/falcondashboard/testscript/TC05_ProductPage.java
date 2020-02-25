@@ -62,6 +62,7 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
     log.info("STEP#8: Clicking on the download option");
 		page.clickOnElement(read.getPropertyvalue("loc.download.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Clicked on download option");	
+		page.windowHandle();
 		// logic
 
 		

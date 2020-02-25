@@ -1,5 +1,6 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.parser.XlsReader;
@@ -55,6 +56,7 @@ public class TC01_DashBoardPage extends SampleTestSuiteBase {
 		log.info("STEP#4: Atmecs Text validation");
 		validate.validatefalconlogo();
 		report.info("Successfully validated falcon");
+		page.windowHandle();
 
 	}
 

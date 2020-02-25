@@ -71,5 +71,6 @@ public class TC04_ProductPercentage extends SampleTestSuiteBase {
 	     String expectedfailcolor= page.getdata_fromExcel(product, "Validation Text", "Fail percent color");
 	     Verify.verifyString(actualfailcolor, expectedfailcolor, "Successfully validated the color of the fail percentage");
 	     report.info("Successfully validated the color of the fail percentage"); 
+	     page.windowHandle();
 	}
 }

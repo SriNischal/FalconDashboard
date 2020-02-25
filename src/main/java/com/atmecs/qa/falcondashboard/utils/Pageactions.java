@@ -1,5 +1,6 @@
 package com.atmecs.qa.falcondashboard.utils;
 
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
@@ -136,5 +137,14 @@ public class Pageactions  {
 		}
 		public void pageLoadTimeout(long waitingTime) {
 			browser.getDriver().manage().timeouts().pageLoadTimeout(waitingTime, TimeUnit.SECONDS);
+		}
+		public void windowHandle() {
+			Set<String> allWindowHandles = browser.getDriver().getWindowHandles();
+			 
+			 for(String handle : allWindowHandles)
+			 {
+			 browser.getDriver().switchTo().window(handle);
+			 System.out.println("Window handle - > " + handle);
+			 }
 		}
 }

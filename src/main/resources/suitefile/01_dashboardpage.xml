@@ -4,9 +4,21 @@
 
 <suite name="Sample">
 
-	<test name="Dashboard">
+	<test name="Dashboard" thread-count="5" parallel="methods">
+		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage" />
+			<class
+				name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage" />
+		</classes>
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class
+				name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage" />
+		</classes>
+		<parameter name="browser" value="ie" />
+		<classes>
+			<class
+				name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage" />
 		</classes>
 	</test>
 

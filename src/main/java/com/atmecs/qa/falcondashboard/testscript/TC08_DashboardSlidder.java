@@ -29,11 +29,10 @@ public class TC08_DashboardSlidder extends SampleTestSuiteBase{
 		report.info("Successfully clicked on the product");
 		Waits.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
 		log.info("STEP#2: Selecting the dashboard slider option");
-		String locatorValue = ReadLocators.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE);
-		System.out.println("locator value ------ " + locatorValue);
-		page.clickOnElement(locatorValue);
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");
 		Waits.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
+		page.windowHandle();
 	}
 
 }

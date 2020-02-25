@@ -46,5 +46,6 @@ public class TC06_ProductMedium extends SampleTestSuiteBase{
         String expectedmedium=page.getdata_fromExcel(productname, "Validation Text", "Medium"); 
         Verify.verifyString(product, expectedmedium, "Successfully validated the medium of the product");
         report.info("Successfully validated the medium of the product"); 
+        page.windowHandle();
 	}
 }

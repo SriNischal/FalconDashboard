@@ -1,6 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
+
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
@@ -20,6 +21,7 @@ public class TC17_RecentRuns extends SampleTestSuiteBase{
 	ReadingData data=new ReadingData();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
+	
 	/*
 	 * In this method the recent runs option is clicked and validated whether the
 	 * user landed on to the recent runs page and validated the content present in

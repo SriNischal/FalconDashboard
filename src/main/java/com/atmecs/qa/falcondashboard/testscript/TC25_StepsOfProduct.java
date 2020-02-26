@@ -1,6 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
+
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
@@ -20,6 +21,7 @@ public class TC25_StepsOfProduct extends SampleTestSuiteBase{
 	ReadLocators read=new ReadLocators();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
+	
 	/*
 	 * In this method the product is clicked and selected the status option from the
 	 * drop down and created a list to display the test cases and clicked on the test

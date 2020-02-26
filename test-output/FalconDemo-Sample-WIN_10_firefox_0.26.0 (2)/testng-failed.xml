@@ -7,13 +7,13 @@
   <parameter name="browserVersion" value="0.26.0"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder">
         <methods>
-          <include name="percentageOfProduct"/>
+          <include name="dashboardSlidder"/>
           <include name="preSetup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_firefox_0.26.0 (2)] -->

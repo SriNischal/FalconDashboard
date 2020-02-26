@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Sample]">
-  <test thread-count="5" parallel="methods" name="Dashboard(failed)">
-    <parameter name="browser" value="ie"/>
+  <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium">
         <methods>
-          <include name="dashboardPage"/>
+          <include name="preSetup"/>
+          <include name="mediumOfProduct"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption">
+        <methods>
+          <include name="preSetup"/>
+          <include name="teardown"/>
+          <include name="downloadOption"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate">
+        <methods>
+          <include name="dateOfExecution"/>
           <include name="preSetup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage">
+        <methods>
+          <include name="productPage"/>
+          <include name="preSetup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage -->
     </classes>
-  </test> <!-- Dashboard(failed) -->
+  </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [Sample] -->

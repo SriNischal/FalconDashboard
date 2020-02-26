@@ -54,6 +54,7 @@ public class TestNGRunner {
                 		PropertyParser.readEnvOrConfigProperty("ClientName"),
                 		PropertyParser.readEnvOrConfigProperty("ModuleName"),
                 		PropertyParser.readEnvOrConfigProperty("BrowserCaps"));
+        System.out.println("suitesToRun" + suitesToRun);
         testng.setXmlSuites(suitesToRun);
         testng.setSuiteThreadPoolSize(Integer.parseInt(PropertyParser.readEnvOrConfigProperty("instances")));
         testng.run();

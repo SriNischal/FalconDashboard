@@ -1,6 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
+
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.enums.LocatorType;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
@@ -22,6 +23,7 @@ public class TC36_StartTime extends SampleTestSuiteBase {
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
+
 	/*
 	 * In this method the product is clicked and dash board slider is selected and
 	 * displayed the start time text and splited the date and time of the product

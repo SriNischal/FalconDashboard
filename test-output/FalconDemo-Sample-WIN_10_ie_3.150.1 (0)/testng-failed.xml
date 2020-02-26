@@ -7,13 +7,13 @@
   <parameter name="browserVersion" value="3.150.1"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption">
         <methods>
           <include name="preSetup"/>
-          <include name="clickingProduct"/>
           <include name="teardown"/>
+          <include name="downloadOption"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_ie_3.150.1 (0)] -->

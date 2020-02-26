@@ -1,6 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
+
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -34,7 +35,7 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 		ElementsList lists=new ElementsList(browser);
 		Pageactions page = new Pageactions(browser);
 		ProductPageValidation validate = new ProductPageValidation(browser);
-		wait.isElementVisible(browser.getDriver(),"loc.product.btn");
+		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Validating and displaying the product name");
 		validate.validateProduct();
 		report.info("Successfully validated product");
@@ -59,10 +60,6 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 	log.info("STEP#7: Selecting the dashboard slider option");
 	    page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");	
-    log.info("STEP#8: Clicking on the download option");
-		page.clickOnElement(read.getPropertyvalue("loc.download.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		report.info("Clicked on download option");	
-		page.windowHandle();
 		// logic
 
 		

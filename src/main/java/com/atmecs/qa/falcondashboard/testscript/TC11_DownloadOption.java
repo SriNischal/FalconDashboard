@@ -21,11 +21,13 @@ public class TC11_DownloadOption extends SampleTestSuiteBase{
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	//In this method the download message is validated by mouse hovering and the checked if download option is clicked
+	@SuppressWarnings("static-access")
 	@Test
 	public void downloadOption() throws Exception {
 		Splitting split=new Splitting(browser);
 		Pageactions page=new Pageactions(browser);
-		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
+		Waits wait=new Waits(browser);
+		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");	
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");

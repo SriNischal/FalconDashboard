@@ -3,6 +3,7 @@ package com.atmecs.qa.falcondashboard.testscript;
 import org.testng.annotations.Test;
 
 import com.atmecs.falcon.automation.ui.selenium.Verify;
+import com.atmecs.falcon.automation.ui.selenium.WaitElement;
 import com.atmecs.falcon.automation.util.parser.XlsReader;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -28,6 +29,7 @@ public class TC03_TestCases extends SampleTestSuiteBase {
 	String adminUsername = null;
 	String adminPassword = null;
 	int row = 0;
+	
 	/*
 	 * In this method we create list to display the test cases and validate the test
 	 * cases and validate the tool tip message by mouse hovering over the test cases

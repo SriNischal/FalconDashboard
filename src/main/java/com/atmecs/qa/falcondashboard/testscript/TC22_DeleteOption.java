@@ -1,6 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
+
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -19,6 +20,7 @@ public class TC22_DeleteOption extends SampleTestSuiteBase{
 	LogReport log=new LogReport();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
+	
 	/*
 	 * In this method the recent runs option is clicked and mouse hovered over the
 	 * delete option and displayed the tool tip message and validated the tooltip

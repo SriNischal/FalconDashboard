@@ -4,21 +4,16 @@
 
 <suite name="Sample">
 
-	<test name="Dashboard" thread-count="5" parallel="methods">
-		<parameter name="browser" value="chrome" />
+	<test name="SampleTest">
 		<classes>
-			<class
-				name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage" />
-		</classes>
-		<parameter name="browser" value="firefox" />
-		<classes>
-			<class
-				name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage" />
-		</classes>
-		<parameter name="browser" value="ie" />
-		<classes>
-			<class
-				name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage" />
+			<class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage" />
+			<class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct" />
+			<class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases" />
+			<class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage" />
+			<class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation" />
+			<class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh" />
+			<class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot" />
+			<class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow" />
 		</classes>
 	</test>
 

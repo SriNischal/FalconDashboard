@@ -2,6 +2,7 @@ package com.atmecs.qa.falcondashboard.testscript;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
+
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
@@ -23,6 +24,7 @@ public class TC35_LastRun extends SampleTestSuiteBase{
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
+	
 	/*
 	 * In this method the recent runs is clicked and validated that user landed on
 	 * to the page and validated the last runs text and created a list to display

@@ -5,16 +5,57 @@
   <parameter name="osVersion" value="10"/>
   <parameter name="browser" value="chrome"/>
   <parameter name="browserVersion" value="77"/>
-  <test thread-count="5" parallel="methods" name="Dashboard(failed)">
-    <parameter name="browser" value="ie"/>
+  <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct">
         <methods>
-          <include name="dashboardPage"/>
+          <include name="preSetup"/>
+          <include name="clickingProduct"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage">
+        <methods>
+          <include name="percentageOfProduct"/>
           <include name="preSetup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot">
+        <methods>
+          <include name="productSnapShot"/>
+          <include name="preSetup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh">
+        <methods>
+          <include name="preSetup"/>
+          <include name="teardown"/>
+          <include name="refresh"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC23_Refresh -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases">
+        <methods>
+          <include name="numberofTestCasesOfProduct"/>
+          <include name="preSetup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC03_TestCases -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation">
+        <methods>
+          <include name="mainNavigation"/>
+          <include name="preSetup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow">
+        <methods>
+          <include name="maximizeWindow"/>
+          <include name="preSetup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow -->
     </classes>
-  </test> <!-- Dashboard(failed) -->
+  </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_chrome_77] -->

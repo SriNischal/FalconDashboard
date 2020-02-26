@@ -2,6 +2,7 @@ package com.atmecs.qa.falcondashboard.testscript;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
+
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -26,6 +27,7 @@ public class TC04_ProductPercentage extends SampleTestSuiteBase {
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	WebDriver driver = null;
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
+
 	/*
 	 * In this method a list is created to display the tooltip message by mouse
 	 * hovering and validate the message and display the color of the pass

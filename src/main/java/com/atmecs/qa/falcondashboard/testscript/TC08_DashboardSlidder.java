@@ -18,7 +18,6 @@ public class TC08_DashboardSlidder extends SampleTestSuiteBase{
 	ReadLocators read=new ReadLocators();
 	LogReport log=new LogReport();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-
 	/* In this method checked whether the dash board slider is clicked or not */
 	@Test
 	public void dashboardSlidder() throws Exception {

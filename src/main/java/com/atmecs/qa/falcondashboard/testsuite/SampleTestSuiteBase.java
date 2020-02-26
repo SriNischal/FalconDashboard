@@ -1,6 +1,3 @@
-/***
- *
- */
 package com.atmecs.qa.falcondashboard.testsuite;
 
 import java.util.Set;
@@ -8,8 +5,11 @@ import java.util.Set;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import com.atmecs.falcon.automation.ui.selenium.Browser;
 import com.atmecs.falcon.automation.util.logging.LogLevel;
@@ -29,7 +29,7 @@ public class SampleTestSuiteBase {
 
 	// In this method the browser is invoked and url is opened
 	@SuppressWarnings("static-access")
-	@BeforeSuite
+	@BeforeMethod
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
 	public void preSetup(String os, String osVersion, String br, String browserVersion) throws Exception {
 		browser = new Browser();
@@ -41,9 +41,9 @@ public class SampleTestSuiteBase {
 		browser.maximizeWindow();
 	}
 
-	@AfterSuite
+	@AfterClass
 	public void teardown() {
-		browser.quitBrowser();
+		browser.closeBrowser();
 	}
 
 }

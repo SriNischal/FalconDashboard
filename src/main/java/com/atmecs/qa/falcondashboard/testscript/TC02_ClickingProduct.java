@@ -1,6 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
+
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.parser.XlsReader;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
@@ -29,7 +30,7 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 	String adminUsername = null;
 	String adminPassword = null;
 	int row = 0;
-
+	
 	/*
 	 * In this we generate a list to see whether all the products are present
 	 * according to the recent execution times and click on the project
@@ -37,14 +38,16 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 	@SuppressWarnings("static-access")
 	@Test
 	public void clickingProduct() throws Exception {
-		Waits wait=new Waits(browser);
 		ValidationHelper helper = new ValidationHelper(browser);
 		ElementsList lists = new ElementsList(browser);
 		Pageactions page = new Pageactions(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.products.txt");
+	    Waits wait=new Waits(browser);
+	    wait.isElementVisible(browser.getDriver(), "loc.products.txt");
 	log.info("STEP#1: List to get all the products and size of elements  present on the dashboard page");
 		String products = propReader.getValue("loc.products.txt");
+		System.out.println(products);
 		lists.listofElements(products);
+		System.out.println(products);
 	log.info("STEP#2: Converting the list of products into string products");
 		lists.separatingElements(products);
 	log.info("STEP#3: Verifying the list of products");

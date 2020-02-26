@@ -1,6 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
+
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
@@ -19,13 +20,16 @@ public class TC16_MainNavigation extends SampleTestSuiteBase{
 	LogReport log=new LogReport();
 	ReadingData data=new ReadingData();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
+	
+	
 	//In this method the main navigation option is clicked and validated the contents present in the main navigation 
+	@SuppressWarnings("static-access")
 	@Test
 	public void mainNavigation() throws Exception {
 		Waits wait=new Waits(browser);
 		MainNavigationValidation validate=new MainNavigationValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		Waits.isElementVisible(browser.getDriver(), "loc.mainnavigation.btn");
+		wait.isElementVisible(browser.getDriver(), "loc.mainnavigation.btn");
 	log.info("STEP#1: Clicking on the main navigation bar");	
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.mainnavigation.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		Waits.isElementVisible(browser.getDriver(), "loc.mainnavigation.btn");

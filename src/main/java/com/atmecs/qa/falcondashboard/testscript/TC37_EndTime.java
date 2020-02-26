@@ -1,6 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
+
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.enums.LocatorType;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
@@ -22,6 +23,7 @@ public class TC37_EndTime extends SampleTestSuiteBase {
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
+	
 	/*
 	 * In this the product is clicked and selected the dash board slider and
 	 * validated the end time text and splitted the time and date of the product and

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SampleTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Feb 25 20:04:42 IST 2020</td>
+<td>Started on:</td><td>Wed Feb 26 19:46:13 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>112 seconds (112743 ms)</td>
+<tr><td>Total time:</td><td>408 seconds (408020 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,248 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases.failTestCases()'><b>failTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases<br/>
+<a href="#Output-981322340" onClick='toggleBox("Output-981322340", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-981322340" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-981322340">
+Successfully clicked on product<br/>
+Successfully clicked dashboard slider<br/>
+Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77 (3)\Screenshots\failTestCases_1_.png<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=79.0.3945.130)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ATMECSINLT-060&apos;, ip: &apos;55.55.52.253&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SRINIS~1.THI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64432}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 73a529e15bf7239de3b29d50c3368fd0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.atmecs.qa.falcondashboard.utils.Pageactions.clickOnElement(Pageactions.java:92)
+	at com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases.failTestCases(TC31_FailedTestCases.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace981322340", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace981322340'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=79.0.3945.130)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ATMECSINLT-060&apos;, ip: &apos;55.55.52.253&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SRINIS~1.THI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64432}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 73a529e15bf7239de3b29d50c3368fd0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.atmecs.qa.falcondashboard.utils.Pageactions.clickOnElement(Pageactions.java:92)
+	at com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases.failTestCases(TC31_FailedTestCases.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+</pre></div></td>
+<td>21</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases@23b72ca9</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases.passTestCases()'><b>passTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases<br/>
+<a href="#Output-864332369" onClick='toggleBox("Output-864332369", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-864332369" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-864332369">
+Successfully clicked on product<br/>
+Successfully clicked dashboard slider<br/>
+Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77 (3)\Screenshots\passTestCases_1_.png<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=79.0.3945.130)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ATMECSINLT-060&apos;, ip: &apos;55.55.52.253&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SRINIS~1.THI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64147}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d6c3fd248a795c7be4efa87662689504
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.atmecs.qa.falcondashboard.utils.Pageactions.clickOnElement(Pageactions.java:92)
+	at com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases.passTestCases(TC29_PassedTestCases.java:47)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace864332369", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace864332369'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=79.0.3945.130)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ATMECSINLT-060&apos;, ip: &apos;55.55.52.253&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SRINIS~1.THI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64147}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d6c3fd248a795c7be4efa87662689504
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.atmecs.qa.falcondashboard.utils.Pageactions.clickOnElement(Pageactions.java:92)
+	at com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases.passTestCases(TC29_PassedTestCases.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+</pre></div></td>
+<td>21</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases@541f76f6</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases.totalTestCases()'><b>totalTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases<br/>
+<a href="#Output-1087420989" onClick='toggleBox("Output-1087420989", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1087420989" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1087420989">
+Successfully clicked on product<br/>
+Successfully clicked dashboard slider<br/>
+Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77 (3)\Screenshots\totalTestCases_1_.png<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=79.0.3945.130)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ATMECSINLT-060&apos;, ip: &apos;55.55.52.253&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SRINIS~1.THI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63905}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d678c9baa90d59d41478927048379a5b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.atmecs.qa.falcondashboard.utils.Pageactions.clickOnElement(Pageactions.java:92)
+	at com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases.totalTestCases(TC27_TotalTestCases.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1087420989", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1087420989'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=79.0.3945.130)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ATMECSINLT-060&apos;, ip: &apos;55.55.52.253&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SRINIS~1.THI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63905}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d678c9baa90d59d41478927048379a5b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.atmecs.qa.falcondashboard.utils.Pageactions.clickOnElement(Pageactions.java:92)
+	at com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases.totalTestCases(TC27_TotalTestCases.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+</pre></div></td>
+<td>21</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases@734f7508</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,23 +317,100 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage.productPage()'><b>productPage</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage<br/>
-<a href="#Output-1761495565" onClick='toggleBox("Output-1761495565", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases.colorofFailedTestCases()'><b>colorofFailedTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases<br/>
+<a href="#Output-951647607" onClick='toggleBox("Output-951647607", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1761495565" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1761495565">
-Successfully validated product<br/>
-Successfully clicked on the product<br/>
-Successfully validated panel title<br/>
-PASS : Successfully validaetd the test cases : ACTUAL : deleteProjectApiTest 0 Sec Pass,downloadImageApiTest 0 Sec Pass,exportToExcelApiTest 0 Sec Pass,getDashboardApiTest 1 Sec Pass,invalidLinkApiTest 0 Sec Fail,recentRunsApiTest 0 Sec Pass,reportViewApiTest 0 Sec Pass,uploadImageApiTest 2 Sec Pass,uploadTestngResultFileApiTest 0 Sec Pass,viewReportApiTest 5 Sec Pass 	EXPECTED :deleteProjectApiTest 0 Sec Pass,downloadImageApiTest 0 Sec Pass,exportToExcelApiTest 0 Sec Pass,getDashboardApiTest 1 Sec Pass,invalidLinkApiTest 0 Sec Fail,recentRunsApiTest 0 Sec Pass,reportViewApiTest 0 Sec Pass,uploadImageApiTest 2 Sec Pass,uploadTestngResultFileApiTest 0 Sec Pass,viewReportApiTest 5 Sec Pass<br/>
-Successfully valdated all the test cases<br/>
+<a href="#Output-951647607" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-951647607">
+Successfully clicked on product<br/>
+Successfully selected dashboard option<br/>
+Successfully displayed day and date of product<br/>
+PASS : Successfully validated the color of the fail test cases box : ACTUAL : rgba(244, 67, 54, 1) 	EXPECTED :rgba(244, 67, 54, 1)<br/>
+Successfully validated the color of the fail test cases box<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases@2b58fbff</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases.colorofPassedTestCases()'><b>colorofPassedTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases<br/>
+<a href="#Output-2059422872" onClick='toggleBox("Output-2059422872", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2059422872" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2059422872">
+Successfully clicked on product<br/>
+Successfully selected dashboard option<br/>
+Successfully displayed day and date of product<br/>
+PASS : Successfully validated the color of the pass test cases box : ACTUAL : rgba(0, 150, 136, 1) 	EXPECTED :rgba(0, 150, 136, 1)<br/>
+Successfully validated the color of the pass  test cases box<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases@3216aa24</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases.colorofSkippedTestCases()'><b>colorofSkippedTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases<br/>
+<a href="#Output-1323532588" onClick='toggleBox("Output-1323532588", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1323532588" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1323532588">
+Successfully clicked on product<br/>
+Successfully selected dashboard option<br/>
+Successfully displayed day and date of product<br/>
+PASS : Successfully validated the color of the skip test cases box : ACTUAL : rgba(33, 150, 243, 1) 	EXPECTED :rgba(33, 150, 243, 1)<br/>
+Successfully validated the color of the skip test cases box<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases@2477e571</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases.colorofTotalTestCases()'><b>colorofTotalTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases<br/>
+<a href="#Output-487838764" onClick='toggleBox("Output-487838764", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-487838764" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-487838764">
+Successfully clicked on product<br/>
+Successfully selected dashboard option<br/>
+Successfully displayed day and date of product<br/>
+PASS : Successfully validated the color of the total test cases box : ACTUAL : rgba(103, 58, 183, 1) 	EXPECTED :rgba(103, 58, 183, 1)<br/>
+Successfully validated the color of the total  test cases box<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases@578507a5</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases.skippedTestCases()'><b>skippedTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases<br/>
+<a href="#Output-1338551659" onClick='toggleBox("Output-1338551659", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1338551659" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1338551659">
+Successfully clicked on product<br/>
+Successfully clicked dashboard slider<br/>
+Successfully clicked pass test cases<br/>
+Successfully validated Skipped test cases<br/>
+Successfully validated skip message<br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases@bf09fcf</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage.viewPage()'><b>viewPage</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage<br/>
+<a href="#Output-1366965681" onClick='toggleBox("Output-1366965681", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1366965681" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1366965681">
+Successfully validated views<br/>
+Successfully validated the views panel title<br/>
 Successfully selected dashboard option<br/>
 Clicked on download option<br/>
 </div>
 </td>
 <td></td>
-<td>112</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage@4e7afb30</td></tr>
+<td>22</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage@679b0a4d</td></tr>
 </table><p>
 </body>
 </html>

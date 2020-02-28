@@ -3,14 +3,34 @@
 <suite name="Failed suite [Sample (0)]">
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC02_Products">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption">
         <methods>
-          <include name="setup"/>
-          <include name="numberrofproducts"/>
+          <include name="preSetup"/>
+          <include name="teardown"/>
+          <include name="downloadOption"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage">
+        <methods>
+          <include name="productPage"/>
           <include name="preSetup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC02_Products -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate">
+        <methods>
+          <include name="dateOfExecution"/>
+          <include name="preSetup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium">
+        <methods>
+          <include name="preSetup"/>
+          <include name="mediumOfProduct"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [Sample (0)] -->

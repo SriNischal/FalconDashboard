@@ -1,9 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.ui.selenium.Verify;
-import com.atmecs.falcon.automation.ui.selenium.WaitElement;
 import com.atmecs.falcon.automation.util.parser.XlsReader;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;

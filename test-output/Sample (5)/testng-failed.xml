@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sample (5)]">
+  <test thread-count="5" name="SampleTest(failed)">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct">
+        <methods>
+          <include name="stepsOfProduct"/>
+          <include name="preSetup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase">
+        <methods>
+          <include name="preSetup"/>
+          <include name="teardown"/>
+          <include name="failTestCasesOfProduct"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase -->
+    </classes>
+  </test> <!-- SampleTest(failed) -->
+</suite> <!-- Failed suite [Sample (5)] -->

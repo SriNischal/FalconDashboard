@@ -1,7 +1,6 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.parser.XlsReader;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
@@ -42,18 +41,18 @@ public class TC01_DashBoardPage extends SampleTestSuiteBase {
 		Pageactions page = new Pageactions(browser);
 		DashboardPageValidation validate = new DashboardPageValidation(browser);
 		wait.isElementVisible(browser.getDriver(), "loc.refresh.btn");
-		log.info("STEP#1: Page title validation");
+	log.info("STEP#1: Page title validation");
 		String actualtitle = browser.getCurrentPageTitle();
 		String expectedtitle = data.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Page URL");
 		Verify.verifyString(actualtitle, expectedtitle, "Verifying String Message ");
 		report.info("successfully validated page title");
-		log.info("STEP#2: Dashboard Text validation");
+	log.info("STEP#2: Dashboard Text validation");
 		validate.validateDashboard();
 		report.info("Successfully validated the dashboard text");
-		log.info("STEP#3: Clicking on the refresh option");
+	log.info("STEP#3: Clicking on the refresh option");
 		page.clickOnElement(read.getPropertyvalue("loc.refresh.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("clicked on refresh option");
-		log.info("STEP#4: Atmecs Text validation");
+	log.info("STEP#4: Atmecs Text validation");
 		validate.validatefalconlogo();
 		report.info("Successfully validated falcon");
 	}

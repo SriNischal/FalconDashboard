@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [FalconDemo-Sample-WIN_10_firefox_0.26.0 (3)]">
+<suite name="Failed suite [FalconDemo-Sample-WIN_10_ie_3.150.1]">
   <parameter name="os" value="WIN"/>
   <parameter name="osVersion" value="10"/>
-  <parameter name="browser" value="firefox"/>
-  <parameter name="browserVersion" value="0.26.0"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="browserVersion" value="3.150.1"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder">
         <methods>
-          <include name="preSetup"/>
-          <include name="teardown"/>
-          <include name="totalTestCases"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases -->
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases">
-        <methods>
-          <include name="colorofSkippedTestCases"/>
+          <include name="dashboardSlidder"/>
           <include name="preSetup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder -->
     </classes>
   </test> <!-- SampleTest(failed) -->
-</suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_firefox_0.26.0 (3)] -->
+</suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_ie_3.150.1] -->

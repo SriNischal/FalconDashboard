@@ -3,14 +3,34 @@
 <suite name="Failed suite [Sample (1)]">
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_Percentage">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases">
         <methods>
-          <include name="percentageofproduct"/>
-          <include name="setup"/>
+          <include name="preSetup"/>
+          <include name="teardown"/>
+          <include name="dropdownPassedTestCases"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns">
+        <methods>
+          <include name="dropdown"/>
           <include name="preSetup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC03_Percentage -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases">
+        <methods>
+          <include name="dropdownSkippedTestCases"/>
+          <include name="preSetup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases">
+        <methods>
+          <include name="preSetup"/>
+          <include name="teardown"/>
+          <include name="dropdownFailedTestCases"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [Sample (1)] -->

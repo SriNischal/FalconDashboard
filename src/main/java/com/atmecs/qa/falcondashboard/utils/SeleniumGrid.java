@@ -1,38 +1,48 @@
 package com.atmecs.qa.falcondashboard.utils;
 
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
-
-import java.net.MalformedURLException;
+import java.io.File;
 import java.net.URL;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.annotations.BeforeSuite;
-import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
-public class SeleniumGrid extends SampleTestSuiteBase{
-	@BeforeSuite
-    private static DesiredCapabilities getBrowserCapabilities(String browsertype) {
-   	 System.out.println("bnoeih");
-   	 switch (browsertype) {
+import com.atmecs.falcon.automation.ui.selenium.Browser;
+import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 
-   	 case "WIN_10_firefox_0.26.0":
-   	 DesiredCapabilities descapability = new DesiredCapabilities();
-   	 descapability.setCapability(CapabilityType.BROWSER_NAME, "firefox");
-   	 return descapability;
+public class SeleniumGrid {
+	private WebDriver driver;
+	protected Browser browser;
+	String BaseURL, NodeURL;
+	LoadProperties load=new LoadProperties();
+	
+	@SuppressWarnings("static-access")
+	@BeforeMethod
+	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
+	public void before(String os, String osVersion, String br, String browserVersion) throws Exception {
+		browser=new Browser();
+		BaseURL = "http://www.google.com";
+		NodeURL = "http://localhost:4444/wd/hub";
+		File file = new File(ProjectBaseConstantPaths.CHROME_FILE);
+		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+		DesiredCapabilities capability = new DesiredCapabilities();
+			capability.setBrowserName("chrome");
+			System.out.println(capability.toString());
+		driver = new RemoteWebDriver(new URL(NodeURL), capability);
+		String url=load.readConfigfile("Dashboard_URL", ProjectBaseConstantPaths.CONFIG_FILE);
+		System.out.println(url);
+		driver.get(url);
+		driver.manage().window().maximize();
+	}
+	@AfterClass
+	public void teardown() {
+		driver.close();
+	}
 
-   	 case "WIN_10_chrome_77":
-   		 System.out.println(browsertype);
-   	 descapability = new DesiredCapabilities();
-   	 descapability.setCapability(CapabilityType.BROWSER_NAME, "chrome");
-   	 return descapability;
-   	 default:
-   	 descapability = new DesiredCapabilities();
-   	 descapability.setCapability(CapabilityType.BROWSER_NAME, "internet explorer");
-   	 return descapability;
-   	 }
-   	 }
-   	 public static RemoteWebDriver getDriver(String browser) throws MalformedURLException {
-   	 System.out.println("grid running");
-   	 return new RemoteWebDriver(new URL("http://55.55.52.253:5555/wd/hub"), getBrowserCapabilities(browser));
-   	 }
 }

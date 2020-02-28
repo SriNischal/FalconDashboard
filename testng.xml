@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- Sample Master Suite File containing all relevant Suite Files -->
-<suite name="DashboardSetup">
+<suite name="DashboardSetup" parallel="tests" thread-count="5">>
 
 	<suite-files>
 		<suite-file

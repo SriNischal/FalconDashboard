@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SampleTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/8</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Feb 26 17:12:00 IST 2020</td>
+<td>Started on:</td><td>Thu Feb 27 19:22:46 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (67 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (310 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,25 +75,34 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage.preSetup()'><b>preSetup</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage</td>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage.preSetup()'><b>preSetup</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage</td>
 <td><div><pre>org.testng.TestNGException: 
-Parameter &apos;os&apos; is required by BeforeSuite on method preSetup but has not been marked @Optional or defined
-in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\02_productpage.xml
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace26757919", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace26757919'><pre>org.testng.TestNGException: 
-Parameter &apos;os&apos; is required by BeforeSuite on method preSetup but has not been marked @Optional or defined
-in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\02_productpage.xml
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1189084611", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1189084611'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
 	at org.testng.internal.Parameters.createParams(Parameters.java:290)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
 	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
 	at org.testng.TestNG.runSuites(TestNG.java:1049)
 	at org.testng.TestNG.run(TestNG.java:1017)
@@ -102,7 +111,321 @@ in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\m
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage@488d1cd7</td></tr>
+<td>com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage@5454d35e</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct.preSetup()'><b>preSetup</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace857394605", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace857394605'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct@20c0a64d</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC03_TestCases.preSetup()'><b>preSetup</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC03_TestCases</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace170052458", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace170052458'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC03_TestCases@455b6df1</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage.preSetup()'><b>preSetup</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1636291061", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1636291061'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage@4ddbbdf8</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation.preSetup()'><b>preSetup</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1184124073", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1184124073'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation@3f67593e</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC23_Refresh.preSetup()'><b>preSetup</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC23_Refresh</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1450500594", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1450500594'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC23_Refresh@1ab06251</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot.preSetup()'><b>preSetup</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace15024899", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace15024899'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot@41ab013</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow.preSetup()'><b>preSetup</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1689730682", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1689730682'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow@14bee915</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage.teardown()'><b>teardown</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage</td>
+<td></td>
+<td>0</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage@5454d35e</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct.teardown()'><b>teardown</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct</td>
+<td></td>
+<td>0</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct@20c0a64d</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC03_TestCases.teardown()'><b>teardown</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC03_TestCases</td>
+<td></td>
+<td>0</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC03_TestCases@455b6df1</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage.teardown()'><b>teardown</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage</td>
+<td></td>
+<td>0</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage@4ddbbdf8</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation.teardown()'><b>teardown</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation</td>
+<td></td>
+<td>0</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation@3f67593e</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC23_Refresh.teardown()'><b>teardown</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC23_Refresh</td>
+<td></td>
+<td>0</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC23_Refresh@1ab06251</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot.teardown()'><b>teardown</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot</td>
+<td></td>
+<td>0</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot@41ab013</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow.teardown()'><b>teardown</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow</td>
+<td></td>
+<td>0</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow@14bee915</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -112,25 +435,34 @@ in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\m
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate.dateOfExecution()'><b>dateOfExecution</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate</td>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct.clickingProduct()'><b>clickingProduct</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct</td>
 <td><div><pre>org.testng.TestNGException: 
-Parameter &apos;os&apos; is required by BeforeSuite on method preSetup but has not been marked @Optional or defined
-in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\02_productpage.xml
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace179779934", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace179779934'><pre>org.testng.TestNGException: 
-Parameter &apos;os&apos; is required by BeforeSuite on method preSetup but has not been marked @Optional or defined
-in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\02_productpage.xml
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1104422581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1104422581'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
 	at org.testng.internal.Parameters.createParams(Parameters.java:290)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
 	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
 	at org.testng.TestNG.runSuites(TestNG.java:1049)
 	at org.testng.TestNG.run(TestNG.java:1017)
@@ -139,27 +471,36 @@ in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\m
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate@d278d2b</td></tr>
+<td>com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct@20c0a64d</td></tr>
 <tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption.downloadOption()'><b>downloadOption</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption</td>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage.dashboardPage()'><b>dashboardPage</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage</td>
 <td><div><pre>org.testng.TestNGException: 
-Parameter &apos;os&apos; is required by BeforeSuite on method preSetup but has not been marked @Optional or defined
-in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\02_productpage.xml
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1932597611", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1932597611'><pre>org.testng.TestNGException: 
-Parameter &apos;os&apos; is required by BeforeSuite on method preSetup but has not been marked @Optional or defined
-in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\02_productpage.xml
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace413218476", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace413218476'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
 	at org.testng.internal.Parameters.createParams(Parameters.java:290)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
 	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
 	at org.testng.TestNG.runSuites(TestNG.java:1049)
 	at org.testng.TestNG.run(TestNG.java:1017)
@@ -168,27 +509,36 @@ in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\m
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption@38ba6ce3</td></tr>
+<td>com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage@5454d35e</td></tr>
 <tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium.mediumOfProduct()'><b>mediumOfProduct</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium</td>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation.mainNavigation()'><b>mainNavigation</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation</td>
 <td><div><pre>org.testng.TestNGException: 
-Parameter &apos;os&apos; is required by BeforeSuite on method preSetup but has not been marked @Optional or defined
-in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\02_productpage.xml
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2142852357", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2142852357'><pre>org.testng.TestNGException: 
-Parameter &apos;os&apos; is required by BeforeSuite on method preSetup but has not been marked @Optional or defined
-in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\02_productpage.xml
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace582666172", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace582666172'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
 	at org.testng.internal.Parameters.createParams(Parameters.java:290)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
 	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
 	at org.testng.TestNG.runSuites(TestNG.java:1049)
 	at org.testng.TestNG.run(TestNG.java:1017)
@@ -197,27 +547,36 @@ in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\m
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium@68dc098b</td></tr>
+<td>com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation@3f67593e</td></tr>
 <tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage.productPage()'><b>productPage</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage</td>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow.maximizeWindow()'><b>maximizeWindow</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow</td>
 <td><div><pre>org.testng.TestNGException: 
-Parameter &apos;os&apos; is required by BeforeSuite on method preSetup but has not been marked @Optional or defined
-in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\02_productpage.xml
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1731977615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1731977615'><pre>org.testng.TestNGException: 
-Parameter &apos;os&apos; is required by BeforeSuite on method preSetup but has not been marked @Optional or defined
-in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\02_productpage.xml
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace87060781", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace87060781'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
 	at org.testng.internal.Parameters.createParams(Parameters.java:290)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
 	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
 	at org.testng.TestNG.runSuites(TestNG.java:1049)
 	at org.testng.TestNG.run(TestNG.java:1017)
@@ -226,7 +585,159 @@ in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\m
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage@488d1cd7</td></tr>
+<td>com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow@14bee915</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC03_TestCases.numberofTestCasesOfProduct()'><b>numberofTestCasesOfProduct</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC03_TestCases</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1574029810", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1574029810'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC03_TestCases@455b6df1</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage.percentageOfProduct()'><b>percentageOfProduct</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace608519258", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace608519258'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage@4ddbbdf8</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot.productSnapShot()'><b>productSnapShot</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace244185498", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace244185498'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot@41ab013</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC23_Refresh.refresh()'><b>refresh</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC23_Refresh</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2043106095", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2043106095'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeMethod on method preSetup but has not been marked @Optional or defined
+in C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\resources\suitefile\01_dashboardpage.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC23_Refresh@1ab06251</td></tr>
 </table><p>
 </body>
 </html>

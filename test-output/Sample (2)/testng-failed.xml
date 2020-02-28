@@ -3,14 +3,41 @@
 <suite name="Failed suite [Sample (2)]">
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPage">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC36_StartTime">
         <methods>
-          <include name="productpage"/>
+          <include name="startTime"/>
           <include name="preSetup"/>
-          <include name="setup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC04_ProductPage -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC36_StartTime -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder">
+        <methods>
+          <include name="dashboardSlidder"/>
+          <include name="preSetup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase">
+        <methods>
+          <include name="preSetup"/>
+          <include name="teardown"/>
+          <include name="testPhase"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment">
+        <methods>
+          <include name="environmentOfProduct"/>
+          <include name="preSetup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC37_EndTime">
+        <methods>
+          <include name="preSetup"/>
+          <include name="teardown"/>
+          <include name="endTime"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC37_EndTime -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [Sample (2)] -->

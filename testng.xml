@@ -5,19 +5,19 @@
 
 	<suite-files>
 		<suite-file
-			path="./src/main/resources/suitefile/01_dashboardpage.xml" />
+			path="./src/main/resources/suitefile/DashboardPage.xml" />
 		<suite-file
-			path="./src/main/resources/suitefile/02_productpage.xml" />
+			path="./src/main/resources/suitefile/DashboardSlidder.xml" />
 		<suite-file
-			path="./src/main/resources/suitefile/03_dropdown.xml" />
+			path="./src/main/resources/suitefile/Dropdowns.xml" />
 		<suite-file
-			path="./src/main/resources/suitefile/04_dashboardslidder.xml" />
+			path="./src/main/resources/suitefile/ProductPage.xml" />
 		<suite-file
-			path="./src/main/resources/suitefile/05_viewpage.xml" />
+			path="./src/main/resources/suitefile/RecentRuns.xml" />
 		<suite-file
-			path="./src/main/resources/suitefile/06_recentruns.xml" />
+			path="./src/main/resources/suitefile/TestcasesResult.xml" />
 		<suite-file
-			path="./src/main/resources/suitefile/07_testcasesresult.xml" />
+			path="./src/main/resources/suitefile/ViewPage.xml" />
 	</suite-files>
 
 </suite>

@@ -13,6 +13,17 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Splitting;
 import com.atmecs.qa.falcondashboard.utils.Waits;
+
+/*
+ * 
+ * @Author : srinischal.thiparani
+ * @createdDate : 10-01-2020
+ * @updatedDate : 07-02-2020
+ * @updatedBy : T Sri Nischal
+ * @testCasesCovered[Falcon-T11]
+ *  
+ */
+
 //In this class download option is verified
 public class TC11_DownloadOption extends SampleTestSuiteBase{
 	LogReport log=new LogReport();
@@ -20,8 +31,15 @@ public class TC11_DownloadOption extends SampleTestSuiteBase{
 	LoadProperties load=new LoadProperties();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
-	//In this method the download message is validated by mouse hovering and the checked if download option is clicked
-	@SuppressWarnings("static-access")
+	
+	
+	
+	/* 
+	 * This test script covers the following functionalities of product  page.
+	 * 1. Verifying whether the product is clicked or not 
+	 * 2. Verifying the download option  is selected or not 
+	 * 3. Displaying and validating the download message of the product
+	 */
 	@Test
 	public void downloadOption() throws Exception {
 		Splitting split=new Splitting(browser);
@@ -29,11 +47,11 @@ public class TC11_DownloadOption extends SampleTestSuiteBase{
 		Waits wait=new Waits(browser);
 		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");	
-		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
-		Waits.isElementVisible(browser.getDriver(), "loc.download.btn");
+		wait.isElementVisible(browser.getDriver(), "loc.download.btn");
 	log.info("STEP#2: Clicking on the download option");
-		page.clickOnElement(ReadLocators.getPropertyvalue("loc.download.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(read.getPropertyvalue("loc.download.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Clicked on download option");	
 	log.info("STEP#3: Displaying the Download message for the products");	
 	    String actualtooltipmessage=propReader.getValue("loc.downloadmessage.txt");

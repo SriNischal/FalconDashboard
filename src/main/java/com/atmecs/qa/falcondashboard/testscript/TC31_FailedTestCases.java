@@ -14,6 +14,18 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation;
+
+
+/*
+ * 
+ * @Author : srinischal.thiparani
+ * @createdDate : 28-01-2020
+ * @updatedDate : 21-02-2020
+ * @updatedBy : T Sri Nischal
+ * @testCasesCovered[Falcon-T31]
+ *  
+ */
+
 //In this class the content of the failed test cases is displayed and validated
 public class TC31_FailedTestCases extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
@@ -22,12 +34,17 @@ public class TC31_FailedTestCases extends SampleTestSuiteBase{
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	
-	/*
-	 * In this method the product is clicked and dash board slider is selected and
-	 * clicked on the failed test cases and validated the failed test cases and the
-	 * fail message and displayed the failed test cases
+	
+	
+	/* 
+	 * This test script covers the following functionalities
+	 * 1. Verifying whether the product is clicked or not 
+	 * 2. Verifying the dash board slider option is selected or not 
+	 * 3. Displaying the color of the fail test cases box
+	 * 4. Verifying the color of the fail test case box
+	 * 5. Validating the time taken to run the product
+	 * 6. List to display all the fail test cases of the product
 	 */
-	@SuppressWarnings("static-access")
 	@Test
 	public void failTestCases() throws Exception {
 		Waits wait=new Waits(browser);

@@ -15,21 +15,33 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Splitting;
 import com.atmecs.qa.falcondashboard.utils.Waits;
+
+/*
+ * 
+ * @Author : srinischal.thiparani
+ * @createdDate : 29-01-2020
+ * @updatedDate : 25-02-2020
+ * @updatedBy : T Sri Nischal
+ * @testCasesCovered[Falcon-T36]
+ *  
+ */
+
 //In this the start time of the product is dispalyed and validated 
 public class TC36_StartTime extends SampleTestSuiteBase {
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
 	LogReport log = new LogReport();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
-
-	/*
-	 * In this method the product is clicked and dash board slider is selected and
-	 * displayed the start time text and splited the date and time of the product
-	 * and validated the start date of the product
+	/* 
+	 * This test script covers the following functionalities of product  page.
+	 * 1. Verifying whether the product is clicked or not 
+	 * 2. Verifying the dash board slider is selected or not 
+	 * 3. Displaying the start time text
+	 * 4. Validating the start time text
+	 * 5. Splitting and displaying the day and date of the product
+	 * 6. Validating the date of executin of the product
 	 */
-	@SuppressWarnings("static-access")
 	@Test
 	public void startTime() throws Exception {
 		Waits wait=new Waits(browser);

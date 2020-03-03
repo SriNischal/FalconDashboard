@@ -14,21 +14,36 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation;
+
+/*
+ * 
+ * @Author : srinischal.thiparani
+ * @createdDate : 28-01-2020
+ * @updatedDate : 24-02-2020
+ * @updatedBy : T Sri Nischal
+ * @testCasesCovered[Falcon-T33]
+ *  
+ */
+
 //In this class the content of the skip test cases is displayed and validated
 public class TC33_SkippedTestCases extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
 	LogReport log = new LogReport();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	
-	/*
-	 * In this method the product is clicked and dash board slider is selected and
-	 * clicked on the skip test cases and validated the skip message and displayed
-	 * the skipped test cases
+	
+	
+	/* 
+	 * This test script covers the following functionalities
+	 * 1. Verifying whether the product is clicked or not 
+	 * 2. Verifying the dash board slider option is selected or not 
+	 * 3. Displaying the color of the skip test cases box
+	 * 4. Verifying the color of the skip test case box
+	 * 5. Validating the time taken to run the product
+	 * 6. List to display all the skip test cases of the product
 	 */
-	@SuppressWarnings("static-access")
 	@Test
 	public void skippedTestCases() throws Exception {
 		Waits wait=new Waits(browser);

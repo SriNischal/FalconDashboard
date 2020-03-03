@@ -16,21 +16,36 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation;
+
+/*
+ * 
+ * @Author : srinischal.thiparani
+ * @createdDate : 27-01-2020
+ * @updatedDate : 19-02-2020
+ * @updatedBy : T Sri Nischal
+ * @testCasesCovered[Falcon-T27]
+ *  
+ */
+
 //In this class the content of total test cases is displayed
 public class TC27_TotalTestCases extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
 	LogReport log = new LogReport();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	
-	/*
-	 * In this the product is clicked and the dash board slider is selected and
-	 * clicked on the total test cases and validated the time taken to run and
-	 * validate total test cases and list to display all the test cases
-	 */
-	@SuppressWarnings("static-access")
+	
+	
+	/* 
+	 * This test script covers the following functionalities
+	 * 1. Verifying whether the product is clicked or not 
+	 * 2. Verifying the dash board slider option is selected or not 
+	 * 3. Verifying whether the total test cases option is clicked or not
+	 * 4. Validating the test cases text 
+	 * 5. Validating the time taken to run the product
+	 * 6. List to display all the test cases of the product
+	 */  
 	@Test
 	public void totalTestCases() throws Exception {
 		Waits wait=new Waits(browser);

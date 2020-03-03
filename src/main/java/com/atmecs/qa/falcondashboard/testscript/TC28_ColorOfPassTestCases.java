@@ -14,20 +14,34 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Splitting;
 import com.atmecs.qa.falcondashboard.utils.Waits;
+
+/*
+ * 
+ * @Author : srinischal.thiparani
+ * @createdDate : 27-01-2020
+ * @updatedDate : 19-02-2020
+ * @updatedBy : T Sri Nischal
+ * @testCasesCovered[Falcon-T28]
+ *  
+ */
+
 //In this class the color of the passed test cases is displayed
 public class TC28_ColorOfPassTestCases extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
 	LogReport log = new LogReport();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	
-	/*
-	 * In this the product is clicked and dashboard slider is selected and displayed
-	 * the color of the pass test cases and validated the color of the test cases
-	 */
-	@SuppressWarnings("static-access")
+	
+	
+	/* 
+	 * This test script covers the following functionalities
+	 * 1. Verifying whether the product is clicked or not 
+	 * 2. Verifying the dash board slider option is selected or not 
+	 * 3. Displaying the color of the pass test cases box
+	 * 4. Verifying the color of the pass test case box
+	 */  
 	@Test
 	public void colorofPassedTestCases() throws Exception {
 		Waits wait=new Waits(browser);
@@ -41,12 +55,12 @@ public class TC28_ColorOfPassTestCases extends SampleTestSuiteBase{
 	log.info("STEP#2: Selecting the dashboard slider option");
 	    page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");
-	log.info("STEP#3: Displaying the color of the total test case box");
+	log.info("STEP#3: Displaying the color of the pass test case box");
 	    wait.implicitWait();
 	    String color=propReader.getValue("validate.colorofpasstestcases.txt");
 	    String actualcolor=browser.getFindFromBrowser().findElementByXpath(color).getCssValue("background-color");
 	    System.out.println("Color:"+actualcolor);
-	log.info("STEP#4: Veifying the color of the total test case box");
+	log.info("STEP#4: Veifying the color of the pass test case box");
 	    String productname=split.splitofarray(0).trim();
 	    page.writedata_toExcel(productname, "Validation Text", 32, actualcolor);
 	    String expectedcolor= page.getdata_fromExcel(productname, "Validation Text", "Color of pass test cases");

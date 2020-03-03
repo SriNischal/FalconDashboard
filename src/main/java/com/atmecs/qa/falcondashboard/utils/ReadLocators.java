@@ -16,7 +16,7 @@ public class ReadLocators {
 
 
 
-	public static String getPropertyvalue(String key, String path) throws IOException {
+	public String getPropertyvalue(String key, String path) throws IOException {
 		Properties prop = new Properties();
 		FileInputStream input = new FileInputStream(path);
 		try {

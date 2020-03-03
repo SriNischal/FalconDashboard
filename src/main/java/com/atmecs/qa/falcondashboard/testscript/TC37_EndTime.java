@@ -15,20 +15,33 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Splitting;
 import com.atmecs.qa.falcondashboard.utils.Waits;
+
+/*
+ * 
+ * @Author : srinischal.thiparani
+ * @createdDate : 29-01-2020
+ * @updatedDate : 26-02-2020
+ * @updatedBy : T Sri Nischal
+ * @testCasesCovered[Falcon-T37]
+ *  
+ */
+
 //In this class the end time of the product is displayed and validated 
 public class TC37_EndTime extends SampleTestSuiteBase {
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
 	LogReport log = new LogReport();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
-	
-	/*
-	 * In this the product is clicked and selected the dash board slider and
-	 * validated the end time text and splitted the time and date of the product and
-	 * validated the end time of the product
-	 */	@SuppressWarnings("static-access")
+	/* 
+	 * This test script covers the following functionalities of product  page.
+	 * 1. Verifying whether the product is clicked or not 
+	 * 2. Verifying the dash board slider is selected or not 
+	 * 3. Displaying the end time text
+	 * 4. Validating the end time text
+	 * 5. Splitting and displaying the day and date of the product
+	 * 6. Validating the date of execution of the product
+	 */
 	@Test
 	public void endTime() throws Exception {
 		 Waits wait=new Waits(browser);

@@ -14,21 +14,31 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Splitting;
 import com.atmecs.qa.falcondashboard.utils.Waits;
+
+/*
+ * 
+ * @Author : srinischal.thiparani
+ * @createdDate : 27-01-2020
+ * @updatedDate : 18-02-2020
+ * @updatedBy : T Sri Nischal
+ * @testCasesCovered[Falcon-T26]
+ *  
+ */
+
 //In this class the color of the total test cases is displayed
 public class TC26_ColorOfTotalTestCases extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
 	LogReport log = new LogReport();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
-	
-	/*
-	 * In this method the product is clicked and dashboard slider is selected and
-	 * displayed the color of the total test cases and validated the color of total
-	 * test cases
-	 */
-	@SuppressWarnings("static-access")
+	/* 
+	 * This test script covers the following functionalities
+	 * 1. Verifying whether the product is clicked or not 
+	 * 2. Verifying the dash board slider option is selected or not 
+	 * 3. Displaying the color of the total test cases box
+	 * 4. Verifying the color of total test cases box
+	 */  
 	@Test
 	public void colorofTotalTestCases() throws Exception {
 		Waits wait=new Waits(browser);

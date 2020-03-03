@@ -14,6 +14,7 @@ import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 public class Pageactions  {
 	RandomNumber random=new RandomNumber();
 	LogReport log = new LogReport();
+	ReadLocators read=new ReadLocators();
 	Browser browser = null;
 	ReadDataFromExcel reader = getsheet(ProjectBaseConstantPaths.EXCEL_FILE);
 	
@@ -114,7 +115,7 @@ public class Pageactions  {
 			System.out.println(randomnumber);
 			String number = Integer.toString(randomnumber);
 			System.out.println(number);
-			String locatorvalue = ReadLocators.getPropertyvalue(locator, ProjectBaseConstantPaths.LOCATORS_FILE);
+			String locatorvalue = read.getPropertyvalue(locator, ProjectBaseConstantPaths.LOCATORS_FILE);
 			System.out.println(locatorvalue + ".....xpath");
 			String Locator = locatorvalue.replace("*", number);
 			System.out.println(Locator);

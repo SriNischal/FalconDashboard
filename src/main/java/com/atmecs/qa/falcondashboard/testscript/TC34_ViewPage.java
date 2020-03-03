@@ -14,6 +14,17 @@ import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.MainNavigationValidation;
 import com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation;
+
+/*
+ * 
+ * @Author : srinischal.thiparani
+ * @createdDate : 29-01-2020
+ * @updatedDate : 24-02-2020
+ * @updatedBy : T Sri Nischal
+ * @testCasesCovered[Falcon-T34]
+ *  
+ */
+
 //In this class the view page is clicked and validated 
 public class TC34_ViewPage extends SampleTestSuiteBase{
 	LoadProperties load=new LoadProperties();
@@ -22,12 +33,16 @@ public class TC34_ViewPage extends SampleTestSuiteBase{
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	
-	/*
-	 * In this the views is clicked and validated the user landed on the page and
-	 * validated the panel title and clicked on the dpwnload and the dashboard
-	 * slider option
+	
+	
+	/* 
+	 * This test script covers the following functionalities of dashboard page.
+	 * 1. Validating the view option
+	 * 2. Verifying whether the view option is clicked or not
+	 * 3. Validating the panel title of the views page 
+	 * 4. Verifying whether the dash board slider is selected or not
+	 * 5. Verifying whether the download option is clicked or not
 	 */
-	@SuppressWarnings("static-access")
 	@Test
 	public void viewPage() throws Exception {
 		Waits wait=new Waits(browser);

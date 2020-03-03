@@ -15,7 +15,6 @@ public class Splitting{
 	public Splitting(Browser browser) {
 		this.browser=browser;
 	}
-	@SuppressWarnings("static-access")
 	public String splitofarray(int i) throws Exception {
 		Pageactions page=new Pageactions(browser);
 		String value = page.getText(read.getPropertyvalue("loc.product.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
@@ -24,7 +23,6 @@ public class Splitting{
 		report.info("Successfully displayed day and date of product");
 		return date;
 	}
-	@SuppressWarnings("static-access")
 	public String splitofdatetime(int i) throws Exception {
 		Pageactions page=new Pageactions(browser);
 		String product = page.getText(read.getPropertyvalue("loc.product.txt", ProjectBaseConstantPaths.LOCATORS_FILE));

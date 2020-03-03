@@ -14,21 +14,31 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Splitting;
 import com.atmecs.qa.falcondashboard.utils.Waits;
+
+/*
+ * 
+ * @Author : srinischal.thiparani
+ * @createdDate : 28-01-2020
+ * @updatedDate : 20-02-2020
+ * @updatedBy : T Sri Nischal
+ * @testCasesCovered[Falcon-T30]
+ *  
+ */
+
 //In this class the color of the failed test cases is displayed 
 public class TC30_ColorOfFailedTestCases extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
 	LogReport log = new LogReport();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
-	
-	/*
-	 * In this method the product is clicked and the dash board slider is selected and
-	 * displayed the color of the failed test cases and validated the color of the
-	 * test cases
+	/* 
+	 * This test script covers the following functionalities
+	 * 1. Verifying whether the product is clicked or not 
+	 * 2. Verifying the dash board slider option is selected or not 
+	 * 3. Displaying the color of the fail test cases box
+	 * 4. Verifying the color of the fail test case box
 	 */
-	@SuppressWarnings("static-access")
 	@Test
 	public void colorofFailedTestCases() throws Exception {
 		Waits wait=new Waits(browser);

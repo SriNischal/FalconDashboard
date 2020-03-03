@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SampleTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Feb 26 20:02:49 IST 2020</td>
+<td>Started on:</td><td>Tue Mar 03 20:27:40 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>317 seconds (317636 ms)</td>
+<tr><td>Total time:</td><td>256 seconds (256866 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,87 +68,6 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption.teardown()'><b>teardown</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ATMECSINLT-060&apos;, ip: &apos;55.55.52.253&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: true, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: true, initialBrowserUrl: http://localhost:30949/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: d275eebf-4d09-4163-a1c7-792edde521d7
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-	at com.atmecs.falcon.automation.ui.selenium.Browser.closeBrowser(Browser.java:115)
-	at com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase.teardown(SampleTestSuiteBase.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1862698871", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1862698871'><pre>org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ATMECSINLT-060&apos;, ip: &apos;55.55.52.253&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: true, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: true, initialBrowserUrl: http://localhost:30949/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: d275eebf-4d09-4163-a1c7-792edde521d7
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-	at com.atmecs.falcon.automation.ui.selenium.Browser.closeBrowser(Browser.java:115)
-	at com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase.teardown(SampleTestSuiteBase.java:46)
-	at jdk.internal.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-</pre></div></td>
-<td>0</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption@36e2c8cd</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -156,38 +75,39 @@ Session ID: d275eebf-4d09-4163-a1c7-792edde521d7
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption.downloadOption()'><b>downloadOption</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption<br/>
-<a href="#Output-1530587111" onClick='toggleBox("Output-1530587111", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC37_EndTime.endTime()'><b>endTime</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC37_EndTime<br/>
+<a href="#Output-365912065" onClick='toggleBox("Output-365912065", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1530587111" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1530587111">
-Successfully clicked on the product<br/>
-Clicked on download option<br/>
-Unknown Exception for xpath //div[@class='tooltip-inner ng-binding']<br/>
-Unexpected exception occur: Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ATMECSINLT-060', ip: '55.55.52.253', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: true, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: true, initialBrowserUrl: http://localhost:30949/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: d275eebf-4d09-4163-a1c7-792edde521d7<br/>
-Unexpected exception occur: Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ATMECSINLT-060', ip: '55.55.52.253', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: true, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: true, initialBrowserUrl: http://localhost:30949/, javascriptEnabled: true, nativeEvents: true, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: d275eebf-4d09-4163-a1c7-792edde521d7<br/>
+<a href="#Output-365912065" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-365912065">
+Successfully clicked on product<br/>
+Successfully selected dashboard option<br/>
+<br/>
+Successfully displayed the end time text<br/>
+FAIL : Successfully validated the text expected [] but found [End Time]: ACTUAL : End Time 	EXPECTED :<br/>
+Successfully validated the text<br/>
+Successfully displayed day and date of product<br/>
+PASS : Successfully validated the date : ACTUAL : Mar3,2020 	EXPECTED :Mar3,2020<br/>
+Successfully validated the date<br/>
+Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1 (0)\Screenshots\endTime_1_.png<br/>
 </div>
 </td>
-<td><div><pre>java.lang.NullPointerException
-	at com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption.downloadOption(TC11_DownloadOption.java:40)
+<td><div><pre>java.lang.AssertionError: expected [] but found [End Time]
+	at com.atmecs.falcon.automation.verifyresult.VerificationManager.verifyString(VerificationManager.java:250)
+	at com.atmecs.qa.falcondashboard.testscript.TC37_EndTime.endTime(TC37_EndTime.java:65)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:830)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1530587111", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1530587111'><pre>java.lang.NullPointerException
-	at com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption.downloadOption(TC11_DownloadOption.java:40)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace365912065", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace365912065'><pre>java.lang.AssertionError: expected [] but found [End Time]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.atmecs.falcon.automation.verifyresult.VerificationManager.verifyString(VerificationManager.java:250)
+	at com.atmecs.qa.falcondashboard.testscript.TC37_EndTime.endTime(TC37_EndTime.java:65)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -210,8 +130,8 @@ Session ID: d275eebf-4d09-4163-a1c7-792edde521d7<br/>
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </pre></div></td>
-<td>136</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption@36e2c8cd</td></tr>
+<td>27</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC37_EndTime@3589e7c2</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -221,54 +141,66 @@ Session ID: d275eebf-4d09-4163-a1c7-792edde521d7<br/>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate.dateOfExecution()'><b>dateOfExecution</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate<br/>
-<a href="#Output-434762671" onClick='toggleBox("Output-434762671", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder.dashboardSlidder()'><b>dashboardSlidder</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder<br/>
+<a href="#Output-1414805882" onClick='toggleBox("Output-1414805882", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-434762671" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-434762671">
+<a href="#Output-1414805882" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1414805882">
+Successfully clicked on the product<br/>
+Successfully selected dashboard option<br/>
+</div>
+</td>
+<td></td>
+<td>37</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder@72378141</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment.environmentOfProduct()'><b>environmentOfProduct</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment<br/>
+<a href="#Output-858020427" onClick='toggleBox("Output-858020427", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-858020427" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-858020427">
+Successfully clicked on the product<br/>
+Successfully selected dashboard option<br/>
+Successfully validated the environment<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment@296743ff</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC36_StartTime.startTime()'><b>startTime</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC36_StartTime<br/>
+<a href="#Output-993841337" onClick='toggleBox("Output-993841337", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-993841337" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-993841337">
 Successfully clicked on product<br/>
+Successfully selected dashboard option<br/>
+Start Time<br/>
+Successfully displayed the start time text<br/>
+PASS : Successfully validated the text : ACTUAL : Start Time 	EXPECTED :Start Time<br/>
+Successfully validated the text<br/>
 Successfully displayed day and date of product<br/>
-Successfully displayed day and date of product<br/>
-PASS : Successfully validated the date : ACTUAL : Feb26,2020 	EXPECTED :Feb26,2020<br/>
+PASS : Successfully validated the date : ACTUAL : Mar3,2020 	EXPECTED :Mar3,2020<br/>
 Successfully validated the date<br/>
 </div>
 </td>
 <td></td>
 <td>26</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate@491be53b</td></tr>
+<td>com.atmecs.qa.falcondashboard.testscript.TC36_StartTime@7b7a5c65</td></tr>
 <tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium.mediumOfProduct()'><b>mediumOfProduct</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium<br/>
-<a href="#Output-1941100426" onClick='toggleBox("Output-1941100426", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase.testPhase()'><b>testPhase</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase<br/>
+<a href="#Output-1903114881" onClick='toggleBox("Output-1903114881", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1941100426" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1941100426">
-Successfully clicked on product<br/>
-Successfully displayed day and date of product<br/>
-Successfully displayed medium of product<br/>
-PASS : Successfully validated the medium of the product : ACTUAL :  Web Services  	EXPECTED : Web Services <br/>
-Successfully validated the medium of the product<br/>
-</div>
-</td>
-<td></td>
-<td>23</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium@41da4461</td></tr>
-<tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage.productPage()'><b>productPage</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage<br/>
-<a href="#Output-665089601" onClick='toggleBox("Output-665089601", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-665089601" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-665089601">
-Successfully validated product<br/>
+<a href="#Output-1903114881" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1903114881">
 Successfully clicked on the product<br/>
-Successfully validated panel title<br/>
-PASS : Successfully validaetd the test cases : ACTUAL : deleteProjectApiTest 0 Sec Pass,downloadImageApiTest 0 Sec Pass,exportToExcelApiTest 0 Sec Pass,getDashboardApiTest 1 Sec Pass,invalidLinkApiTest 0 Sec Fail,recentRunsApiTest 0 Sec Pass,reportViewApiTest 0 Sec Pass,uploadImageApiTest 2 Sec Pass,uploadTestngResultFileApiTest 0 Sec Pass,viewReportApiTest 5 Sec Pass 	EXPECTED :deleteProjectApiTest 0 Sec Pass,downloadImageApiTest 0 Sec Pass,exportToExcelApiTest 0 Sec Pass,getDashboardApiTest 1 Sec Pass,invalidLinkApiTest 0 Sec Fail,recentRunsApiTest 0 Sec Pass,reportViewApiTest 0 Sec Pass,uploadImageApiTest 2 Sec Pass,uploadTestngResultFileApiTest 0 Sec Pass,viewReportApiTest 5 Sec Pass<br/>
-Successfully valdated all the test cases<br/>
 Successfully selected dashboard option<br/>
+Successfully validated the test phase of the product<br/>
 </div>
 </td>
 <td></td>
-<td>44</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage@4330db5b</td></tr>
+<td>27</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase@3e00a1b3</td></tr>
 </table><p>
 </body>
 </html>

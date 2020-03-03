@@ -14,21 +14,34 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation;
+
+/*
+ * 
+ * @Author : srinischal.thiparani
+ * @createdDate : 27-01-2020
+ * @updatedDate : 20-02-2020
+ * @updatedBy : T Sri Nischal
+ * @testCasesCovered[Falcon-T29]
+ *  
+ */
+
 //In this the content of passed test cases is displayed and validated
 public class TC29_PassedTestCases extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
 	LogReport log = new LogReport();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	
-	/*
-	 * In this method the product is clicked and the dashboard slider is selected
-	 * and pass test cases is selected and validated the number of pass test cases
-	 * and pass percentage and created the list to display the passed test cases
+	
+	
+	/* 
+	 * This test script covers the following functionalities
+	 * 1. Verifying whether the product is clicked or not 
+	 * 2. Verifying the dash board slider option is selected or not 
+	 * 3. Displaying the color of the pass test cases box
+	 * 4. Verifying the color of the pass test case box
 	 */
-	@SuppressWarnings("static-access")
 	@Test
 	public void passTestCases() throws Exception {
 		Waits wait=new Waits(browser);

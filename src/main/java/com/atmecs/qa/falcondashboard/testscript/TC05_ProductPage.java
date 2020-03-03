@@ -16,7 +16,20 @@ import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.ProductPageValidation;
-//In this class product page is tested
+
+/*
+ * 
+ * @Author : srinischal.thiparani
+ * @createdDate : 07-01-2020
+ * @updatedDate : 04-02-2020
+ * @updatedBy : T Sri Nischal
+ * @testCasesCovered[Falcon-T05]
+ *  
+ */
+
+
+
+//In this class the product name is validated and clicked and list of total test cases is displayed and dash board slider is selected
 public class TC05_ProductPage extends SampleTestSuiteBase {
 	LoadProperties load=new LoadProperties();
 	ReadLocators read = new ReadLocators();
@@ -24,18 +37,24 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 	LogReport log = new LogReport();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-	/*
-	 * In this method the product name is validated and clicked on the product and
-	 * checking user landed on the product page and validate the list of products
+	/* 
+	 * This test script covers the following functionalities of product page.
+	 * 1. Validating the product name
+	 * 2. Clicking on the product
+	 * 3. Verifying the product page panel title 
+	 * 4. List of the total test cases of the products is displayed  
+	 * 5. List of products is converted into the string products
+	 * 6. Verifying the list of test cases of the product
+	 * 7. Dash board slider option of the product is selected or not 
 	 */
-	@SuppressWarnings("static-access")
+	
 	@Test
 	public void productPage() throws Exception {
 		Waits wait=new Waits(browser);
-		ElementsList lists=new ElementsList(browser);
-		Pageactions page = new Pageactions(browser);
-		ProductPageValidation validate = new ProductPageValidation(browser);
+		Pageactions page=new Pageactions(browser);
+		ProductPageValidation validate=new ProductPageValidation(browser);
 		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
+		ElementsList lists=new ElementsList(browser);
 	log.info("STEP#1: Validating and displaying the product name");
 		validate.validateProduct();
 		report.info("Successfully validated product");

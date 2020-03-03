@@ -2,7 +2,6 @@ package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.ui.selenium.Verify;
-import com.atmecs.falcon.automation.util.parser.XlsReader;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
@@ -14,8 +13,17 @@ import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.DashboardPageValidation;
+/*
+ * 
+ * @Author : srinischal.thiparani
+ * @createdDate : 02-01-2020
+ * @updatedDate : 31-01-2020
+ * @updatedBy : T Sri Nischal
+ * @testCasesCovered[Falcon-T01]
+ *  
+ */
 
-//In this class dash board page is tested
+//In this the functionalities of the dash board page are validated 
 
 public class TC01_DashBoardPage extends SampleTestSuiteBase {
 
@@ -24,18 +32,15 @@ public class TC01_DashBoardPage extends SampleTestSuiteBase {
 	ReadingData data = new ReadingData();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	LogReport log = new LogReport();
-	final String moduleName = "Publish";
-	XlsReader xlsReader = null;
-	String adminUsername = null;
-	String adminPassword = null;
-	int row = 0;
-	@SuppressWarnings("static-access")
-	@Test
-	/*
-	 * In this method we test whether the user landed on the dash board page by
-	 * validating the title of the page, dash board text, falcon text validation and
-	 * clicking on the refresh option
+	
+	/* 
+	 * This test script covers the following functionalities of dashboard page.
+	 * 1. Page title validation
+	 * 2. "Dashboard" text validation
+	 * 3. Verifying whether the refresh option is clicked or not 
+	 * 4. Atmecs logo test validation
 	 */
+	@Test
 	public void dashboardPage() throws Exception {
 		Waits wait = new Waits(browser);
 		Pageactions page = new Pageactions(browser);
@@ -52,7 +57,7 @@ public class TC01_DashBoardPage extends SampleTestSuiteBase {
 	log.info("STEP#3: Clicking on the refresh option");
 		page.clickOnElement(read.getPropertyvalue("loc.refresh.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("clicked on refresh option");
-	log.info("STEP#4: Atmecs Text validation");
+	log.info("STEP#4: Atmecs logo Text validation");
 		validate.validatefalconlogo();
 		report.info("Successfully validated falcon");
 	}

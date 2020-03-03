@@ -13,19 +13,34 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.DashboardPageValidation;
+
+/*
+ * 
+ * @Author : srinischal.thiparani
+ * @createdDate : 30-01-2020
+ * @updatedDate : 26-02-2020
+ * @updatedBy : T Sri Nischal
+ * @testCasesCovered[Falcon-T38]
+ *  
+ */
+
 //In this class the expand option is clicked and validated 
 public class TC38_MaximizingWindow extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
 	LogReport log = new LogReport();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	
-	/*
-	 * In this method the expand option is clicked and validated whether all the
-	 * content is displayed correctly by expanding option
-	 */	@SuppressWarnings("static-access")
+	
+	
+	/* 
+	 * This test script covers the following functionalities of dashboard page.
+	 * 1. Verifying whether the expand option is clicked or not
+	 * 2. "Dashboard" text validation
+	 * 3. Verifying whether the refresh option is clicked or not 
+	 * 4. Atmecs logo test validation
+	 */
 	@Test
 	public void maximizeWindow() throws Exception {
 		 Waits wait=new Waits(browser);

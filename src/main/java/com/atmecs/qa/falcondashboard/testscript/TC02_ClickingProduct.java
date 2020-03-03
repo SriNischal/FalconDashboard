@@ -1,9 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.ui.selenium.Verify;
-import com.atmecs.falcon.automation.util.parser.XlsReader;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
@@ -18,36 +16,43 @@ import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 
-//In this class we test the product is clicked or not 
+/*
+ * 
+ * @Author : srinischal.thiparani
+ * @createdDate : 02-01-2020
+ * @updatedDate : 31-01-2020
+ * @updatedBy : T Sri Nischal
+ * @testCasesCovered[Falcon-T02]
+ *  
+ */
+
+//In this the list of products and the recent execution times are validated and clicked on the product
 public class TC02_ClickingProduct extends SampleTestSuiteBase {
 	ReadingData data = new ReadingData();
 	LoadProperties load = new LoadProperties();
 	LogReport log = new LogReport();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-	final String moduleName = "Publish";
-	XlsReader xlsReader = null;
-	String adminUsername = null;
-	String adminPassword = null;
-	int row = 0;
 	
-	/*
-	 * In this we generate a list to see whether all the products are present
-	 * according to the recent execution times and click on the project
+	/* 
+	 * This test script covers the following functionalities of dashboard page.
+	 * 1. List of the products available and the size of the products
+	 * 2. The list of products converted into string of products
+	 * 3. Verifying the list of products 
+	 * 4. List of the recent execution times of the products
+	 * 5. Verifying whether the product is clicked or not 
 	 */
-	@SuppressWarnings("static-access")
 	@Test
 	public void clickingProduct() throws Exception {
+		ReadLocators read=new ReadLocators();
 		ValidationHelper helper = new ValidationHelper(browser);
 		ElementsList lists = new ElementsList(browser);
 		Pageactions page = new Pageactions(browser);
 	    Waits wait=new Waits(browser);
 	    wait.isElementVisible(browser.getDriver(), "loc.products.txt");
-	log.info("STEP#1: List to get all the products and size of elements  present on the dashboard page");
+	log.info("STEP#1: List to get all the products and size of products  present on the dashboard page");
 		String products = propReader.getValue("loc.products.txt");
-		System.out.println(products);
 		lists.listofElements(products);
-		System.out.println(products);
 	log.info("STEP#2: Converting the list of products into string products");
 		lists.separatingElements(products);
 	log.info("STEP#3: Verifying the list of products");
@@ -67,7 +72,7 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 		Verify.verifyString(timeofexecution, expedctedtime, "Successfully validaetd the products");
 		report.info("Successfully valdated all the recent execution times");
 	log.info("STEP#5: Clicking on the product");
-		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
 		page.windowHandle();
 		/*

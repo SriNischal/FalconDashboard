@@ -14,30 +14,45 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.RecentrunsValidation;
+
+/*
+ * 
+ * @Author : srinischal.thiparani
+ * @createdDate : 23-01-2020
+ * @updatedDate : 13-02-2020
+ * @updatedBy : T Sri Nischal
+ * @testCasesCovered[Falcon-T21]
+ *  
+ */
+
 //In this class the pass percent of the products is displalyed 
 public class TC21_PassPercentage extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
 	LogReport log = new LogReport();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	
-	/*
-	 * In this method the recent runs is clicked and validated the pass percent
-	 * title and and created a list to display the pass percentages of the products
-	 * and clicked on the pass percent for sorting the values and created another
-	 * list to get the sorted list and compared both the lists
-	 */
+	
+	
+	/* 
+	 * This test script covers the following functionalities of recent runs page.
+	 * 1. Verifying whether the recent runs is clicked or not 
+	 * 2. Validating the product names in the recent runs page
+	 * 3. List to display the test cases of the products
+	 * 4. Verifying the arrows of the pass percentage is clicked or not
+	 * 5. List to display the test cases after sorting
+	 * 6. Comparing both the values before and after sorting the values
+	 */  
 	@Test
 	public void rececntPassPercentage() throws Exception {
 		Waits wait=new Waits(browser);
 		ElementsList list=new ElementsList(browser);
 		RecentrunsValidation validate=new RecentrunsValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		Waits.isElementVisible(browser.getDriver(), "loc.recentruns.btn");
+		wait.isElementVisible(browser.getDriver(), "loc.recentruns.btn");
 	log.info("STEP#1: Clicking on the Recentruns");
-		page.clickOnElement(ReadLocators.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the recent runs");
 		wait.implicitWait();
 	log.info("STEP#2: Validating the pass percent");
@@ -48,7 +63,7 @@ public class TC21_PassPercentage extends SampleTestSuiteBase{
 		list.listofElements(productnames);
 		wait.implicitWait();
 	log.info("STEP#4 Clicking on the pass percentage");
-	    page.clickOnElement(ReadLocators.getPropertyvalue("loc.recentpasspercent.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+	    page.clickOnElement(read.getPropertyvalue("loc.recentpasspercent.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	    report.info("Successfully clicked on the pass percentage");
 	log.info("STEP#6: Creating the list to display the product names after sorting");
 	    String productnamesaftersorting=propReader.getValue("loc.passpercentage.txt");

@@ -15,6 +15,17 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.RecentrunsValidation;
+
+/*
+ * 
+ * @Author : srinischal.thiparani
+ * @createdDate : 29-01-2020
+ * @updatedDate : 25-02-2020
+ * @updatedBy : T Sri Nischal
+ * @testCasesCovered[Falcon-T35]
+ *  
+ */
+
 //In this classes the last runs in the recent runs page is clicked and validated 
 public class TC35_LastRun extends SampleTestSuiteBase{
 	ReadLocators read=new ReadLocators();
@@ -22,17 +33,19 @@ public class TC35_LastRun extends SampleTestSuiteBase{
 	LoadProperties load=new LoadProperties();
 	LogReport log=new LogReport();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	
-	/*
-	 * In this method the recent runs is clicked and validated that user landed on
-	 * to the page and validated the last runs text and created a list to display
-	 * the content in the last runs and validated the content and clicked on the
-	 * text for sorting and created a list to display the sorted list and compared
-	 * both the lists
+	
+	
+	/* 
+	 * This test script covers the following functionalities of recent runs page.
+	 * 1. Verifying whether the recent runs is clicked or not 
+	 * 2. Validating the last runs in the recent runs page
+	 * 3. List to display the last runs of the products
+	 * 4. Verifying the arrows of the last runs are clicked or not 
+	 * 5. List to display the product last runs after sorting
+	 * 6. Comparing both the values before and after sorting the values
 	 */
-	@SuppressWarnings("static-access")
 	@Test
 	public void lastRun() throws Exception {
 		Waits wait=new Waits(browser);

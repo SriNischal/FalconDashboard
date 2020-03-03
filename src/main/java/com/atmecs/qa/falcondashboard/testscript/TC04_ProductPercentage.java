@@ -1,6 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 import com.atmecs.falcon.automation.ui.selenium.Verify;
@@ -17,7 +16,17 @@ import com.atmecs.qa.falcondashboard.utils.RandomNumber;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 
-//In this class tool tip message is validated and color of the pass and fail percentages
+/*
+ * 
+ * @Author : srinischal.thiparani
+ * @createdDate : 03-01-2020
+ * @updatedDate : 03-02-2020
+ * @updatedBy : T Sri Nischal
+ * @testCasesCovered[Falcon-T04]
+ *  
+ */
+
+//In this class tool tip message of the pass%Trend is validated and color of the pass and fail percentages are displayed and validated 
 
 public class TC04_ProductPercentage extends SampleTestSuiteBase {
 	LoadProperties load=new LoadProperties();
@@ -25,15 +34,20 @@ public class TC04_ProductPercentage extends SampleTestSuiteBase {
 	LogReport log=new LogReport();
 	ReadLocators read = new ReadLocators();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
-	WebDriver driver = null;
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 
-	/*
-	 * In this method a list is created to display the tooltip message by mouse
-	 * hovering and validate the message and display the color of the pass
-	 * percentage and the fail percentage
+	
+	/* 
+	 * This test script covers the following functionalities of dash board page.
+	 * 1. The pass%Trend is mouse hovered to display the tool tip message 
+	 * 2. Validating the pass%Trend message of the products
+	 * 3. Mouse hovering over the pass percent of the product 
+	 * 4. Displaying the color of the pass percent of the product
+	 * 5. Verifying the color of the pass percentage of the product
+	 * 6. Mouse hovering over the fail percent of the product
+	 * 7. Displaying the color of the fail percent of the product 
+	 * 8. Verifying the color of the fail percentage of the product
 	 */
-	@SuppressWarnings( "static-access" )
 	@Test
 	public void percentageOfProduct() throws Exception {
 		Waits wait=new Waits(browser);

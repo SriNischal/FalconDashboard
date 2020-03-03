@@ -14,28 +14,48 @@ import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.RecentrunsValidation;
+
+/*
+ * 
+ * @Author : srinischal.thiparani
+ * @createdDate : 21-01-2020
+ * @updatedDate : 12-02-2020
+ * @updatedBy : T Sri Nischal
+ * @testCasesCovered[Falcon-T17]
+ *  
+ */
+
 //In this class the recent runs is clicked and validated 
 public class TC17_RecentRuns extends SampleTestSuiteBase{
 	LoadProperties load=new LoadProperties();
 	LogReport log=new LogReport();
 	ReadingData data=new ReadingData();
+	ReadLocators read=new ReadLocators();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	
-	/*
-	 * In this method the recent runs option is clicked and validated whether the
-	 * user landed on to the recent runs page and validated the content present in
-	 * the recent runs page
-	 */
+	
+	
+	/* 
+	 * This test script covers the following functionalities of dash board page.
+	 * 1. Verifying whether the recent runs option  is clicked or not
+	 * 2. Validating the title of the recent runs page
+	 * 3. Validating the panel title of the recent runs page
+	 * 4. Validating the product title in the recent runs page
+	 * 5. Validating the component of the recent runs page
+	 * 6. Validating the test cases of the product in the recent runs page
+	 * 7. Validating the pass percentage of the products in the recent runs page
+	 * 8. Validating the last runs of the products in the recent runs page
+	 */  
 	@Test
 	public void recentrun() throws Exception {
 		RecentrunsValidation validate=new RecentrunsValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		Waits.isElementVisible(browser.getDriver(), "loc.recentruns.btn");
+		Waits wait=new Waits(browser);
+		wait.isElementVisible(browser.getDriver(), "loc.recentruns.btn");
 	log.info("STEP#1: Clicking on the recent runs option");	
-		page.clickOnElement(ReadLocators.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on recent runs");
-		Thread.sleep(5000);
 	log.info("STEP#2: Validating the title of the page");	
 	    validate.validateText();
 		report.info("Successfully validated recentruns");

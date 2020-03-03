@@ -14,6 +14,17 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.ProductStepsValidation;
+
+/*
+ * 
+ * @Author : srinischal.thiparani
+ * @createdDate : 24-01-2020
+ * @updatedDate : 17-02-2020
+ * @updatedBy : T Sri Nischal
+ * @testCasesCovered[Falcon-T25]
+ *  
+ */
+
 //In this class the steps of the product are displayed and validated 
 public class TC25_StepsOfProduct extends SampleTestSuiteBase{
 	LoadProperties load=new LoadProperties();
@@ -22,12 +33,19 @@ public class TC25_StepsOfProduct extends SampleTestSuiteBase{
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	
-	/*
-	 * In this method the product is clicked and selected the status option from the
-	 * drop down and created a list to display the test cases and clicked on the test
-	 * case and validated the data present under the steps option
-	 */
-	@SuppressWarnings("static-access")
+	
+	/* 
+	 * This test script covers the following functionalities of recent runs page.
+	 * 1. Verifying whether the product is clicked or not
+	 * 2. Verifying the pass option from the status drop down is selected or not
+	 * 3. List to display the test cases and duration of each test cases
+	 * 4. List to display the status of the products
+	 * 5. Verifying the test cases of the product is clicked or not
+	 * 6. Validating the status option
+	 * 7. Validating the details option
+	 * 8. Validating the test case option
+	 * 9. Validating the request body text
+	 */  
 	@Test
 	public void stepsOfProduct() throws Exception {
 		Waits wait=new Waits(browser);

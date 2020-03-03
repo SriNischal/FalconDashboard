@@ -18,7 +18,7 @@ public class Waits {
 		browser.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);	
 	}
 	
-	public static boolean isElementVisible(WebDriver driver, String xpath) {
+	public boolean isElementVisible(WebDriver driver, String xpath) {
 
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		try {

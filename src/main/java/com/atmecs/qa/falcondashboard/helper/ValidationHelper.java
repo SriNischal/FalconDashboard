@@ -19,8 +19,6 @@ public class ValidationHelper {
 		this.browser = browser;
 		page=new Pageactions(browser);
 	}
-	
-	@SuppressWarnings("static-access")
 	public void getDataofRow(String expectedString,String validationMessage,int i) throws Exception
 	{
 		String actualproduct;
@@ -32,14 +30,12 @@ public class ValidationHelper {
 		System.out.println(expectedString);
 	}
 	
-	@SuppressWarnings("static-access")
 	public String getData() throws Exception {
 		String product=page.getText(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		System.out.println("productname: "+product);
 		return product;
 	}
 	
-	@SuppressWarnings("static-access")
 	public String getDataFromUi() throws Exception {
 		String pagetitle = page.getText(read.getPropertyvalue("loc.recentrunspagetitle.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
 		String[] arrOfStr = pagetitle.split(":", 3);

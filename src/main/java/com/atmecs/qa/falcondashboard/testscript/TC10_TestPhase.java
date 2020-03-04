@@ -23,7 +23,7 @@ import com.atmecs.qa.falcondashboard.validationresults.ProductPageValidation;
  *  
  */
 
-//In this method the test phase is validated
+//In this method the test phase is displayed and validated
 public class TC10_TestPhase extends SampleTestSuiteBase{
 	LogReport log=new LogReport();
 	ReadLocators read = new ReadLocators();
@@ -40,14 +40,13 @@ public class TC10_TestPhase extends SampleTestSuiteBase{
 	public void testPhase() throws Exception {
 		ProductPageValidation validate=new ProductPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		Waits wait=new Waits(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");	
-		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
-		wait.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
 	log.info("STEP#2: Selecting the dashboard slider option");
-	    page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+	    page.clickOnElement(ReadLocators.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");
 	log.info("STEP#3: Validating the test phase of the product");
 	     validate.validateTestPhase();

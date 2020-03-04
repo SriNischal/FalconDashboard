@@ -37,6 +37,8 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 	LogReport log = new LogReport();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
+	String sheetname="REST API TEST RESULT";
+	String columnname="Validation Text";
 	/* 
 	 * This test script covers the following functionalities of product page.
 	 * 1. Validating the product name
@@ -50,18 +52,17 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 	
 	@Test
 	public void productPage() throws Exception {
-		Waits wait=new Waits(browser);
 		Pageactions page=new Pageactions(browser);
 		ProductPageValidation validate=new ProductPageValidation(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 		ElementsList lists=new ElementsList(browser);
 	log.info("STEP#1: Validating and displaying the product name");
 		validate.validateProduct();
 		report.info("Successfully validated product");
 	log.info("STEP#2: Clicking on the product");	
-        page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+        page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
-		wait.isElementVisible(browser.getDriver(), "loc.numberoftestcases.txt");
+		Waits.isElementVisible(browser.getDriver(), "loc.numberoftestcases.txt");
 	log.info("STEP#3: Validating the product page panel title");
 		validate.validatePanelTitle();
 		report.info("Successfully validated panel title");
@@ -72,12 +73,12 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 		lists.separatingElements(testcases);
    log.info("STEP#6: Verifying the list of products");
 		String result = lists.separatingElements(testcases);
-		page.writedata_toExcel("REST API TEST RESULT", "Validation Text", 20, result);
-		String expedctedproducts=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "List of Test Cases");
+		page.writedata_toExcel(sheetname, columnname, 20, result);
+		String expedctedproducts=page.getdata_fromExcel(sheetname, columnname, "List of Test Cases");
 		Verify.verifyString(result, expedctedproducts, "Successfully validaetd the test cases");
 		report.info("Successfully valdated all the test cases");
 	log.info("STEP#7: Selecting the dashboard slider option");
-	    page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+	    page.clickOnElement(ReadLocators.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");	
 		// logic
 

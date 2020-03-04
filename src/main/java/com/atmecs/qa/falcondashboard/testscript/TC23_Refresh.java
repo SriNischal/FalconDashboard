@@ -24,7 +24,7 @@ import com.atmecs.qa.falcondashboard.validationresults.DashboardPageValidation;
  *  
  */
 
-//In this class the refresh option is verified
+//In this class the refresh option is clicked and verified
 public class TC23_Refresh extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
@@ -40,14 +40,13 @@ public class TC23_Refresh extends SampleTestSuiteBase{
 	public void refresh() throws Exception {
 		DashboardPageValidation validate=new DashboardPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		Waits wait=new Waits(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.refresh.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.refresh.btn");
 	log.info("STEP#1: Dashboard Text validation");
 		validate.validateDashboard();
 		report.info("Successfully validated dashboard text");
-		wait.isElementVisible(browser.getDriver(), "loc.refresh.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.refresh.btn");
 	log.info("STEP#2: Clicking on the refresh option");
-		page.clickOnElement(read.getPropertyvalue("loc.refresh.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.refresh.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the refresh option");
 	}
 

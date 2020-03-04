@@ -24,7 +24,7 @@ import com.atmecs.qa.falcondashboard.validationresults.DashboardPageValidation;
  *  
  */
 
-//In this class the expand option is clicked and validated 
+//In this class the maximize window option is clicked and validated 
 public class TC38_MaximizingWindow extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
@@ -43,25 +43,24 @@ public class TC38_MaximizingWindow extends SampleTestSuiteBase{
 	 */
 	@Test
 	public void maximizeWindow() throws Exception {
-		 Waits wait=new Waits(browser);
 		Pageactions page=new Pageactions(browser);
 		DashboardPageValidation validate = new DashboardPageValidation(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.expand.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.expand.btn");
 	log.info("STEP#1: Clicking on the expand button");	
-		page.clickOnElement(read.getPropertyvalue("loc.expand.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.expand.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the expand button");
 	log.info("STEP#2: Dashboard Text validation");
 		validate.validateDashboard();
 	log.info("STEP#3: Clicking on the refresh option");
-		page.clickOnElement(read.getPropertyvalue("loc.refresh.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.refresh.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("clicked on refresh option");
 		report.info("Successfully validated dashboard text");
 	log.info("STEP#4: Atmecs Text validation");
 		validate.validatefalconlogo();
 		report.info("Successfully validated falcon");
-		wait.isElementVisible(browser.getDriver(), "loc.expand.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.expand.btn");
 	log.info("STEP#5: Clicking on the expand button");	
-		page.clickOnElement(read.getPropertyvalue("loc.expand.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.expand.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the expand button");
 	}
 }

@@ -25,7 +25,7 @@ import com.atmecs.qa.falcondashboard.validationresults.DropdownValidation;
  *  
  */
 
-//In this class the passed test cases are displayed
+//In this class the passed test cases are displayed and validated
 public class TC13_PassedTestCases extends SampleTestSuiteBase{
 	LogReport log=new LogReport();
 	ReadLocators read = new ReadLocators();
@@ -45,19 +45,18 @@ public class TC13_PassedTestCases extends SampleTestSuiteBase{
 		ElementsList list=new ElementsList(browser);
 		DropdownValidation validate=new DropdownValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		Waits wait=new Waits(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");
-        page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+        page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
-		wait.isElementVisible(browser.getDriver(), "loc.passselectstatus.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.passselectstatus.btn");
 	log.info("STEP#2: Slecting the status option from the dropdown");	
-		page.clickOnElement(read.getPropertyvalue("loc.passselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.passselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Selected the pass status option"); 
 	log.info("STEP#3: Validating the status option");	
 		 validate.validatePassStatus();
 		report.info("Successfully validated pass status");
-		wait.isElementVisible(browser.getDriver(), "loc.numberoftestcases.txt");
+		Waits.isElementVisible(browser.getDriver(), "loc.numberoftestcases.txt");
 	log.info("STEP#4: Creating a list to display the passed test cases");
 	    String products=propReader.getValue("loc.numberoftestcases.txt");
 		list.listofElements(products);

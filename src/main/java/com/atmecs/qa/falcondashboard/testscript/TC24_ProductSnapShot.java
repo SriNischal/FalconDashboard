@@ -24,7 +24,7 @@ import com.atmecs.qa.falcondashboard.validationresults.MainNavigationValidation;
  *  
  */
 
-//In this class the product snapshot bar is clicked and validated 
+//In this class the product snapshot bar is clicked and validated the tool tip message 
 public class TC24_ProductSnapShot extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
@@ -44,9 +44,9 @@ public class TC24_ProductSnapShot extends SampleTestSuiteBase{
 		Waits wait=new Waits(browser);
 		MainNavigationValidation validate=new MainNavigationValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.snapshotbar.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.snapshotbar.btn");
 	log.info("STEP#1: Clicking on the product snapshot option");
-		page.clickOnElement(read.getPropertyvalue("loc.snapshotbar.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.snapshotbar.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product snapshot bar");
 		wait.implicitWait();
 	log.info("STEP#2: Validating the product snapshot text");	

@@ -23,7 +23,7 @@ import com.atmecs.qa.falcondashboard.validationresults.ProductPageValidation;
  *  
  */
 
-//In this class the environment of the product is displayed
+//In this class the environment of the product is displayed and validated 
 public class TC09_ProductEnvironment extends SampleTestSuiteBase{
 	LogReport log=new LogReport();
 	ReadLocators read = new ReadLocators();
@@ -40,22 +40,20 @@ public class TC09_ProductEnvironment extends SampleTestSuiteBase{
 	 */
 	@Test
 	public void environmentOfProduct() throws Exception {
-		Waits wait=new Waits(browser);
-		ReadLocators read=new ReadLocators();
 		ProductPageValidation validate=new ProductPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");	
-		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
-		wait.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
 	log.info("STEP#2: Selecting the dashboard slider option");
-	    page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+	    page.clickOnElement(ReadLocators.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");
 	log.info("STEP#3: Validating the environment of the product");
 	     validate.validateEnvironment();
 	     report.info("Successfully validated the environment");
-		wait.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
 	}
 
 }

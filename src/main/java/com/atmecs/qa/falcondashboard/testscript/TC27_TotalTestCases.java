@@ -27,7 +27,7 @@ import com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation;
  *  
  */
 
-//In this class the content of total test cases is displayed
+//In this class the content of total test cases is displayed and displayed
 public class TC27_TotalTestCases extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
@@ -48,20 +48,19 @@ public class TC27_TotalTestCases extends SampleTestSuiteBase{
 	 */  
 	@Test
 	public void totalTestCases() throws Exception {
-		Waits wait=new Waits(browser);
 		ElementsList list=new ElementsList(browser);
 		ViewPageValidation validate=new ViewPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");
-		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
-		wait.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
 	log.info("STEP#2: Selecting the dashboard slider option");
-		page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked dashboard slider");
 	log.info("STEP#3: Clicking on total test cases");
-		page.clickOnElement(read.getPropertyvalue("loc.totaltestcases.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.totaltestcases.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked total test cases");
 	log.info("STEP#4: Validating the test cases text");	
 		validate.validateTestCases();

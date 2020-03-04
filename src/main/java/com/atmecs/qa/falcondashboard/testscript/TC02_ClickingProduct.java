@@ -33,7 +33,8 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 	LogReport log = new LogReport();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-	
+	String sheetname="REST API TEST RESULT";
+	String columnname="Validation Text";
 	/* 
 	 * This test script covers the following functionalities of dashboard page.
 	 * 1. List of the products available and the size of the products
@@ -44,12 +45,10 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 	 */
 	@Test
 	public void clickingProduct() throws Exception {
-		ReadLocators read=new ReadLocators();
 		ValidationHelper helper = new ValidationHelper(browser);
 		ElementsList lists = new ElementsList(browser);
 		Pageactions page = new Pageactions(browser);
-	    Waits wait=new Waits(browser);
-	    wait.isElementVisible(browser.getDriver(), "loc.products.txt");
+	    Waits.isElementVisible(browser.getDriver(), "loc.products.txt");
 	log.info("STEP#1: List to get all the products and size of products  present on the dashboard page");
 		String products = propReader.getValue("loc.products.txt");
 		lists.listofElements(products);
@@ -59,7 +58,7 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 		String product = helper.getData();
 		String result = lists.separatingElements(products);
 		page.writedata_toExcel(product, "Validation Text", 11, result);
-		String expedctedproducts = page.getdata_fromExcel(product, "Validation Text", "Products Texts");
+		String expedctedproducts = page.getdata_fromExcel(sheetname, columnname, "Products Texts");
 		Verify.verifyString(result, expedctedproducts, "Successfully validaetd the products");
 		report.info("Successfully valdated all the products");
 	log.info("STEP#4: To get list of product on dashboard page according to the recent execution time");
@@ -68,11 +67,11 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 		String timeofexecution=lists.separatingElements(time);
 		report.info("Successfully displayed the execution times");
 		page.writedata_toExcel(product, "Validation Text", 12, timeofexecution);
-		String expedctedtime = page.getdata_fromExcel(product, "Validation Text", "Products Recent Execution time");
+		String expedctedtime = page.getdata_fromExcel(sheetname, columnname, "Products Recent Execution time");
 		Verify.verifyString(timeofexecution, expedctedtime, "Successfully validaetd the products");
 		report.info("Successfully valdated all the recent execution times");
 	log.info("STEP#5: Clicking on the product");
-		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
 		page.windowHandle();
 		/*

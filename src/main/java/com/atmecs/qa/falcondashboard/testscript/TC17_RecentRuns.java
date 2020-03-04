@@ -25,7 +25,7 @@ import com.atmecs.qa.falcondashboard.validationresults.RecentrunsValidation;
  *  
  */
 
-//In this class the recent runs is clicked and validated 
+//In this class the recent runs is clicked and validated all the functionalities  
 public class TC17_RecentRuns extends SampleTestSuiteBase{
 	LoadProperties load=new LoadProperties();
 	LogReport log=new LogReport();
@@ -51,10 +51,9 @@ public class TC17_RecentRuns extends SampleTestSuiteBase{
 	public void recentrun() throws Exception {
 		RecentrunsValidation validate=new RecentrunsValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		Waits wait=new Waits(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.recentruns.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.recentruns.btn");
 	log.info("STEP#1: Clicking on the recent runs option");	
-		page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on recent runs");
 	log.info("STEP#2: Validating the title of the page");	
 	    validate.validateText();

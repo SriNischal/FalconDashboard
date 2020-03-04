@@ -26,7 +26,7 @@ import com.atmecs.qa.falcondashboard.validationresults.RecentrunsValidation;
  *  
  */
 
-//In this classes the last runs in the recent runs page is clicked and validated 
+//In this classes the last runs in the recent runs page is clicked and validated the last runs
 public class TC35_LastRun extends SampleTestSuiteBase{
 	ReadLocators read=new ReadLocators();
 	WebDriver driver; 
@@ -52,9 +52,9 @@ public class TC35_LastRun extends SampleTestSuiteBase{
 		ElementsList list=new ElementsList(browser);
 		RecentrunsValidation validate=new RecentrunsValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.recentruns.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.recentruns.btn");
 	log.info("STEP#1: Clicking on the Recentruns");
-		page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the recent runs");
 		wait.implicitWait();
 	log.info("STEP#2: Validating the last run");
@@ -65,8 +65,8 @@ public class TC35_LastRun extends SampleTestSuiteBase{
 		list.listofElements(lastruns);
 		wait.implicitWait();
 	log.info("STEP#4 Clicking on the last run");
-	    page.clickOnElement(read.getPropertyvalue("loc.lastruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-	    page.clickOnElement(read.getPropertyvalue("loc.lastruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+	    page.clickOnElement(ReadLocators.getPropertyvalue("loc.lastruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+	    page.clickOnElement(ReadLocators.getPropertyvalue("loc.lastruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	    report.info("Successfully clicked on the last runs");
 	   wait.implicitWait();
 	log.info("STEP#5: Creating the list to display the last runs after sorting");

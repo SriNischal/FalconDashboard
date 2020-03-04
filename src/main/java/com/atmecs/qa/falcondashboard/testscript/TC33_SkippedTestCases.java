@@ -25,7 +25,7 @@ import com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation;
  *  
  */
 
-//In this class the content of the skip test cases is displayed and validated
+//In this class the content of the skip test cases are displayed and validated
 public class TC33_SkippedTestCases extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
@@ -46,20 +46,19 @@ public class TC33_SkippedTestCases extends SampleTestSuiteBase{
 	 */
 	@Test
 	public void skippedTestCases() throws Exception {
-		Waits wait=new Waits(browser);
 		ElementsList list=new ElementsList(browser);
 		ViewPageValidation validate=new ViewPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");
-		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
-		wait.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
 	log.info("STEP#2: Selecting the dashboard slider option");
-		page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked dashboard slider");
 	log.info("STEP#3: Clicking on skip test cases");
-		page.clickOnElement(read.getPropertyvalue("loc.skipedtestcases.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.skipedtestcases.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked pass test cases");
 	log.info("STEP#4: Validating the number of skipped test cases");	
 		validate.validateSkipTestCases();
@@ -67,7 +66,7 @@ public class TC33_SkippedTestCases extends SampleTestSuiteBase{
 	log.info("STEP#5: Validating the skip text");	
 	    validate.validateSkipMessage();
 		report.info("Successfully validated skip message");
-		wait.isElementVisible(browser.getDriver(), "loc.numberoftestcases.txt");
+		Waits.isElementVisible(browser.getDriver(), "loc.numberoftestcases.txt");
 	log.info("STEP#6: Creating a list to display all the test cases present");
 	    String testcases=propReader.getValue("loc.numberoftestcases.txt");
 		list.listofElements(testcases);	

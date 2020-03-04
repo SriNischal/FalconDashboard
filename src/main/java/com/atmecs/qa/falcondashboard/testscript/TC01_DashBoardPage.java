@@ -23,7 +23,7 @@ import com.atmecs.qa.falcondashboard.validationresults.DashboardPageValidation;
  *  
  */
 
-//In this the functionalities of the dash board page are validated 
+//In this the functionalities of the dash board page are validated they are text,logo text and verified the refresh option
 
 public class TC01_DashBoardPage extends SampleTestSuiteBase {
 
@@ -32,7 +32,8 @@ public class TC01_DashBoardPage extends SampleTestSuiteBase {
 	ReadingData data = new ReadingData();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	LogReport log = new LogReport();
-	
+	String sheetname="REST API TEST RESULT";
+	String columnname="Validation Text";
 	/* 
 	 * This test script covers the following functionalities of dashboard page.
 	 * 1. Page title validation
@@ -42,20 +43,19 @@ public class TC01_DashBoardPage extends SampleTestSuiteBase {
 	 */
 	@Test
 	public void dashboardPage() throws Exception {
-		Waits wait = new Waits(browser);
 		Pageactions page = new Pageactions(browser);
 		DashboardPageValidation validate = new DashboardPageValidation(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.refresh.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.refresh.btn");
 	log.info("STEP#1: Page title validation");
 		String actualtitle = browser.getCurrentPageTitle();
-		String expectedtitle = data.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Page URL");
+		String expectedtitle = data.getdata_fromExcel(sheetname, columnname, "Page URL");
 		Verify.verifyString(actualtitle, expectedtitle, "Verifying String Message ");
 		report.info("successfully validated page title");
 	log.info("STEP#2: Dashboard Text validation");
 		validate.validateDashboard();
 		report.info("Successfully validated the dashboard text");
 	log.info("STEP#3: Clicking on the refresh option");
-		page.clickOnElement(read.getPropertyvalue("loc.refresh.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.refresh.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("clicked on refresh option");
 	log.info("STEP#4: Atmecs logo Text validation");
 		validate.validatefalconlogo();

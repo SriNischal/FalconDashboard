@@ -48,19 +48,18 @@ public class TC25_StepsOfProduct extends SampleTestSuiteBase{
 	 */  
 	@Test
 	public void stepsOfProduct() throws Exception {
-		Waits wait=new Waits(browser);
 		ElementsList list=new ElementsList(browser);
 		Pageactions page=new Pageactions(browser);
 		ProductStepsValidation validate=new ProductStepsValidation(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");	
-		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
-		wait.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
 	log.info("STEP#2: Selecting the pass option from the status dropdown");	
-		page.clickOnElement(read.getPropertyvalue("loc.passselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.passselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected pass option");
-		 wait.isElementVisible(browser.getDriver(), "loc.duration.txt");
+		 Waits.isElementVisible(browser.getDriver(), "loc.duration.txt");
 	log.info("STEP#3: Creating the list for the test cases and duration of each test case of the product");	
 	    String duration=propReader.getValue("loc.duration.txt");
 		list.listofElements(duration);
@@ -68,7 +67,7 @@ public class TC25_StepsOfProduct extends SampleTestSuiteBase{
 	     String passtestcases=propReader.getValue("loc.passtestcases.txt");
 		list.listofElements(passtestcases);
 	log.info("STEP#5: Clicking on the test case of the product");
-		page.clickOnElement(read.getPropertyvalue("loc.testcase.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.testcase.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected the testcase");
 	log.info("STEP#6: Validating the status option");
 		validate.validateStatusOption();

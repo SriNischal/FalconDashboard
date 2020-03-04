@@ -11,7 +11,6 @@ import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
-import com.atmecs.qa.falcondashboard.utils.Splitting;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 
 /*
@@ -24,14 +23,15 @@ import com.atmecs.qa.falcondashboard.utils.Waits;
  *  
  */
 
-//In this class download option is verified
+//In this class download option is clicked and validated 
 public class TC11_DownloadOption extends SampleTestSuiteBase{
 	LogReport log=new LogReport();
 	ReadLocators read = new ReadLocators();
 	LoadProperties load=new LoadProperties();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
-	
+	String sheetname="REST API TEST RESULT";
+	String columnname="Validation Text";
 	
 	
 	/* 
@@ -42,23 +42,20 @@ public class TC11_DownloadOption extends SampleTestSuiteBase{
 	 */
 	@Test
 	public void downloadOption() throws Exception {
-		Splitting split=new Splitting(browser);
 		Pageactions page=new Pageactions(browser);
-		Waits wait=new Waits(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");	
-		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
-		wait.isElementVisible(browser.getDriver(), "loc.download.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.download.btn");
 	log.info("STEP#2: Clicking on the download option");
-		page.clickOnElement(read.getPropertyvalue("loc.download.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.download.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Clicked on download option");	
 	log.info("STEP#3: Displaying the Download message for the products");	
 	    String actualtooltipmessage=propReader.getValue("loc.downloadmessage.txt");
 	    String message=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();
-	    String productname=split.splitofarray(0).trim();
-	    page.writedata_toExcel(productname, "Validation Text", 36, message);
-	    String expectedtooltipmessage=page.getdata_fromExcel(productname, "Validation Text", "Download Message");
+	    page.writedata_toExcel(sheetname, columnname, 36, message);
+	    String expectedtooltipmessage=page.getdata_fromExcel(sheetname, columnname, "Download Message");
 	    Verify.verifyString(message, expectedtooltipmessage, "Successfully displayed the test cases message");
 	    report.info("Sucessfully validated the tooltip message");
 	}

@@ -22,7 +22,7 @@ import com.atmecs.qa.falcondashboard.utils.Waits;
  *  
  */
 
-//In this class dash board slider is checked
+//In this class dash board slider is selected and validated
 public class TC08_DashboardSlidder extends SampleTestSuiteBase{
 	LoadProperties load=new LoadProperties();
 	ReadLocators read=new ReadLocators();
@@ -33,18 +33,16 @@ public class TC08_DashboardSlidder extends SampleTestSuiteBase{
 	/* In this method checked whether the dash board slider is clicked or not */
 	@Test
 	public void dashboardSlidder() throws Exception {
-		Waits wait=new Waits(browser);
-		ReadLocators read=new ReadLocators();
 		Pageactions page=new Pageactions(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 		log.info("STEP#1: Clicking on the product");	
-		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
-		wait.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
 		log.info("STEP#2: Selecting the dashboard slider option");
-		page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");
-		wait.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
 		page.windowHandle();
 	}
 

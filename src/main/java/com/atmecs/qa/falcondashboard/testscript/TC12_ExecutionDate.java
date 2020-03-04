@@ -33,6 +33,8 @@ public class TC12_ExecutionDate extends SampleTestSuiteBase{
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	LogReport log=new LogReport();
+	String sheetname="REST API TEST RESULT";
+	String columnname="Validation Text";
 	/* 
 	 * This test script covers the following functionalities of product  page.
 	 * 1. Verifying whether the product is clicked or not 
@@ -43,18 +45,16 @@ public class TC12_ExecutionDate extends SampleTestSuiteBase{
 	public void dateOfExecution() throws Exception {
 		 Splitting split=new Splitting(browser);
 		Pageactions page=new Pageactions(browser);
-		Waits wait=new Waits(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");
-		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
-		wait.isElementVisible(browser.getDriver(), "loc.product.txt");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.txt");
 	log.info("STEP#2: Splitting the array and displaying the day and  date of the product");
 		String result=split.splitofdatetime(2);
 	log.info("STEP#3: Validating the date of the product");	 
-	     String productname=split.splitofarray(0).trim();
-	     page.writedata_toExcel(productname, "Validation Text",21, result);
-		 String expected=page.getdata_fromExcel(productname, "Validation Text", "Date");
+	     page.writedata_toExcel(sheetname, columnname,21, result);
+		 String expected=page.getdata_fromExcel(sheetname, columnname, "Date");
 		 Verify.verifyString(result, expected, "Successfully validated the date");
 		 report.info("Successfully validated the date");
 	}

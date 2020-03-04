@@ -26,7 +26,7 @@ import com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation;
  *  
  */
 
-//In this class the content of the failed test cases is displayed and validated
+//In this class the content of the failed test cases are displayed and validated
 public class TC31_FailedTestCases extends SampleTestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
@@ -47,20 +47,19 @@ public class TC31_FailedTestCases extends SampleTestSuiteBase{
 	 */
 	@Test
 	public void failTestCases() throws Exception {
-		Waits wait=new Waits(browser);
 		ElementsList list=new ElementsList(browser);
 		ViewPageValidation validate=new ViewPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");
-		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
-		wait.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
 	log.info("STEP#2: Selecting the dashboard slider option");
-		page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked dashboard slider");
 	log.info("STEP#3: Clicking on fail test cases");
-		page.clickOnElement(read.getPropertyvalue("loc.failedtestcases.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.failedtestcases.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked fail test cases");
 	log.info("STEP#5: Validating the number fail test cases");	
 		validate.validateFailTestCases();
@@ -68,7 +67,7 @@ public class TC31_FailedTestCases extends SampleTestSuiteBase{
 	log.info("STEP#6: Validating the fail message ");	
 		validate.validateFailMessage();
 		report.info("Successfully validated fail message");
-		wait.isElementVisible(browser.getDriver(), "loc.numberoftestcases.txt");
+		Waits.isElementVisible(browser.getDriver(), "loc.numberoftestcases.txt");
 	log.info("STEP#7: Creating a list to display all the test cases present");
 	    String testcases=propReader.getValue("loc.numberoftestcases.txt");
 		list.listofElements(testcases);	

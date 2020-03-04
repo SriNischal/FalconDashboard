@@ -35,7 +35,8 @@ public class TC04_ProductPercentage extends SampleTestSuiteBase {
 	ReadLocators read = new ReadLocators();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-
+	String sheetname="REST API TEST RESULT";
+	String columnname="Validation Text";
 	
 	/* 
 	 * This test script covers the following functionalities of dash board page.
@@ -53,34 +54,34 @@ public class TC04_ProductPercentage extends SampleTestSuiteBase {
 		Waits wait=new Waits(browser);
 		ValidationHelper helper=new ValidationHelper(browser);
 		Pageactions page = new Pageactions(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.pass%trend.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.pass%trend.btn");
 	log.info("STEP#1: Mouse hovering over the pass%Trend of the product");
-	     page.mouseOver(read.getPropertyvalue("loc.pass%trend.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+	     page.mouseOver(ReadLocators.getPropertyvalue("loc.pass%trend.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	     report.info("Successfully mouse hovered the pass%trend");
 	     wait.implicitWait();
 	log.info("STEP#2: Displaying and validating the pass%trend message for the products");	
 	     String product=helper.getData();
-	     String actualtooltipmessage=page.getText(read.getPropertyvalue("loc.pass%trendmessage.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
-	     page.writedata_toExcel(product, "Validation Text", 14, actualtooltipmessage);
+	     String actualtooltipmessage=page.getText(ReadLocators.getPropertyvalue("loc.pass%trendmessage.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
+	     page.writedata_toExcel(sheetname, columnname, 14, actualtooltipmessage);
 	     String expectedtooltipmessage=page.getdata_fromExcel(product, "Validation Text", "Pass%Trend");
 	     Verify.verifyString(actualtooltipmessage, expectedtooltipmessage, "Successfully displayed the test cases message");
 	log.info("STEP#3: Mouse hovering the pass percent of the product and diplayed the value");
-		 page.mouseOver(read.getPropertyvalue("loc.passpercent.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		 page.mouseOver(ReadLocators.getPropertyvalue("loc.passpercent.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	   	 report.info("Successfully mouse hovered over the pass percent");
 	log.info("STEP#4: Displaying the color of the pass pecrntage");
-		 String actualcolor=page.getCssValue(read.getPropertyvalue("loc.passpercent.txt", ProjectBaseConstantPaths.LOCATORS_FILE),"background-color");
+		 String actualcolor=page.getCssValue(ReadLocators.getPropertyvalue("loc.passpercent.txt", ProjectBaseConstantPaths.LOCATORS_FILE),"background-color");
 		 report.info(actualcolor);
 	log.info("STEP#5: Veifying the color of the pass percentage"); 
 	     page.writedata_toExcel(product, "Validation Text", 15, actualcolor);
 		 String expectedcolor= page.getdata_fromExcel(product, "Validation Text", "Pass percent color");
 		 Verify.verifyString(actualcolor, expectedcolor, "Successfully validated the color of the pass percentage");
 		 report.info("Successfully validated the color of the pass percentage");  
-		 wait.isElementVisible(browser.getDriver(), "loc.failpercent.btn");
+		 Waits.isElementVisible(browser.getDriver(), "loc.failpercent.btn");
 	log.info("STEP#6: Mouse hovering the fail percent of the product");
-	     page.mouseOver(read.getPropertyvalue("loc.failpercent.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+	     page.mouseOver(ReadLocators.getPropertyvalue("loc.failpercent.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	     report.info("Successfully mouse hovered over the fail percent and displayed the value");
     log.info("STEP#7: Displaying the color of the fail pecrntage");
-	     String actualfailcolor=page.getCssValue(read.getPropertyvalue("loc.failpercentcolor.txt", ProjectBaseConstantPaths.LOCATORS_FILE), "background-color");
+	     String actualfailcolor=page.getCssValue(ReadLocators.getPropertyvalue("loc.failpercentcolor.txt", ProjectBaseConstantPaths.LOCATORS_FILE), "background-color");
 	     report.info(actualfailcolor);
     log.info("STEP#8: Veifying the color of the pass percentage"); 
          page.writedata_toExcel(product, "Validation Text", 16, actualfailcolor);

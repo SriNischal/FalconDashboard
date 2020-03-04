@@ -25,7 +25,7 @@ import com.atmecs.qa.falcondashboard.validationresults.RecentrunsValidation;
  *  
  */
 
-//In this class the product component is displayed and validated 
+//In this class the product components are  displayed and validated 
 public class TC19_ProductComponent extends SampleTestSuiteBase {
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
@@ -44,29 +44,28 @@ public class TC19_ProductComponent extends SampleTestSuiteBase {
 	 */  
 	@Test
 	public void componentOfProduct() throws Exception {
-		Waits wait=new Waits(browser);
 		ElementsList list=new ElementsList(browser);
 		RecentrunsValidation validate = new RecentrunsValidation(browser);
 		Pageactions page = new Pageactions(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.componentofproduct.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.componentofproduct.btn");
 	log.info("STEP#1: Creating the list to display the components of the products ");
 		String componentslist = propReader.getValue("loc.componentofproduct.btn");
 		list.listofElements(componentslist);
 	log.info("STEP#2: Clicking on the recent runs option");
-		page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on recent runs");
-		wait.isElementVisible(browser.getDriver(), "loc.component.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.component.btn");
 	log.info("STEP#3: Creating the list to display the components of the products");
 		String components = propReader.getValue("loc.componentlist.txt");
 		list.listofElements(components);
 	log.info("STEP#4: Clicking on the component for sorting the data");
-		page.clickOnElement(read.getPropertyvalue("loc.component.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.component.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on component");
 	log.info("STEP#5: Validating the component of the product");
 		validate.validateComponent();
 		report.info("Successfully validated component text");
 	log.info("STEP#6: Clicking on the component of the project for sorting the data ");
-		page.clickOnElement(read.getPropertyvalue("loc.component.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.component.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on component");
 	log.info("STEP#7: Creating the list to display the component of the products");
 		String componentstext= propReader.getValue("loc.componentlist.txt");

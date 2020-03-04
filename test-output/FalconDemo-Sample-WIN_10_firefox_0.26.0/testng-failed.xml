@@ -7,27 +7,27 @@
   <parameter name="browserVersion" value="0.26.0"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC37_EndTime">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow">
         <methods>
-          <include name="preSetup"/>
-          <include name="teardown"/>
-          <include name="endTime"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC37_EndTime -->
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase">
-        <methods>
-          <include name="preSetup"/>
-          <include name="teardown"/>
-          <include name="testPhase"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase -->
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC36_StartTime">
-        <methods>
-          <include name="startTime"/>
+          <include name="maximizeWindow"/>
           <include name="preSetup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC36_StartTime -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage">
+        <methods>
+          <include name="percentageOfProduct"/>
+          <include name="preSetup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation">
+        <methods>
+          <include name="mainNavigation"/>
+          <include name="preSetup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_firefox_0.26.0] -->

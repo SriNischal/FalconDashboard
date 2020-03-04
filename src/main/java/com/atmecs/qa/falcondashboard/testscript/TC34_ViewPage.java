@@ -25,7 +25,7 @@ import com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation;
  *  
  */
 
-//In this class the view page is clicked and validated 
+//In this class the view page is clicked and validated the functionalities present
 public class TC34_ViewPage extends SampleTestSuiteBase{
 	LoadProperties load=new LoadProperties();
 	ReadLocators read=new ReadLocators();
@@ -45,25 +45,24 @@ public class TC34_ViewPage extends SampleTestSuiteBase{
 	 */
 	@Test
 	public void viewPage() throws Exception {
-		Waits wait=new Waits(browser);
 		ViewPageValidation validate=new ViewPageValidation(browser);
 		MainNavigationValidation validation=new MainNavigationValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.view.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.view.btn");
 	log.info("STEP#1: Validating the view  option");	
 		validate.validateText();
 		report.info("Successfully validated views");
 	log.info("STEP#2: Clicking on the views option");	
-		page.clickOnElement(read.getPropertyvalue("loc.view.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		wait.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.view.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		Waits.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
 	log.info("STEP#3: Validating the panel title of the views page");
 	    validation.validateViewPanelTitle();
 	    report.info("Successfully validated the views panel title");
     log.info("STEP#4: Selecting the dashboard slider option");
-	    page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+	    page.clickOnElement(ReadLocators.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");
 	log.info("STEP#5: Clicking on the download option");
-		page.clickOnElement(read.getPropertyvalue("loc.download.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.download.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Clicked on download option");	
 
 	}

@@ -33,6 +33,8 @@ public class TC37_EndTime extends SampleTestSuiteBase {
 	LogReport log = new LogReport();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
+	String sheetname="REST API TEST RESULT";
+	String columnname="Validation Text";
 	/* 
 	 * This test script covers the following functionalities of product  page.
 	 * 1. Verifying whether the product is clicked or not 
@@ -44,16 +46,15 @@ public class TC37_EndTime extends SampleTestSuiteBase {
 	 */
 	@Test
 	public void endTime() throws Exception {
-		 Waits wait=new Waits(browser);
 		 Splitting split=new Splitting(browser);
 		Pageactions page = new Pageactions(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");
-		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
-		wait.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
 	log.info("STEP#2: Selecting the dashboard slider option");
-		page.clickOnElement(read.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");
 	log.info("STEP#3: Displaying the end time text");
 	    String endtime=propReader.getValue("loc.endtime.txt");
@@ -61,14 +62,14 @@ public class TC37_EndTime extends SampleTestSuiteBase {
 	    report.info(time);
 	    report.info("Successfully displayed the end time text");
 	log.info("STEP#4: Validating the start time text");
-	    String expectedendtext=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "End Text");
+	    String expectedendtext=page.getdata_fromExcel(sheetname, columnname, "End Text");
 	    Verify.verifyString(expectedendtext, time, "Successfully validated the text");
 	    report.info("Successfully validated the text");
 	log.info("STEP#5: Splitting the array and displaying the day and  date of the product");
 	     String result=split.splitofdatetime(2);
 	log.info("STEP#6: Validating the date of execution of the product");
-	     page.writedata_toExcel("REST API TEST RESULT", "Validation Text",21, result);
-	     String expected=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Date");
+	     page.writedata_toExcel(sheetname, columnname,21, result);
+	     String expected=page.getdata_fromExcel(sheetname, columnname, "Date");
 	     Verify.verifyString(result, expected, "Successfully validated the date");
 	     report.info("Successfully validated the date");
 	}

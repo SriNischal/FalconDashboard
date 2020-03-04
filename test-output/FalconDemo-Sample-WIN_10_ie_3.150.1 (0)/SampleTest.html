@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 03 20:27:40 IST 2020</td>
+<td>Started on:</td><td>Wed Mar 04 16:23:02 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>256 seconds (256866 ms)</td>
+<tr><td>Total time:</td><td>394 seconds (394360 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,39 +75,26 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC37_EndTime.endTime()'><b>endTime</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC37_EndTime<br/>
-<a href="#Output-365912065" onClick='toggleBox("Output-365912065", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase.testPhase()'><b>testPhase</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase<br/>
+<a href="#Output-1694275780" onClick='toggleBox("Output-1694275780", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-365912065" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-365912065">
-Successfully clicked on product<br/>
-Successfully selected dashboard option<br/>
-<br/>
-Successfully displayed the end time text<br/>
-FAIL : Successfully validated the text expected [] but found [End Time]: ACTUAL : End Time 	EXPECTED :<br/>
-Successfully validated the text<br/>
-Successfully displayed day and date of product<br/>
-PASS : Successfully validated the date : ACTUAL : Mar3,2020 	EXPECTED :Mar3,2020<br/>
-Successfully validated the date<br/>
-Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1 (0)\Screenshots\endTime_1_.png<br/>
+<a href="#Output-1694275780" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1694275780">
+Successfully clicked on the product<br/>
+No such element found with xpath //label[@class='switch pull-right']<br/>
+Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1 (0)\Screenshots\testPhase_1_.png<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: expected [] but found [End Time]
-	at com.atmecs.falcon.automation.verifyresult.VerificationManager.verifyString(VerificationManager.java:250)
-	at com.atmecs.qa.falcondashboard.testscript.TC37_EndTime.endTime(TC37_EndTime.java:65)
+<td><div><pre>java.lang.NullPointerException
+	at com.atmecs.qa.falcondashboard.utils.Pageactions.clickOnElement(Pageactions.java:93)
+	at com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase.testPhase(TC10_TestPhase.java:50)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:830)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace365912065", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace365912065'><pre>java.lang.AssertionError: expected [] but found [End Time]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.atmecs.falcon.automation.verifyresult.VerificationManager.verifyString(VerificationManager.java:250)
-	at com.atmecs.qa.falcondashboard.testscript.TC37_EndTime.endTime(TC37_EndTime.java:65)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1694275780", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1694275780'><pre>java.lang.NullPointerException
+	at com.atmecs.qa.falcondashboard.utils.Pageactions.clickOnElement(Pageactions.java:93)
+	at com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase.testPhase(TC10_TestPhase.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -130,8 +117,8 @@ Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAut
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </pre></div></td>
-<td>27</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC37_EndTime@3589e7c2</td></tr>
+<td>34</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase@7b280b6e</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -142,37 +129,57 @@ Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAut
 </tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder.dashboardSlidder()'><b>dashboardSlidder</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder<br/>
-<a href="#Output-1414805882" onClick='toggleBox("Output-1414805882", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1613417408" onClick='toggleBox("Output-1613417408", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1414805882" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1414805882">
+<a href="#Output-1613417408" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1613417408">
 Successfully clicked on the product<br/>
 Successfully selected dashboard option<br/>
 </div>
 </td>
 <td></td>
-<td>37</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder@72378141</td></tr>
+<td>43</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder@5bc8c5a2</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC37_EndTime.endTime()'><b>endTime</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC37_EndTime<br/>
+<a href="#Output-375879936" onClick='toggleBox("Output-375879936", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-375879936" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-375879936">
+Successfully clicked on product<br/>
+Successfully selected dashboard option<br/>
+End Time<br/>
+Successfully displayed the end time text<br/>
+PASS : Successfully validated the text : ACTUAL : End Time 	EXPECTED :End Time<br/>
+Successfully validated the text<br/>
+Successfully displayed day and date of product<br/>
+PASS : Successfully validated the date : ACTUAL : Mar4,2020 	EXPECTED :Mar4,2020<br/>
+Successfully validated the date<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC37_EndTime@183ae78a</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment.environmentOfProduct()'><b>environmentOfProduct</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment<br/>
-<a href="#Output-858020427" onClick='toggleBox("Output-858020427", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1776186020" onClick='toggleBox("Output-1776186020", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-858020427" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-858020427">
+<a href="#Output-1776186020" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1776186020">
 Successfully clicked on the product<br/>
 Successfully selected dashboard option<br/>
 Successfully validated the environment<br/>
 </div>
 </td>
 <td></td>
-<td>33</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment@296743ff</td></tr>
+<td>49</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment@75c45750</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC36_StartTime.startTime()'><b>startTime</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC36_StartTime<br/>
-<a href="#Output-993841337" onClick='toggleBox("Output-993841337", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-614430509" onClick='toggleBox("Output-614430509", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-993841337" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-993841337">
+<a href="#Output-614430509" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-614430509">
 Successfully clicked on product<br/>
 Successfully selected dashboard option<br/>
 Start Time<br/>
@@ -180,27 +187,13 @@ Successfully displayed the start time text<br/>
 PASS : Successfully validated the text : ACTUAL : Start Time 	EXPECTED :Start Time<br/>
 Successfully validated the text<br/>
 Successfully displayed day and date of product<br/>
-PASS : Successfully validated the date : ACTUAL : Mar3,2020 	EXPECTED :Mar3,2020<br/>
+PASS : Successfully validated the date : ACTUAL : Mar4,2020 	EXPECTED :Mar4,2020<br/>
 Successfully validated the date<br/>
 </div>
 </td>
 <td></td>
-<td>26</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC36_StartTime@7b7a5c65</td></tr>
-<tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase.testPhase()'><b>testPhase</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase<br/>
-<a href="#Output-1903114881" onClick='toggleBox("Output-1903114881", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1903114881" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1903114881">
-Successfully clicked on the product<br/>
-Successfully selected dashboard option<br/>
-Successfully validated the test phase of the product<br/>
-</div>
-</td>
-<td></td>
-<td>27</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase@3e00a1b3</td></tr>
+<td>54</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC36_StartTime@542d755</td></tr>
 </table><p>
 </body>
 </html>

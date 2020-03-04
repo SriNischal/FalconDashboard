@@ -25,7 +25,7 @@ import com.atmecs.qa.falcondashboard.validationresults.RecentrunsValidation;
  *  
  */
 
-//In this  class the product name is validated
+//In this  class the product names are displayed and validated 
 public class TC18_ProductName extends SampleTestSuiteBase {
 	LoadProperties load = new LoadProperties();
 	LogReport log=new LogReport();
@@ -50,9 +50,9 @@ public class TC18_ProductName extends SampleTestSuiteBase {
 		ElementsList list=new ElementsList(browser);
 		RecentrunsValidation validate=new RecentrunsValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.recentruns.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.recentruns.btn");
 	log.info("STEP#1: Clicking on the Recentruns");
-		page.clickOnElement(read.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the recent runs");
 		wait.implicitWait();
 	log.info("STEP#2: Validating the product names");
@@ -63,7 +63,7 @@ public class TC18_ProductName extends SampleTestSuiteBase {
 		list.listofElements(productnames);
 		wait.implicitWait();
 	log.info("STEP#4: Clicking on the product name");
-	    page.clickOnElement(read.getPropertyvalue("loc.productnamestext.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
+	    page.clickOnElement(ReadLocators.getPropertyvalue("loc.productnamestext.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
 	    report.info("Succesfully clicked on the product");
 	log.info("STEP#5: Creating the list to display the product names after sorting");
 	    String productnamesaftersorting=propReader.getValue("loc.productnames.txt");

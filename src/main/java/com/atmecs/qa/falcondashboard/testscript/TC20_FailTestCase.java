@@ -43,31 +43,30 @@ public class TC20_FailTestCase extends SampleTestSuiteBase {
 	 */  
 	@Test
 	public void failTestCasesOfProduct() throws Exception {
-		Waits wait=new Waits(browser);
 		Pageactions page = new Pageactions(browser);
 		DropdownValidation validate=new DropdownValidation(browser);
-		wait.isElementVisible(browser.getDriver(), "loc.product.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");
-		page.clickOnElement(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
-		wait.isElementVisible(browser.getDriver(), "loc.failselectstatus.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.failselectstatus.btn");
 	log.info("STEP#2: Slecting the status option from the dropdown");	
-		page.clickOnElement(read.getPropertyvalue("loc.failselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.failselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Selected the status option"); 
 	log.info("STEP#3: Validating the status option");	
 		 validate.validateFailStatus();
 		report.info("Successfully validated status");
-	    wait.isElementVisible(browser.getDriver(), "loc.testcase.btn");
+	    Waits.isElementVisible(browser.getDriver(), "loc.testcase.btn");
 	log.info("STEP#4: Clicking on the test case of the product");
-		page.clickOnElement(read.getPropertyvalue("loc.testcase.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.testcase.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on test case");
 	log.info("STEP#5: Validating the panel title of the test case");
-	    wait.isElementVisible(browser.getDriver(), "validate.paneltitle.txt");
+	    Waits.isElementVisible(browser.getDriver(), "validate.paneltitle.txt");
 		validate.validateProductPanelTitle();
 		report.info("Successfully validated paneltitle");
 	log.info("STEP#6: Clicking on the error option of the test case");
-		page.clickOnElement(read.getPropertyvalue("loc.error.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		wait.isElementVisible(browser.getDriver(), "validate.errormessage.txt");
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.error.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		Waits.isElementVisible(browser.getDriver(), "validate.errormessage.txt");
 	log.info("STEP#7: Validating the error message of the test case ");
 		validate.validateErrorMessage();
 		report.info("Successfully validated error message");

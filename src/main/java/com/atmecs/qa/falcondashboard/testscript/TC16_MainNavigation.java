@@ -1,11 +1,10 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
-import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.testsuite.TestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
@@ -25,7 +24,7 @@ import com.atmecs.qa.falcondashboard.validationresults.MainNavigationValidation;
  */
 
 //In this class the main navigation options are clicked and validated 
-public class TC16_MainNavigation extends SampleTestSuiteBase{
+public class TC16_MainNavigation extends TestSuiteBase{
 	LoadProperties load=new LoadProperties();
 	ReadLocators read=new ReadLocators();
 	LogReport log=new LogReport();
@@ -60,7 +59,8 @@ public class TC16_MainNavigation extends SampleTestSuiteBase{
 		wait.implicitWait();
 	log.info("STEP#2: Validating the dashboard text");	
 		validate.validateDashboard();
-		report.info("Successfully validated dashboard");  
+		report.info("Successfully validated dashboard"); 
+		Waits.isElementVisible(browser.getDriver(), "loc.recentruns.btn");
 	log.info("STEP#3: Validating on the recent runs option");	
 		validate.validateRecentruns();
 		report.info("Successfully validated recent runs");

@@ -2,10 +2,11 @@ package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
 
+
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
-import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.testsuite.TestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.ElementsList;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
@@ -26,7 +27,7 @@ import com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation;
  */
 
 //In this the content of passed test cases are displayed and validated
-public class TC29_PassedTestCases extends SampleTestSuiteBase{
+public class TC29_PassedTestCases extends TestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
 	LogReport log = new LogReport();
@@ -34,7 +35,7 @@ public class TC29_PassedTestCases extends SampleTestSuiteBase{
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	String sheetname="REST API TEST RESULT";
 	String columnname="Validation Text";
-	
+	String testcases;
 	
 	/* 
 	 * This test script covers the following functionalities
@@ -67,7 +68,7 @@ public class TC29_PassedTestCases extends SampleTestSuiteBase{
 		report.info("Successfully validated pass percentage");
 		Waits.isElementVisible(browser.getDriver(), "loc.numberoftestcases.txt");
 	log.info("STEP#6: Creating a list to display all the test cases present");
-	    String testcases=propReader.getValue("loc.numberoftestcases.txt");
+	    testcases=propReader.getValue("loc.numberoftestcases.txt");
 		list.listofElements(testcases);	
 	}
 }

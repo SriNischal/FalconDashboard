@@ -1,12 +1,13 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.openqa.selenium.WebDriver;
+
 import org.testng.annotations.Test;
 
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
-import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.testsuite.TestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.ElementsList;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
@@ -27,14 +28,14 @@ import com.atmecs.qa.falcondashboard.validationresults.RecentrunsValidation;
  */
 
 //In this classes the last runs in the recent runs page is clicked and validated the last runs
-public class TC35_LastRun extends SampleTestSuiteBase{
+public class TC35_LastRun extends TestSuiteBase{
 	ReadLocators read=new ReadLocators();
 	WebDriver driver; 
 	LoadProperties load=new LoadProperties();
 	LogReport log=new LogReport();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
-	
+	String lastrunsaftersorting;
 	
 	
 	/* 
@@ -70,7 +71,7 @@ public class TC35_LastRun extends SampleTestSuiteBase{
 	    report.info("Successfully clicked on the last runs");
 	   wait.implicitWait();
 	log.info("STEP#5: Creating the list to display the last runs after sorting");
-	    String lastrunsaftersorting=propReader.getValue("loc.lastrun.txt");
+	   lastrunsaftersorting=propReader.getValue("loc.lastrun.txt");
 	   list.listofElements(lastrunsaftersorting);
 	log.info("STEP#6: Comparing the last runs before and after sorting");
 	    boolean compare=lastrunsaftersorting.equals(lastruns);

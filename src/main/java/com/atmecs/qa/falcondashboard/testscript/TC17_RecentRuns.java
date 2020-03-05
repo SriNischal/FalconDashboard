@@ -1,11 +1,10 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
-import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.testsuite.TestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
@@ -26,7 +25,7 @@ import com.atmecs.qa.falcondashboard.validationresults.RecentrunsValidation;
  */
 
 //In this class the recent runs is clicked and validated all the functionalities  
-public class TC17_RecentRuns extends SampleTestSuiteBase{
+public class TC17_RecentRuns extends TestSuiteBase{
 	LoadProperties load=new LoadProperties();
 	LogReport log=new LogReport();
 	ReadingData data=new ReadingData();
@@ -55,6 +54,7 @@ public class TC17_RecentRuns extends SampleTestSuiteBase{
 	log.info("STEP#1: Clicking on the recent runs option");	
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on recent runs");
+		Waits.isElementVisible(browser.getDriver(), "validate.text.txt");
 	log.info("STEP#2: Validating the title of the page");	
 	    validate.validateText();
 		report.info("Successfully validated recentruns");

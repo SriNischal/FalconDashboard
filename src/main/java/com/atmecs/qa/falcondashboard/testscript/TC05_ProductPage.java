@@ -1,12 +1,11 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
-import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.testsuite.TestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.ElementsList;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
@@ -30,7 +29,7 @@ import com.atmecs.qa.falcondashboard.validationresults.ProductPageValidation;
 
 
 //In this class the product name is validated and clicked and list of total test cases is displayed and dash board slider is selected
-public class TC05_ProductPage extends SampleTestSuiteBase {
+public class TC05_ProductPage extends TestSuiteBase {
 	LoadProperties load=new LoadProperties();
 	ReadLocators read = new ReadLocators();
 	ReadingData data = new ReadingData();
@@ -39,6 +38,9 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	String sheetname="REST API TEST RESULT";
 	String columnname="Validation Text";
+	String testcases;
+	String result;
+	String expedctedproducts;
 	/* 
 	 * This test script covers the following functionalities of product page.
 	 * 1. Validating the product name
@@ -67,14 +69,14 @@ public class TC05_ProductPage extends SampleTestSuiteBase {
 		validate.validatePanelTitle();
 		report.info("Successfully validated panel title");
 	log.info("STEP#4: List to display number of test cases present for a product");			
-	    String testcases=propReader.getValue("loc.numberoftestcases.txt");
+	    testcases=propReader.getValue("loc.numberoftestcases.txt");
         lists.listofElements(testcases);
     log.info("STEP#5: Converting the list of products into string products");	
 		lists.separatingElements(testcases);
    log.info("STEP#6: Verifying the list of products");
-		String result = lists.separatingElements(testcases);
+		result = lists.separatingElements(testcases);
 		page.writedata_toExcel(sheetname, columnname, 20, result);
-		String expedctedproducts=page.getdata_fromExcel(sheetname, columnname, "List of Test Cases");
+		expedctedproducts=page.getdata_fromExcel(sheetname, columnname, "List of Test Cases");
 		Verify.verifyString(result, expedctedproducts, "Successfully validaetd the test cases");
 		report.info("Successfully valdated all the test cases");
 	log.info("STEP#7: Selecting the dashboard slider option");

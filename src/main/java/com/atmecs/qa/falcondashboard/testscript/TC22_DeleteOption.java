@@ -2,11 +2,12 @@ package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
 
+
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
-import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.testsuite.TestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
@@ -25,7 +26,7 @@ import com.atmecs.qa.falcondashboard.utils.Waits;
  */
 
 //In this class the delete option is mouse hovered and validated the tool tip message 
-public class TC22_DeleteOption extends SampleTestSuiteBase{
+public class TC22_DeleteOption extends TestSuiteBase{
 	ReadLocators read=new ReadLocators();
 	LoadProperties load=new LoadProperties();
 	LogReport log=new LogReport();
@@ -33,6 +34,9 @@ public class TC22_DeleteOption extends SampleTestSuiteBase{
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	String sheetname="REST API TEST RESULT";
 	String columnname="Validation Text";
+	String message;
+	String actualtooltipmessage;
+	String expectedtooltipmessage;
 	/* 
 	 * This test script covers the following functionalities of recent runs page.
 	 * 1. Verifying whether the recent runs is clicked or not 
@@ -51,10 +55,10 @@ public class TC22_DeleteOption extends SampleTestSuiteBase{
 		 page.mouseOver(ReadLocators.getPropertyvalue("loc.deleteoption.btn",ProjectBaseConstantPaths.LOCATORS_FILE));
 		 report.info("Successfully mouse hovered over the delete option");
 	log.info("STEP#3: Displaying the delete run message for the products");	
-	     String actualtooltipmessage=propReader.getValue("loc.delete.txt");
-	     String message=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();
+	     actualtooltipmessage=propReader.getValue("loc.delete.txt");
+	     message=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();
 	     page.writedata_toExcel(sheetname, columnname, 35, message);
-	     String expectedtooltipmessage=page.getdata_fromExcel(sheetname, columnname, "Delete Product");
+	     expectedtooltipmessage=page.getdata_fromExcel(sheetname, columnname, "Delete Product");
 	     Verify.verifyString(message, expectedtooltipmessage, "Successfully displayed the test cases message");
 	}
 }

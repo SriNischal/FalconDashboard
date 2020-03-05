@@ -17,7 +17,7 @@ public class Splitting{
 	}
 	public String splitofarray(int i) throws Exception {
 		Pageactions page=new Pageactions(browser);
-		String value = page.getText(read.getPropertyvalue("loc.product.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
+		String value = page.getText(ReadLocators.getPropertyvalue("loc.product.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
 		String[] arrOfStr = value.split(":", 3);
 		String date=arrOfStr[i];
 		report.info("Successfully displayed day and date of product");
@@ -25,7 +25,7 @@ public class Splitting{
 	}
 	public String splitofdatetime(int i) throws Exception {
 		Pageactions page=new Pageactions(browser);
-		String product = page.getText(read.getPropertyvalue("loc.product.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
+		String product = page.getText(ReadLocators.getPropertyvalue("loc.product.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
 		String[] arrOfStr = product.split(":", 3);
 		String date=arrOfStr[i];
 		System.out.println(date);

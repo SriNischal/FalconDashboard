@@ -1,11 +1,10 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
-import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.testsuite.TestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
@@ -24,7 +23,7 @@ import com.atmecs.qa.falcondashboard.validationresults.ProductPageValidation;
  */
 
 //In this class the environment of the product is displayed and validated 
-public class TC09_ProductEnvironment extends SampleTestSuiteBase{
+public class TC09_ProductEnvironment extends TestSuiteBase{
 	LogReport log=new LogReport();
 	ReadLocators read = new ReadLocators();
 	LoadProperties load=new LoadProperties();

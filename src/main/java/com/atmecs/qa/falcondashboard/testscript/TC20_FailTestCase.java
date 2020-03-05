@@ -1,11 +1,10 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
-import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.testsuite.TestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
@@ -25,7 +24,7 @@ import com.atmecs.qa.falcondashboard.validationresults.DropdownValidation;
  */
 
 //In this class the error message of the fail test case is displayed and validated 
-public class TC20_FailTestCase extends SampleTestSuiteBase {
+public class TC20_FailTestCase extends TestSuiteBase {
 	LoadProperties load = new LoadProperties();
 	LogReport log = new LogReport();
 	ReadLocators read = new ReadLocators();
@@ -64,6 +63,7 @@ public class TC20_FailTestCase extends SampleTestSuiteBase {
 	    Waits.isElementVisible(browser.getDriver(), "validate.paneltitle.txt");
 		validate.validateProductPanelTitle();
 		report.info("Successfully validated paneltitle");
+		Waits.isElementVisible(browser.getDriver(), "loc.error.btn");
 	log.info("STEP#6: Clicking on the error option of the test case");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.error.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		Waits.isElementVisible(browser.getDriver(), "validate.errormessage.txt");

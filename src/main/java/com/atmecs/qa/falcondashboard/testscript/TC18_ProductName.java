@@ -2,10 +2,11 @@ package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
 
+
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
-import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.testsuite.TestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.ElementsList;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
@@ -26,13 +27,14 @@ import com.atmecs.qa.falcondashboard.validationresults.RecentrunsValidation;
  */
 
 //In this  class the product names are displayed and validated 
-public class TC18_ProductName extends SampleTestSuiteBase {
+public class TC18_ProductName extends TestSuiteBase {
 	LoadProperties load = new LoadProperties();
 	LogReport log=new LogReport();
 	ReadLocators read=new ReadLocators();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-	
+	String productnamesaftersorting;
+	String productnames;
 	
 	
 	/* 
@@ -59,14 +61,14 @@ public class TC18_ProductName extends SampleTestSuiteBase {
 	    validate.validateProductName();
 	    report.info("Successfully validated the product name");
 	log.info("STEP#3: Creating a list to display the names of the product");
-	    String productnames=propReader.getValue("loc.productnames.txt");
+	    productnames=propReader.getValue("loc.productnames.txt");
 		list.listofElements(productnames);
 		wait.implicitWait();
 	log.info("STEP#4: Clicking on the product name");
 	    page.clickOnElement(ReadLocators.getPropertyvalue("loc.productnamestext.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
 	    report.info("Succesfully clicked on the product");
 	log.info("STEP#5: Creating the list to display the product names after sorting");
-	    String productnamesaftersorting=propReader.getValue("loc.productnames.txt");
+	   productnamesaftersorting=propReader.getValue("loc.productnames.txt");
 	   list.listofElements(productnamesaftersorting);
 	log.info("STEP#6: Comparing the product names before and after sorting");
 	    boolean compare=productnamesaftersorting.equals(productnames);

@@ -7,13 +7,6 @@
   <parameter name="browserVersion" value="0.26.0"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption">
-        <methods>
-          <include name="deleteOption"/>
-          <include name="preSetup"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption -->
       <class name="com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns">
         <methods>
           <include name="recentrun"/>

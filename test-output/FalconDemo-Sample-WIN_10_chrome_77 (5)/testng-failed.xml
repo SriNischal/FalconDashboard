@@ -9,8 +9,8 @@
     <classes>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases">
         <methods>
-          <include name="preSetup"/>
           <include name="teardown"/>
+          <include name="preSetup"/>
           <include name="totalTestCases"/>
         </methods>
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases -->

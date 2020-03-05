@@ -9,11 +9,18 @@
     <classes>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases">
         <methods>
-          <include name="preSetup"/>
           <include name="teardown"/>
+          <include name="preSetup"/>
           <include name="dropdownFailedTestCases"/>
         </methods>
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns">
+        <methods>
+          <include name="dropdown"/>
+          <include name="teardown"/>
+          <include name="preSetup"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_ie_3.150.1 (1)] -->

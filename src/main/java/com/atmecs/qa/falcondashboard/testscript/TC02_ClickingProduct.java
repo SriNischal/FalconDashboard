@@ -5,8 +5,7 @@ import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
-import com.atmecs.qa.falcondashboard.helper.ValidationHelper;
-import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.testsuite.TestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.ElementsList;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
@@ -27,7 +26,7 @@ import com.atmecs.qa.falcondashboard.utils.Waits;
  */
 
 //In this the list of products and the recent execution times are validated and clicked on the product
-public class TC02_ClickingProduct extends SampleTestSuiteBase {
+public class TC02_ClickingProduct extends TestSuiteBase {
 	ReadingData data = new ReadingData();
 	LoadProperties load = new LoadProperties();
 	LogReport log = new LogReport();
@@ -35,6 +34,12 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	String sheetname="REST API TEST RESULT";
 	String columnname="Validation Text";
+	String result;
+	String expedctedproducts;
+	String time;
+	String timeofexecution;
+	String products;
+	String expedctedtime;
 	/* 
 	 * This test script covers the following functionalities of dashboard page.
 	 * 1. List of the products available and the size of the products
@@ -45,31 +50,30 @@ public class TC02_ClickingProduct extends SampleTestSuiteBase {
 	 */
 	@Test
 	public void clickingProduct() throws Exception {
-		ValidationHelper helper = new ValidationHelper(browser);
 		ElementsList lists = new ElementsList(browser);
 		Pageactions page = new Pageactions(browser);
 	    Waits.isElementVisible(browser.getDriver(), "loc.products.txt");
 	log.info("STEP#1: List to get all the products and size of products  present on the dashboard page");
-		String products = propReader.getValue("loc.products.txt");
+		products = propReader.getValue("loc.products.txt");
 		lists.listofElements(products);
 	log.info("STEP#2: Converting the list of products into string products");
 		lists.separatingElements(products);
 	log.info("STEP#3: Verifying the list of products");
-		String product = helper.getData();
-		String result = lists.separatingElements(products);
-		page.writedata_toExcel(product, "Validation Text", 11, result);
-		String expedctedproducts = page.getdata_fromExcel(sheetname, columnname, "Products Texts");
+		result = lists.separatingElements(products);
+		page.writedata_toExcel(sheetname, columnname, 11, result);
+		expedctedproducts = page.getdata_fromExcel(sheetname, columnname, "Products Texts");
 		Verify.verifyString(result, expedctedproducts, "Successfully validaetd the products");
 		report.info("Successfully valdated all the products");
 	log.info("STEP#4: To get list of product on dashboard page according to the recent execution time");
-		String time = propReader.getValue("loc.executiontime.txt");
+		time = propReader.getValue("loc.executiontime.txt");
 		lists.listofElements(time);
-		String timeofexecution=lists.separatingElements(time);
+		timeofexecution=lists.separatingElements(time);
 		report.info("Successfully displayed the execution times");
-		page.writedata_toExcel(product, "Validation Text", 12, timeofexecution);
-		String expedctedtime = page.getdata_fromExcel(sheetname, columnname, "Products Recent Execution time");
+		page.writedata_toExcel(sheetname, columnname, 12, timeofexecution);
+		expedctedtime = page.getdata_fromExcel(sheetname, columnname, "Products Recent Execution time");
 		Verify.verifyString(timeofexecution, expedctedtime, "Successfully validaetd the products");
 		report.info("Successfully valdated all the recent execution times");
+		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#5: Clicking on the product");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");

@@ -1,11 +1,10 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
-import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.testsuite.TestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.ElementsList;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
@@ -26,13 +25,13 @@ import com.atmecs.qa.falcondashboard.validationresults.DropdownValidation;
  */
 
 //In this class the skip test cases are displayed
-public class TC15_SkippedTestCases extends SampleTestSuiteBase{
+public class TC15_SkippedTestCases extends TestSuiteBase{
 	LogReport log=new LogReport();
 	ReadLocators read = new ReadLocators();
 	LoadProperties load=new LoadProperties();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
-	
+	String products;
 	
 	
 	/* 
@@ -60,7 +59,7 @@ public class TC15_SkippedTestCases extends SampleTestSuiteBase{
 		report.info("Successfully validated skip status");
 		Waits.isElementVisible(browser.getDriver(), "loc.numberoftestcases.txt");
 	log.info("STEP#4: Creating a list to display the skipped test cases");
-	    String products=propReader.getValue("loc.numberoftestcases.txt");
+	    products=propReader.getValue("loc.numberoftestcases.txt");
 		list.listofElements(products);
 	   report.info("Successfully displayed the failed test cases");
 }

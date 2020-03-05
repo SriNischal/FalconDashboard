@@ -1,11 +1,12 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
+
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
-import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.testsuite.TestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
@@ -26,7 +27,7 @@ import com.atmecs.qa.falcondashboard.utils.Waits;
  */
 
 //In this class the date of last execution of the product is displayed and validated
-public class TC12_ExecutionDate extends SampleTestSuiteBase{
+public class TC12_ExecutionDate extends TestSuiteBase{
 	ReadLocators read=new ReadLocators();
 	LoadProperties load = new LoadProperties();
 	ReadingData data=new ReadingData();
@@ -35,6 +36,8 @@ public class TC12_ExecutionDate extends SampleTestSuiteBase{
 	LogReport log=new LogReport();
 	String sheetname="REST API TEST RESULT";
 	String columnname="Validation Text";
+	String expected;
+	String result;
 	/* 
 	 * This test script covers the following functionalities of product  page.
 	 * 1. Verifying whether the product is clicked or not 
@@ -51,10 +54,10 @@ public class TC12_ExecutionDate extends SampleTestSuiteBase{
 		report.info("Successfully clicked on product");
 		Waits.isElementVisible(browser.getDriver(), "loc.product.txt");
 	log.info("STEP#2: Splitting the array and displaying the day and  date of the product");
-		String result=split.splitofdatetime(2);
+		result=split.splitofdatetime(2);
 	log.info("STEP#3: Validating the date of the product");	 
 	     page.writedata_toExcel(sheetname, columnname,21, result);
-		 String expected=page.getdata_fromExcel(sheetname, columnname, "Date");
+		 expected=page.getdata_fromExcel(sheetname, columnname, "Date");
 		 Verify.verifyString(result, expected, "Successfully validated the date");
 		 report.info("Successfully validated the date");
 	}

@@ -2,10 +2,11 @@ package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
 
+
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
-import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.testsuite.TestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
@@ -25,7 +26,7 @@ import com.atmecs.qa.falcondashboard.validationresults.MainNavigationValidation;
  */
 
 //In this class the product snapshot bar is clicked and validated the tool tip message 
-public class TC24_ProductSnapShot extends SampleTestSuiteBase{
+public class TC24_ProductSnapShot extends TestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
 	LogReport log = new LogReport();

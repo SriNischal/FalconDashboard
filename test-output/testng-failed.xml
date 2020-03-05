@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [FalconDemo-Sample-WIN_10_ie_3.150.1 (2)]">
+<suite name="Failed suite [FalconDemo-Sample-WIN_10_firefox_0.26.0 (5)]">
   <parameter name="os" value="WIN"/>
   <parameter name="osVersion" value="10"/>
-  <parameter name="browser" value="ie"/>
-  <parameter name="browserVersion" value="3.150.1"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases">
         <methods>
-          <include name="preSetup"/>
           <include name="teardown"/>
-          <include name="downloadOption"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption -->
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium">
-        <methods>
+          <include name="passTestCases"/>
           <include name="preSetup"/>
-          <include name="mediumOfProduct"/>
-          <include name="teardown"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases -->
     </classes>
   </test> <!-- SampleTest(failed) -->
-</suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_ie_3.150.1 (2)] -->
+</suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_firefox_0.26.0 (5)] -->

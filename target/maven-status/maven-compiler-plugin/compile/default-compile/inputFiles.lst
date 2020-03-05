@@ -37,6 +37,7 @@ C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\testscript\TC30_ColorOfFailedTestCases.java
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\testscript\TC12_ExecutionDate.java
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\testscript\TC19_ProductComponent.java
+C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\testsuite\TestSuiteBase.java
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\utils\LoadProperties.java
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\validationresults\DashboardPageValidation.java
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\testscript\TC04_ProductPercentage.java
@@ -47,7 +48,6 @@ C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\testscript\TC06_ProductMedium.java
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\testscript\TC01_DashBoardPage.java
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\testscript\TC25_StepsOfProduct.java
-C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\testsuite\SampleTestSuiteBase.java
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\testscript\TC05_ProductPage.java
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\testscript\TC10_TestPhase.java
 C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\src\main\java\com\atmecs\qa\falcondashboard\testscript\TC32_ColorOfSkippedTestCases.java

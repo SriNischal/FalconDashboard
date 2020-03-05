@@ -22,7 +22,7 @@ public class ValidationHelper {
 	public void getDataofRow(String expectedString,String validationMessage,int i) throws Exception
 	{
 		String actualproduct;
-        actualproduct=page.getText(read.getPropertyvalue(validationMessage,ProjectBaseConstantPaths.LOCATORS_FILE));
+        actualproduct=page.getText(ReadLocators.getPropertyvalue(validationMessage,ProjectBaseConstantPaths.LOCATORS_FILE));
         page.writedata_toExcel("REST API TEST RESULT", "Validation Text", i, actualproduct);
 		Assert.assertEquals(actualproduct, expectedString);
 		log.info("Successfully validated " + expectedString);
@@ -31,13 +31,13 @@ public class ValidationHelper {
 	}
 	
 	public String getData() throws Exception {
-		String product=page.getText(read.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		String product=page.getText(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		System.out.println("productname: "+product);
 		return product;
 	}
 	
 	public String getDataFromUi() throws Exception {
-		String pagetitle = page.getText(read.getPropertyvalue("loc.recentrunspagetitle.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
+		String pagetitle = page.getText(ReadLocators.getPropertyvalue("loc.recentrunspagetitle.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
 		String[] arrOfStr = pagetitle.split(":", 3);
 		String productname=arrOfStr[0].trim();
 		System.out.println(productname);

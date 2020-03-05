@@ -1,11 +1,10 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
-import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.testsuite.TestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
@@ -25,12 +24,13 @@ import com.atmecs.qa.falcondashboard.validationresults.DropdownValidation;
  */
 
 //In this class the drop downs are displayed and validated
-public class TC07_Dropdowns extends SampleTestSuiteBase {
+public class TC07_Dropdowns extends TestSuiteBase {
 	LoadProperties load=new LoadProperties();
 	LogReport log=new LogReport();
 	ReadLocators read = new ReadLocators();
 	ReadingData data = new ReadingData();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
+	String locatorvalue;
 	/* 
 	 * This test script covers the following functionalities of product page.
 	 * 1. Verifying whether the product is clicked or not 
@@ -51,7 +51,7 @@ public class TC07_Dropdowns extends SampleTestSuiteBase {
 		report.info("Successfully clicked on the product");
 	    Waits.isElementVisible(browser.getDriver(), "loc.customer.txt");
 	log.info("STEP#2: Selecting the customer option from the dropdown");
-	    String locatorvalue=ReadLocators.getPropertyvalue("loc.customer.txt", ProjectBaseConstantPaths.LOCATORS_FILE);
+	    locatorvalue=ReadLocators.getPropertyvalue("loc.customer.txt", ProjectBaseConstantPaths.LOCATORS_FILE);
 		page.clickOnElement(locatorvalue);
 		report.info("Successfully selected customer option");
 	log.info("STEP#3: Validating the customer dropdown  value");	

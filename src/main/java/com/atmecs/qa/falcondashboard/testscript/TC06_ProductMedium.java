@@ -5,7 +5,7 @@ import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
-import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.testsuite.TestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
@@ -25,7 +25,7 @@ import com.atmecs.qa.falcondashboard.utils.Waits;
  */
 
 //In this class the medium of the product is displayed and validated
-public class TC06_ProductMedium extends SampleTestSuiteBase{
+public class TC06_ProductMedium extends TestSuiteBase{
 	LogReport log=new LogReport();
 	ReadLocators read=new ReadLocators();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
@@ -33,7 +33,8 @@ public class TC06_ProductMedium extends SampleTestSuiteBase{
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	String sheetname="REST API TEST RESULT";
 	String columnname="Validation Text";
-	
+	String product;
+	String expectedmedium;
 	/* 
 	 * This test script covers the following functionalities of product  page.
 	 * 1. The product is clicked
@@ -50,11 +51,11 @@ public class TC06_ProductMedium extends SampleTestSuiteBase{
 		report.info("Successfully clicked on product");
 		Waits.isElementVisible(browser.getDriver(),"loc.product.txt");
 	log.info("STEP#2: Splitting the array and displaying the medium of the product");
-		String product = split.splitofarray(1);
+		product = split.splitofarray(1);
 		report.info("Successfully displayed medium of product");
 	log.info("STEP#3: validating the medium of the project");
 	    page.writedata_toExcel(sheetname, columnname, 19, product);
-        String expectedmedium=page.getdata_fromExcel(sheetname, columnname, "Medium"); 
+        expectedmedium=page.getdata_fromExcel(sheetname, columnname, "Medium"); 
         Verify.verifyString(product, expectedmedium, "Successfully validated the medium of the product");
         report.info("Successfully validated the medium of the product"); 
         page.windowHandle();

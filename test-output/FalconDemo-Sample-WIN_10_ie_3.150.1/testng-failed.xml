@@ -7,18 +7,11 @@
   <parameter name="browserVersion" value="3.150.1"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation">
-        <methods>
-          <include name="mainNavigation"/>
-          <include name="preSetup"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation -->
       <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow">
         <methods>
           <include name="maximizeWindow"/>
-          <include name="preSetup"/>
           <include name="teardown"/>
+          <include name="preSetup"/>
         </methods>
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow -->
     </classes>

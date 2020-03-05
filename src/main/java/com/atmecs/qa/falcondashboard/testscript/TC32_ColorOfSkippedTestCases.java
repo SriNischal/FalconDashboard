@@ -1,11 +1,12 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
+
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
-import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.testsuite.TestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
@@ -24,7 +25,7 @@ import com.atmecs.qa.falcondashboard.utils.Waits;
  */
 
 //In this the color of the skiped test cases is displayed and validated 
-public class TC32_ColorOfSkippedTestCases extends SampleTestSuiteBase{
+public class TC32_ColorOfSkippedTestCases extends TestSuiteBase{
 	LoadProperties load = new LoadProperties();
 	ReadLocators read = new ReadLocators();
 	LogReport log = new LogReport();
@@ -32,8 +33,9 @@ public class TC32_ColorOfSkippedTestCases extends SampleTestSuiteBase{
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	String sheetname="REST API TEST RESULT";
 	String columnname="Validation Text";
-	
-	
+	String expectedcolor;
+	String actualcolor;
+	String color;
 	/* 
 	 * This test script covers the following functionalities
 	 * 1. Verifying whether the product is clicked or not 
@@ -55,11 +57,11 @@ public class TC32_ColorOfSkippedTestCases extends SampleTestSuiteBase{
 		report.info("Successfully selected dashboard option");
 	log.info("STEP#3: Displaying the color of the total test case box");
 	    wait.implicitWait();
-	    String color=propReader.getValue("validate.colorofskiptestcases.txt");
-	    String actualcolor=browser.getFindFromBrowser().findElementByXpath(color).getCssValue("background-color");
+	    color=propReader.getValue("validate.colorofskiptestcases.txt");
+	    actualcolor=browser.getFindFromBrowser().findElementByXpath(color).getCssValue("background-color");
 	log.info("STEP#4: Veifying the color of the total test case box"); 
 	    page.writedata_toExcel(sheetname, columnname, 34, actualcolor);
-	    String expectedcolor= page.getdata_fromExcel(sheetname, columnname, "Color of skip test cases");
+	    expectedcolor= page.getdata_fromExcel(sheetname, columnname, "Color of skip test cases");
 	    Verify.verifyString(actualcolor, expectedcolor, "Successfully validated the color of the skip test cases box");
 	    report.info("Successfully validated the color of the skip test cases box");
 	}

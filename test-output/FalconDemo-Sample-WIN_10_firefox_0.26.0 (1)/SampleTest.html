@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Mar 04 17:11:03 IST 2020</td>
+<td>Started on:</td><td>Thu Mar 05 18:30:03 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>245 seconds (245565 ms)</td>
+<tr><td>Total time:</td><td>215 seconds (215905 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,34 +75,55 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns.dropdown()'><b>dropdown</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns<br/>
-<a href="#Output-1136089116" onClick='toggleBox("Output-1136089116", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases.dropdownSkippedTestCases()'><b>dropdownSkippedTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases<br/>
+<a href="#Output-1170550267" onClick='toggleBox("Output-1170550267", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1136089116" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1136089116">
-Successfully clicked on the product<br/>
-Successfully selected customer option<br/>
-Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_firefox_0.26.0 (1)\Screenshots\dropdown_1_.png<br/>
+<a href="#Output-1170550267" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1170550267">
+Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_firefox_0.26.0 (1)\Screenshots\dropdownSkippedTestCases_1_.png<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: expected [row Customer or column -1 does not exist  in xlsx] but found [Falcon]
-	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:27)
-	at com.atmecs.qa.falcondashboard.validationresults.DropdownValidation.validateCustomer(DropdownValidation.java:23)
-	at com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns.dropdown(TC07_Dropdowns.java:58)
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;h4 class=&quot;media-box-heading ng-binding&quot;&gt; is not clickable at point (573,183) because another element &lt;div class=&quot;block-ui-overlay&quot;&gt; obscures it
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ATMECSINLT-060&apos;, ip: &apos;55.55.52.253&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 76080, moz:profile: C:\Users\srinischal.thipara..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d519dfd0-b25c-4ebe-97de-9f3be3498510
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.atmecs.qa.falcondashboard.utils.Pageactions.clickOnElement(Pageactions.java:93)
+	at com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases.dropdownSkippedTestCases(TC15_SkippedTestCases.java:51)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:830)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1136089116", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1136089116'><pre>java.lang.AssertionError: expected [row Customer or column -1 does not exist  in xlsx] but found [Falcon]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:27)
-	at com.atmecs.qa.falcondashboard.validationresults.DropdownValidation.validateCustomer(DropdownValidation.java:23)
-	at com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns.dropdown(TC07_Dropdowns.java:58)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1170550267", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1170550267'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;h4 class=&quot;media-box-heading ng-binding&quot;&gt; is not clickable at point (573,183) because another element &lt;div class=&quot;block-ui-overlay&quot;&gt; obscures it
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ATMECSINLT-060&apos;, ip: &apos;55.55.52.253&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 76080, moz:profile: C:\Users\srinischal.thipara..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d519dfd0-b25c-4ebe-97de-9f3be3498510
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.atmecs.qa.falcondashboard.utils.Pageactions.clickOnElement(Pageactions.java:93)
+	at com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases.dropdownSkippedTestCases(TC15_SkippedTestCases.java:51)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -125,8 +146,8 @@ Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAut
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </pre></div></td>
-<td>22</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns@4216a502</td></tr>
+<td>13</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases@6051d011</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -136,11 +157,29 @@ Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAut
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases.dropdownFailedTestCases()'><b>dropdownFailedTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases<br/>
-<a href="#Output-1778036277" onClick='toggleBox("Output-1778036277", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns.dropdown()'><b>dropdown</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns<br/>
+<a href="#Output-1467199613" onClick='toggleBox("Output-1467199613", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1778036277" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1778036277">
+<a href="#Output-1467199613" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1467199613">
+Successfully clicked on the product<br/>
+Successfully selected customer option<br/>
+Successfully validated customer<br/>
+Successfully selected the module option<br/>
+Successfully validated module<br/>
+Selected the status option<br/>
+Successfully validated status<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns@c04db35</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases.dropdownFailedTestCases()'><b>dropdownFailedTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases<br/>
+<a href="#Output-1680544632" onClick='toggleBox("Output-1680544632", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1680544632" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1680544632">
 Successfully clicked on product<br/>
 Selected the fail status option<br/>
 Successfully validated fail status<br/>
@@ -148,14 +187,14 @@ Successfully displayed the fail test cases<br/>
 </div>
 </td>
 <td></td>
-<td>34</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases@31dd87c7</td></tr>
+<td>32</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases@4c1d2db5</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases.dropdownPassedTestCases()'><b>dropdownPassedTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases<br/>
-<a href="#Output-1535722620" onClick='toggleBox("Output-1535722620", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2054848622" onClick='toggleBox("Output-2054848622", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1535722620" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1535722620">
+<a href="#Output-2054848622" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2054848622">
 Successfully clicked on product<br/>
 Selected the pass status option<br/>
 Successfully validated pass status<br/>
@@ -163,23 +202,8 @@ Successfully validated the list of pass test cases<br/>
 </div>
 </td>
 <td></td>
-<td>33</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases@1a1a4c5d</td></tr>
-<tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases.dropdownSkippedTestCases()'><b>dropdownSkippedTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases<br/>
-<a href="#Output-1943181551" onClick='toggleBox("Output-1943181551", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1943181551" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1943181551">
-Successfully clicked on product<br/>
-Selected the skip status option<br/>
-Successfully validated skip status<br/>
-Successfully displayed the failed test cases<br/>
-</div>
-</td>
-<td></td>
 <td>32</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases@12717469</td></tr>
+<td>com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases@73cf6475</td></tr>
 </table><p>
 </body>
 </html>

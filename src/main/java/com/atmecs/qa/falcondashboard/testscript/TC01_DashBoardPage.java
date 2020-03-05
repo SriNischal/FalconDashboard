@@ -5,7 +5,7 @@ import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
-import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.testsuite.TestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
@@ -25,7 +25,7 @@ import com.atmecs.qa.falcondashboard.validationresults.DashboardPageValidation;
 
 //In this the functionalities of the dash board page are validated they are text,logo text and verified the refresh option
 
-public class TC01_DashBoardPage extends SampleTestSuiteBase {
+public class TC01_DashBoardPage extends TestSuiteBase {
 
 	ReadLocators read = new ReadLocators();
 	LoadProperties load = new LoadProperties();
@@ -34,6 +34,8 @@ public class TC01_DashBoardPage extends SampleTestSuiteBase {
 	LogReport log = new LogReport();
 	String sheetname="REST API TEST RESULT";
 	String columnname="Validation Text";
+	String actualtitle;
+	String expectedtitle; 
 	/* 
 	 * This test script covers the following functionalities of dashboard page.
 	 * 1. Page title validation
@@ -47,8 +49,8 @@ public class TC01_DashBoardPage extends SampleTestSuiteBase {
 		DashboardPageValidation validate = new DashboardPageValidation(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.refresh.btn");
 	log.info("STEP#1: Page title validation");
-		String actualtitle = browser.getCurrentPageTitle();
-		String expectedtitle = data.getdata_fromExcel(sheetname, columnname, "Page URL");
+		actualtitle = browser.getCurrentPageTitle();
+	    expectedtitle = data.getdata_fromExcel(sheetname, columnname, "Page URL");
 		Verify.verifyString(actualtitle, expectedtitle, "Verifying String Message ");
 		report.info("successfully validated page title");
 	log.info("STEP#2: Dashboard Text validation");

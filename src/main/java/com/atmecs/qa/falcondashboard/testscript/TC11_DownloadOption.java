@@ -5,7 +5,7 @@ import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
-import com.atmecs.qa.falcondashboard.testsuite.SampleTestSuiteBase;
+import com.atmecs.qa.falcondashboard.testsuite.TestSuiteBase;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
@@ -24,7 +24,7 @@ import com.atmecs.qa.falcondashboard.utils.Waits;
  */
 
 //In this class download option is clicked and validated 
-public class TC11_DownloadOption extends SampleTestSuiteBase{
+public class TC11_DownloadOption extends TestSuiteBase{
 	LogReport log=new LogReport();
 	ReadLocators read = new ReadLocators();
 	LoadProperties load=new LoadProperties();
@@ -32,8 +32,9 @@ public class TC11_DownloadOption extends SampleTestSuiteBase{
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	String sheetname="REST API TEST RESULT";
 	String columnname="Validation Text";
-	
-	
+	 String actualtooltipmessage;
+	 String message;
+	 String expectedtooltipmessage;
 	/* 
 	 * This test script covers the following functionalities of product  page.
 	 * 1. Verifying whether the product is clicked or not 
@@ -52,10 +53,10 @@ public class TC11_DownloadOption extends SampleTestSuiteBase{
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.download.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Clicked on download option");	
 	log.info("STEP#3: Displaying the Download message for the products");	
-	    String actualtooltipmessage=propReader.getValue("loc.downloadmessage.txt");
-	    String message=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();
+	    actualtooltipmessage=propReader.getValue("loc.downloadmessage.txt");
+	    message=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();
 	    page.writedata_toExcel(sheetname, columnname, 36, message);
-	    String expectedtooltipmessage=page.getdata_fromExcel(sheetname, columnname, "Download Message");
+	    expectedtooltipmessage=page.getdata_fromExcel(sheetname, columnname, "Download Message");
 	    Verify.verifyString(message, expectedtooltipmessage, "Successfully displayed the test cases message");
 	    report.info("Sucessfully validated the tooltip message");
 	}

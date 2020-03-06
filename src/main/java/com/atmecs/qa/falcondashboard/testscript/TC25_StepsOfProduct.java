@@ -1,5 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
@@ -15,6 +17,9 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.ProductStepsValidation;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 /*
  * 
@@ -35,6 +40,14 @@ public class TC25_StepsOfProduct extends TestSuiteBase{
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	String passtestcases;
 	String duration;
+	static ExtentTest test;
+	static ExtentReports extentreport;
+	String actualtitle;
+	@BeforeClass
+	public static void startTest() {
+		extentreport = new ExtentReports(ProjectBaseConstantPaths.EXTENT_REPORTFILE);
+		test = extentreport.startTest("StepsOfProduct");
+	}
 	/* 
 	 * This test script covers the following functionalities of recent runs page.
 	 * 1. Verifying whether the product is clicked or not
@@ -57,6 +70,7 @@ public class TC25_StepsOfProduct extends TestSuiteBase{
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
 		Waits.isElementVisible(browser.getDriver(), "loc.passselectstatus.btn");
+		actualtitle = browser.getCurrentPageTitle();
 	log.info("STEP#2: Selecting the pass option from the status dropdown");	
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.passselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected pass option");
@@ -83,8 +97,16 @@ public class TC25_StepsOfProduct extends TestSuiteBase{
 	log.info("STEP#9: Validating the Request body text");
 		validate.validateRequestBody();
 		report.info("Successfully validated Request Body");
-		
+		if (browser.getDriver().getTitle().equals(actualtitle)) {
+			test.log(LogStatus.PASS, "Navigated to the specified URL");
+		} else {
+			test.log(LogStatus.FAIL, "Test Failed");
+		}
+	}
+	@AfterClass
+	public static void endTest() {
+		extentreport.endTest(test);
+		extentreport.flush();
+	}
 		
 	}
-
-}

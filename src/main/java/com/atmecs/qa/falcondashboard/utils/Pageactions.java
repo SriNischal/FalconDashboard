@@ -112,13 +112,9 @@ public class Pageactions  {
 		}
 		public String randomnumber(String locator) throws Exception {
 			int randomnumber = random.generateRandomNumber();
-			System.out.println(randomnumber);
 			String number = Integer.toString(randomnumber);
-			System.out.println(number);
 			String locatorvalue = ReadLocators.getPropertyvalue(locator, ProjectBaseConstantPaths.LOCATORS_FILE);
-			System.out.println(locatorvalue + ".....xpath");
 			String Locator = locatorvalue.replace("*", number);
-			System.out.println(Locator);
 			return Locator;
 		}
 		

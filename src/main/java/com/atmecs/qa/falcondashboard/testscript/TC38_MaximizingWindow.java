@@ -1,5 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
@@ -14,6 +16,9 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.DashboardPageValidation;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 /*
  * 
@@ -32,8 +37,14 @@ public class TC38_MaximizingWindow extends TestSuiteBase{
 	LogReport log = new LogReport();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
-	
-	
+	static ExtentTest test;
+	static ExtentReports extentreport;
+	String actualtitle;
+	@BeforeClass
+	public static void startTest() {
+		extentreport = new ExtentReports(ProjectBaseConstantPaths.EXTENT_REPORTFILE);
+		test = extentreport.startTest("MaximizingWindow");
+	}
 	
 	/* 
 	 * This test script covers the following functionalities of dashboard page.
@@ -47,6 +58,7 @@ public class TC38_MaximizingWindow extends TestSuiteBase{
 		Pageactions page=new Pageactions(browser);
 		DashboardPageValidation validate = new DashboardPageValidation(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.expand.btn");
+		actualtitle = browser.getCurrentPageTitle();
 	log.info("STEP#1: Clicking on the expand button");	
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.expand.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the expand button");
@@ -63,5 +75,15 @@ public class TC38_MaximizingWindow extends TestSuiteBase{
 	log.info("STEP#5: Clicking on the expand button");	
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.expand.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the expand button");
+		if (browser.getDriver().getTitle().equals(actualtitle)) {
+			test.log(LogStatus.PASS, "Navigated to the specified URL");
+		} else {
+			test.log(LogStatus.FAIL, "Test Failed");
+		}
 	}
-}
+	@AfterClass
+	public static void endTest() {
+		extentreport.endTest(test);
+		extentreport.flush();
+	}
+	}

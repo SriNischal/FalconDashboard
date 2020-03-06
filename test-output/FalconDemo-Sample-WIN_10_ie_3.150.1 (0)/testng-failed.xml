@@ -10,8 +10,8 @@
       <class name="com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder">
         <methods>
           <include name="dashboardSlidder"/>
-          <include name="preSetup"/>
           <include name="teardown"/>
+          <include name="preSetup"/>
         </methods>
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder -->
     </classes>

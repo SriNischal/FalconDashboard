@@ -20,5 +20,7 @@ public class ProjectBaseConstantPaths {
 	public final static String LOG$J_FILE = USER_HOME + "src/test/resources" + File.separator + "log4j.properties";
 	
 	public final static String EXCEL_FILE=USER_HOME+"src/main/resources" +File.separator + "testdata" +File.separator+ "falcondashboard.xlsx";
+	
+	public static final String EXTENT_REPORTFILE =  USER_HOME + "extentreport.html";
 
 }

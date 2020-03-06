@@ -1,5 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -12,6 +14,9 @@ import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.MainNavigationValidation;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 /*
  * 
@@ -30,7 +35,14 @@ public class TC16_MainNavigation extends TestSuiteBase{
 	LogReport log=new LogReport();
 	ReadingData data=new ReadingData();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-	
+	static ExtentTest test;
+	static ExtentReports extentreport;
+	String actualtitle;
+	@BeforeClass
+	public static void startTest() {
+		extentreport = new ExtentReports(ProjectBaseConstantPaths.EXTENT_REPORTFILE);
+		test = extentreport.startTest("MainNavigation");
+	}
 	
 	
 	/* 
@@ -52,6 +64,7 @@ public class TC16_MainNavigation extends TestSuiteBase{
 		MainNavigationValidation validate=new MainNavigationValidation(browser);
 		Pageactions page=new Pageactions(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.mainnavigation.btn");
+		actualtitle = browser.getCurrentPageTitle();
 	log.info("STEP#1: Clicking on the main navigation bar");	
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.mainnavigation.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		Waits.isElementVisible(browser.getDriver(), "loc.mainnavigation.btn");
@@ -82,9 +95,20 @@ public class TC16_MainNavigation extends TestSuiteBase{
 	log.info("STEP#9: Validating the views panel title");	
 		validate.validateViewPanelTitle();
 		report.info("Successfully validated panelview");
+		Waits.isElementVisible(browser.getDriver(), "validate.productsnapshot.txt");
 	log.info("STEP#10: Validating the product snapshot text");	
 		validate.validateProductSnapshotText();
 		report.info("Successfully validated product snapshot");
+		if (browser.getDriver().getTitle().equals(actualtitle)) {
+			test.log(LogStatus.PASS, "Navigated to the specified URL");
+		} else {
+			test.log(LogStatus.FAIL, "Test Failed");
+		}
+	}
+	@AfterClass
+	public static void endTest() {
+		extentreport.endTest(test);
+		extentreport.flush();
+	}
 	}
 
-}

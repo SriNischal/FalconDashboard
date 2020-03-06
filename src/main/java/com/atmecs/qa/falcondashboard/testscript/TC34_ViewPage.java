@@ -1,5 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
@@ -15,6 +17,9 @@ import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.MainNavigationValidation;
 import com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 /*
  * 
@@ -33,7 +38,14 @@ public class TC34_ViewPage extends TestSuiteBase{
 	LogReport log=new LogReport();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-	
+	static ExtentTest test;
+	static ExtentReports extentreport;
+	String actualtitle;
+	@BeforeClass
+	public static void startTest() {
+		extentreport = new ExtentReports(ProjectBaseConstantPaths.EXTENT_REPORTFILE);
+		test = extentreport.startTest("ViewPage");
+	}
 	
 	
 	/* 
@@ -50,6 +62,7 @@ public class TC34_ViewPage extends TestSuiteBase{
 		MainNavigationValidation validation=new MainNavigationValidation(browser);
 		Pageactions page=new Pageactions(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.view.btn");
+		actualtitle = browser.getCurrentPageTitle();
 	log.info("STEP#1: Validating the view  option");	
 		validate.validateText();
 		report.info("Successfully validated views");
@@ -65,6 +78,15 @@ public class TC34_ViewPage extends TestSuiteBase{
 	log.info("STEP#5: Clicking on the download option");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.download.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Clicked on download option");	
-
+		if (browser.getDriver().getTitle().equals(actualtitle)) {
+			test.log(LogStatus.PASS, "Navigated to the specified URL");
+		} else {
+			test.log(LogStatus.FAIL, "Test Failed");
+		}
 	}
-}
+	@AfterClass
+	public static void endTest() {
+		extentreport.endTest(test);
+		extentreport.flush();
+	}
+	}

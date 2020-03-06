@@ -1,5 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
@@ -14,6 +16,9 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
 import com.atmecs.qa.falcondashboard.utils.Waits;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 /*
  * 
@@ -40,6 +45,14 @@ public class TC02_ClickingProduct extends TestSuiteBase {
 	String timeofexecution;
 	String products;
 	String expedctedtime;
+	String actualtitle;
+	static ExtentTest test;
+	static ExtentReports extentreport;
+	@BeforeClass
+	public static void startTest() {
+		extentreport = new ExtentReports(ProjectBaseConstantPaths.EXTENT_REPORTFILE);
+		test = extentreport.startTest("ClickingProduct");
+	}
 	/* 
 	 * This test script covers the following functionalities of dashboard page.
 	 * 1. List of the products available and the size of the products
@@ -53,6 +66,7 @@ public class TC02_ClickingProduct extends TestSuiteBase {
 		ElementsList lists = new ElementsList(browser);
 		Pageactions page = new Pageactions(browser);
 	    Waits.isElementVisible(browser.getDriver(), "loc.products.txt");
+	    actualtitle = browser.getCurrentPageTitle();
 	log.info("STEP#1: List to get all the products and size of products  present on the dashboard page");
 		products = propReader.getValue("loc.products.txt");
 		lists.listofElements(products);
@@ -62,7 +76,7 @@ public class TC02_ClickingProduct extends TestSuiteBase {
 		result = lists.separatingElements(products);
 		page.writedata_toExcel(sheetname, columnname, 11, result);
 		expedctedproducts = page.getdata_fromExcel(sheetname, columnname, "Products Texts");
-		Verify.verifyString(result, expedctedproducts, "Successfully validaetd the products");
+		Verify.verifyString(result, expedctedproducts, "Validating the product names is same as expected or not");
 		report.info("Successfully valdated all the products");
 	log.info("STEP#4: To get list of product on dashboard page according to the recent execution time");
 		time = propReader.getValue("loc.executiontime.txt");
@@ -71,13 +85,24 @@ public class TC02_ClickingProduct extends TestSuiteBase {
 		report.info("Successfully displayed the execution times");
 		page.writedata_toExcel(sheetname, columnname, 12, timeofexecution);
 		expedctedtime = page.getdata_fromExcel(sheetname, columnname, "Products Recent Execution time");
-		Verify.verifyString(timeofexecution, expedctedtime, "Successfully validaetd the products");
+		Verify.verifyString(timeofexecution, expedctedtime, "Validating the recent execution times of the products is same as expected or not");
 		report.info("Successfully valdated all the recent execution times");
 		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#5: Clicking on the product");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
 		page.windowHandle();
+		if (browser.getDriver().getTitle().equals(actualtitle)) {
+			test.log(LogStatus.PASS, "Navigated to the specified URL");
+		} else {
+			test.log(LogStatus.FAIL, "Test Failed");
+		}
+	}
+	@AfterClass
+	public static void endTest() {
+		extentreport.endTest(test);
+		extentreport.flush();
+	}
 		/*
 		 * log.info("STEP#7: Clicking on each every product "); for (int x = 0; x <
 		 * index; x++) { WebElement client = list.get(x); client.click();
@@ -90,7 +115,6 @@ public class TC02_ClickingProduct extends TestSuiteBase {
 		 */
 
 	}
-}
 
 /*
  * log.info("STEP#6: Clicking on the product"); //for (int x = 0; x < index;

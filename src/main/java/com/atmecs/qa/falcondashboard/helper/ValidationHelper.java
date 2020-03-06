@@ -14,7 +14,8 @@ public class ValidationHelper {
 	LogReport log=new LogReport();
 	ReadLocators read=new ReadLocators();
 	Pageactions page;
-	
+	String sheetname="REST API TEST RESULT";
+	String columnname="Validation Text";
 	public ValidationHelper(Browser browser) {
 		this.browser = browser;
 		page=new Pageactions(browser);
@@ -23,16 +24,13 @@ public class ValidationHelper {
 	{
 		String actualproduct;
         actualproduct=page.getText(ReadLocators.getPropertyvalue(validationMessage,ProjectBaseConstantPaths.LOCATORS_FILE));
-        page.writedata_toExcel("REST API TEST RESULT", "Validation Text", i, actualproduct);
-		Assert.assertEquals(actualproduct, expectedString);
+        page.writedata_toExcel(sheetname,columnname, i, actualproduct);
+		Assert.assertEquals(actualproduct, expectedString,"Validating the "+actualproduct+" is same as expected or not");
 		log.info("Successfully validated " + expectedString);
-		System.out.println(actualproduct);
-		System.out.println(expectedString);
 	}
 	
 	public String getData() throws Exception {
 		String product=page.getText(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		System.out.println("productname: "+product);
 		return product;
 	}
 	

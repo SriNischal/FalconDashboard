@@ -1,5 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
@@ -13,6 +15,9 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.RandomNumber;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Waits;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 /*
  * 
@@ -41,6 +46,14 @@ public class TC04_ProductPercentage extends TestSuiteBase {
 	String expectedtooltipmessage;
 	String actualcolor;
 	String expectedcolor;
+	static ExtentTest test;
+	static ExtentReports extentreport;
+	String actualtitle;
+	@BeforeClass
+	public static void startTest() {
+		extentreport = new ExtentReports(ProjectBaseConstantPaths.EXTENT_REPORTFILE);
+		test = extentreport.startTest("ProductPercentage");
+	}
 	/* 
 	 * This test script covers the following functionalities of dash board page.
 	 * 1. The pass%Trend is mouse hovered to display the tool tip message 
@@ -57,6 +70,7 @@ public class TC04_ProductPercentage extends TestSuiteBase {
 		Waits wait=new Waits(browser);
 		Pageactions page = new Pageactions(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.pass%trend.btn");
+		actualtitle = browser.getCurrentPageTitle();
 	log.info("STEP#1: Mouse hovering over the pass%Trend of the product");
 	     page.mouseOver(ReadLocators.getPropertyvalue("loc.pass%trend.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	     report.info("Successfully mouse hovered the pass%trend");
@@ -65,7 +79,7 @@ public class TC04_ProductPercentage extends TestSuiteBase {
 	     actualtooltipmessage=page.getText(ReadLocators.getPropertyvalue("loc.pass%trendmessage.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
 	     page.writedata_toExcel(sheetname, columnname, 14, actualtooltipmessage);
 	     expectedtooltipmessage=page.getdata_fromExcel(sheetname, columnname, "Pass%Trend");
-	     Verify.verifyString(actualtooltipmessage, expectedtooltipmessage, "Successfully displayed the test cases message");
+	     Verify.verifyString(actualtooltipmessage, expectedtooltipmessage, "Validating the tooltip message is same as expected or not");
 	log.info("STEP#3: Mouse hovering the pass percent of the product and diplayed the value");
 		 page.mouseOver(ReadLocators.getPropertyvalue("loc.passpercent.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	   	 report.info("Successfully mouse hovered over the pass percent");
@@ -76,7 +90,7 @@ public class TC04_ProductPercentage extends TestSuiteBase {
 	log.info("STEP#5: Veifying the color of the pass percentage"); 
 	     page.writedata_toExcel(sheetname, columnname, 15, actualcolor);
 		 expectedcolor= page.getdata_fromExcel(sheetname, columnname, "Pass percent color");
-		 Verify.verifyString(actualcolor, expectedcolor, "Successfully validated the color of the pass percentage");
+		 Verify.verifyString(actualcolor, expectedcolor, "Validating the color of the pass percentage is same as expected or not");
 		 report.info("Successfully validated the color of the pass percentage");  
 		 Waits.isElementVisible(browser.getDriver(), "loc.failpercent.btn");
 	log.info("STEP#6: Mouse hovering the fail percent of the product");
@@ -88,8 +102,18 @@ public class TC04_ProductPercentage extends TestSuiteBase {
     log.info("STEP#8: Veifying the color of the pass percentage"); 
          page.writedata_toExcel(sheetname, columnname, 16, actualfailcolor);
 	     expectedfailcolor= page.getdata_fromExcel(sheetname, columnname, "Fail percent color");
-	     Verify.verifyString(actualfailcolor, expectedfailcolor, "Successfully validated the color of the fail percentage");
+	     Verify.verifyString(actualfailcolor, expectedfailcolor, "Validating the color of the fail percentage is same as expected or not");
 	     report.info("Successfully validated the color of the fail percentage"); 
 	     page.windowHandle();
+	     if (browser.getDriver().getTitle().equals(actualtitle)) {
+				test.log(LogStatus.PASS, "Navigated to the specified URL");
+			} else {
+				test.log(LogStatus.FAIL, "Test Failed");
+			}
+		}
+		@AfterClass
+		public static void endTest() {
+			extentreport.endTest(test);
+			extentreport.flush();
+		}
 	}
-}

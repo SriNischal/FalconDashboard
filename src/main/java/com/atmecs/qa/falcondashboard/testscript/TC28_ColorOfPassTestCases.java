@@ -1,5 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.atmecs.falcon.automation.ui.selenium.Verify;
@@ -13,6 +15,9 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Waits;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 /*
  * 
@@ -36,6 +41,14 @@ public class TC28_ColorOfPassTestCases extends TestSuiteBase{
 	String actualcolor;
 	String color;
 	String expectedcolor;
+	static ExtentTest test;
+	static ExtentReports extentreport;
+	String actualtitle;
+	@BeforeClass
+	public static void startTest() {
+		extentreport = new ExtentReports(ProjectBaseConstantPaths.EXTENT_REPORTFILE);
+		test = extentreport.startTest("ColorOfPassTestCases");
+	}
 	/* 
 	 * This test script covers the following functionalities
 	 * 1. Verifying whether the product is clicked or not 
@@ -48,6 +61,7 @@ public class TC28_ColorOfPassTestCases extends TestSuiteBase{
 		Waits wait=new Waits(browser);
 	    Pageactions page=new Pageactions(browser);
 	    Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
+	    actualtitle = browser.getCurrentPageTitle();
     log.info("STEP#1: Clicking on the product");
         page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
@@ -62,7 +76,17 @@ public class TC28_ColorOfPassTestCases extends TestSuiteBase{
 	log.info("STEP#4: Veifying the color of the pass test case box");
 	    page.writedata_toExcel(sheetname, columnname, 32, actualcolor);
 	    expectedcolor= page.getdata_fromExcel(sheetname, columnname, "Color of pass test cases");
-	    Verify.verifyString(actualcolor, expectedcolor, "Successfully validated the color of the pass test cases box");
+	    Verify.verifyString(actualcolor, expectedcolor, "Validating the color of the pass test cases is same as expected or not");
 	    report.info("Successfully validated the color of the pass  test cases box");
+	    if (browser.getDriver().getTitle().equals(actualtitle)) {
+			test.log(LogStatus.PASS, "Navigated to the specified URL");
+		} else {
+			test.log(LogStatus.FAIL, "Test Failed");
+		}
 	}
-}
+	@AfterClass
+	public static void endTest() {
+		extentreport.endTest(test);
+		extentreport.flush();
+	}
+	}

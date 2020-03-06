@@ -1,5 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
@@ -14,6 +16,9 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Waits;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 /*
  * 
@@ -37,6 +42,14 @@ public class TC22_DeleteOption extends TestSuiteBase{
 	String message;
 	String actualtooltipmessage;
 	String expectedtooltipmessage;
+	static ExtentTest test;
+	static ExtentReports extentreport;
+	String actualtitle;
+	@BeforeClass
+	public static void startTest() {
+		extentreport = new ExtentReports(ProjectBaseConstantPaths.EXTENT_REPORTFILE);
+		test = extentreport.startTest("DeleteOption");
+	}
 	/* 
 	 * This test script covers the following functionalities of recent runs page.
 	 * 1. Verifying whether the recent runs is clicked or not 
@@ -47,6 +60,7 @@ public class TC22_DeleteOption extends TestSuiteBase{
 	public void deleteOption() throws Exception {
 		 Pageactions page=new Pageactions(browser);
 		 Waits.isElementVisible(browser.getDriver(), "loc.recentruns.btn");
+		 actualtitle = browser.getCurrentPageTitle();
 	log.info("STEP#1: Clicking on the recent runs option");	
 	     page.clickOnElement(ReadLocators.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		 report.info("Successfully clicked on recent runs");
@@ -59,6 +73,16 @@ public class TC22_DeleteOption extends TestSuiteBase{
 	     message=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();
 	     page.writedata_toExcel(sheetname, columnname, 35, message);
 	     expectedtooltipmessage=page.getdata_fromExcel(sheetname, columnname, "Delete Product");
-	     Verify.verifyString(message, expectedtooltipmessage, "Successfully displayed the test cases message");
+	     Verify.verifyString(message, expectedtooltipmessage, "Validating the delete run message is same as expected or not");
+	     if (browser.getDriver().getTitle().equals(actualtitle)) {
+				test.log(LogStatus.PASS, "Navigated to the specified URL");
+			} else {
+				test.log(LogStatus.FAIL, "Test Failed");
+			}
+		}
+		@AfterClass
+		public static void endTest() {
+			extentreport.endTest(test);
+			extentreport.flush();
+		}
 	}
-}

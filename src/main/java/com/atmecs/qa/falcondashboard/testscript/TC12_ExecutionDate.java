@@ -1,5 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.atmecs.falcon.automation.ui.selenium.Verify;
@@ -15,6 +17,9 @@ import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
 import com.atmecs.qa.falcondashboard.utils.Splitting;
 import com.atmecs.qa.falcondashboard.utils.Waits;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 /*
  * 
@@ -38,6 +43,14 @@ public class TC12_ExecutionDate extends TestSuiteBase{
 	String columnname="Validation Text";
 	String expected;
 	String result;
+	static ExtentTest test;
+	static ExtentReports extentreport;
+	String actualtitle;
+	@BeforeClass
+	public static void startTest() {
+		extentreport = new ExtentReports(ProjectBaseConstantPaths.EXTENT_REPORTFILE);
+		test = extentreport.startTest("ExecutionDate");
+	}
 	/* 
 	 * This test script covers the following functionalities of product  page.
 	 * 1. Verifying whether the product is clicked or not 
@@ -49,6 +62,7 @@ public class TC12_ExecutionDate extends TestSuiteBase{
 		 Splitting split=new Splitting(browser);
 		Pageactions page=new Pageactions(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
+		actualtitle = browser.getCurrentPageTitle();
 	log.info("STEP#1: Clicking on the product");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
@@ -58,7 +72,17 @@ public class TC12_ExecutionDate extends TestSuiteBase{
 	log.info("STEP#3: Validating the date of the product");	 
 	     page.writedata_toExcel(sheetname, columnname,21, result);
 		 expected=page.getdata_fromExcel(sheetname, columnname, "Date");
-		 Verify.verifyString(result, expected, "Successfully validated the date");
+		 Verify.verifyString(result, expected, "Validating the date of the product is same as expected or not");
 		 report.info("Successfully validated the date");
+		 if (browser.getDriver().getTitle().equals(actualtitle)) {
+				test.log(LogStatus.PASS, "Navigated to the specified URL");
+			} else {
+				test.log(LogStatus.FAIL, "Test Failed");
+			}
+		}
+		@AfterClass
+		public static void endTest() {
+			extentreport.endTest(test);
+			extentreport.flush();
+		}
 	}
-}

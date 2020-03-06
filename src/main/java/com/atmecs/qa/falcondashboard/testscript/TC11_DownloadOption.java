@@ -1,5 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
@@ -12,6 +14,9 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Waits;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 /*
  * 
@@ -35,6 +40,14 @@ public class TC11_DownloadOption extends TestSuiteBase{
 	 String actualtooltipmessage;
 	 String message;
 	 String expectedtooltipmessage;
+	 static ExtentTest test;
+	static ExtentReports extentreport;
+    String actualtitle;		
+		@BeforeClass
+		public static void startTest() {
+			extentreport = new ExtentReports(ProjectBaseConstantPaths.EXTENT_REPORTFILE);
+			test = extentreport.startTest("DownloadOption");
+		}
 	/* 
 	 * This test script covers the following functionalities of product  page.
 	 * 1. Verifying whether the product is clicked or not 
@@ -45,6 +58,7 @@ public class TC11_DownloadOption extends TestSuiteBase{
 	public void downloadOption() throws Exception {
 		Pageactions page=new Pageactions(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
+		actualtitle = browser.getCurrentPageTitle();
 	log.info("STEP#1: Clicking on the product");	
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
@@ -57,8 +71,17 @@ public class TC11_DownloadOption extends TestSuiteBase{
 	    message=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();
 	    page.writedata_toExcel(sheetname, columnname, 36, message);
 	    expectedtooltipmessage=page.getdata_fromExcel(sheetname, columnname, "Download Message");
-	    Verify.verifyString(message, expectedtooltipmessage, "Successfully displayed the test cases message");
+	    Verify.verifyString(message, expectedtooltipmessage, "Validating the download message of the product is same as expected or not");
 	    report.info("Sucessfully validated the tooltip message");
+	    if (browser.getDriver().getTitle().equals(actualtitle)) {
+			test.log(LogStatus.PASS, "Navigated to the specified URL");
+		} else {
+			test.log(LogStatus.FAIL, "Test Failed");
+		}
 	}
-
-}
+	@AfterClass
+	public static void endTest() {
+		extentreport.endTest(test);
+		extentreport.flush();
+	}
+	}

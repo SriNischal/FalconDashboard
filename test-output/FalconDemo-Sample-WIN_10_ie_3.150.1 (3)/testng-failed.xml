@@ -7,20 +7,24 @@
   <parameter name="browserVersion" value="3.150.1"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns">
-        <methods>
-          <include name="teardown"/>
-          <include name="recentrun"/>
-          <include name="preSetup"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns -->
       <class name="com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent">
         <methods>
+          <include name="startTest"/>
           <include name="teardown"/>
           <include name="preSetup"/>
           <include name="componentOfProduct"/>
+          <include name="endTest"/>
         </methods>
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC18_ProductName">
+        <methods>
+          <include name="startTest"/>
+          <include name="teardown"/>
+          <include name="preSetup"/>
+          <include name="productName"/>
+          <include name="endTest"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC18_ProductName -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_ie_3.150.1 (3)] -->

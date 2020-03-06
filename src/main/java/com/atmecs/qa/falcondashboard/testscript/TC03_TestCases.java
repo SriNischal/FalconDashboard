@@ -1,5 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
@@ -13,6 +15,9 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Waits;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 /*
  * 
@@ -37,7 +42,15 @@ public class TC03_TestCases extends TestSuiteBase {
 	String expedctedproducts;
 	String actualtooltipmessage;
 	 String message;
+	 String actualtitle;
 	 String expectedtooltipmessage;
+	 static ExtentTest test;
+		static ExtentReports extentreport;
+		@BeforeClass
+		public static void startTest() {
+			extentreport = new ExtentReports(ProjectBaseConstantPaths.EXTENT_REPORTFILE);
+			test = extentreport.startTest("TestCases");
+		}
 	/* 
 	 * This test script covers the following functionalities of dashboard page.
 	 * 1. List of the products available and the size of the test cases of the products
@@ -51,6 +64,7 @@ public class TC03_TestCases extends TestSuiteBase {
 		ElementsList lists=new ElementsList(browser);
 		Pageactions page = new Pageactions(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.totaltestcase.txt");
+		actualtitle = browser.getCurrentPageTitle();
 	log.info("STEP#1: Creating list to display total test cases of the products");	
 		products=propReader.getValue("loc.totaltestcase.txt");
 		lists.listofElements(products);
@@ -60,7 +74,7 @@ public class TC03_TestCases extends TestSuiteBase {
 		result = lists.separatingElements(products);
 		page.writedata_toExcel(sheetname,columnname, 13, result);
 		expedctedproducts=page.getdata_fromExcel(sheetname, columnname, "Total test cases");
-		Verify.verifyString(result, expedctedproducts, "Successfully validaetd the test cases");
+		Verify.verifyString(result, expedctedproducts, "Validating the test cases of the products is same as expected or not");
 		report.info("Successfully valdated all the test cases");
 	log.info("STEP#4: Mouse hovering the testcases for the products");
 	     page.mouseOver(ReadLocators.getPropertyvalue("loc.testcases.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
@@ -70,8 +84,17 @@ public class TC03_TestCases extends TestSuiteBase {
 	     message=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();
 	     page.writedata_toExcel(sheetname, columnname, 56, message);
 	     expectedtooltipmessage=page.getdata_fromExcel(sheetname, columnname, "Tooltip message");
-	     Verify.verifyString(message, expectedtooltipmessage, "Successfully displayed the test cases message");
+	     Verify.verifyString(message, expectedtooltipmessage, "Validating the tooltip message is same as expected or not");
 	     page.windowHandle();
+	     if (browser.getDriver().getTitle().equals(actualtitle)) {
+				test.log(LogStatus.PASS, "Navigated to the specified URL");
+			} else {
+				test.log(LogStatus.FAIL, "Test Failed");
+			}
+		}
+		@AfterClass
+		public static void endTest() {
+			extentreport.endTest(test);
+			extentreport.flush();
+		}
 	}
-
-}

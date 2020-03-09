@@ -3,48 +3,26 @@
 <suite name="Failed suite [Sample (4)]">
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC18_ProductName">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase">
         <methods>
-          <include name="productName"/>
-          <include name="preSetup"/>
+          <include name="getResult"/>
           <include name="teardown"/>
+          <include name="tearDown"/>
+          <include name="preSetup"/>
+          <include name="startTest"/>
+          <include name="failTestCasesOfProduct"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC18_ProductName -->
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns">
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct">
         <methods>
-          <include name="recentrun"/>
-          <include name="preSetup"/>
+          <include name="stepsOfProduct"/>
+          <include name="getResult"/>
           <include name="teardown"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns -->
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC35_LastRun">
-        <methods>
-          <include name="lastRun"/>
+          <include name="tearDown"/>
           <include name="preSetup"/>
-          <include name="teardown"/>
+          <include name="startTest"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC35_LastRun -->
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage">
-        <methods>
-          <include name="preSetup"/>
-          <include name="teardown"/>
-          <include name="rececntPassPercentage"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage -->
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption">
-        <methods>
-          <include name="deleteOption"/>
-          <include name="preSetup"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption -->
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent">
-        <methods>
-          <include name="preSetup"/>
-          <include name="teardown"/>
-          <include name="componentOfProduct"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [Sample (4)] -->

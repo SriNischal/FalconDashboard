@@ -1,7 +1,6 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -13,9 +12,6 @@ import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.ProductPageValidation;
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
 
 /*
  * 
@@ -33,14 +29,6 @@ public class TC09_ProductEnvironment extends TestSuiteBase{
 	ReadLocators read = new ReadLocators();
 	LoadProperties load=new LoadProperties();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-	static ExtentTest test;
-	static ExtentReports extentreport;
-	String actualtitle;
-	@BeforeClass
-	public static void startTest() {
-		extentreport = new ExtentReports(ProjectBaseConstantPaths.EXTENT_REPORTFILE);
-		test = extentreport.startTest("ProductEnvironment");
-	}
 	
 	
 	/* 
@@ -54,7 +42,8 @@ public class TC09_ProductEnvironment extends TestSuiteBase{
 		ProductPageValidation validate=new ProductPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
-		actualtitle = browser.getCurrentPageTitle();
+		test=extentreport.createTest("environmentOfProduct");
+		Assert.assertTrue(true);
 	log.info("STEP#1: Clicking on the product");	
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");
@@ -66,15 +55,5 @@ public class TC09_ProductEnvironment extends TestSuiteBase{
 	     validate.validateEnvironment();
 	     report.info("Successfully validated the environment");
 		Waits.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
-		if (browser.getDriver().getTitle().equals(actualtitle)) {
-			test.log(LogStatus.PASS, "Navigated to the specified URL");
-		} else {
-			test.log(LogStatus.FAIL, "Test Failed");
-		}
-	}
-	@AfterClass
-	public static void endTest() {
-		extentreport.endTest(test);
-		extentreport.flush();
 	}
 	}

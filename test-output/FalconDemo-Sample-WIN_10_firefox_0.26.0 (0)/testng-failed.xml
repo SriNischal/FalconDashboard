@@ -7,13 +7,26 @@
   <parameter name="browserVersion" value="0.26.0"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC37_EndTime">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment">
         <methods>
-          <include name="preSetup"/>
+          <include name="getResult"/>
+          <include name="environmentOfProduct"/>
           <include name="teardown"/>
-          <include name="endTime"/>
+          <include name="tearDown"/>
+          <include name="preSetup"/>
+          <include name="startTest"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC37_EndTime -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase">
+        <methods>
+          <include name="getResult"/>
+          <include name="teardown"/>
+          <include name="tearDown"/>
+          <include name="preSetup"/>
+          <include name="startTest"/>
+          <include name="testPhase"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_firefox_0.26.0 (0)] -->

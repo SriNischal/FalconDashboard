@@ -1,6 +1,6 @@
 <h2>Reporter output</h2><table><tr><td>INFO: The value found with Environment variable FalconDemo is: FalconDemo</td></tr>
 <tr><td>INFO: The value found with Environment Module variable DashboardPage is: DashboardPage</td></tr>
-<tr><td>The value found with Environment variable WIN_10_chrome_77,WIN_10_firefox_0.26.0,WIN_10_ie_3.150.1 is: WIN_10_chrome_77,WIN_10_firefox_0.26.0,WIN_10_ie_3.150.1</td></tr>
+<tr><td>The value found with Environment variable WIN_10_ie_3.150.1,WIN_10_chrome_77,WIN_10_firefox_0.26.0 is: WIN_10_ie_3.150.1,WIN_10_chrome_77,WIN_10_firefox_0.26.0</td></tr>
 <tr><td>INFO: Clients Found: [FalconDemo]
 </td></tr>
 <tr><td>INFO: Modules Selected: [DashboardPage]
@@ -15,7 +15,14 @@
   <parameter name="browserVersion" value="77"/>
   <test thread-count="5" name="SampleTest">
     <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage"/>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow"/>
     </classes>
   </test> <!-- SampleTest -->
 </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
@@ -30,7 +37,14 @@
   <parameter name="browserVersion" value="0.26.0"/>
   <test thread-count="5" name="SampleTest">
     <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage"/>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow"/>
     </classes>
   </test> <!-- SampleTest -->
 </suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
@@ -45,60 +59,14 @@
   <parameter name="browserVersion" value="3.150.1"/>
   <test thread-count="5" name="SampleTest">
     <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage"/>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
-    </classes>
-  </test> <!-- SampleTest -->
-</suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
-</td></tr>
-<tr><td>Opening browser: firefox</td></tr>
-<tr><td>INFO: The value found with Environment variable FalconDemo is: FalconDemo</td></tr>
-<tr><td>INFO: The value found with Environment Module variable DashboardPage is: DashboardPage</td></tr>
-<tr><td>The value found with Environment variable WIN_10_chrome_77,WIN_10_firefox_0.26.0,WIN_10_ie_3.150.1 is: WIN_10_chrome_77,WIN_10_firefox_0.26.0,WIN_10_ie_3.150.1</td></tr>
-<tr><td>INFO: Clients Found: [FalconDemo]
-</td></tr>
-<tr><td>INFO: Modules Selected: [DashboardPage]
-</td></tr>
-<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
-<tr><td><?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="FalconDemo-Sample-WIN_10_chrome_77">
-  <parameter name="os" value="WIN"/>
-  <parameter name="osVersion" value="10"/>
-  <parameter name="browser" value="chrome"/>
-  <parameter name="browserVersion" value="77"/>
-  <test thread-count="5" name="SampleTest">
-    <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
-    </classes>
-  </test> <!-- SampleTest -->
-</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
-</td></tr>
-<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
-<tr><td><?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
-  <parameter name="os" value="WIN"/>
-  <parameter name="osVersion" value="10"/>
-  <parameter name="browser" value="firefox"/>
-  <parameter name="browserVersion" value="0.26.0"/>
-  <test thread-count="5" name="SampleTest">
-    <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
-    </classes>
-  </test> <!-- SampleTest -->
-</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
-</td></tr>
-<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
-<tr><td><?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="FalconDemo-Sample-WIN_10_ie_3.150.1">
-  <parameter name="os" value="WIN"/>
-  <parameter name="osVersion" value="10"/>
-  <parameter name="browser" value="ie"/>
-  <parameter name="browserVersion" value="3.150.1"/>
-  <test thread-count="5" name="SampleTest">
-    <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow"/>
     </classes>
   </test> <!-- SampleTest -->
 </suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
@@ -106,7 +74,7 @@
 <tr><td>Opening browser: ie</td></tr>
 <tr><td>INFO: The value found with Environment variable FalconDemo is: FalconDemo</td></tr>
 <tr><td>INFO: The value found with Environment Module variable DashboardPage is: DashboardPage</td></tr>
-<tr><td>The value found with Environment variable WIN_10_chrome_77,WIN_10_firefox_0.26.0,WIN_10_ie_3.150.1 is: WIN_10_chrome_77,WIN_10_firefox_0.26.0,WIN_10_ie_3.150.1</td></tr>
+<tr><td>The value found with Environment variable WIN_10_ie_3.150.1,WIN_10_chrome_77,WIN_10_firefox_0.26.0 is: WIN_10_ie_3.150.1,WIN_10_chrome_77,WIN_10_firefox_0.26.0</td></tr>
 <tr><td>INFO: Clients Found: [FalconDemo]
 </td></tr>
 <tr><td>INFO: Modules Selected: [DashboardPage]
@@ -121,7 +89,14 @@
   <parameter name="browserVersion" value="77"/>
   <test thread-count="5" name="SampleTest">
     <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage"/>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow"/>
     </classes>
   </test> <!-- SampleTest -->
 </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
@@ -136,7 +111,14 @@
   <parameter name="browserVersion" value="0.26.0"/>
   <test thread-count="5" name="SampleTest">
     <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage"/>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow"/>
     </classes>
   </test> <!-- SampleTest -->
 </suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
@@ -151,7 +133,88 @@
   <parameter name="browserVersion" value="3.150.1"/>
   <test thread-count="5" name="SampleTest">
     <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage"/>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
+</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>INFO: The value found with Environment variable FalconDemo is: FalconDemo</td></tr>
+<tr><td>INFO: The value found with Environment Module variable DashboardPage is: DashboardPage</td></tr>
+<tr><td>The value found with Environment variable WIN_10_ie_3.150.1,WIN_10_chrome_77,WIN_10_firefox_0.26.0 is: WIN_10_ie_3.150.1,WIN_10_chrome_77,WIN_10_firefox_0.26.0</td></tr>
+<tr><td>INFO: Clients Found: [FalconDemo]
+</td></tr>
+<tr><td>INFO: Modules Selected: [DashboardPage]
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_ie_3.150.1">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="browserVersion" value="3.150.1"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow"/>
     </classes>
   </test> <!-- SampleTest -->
 </suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
@@ -159,23 +222,152 @@
 <tr><td>Opening browser: chrome</td></tr>
 <tr><td>Maximizing browser window</td></tr>
 <tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validting page url is same as expected or not  : ACTUAL : ATMECS - Falcon Test Repotrs 	EXPECTED :ATMECS - Falcon Test Repotrs</td></tr>
+<tr><td>successfully validated page title</td></tr>
+<tr><td>Successfully validated the dashboard text</td></tr>
+<tr><td>clicked on refresh option</td></tr>
+<tr><td>Successfully validated falcon</td></tr>
 <tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validting page url is same as expected or not  : ACTUAL : ATMECS - Falcon Test Repotrs 	EXPECTED :ATMECS - Falcon Test Repotrs</td></tr>
+<tr><td>successfully validated page title</td></tr>
+<tr><td>Successfully validated the dashboard text</td></tr>
+<tr><td>clicked on refresh option</td></tr>
+<tr><td>Successfully validated falcon</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>PASS : Validting page url is same as expected or not  : ACTUAL : ATMECS - Falcon Test Repotrs 	EXPECTED :ATMECS - Falcon Test Repotrs</td></tr>
+<tr><td>successfully validated page title</td></tr>
+<tr><td>Successfully validated the dashboard text</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>clicked on refresh option</td></tr>
+<tr><td>Successfully validated falcon</td></tr>
+<tr><td>Opening browser: ie</td></tr>
 <tr><td>PASS : Validating the product names is same as expected or not : ACTUAL : REST API TEST RESULT,WebServices,FALCON,WebServicesDemo,FalconMobileDemo,ObjectExtractor,SampleFalconAPITest,Falcon,DotComUI_Mobile,MWB,MWB_iOS,JB_Native_App_iOS,Falcon2,Fal,MWB,FalconDemo41,CreditSightsMobile,CHS,CHS,HEATCLINIC RESULT,UI WEB TEST RESULT,HEAT CLINIC RESULT,DotComUITablet,HRIS,HRIS_Cloud,HRIS_Local,Falcon,CreditSights,BrowserstackDemo,FalconSampleProj,DotComUITablet,GreyHealthGroup,FluorCorporation,AndroidDemoApp,MWBooking,AutomationDemoClient,APIAutomationDemoClient,APIAutomationClient,FLUOR,Atmecs,CHS,Atmecs,Atmecs,demo,CHS,Atmecs,CHS,TestMobileWeb,TestFalcon_runSessionId,swathi_signup account,Pooja_USAUTOPARTS,USAutoParts,USAutoParts_MUJ,TestMobileWeb_CnameDemo,IOSDemoApp,Mobile_Demo,TestDemoApp,UI BrowserStack Test Result,dbTesting 	EXPECTED :REST API TEST RESULT,WebServices,FALCON,WebServicesDemo,FalconMobileDemo,ObjectExtractor,SampleFalconAPITest,Falcon,DotComUI_Mobile,MWB,MWB_iOS,JB_Native_App_iOS,Falcon2,Fal,MWB,FalconDemo41,CreditSightsMobile,CHS,CHS,HEATCLINIC RESULT,UI WEB TEST RESULT,HEAT CLINIC RESULT,DotComUITablet,HRIS,HRIS_Cloud,HRIS_Local,Falcon,CreditSights,BrowserstackDemo,FalconSampleProj,DotComUITablet,GreyHealthGroup,FluorCorporation,AndroidDemoApp,MWBooking,AutomationDemoClient,APIAutomationDemoClient,APIAutomationClient,FLUOR,Atmecs,CHS,Atmecs,Atmecs,demo,CHS,Atmecs,CHS,TestMobileWeb,TestFalcon_runSessionId,swathi_signup account,Pooja_USAUTOPARTS,USAutoParts,USAutoParts_MUJ,TestMobileWeb_CnameDemo,IOSDemoApp,Mobile_Demo,TestDemoApp,UI BrowserStack Test Result,dbTesting</td></tr>
 <tr><td>Successfully valdated all the products</td></tr>
 <tr><td>Successfully displayed the execution times</td></tr>
-<tr><td>PASS : Validating the recent execution times of the products is same as expected or not : ACTUAL : 3 hours ago,56 days ago,64 days ago,66 days ago,71 days ago,219 days ago,232 days ago,232 days ago,234 days ago,253 days ago,259 days ago,259 days ago,261 days ago,266 days ago,268 days ago,276 days ago,282 days ago,282 days ago,290 days ago,351 days ago,366 days ago,373 days ago,388 days ago,396 days ago,396 days ago,401 days ago,417 days ago,456 days ago,462 days ago,491 days ago,542 days ago,609 days ago,618 days ago,623 days ago,625 days ago,625 days ago,625 days ago,645 days ago,651 days ago,651 days ago,680 days ago,721 days ago,721 days ago,757 days ago,764 days ago,779 days ago,779 days ago,780 days ago,784 days ago,813 days ago,816 days ago,821 days ago,829 days ago,840 days ago,854 days ago 	EXPECTED :3 hours ago,56 days ago,64 days ago,66 days ago,71 days ago,219 days ago,232 days ago,232 days ago,234 days ago,253 days ago,259 days ago,259 days ago,261 days ago,266 days ago,268 days ago,276 days ago,282 days ago,282 days ago,290 days ago,351 days ago,366 days ago,373 days ago,388 days ago,396 days ago,396 days ago,401 days ago,417 days ago,456 days ago,462 days ago,491 days ago,542 days ago,609 days ago,618 days ago,623 days ago,625 days ago,625 days ago,625 days ago,645 days ago,651 days ago,651 days ago,680 days ago,721 days ago,721 days ago,757 days ago,764 days ago,779 days ago,779 days ago,780 days ago,784 days ago,813 days ago,816 days ago,821 days ago,829 days ago,840 days ago,854 days ago</td></tr>
+<tr><td>PASS : Validating the recent execution times of the products is same as expected or not : ACTUAL : 1 hour ago,59 days ago,67 days ago,69 days ago,74 days ago,222 days ago,235 days ago,235 days ago,237 days ago,256 days ago,262 days ago,262 days ago,263 days ago,269 days ago,271 days ago,279 days ago,285 days ago,285 days ago,293 days ago,353 days ago,368 days ago,375 days ago,391 days ago,399 days ago,399 days ago,403 days ago,420 days ago,459 days ago,465 days ago,493 days ago,545 days ago,611 days ago,621 days ago,625 days ago,628 days ago,628 days ago,628 days ago,648 days ago,654 days ago,654 days ago,683 days ago,724 days ago,724 days ago,760 days ago,767 days ago,782 days ago,782 days ago,783 days ago,787 days ago,816 days ago,818 days ago,824 days ago,832 days ago,843 days ago,857 days ago 	EXPECTED :1 hour ago,59 days ago,67 days ago,69 days ago,74 days ago,222 days ago,235 days ago,235 days ago,237 days ago,256 days ago,262 days ago,262 days ago,263 days ago,269 days ago,271 days ago,279 days ago,285 days ago,285 days ago,293 days ago,353 days ago,368 days ago,375 days ago,391 days ago,399 days ago,399 days ago,403 days ago,420 days ago,459 days ago,465 days ago,493 days ago,545 days ago,611 days ago,621 days ago,625 days ago,628 days ago,628 days ago,628 days ago,648 days ago,654 days ago,654 days ago,683 days ago,724 days ago,724 days ago,760 days ago,767 days ago,782 days ago,782 days ago,783 days ago,787 days ago,816 days ago,818 days ago,824 days ago,832 days ago,843 days ago,857 days ago</td></tr>
 <tr><td>Successfully valdated all the recent execution times</td></tr>
 <tr><td>PASS : Validating the product names is same as expected or not : ACTUAL : REST API TEST RESULT,WebServices,FALCON,WebServicesDemo,FalconMobileDemo,ObjectExtractor,SampleFalconAPITest,Falcon,DotComUI_Mobile,MWB,MWB_iOS,JB_Native_App_iOS,Falcon2,Fal,MWB,FalconDemo41,CreditSightsMobile,CHS,CHS,HEATCLINIC RESULT,UI WEB TEST RESULT,HEAT CLINIC RESULT,DotComUITablet,HRIS,HRIS_Cloud,HRIS_Local,Falcon,CreditSights,BrowserstackDemo,FalconSampleProj,DotComUITablet,GreyHealthGroup,FluorCorporation,AndroidDemoApp,MWBooking,AutomationDemoClient,APIAutomationDemoClient,APIAutomationClient,FLUOR,Atmecs,CHS,Atmecs,Atmecs,demo,CHS,Atmecs,CHS,TestMobileWeb,TestFalcon_runSessionId,swathi_signup account,Pooja_USAUTOPARTS,USAutoParts,USAutoParts_MUJ,TestMobileWeb_CnameDemo,IOSDemoApp,Mobile_Demo,TestDemoApp,UI BrowserStack Test Result,dbTesting 	EXPECTED :REST API TEST RESULT,WebServices,FALCON,WebServicesDemo,FalconMobileDemo,ObjectExtractor,SampleFalconAPITest,Falcon,DotComUI_Mobile,MWB,MWB_iOS,JB_Native_App_iOS,Falcon2,Fal,MWB,FalconDemo41,CreditSightsMobile,CHS,CHS,HEATCLINIC RESULT,UI WEB TEST RESULT,HEAT CLINIC RESULT,DotComUITablet,HRIS,HRIS_Cloud,HRIS_Local,Falcon,CreditSights,BrowserstackDemo,FalconSampleProj,DotComUITablet,GreyHealthGroup,FluorCorporation,AndroidDemoApp,MWBooking,AutomationDemoClient,APIAutomationDemoClient,APIAutomationClient,FLUOR,Atmecs,CHS,Atmecs,Atmecs,demo,CHS,Atmecs,CHS,TestMobileWeb,TestFalcon_runSessionId,swathi_signup account,Pooja_USAUTOPARTS,USAutoParts,USAutoParts_MUJ,TestMobileWeb_CnameDemo,IOSDemoApp,Mobile_Demo,TestDemoApp,UI BrowserStack Test Result,dbTesting</td></tr>
 <tr><td>Successfully valdated all the products</td></tr>
 <tr><td>Successfully displayed the execution times</td></tr>
-<tr><td>PASS : Validating the recent execution times of the products is same as expected or not : ACTUAL : 3 hours ago,56 days ago,64 days ago,66 days ago,71 days ago,219 days ago,232 days ago,232 days ago,234 days ago,253 days ago,259 days ago,259 days ago,261 days ago,266 days ago,268 days ago,276 days ago,282 days ago,282 days ago,290 days ago,351 days ago,366 days ago,373 days ago,388 days ago,396 days ago,396 days ago,401 days ago,417 days ago,456 days ago,462 days ago,491 days ago,542 days ago,609 days ago,618 days ago,623 days ago,625 days ago,625 days ago,625 days ago,645 days ago,651 days ago,651 days ago,680 days ago,721 days ago,721 days ago,757 days ago,764 days ago,779 days ago,779 days ago,780 days ago,784 days ago,813 days ago,816 days ago,821 days ago,829 days ago,840 days ago,854 days ago 	EXPECTED :3 hours ago,56 days ago,64 days ago,66 days ago,71 days ago,219 days ago,232 days ago,232 days ago,234 days ago,253 days ago,259 days ago,259 days ago,261 days ago,266 days ago,268 days ago,276 days ago,282 days ago,282 days ago,290 days ago,351 days ago,366 days ago,373 days ago,388 days ago,396 days ago,396 days ago,401 days ago,417 days ago,456 days ago,462 days ago,491 days ago,542 days ago,609 days ago,618 days ago,623 days ago,625 days ago,625 days ago,625 days ago,645 days ago,651 days ago,651 days ago,680 days ago,721 days ago,721 days ago,757 days ago,764 days ago,779 days ago,779 days ago,780 days ago,784 days ago,813 days ago,816 days ago,821 days ago,829 days ago,840 days ago,854 days ago</td></tr>
+<tr><td>PASS : Validating the recent execution times of the products is same as expected or not : ACTUAL : 1 hour ago,59 days ago,67 days ago,69 days ago,74 days ago,222 days ago,235 days ago,235 days ago,237 days ago,256 days ago,262 days ago,262 days ago,263 days ago,269 days ago,271 days ago,279 days ago,285 days ago,285 days ago,293 days ago,353 days ago,368 days ago,375 days ago,391 days ago,399 days ago,399 days ago,403 days ago,420 days ago,459 days ago,465 days ago,493 days ago,545 days ago,611 days ago,621 days ago,625 days ago,628 days ago,628 days ago,628 days ago,648 days ago,654 days ago,654 days ago,683 days ago,724 days ago,724 days ago,760 days ago,767 days ago,782 days ago,782 days ago,783 days ago,787 days ago,816 days ago,818 days ago,824 days ago,832 days ago,843 days ago,857 days ago 	EXPECTED :1 hour ago,59 days ago,67 days ago,69 days ago,74 days ago,222 days ago,235 days ago,235 days ago,237 days ago,256 days ago,262 days ago,262 days ago,263 days ago,269 days ago,271 days ago,279 days ago,285 days ago,285 days ago,293 days ago,353 days ago,368 days ago,375 days ago,391 days ago,399 days ago,399 days ago,403 days ago,420 days ago,459 days ago,465 days ago,493 days ago,545 days ago,611 days ago,621 days ago,625 days ago,628 days ago,628 days ago,628 days ago,648 days ago,654 days ago,654 days ago,683 days ago,724 days ago,724 days ago,760 days ago,767 days ago,782 days ago,782 days ago,783 days ago,787 days ago,816 days ago,818 days ago,824 days ago,832 days ago,843 days ago,857 days ago</td></tr>
 <tr><td>Successfully valdated all the recent execution times</td></tr>
 <tr><td>Successfully clicked on product</td></tr>
+<tr><td>Maximizing browser window</td></tr>
 <tr><td>Successfully clicked on product</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validating the test cases of the products is same as expected or not : ACTUAL : 10,1,2,2,1,1,4,10,2,12,1,1,4,1,1,0,2,2,1,4,4,0,1,6,6,6,4,1,1,1,7,9,2,1,8,10,10,1,4,2,1,8,4,2,1,1,1,1,6,2,1,2,2,1,5 	EXPECTED :10,1,2,2,1,1,4,10,2,12,1,1,4,1,1,0,2,2,1,4,4,0,1,6,6,6,4,1,1,1,7,9,2,1,8,10,10,1,4,2,1,8,4,2,1,1,1,1,6,2,1,2,2,1,5</td></tr>
+<tr><td>Successfully valdated all the test cases</td></tr>
+<tr><td>Successfully mouse hovered the test cases</td></tr>
+<tr><td>PASS : Validating the test cases of the products is same as expected or not : ACTUAL : 10,1,2,2,1,1,4,10,2,12,1,1,4,1,1,0,2,2,1,4,4,0,1,6,6,6,4,1,1,1,7,9,2,1,8,10,10,1,4,2,1,8,4,2,1,1,1,1,6,2,1,2,2,1,5 	EXPECTED :10,1,2,2,1,1,4,10,2,12,1,1,4,1,1,0,2,2,1,4,4,0,1,6,6,6,4,1,1,1,7,9,2,1,8,10,10,1,4,2,1,8,4,2,1,1,1,1,6,2,1,2,2,1,5</td></tr>
+<tr><td>Successfully valdated all the test cases</td></tr>
+<tr><td>PASS : Validating the tooltip message is same as expected or not : ACTUAL : Total Test Cases 	EXPECTED :Total Test Cases</td></tr>
+<tr><td>Successfully mouse hovered the test cases</td></tr>
+<tr><td>PASS : Validating the tooltip message is same as expected or not : ACTUAL :  	EXPECTED :</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully mouse hovered the pass%trend</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validating the tooltip message is same as expected or not : ACTUAL : Pass % Trend 	EXPECTED :Pass % Trend</td></tr>
+<tr><td>Successfully mouse hovered over the pass percent</td></tr>
+<tr><td>Successfully mouse hovered the pass%trend</td></tr>
+<tr><td>rgba(34, 34, 34, 1)</td></tr>
+<tr><td>PASS : Validating the color of the pass percentage is same as expected or not : ACTUAL : rgba(34, 34, 34, 1) 	EXPECTED :rgba(34, 34, 34, 1)</td></tr>
+<tr><td>Successfully validated the color of the pass percentage</td></tr>
+<tr><td>PASS : Validating the tooltip message is same as expected or not : ACTUAL : Pass % Trend 	EXPECTED :Pass % Trend</td></tr>
+<tr><td>Successfully mouse hovered over the pass percent</td></tr>
 <tr><td>PASS : Validating the product names is same as expected or not : ACTUAL : REST API TEST RESULT,WebServices,FALCON,WebServicesDemo,FalconMobileDemo,ObjectExtractor,SampleFalconAPITest,Falcon,DotComUI_Mobile,MWB,MWB_iOS,JB_Native_App_iOS,Falcon2,Fal,MWB,FalconDemo41,CreditSightsMobile,CHS,CHS,HEATCLINIC RESULT,UI WEB TEST RESULT,HEAT CLINIC RESULT,DotComUITablet,HRIS,HRIS_Cloud,HRIS_Local,Falcon,CreditSights,BrowserstackDemo,FalconSampleProj,DotComUITablet,GreyHealthGroup,FluorCorporation,AndroidDemoApp,MWBooking,AutomationDemoClient,APIAutomationDemoClient,APIAutomationClient,FLUOR,Atmecs,CHS,Atmecs,Atmecs,demo,CHS,Atmecs,CHS,TestMobileWeb,TestFalcon_runSessionId,swathi_signup account,Pooja_USAUTOPARTS,USAutoParts,USAutoParts_MUJ,TestMobileWeb_CnameDemo,IOSDemoApp,Mobile_Demo,TestDemoApp,UI BrowserStack Test Result,dbTesting 	EXPECTED :REST API TEST RESULT,WebServices,FALCON,WebServicesDemo,FalconMobileDemo,ObjectExtractor,SampleFalconAPITest,Falcon,DotComUI_Mobile,MWB,MWB_iOS,JB_Native_App_iOS,Falcon2,Fal,MWB,FalconDemo41,CreditSightsMobile,CHS,CHS,HEATCLINIC RESULT,UI WEB TEST RESULT,HEAT CLINIC RESULT,DotComUITablet,HRIS,HRIS_Cloud,HRIS_Local,Falcon,CreditSights,BrowserstackDemo,FalconSampleProj,DotComUITablet,GreyHealthGroup,FluorCorporation,AndroidDemoApp,MWBooking,AutomationDemoClient,APIAutomationDemoClient,APIAutomationClient,FLUOR,Atmecs,CHS,Atmecs,Atmecs,demo,CHS,Atmecs,CHS,TestMobileWeb,TestFalcon_runSessionId,swathi_signup account,Pooja_USAUTOPARTS,USAutoParts,USAutoParts_MUJ,TestMobileWeb_CnameDemo,IOSDemoApp,Mobile_Demo,TestDemoApp,UI BrowserStack Test Result,dbTesting</td></tr>
 <tr><td>Successfully valdated all the products</td></tr>
+<tr><td>Successfully mouse hovered over the fail percent and displayed the value</td></tr>
+<tr><td>rgb(34, 34, 34)</td></tr>
+<tr><td>rgba(244, 67, 54, 1)</td></tr>
+<tr><td>PASS : Validating the color of the pass percentage is same as expected or not : ACTUAL : rgb(34, 34, 34) 	EXPECTED :rgb(34, 34, 34)</td></tr>
+<tr><td>Successfully validated the color of the pass percentage</td></tr>
+<tr><td>PASS : Validating the color of the fail percentage is same as expected or not : ACTUAL : rgba(244, 67, 54, 1) 	EXPECTED :rgba(244, 67, 54, 1)</td></tr>
+<tr><td>Successfully validated the color of the fail percentage</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Successfully mouse hovered over the fail percent and displayed the value</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>rgb(244, 67, 54)</td></tr>
+<tr><td>PASS : Validating the color of the fail percentage is same as expected or not : ACTUAL : rgb(244, 67, 54) 	EXPECTED :rgb(244, 67, 54)</td></tr>
+<tr><td>Successfully validated the color of the fail percentage</td></tr>
 <tr><td>Successfully displayed the execution times</td></tr>
-<tr><td>PASS : Validating the recent execution times of the products is same as expected or not : ACTUAL : 3 hours ago,56 days ago,64 days ago,66 days ago,71 days ago,219 days ago,232 days ago,232 days ago,234 days ago,253 days ago,259 days ago,259 days ago,261 days ago,266 days ago,268 days ago,276 days ago,282 days ago,282 days ago,290 days ago,351 days ago,366 days ago,373 days ago,388 days ago,396 days ago,396 days ago,401 days ago,417 days ago,456 days ago,462 days ago,491 days ago,542 days ago,609 days ago,618 days ago,623 days ago,625 days ago,625 days ago,625 days ago,645 days ago,651 days ago,651 days ago,680 days ago,721 days ago,721 days ago,757 days ago,764 days ago,779 days ago,779 days ago,780 days ago,784 days ago,813 days ago,816 days ago,821 days ago,829 days ago,840 days ago,854 days ago 	EXPECTED :3 hours ago,56 days ago,64 days ago,66 days ago,71 days ago,219 days ago,232 days ago,232 days ago,234 days ago,253 days ago,259 days ago,259 days ago,261 days ago,266 days ago,268 days ago,276 days ago,282 days ago,282 days ago,290 days ago,351 days ago,366 days ago,373 days ago,388 days ago,396 days ago,396 days ago,401 days ago,417 days ago,456 days ago,462 days ago,491 days ago,542 days ago,609 days ago,618 days ago,623 days ago,625 days ago,625 days ago,625 days ago,645 days ago,651 days ago,651 days ago,680 days ago,721 days ago,721 days ago,757 days ago,764 days ago,779 days ago,779 days ago,780 days ago,784 days ago,813 days ago,816 days ago,821 days ago,829 days ago,840 days ago,854 days ago</td></tr>
+<tr><td>PASS : Validating the recent execution times of the products is same as expected or not : ACTUAL : 1 hour ago,59 days ago,67 days ago,69 days ago,74 days ago,222 days ago,235 days ago,235 days ago,237 days ago,256 days ago,262 days ago,262 days ago,263 days ago,269 days ago,271 days ago,279 days ago,285 days ago,285 days ago,293 days ago,353 days ago,368 days ago,375 days ago,391 days ago,399 days ago,399 days ago,403 days ago,420 days ago,459 days ago,465 days ago,493 days ago,545 days ago,611 days ago,621 days ago,625 days ago,628 days ago,628 days ago,628 days ago,648 days ago,654 days ago,654 days ago,683 days ago,724 days ago,724 days ago,760 days ago,767 days ago,782 days ago,782 days ago,783 days ago,787 days ago,816 days ago,818 days ago,824 days ago,832 days ago,843 days ago,857 days ago 	EXPECTED :1 hour ago,59 days ago,67 days ago,69 days ago,74 days ago,222 days ago,235 days ago,235 days ago,237 days ago,256 days ago,262 days ago,262 days ago,263 days ago,269 days ago,271 days ago,279 days ago,285 days ago,285 days ago,293 days ago,353 days ago,368 days ago,375 days ago,391 days ago,399 days ago,399 days ago,403 days ago,420 days ago,459 days ago,465 days ago,493 days ago,545 days ago,611 days ago,621 days ago,625 days ago,628 days ago,628 days ago,628 days ago,648 days ago,654 days ago,654 days ago,683 days ago,724 days ago,724 days ago,760 days ago,767 days ago,782 days ago,782 days ago,783 days ago,787 days ago,816 days ago,818 days ago,824 days ago,832 days ago,843 days ago,857 days ago</td></tr>
 <tr><td>Successfully valdated all the recent execution times</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Successfully validated dashboard</td></tr>
+<tr><td>Maximizing browser window</td></tr>
 <tr><td>Successfully clicked on product</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77\Screenshots\mainNavigation_1_.png</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully validated dashboard</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_firefox_0.26.0\Screenshots\mainNavigation_1_.png</td></tr>
+<tr><td>Successfully validated dashboard text</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Successfully clicked on the refresh option</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Successfully validated dashboard text</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on the refresh option</td></tr>
+<tr><td>Successfully clicked on product snapshot bar</td></tr>
+<tr><td>Successfully validated product snapshot</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on the expand button</td></tr>
+<tr><td>clicked on refresh option</td></tr>
+<tr><td>Successfully validated dashboard text</td></tr>
+<tr><td>Successfully validated falcon</td></tr>
+<tr><td>Successfully clicked on product snapshot bar</td></tr>
+<tr><td>Successfully validated product snapshot</td></tr>
+<tr><td>Successfully clicked on the expand button</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>PASS : Validating the test cases of the products is same as expected or not : ACTUAL : 10,1,2,2,1,1,4,10,2,12,1,1,4,1,1,0,2,2,1,4,4,0,1,6,6,6,4,1,1,1,7,9,2,1,8,10,10,1,4,2,1,8,4,2,1,1,1,1,6,2,1,2,2,1,5 	EXPECTED :10,1,2,2,1,1,4,10,2,12,1,1,4,1,1,0,2,2,1,4,4,0,1,6,6,6,4,1,1,1,7,9,2,1,8,10,10,1,4,2,1,8,4,2,1,1,1,1,6,2,1,2,2,1,5</td></tr>
+<tr><td>Successfully valdated all the test cases</td></tr>
+<tr><td>Successfully mouse hovered the test cases</td></tr>
+<tr><td>PASS : Validating the tooltip message is same as expected or not : ACTUAL : Total Test Cases 	EXPECTED :Total Test Cases</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on the expand button</td></tr>
+<tr><td>clicked on refresh option</td></tr>
+<tr><td>Successfully validated dashboard text</td></tr>
+<tr><td>Successfully validated falcon</td></tr>
+<tr><td>Successfully mouse hovered the pass%trend</td></tr>
+<tr><td>Successfully clicked on the expand button</td></tr>
+<tr><td>PASS : Validating the tooltip message is same as expected or not : ACTUAL : Pass % Trend 	EXPECTED :Pass % Trend</td></tr>
+<tr><td>Successfully mouse hovered over the pass percent</td></tr>
+<tr><td>rgba(34, 34, 34, 1)</td></tr>
+<tr><td>PASS : Validating the color of the pass percentage is same as expected or not : ACTUAL : rgba(34, 34, 34, 1) 	EXPECTED :rgba(34, 34, 34, 1)</td></tr>
+<tr><td>Successfully validated the color of the pass percentage</td></tr>
+<tr><td>Successfully mouse hovered over the fail percent and displayed the value</td></tr>
+<tr><td>rgba(244, 67, 54, 1)</td></tr>
+<tr><td>PASS : Validating the color of the fail percentage is same as expected or not : ACTUAL : rgba(244, 67, 54, 1) 	EXPECTED :rgba(244, 67, 54, 1)</td></tr>
+<tr><td>Successfully validated the color of the fail percentage</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully validated dashboard</td></tr>
+<tr><td>Successfully validated recent runs</td></tr>
+<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1\Screenshots\mainNavigation_1_.png</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully validated dashboard text</td></tr>
+<tr><td>Successfully clicked on the refresh option</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on product snapshot bar</td></tr>
+<tr><td>Successfully validated product snapshot</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1\Screenshots\maximizeWindow_1_.png</td></tr>
 </table>

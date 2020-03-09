@@ -5,32 +5,44 @@
     <classes>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases">
         <methods>
-          <include name="preSetup"/>
+          <include name="getResult"/>
           <include name="teardown"/>
+          <include name="preSetup"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
           <include name="dropdownPassedTestCases"/>
         </methods>
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases -->
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns">
-        <methods>
-          <include name="dropdown"/>
-          <include name="preSetup"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns -->
       <class name="com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases">
         <methods>
+          <include name="getResult"/>
           <include name="dropdownSkippedTestCases"/>
-          <include name="preSetup"/>
           <include name="teardown"/>
+          <include name="preSetup"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
         </methods>
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases -->
       <class name="com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases">
         <methods>
-          <include name="preSetup"/>
+          <include name="getResult"/>
           <include name="teardown"/>
+          <include name="preSetup"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
           <include name="dropdownFailedTestCases"/>
         </methods>
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns">
+        <methods>
+          <include name="dropdown"/>
+          <include name="getResult"/>
+          <include name="teardown"/>
+          <include name="preSetup"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [Sample (1)] -->

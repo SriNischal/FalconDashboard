@@ -24,32 +24,32 @@ public class DashboardPageValidation {
 		this.browser = browser;
 		page = new Pageactions(browser);
 		helper = new ValidationHelper(browser);
-		reports=new ExtentReport(browser);
+		//reports=new ExtentReport(browser);
 	}
 	public void validatefalconlogo() throws Exception {
 		String expectedData= page.getdata_fromExcel(sheetname, columnname, "Atmecs Logo");
 		helper.getDataofRow(expectedData, "validate.logo.txt",3);
-        reports.extentReport(expectedData);
+        //reports.extentReport(expectedData);
 	}
 	public void validateproductsnapshot() throws Exception {
 		String expectedData= page.getdata_fromExcel(sheetname, columnname, "Product Snapshot Text");
 		helper.getDataofRow(expectedData, "validated.productsnapshotbar.txt",9);
-        reports.extentReport(expectedData);
+        //reports.extentReport(expectedData);
 	}
 	public void validateListOfProducts() throws Exception {
 		String expectedData= page.getdata_fromExcel(sheetname, columnname, "Products Texts");
 		helper.getDataofRow(expectedData, "validate.product.txt",11);
-		reports.extentReport(expectedData);
+		//reports.extentReport(expectedData);
 	}
 	public void validateDashboard() throws Exception {
 		String data=page.getdata_fromExcel(sheetname, columnname, "Dashboard Text");
 		helper.getDataofRow(data, "validate.dashboardpage.txt",2);	
-		reports.extentReport(data);
+	//	reports.extentReport(data);
 	}
 	public void validateRecentExecutionTime() throws Exception {
 		String expectedData= page.getdata_fromExcel(sheetname, columnname, "Products Recent Execution time");
 		helper.getDataofRow(expectedData, "loc.executiontime.txt",12);
-        reports.extentReport(expectedData);
+        //reports.extentReport(expectedData);
 	}
 
 }

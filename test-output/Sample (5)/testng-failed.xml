@@ -3,20 +3,96 @@
 <suite name="Failed suite [Sample (5)]">
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases">
         <methods>
-          <include name="stepsOfProduct"/>
-          <include name="preSetup"/>
+          <include name="getResult"/>
           <include name="teardown"/>
+          <include name="preSetup"/>
+          <include name="tearDown"/>
+          <include name="colorofSkippedTestCases"/>
+          <include name="startTest"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct -->
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase">
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases">
         <methods>
-          <include name="preSetup"/>
+          <include name="getResult"/>
           <include name="teardown"/>
-          <include name="failTestCasesOfProduct"/>
+          <include name="preSetup"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+          <include name="totalTestCases"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases">
+        <methods>
+          <include name="getResult"/>
+          <include name="teardown"/>
+          <include name="preSetup"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+          <include name="failTestCases"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage">
+        <methods>
+          <include name="getResult"/>
+          <include name="teardown"/>
+          <include name="preSetup"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+          <include name="viewPage"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases">
+        <methods>
+          <include name="getResult"/>
+          <include name="colorofTotalTestCases"/>
+          <include name="teardown"/>
+          <include name="preSetup"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases">
+        <methods>
+          <include name="getResult"/>
+          <include name="teardown"/>
+          <include name="preSetup"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+          <include name="skippedTestCases"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases">
+        <methods>
+          <include name="colorofPassedTestCases"/>
+          <include name="getResult"/>
+          <include name="teardown"/>
+          <include name="preSetup"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases">
+        <methods>
+          <include name="getResult"/>
+          <include name="teardown"/>
+          <include name="passTestCases"/>
+          <include name="preSetup"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases">
+        <methods>
+          <include name="colorofFailedTestCases"/>
+          <include name="getResult"/>
+          <include name="teardown"/>
+          <include name="preSetup"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [Sample (5)] -->

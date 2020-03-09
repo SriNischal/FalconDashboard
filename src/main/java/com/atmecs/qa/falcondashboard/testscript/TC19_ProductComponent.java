@@ -1,10 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.Assert;
 import org.testng.annotations.Test;
-
-
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
@@ -17,9 +14,6 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.RecentrunsValidation;
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
 
 /*
  * 
@@ -41,14 +35,6 @@ public class TC19_ProductComponent extends TestSuiteBase {
 	String components;
 	String componentslist;
 	String componentstext;
-	static ExtentTest test;
-	static ExtentReports extentreport;
-	String actualtitle;
-	@BeforeClass
-	public static void startTest() {
-		extentreport = new ExtentReports(ProjectBaseConstantPaths.EXTENT_REPORTFILE);
-		test = extentreport.startTest("ProductComponent");
-	}
 	/* 
 	 * This test script covers the following functionalities of recent runs page.
 	 * 1. Verifying whether the recent runs is clicked or not 
@@ -64,7 +50,8 @@ public class TC19_ProductComponent extends TestSuiteBase {
 		RecentrunsValidation validate = new RecentrunsValidation(browser);
 		Pageactions page = new Pageactions(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.componentofproduct.btn");
-		actualtitle = browser.getCurrentPageTitle();
+		test=extentreport.createTest("componentOfProduct");
+		Assert.assertTrue(true);
 	log.info("STEP#1: Creating the list to display the components of the products ");
 		componentslist = propReader.getValue("loc.componentofproduct.btn");
 		list.listofElements(componentslist);
@@ -90,15 +77,5 @@ public class TC19_ProductComponent extends TestSuiteBase {
 	log.info("STEP#8: Comparing the lists to see whether both the list are same or  not");
 		boolean compare = componentstext.equals(components);
 		System.out.println(compare);
-		if (browser.getDriver().getTitle().equals(actualtitle)) {
-			test.log(LogStatus.PASS, "Navigated to the specified URL");
-		} else {
-			test.log(LogStatus.FAIL, "Test Failed");
-		}
-	}
-	@AfterClass
-	public static void endTest() {
-		extentreport.endTest(test);
-		extentreport.flush();
 	}
 	}

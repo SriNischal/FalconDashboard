@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SampleTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 06 19:03:30 IST 2020</td>
+<td>Started on:</td><td>Mon Mar 09 18:59:00 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>239 seconds (239846 ms)</td>
+<tr><td>Total time:</td><td>253 seconds (253408 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,65 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns.recentrun()'><b>recentrun</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns<br/>
+<a href="#Output-1293476953" onClick='toggleBox("Output-1293476953", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1293476953" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1293476953">
+Successfully clicked on recent runs<br/>
+Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77 (3)\Screenshots\recentrun_1_.png<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Validating the Recent Runs is same as expected or not expected [] but found [Recent Runs]
+	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:28)
+	at com.atmecs.qa.falcondashboard.validationresults.RecentrunsValidation.validateText(RecentrunsValidation.java:19)
+	at com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns.recentrun(TC17_RecentRuns.java:60)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1293476953", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1293476953'><pre>java.lang.AssertionError: Validating the Recent Runs is same as expected or not expected [] but found [Recent Runs]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:28)
+	at com.atmecs.qa.falcondashboard.validationresults.RecentrunsValidation.validateText(RecentrunsValidation.java:19)
+	at com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns.recentrun(TC17_RecentRuns.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+</pre></div></td>
+<td>21</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns@4240c50d</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,10 +135,10 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent.componentOfProduct()'><b>componentOfProduct</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent<br/>
-<a href="#Output-1003593127" onClick='toggleBox("Output-1003593127", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-644854344" onClick='toggleBox("Output-644854344", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1003593127" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1003593127">
+<a href="#Output-644854344" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-644854344">
 Successfully clicked on recent runs<br/>
 Successfully clicked on component<br/>
 Successfully validated component text<br/>
@@ -87,14 +146,14 @@ Successfully clicked on component<br/>
 </div>
 </td>
 <td></td>
-<td>26</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent@76d19855</td></tr>
+<td>27</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent@dbdaf03</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption.deleteOption()'><b>deleteOption</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption<br/>
-<a href="#Output-1681899677" onClick='toggleBox("Output-1681899677", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-406368513" onClick='toggleBox("Output-406368513", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1681899677" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1681899677">
+<a href="#Output-406368513" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-406368513">
 Successfully clicked on recent runs<br/>
 Successfully mouse hovered over the delete option<br/>
 PASS : Validating the delete run message is same as expected or not : ACTUAL : Delete Run 	EXPECTED :Delete Run<br/>
@@ -102,68 +161,49 @@ PASS : Validating the delete run message is same as expected or not : ACTUAL : D
 </td>
 <td></td>
 <td>21</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption@57fb341a</td></tr>
+<td>com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption@282ac1b9</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC35_LastRun.lastRun()'><b>lastRun</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC35_LastRun<br/>
-<a href="#Output-1468566868" onClick='toggleBox("Output-1468566868", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1215047174" onClick='toggleBox("Output-1215047174", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1468566868" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1468566868">
+<a href="#Output-1215047174" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1215047174">
 Successfully clicked on the recent runs<br/>
 Successfully validated the last run<br/>
 Successfully clicked on the last runs<br/>
 </div>
 </td>
 <td></td>
-<td>12</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC35_LastRun@59af14a8</td></tr>
+<td>14</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC35_LastRun@634d8891</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC18_ProductName.productName()'><b>productName</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC18_ProductName<br/>
-<a href="#Output-232318036" onClick='toggleBox("Output-232318036", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1172022789" onClick='toggleBox("Output-1172022789", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-232318036" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-232318036">
+<a href="#Output-1172022789" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1172022789">
 Successfully clicked on the recent runs<br/>
 Successfully validated the product name<br/>
 Succesfully clicked on the product<br/>
 </div>
 </td>
 <td></td>
-<td>13</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC18_ProductName@529b983d</td></tr>
+<td>15</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC18_ProductName@3b6e084d</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage.rececntPassPercentage()'><b>rececntPassPercentage</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage<br/>
-<a href="#Output-304595712" onClick='toggleBox("Output-304595712", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-423689731" onClick='toggleBox("Output-423689731", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-304595712" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-304595712">
+<a href="#Output-423689731" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-423689731">
 Successfully clicked on the recent runs<br/>
 Successfully validated the pass percent<br/>
 Successfully clicked on the pass percentage<br/>
 </div>
 </td>
 <td></td>
-<td>14</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage@65be6b73</td></tr>
-<tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns.recentrun()'><b>recentrun</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns<br/>
-<a href="#Output-357310923" onClick='toggleBox("Output-357310923", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-357310923" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-357310923">
-Successfully clicked on recent runs<br/>
-Successfully validated recentruns<br/>
-Successfully validated reports<br/>
-Successfully validated product name<br/>
-Successfully validated the component text<br/>
-Successfully validated textcases with # symbol<br/>
-Successfully validated the passpercent with % symbol<br/>
-Successfully validated lastruns<br/>
-</div>
-</td>
-<td></td>
-<td>24</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns@15d4e46a</td></tr>
+<td>12</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage@6c060999</td></tr>
 </table><p>
 </body>
 </html>

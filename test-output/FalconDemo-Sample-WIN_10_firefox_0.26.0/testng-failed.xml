@@ -12,6 +12,7 @@
           <include name="teardown"/>
           <include name="mainNavigation"/>
           <include name="preSetup"/>
+          <include name="startTest"/>
         </methods>
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation -->
     </classes>

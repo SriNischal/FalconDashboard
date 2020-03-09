@@ -1,7 +1,6 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -15,9 +14,6 @@ import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.ReadingData;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.RecentrunsValidation;
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
 
 /*
  * 
@@ -37,15 +33,6 @@ public class TC17_RecentRuns extends TestSuiteBase{
 	ReadLocators read=new ReadLocators();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-	static ExtentTest test;
-	static ExtentReports extentreport;
-	String actualtitle;
-	@BeforeClass
-	public static void startTest() {
-		extentreport = new ExtentReports(ProjectBaseConstantPaths.EXTENT_REPORTFILE);
-		test = extentreport.startTest("RecentRuns");
-	}
-	
 	
 	/* 
 	 * This test script covers the following functionalities of dash board page.
@@ -63,7 +50,8 @@ public class TC17_RecentRuns extends TestSuiteBase{
 		RecentrunsValidation validate=new RecentrunsValidation(browser);
 		Pageactions page=new Pageactions(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.recentruns.btn");
-		actualtitle = browser.getCurrentPageTitle();
+		test=extentreport.createTest("recentrun");
+		Assert.assertTrue(true);
 	log.info("STEP#1: Clicking on the recent runs option");	
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on recent runs");
@@ -89,15 +77,5 @@ public class TC17_RecentRuns extends TestSuiteBase{
 	log.info("STEP#8: Validating the last run of the page");
 		validate.validateLastRun();
 		report.info("Successfully validated lastruns");
-		if (browser.getDriver().getTitle().equals(actualtitle)) {
-			test.log(LogStatus.PASS, "Navigated to the specified URL");
-		} else {
-			test.log(LogStatus.FAIL, "Test Failed");
-		}
-	}
-	@AfterClass
-	public static void endTest() {
-		extentreport.endTest(test);
-		extentreport.flush();
 	}
 	}

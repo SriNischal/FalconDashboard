@@ -1,8 +1,13 @@
 package com.atmecs.qa.falcondashboard.testsuite;
 
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
+
 import com.atmecs.falcon.automation.ui.selenium.Browser;
 import com.atmecs.falcon.automation.util.logging.LogLevel;
 import com.atmecs.falcon.automation.util.logging.LogManager;
@@ -13,39 +18,64 @@ import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 import com.atmecs.qa.falcondashboard.testscript.SampleTestScript;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.aventstack.extentreports.reporter.configuration.ChartLocation;
-import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class TestSuiteBase {
 
 	protected Browser browser;
 	LoadProperties load = new LoadProperties();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-	static ExtentReports extentreport;
-	static ExtentTest test;
+	public static ExtentHtmlReporter htmlReporter;
+	public static ExtentTest test;
+	public static ExtentReports extentreport;
+
+	@BeforeSuite
+	public static void startTest() {
+		htmlReporter = new ExtentHtmlReporter(ProjectBaseConstantPaths.EXTENT_REPORTFILE);
+		extentreport = new ExtentReports();
+		extentreport.attachReporter(htmlReporter);
+	}
+
 	// In this method the browser is invoked and url is opened
-	@SuppressWarnings("static-access")
 	@BeforeMethod
 	@Parameters({ "os", "osVersion", "browser", "browserVersion" })
 	public void preSetup(String os, String osVersion, String br, String browserVersion) throws Exception {
 		browser = new Browser();
-		extentreport = new ExtentReports();
 		LogManager.setLogLevel(LogLevel.valueOf(PropertyParser.readEnvOrConfigProperty("LOG_LEVEL")));
 		report.info("Opening browser: " + br);
-		String url = load.readConfigfile("Dashboard_URL", ProjectBaseConstantPaths.CONFIG_FILE);
+		String url = LoadProperties.readConfigfile("Dashboard_URL", ProjectBaseConstantPaths.CONFIG_FILE);
 		browser.openURL(url, os, osVersion, br, browserVersion);
 		report.info("Maximizing browser window");
 		browser.maximizeWindow();
 	}
-	
+
+	@AfterMethod
+	public void getResult(ITestResult result) {
+		if (result.getStatus() == ITestResult.FAILURE) {
+
+			test.fail(MarkupHelper.createLabel(result.getName() + "Test Case Failed", ExtentColor.RED));
+			test.fail(result.getThrowable());
+		} else if (result.getStatus() == ITestResult.SUCCESS) {
+			test.pass(MarkupHelper.createLabel(result.getName() + "Test Case Passed", ExtentColor.GREEN));
+			test.pass(result.getThrowable());
+
+		} else {
+			test.pass(MarkupHelper.createLabel(result.getName() + "Test Case Passed", ExtentColor.YELLOW));
+			test.pass(result.getThrowable());
+		}
+	}
 
 	@AfterClass
 	public void teardown() {
 		browser.closeBrowser();
-		
+	}
+
+	@AfterSuite
+	public void tearDown() {
+		extentreport.flush();
 	}
 
 }

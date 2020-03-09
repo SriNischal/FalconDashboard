@@ -1,7 +1,6 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -14,9 +13,6 @@ import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadLocators;
 import com.atmecs.qa.falcondashboard.utils.Waits;
 import com.atmecs.qa.falcondashboard.validationresults.DropdownValidation;
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
 
 /*
  * 
@@ -35,14 +31,6 @@ public class TC20_FailTestCase extends TestSuiteBase {
 	ReadLocators read = new ReadLocators();
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-	static ExtentTest test;
-	static ExtentReports extentreport;
-	String actualtitle;
-	@BeforeClass
-	public static void startTest() {
-		extentreport = new ExtentReports(ProjectBaseConstantPaths.EXTENT_REPORTFILE);
-		test = extentreport.startTest("FailTestCase");
-	}
 	/* 
 	 * This test script covers the following functionalities of recent runs page.
 	 * 1. Verifying whether the product is clicked or not 
@@ -58,7 +46,8 @@ public class TC20_FailTestCase extends TestSuiteBase {
 		Pageactions page = new Pageactions(browser);
 		DropdownValidation validate=new DropdownValidation(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
-		actualtitle = browser.getCurrentPageTitle();
+		test=extentreport.createTest("failTestCasesOfProduct");
+		Assert.assertTrue(true);
 	log.info("STEP#1: Clicking on the product");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
@@ -84,16 +73,6 @@ public class TC20_FailTestCase extends TestSuiteBase {
 	log.info("STEP#7: Validating the error message of the test case ");
 		validate.validateErrorMessage();
 		report.info("Successfully validated error message");
-		if (browser.getDriver().getTitle().equals(actualtitle)) {
-			test.log(LogStatus.PASS, "Navigated to the specified URL");
-		} else {
-			test.log(LogStatus.FAIL, "Test Failed");
-		}
-	}
-	@AfterClass
-	public static void endTest() {
-		extentreport.endTest(test);
-		extentreport.flush();
 	}
 
 	}

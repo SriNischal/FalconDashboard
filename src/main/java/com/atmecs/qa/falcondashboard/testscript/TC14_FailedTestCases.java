@@ -52,7 +52,7 @@ public class TC14_FailedTestCases extends TestSuiteBase{
         page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
 		Waits.isElementVisible(browser.getDriver(), "loc.failselectstatus.btn");
-	log.info("STEP#2: Slecting the status option from the dropdown");	
+	log.info("STEP#2: Slecting the status option from the dropdown");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.failselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Selected the fail status option"); 
 	log.info("STEP#3: Validating the status option");	

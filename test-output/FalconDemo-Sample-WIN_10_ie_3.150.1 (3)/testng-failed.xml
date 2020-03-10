@@ -7,24 +7,36 @@
   <parameter name="browserVersion" value="3.150.1"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent">
-        <methods>
-          <include name="startTest"/>
-          <include name="teardown"/>
-          <include name="preSetup"/>
-          <include name="componentOfProduct"/>
-          <include name="endTest"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent -->
       <class name="com.atmecs.qa.falcondashboard.testscript.TC18_ProductName">
         <methods>
-          <include name="startTest"/>
+          <include name="getResult"/>
           <include name="teardown"/>
           <include name="preSetup"/>
+          <include name="tearDown"/>
           <include name="productName"/>
-          <include name="endTest"/>
+          <include name="startTest"/>
         </methods>
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC18_ProductName -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption">
+        <methods>
+          <include name="getResult"/>
+          <include name="teardown"/>
+          <include name="preSetup"/>
+          <include name="tearDown"/>
+          <include name="deleteOption"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage">
+        <methods>
+          <include name="getResult"/>
+          <include name="teardown"/>
+          <include name="preSetup"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+          <include name="rececntPassPercentage"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_ie_3.150.1 (3)] -->

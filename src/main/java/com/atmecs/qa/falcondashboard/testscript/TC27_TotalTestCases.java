@@ -51,9 +51,9 @@ public class TC27_TotalTestCases extends TestSuiteBase{
 		ElementsList list=new ElementsList(browser);
 		ViewPageValidation validate=new ViewPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
-		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 		test=extentreport.createTest("totalTestCases");
 		Assert.assertTrue(true);
+		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
 	log.info("STEP#1: Clicking on the product");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");

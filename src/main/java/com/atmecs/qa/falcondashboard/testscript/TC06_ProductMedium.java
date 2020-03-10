@@ -55,6 +55,7 @@ public class TC06_ProductMedium extends TestSuiteBase{
 		Waits.isElementVisible(browser.getDriver(),"loc.product.txt");
 	log.info("STEP#2: Splitting the array and displaying the medium of the product");
 		product = split.splitofarray(1);
+		System.out.println(product);
 		report.info("Successfully displayed medium of product");
 	log.info("STEP#3: validating the medium of the project");
 	    page.writedata_toExcel(sheetname, columnname, 19, product);

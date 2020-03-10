@@ -7,20 +7,36 @@
   <parameter name="browserVersion" value="3.150.1"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases">
         <methods>
+          <include name="getResult"/>
+          <include name="colorofTotalTestCases"/>
           <include name="teardown"/>
           <include name="preSetup"/>
-          <include name="failTestCasesOfProduct"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase -->
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct">
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases">
         <methods>
-          <include name="stepsOfProduct"/>
+          <include name="getResult"/>
+          <include name="teardown"/>
+          <include name="passTestCases"/>
+          <include name="preSetup"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases">
+        <methods>
+          <include name="colorofPassedTestCases"/>
+          <include name="getResult"/>
           <include name="teardown"/>
           <include name="preSetup"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_ie_3.150.1 (4)] -->

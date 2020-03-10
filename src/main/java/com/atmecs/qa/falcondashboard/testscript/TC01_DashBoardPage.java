@@ -57,7 +57,6 @@ public class TC01_DashBoardPage extends TestSuiteBase {
 	    expectedtitle = data.getdata_fromExcel(sheetname, columnname, "Page URL");
 		Verify.verifyString(actualtitle, expectedtitle, "Validting page url is same as expected or not ");
 		report.info("successfully validated page title");
-		//reports.extentReport(actualtitle);
 	log.info("STEP#2: Dashboard Text validation");
 		validate.validateDashboard();
 		report.info("Successfully validated the dashboard text");

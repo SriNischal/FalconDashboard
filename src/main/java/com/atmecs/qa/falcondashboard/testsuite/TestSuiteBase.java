@@ -37,6 +37,7 @@ public class TestSuiteBase {
 		htmlReporter = new ExtentHtmlReporter(ProjectBaseConstantPaths.EXTENT_REPORTFILE);
 		extentreport = new ExtentReports();
 		extentreport.attachReporter(htmlReporter);
+		htmlReporter.setAppendExisting(true);
 	}
 
 	// In this method the browser is invoked and url is opened
@@ -60,11 +61,10 @@ public class TestSuiteBase {
 			test.fail(result.getThrowable());
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
 			test.pass(MarkupHelper.createLabel(result.getName() + "Test Case Passed", ExtentColor.GREEN));
-			test.pass(result.getThrowable());
-
 		} else {
 			test.pass(MarkupHelper.createLabel(result.getName() + "Test Case Passed", ExtentColor.YELLOW));
-			test.pass(result.getThrowable());
+			test.fail(result.getThrowable());
+
 		}
 	}
 

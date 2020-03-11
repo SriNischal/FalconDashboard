@@ -1,6 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -50,8 +49,6 @@ public class TC19_ProductComponent extends TestSuiteBase {
 		RecentrunsValidation validate = new RecentrunsValidation(browser);
 		Pageactions page = new Pageactions(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.componentofproduct.btn");
-		test=extentreport.createTest("componentOfProduct");
-		Assert.assertTrue(true);
 	log.info("STEP#1: Creating the list to display the components of the products ");
 		componentslist = propReader.getValue("loc.componentofproduct.btn");
 		list.listofElements(componentslist);

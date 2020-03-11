@@ -1,6 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -41,8 +40,6 @@ public class TC23_Refresh extends TestSuiteBase{
 		DashboardPageValidation validate=new DashboardPageValidation(browser);
 		Pageactions page=new Pageactions(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.refresh.btn");
-		test=extentreport.createTest("refresh");
-		Assert.assertTrue(true);
 	log.info("STEP#1: Dashboard Text validation");
 		validate.validateDashboard();
 		report.info("Successfully validated dashboard text");

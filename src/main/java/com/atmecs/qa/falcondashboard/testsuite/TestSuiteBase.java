@@ -1,9 +1,6 @@
 package com.atmecs.qa.falcondashboard.testsuite;
 
-import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
@@ -17,10 +14,6 @@ import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 import com.atmecs.qa.falcondashboard.testscript.SampleTestScript;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class TestSuiteBase {
@@ -29,15 +22,11 @@ public class TestSuiteBase {
 	LoadProperties load = new LoadProperties();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	public static ExtentHtmlReporter htmlReporter;
-	public static ExtentTest test;
-	public static ExtentReports extentreport;
 
 	@BeforeSuite
 	public static void startTest() {
 		htmlReporter = new ExtentHtmlReporter(ProjectBaseConstantPaths.EXTENT_REPORTFILE);
-		extentreport = new ExtentReports();
-		extentreport.attachReporter(htmlReporter);
-		htmlReporter.setAppendExisting(true);
+		htmlReporter.loadConfig(ProjectBaseConstantPaths.EXTENT_CONFIGFILE);
 	}
 
 	// In this method the browser is invoked and url is opened
@@ -53,29 +42,9 @@ public class TestSuiteBase {
 		browser.maximizeWindow();
 	}
 
-	@AfterMethod
-	public void getResult(ITestResult result) {
-		if (result.getStatus() == ITestResult.FAILURE) {
-
-			test.fail(MarkupHelper.createLabel(result.getName() + "Test Case Failed", ExtentColor.RED));
-			test.fail(result.getThrowable());
-		} else if (result.getStatus() == ITestResult.SUCCESS) {
-			test.pass(MarkupHelper.createLabel(result.getName() + "Test Case Passed", ExtentColor.GREEN));
-		} else {
-			test.pass(MarkupHelper.createLabel(result.getName() + "Test Case Passed", ExtentColor.YELLOW));
-			test.fail(result.getThrowable());
-
-		}
-	}
-
 	@AfterClass
 	public void teardown() {
 		browser.closeBrowser();
-	}
-
-	@AfterSuite
-	public void tearDown() {
-		extentreport.flush();
 	}
 
 }

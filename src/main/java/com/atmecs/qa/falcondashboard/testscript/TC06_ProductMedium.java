@@ -1,6 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
@@ -47,8 +46,6 @@ public class TC06_ProductMedium extends TestSuiteBase{
 		Splitting split=new Splitting(browser);
 		Pageactions page=new Pageactions(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
-		test=extentreport.createTest("mediumOfProduct");
-		Assert.assertTrue(true);
 	log.info("STEP#1: Clicking on the product");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");

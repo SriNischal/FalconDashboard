@@ -1,7 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -50,8 +50,6 @@ public class TC01_DashBoardPage extends TestSuiteBase {
 		Pageactions page = new Pageactions(browser);
 		DashboardPageValidation validate = new DashboardPageValidation(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.refresh.btn");
-		test=extentreport.createTest("dashboardPage");
-		Assert.assertTrue(true);
 	log.info("STEP#1: Page title validation");
 		actualtitle = browser.getCurrentPageTitle();
 	    expectedtitle = data.getdata_fromExcel(sheetname, columnname, "Page URL");
@@ -66,6 +64,7 @@ public class TC01_DashBoardPage extends TestSuiteBase {
 	log.info("STEP#4: Atmecs logo Text validation");
 		validate.validatefalconlogo();
 		report.info("Successfully validated falcon");
+		
 	}
 
 }

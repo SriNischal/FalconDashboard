@@ -43,8 +43,6 @@ public class TC38_MaximizingWindow extends TestSuiteBase{
 	public void maximizeWindow() throws Exception {
 		Pageactions page=new Pageactions(browser);
 		DashboardPageValidation validate = new DashboardPageValidation(browser);
-		test=extentreport.createTest("maximizeWindow");
-		Assert.assertTrue(true);
 		Waits.isElementVisible(browser.getDriver(), "loc.expand.btn");
 	log.info("STEP#1: Clicking on the expand button");	
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.expand.btn", ProjectBaseConstantPaths.LOCATORS_FILE));

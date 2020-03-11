@@ -1,7 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import org.testng.Assert;
-
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
@@ -47,8 +45,6 @@ public class TC11_DownloadOption extends TestSuiteBase{
 	public void downloadOption() throws Exception {
 		Pageactions page=new Pageactions(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
-		test=extentreport.createTest("downloadOption");
-		Assert.assertTrue(true);
 	log.info("STEP#1: Clicking on the product");	
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the product");

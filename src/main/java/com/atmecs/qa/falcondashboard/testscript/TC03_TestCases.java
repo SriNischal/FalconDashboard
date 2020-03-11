@@ -1,6 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
@@ -53,8 +52,6 @@ public class TC03_TestCases extends TestSuiteBase {
 		ElementsList lists=new ElementsList(browser);
 		Pageactions page = new Pageactions(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.totaltestcase.txt");
-		test=extentreport.createTest("numberofTestCasesOfProduct");
-		Assert.assertTrue(true);
 	log.info("STEP#1: Creating list to display total test cases of the products");	
 		products=propReader.getValue("loc.totaltestcase.txt");
 		lists.listofElements(products);

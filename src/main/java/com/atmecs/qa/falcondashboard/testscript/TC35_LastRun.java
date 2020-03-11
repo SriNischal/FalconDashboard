@@ -1,9 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
@@ -53,8 +51,6 @@ public class TC35_LastRun extends TestSuiteBase{
 		RecentrunsValidation validate=new RecentrunsValidation(browser);
 		Pageactions page=new Pageactions(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.recentruns.btn");
-		test=extentreport.createTest("lastRun");
-		Assert.assertTrue(true);
 	log.info("STEP#1: Clicking on the Recentruns");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the recent runs");

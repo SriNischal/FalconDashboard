@@ -1,6 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -44,8 +43,6 @@ public class TC24_ProductSnapShot extends TestSuiteBase{
 		MainNavigationValidation validate=new MainNavigationValidation(browser);
 		Pageactions page=new Pageactions(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.snapshotbar.btn");
-		test=extentreport.createTest("productSnapShot");
-		Assert.assertTrue(true);
 	log.info("STEP#1: Clicking on the product snapshot option");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.snapshotbar.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product snapshot bar");

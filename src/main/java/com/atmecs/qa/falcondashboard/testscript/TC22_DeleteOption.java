@@ -1,6 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
@@ -46,8 +45,6 @@ public class TC22_DeleteOption extends TestSuiteBase{
 	public void deleteOption() throws Exception {
 		 Pageactions page=new Pageactions(browser);
 		 Waits.isElementVisible(browser.getDriver(), "loc.recentruns.btn");
-		 test=extentreport.createTest("deleteOption");
-			Assert.assertTrue(true);
 	log.info("STEP#1: Clicking on the recent runs option");	
 	     page.clickOnElement(ReadLocators.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		 report.info("Successfully clicked on recent runs");

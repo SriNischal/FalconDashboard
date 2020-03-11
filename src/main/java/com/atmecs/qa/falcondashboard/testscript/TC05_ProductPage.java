@@ -1,6 +1,4 @@
 package com.atmecs.qa.falcondashboard.testscript;
-
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
@@ -58,8 +56,6 @@ public class TC05_ProductPage extends TestSuiteBase {
 		Pageactions page=new Pageactions(browser);
 		ProductPageValidation validate=new ProductPageValidation(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
-		test=extentreport.createTest("productPage");
-		Assert.assertTrue(true);
 		ElementsList lists=new ElementsList(browser);
 	log.info("STEP#1: Validating and displaying the product name");
 		validate.validateProduct();

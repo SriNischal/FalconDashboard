@@ -3,7 +3,6 @@ package com.atmecs.qa.falcondashboard.validationresults;
 import com.atmecs.falcon.automation.ui.selenium.Browser;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 import com.atmecs.qa.falcondashboard.helper.ValidationHelper;
-import com.atmecs.qa.falcondashboard.utils.ExtentReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
 import com.atmecs.qa.falcondashboard.utils.PropReader;
 import com.atmecs.qa.falcondashboard.utils.ReadDataFromExcel;
@@ -18,7 +17,6 @@ public class DashboardPageValidation {
     String columnname="Validation Text";
 	Pageactions page;
 	ValidationHelper helper;
-	ExtentReport reports;
 
 	public DashboardPageValidation(Browser browser) {
 		this.browser = browser;

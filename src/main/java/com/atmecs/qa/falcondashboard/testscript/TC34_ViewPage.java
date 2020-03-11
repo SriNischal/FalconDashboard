@@ -1,10 +1,6 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import org.testng.Assert;
-
 import org.testng.annotations.Test;
-
-
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
@@ -51,8 +47,6 @@ public class TC34_ViewPage extends TestSuiteBase{
 		MainNavigationValidation validation=new MainNavigationValidation(browser);
 		Pageactions page=new Pageactions(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.view.btn");
-		test=extentreport.createTest("viewPage");
-		Assert.assertTrue(true);
 	log.info("STEP#1: Validating the view  option");	
 		validate.validateText();
 		report.info("Successfully validated views");

@@ -1,6 +1,5 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
@@ -55,8 +54,6 @@ public class TC02_ClickingProduct extends TestSuiteBase {
 		ElementsList lists = new ElementsList(browser);
 		Pageactions page = new Pageactions(browser);
 	    Waits.isElementVisible(browser.getDriver(), "loc.products.txt");
-	    test=extentreport.createTest("clickingProduct");
-		Assert.assertTrue(true);
 	log.info("STEP#1: List to get all the products and size of products  present on the dashboard page");
 		products = propReader.getValue("loc.products.txt");
 		lists.listofElements(products);

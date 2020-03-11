@@ -5,9 +5,11 @@ import java.util.List;
 
 import org.testng.ITestNGListener;
 import org.testng.TestNG;
+import org.testng.annotations.Listeners;
 import org.testng.xml.XmlSuite;
 
 import com.atmecs.falcon.automation.dataprovider.TestDataProvider;
+import com.atmecs.falcon.automation.ui.extentreports.ExtentITestListener;
 import com.atmecs.falcon.automation.ui.selenium.CustomListener;
 import com.atmecs.falcon.automation.util.main.AbstractTestNGEngine;
 import com.atmecs.falcon.automation.util.main.TestNGEngineFactory;
@@ -36,6 +38,7 @@ public class TestNGRunner {
     private static void initialize() throws Exception {
         // Custom Listener to testng
         listners.add(CustomListener.class);
+        listners.add(ExtentITestListener.class);
         testng.setListenerClasses(listners);
     }
 

@@ -21,6 +21,8 @@ public class ProjectBaseConstantPaths {
 	
 	public final static String EXCEL_FILE=USER_HOME+"src/main/resources" +File.separator + "testdata" +File.separator+ "falcondashboard.xlsx";
 	
-	public static final String EXTENT_REPORTFILE =  USER_HOME + "extentreport.html";
+	public static final String EXTENT_REPORTFILE =  USER_HOME + "ExtentReport.html";
+	
+	public static final String EXTENT_CONFIGFILE =  USER_HOME + "extent-config.xml";
 
 }

@@ -33,7 +33,7 @@ public class TC11_DownloadOption extends TestSuiteBase{
 	String sheetname="REST API TEST RESULT";
 	String columnname="Validation Text";
 	 String actualtooltipmessage;
-	 String message;
+	 String tooltipmessage;
 	 String expectedtooltipmessage;
 	/* 
 	 * This test script covers the following functionalities of product  page.
@@ -55,10 +55,10 @@ public class TC11_DownloadOption extends TestSuiteBase{
 		Waits.isElementVisible(browser.getDriver(), "loc.downloadmessage.txt");
 	log.info("STEP#3: Displaying the Download message for the products");	
 	    actualtooltipmessage=propReader.getValue("loc.downloadmessage.txt");
-	    message=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();
-	    page.writedata_toExcel(sheetname, columnname, 36, message);
+	    tooltipmessage=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();
+	    page.writedata_toExcel(sheetname, columnname, 36, tooltipmessage);
 	    expectedtooltipmessage=page.getdata_fromExcel(sheetname, columnname, "Download Message");
-	    Verify.verifyString(message, expectedtooltipmessage, "Validating the download message of the product is same as expected or not");
+	    Verify.verifyString(tooltipmessage, expectedtooltipmessage, "Validating the download message of the product is same as expected or not");
 	    report.info("Sucessfully validated the tooltip message");
 	}
 	}

@@ -7,14 +7,22 @@
   <parameter name="browserVersion" value="3.150.1"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage">
         <methods>
           <include name="teardown"/>
           <include name="preSetup"/>
           <include name="startTest"/>
-          <include name="totalTestCases"/>
+          <include name="viewPage"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases">
+        <methods>
+          <include name="teardown"/>
+          <include name="preSetup"/>
+          <include name="colorofSkippedTestCases"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_ie_3.150.1 (5)] -->

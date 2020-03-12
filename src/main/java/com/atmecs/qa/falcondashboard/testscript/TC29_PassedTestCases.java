@@ -54,6 +54,7 @@ public class TC29_PassedTestCases extends TestSuiteBase{
 	log.info("STEP#2: Selecting the dashboard slider option");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked dashboard slider");
+		Waits.isElementVisible(browser.getDriver(), "validate.productpaneltitle.txt");
 	log.info("STEP#3: Clicking on pass test cases");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.passedtestcases.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked pass test cases");

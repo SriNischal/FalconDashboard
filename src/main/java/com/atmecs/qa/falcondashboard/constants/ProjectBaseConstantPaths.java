@@ -23,6 +23,6 @@ public class ProjectBaseConstantPaths {
 	
 	public static final String EXTENT_REPORTFILE =  USER_HOME + "ExtentReport.html";
 	
-	public static final String EXTENT_CONFIGFILE =  USER_HOME + "extent-config.xml";
+	public static final String EXTENT_CONFIGFILE =  USER_HOME + "src/test/resources" + File.separator + "extent-config.xml";
 
 }

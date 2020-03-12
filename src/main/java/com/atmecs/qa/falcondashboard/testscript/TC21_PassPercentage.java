@@ -52,7 +52,7 @@ public class TC21_PassPercentage extends TestSuiteBase{
 	log.info("STEP#1: Clicking on the Recentruns");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the recent runs");
-		wait.implicitWait();
+		Waits.isElementVisible(browser.getDriver(), "loc.passpercentage.txt");
 	log.info("STEP#2: Validating the pass percent");
 	    validate.validatePassPercent();
 	    report.info("Successfully validated the pass percent");

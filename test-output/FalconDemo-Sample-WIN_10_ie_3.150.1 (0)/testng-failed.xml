@@ -7,53 +7,11 @@
   <parameter name="browserVersion" value="3.150.1"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase">
-        <methods>
-          <include name="getResult"/>
-          <include name="teardown"/>
-          <include name="preSetup"/>
-          <include name="tearDown"/>
-          <include name="startTest"/>
-          <include name="testPhase"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase -->
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC36_StartTime">
-        <methods>
-          <include name="startTime"/>
-          <include name="getResult"/>
-          <include name="teardown"/>
-          <include name="preSetup"/>
-          <include name="tearDown"/>
-          <include name="startTest"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC36_StartTime -->
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment">
-        <methods>
-          <include name="getResult"/>
-          <include name="environmentOfProduct"/>
-          <include name="teardown"/>
-          <include name="preSetup"/>
-          <include name="tearDown"/>
-          <include name="startTest"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment -->
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC37_EndTime">
-        <methods>
-          <include name="getResult"/>
-          <include name="teardown"/>
-          <include name="preSetup"/>
-          <include name="tearDown"/>
-          <include name="startTest"/>
-          <include name="endTime"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC37_EndTime -->
       <class name="com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder">
         <methods>
-          <include name="getResult"/>
           <include name="dashboardSlidder"/>
           <include name="teardown"/>
           <include name="preSetup"/>
-          <include name="tearDown"/>
           <include name="startTest"/>
         </methods>
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder -->

@@ -15,6 +15,7 @@ import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 import com.atmecs.qa.falcondashboard.testscript.SampleTestScript;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.relevantcodes.extentreports.ExtentReports;
 
 public class TestSuiteBase {
 
@@ -26,7 +27,7 @@ public class TestSuiteBase {
 	@BeforeSuite
 	public static void startTest() {
 		htmlReporter = new ExtentHtmlReporter(ProjectBaseConstantPaths.EXTENT_REPORTFILE);
-		htmlReporter.loadConfig(ProjectBaseConstantPaths.EXTENT_CONFIGFILE);
+		//htmlReporter.loadConfig(ProjectBaseConstantPaths.EXTENT_CONFIGFILE);
 	}
 
 	// In this method the browser is invoked and url is opened
@@ -40,6 +41,7 @@ public class TestSuiteBase {
 		browser.openURL(url, os, osVersion, br, browserVersion);
 		report.info("Maximizing browser window");
 		browser.maximizeWindow();
+		browser.getWait().implicitWait(5);
 	}
 
 	@AfterClass

@@ -56,6 +56,7 @@ public class TC31_FailedTestCases extends TestSuiteBase{
 	log.info("STEP#2: Selecting the dashboard slider option");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked dashboard slider");
+		Waits.isElementVisible(browser.getDriver(), "loc.failedtestcases.btn");
 	log.info("STEP#3: Clicking on fail test cases");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.failedtestcases.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked fail test cases");

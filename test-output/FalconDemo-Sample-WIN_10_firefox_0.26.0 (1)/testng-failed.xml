@@ -7,14 +7,6 @@
   <parameter name="browserVersion" value="0.26.0"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases">
-        <methods>
-          <include name="teardown"/>
-          <include name="preSetup"/>
-          <include name="startTest"/>
-          <include name="dropdownPassedTestCases"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases -->
       <class name="com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases">
         <methods>
           <include name="dropdownSkippedTestCases"/>

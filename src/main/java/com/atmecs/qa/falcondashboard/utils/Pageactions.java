@@ -90,9 +90,14 @@ public class Pageactions  {
 
 		public void clickOnElement(String element) {
 			WebElement webElement = getLocator(element);
+			webElement.isEnabled();
+			if(isClickable(webElement)) {
 			webElement.click();
 		}
-		 
+			else {
+		     System.out.println("element not present");		
+			}
+		}
 		public String getText(String element) {
 			WebElement webElement = getLocator(element);
 			return webElement.getText();
@@ -143,5 +148,18 @@ public class Pageactions  {
 			 browser.getDriver().switchTo().window(handle);
 			 System.out.println("Window handle - > " + handle);
 			 }
+		}
+		
+		
+		public boolean isClickable(WebElement element) 
+		{
+			try{
+				WebDriverWait wait = new WebDriverWait(browser.getDriver(), 6);
+				wait.until(ExpectedConditions.elementToBeClickable(element));
+				return true;
+			}
+			catch (Exception e){
+				return false;
+			}
 		}
 }

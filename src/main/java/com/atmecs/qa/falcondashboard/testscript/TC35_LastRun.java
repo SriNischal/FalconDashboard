@@ -54,7 +54,7 @@ public class TC35_LastRun extends TestSuiteBase{
 	log.info("STEP#1: Clicking on the Recentruns");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the recent runs");
-		wait.implicitWait();
+		Waits.isElementVisible(browser.getDriver(), "loc.lastrun.txt");
 	log.info("STEP#2: Validating the last run");
 	    validate.validateLastRun();
 	    report.info("Successfully validated the last run");

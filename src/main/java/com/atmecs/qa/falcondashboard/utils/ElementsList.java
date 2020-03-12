@@ -15,12 +15,10 @@ public class ElementsList {
 	}
 	@SuppressWarnings("deprecation")
 	public String listofElements(String product) {
-		System.out.println("product ->" +product);
 		List<WebElement> list = browser.getFindFromBrowser().findElementsByXpath(product);
 		log.dateinfo(list.size());
 		List<String> texts = list.stream().map(WebElement::getText).collect(Collectors.toList());
 		log.info(texts);
-		System.out.println("product ->" +product);
 		return product;
 	}
 	

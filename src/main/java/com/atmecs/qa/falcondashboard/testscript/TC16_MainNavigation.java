@@ -77,7 +77,7 @@ public class TC16_MainNavigation extends TestSuiteBase{
 		report.info("Successfully validated View");
 	log.info("STEP#8: Clicking on the views option");	
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.view.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		wait.implicitWait();
+		Waits.isElementVisible(browser.getDriver(), "validate.productsnapshot.txt");
 	log.info("STEP#9: Validating the views panel title");	
 		validate.validateViewPanelTitle();
 		report.info("Successfully validated panelview");

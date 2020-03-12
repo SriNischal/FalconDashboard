@@ -44,7 +44,7 @@ public class TC24_ProductSnapShot extends TestSuiteBase{
 		Pageactions page=new Pageactions(browser);
 		Waits.isElementVisible(browser.getDriver(), "loc.snapshotbar.btn");
 	log.info("STEP#1: Clicking on the product snapshot option");
-		page.clickOnElement(ReadLocators.getPropertyvalue("loc.snapshotbar.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.clickOnElement(ReadLocators.getPropertyvalue("loc.snapshotba.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product snapshot bar");
 		wait.implicitWait();
 	log.info("STEP#2: Validating the product snapshot text");	

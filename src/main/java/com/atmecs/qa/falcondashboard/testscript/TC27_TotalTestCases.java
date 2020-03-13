@@ -61,9 +61,11 @@ public class TC27_TotalTestCases extends TestSuiteBase{
 	log.info("STEP#3: Clicking on total test cases");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.totaltestcases.txt", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked total test cases");
+		Waits.isElementVisible(browser.getDriver(), "validate.viewtests.txt");
 	log.info("STEP#4: Validating the test cases text");	
 		validate.validateTestCases();
 		report.info("Successfully validated test cases");
+		Waits.isElementVisible(browser.getDriver(), "loc.numberoftestcases.txt");
 	log.info("STEP#5: Validating the time taken to run the product");	
 		validate.validateTime();
 		report.info("Successfully validated the run time");

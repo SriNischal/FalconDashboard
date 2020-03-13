@@ -48,7 +48,7 @@ public class TC22_DeleteOption extends TestSuiteBase{
 	log.info("STEP#1: Clicking on the recent runs option");	
 	     page.clickOnElement(ReadLocators.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		 report.info("Successfully clicked on recent runs");
-		 Waits.isElementVisible(browser.getDriver(), "loc.deleteoption.btn");
+		 Waits.isElementVisible(browser.getDriver(), "loc.delete.txt");
 	log.info("STEP#2: Mouse hovering over the delete option");	 
 		 page.mouseOver(ReadLocators.getPropertyvalue("loc.deleteoption.btn",ProjectBaseConstantPaths.LOCATORS_FILE));
 		 report.info("Successfully mouse hovered over the delete option");

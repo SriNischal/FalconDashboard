@@ -9,9 +9,10 @@
     <classes>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns">
         <methods>
+          <include name="teardown"/>
           <include name="recentrun"/>
           <include name="preSetup"/>
-          <include name="teardown"/>
+          <include name="startTest"/>
         </methods>
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns -->
     </classes>

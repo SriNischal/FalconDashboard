@@ -1,13 +1,8 @@
 package com.atmecs.qa.falcondashboard.utils;
 
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.atmecs.falcon.automation.ui.selenium.Browser;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 
@@ -89,31 +84,44 @@ public class Pageactions  {
 		}
 
 		public void clickOnElement(String element) {
+			try {
 			WebElement webElement = getLocator(element);
-			webElement.isEnabled();
-			if(isClickable(webElement)) {
 			webElement.click();
 		}
-			else {
-		     System.out.println("element not present");		
+			catch(Exception e) {
+				e.printStackTrace();
 			}
 		}
 		public String getText(String element) {
+			try {
 			WebElement webElement = getLocator(element);
 			return webElement.getText();
-
+			}
+			catch(Exception exception){
+				exception.printStackTrace();
+			}
+			return element;
 		}
 		public String getCssValue(String element,String value) {
+			try {
 			WebElement webElement = getLocator(element);
 			return webElement.getCssValue(value);
-
+			}
+			catch(Exception exception) {
+				exception.printStackTrace();
+			}
+			return value;
 		}
 		
 		public void mouseOver(String element) {
+			try {
 			Actions action = new Actions(browser.getDriver());
 			WebElement webElement = getLocator(element);
 			action.moveToElement(webElement).perform();
-
+			}
+			catch(Exception exception) {
+				exception.printStackTrace();
+			}
 		}
 		public String randomnumber(String locator) throws Exception {
 			int randomnumber = random.generateRandomNumber();
@@ -122,44 +130,12 @@ public class Pageactions  {
 			String Locator = locatorvalue.replace("*", number);
 			return Locator;
 		}
-		
-		
-		public WebElement waitElementToBeClickable(Browser browser, String locator, long waitingTime) {
-			WebDriverWait wait = new WebDriverWait(browser.getDriver(), waitingTime);
-			WebElement element = wait.until(ExpectedConditions.elementToBeClickable(getLocator(locator)));
-			return element;
-		}
-		
-		public WebElement textToBePresentInElement(Browser browser, String locator, long waitingTime) {
-			WebDriverWait wait = new WebDriverWait(browser.getDriver(), waitingTime);
-			WebElement webElement = getLocator(locator);
-			wait.until(ExpectedConditions.textToBePresentInElement(getLocator(locator) , "text to be present"));
-			return webElement;
-			
-		}
-		public void pageLoadTimeout(long waitingTime) {
-			browser.getDriver().manage().timeouts().pageLoadTimeout(waitingTime, TimeUnit.SECONDS);
-		}
 		public void windowHandle() {
 			Set<String> allWindowHandles = browser.getDriver().getWindowHandles();
 			 
 			 for(String handle : allWindowHandles)
 			 {
 			 browser.getDriver().switchTo().window(handle);
-			 System.out.println("Window handle - > " + handle);
 			 }
-		}
-		
-		
-		public boolean isClickable(WebElement element) 
-		{
-			try{
-				WebDriverWait wait = new WebDriverWait(browser.getDriver(), 6);
-				wait.until(ExpectedConditions.elementToBeClickable(element));
-				return true;
-			}
-			catch (Exception e){
-				return false;
-			}
 		}
 }

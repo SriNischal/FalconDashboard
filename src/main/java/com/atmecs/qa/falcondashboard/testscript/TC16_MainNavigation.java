@@ -63,6 +63,7 @@ public class TC16_MainNavigation extends TestSuiteBase{
 	log.info("STEP#3: Validating on the recent runs option");	
 		validate.validateRecentruns();
 		report.info("Successfully validated recent runs");
+		Waits.isElementVisible(browser.getDriver(), "loc.recentruns.btn");
 	log.info("STEP#4: Clicking on the recent runs option");	
 	    page.clickOnElement(ReadLocators.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 	    Waits.isElementVisible(browser.getDriver(), "validate.text.txt");

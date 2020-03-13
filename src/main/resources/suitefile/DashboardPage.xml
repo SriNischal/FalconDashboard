@@ -6,14 +6,14 @@
 
 	<test name="SampleTest">
 		<classes>
-			<!--  <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage" />
+			<class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage" />
 		    <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct" />
 			<class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases" />
 			<class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage" />
 			<class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation" />
-			<class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh" />-->
+			<class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh" />
 			<class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot" />
-			<!--  <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow" />--> 
+			<class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow" /> 
 		</classes>
 	</test>
 

@@ -44,7 +44,6 @@ public class TC30_ColorOfFailedTestCases extends TestSuiteBase{
 	 */
 	@Test
 	public void colorofFailedTestCases() throws Exception {
-		Waits wait=new Waits(browser);
 	    Pageactions page=new Pageactions(browser);
 	    Waits.isElementVisible(browser.getDriver(), "loc.product.btn");
     log.info("STEP#1: Clicking on the product");
@@ -55,7 +54,7 @@ public class TC30_ColorOfFailedTestCases extends TestSuiteBase{
 	    page.clickOnElement(ReadLocators.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");
 	log.info("STEP#3: Displaying the color of the total test case box");
-	    wait.implicitWait();
+	    Waits.isElementVisible(browser.getDriver(), "validate.coloroffailtestcases.txt");
 	    color=propReader.getValue("validate.coloroffailtestcases.txt");
 	    actualcolor=browser.getFindFromBrowser().findElementByXpath(color).getCssValue("background-color");
 	log.info("STEP#4: Veifying the color of the total test case box"); 

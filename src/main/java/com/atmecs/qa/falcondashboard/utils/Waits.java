@@ -20,7 +20,7 @@ public class Waits {
 	
 	public static boolean isElementVisible(WebDriver driver, String xpath) {
 
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, 15);
 		try {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
 		} catch (Exception exception) {

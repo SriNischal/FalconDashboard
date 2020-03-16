@@ -55,7 +55,6 @@ public class TC11_DownloadOption extends TestSuiteBase{
 		Waits.isElementVisible(browser.getDriver(), "loc.downloadmessage.txt");
 	log.info("STEP#3: Displaying the Download message for the products");	
 	    actualtooltipmessage=propReader.getValue("loc.downloadmessage.txt");
-	    Waits.isElementVisible(browser.getDriver(), "loc.downloadmessage.txt");
 	    tooltipmessage=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();
 	    page.writedata_toExcel(sheetname, columnname, 36, tooltipmessage);
 	    expectedtooltipmessage=page.getdata_fromExcel(sheetname, columnname, "Download Message");

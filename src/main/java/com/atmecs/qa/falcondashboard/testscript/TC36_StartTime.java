@@ -63,7 +63,6 @@ public class TC36_StartTime extends TestSuiteBase {
 	log.info("STEP#3: Displaying the start time text");
 	    starttime=propReader.getValue("loc.starttime.txt");
 	    time=browser.getTextField().readTextByXPath(LocatorType.XPATH, starttime);
-	    report.info(time);
 	    report.info("Successfully displayed the start time text");
 	log.info("STEP#4: Validating the start time text");
 	    expectedstarttext=page.getdata_fromExcel(sheetname, columnname, "Start Text");

@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Spliterator;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.WebElement;
 
 /**
@@ -49,6 +50,11 @@ public class LogReport {
 	}
 	public void info(Spliterator<String> spliterator) {
 		logger.info(spliterator);
+	}
+
+	public void exceptioninfo(ElementClickInterceptedException exception) {
+		logger.info(exception);
+		
 	}
 
 

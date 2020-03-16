@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 13 18:51:01 IST 2020</td>
+<td>Started on:</td><td>Mon Mar 16 19:11:36 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>227 seconds (227719 ms)</td>
+<tr><td>Total time:</td><td>279 seconds (279158 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,34 +75,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate.dateOfExecution()'><b>dateOfExecution</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate<br/>
-<a href="#Output-151603534" onClick='toggleBox("Output-151603534", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption.downloadOption()'><b>downloadOption</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption<br/>
+<a href="#Output-2032451394" onClick='toggleBox("Output-2032451394", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-151603534" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-151603534">
-Successfully clicked on product<br/>
-Successfully displayed day and date of product<br/>
-FAIL : Validating the date of the product is same as expected or not expected [row Date or column -1 does not exist  in xlsx] but found [Mar13,2020]: ACTUAL : Mar13,2020 	EXPECTED :row Date or column -1 does not exist  in xlsx<br/>
-Successfully validated the date<br/>
-Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_firefox_0.26.0 (2)\Screenshots\dateOfExecution_1_.png<br/>
+<a href="#Output-2032451394" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2032451394">
+Successfully clicked on the product<br/>
+Clicked on download option<br/>
+No such element found with xpath //div[@class='tooltip ng-isolate-scope fade in bottom']<br/>
+Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_firefox_0.26.0 (2)\Screenshots\downloadOption_1_.png<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: expected [row Date or column -1 does not exist  in xlsx] but found [Mar13,2020]
-	at com.atmecs.falcon.automation.verifyresult.VerificationManager.verifyString(VerificationManager.java:250)
-	at com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate.dateOfExecution(TC12_ExecutionDate.java:60)
+<td><div><pre>java.lang.NullPointerException
+	at com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption.downloadOption(TC11_DownloadOption.java:58)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:830)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace151603534", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace151603534'><pre>java.lang.AssertionError: expected [row Date or column -1 does not exist  in xlsx] but found [Mar13,2020]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.atmecs.falcon.automation.verifyresult.VerificationManager.verifyString(VerificationManager.java:250)
-	at com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate.dateOfExecution(TC12_ExecutionDate.java:60)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2032451394", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2032451394'><pre>java.lang.NullPointerException
+	at com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption.downloadOption(TC11_DownloadOption.java:58)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -125,8 +116,8 @@ Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAut
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </pre></div></td>
-<td>22</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate@51ae5f25</td></tr>
+<td>60</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption@4b15de18</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -136,26 +127,26 @@ Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAut
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption.downloadOption()'><b>downloadOption</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption<br/>
-<a href="#Output-1532243526" onClick='toggleBox("Output-1532243526", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate.dateOfExecution()'><b>dateOfExecution</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate<br/>
+<a href="#Output-1540730847" onClick='toggleBox("Output-1540730847", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1532243526" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1532243526">
-Successfully clicked on the product<br/>
-Clicked on download option<br/>
-PASS : Validating the download message of the product is same as expected or not : ACTUAL : Download 	EXPECTED :Download<br/>
-Sucessfully validated the tooltip message<br/>
+<a href="#Output-1540730847" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1540730847">
+Successfully clicked on product<br/>
+Successfully displayed day and date of product<br/>
+PASS : Validating the date of the product is same as expected or not : ACTUAL : Mar16,2020 	EXPECTED :Mar16,2020<br/>
+Successfully validated the date<br/>
 </div>
 </td>
 <td></td>
-<td>50</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption@318a4b98</td></tr>
+<td>37</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate@3da1ee48</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium.mediumOfProduct()'><b>mediumOfProduct</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium<br/>
-<a href="#Output-887857098" onClick='toggleBox("Output-887857098", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-612848273" onClick='toggleBox("Output-612848273", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-887857098" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-887857098">
+<a href="#Output-612848273" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-612848273">
 Successfully clicked on product<br/>
 Successfully displayed day and date of product<br/>
 Successfully displayed medium of product<br/>
@@ -164,14 +155,14 @@ Successfully validated the medium of the product<br/>
 </div>
 </td>
 <td></td>
-<td>23</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium@463f6e9a</td></tr>
+<td>36</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium@9128fce</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage.productPage()'><b>productPage</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage<br/>
-<a href="#Output-1716776778" onClick='toggleBox("Output-1716776778", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1291241152" onClick='toggleBox("Output-1291241152", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1716776778" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1716776778">
+<a href="#Output-1291241152" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1291241152">
 Successfully validated product<br/>
 Successfully clicked on the product<br/>
 Successfully validated panel title<br/>
@@ -181,8 +172,8 @@ Successfully selected dashboard option<br/>
 </div>
 </td>
 <td></td>
-<td>25</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage@7be19ef7</td></tr>
+<td>35</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage@61c33464</td></tr>
 </table><p>
 </body>
 </html>

@@ -7,22 +7,6 @@
   <parameter name="browserVersion" value="77"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment">
-        <methods>
-          <include name="environmentOfProduct"/>
-          <include name="teardown"/>
-          <include name="preSetup"/>
-          <include name="startTest"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment -->
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase">
-        <methods>
-          <include name="teardown"/>
-          <include name="preSetup"/>
-          <include name="startTest"/>
-          <include name="testPhase"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase -->
       <class name="com.atmecs.qa.falcondashboard.testscript.TC36_StartTime">
         <methods>
           <include name="startTime"/>
@@ -31,14 +15,6 @@
           <include name="startTest"/>
         </methods>
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC36_StartTime -->
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC37_EndTime">
-        <methods>
-          <include name="teardown"/>
-          <include name="preSetup"/>
-          <include name="startTest"/>
-          <include name="endTime"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC37_EndTime -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_chrome_77 (0)] -->

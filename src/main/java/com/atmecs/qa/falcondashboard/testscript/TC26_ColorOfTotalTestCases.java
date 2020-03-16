@@ -55,6 +55,7 @@ public class TC26_ColorOfTotalTestCases extends TestSuiteBase{
 		Waits.isElementVisible(browser.getDriver(), "validate.coloroftestcases.txt");
 	log.info("STEP#3: Displaying the color of the total test case box");
 	    color=propReader.getValue("validate.coloroftestcases.txt");
+	    Waits.isElementVisible(browser.getDriver(), "background-color");
 	    actualcolor=browser.getFindFromBrowser().findElementByXpath(color).getCssValue("background-color");
 	log.info("STEP#4: Veifying the color of the total test case box"); 
 	    page.writedata_toExcel(sheetname, columnname,31, actualcolor);

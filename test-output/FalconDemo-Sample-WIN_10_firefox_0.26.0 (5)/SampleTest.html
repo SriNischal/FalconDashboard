@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SampleTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 13 18:54:49 IST 2020</td>
+<td>Started on:</td><td>Mon Mar 16 19:16:16 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>538 seconds (538001 ms)</td>
+<tr><td>Total time:</td><td>795 seconds (795717 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,120 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases.failTestCases()'><b>failTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases<br/>
+<a href="#Output-1500187351" onClick='toggleBox("Output-1500187351", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1500187351" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1500187351">
+Successfully clicked on product<br/>
+Successfully clicked dashboard slider<br/>
+Successfully clicked fail test cases<br/>
+Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_firefox_0.26.0 (5)\Screenshots\failTestCases_1_.png<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Validating the 0 is same as expected or not expected [1] but found [0]
+	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:28)
+	at com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation.validateFailTestCases(ViewPageValidation.java:40)
+	at com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases.failTestCases(TC31_FailedTestCases.java:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1500187351", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1500187351'><pre>java.lang.AssertionError: Validating the 0 is same as expected or not expected [1] but found [0]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:28)
+	at com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation.validateFailTestCases(ViewPageValidation.java:40)
+	at com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases.failTestCases(TC31_FailedTestCases.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+</pre></div></td>
+<td>50</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases@48243bae</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases.passTestCases()'><b>passTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases<br/>
+<a href="#Output-2091821666" onClick='toggleBox("Output-2091821666", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2091821666" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2091821666">
+Successfully clicked on product<br/>
+Successfully clicked dashboard slider<br/>
+Successfully clicked pass test cases<br/>
+Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_firefox_0.26.0 (5)\Screenshots\passTestCases_1_.png<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Validating the 1 is same as expected or not expected [9] but found [1]
+	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:28)
+	at com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation.validatePassTestCases(ViewPageValidation.java:32)
+	at com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases.passTestCases(TC29_PassedTestCases.java:63)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2091821666", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2091821666'><pre>java.lang.AssertionError: Validating the 1 is same as expected or not expected [9] but found [1]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:28)
+	at com.atmecs.qa.falcondashboard.validationresults.ViewPageValidation.validatePassTestCases(ViewPageValidation.java:32)
+	at com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases.passTestCases(TC29_PassedTestCases.java:63)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+</pre></div></td>
+<td>67</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases@24a66ba2</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,10 +190,10 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases.colorofFailedTestCases()'><b>colorofFailedTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases<br/>
-<a href="#Output-893142288" onClick='toggleBox("Output-893142288", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-944216753" onClick='toggleBox("Output-944216753", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-893142288" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-893142288">
+<a href="#Output-944216753" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-944216753">
 Successfully clicked on product<br/>
 Successfully selected dashboard option<br/>
 PASS : Validating the color of the fail test cases box is same as expected or not : ACTUAL : rgb(244, 67, 54) 	EXPECTED :rgb(244, 67, 54)<br/>
@@ -87,14 +201,14 @@ Successfully validated the color of the fail test cases box<br/>
 </div>
 </td>
 <td></td>
-<td>22</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases@6ebcc541</td></tr>
+<td>50</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases@77381a83</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases.colorofPassedTestCases()'><b>colorofPassedTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases<br/>
-<a href="#Output-1473157436" onClick='toggleBox("Output-1473157436", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-385079615" onClick='toggleBox("Output-385079615", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1473157436" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1473157436">
+<a href="#Output-385079615" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-385079615">
 Successfully clicked on product<br/>
 Successfully selected dashboard option<br/>
 PASS : Validating the color of the pass test cases is same as expected or not : ACTUAL : rgb(0, 150, 136) 	EXPECTED :rgb(0, 150, 136)<br/>
@@ -102,14 +216,14 @@ Successfully validated the color of the pass  test cases box<br/>
 </div>
 </td>
 <td></td>
-<td>22</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases@7bdff67d</td></tr>
+<td>49</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases@7f5c8575</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases.colorofSkippedTestCases()'><b>colorofSkippedTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases<br/>
-<a href="#Output-955107999" onClick='toggleBox("Output-955107999", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1501189970" onClick='toggleBox("Output-1501189970", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-955107999" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-955107999">
+<a href="#Output-1501189970" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1501189970">
 Successfully clicked on product<br/>
 Successfully selected dashboard option<br/>
 PASS : Validating th ecolor of the skip test cases box is same as expected or not : ACTUAL : rgb(33, 150, 243) 	EXPECTED :rgb(33, 150, 243)<br/>
@@ -117,14 +231,14 @@ Successfully validated the color of the skip test cases box<br/>
 </div>
 </td>
 <td></td>
-<td>34</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases@3dabd39</td></tr>
+<td>50</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases@534868f2</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases.colorofTotalTestCases()'><b>colorofTotalTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases<br/>
-<a href="#Output-1190753743" onClick='toggleBox("Output-1190753743", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2120172397" onClick='toggleBox("Output-2120172397", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1190753743" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1190753743">
+<a href="#Output-2120172397" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2120172397">
 Successfully clicked on product<br/>
 Successfully selected dashboard option<br/>
 PASS : Validating the color of total test cases box is same as expected is same or not : ACTUAL : rgb(103, 58, 183) 	EXPECTED :rgb(103, 58, 183)<br/>
@@ -132,46 +246,14 @@ Successfully validated the color of the total  test cases box<br/>
 </div>
 </td>
 <td></td>
-<td>33</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases@44e1456e</td></tr>
-<tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases.failTestCases()'><b>failTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases<br/>
-<a href="#Output-2060285484" onClick='toggleBox("Output-2060285484", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2060285484" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2060285484">
-Successfully clicked on product<br/>
-Successfully clicked dashboard slider<br/>
-Successfully clicked fail test cases<br/>
-Successfully validated Failed test cases<br/>
-Successfully validated fail message<br/>
-</div>
-</td>
-<td></td>
-<td>44</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases@732dfbc</td></tr>
-<tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases.passTestCases()'><b>passTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases<br/>
-<a href="#Output-1064067571" onClick='toggleBox("Output-1064067571", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1064067571" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1064067571">
-Successfully clicked on product<br/>
-Successfully clicked dashboard slider<br/>
-Successfully clicked pass test cases<br/>
-Successfully validated passed test cases<br/>
-Successfully validated pass percentage<br/>
-</div>
-</td>
-<td></td>
-<td>44</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases@20382e1d</td></tr>
+<td>66</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases@1d49c09d</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases.skippedTestCases()'><b>skippedTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases<br/>
-<a href="#Output-331645663" onClick='toggleBox("Output-331645663", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1158236622" onClick='toggleBox("Output-1158236622", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-331645663" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-331645663">
+<a href="#Output-1158236622" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1158236622">
 Successfully clicked on product<br/>
 Successfully clicked dashboard slider<br/>
 Successfully clicked pass test cases<br/>
@@ -180,14 +262,14 @@ Successfully validated skip message<br/>
 </div>
 </td>
 <td></td>
-<td>40</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases@62f33399</td></tr>
+<td>55</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases@4424e242</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases.totalTestCases()'><b>totalTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases<br/>
-<a href="#Output-1166474973" onClick='toggleBox("Output-1166474973", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1748463801" onClick='toggleBox("Output-1748463801", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1166474973" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1166474973">
+<a href="#Output-1748463801" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1748463801">
 Successfully clicked on product<br/>
 Successfully clicked dashboard slider<br/>
 Successfully clicked total test cases<br/>
@@ -196,14 +278,14 @@ Successfully validated the run time<br/>
 </div>
 </td>
 <td></td>
-<td>55</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases@6461b0ca</td></tr>
+<td>84</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases@16c53cc6</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage.viewPage()'><b>viewPage</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage<br/>
-<a href="#Output-416718166" onClick='toggleBox("Output-416718166", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-117555711" onClick='toggleBox("Output-117555711", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-416718166" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-416718166">
+<a href="#Output-117555711" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-117555711">
 Successfully validated views<br/>
 Successfully validated the views panel title<br/>
 Successfully selected dashboard option<br/>
@@ -211,8 +293,8 @@ Clicked on download option<br/>
 </div>
 </td>
 <td></td>
-<td>30</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage@6a6d644b</td></tr>
+<td>39</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage@737f1447</td></tr>
 </table><p>
 </body>
 </html>

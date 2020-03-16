@@ -13,7 +13,7 @@
 			<class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation" />
 			<class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh" />
 			<class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot" />
-			<class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow" /> 
+			<class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow" />
 		</classes>
 	</test>
 

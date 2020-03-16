@@ -54,6 +54,7 @@ public class TC07_Dropdowns extends TestSuiteBase {
 	    locatorvalue=ReadLocators.getPropertyvalue("loc.customer.txt", ProjectBaseConstantPaths.LOCATORS_FILE);
 		page.clickOnElement(locatorvalue);
 		report.info("Successfully selected customer option");
+		Waits.isElementVisible(browser.getDriver(), "loc.module.ddn");
 	log.info("STEP#3: Validating the customer dropdown  value");	
 		validate.validateCustomer();
 		report.info("Successfully validated customer");

@@ -5,9 +5,7 @@
     <classes>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage">
         <methods>
-          <include name="getResult"/>
           <include name="teardown"/>
-          <include name="tearDown"/>
           <include name="preSetup"/>
           <include name="dashboardPage"/>
           <include name="startTest"/>

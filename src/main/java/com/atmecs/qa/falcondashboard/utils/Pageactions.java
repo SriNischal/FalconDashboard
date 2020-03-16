@@ -6,18 +6,17 @@ import org.openqa.selenium.interactions.Actions;
 import com.atmecs.falcon.automation.ui.selenium.Browser;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 
-public class Pageactions  {
-	RandomNumber random=new RandomNumber();
+public class Pageactions {
+	RandomNumber random = new RandomNumber();
 	LogReport log = new LogReport();
-	ReadLocators read=new ReadLocators();
+	ReadLocators read = new ReadLocators();
 	Browser browser = null;
 	ReadDataFromExcel reader = getsheet(ProjectBaseConstantPaths.EXCEL_FILE);
-	
+
 	public Pageactions(Browser browser) {
 		this.browser = browser;
 	}
-	  
-	  
+
 	public ReadDataFromExcel getsheet(String sheetname) {
 		ReadDataFromExcel read = new ReadDataFromExcel();
 		try {
@@ -27,115 +26,108 @@ public class Pageactions  {
 		}
 		return read;
 	}
-	  public String getdata_fromExcel(String sheetname,String columnname, String rowname) {
-	  String datavalue = reader.getCellDataByColumnName(sheetname,columnname, rowname); 
-	  return datavalue;
-	  }
-	  
-	  public String writedata_toExcel(String sheetname,String columnname, int rownumber, String value) {
-		  String datavalue =reader.setCellData(sheetname, columnname, rownumber, value); 
-		  return datavalue;
-		  }
-	  
-	 public String getdatabycellvalue(String sheetName,int colNum,int i) {
-		 String datavalue=reader.getCellData(sheetName, colNum, i);
-		 return datavalue;	 
-	 }
-	  
-	  public WebElement getLocator(String locatorType) {
-			String[] locator = locatorType.split(":");
-			
+
+	public String getdata_fromExcel(String sheetname, String columnname, String rowname) {
+		String datavalue = reader.getCellDataByColumnName(sheetname, columnname, rowname);
+		return datavalue;
+	}
+
+	public String writedata_toExcel(String sheetname, String columnname, int rownumber, String value) {
+		String datavalue = reader.setCellData(sheetname, columnname, rownumber, value);
+		return datavalue;
+	}
+
+	public String getdatabycellvalue(String sheetName, int colNum, int i) {
+		String datavalue = reader.getCellData(sheetName, colNum, i);
+		return datavalue;
+	}
+
+	public WebElement getLocator(String locatorType) {
+		String[] locator = locatorType.split(":");
+
 		/*
 		 * System.out.println("In Select locators::***************");
 		 * System.out.println("Key::"+locator[0]);
 		 * System.out.println("value::"+locator[1]);
 		 */
-			
-			
-			WebElement webElement = null;	
-			
-			switch (locator[0]) {
-			case "id":
-				webElement=browser.getFindFromBrowser().findElementById(locator[1]);
-				break;
-			case "name":
-				webElement=browser.getFindFromBrowser().findElementByName(locator[1]);
-				break;
-			case "className":
-				webElement=browser.getFindFromBrowser().findElementByClassName(locator[1]);
-				break;
-			case "linkText":
-				webElement=browser.getFindFromBrowser().findElementByLinkText(locator[1]);
-				break;
-			case "partialLinkText":
-				webElement=browser.getFindFromBrowser().findElementByPartialLinkText(locator[1]);
-				break;
-			case "tagName":
-				webElement=browser.getFindFromBrowser().findElementByTagName(locator[1]);
-				break;
-			case "cssSelector":
-				webElement=browser.getFindFromBrowser().findElementByCssSelector(locator[1]);
-				break;
-			case "xpath":
-				webElement=browser.getFindFromBrowser().findElementByXpath(locator[1]);
-				break;
-			}
-			return webElement;
-		}
 
-		public void clickOnElement(String element) {
-			try {
+		WebElement webElement = null;
+
+		switch (locator[0]) {
+		case "id":
+			webElement = browser.getFindFromBrowser().findElementById(locator[1]);
+			break;
+		case "name":
+			webElement = browser.getFindFromBrowser().findElementByName(locator[1]);
+			break;
+		case "className":
+			webElement = browser.getFindFromBrowser().findElementByClassName(locator[1]);
+			break;
+		case "linkText":
+			webElement = browser.getFindFromBrowser().findElementByLinkText(locator[1]);
+			break;
+		case "partialLinkText":
+			webElement = browser.getFindFromBrowser().findElementByPartialLinkText(locator[1]);
+			break;
+		case "tagName":
+			webElement = browser.getFindFromBrowser().findElementByTagName(locator[1]);
+			break;
+		case "cssSelector":
+			webElement = browser.getFindFromBrowser().findElementByCssSelector(locator[1]);
+			break;
+		case "xpath":
+			webElement = browser.getFindFromBrowser().findElementByXpath(locator[1]);
+			break;
+		}
+		return webElement;
+	}
+
+	public void clickOnElement(String element) {
+		try {
 			WebElement webElement = getLocator(element);
-			webElement.click();
-		}
-			catch(Exception e) {
-				e.printStackTrace();
+			if (webElement.isDisplayed() && webElement.isEnabled()) {
+				webElement.click();
 			}
+		} catch (Exception exception) {
+			log.info("element is not displayed and enable to click");
 		}
-		public String getText(String element) {
-			try {
+	}
+
+	public String getText(String element) {
 			WebElement webElement = getLocator(element);
 			return webElement.getText();
-			}
-			catch(Exception exception){
-				exception.printStackTrace();
-			}
-			return element;
-		}
-		public String getCssValue(String element,String value) {
-			try {
+	}
+
+	public String getCssValue(String element, String value) {
 			WebElement webElement = getLocator(element);
 			return webElement.getCssValue(value);
-			}
-			catch(Exception exception) {
-				exception.printStackTrace();
-			}
-			return value;
-		}
-		
-		public void mouseOver(String element) {
-			try {
+	}
+
+	public void mouseOver(String element) {
+		try {
 			Actions action = new Actions(browser.getDriver());
 			WebElement webElement = getLocator(element);
+			if(webElement.isDisplayed() && webElement.isEnabled()) {
 			action.moveToElement(webElement).perform();
-			}
-			catch(Exception exception) {
-				exception.printStackTrace();
-			}
 		}
-		public String randomnumber(String locator) throws Exception {
-			int randomnumber = random.generateRandomNumber();
-			String number = Integer.toString(randomnumber);
-			String locatorvalue = ReadLocators.getPropertyvalue(locator, ProjectBaseConstantPaths.LOCATORS_FILE);
-			String Locator = locatorvalue.replace("*", number);
-			return Locator;
+		}catch (Exception exception) {
+			log.info("element is not displayed and enable to click");
 		}
-		public void windowHandle() {
-			Set<String> allWindowHandles = browser.getDriver().getWindowHandles();
-			 
-			 for(String handle : allWindowHandles)
-			 {
-			 browser.getDriver().switchTo().window(handle);
-			 }
+	}
+
+	public String randomnumber(String locator) throws Exception {
+		int randomnumber = random.generateRandomNumber();
+		String number = Integer.toString(randomnumber);
+		String locatorvalue = ReadLocators.getPropertyvalue(locator, ProjectBaseConstantPaths.LOCATORS_FILE);
+		String Locator = locatorvalue.replace("*", number);
+		return Locator;
+	}
+
+	public void windowHandle() {
+		Set<String> allWindowHandles = browser.getDriver().getWindowHandles();
+
+		for (String handle : allWindowHandles) {
+			browser.getDriver().switchTo().window(handle);
 		}
+	}
 }

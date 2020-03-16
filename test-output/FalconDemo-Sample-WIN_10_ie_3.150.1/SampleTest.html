@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 13 18:56:14 IST 2020</td>
+<td>Started on:</td><td>Mon Mar 16 19:18:27 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>801 seconds (801986 ms)</td>
+<tr><td>Total time:</td><td>843 seconds (843508 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,55 +75,32 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow.maximizeWindow()'><b>maximizeWindow</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow<br/>
-<a href="#Output-1598560937" onClick='toggleBox("Output-1598560937", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation.mainNavigation()'><b>mainNavigation</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation<br/>
+<a href="#Output-2000645343" onClick='toggleBox("Output-2000645343", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1598560937" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1598560937">
-Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1\Screenshots\maximizeWindow_1_.png<br/>
+<a href="#Output-2000645343" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2000645343">
+Successfully validated dashboard<br/>
+Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1\Screenshots\mainNavigation_1_.png<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element is not displayed
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ATMECSINLT-060&apos;, ip: &apos;55.55.52.253&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: true, initialBrowserUrl: http://localhost:5094/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9b9665ea-8e3e-4640-bb8d-d84422271769
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.atmecs.qa.falcondashboard.utils.Pageactions.clickOnElement(Pageactions.java:94)
-	at com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow.maximizeWindow(TC38_MaximizingWindow.java:47)
+<td><div><pre>java.lang.AssertionError: Validating the  is same as expected or not expected [Recent Runs] but found []
+	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:28)
+	at com.atmecs.qa.falcondashboard.validationresults.MainNavigationValidation.validateRecentruns(MainNavigationValidation.java:24)
+	at com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation.mainNavigation(TC16_MainNavigation.java:64)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:830)
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1598560937", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1598560937'><pre>org.openqa.selenium.ElementNotInteractableException: Element is not displayed
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ATMECSINLT-060&apos;, ip: &apos;55.55.52.253&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: true, initialBrowserUrl: http://localhost:5094/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9b9665ea-8e3e-4640-bb8d-d84422271769
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.atmecs.qa.falcondashboard.utils.Pageactions.clickOnElement(Pageactions.java:94)
-	at com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow.maximizeWindow(TC38_MaximizingWindow.java:47)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2000645343", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2000645343'><pre>java.lang.AssertionError: Validating the  is same as expected or not expected [Recent Runs] but found []
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:28)
+	at com.atmecs.qa.falcondashboard.validationresults.MainNavigationValidation.validateRecentruns(MainNavigationValidation.java:24)
+	at com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation.mainNavigation(TC16_MainNavigation.java:64)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -146,8 +123,8 @@ Session ID: 9b9665ea-8e3e-4640-bb8d-d84422271769
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </pre></div></td>
-<td>15</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow@1ba0a3b9</td></tr>
+<td>65</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation@76005f51</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -158,27 +135,27 @@ Session ID: 9b9665ea-8e3e-4640-bb8d-d84422271769
 </tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct.clickingProduct()'><b>clickingProduct</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct<br/>
-<a href="#Output-1489667114" onClick='toggleBox("Output-1489667114", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-472361602" onClick='toggleBox("Output-472361602", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1489667114" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1489667114">
+<a href="#Output-472361602" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-472361602">
 PASS : Validating the product names is same as expected or not : ACTUAL : REST API TEST RESULT,WebServices,FALCON,WebServicesDemo,FalconMobileDemo,ObjectExtractor,SampleFalconAPITest,Falcon,DotComUI_Mobile,MWB,MWB_iOS,JB_Native_App_iOS,Falcon2,Fal,MWB,FalconDemo41,CreditSightsMobile,CHS,CHS,HEATCLINIC RESULT,UI WEB TEST RESULT,HEAT CLINIC RESULT,DotComUITablet,HRIS,HRIS_Cloud,HRIS_Local,Falcon,CreditSights,BrowserstackDemo,FalconSampleProj,DotComUITablet,GreyHealthGroup,FluorCorporation,AndroidDemoApp,MWBooking,AutomationDemoClient,APIAutomationDemoClient,APIAutomationClient,FLUOR,Atmecs,CHS,Atmecs,Atmecs,demo,CHS,Atmecs,CHS,TestMobileWeb,TestFalcon_runSessionId,swathi_signup account,Pooja_USAUTOPARTS,USAutoParts,USAutoParts_MUJ,TestMobileWeb_CnameDemo,IOSDemoApp,Mobile_Demo,TestDemoApp,UI BrowserStack Test Result,dbTesting 	EXPECTED :REST API TEST RESULT,WebServices,FALCON,WebServicesDemo,FalconMobileDemo,ObjectExtractor,SampleFalconAPITest,Falcon,DotComUI_Mobile,MWB,MWB_iOS,JB_Native_App_iOS,Falcon2,Fal,MWB,FalconDemo41,CreditSightsMobile,CHS,CHS,HEATCLINIC RESULT,UI WEB TEST RESULT,HEAT CLINIC RESULT,DotComUITablet,HRIS,HRIS_Cloud,HRIS_Local,Falcon,CreditSights,BrowserstackDemo,FalconSampleProj,DotComUITablet,GreyHealthGroup,FluorCorporation,AndroidDemoApp,MWBooking,AutomationDemoClient,APIAutomationDemoClient,APIAutomationClient,FLUOR,Atmecs,CHS,Atmecs,Atmecs,demo,CHS,Atmecs,CHS,TestMobileWeb,TestFalcon_runSessionId,swathi_signup account,Pooja_USAUTOPARTS,USAutoParts,USAutoParts_MUJ,TestMobileWeb_CnameDemo,IOSDemoApp,Mobile_Demo,TestDemoApp,UI BrowserStack Test Result,dbTesting<br/>
 Successfully valdated all the products<br/>
 Successfully displayed the execution times<br/>
-PASS : Validating the recent execution times of the products is same as expected or not : ACTUAL : 2 hours ago,63 days ago,71 days ago,73 days ago,78 days ago,226 days ago,239 days ago,239 days ago,241 days ago,260 days ago,266 days ago,266 days ago,267 days ago,273 days ago,275 days ago,283 days ago,289 days ago,289 days ago,297 days ago,357 days ago,372 days ago,380 days ago,395 days ago,403 days ago,403 days ago,407 days ago,424 days ago,463 days ago,469 days ago,497 days ago,549 days ago,615 days ago,625 days ago,629 days ago,632 days ago,632 days ago,632 days ago,652 days ago,658 days ago,658 days ago,687 days ago,728 days ago,728 days ago,764 days ago,771 days ago,786 days ago,786 days ago,787 days ago,791 days ago,820 days ago,823 days ago,828 days ago,836 days ago,847 days ago,861 days ago 	EXPECTED :2 hours ago,63 days ago,71 days ago,73 days ago,78 days ago,226 days ago,239 days ago,239 days ago,241 days ago,260 days ago,266 days ago,266 days ago,267 days ago,273 days ago,275 days ago,283 days ago,289 days ago,289 days ago,297 days ago,357 days ago,372 days ago,380 days ago,395 days ago,403 days ago,403 days ago,407 days ago,424 days ago,463 days ago,469 days ago,497 days ago,549 days ago,615 days ago,625 days ago,629 days ago,632 days ago,632 days ago,632 days ago,652 days ago,658 days ago,658 days ago,687 days ago,728 days ago,728 days ago,764 days ago,771 days ago,786 days ago,786 days ago,787 days ago,791 days ago,820 days ago,823 days ago,828 days ago,836 days ago,847 days ago,861 days ago<br/>
+PASS : Validating the recent execution times of the products is same as expected or not : ACTUAL : 2 hours ago,66 days ago,74 days ago,76 days ago,81 days ago,229 days ago,242 days ago,242 days ago,244 days ago,263 days ago,269 days ago,269 days ago,270 days ago,276 days ago,278 days ago,286 days ago,292 days ago,292 days ago,300 days ago,360 days ago,375 days ago,383 days ago,398 days ago,406 days ago,406 days ago,410 days ago,427 days ago,466 days ago,472 days ago,501 days ago,552 days ago,619 days ago,628 days ago,632 days ago,635 days ago,635 days ago,635 days ago,655 days ago,661 days ago,661 days ago,690 days ago,731 days ago,731 days ago,767 days ago,774 days ago,789 days ago,789 days ago,790 days ago,794 days ago,823 days ago,826 days ago,831 days ago,839 days ago,850 days ago,864 days ago 	EXPECTED :2 hours ago,66 days ago,74 days ago,76 days ago,81 days ago,229 days ago,242 days ago,242 days ago,244 days ago,263 days ago,269 days ago,269 days ago,270 days ago,276 days ago,278 days ago,286 days ago,292 days ago,292 days ago,300 days ago,360 days ago,375 days ago,383 days ago,398 days ago,406 days ago,406 days ago,410 days ago,427 days ago,466 days ago,472 days ago,501 days ago,552 days ago,619 days ago,628 days ago,632 days ago,635 days ago,635 days ago,635 days ago,655 days ago,661 days ago,661 days ago,690 days ago,731 days ago,731 days ago,767 days ago,774 days ago,789 days ago,789 days ago,790 days ago,794 days ago,823 days ago,826 days ago,831 days ago,839 days ago,850 days ago,864 days ago<br/>
 Successfully valdated all the recent execution times<br/>
 Successfully clicked on product<br/>
 </div>
 </td>
 <td></td>
-<td>202</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct@2ee86410</td></tr>
+<td>189</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct@4b381d3e</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage.dashboardPage()'><b>dashboardPage</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage<br/>
-<a href="#Output-21110251" onClick='toggleBox("Output-21110251", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-22962148" onClick='toggleBox("Output-22962148", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-21110251" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-21110251">
+<a href="#Output-22962148" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-22962148">
 PASS : Validting page url is same as expected or not  : ACTUAL : ATMECS - Falcon Test Repotrs 	EXPECTED :ATMECS - Falcon Test Repotrs<br/>
 successfully validated page title<br/>
 Successfully validated the dashboard text<br/>
@@ -187,47 +164,45 @@ Successfully validated falcon<br/>
 </div>
 </td>
 <td></td>
-<td>24</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage@349dacd5</td></tr>
+<td>25</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage@1c7fd66c</td></tr>
 <tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation.mainNavigation()'><b>mainNavigation</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation<br/>
-<a href="#Output-1745116100" onClick='toggleBox("Output-1745116100", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow.maximizeWindow()'><b>maximizeWindow</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow<br/>
+<a href="#Output-2081650859" onClick='toggleBox("Output-2081650859", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1745116100" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1745116100">
-Successfully validated dashboard<br/>
-Successfully validated recent runs<br/>
-Successfully validated recentruns<br/>
-Successfully validated recent runs panel title<br/>
-Successfully validated View<br/>
-Successfully validated panelview<br/>
-Successfully validated product snapshot<br/>
+<a href="#Output-2081650859" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2081650859">
+Successfully clicked on the expand button<br/>
+clicked on refresh option<br/>
+Successfully validated dashboard text<br/>
+Successfully validated falcon<br/>
+Successfully clicked on the expand button<br/>
 </div>
 </td>
 <td></td>
-<td>103</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation@7eee2111</td></tr>
+<td>51</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow@7ca87ef1</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC03_TestCases.numberofTestCasesOfProduct()'><b>numberofTestCasesOfProduct</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC03_TestCases<br/>
-<a href="#Output-1288502258" onClick='toggleBox("Output-1288502258", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-957641558" onClick='toggleBox("Output-957641558", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1288502258" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1288502258">
-PASS : Validating the test cases of the products is same as expected or not : ACTUAL : 10,1,2,2,1,1,4,10,2,12,1,1,4,1,1,0,2,2,1,4,4,0,1,6,6,6,4,1,1,1,7,9,2,1,8,10,10,1,4,2,1,8,4,2,1,1,1,1,6,2,1,2,2,1,5 	EXPECTED :10,1,2,2,1,1,4,10,2,12,1,1,4,1,1,0,2,2,1,4,4,0,1,6,6,6,4,1,1,1,7,9,2,1,8,10,10,1,4,2,1,8,4,2,1,1,1,1,6,2,1,2,2,1,5<br/>
+<a href="#Output-957641558" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-957641558">
+PASS : Validating the test cases of the products is same as expected or not : ACTUAL : 1,10,1,2,2,1,1,4,10,2,12,1,1,4,1,1,0,2,2,1,4,4,0,1,6,6,6,4,1,1,1,7,9,2,1,8,10,10,1,4,2,1,8,4,2,1,1,1,1,6,2,1,2,2,1,5 	EXPECTED :1,10,1,2,2,1,1,4,10,2,12,1,1,4,1,1,0,2,2,1,4,4,0,1,6,6,6,4,1,1,1,7,9,2,1,8,10,10,1,4,2,1,8,4,2,1,1,1,1,6,2,1,2,2,1,5<br/>
 Successfully valdated all the test cases<br/>
 Successfully mouse hovered the test cases<br/>
 PASS : Validating the tooltip message is same as expected or not : ACTUAL : Total Test Cases 	EXPECTED :Total Test Cases<br/>
 </div>
 </td>
 <td></td>
-<td>145</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC03_TestCases@4ef0f1c5</td></tr>
+<td>156</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC03_TestCases@1dff3341</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage.percentageOfProduct()'><b>percentageOfProduct</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage<br/>
-<a href="#Output-2116105091" onClick='toggleBox("Output-2116105091", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1684934682" onClick='toggleBox("Output-1684934682", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2116105091" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2116105091">
+<a href="#Output-1684934682" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1684934682">
 Successfully mouse hovered the pass%trend<br/>
 PASS : Validating the tooltip message is same as expected or not : ACTUAL : Pass % Trend 	EXPECTED :Pass % Trend<br/>
 Successfully mouse hovered over the pass percent<br/>
@@ -241,34 +216,34 @@ Successfully validated the color of the fail percentage<br/>
 </div>
 </td>
 <td></td>
-<td>40</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage@274cda29</td></tr>
+<td>60</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage@142e270e</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot.productSnapShot()'><b>productSnapShot</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot<br/>
-<a href="#Output-1707528660" onClick='toggleBox("Output-1707528660", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-82709314" onClick='toggleBox("Output-82709314", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1707528660" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1707528660">
+<a href="#Output-82709314" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-82709314">
 Successfully clicked on product snapshot bar<br/>
 Successfully validated product snapshot<br/>
 </div>
 </td>
 <td></td>
-<td>22</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot@5a7ca74d</td></tr>
+<td>27</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot@19db2c93</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC23_Refresh.refresh()'><b>refresh</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC23_Refresh<br/>
-<a href="#Output-319378279" onClick='toggleBox("Output-319378279", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1879518395" onClick='toggleBox("Output-1879518395", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-319378279" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-319378279">
+<a href="#Output-1879518395" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1879518395">
 Successfully validated dashboard text<br/>
 Successfully clicked on the refresh option<br/>
 </div>
 </td>
 <td></td>
-<td>44</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC23_Refresh@134b0238</td></tr>
+<td>47</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC23_Refresh@7d5a7d42</td></tr>
 </table><p>
 </body>
 </html>

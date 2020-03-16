@@ -58,6 +58,7 @@ public class TC29_PassedTestCases extends TestSuiteBase{
 	log.info("STEP#3: Clicking on pass test cases");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.passedtestcases.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked pass test cases");
+		Waits.isElementVisible(browser.getDriver(), "loc.numberoftestcases.txt");
 	log.info("STEP#4: Validating the number of pass test cases");	
 		validate.validatePassTestCases();
 		report.info("Successfully validated passed test cases");

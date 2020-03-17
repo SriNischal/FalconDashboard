@@ -53,7 +53,7 @@ public class TC18_ProductName extends TestSuiteBase {
 	log.info("STEP#1: Clicking on the Recentruns");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the recent runs");
-		wait.implicitWait();
+		Waits.isElementVisible(browser.getDriver(), "loc.productnames.txt");
 	log.info("STEP#2: Validating the product names");
 	    validate.validateProductName();
 	    report.info("Successfully validated the product name");

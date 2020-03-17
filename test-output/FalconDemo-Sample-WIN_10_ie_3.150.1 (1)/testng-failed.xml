@@ -15,14 +15,6 @@
           <include name="startTest"/>
         </methods>
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns -->
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases">
-        <methods>
-          <include name="dropdownSkippedTestCases"/>
-          <include name="teardown"/>
-          <include name="preSetup"/>
-          <include name="startTest"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_ie_3.150.1 (1)] -->

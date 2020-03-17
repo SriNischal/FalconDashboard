@@ -21,19 +21,15 @@ public class ProductPageValidation {
 		helper=new ValidationHelper(browser);
 	}
 	public void validateProduct() throws Exception {
-		String expectedData=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Product Name");
-		helper.getDataofRow(expectedData, "validate.product.txt",10);
+		helper.getDataofRow("Product Name", "validate.product.txt",10);
 	}
 	public void validatePanelTitle() throws Exception {
-		String expectedData=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "View Panel Title");
-		helper.getDataofRow(expectedData, "validate.productpaneltitle.txt",8);
+		helper.getDataofRow("View Panel Title", "validate.productpaneltitle.txt",8);
 	}
 	public void validateEnvironment() throws Exception {
-		String expectedData=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Environment");
-		helper.getDataofRow(expectedData, "validate.environment.txt",17);
+		helper.getDataofRow("Environment", "validate.environment.txt",17);
 	}
 	public void validateTestPhase() throws Exception {
-		String expectedData=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Test Phase");
-		helper.getDataofRow(expectedData, "validate.testphase.txt",18);
+		helper.getDataofRow("Test Phase", "validate.testphase.txt",18);
 	}
 }

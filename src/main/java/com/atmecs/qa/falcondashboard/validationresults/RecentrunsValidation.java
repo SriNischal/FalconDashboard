@@ -15,39 +15,30 @@ public class RecentrunsValidation {
 	}
 
 	public void validateText() throws Exception {
-		String expectedData=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Recentruns Page title");
-		helper.getDataofRow(expectedData, "validate.text.txt",5);
+		helper.getDataofRow("Recentruns Page title", "validate.text.txt",5);
 	}
 	public void validatePanelTitle() throws Exception {
-		String expectedData=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Recent Runs Panel Title");
-		helper.getDataofRow(expectedData, "validate.recentrunspaneltitle.txt",7);
+		helper.getDataofRow("Recent Runs Panel Title", "validate.recentrunspaneltitle.txt",7);
 	}
 	public void validateProductName() throws Exception {
-		String expectedData=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Product Text");
-		helper.getDataofRow(expectedData, "validate.productnamme.txt",37);
+		helper.getDataofRow("Product Text", "validate.productnamme.txt",37);
 	}
 	public void validateComponent() throws Exception {
-		String expectedData=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Component Text");
-		helper.getDataofRow(expectedData, "validate.component.txt",38);
+		helper.getDataofRow("Component Text", "validate.component.txt",38);
 	}
 	public void validateTestCase() throws Exception {
-		String expectedData=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Testcase Text");
-		helper.getDataofRow(expectedData, "validate.testcases.txt",39);
+		helper.getDataofRow("Testcase Text", "validate.testcases.txt",39);
 	}
 	public void validatePassPercent() throws Exception {
-		String expectedData=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Pass Percent Text");
-		helper.getDataofRow(expectedData, "validate.passpercent.txt",40);
+		helper.getDataofRow("Pass Percent Text", "validate.passpercent.txt",40);
 	}
 	public void validateLastRun() throws Exception {
-		String expectedData=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Last Run Text");
-		helper.getDataofRow(expectedData, "validate.lastrun.txt",41);
+		helper.getDataofRow("Last Run Text", "validate.lastrun.txt",41);
 	}
 	public void validatePercentageCompleted() throws Exception {
-		String expectedData=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Percentage Completed ");
-		helper.getDataofRow(expectedData, "validate.percentagecompleted.txt",57);
+		helper.getDataofRow("Percentage Completed ", "validate.percentagecompleted.txt",57);
 	}
 	public void validateSortingPassPercent() throws Exception {
-		String expectedData=page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Sorting percentage");
-		helper.getDataofRow(expectedData, "validate.percentagecompleted.txt",58);
+		helper.getDataofRow("Sorting percentage", "validate.percentagecompleted.txt",58);
 	}
 }

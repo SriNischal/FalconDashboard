@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SampleTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 16 19:25:58 IST 2020</td>
+<td>Started on:</td><td>Tue Mar 17 19:40:22 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>358 seconds (358903 ms)</td>
+<tr><td>Total time:</td><td>480 seconds (480207 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,117 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns.dropdown()'><b>dropdown</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns<br/>
-<a href="#Output-172544336" onClick='toggleBox("Output-172544336", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-172544336" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-172544336">
-Successfully clicked on the product<br/>
-Successfully selected customer option<br/>
-Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1 (1)\Screenshots\dropdown_1_.png<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: Validating the HeatClinicCucumber is same as expected or not expected [Falcon] but found [HeatClinicCucumber]
-	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:28)
-	at com.atmecs.qa.falcondashboard.validationresults.DropdownValidation.validateCustomer(DropdownValidation.java:23)
-	at com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns.dropdown(TC07_Dropdowns.java:59)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace172544336", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace172544336'><pre>java.lang.AssertionError: Validating the HeatClinicCucumber is same as expected or not expected [Falcon] but found [HeatClinicCucumber]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:28)
-	at com.atmecs.qa.falcondashboard.validationresults.DropdownValidation.validateCustomer(DropdownValidation.java:23)
-	at com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns.dropdown(TC07_Dropdowns.java:59)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-</pre></div></td>
-<td>58</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns@408bb00b</td></tr>
-<tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases.dropdownSkippedTestCases()'><b>dropdownSkippedTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases<br/>
-<a href="#Output-848853087" onClick='toggleBox("Output-848853087", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-848853087" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-848853087">
-Successfully clicked on product<br/>
-No such element found with xpath //select[@name='status']/option[4]<br/>
-Selected the skip status option<br/>
-No such element found with xpath //select[@name='status']/option[4]<br/>
-Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1 (1)\Screenshots\dropdownSkippedTestCases_1_.png<br/>
-</div>
-</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.atmecs.qa.falcondashboard.utils.Pageactions.getText(Pageactions.java:98)
-	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:26)
-	at com.atmecs.qa.falcondashboard.validationresults.DropdownValidation.validateSkipStatus(DropdownValidation.java:39)
-	at com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases.dropdownSkippedTestCases(TC15_SkippedTestCases.java:58)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace848853087", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace848853087'><pre>java.lang.NullPointerException
-	at com.atmecs.qa.falcondashboard.utils.Pageactions.getText(Pageactions.java:98)
-	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:26)
-	at com.atmecs.qa.falcondashboard.validationresults.DropdownValidation.validateSkipStatus(DropdownValidation.java:39)
-	at com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases.dropdownSkippedTestCases(TC15_SkippedTestCases.java:58)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-</pre></div></td>
-<td>54</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases@2b50f0c7</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -186,35 +75,80 @@ Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAut
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases.dropdownFailedTestCases()'><b>dropdownFailedTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases<br/>
-<a href="#Output-120704325" onClick='toggleBox("Output-120704325", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns.dropdown()'><b>dropdown</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns<br/>
+<a href="#Output-819868652" onClick='toggleBox("Output-819868652", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-120704325" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-120704325">
+<a href="#Output-819868652" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-819868652">
+Successfully clicked on the product<br/>
+Successfully selected customer dropdown<br/>
+Successfully selected the customer option<br/>
+PASS : Validating the text value : ACTUAL : CucumberDemo 	EXPECTED :CucumberDemo<br/>
+Successfully validated customer<br/>
+Successfully selected module dropdown<br/>
+Successfully selected the module option<br/>
+PASS : Validating the text value : ACTUAL : Sample 	EXPECTED :Sample<br/>
+Successfully validated module<br/>
+Successfully selected status dropdown<br/>
+Successfully selected the status option<br/>
+PASS : Validating the text value : ACTUAL : Fail 	EXPECTED :Fail<br/>
+Successfully validated status<br/>
+</div>
+</td>
+<td></td>
+<td>109</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns@7bb69b76</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases.dropdownFailedTestCases()'><b>dropdownFailedTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases<br/>
+<a href="#Output-1627366051" onClick='toggleBox("Output-1627366051", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1627366051" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1627366051">
 Successfully clicked on product<br/>
-Selected the fail status option<br/>
+Successfully selected status dropdown<br/>
+Successfully selected the status option<br/>
+PASS : Validating the text value : ACTUAL : Fail 	EXPECTED :Fail<br/>
 Successfully validated fail status<br/>
 Successfully displayed the fail test cases<br/>
 </div>
 </td>
 <td></td>
-<td>66</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases@54fe2db8</td></tr>
+<td>88</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases@2d77a0a8</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases.dropdownPassedTestCases()'><b>dropdownPassedTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases<br/>
-<a href="#Output-1963512408" onClick='toggleBox("Output-1963512408", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-719723484" onClick='toggleBox("Output-719723484", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1963512408" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1963512408">
+<a href="#Output-719723484" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-719723484">
 Successfully clicked on product<br/>
-Selected the pass status option<br/>
+Successfully selected status dropdown<br/>
+Successfully selected the status option<br/>
+PASS : Validating the text value : ACTUAL : Pass 	EXPECTED :Pass<br/>
 Successfully validated pass status<br/>
 Successfully validated the list of pass test cases<br/>
 </div>
 </td>
 <td></td>
-<td>67</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases@52ec6127</td></tr>
+<td>88</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases@32ec83fa</td></tr>
+<tr>
+<td title='com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases.dropdownSkippedTestCases()'><b>dropdownSkippedTestCases</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases<br/>
+<a href="#Output-1056782792" onClick='toggleBox("Output-1056782792", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1056782792" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1056782792">
+Successfully clicked on product<br/>
+Successfully selected status dropdown<br/>
+Successfully selected the status option<br/>
+PASS : Validating the text value : ACTUAL : Skip 	EXPECTED :Skip<br/>
+Successfully validated skip status<br/>
+Successfully displayed the failed test cases<br/>
+</div>
+</td>
+<td></td>
+<td>86</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases@73080f72</td></tr>
 </table><p>
 </body>
 </html>

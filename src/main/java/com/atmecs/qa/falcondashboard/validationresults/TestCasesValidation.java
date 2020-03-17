@@ -16,11 +16,9 @@ public class TestCasesValidation {
 			helper=new ValidationHelper(browser);
 		}
 		public void validateFailedTestCase() throws Exception {
-			String expectedData = page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Failed Test Case");
-			helper.getDataofRow(expectedData, "validate.failtestcase.txt",54);
+			helper.getDataofRow("Failed Test Case", "validate.failtestcase.txt",54);
 		}
 		public void validatePassedTestCase() throws Exception {
-			String expectedData = page.getdata_fromExcel("REST API TEST RESULT", "Validation Text", "Passed Test Case");
-			helper.getDataofRow(expectedData, "validate.passtestcase.txt",55);
+			helper.getDataofRow("Passed Test Case", "validate.passtestcase.txt",55);
 		}
 }

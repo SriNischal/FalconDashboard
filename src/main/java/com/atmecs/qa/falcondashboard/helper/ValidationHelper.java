@@ -1,7 +1,7 @@
 package com.atmecs.qa.falcondashboard.helper;
 
-import org.testng.Assert;
 import com.atmecs.falcon.automation.ui.selenium.Browser;
+import com.atmecs.falcon.automation.ui.selenium.Verify;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 import com.atmecs.qa.falcondashboard.utils.LogReport;
 import com.atmecs.qa.falcondashboard.utils.Pageactions;
@@ -16,17 +16,18 @@ public class ValidationHelper {
 	Pageactions page;
 	String sheetname="REST API TEST RESULT";
 	String columnname="Validation Text";
+	String actualproduct;
+	String expectedData;
 	public ValidationHelper(Browser browser) {
 		this.browser = browser;
 		page=new Pageactions(browser);
 	}
 	public void getDataofRow(String expectedString,String validationMessage,int i) throws Exception
 	{
-		String actualproduct;
-        actualproduct=page.getText(ReadLocators.getPropertyvalue(validationMessage,ProjectBaseConstantPaths.LOCATORS_FILE));
-        page.writedata_toExcel(sheetname,columnname, i, actualproduct);
-		Assert.assertEquals(actualproduct, expectedString,"Validating the "+actualproduct+" is same as expected or not");
-		log.info("Successfully validated " + expectedString);
+		actualproduct=page.getText(ReadLocators.getPropertyvalue(validationMessage, ProjectBaseConstantPaths.LOCATORS_FILE));
+		page.writedata_toExcel(sheetname, columnname, i, actualproduct);
+	    expectedData=page.getdata_fromExcel(sheetname, columnname, expectedString);
+		Verify.verifyString(actualproduct, expectedData, "Validating the text value");
 	}
 	
 	public String getData() throws Exception {

@@ -7,14 +7,14 @@
   <parameter name="browserVersion" value="0.26.0"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases">
         <methods>
           <include name="teardown"/>
           <include name="preSetup"/>
           <include name="startTest"/>
-          <include name="failTestCases"/>
+          <include name="totalTestCases"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases -->
       <class name="com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases">
         <methods>
           <include name="teardown"/>

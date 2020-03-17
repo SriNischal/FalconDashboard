@@ -25,29 +25,19 @@ public class DashboardPageValidation {
 		//reports=new ExtentReport(browser);
 	}
 	public void validatefalconlogo() throws Exception {
-		String expectedData= page.getdata_fromExcel(sheetname, columnname, "Atmecs Logo");
-		helper.getDataofRow(expectedData, "validate.logo.txt",3);
-        //reports.extentReport(expectedData);
+		helper.getDataofRow("Atmecs Logo", "validate.logo.txt",3);
 	}
 	public void validateproductsnapshot() throws Exception {
-		String expectedData= page.getdata_fromExcel(sheetname, columnname, "Product Snapshot Text");
-		helper.getDataofRow(expectedData, "validated.productsnapshotbar.txt",9);
-        //reports.extentReport(expectedData);
+		helper.getDataofRow("Product Snapshot Text", "validated.productsnapshotbar.txt",9);
 	}
 	public void validateListOfProducts() throws Exception {
-		String expectedData= page.getdata_fromExcel(sheetname, columnname, "Products Texts");
-		helper.getDataofRow(expectedData, "validate.product.txt",11);
-		//reports.extentReport(expectedData);
+		helper.getDataofRow("Products Texts", "validate.product.txt",11);
 	}
 	public void validateDashboard() throws Exception {
-		String data=page.getdata_fromExcel(sheetname, columnname, "Dashboard Text");
-		helper.getDataofRow(data, "validate.dashboardpage.txt",2);	
-	//	reports.extentReport(data);
+		helper.getDataofRow("Dashboard Text", "validate.dashboardpage.txt",2);	
 	}
 	public void validateRecentExecutionTime() throws Exception {
-		String expectedData= page.getdata_fromExcel(sheetname, columnname, "Products Recent Execution time");
-		helper.getDataofRow(expectedData, "loc.executiontime.txt",12);
-        //reports.extentReport(expectedData);
+		helper.getDataofRow("Products Recent Execution time", "loc.executiontime.txt",12);
 	}
 
 }

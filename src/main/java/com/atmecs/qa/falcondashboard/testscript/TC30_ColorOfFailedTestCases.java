@@ -53,8 +53,8 @@ public class TC30_ColorOfFailedTestCases extends TestSuiteBase{
 	log.info("STEP#2: Selecting the dashboard slider option");
 	    page.clickOnElement(ReadLocators.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");
+		Waits.isElementVisible(browser.getDriver(), "validate.coloroffailtestcases.txt");
 	log.info("STEP#3: Displaying the color of the total test case box");
-	    Waits.isElementVisible(browser.getDriver(), "validate.coloroffailtestcases.txt");
 	    color=propReader.getValue("validate.coloroffailtestcases.txt");
 	    actualcolor=browser.getFindFromBrowser().findElementByXpath(color).getCssValue("background-color");
 	log.info("STEP#4: Veifying the color of the total test case box"); 

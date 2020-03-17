@@ -32,6 +32,8 @@ public class TC14_FailedTestCases extends TestSuiteBase{
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	String products;
+	String statuslocator;
+	String statusvalue;
 	/* 
 	 * This test script covers the following functionalities of product  page.
 	 * 1. Verifying whether the product is clicked or not 
@@ -50,10 +52,15 @@ public class TC14_FailedTestCases extends TestSuiteBase{
 		report.info("Successfully clicked on product");
 		Waits.isElementVisible(browser.getDriver(), "loc.failselectstatus.btn");
 	log.info("STEP#2: Slecting the status option from the dropdown");
-		page.clickOnElement(ReadLocators.getPropertyvalue("loc.failselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		report.info("Selected the fail status option"); 
+	    statuslocator=ReadLocators.getPropertyvalue("loc.status.ddn", ProjectBaseConstantPaths.LOCATORS_FILE);
+	    page.clickOnElement(statuslocator);
+ 	    report.info("Successfully selected status dropdown");
+	    statusvalue=ReadLocators.getPropertyvalue("loc.failselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE);
+	    page.clickOnElement(statusvalue);
+	    report.info("Successfully selected the status option");
+	    Waits.isElementVisible(browser.getDriver(), "validate.failselectstatus.btn"); 
 	log.info("STEP#3: Validating the status option");	
-		 validate.validateFailStatus();
+		validate.validateFailStatus();
 		report.info("Successfully validated fail status");
 		Waits.isElementVisible(browser.getDriver(), "loc.numberoftestcases.txt");
 	log.info("STEP#4: Creating a list to display the failed test cases");

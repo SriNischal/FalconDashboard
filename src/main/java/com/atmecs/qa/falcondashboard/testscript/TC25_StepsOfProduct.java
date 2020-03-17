@@ -33,6 +33,8 @@ public class TC25_StepsOfProduct extends TestSuiteBase{
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	String passtestcases;
 	String duration;
+	String statuslocator;
+	String statusvalue;
 	/* 
 	 * This test script covers the following functionalities of recent runs page.
 	 * 1. Verifying whether the product is clicked or not
@@ -56,9 +58,13 @@ public class TC25_StepsOfProduct extends TestSuiteBase{
 		report.info("Successfully clicked on the product");
 		Waits.isElementVisible(browser.getDriver(), "loc.passselectstatus.btn");
 	log.info("STEP#2: Selecting the pass option from the status dropdown");	
-		page.clickOnElement(ReadLocators.getPropertyvalue("loc.passselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		report.info("Successfully selected pass option");
-		 Waits.isElementVisible(browser.getDriver(), "loc.duration.txt");
+	    statuslocator=ReadLocators.getPropertyvalue("loc.status.ddn", ProjectBaseConstantPaths.LOCATORS_FILE);
+        page.clickOnElement(statuslocator);
+	    report.info("Successfully selected status dropdown");
+        statusvalue=ReadLocators.getPropertyvalue("loc.passselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE);
+        page.clickOnElement(statusvalue);
+        report.info("Successfully selected the status option");
+        Waits.isElementVisible(browser.getDriver(), "loc.testcase.btn");
 	log.info("STEP#3: Creating the list for the test cases and duration of each test case of the product");	
 	    duration=propReader.getValue("loc.duration.txt");
 		list.listofElements(duration);

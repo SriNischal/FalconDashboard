@@ -82,15 +82,14 @@ public class Pageactions {
 		return webElement;
 	}
 
-	public void clickOnElement(String element) {
+	public String clickOnElement(String element) {
 		try {
 			WebElement webElement = getLocator(element);
-			if (webElement.isDisplayed() && webElement.isEnabled()) {
-				webElement.click();
-			}
+			webElement.click();
 		} catch (Exception exception) {
 			log.info("element is not displayed and enable to click");
 		}
+		return element;
 	}
 
 	public String getText(String element) {
@@ -107,11 +106,9 @@ public class Pageactions {
 		try {
 			Actions action = new Actions(browser.getDriver());
 			WebElement webElement = getLocator(element);
-			if(webElement.isDisplayed() && webElement.isEnabled()) {
 			action.moveToElement(webElement).perform();
-		}
 		}catch (Exception exception) {
-			log.info("element is not displayed and enable to click");
+			log.info("element is not displayed and enable to mouse hover");
 		}
 	}
 

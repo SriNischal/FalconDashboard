@@ -30,7 +30,12 @@ public class TC07_Dropdowns extends TestSuiteBase {
 	ReadLocators read = new ReadLocators();
 	ReadingData data = new ReadingData();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-	String locatorvalue;
+	String customerlocator;
+	String customervalue;
+	String modulelocator;
+	String modulevalue;
+	String statuslocator;
+	String statusvalue;
 	/* 
 	 * This test script covers the following functionalities of product page.
 	 * 1. Verifying whether the product is clicked or not 
@@ -51,24 +56,37 @@ public class TC07_Dropdowns extends TestSuiteBase {
 		report.info("Successfully clicked on the product");
 	    Waits.isElementVisible(browser.getDriver(), "loc.customer.txt");
 	log.info("STEP#2: Selecting the customer option from the dropdown");
-	    locatorvalue=ReadLocators.getPropertyvalue("loc.customer.txt", ProjectBaseConstantPaths.LOCATORS_FILE);
-		page.clickOnElement(locatorvalue);
-		report.info("Successfully selected customer option");
+	    customerlocator=ReadLocators.getPropertyvalue("loc.customer.txt", ProjectBaseConstantPaths.LOCATORS_FILE);
+		page.clickOnElement(customerlocator);
+		report.info("Successfully selected customer dropdown");
+		customervalue=ReadLocators.getPropertyvalue("loc.customervalue.txt", ProjectBaseConstantPaths.LOCATORS_FILE);
+		page.clickOnElement(customervalue);
+		report.info("Successfully selected the customer option");
 		Waits.isElementVisible(browser.getDriver(), "loc.module.ddn");
 	log.info("STEP#3: Validating the customer dropdown  value");	
 		validate.validateCustomer();
 		report.info("Successfully validated customer");
 	log.info("STEP#4: Selecting the module option from the dropdown");	
-		page.clickOnElement(ReadLocators.getPropertyvalue("loc.module.ddn", ProjectBaseConstantPaths.LOCATORS_FILE));
+	    modulelocator=ReadLocators.getPropertyvalue("loc.module.ddn", ProjectBaseConstantPaths.LOCATORS_FILE);
+		page.clickOnElement(modulelocator);
+		report.info("Successfully selected module dropdown");
+		modulevalue=ReadLocators.getPropertyvalue("loc.modulevalue.ddn", ProjectBaseConstantPaths.LOCATORS_FILE);
+		page.clickOnElement(modulevalue);
 		report.info("Successfully selected the module option");
+		Waits.isElementVisible(browser.getDriver(), "loc.status.ddn");
 	log.info("STEP#5: Validating the module drop down value");	
-		 validate.validateModule(); 
-		 report.info("Successfully validated module");
+		validate.validateModule(); 
+	    report.info("Successfully validated module");
 	log.info("STEP#6: Slecting the status option from the dropdown");	
-		page.clickOnElement(ReadLocators.getPropertyvalue("loc.failselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		report.info("Selected the status option"); 
-	log.info("STEP#7: Validating the status drop down option");	
-		 validate.validateFailStatus();
+	    statuslocator=ReadLocators.getPropertyvalue("loc.status.ddn", ProjectBaseConstantPaths.LOCATORS_FILE);
+	    page.clickOnElement(statuslocator);
+       	report.info("Successfully selected status dropdown");
+	    statusvalue=ReadLocators.getPropertyvalue("loc.passselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE);
+	    page.clickOnElement(statusvalue);
+	    report.info("Successfully selected the status option");
+	    Waits.isElementVisible(browser.getDriver(), "loc.passselectstatus.btn");
+	 log.info("STEP#7: Validating the status drop down option");	
+		validate.validateFailStatus();
 		report.info("Successfully validated status");
 		page.windowHandle();
 	}

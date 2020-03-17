@@ -32,8 +32,8 @@ public class TC15_SkippedTestCases extends TestSuiteBase{
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	String products;
-	
-	
+	String statuslocator;
+	String statusvalue;
 	/* 
 	 * This test script covers the following functionalities of product  page.
 	 * 1. Verifying whether the product is clicked or not 
@@ -52,8 +52,13 @@ public class TC15_SkippedTestCases extends TestSuiteBase{
 		report.info("Successfully clicked on product");
 		Waits.isElementVisible(browser.getDriver(), "loc.skipselectstatus.btn");
 	log.info("STEP#2: Slecting the status option from the dropdown");	
-		page.clickOnElement(ReadLocators.getPropertyvalue("loc.skipselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		report.info("Selected the skip status option"); 
+	    statuslocator=ReadLocators.getPropertyvalue("loc.status.ddn", ProjectBaseConstantPaths.LOCATORS_FILE);
+        page.clickOnElement(statuslocator);
+	    report.info("Successfully selected status dropdown");
+        statusvalue=ReadLocators.getPropertyvalue("loc.skipselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE);
+        page.clickOnElement(statusvalue);
+        report.info("Successfully selected the status option");
+        Waits.isElementVisible(browser.getDriver(), "validate.skipselectstatus.btn"); 
 	log.info("STEP#3: Validating the status option");	
 		 validate.validateSkipStatus();
 		report.info("Successfully validated skip status");

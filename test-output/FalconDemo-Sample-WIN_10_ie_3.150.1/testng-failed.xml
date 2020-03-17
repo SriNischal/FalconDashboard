@@ -15,6 +15,22 @@
           <include name="startTest"/>
         </methods>
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow">
+        <methods>
+          <include name="maximizeWindow"/>
+          <include name="teardown"/>
+          <include name="preSetup"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot">
+        <methods>
+          <include name="productSnapShot"/>
+          <include name="teardown"/>
+          <include name="preSetup"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_ie_3.150.1] -->

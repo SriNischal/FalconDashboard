@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SampleTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 16 19:32:31 IST 2020</td>
+<td>Started on:</td><td>Tue Mar 17 19:48:22 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>228 seconds (228420 ms)</td>
+<tr><td>Total time:</td><td>278 seconds (278227 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,108 +76,49 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase.failTestCasesOfProduct()'><b>failTestCasesOfProduct</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase<br/>
-<a href="#Output-808060557" onClick='toggleBox("Output-808060557", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1662985970" onClick='toggleBox("Output-1662985970", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-808060557" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-808060557">
+<a href="#Output-1662985970" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1662985970">
 Successfully clicked on product<br/>
-No such element found with xpath //select[@name='status']/option[3]<br/>
-Selected the status option<br/>
-No such element found with xpath //select[@name='status']/option[3]<br/>
-Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1 (4)\Screenshots\failTestCasesOfProduct_1_.png<br/>
+Successfully selected status dropdown<br/>
+Successfully selected the status option<br/>
+PASS : Validating the text value : ACTUAL : Fail 	EXPECTED :Fail<br/>
+Successfully validated status<br/>
+No such element found with xpath //tr[@class='ng-scope']<br/>
+Successfully clicked on test case<br/>
+PASS : Validating the text value : ACTUAL :  	EXPECTED :<br/>
+Successfully validated paneltitle<br/>
+PASS : Validating the text value : ACTUAL :  	EXPECTED :<br/>
+Successfully validated error message<br/>
 </div>
 </td>
-<td><div><pre>java.lang.NullPointerException
-	at com.atmecs.qa.falcondashboard.utils.Pageactions.getText(Pageactions.java:98)
-	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:26)
-	at com.atmecs.qa.falcondashboard.validationresults.DropdownValidation.validateFailStatus(DropdownValidation.java:35)
-	at com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase.failTestCasesOfProduct(TC20_FailTestCase.java:57)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace808060557", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace808060557'><pre>java.lang.NullPointerException
-	at com.atmecs.qa.falcondashboard.utils.Pageactions.getText(Pageactions.java:98)
-	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:26)
-	at com.atmecs.qa.falcondashboard.validationresults.DropdownValidation.validateFailStatus(DropdownValidation.java:35)
-	at com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase.failTestCasesOfProduct(TC20_FailTestCase.java:57)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-</pre></div></td>
-<td>70</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase@695fcdb6</td></tr>
+<td></td>
+<td>130</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase@7d5787f2</td></tr>
 <tr>
 <td title='com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct.stepsOfProduct()'><b>stepsOfProduct</b><br>Test class: com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct<br/>
-<a href="#Output-2005358935" onClick='toggleBox("Output-2005358935", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1895016594" onClick='toggleBox("Output-1895016594", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2005358935" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2005358935">
+<a href="#Output-1895016594" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1895016594">
 Successfully clicked on the product<br/>
-No such element found with xpath //select[@name='status']/option[2]<br/>
-Successfully selected pass option<br/>
-No such element found with xpath //tr[@class='ng-scope']<br/>
+Successfully selected status dropdown<br/>
+Successfully selected the status option<br/>
 Successfully selected the testcase<br/>
-No such element found with xpath //th[text()='Status']<br/>
-Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1 (4)\Screenshots\stepsOfProduct_1_.png<br/>
+PASS : Validating the text value : ACTUAL : Status 	EXPECTED :Status<br/>
+Successfully validated Status option<br/>
+PASS : Validating the text value : ACTUAL : Details 	EXPECTED :Details<br/>
+Successfully validated Details option<br/>
+PASS : Validating the text value : ACTUAL : Executing test case 	EXPECTED :Executing test case<br/>
+Successfully validated the test case<br/>
+PASS : Validating the text value : ACTUAL : click on Login Link on Heat Clinic page... 	EXPECTED :click on Login Link on Heat Clinic page...<br/>
+Successfully validated Request Body<br/>
 </div>
 </td>
-<td><div><pre>java.lang.NullPointerException
-	at com.atmecs.qa.falcondashboard.utils.Pageactions.getText(Pageactions.java:98)
-	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:26)
-	at com.atmecs.qa.falcondashboard.validationresults.ProductStepsValidation.validateStatusOption(ProductStepsValidation.java:21)
-	at com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct.stepsOfProduct(TC25_StepsOfProduct.java:73)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2005358935", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2005358935'><pre>java.lang.NullPointerException
-	at com.atmecs.qa.falcondashboard.utils.Pageactions.getText(Pageactions.java:98)
-	at com.atmecs.qa.falcondashboard.helper.ValidationHelper.getDataofRow(ValidationHelper.java:26)
-	at com.atmecs.qa.falcondashboard.validationresults.ProductStepsValidation.validateStatusOption(ProductStepsValidation.java:21)
-	at com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct.stepsOfProduct(TC25_StepsOfProduct.java:73)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-</pre></div></td>
-<td>107</td>
-<td>com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct@25db5a66</td></tr>
+<td></td>
+<td>93</td>
+<td>com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct@1fd740b4</td></tr>
 </table><p>
 </body>
 </html>

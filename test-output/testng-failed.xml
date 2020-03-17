@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [FalconDemo-Sample-WIN_10_firefox_0.26.0 (5)]">
+<suite name="Failed suite [FalconDemo-Sample-WIN_10_firefox_0.26.0 (0)]">
   <parameter name="os" value="WIN"/>
   <parameter name="osVersion" value="10"/>
   <parameter name="browser" value="firefox"/>
   <parameter name="browserVersion" value="0.26.0"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase">
         <methods>
           <include name="teardown"/>
           <include name="preSetup"/>
           <include name="startTest"/>
-          <include name="failTestCases"/>
+          <include name="testPhase"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases -->
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases">
-        <methods>
-          <include name="teardown"/>
-          <include name="passTestCases"/>
-          <include name="preSetup"/>
-          <include name="startTest"/>
-        </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase -->
     </classes>
   </test> <!-- SampleTest(failed) -->
-</suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_firefox_0.26.0 (5)] -->
+</suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_firefox_0.26.0 (0)] -->

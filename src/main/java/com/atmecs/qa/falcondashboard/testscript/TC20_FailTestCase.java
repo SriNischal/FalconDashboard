@@ -50,7 +50,7 @@ public class TC20_FailTestCase extends TestSuiteBase {
 	log.info("STEP#1: Clicking on the product");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
-		Waits.isElementVisible(browser.getDriver(), "loc.failselectstatus.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.status.ddn");
 	log.info("STEP#2: Slecting the status option from the dropdown");	
 	    statuslocator=ReadLocators.getPropertyvalue("loc.status.ddn", ProjectBaseConstantPaths.LOCATORS_FILE);
 	    page.clickOnElement(statuslocator);

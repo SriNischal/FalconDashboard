@@ -7,14 +7,13 @@
   <parameter name="browserVersion" value="77"/>
   <test thread-count="5" name="SampleTest(failed)">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct">
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns">
         <methods>
+          <include name="dropdown"/>
           <include name="teardown"/>
           <include name="preSetup"/>
-          <include name="startTest"/>
-          <include name="clickingProduct"/>
         </methods>
-      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct -->
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_chrome_77] -->

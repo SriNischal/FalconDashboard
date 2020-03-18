@@ -52,6 +52,7 @@ public class TC11_DownloadOption extends TestSuiteBase{
 	log.info("STEP#2: Clicking on the download option");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.download.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Clicked on download option");	
+		Waits.isElementVisible(browser.getDriver(), "loc.downloadmessage.txt");
 	log.info("STEP#3: Displaying the Download message for the products");	
 	    actualtooltipmessage=propReader.getValue("loc.downloadmessage.txt");
 	    tooltipmessage=browser.getFindFromBrowser().findElementByXpath(actualtooltipmessage).getText();

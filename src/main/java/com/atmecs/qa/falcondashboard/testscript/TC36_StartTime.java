@@ -60,6 +60,7 @@ public class TC36_StartTime extends TestSuiteBase {
 	log.info("STEP#2: Selecting the dashboard slider option");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");
+		Waits.isElementVisible(browser.getDriver(), "loc.starttime.txt");
 	log.info("STEP#3: Displaying the start time text");
 	    starttime=propReader.getValue("loc.starttime.txt");
 	    time=browser.getTextField().readTextByXPath(LocatorType.XPATH, starttime);

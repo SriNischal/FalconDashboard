@@ -56,10 +56,11 @@ public class TC37_EndTime extends TestSuiteBase {
 	log.info("STEP#1: Clicking on the product");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
-		Waits.isElementVisible(browser.getDriver(), "loc.dashboardslider.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.endtime.txt");
 	log.info("STEP#2: Selecting the dashboard slider option");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.dashboardslider.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully selected dashboard option");
+		Waits.isElementVisible(browser.getDriver(), "loc.endtime.txt");
 	log.info("STEP#3: Displaying the end time text");
 	    endtime=propReader.getValue("loc.endtime.txt");
 	    time=browser.getTextField().readTextByXPath(LocatorType.XPATH, endtime);

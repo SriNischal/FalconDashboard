@@ -2,9 +2,7 @@ package com.atmecs.qa.falcondashboard.testsuite;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
-
 import com.atmecs.falcon.automation.ui.selenium.Browser;
 import com.atmecs.falcon.automation.util.logging.LogLevel;
 import com.atmecs.falcon.automation.util.logging.LogManager;
@@ -14,21 +12,12 @@ import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
 import com.atmecs.qa.falcondashboard.testscript.SampleTestScript;
 import com.atmecs.qa.falcondashboard.utils.LoadProperties;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.relevantcodes.extentreports.ExtentReports;
 
 public class TestSuiteBase {
 
 	protected Browser browser;
 	LoadProperties load = new LoadProperties();
 	private ReportLogService report = new ReportLogServiceImpl(SampleTestScript.class);
-	public static ExtentHtmlReporter htmlReporter;
-
-	@BeforeSuite
-	public static void startTest() {
-		htmlReporter = new ExtentHtmlReporter(ProjectBaseConstantPaths.EXTENT_REPORTFILE);
-		//htmlReporter.loadConfig(ProjectBaseConstantPaths.EXTENT_CONFIGFILE);
-	}
 
 	// In this method the browser is invoked and url is opened
 	@BeforeMethod
@@ -43,7 +32,7 @@ public class TestSuiteBase {
 		browser.maximizeWindow();
 		browser.getWait().implicitWait(5);
 	}
-
+    //In this method the browser is closed after the execution of the script 
 	@AfterClass
 	public void teardown() {
 		browser.closeBrowser();

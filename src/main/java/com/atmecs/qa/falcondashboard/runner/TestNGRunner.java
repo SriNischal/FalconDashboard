@@ -2,10 +2,8 @@ package com.atmecs.qa.falcondashboard.runner;
 
 import java.io.File;
 import java.util.List;
-
 import org.testng.ITestNGListener;
 import org.testng.TestNG;
-import org.testng.annotations.Listeners;
 import org.testng.xml.XmlSuite;
 
 import com.atmecs.falcon.automation.dataprovider.TestDataProvider;

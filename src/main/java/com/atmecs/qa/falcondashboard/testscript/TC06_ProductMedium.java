@@ -49,7 +49,7 @@ public class TC06_ProductMedium extends TestSuiteBase{
 	log.info("STEP#1: Clicking on the product");
 		page.clickOnElement(ReadLocators.getPropertyvalue("loc.product.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on product");
-		Waits.isElementVisible(browser.getDriver(),"loc.product.txt");
+		Waits.isElementVisible(browser.getDriver(),product);
 	log.info("STEP#2: Splitting the array and displaying the medium of the product");
 		product = split.splitofarray(1);
 		report.info("Successfully displayed medium of product");

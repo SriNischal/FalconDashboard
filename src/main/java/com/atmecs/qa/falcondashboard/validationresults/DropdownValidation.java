@@ -24,6 +24,12 @@ public class DropdownValidation {
 	public void validateModule() throws Exception {
 		helper.getDataofRow("Module", "validate.module.txt",25);
 	}
+	public void validateOS() throws Exception {
+		helper.getDataofRow("OS", "validate.os.txt",59);
+	}
+	public void validateBrowser() throws Exception {
+		helper.getDataofRow("Browser", "validate.browsertext.txt",60);
+	}
 	public void validatePassStatus() throws Exception {
 		helper.getDataofRow("Pass Status", "validate.passselectstatus.btn",26);
 	}

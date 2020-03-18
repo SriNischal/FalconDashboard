@@ -1,6 +1,7 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
+
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
@@ -36,6 +37,9 @@ public class TC07_Dropdowns extends TestSuiteBase {
 	String modulevalue;
 	String statuslocator;
 	String statusvalue;
+	String oslocator;
+	String osvalue;
+	boolean value;
 	/* 
 	 * This test script covers the following functionalities of product page.
 	 * 1. Verifying whether the product is clicked or not 
@@ -75,7 +79,7 @@ public class TC07_Dropdowns extends TestSuiteBase {
 		report.info("Successfully selected the module option");
 		Waits.isElementVisible(browser.getDriver(), "loc.status.ddn");
 	log.info("STEP#5: Validating the module drop down value");	
-		validate.validateModule(); 
+		validate.validateModule();
 	    report.info("Successfully validated module");
 	log.info("STEP#6: Slecting the status option from the dropdown");	
 	    statuslocator=ReadLocators.getPropertyvalue("loc.status.ddn", ProjectBaseConstantPaths.LOCATORS_FILE);

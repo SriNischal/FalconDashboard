@@ -82,14 +82,13 @@ public class Pageactions {
 		return webElement;
 	}
 
-	public String clickOnElement(String element) {
+	public void clickOnElement(String element) {
 		try {
 			WebElement webElement = getLocator(element);
 			webElement.click();
 		} catch (Exception exception) {
 			log.info("element is not displayed and enable to click");
 		}
-		return element;
 	}
 
 	public String getText(String element) {

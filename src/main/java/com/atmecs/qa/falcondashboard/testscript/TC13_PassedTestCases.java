@@ -58,7 +58,6 @@ public class TC13_PassedTestCases extends TestSuiteBase{
 	    statusvalue=ReadLocators.getPropertyvalue("loc.passselectstatus.btn", ProjectBaseConstantPaths.LOCATORS_FILE);
 	    page.clickOnElement(statusvalue);
 	    report.info("Successfully selected the status option");
-	    Waits.isElementVisible(browser.getDriver(), "validate.passselectstatus.btn");
 	log.info("STEP#3: Validating the status option");	
 		validate.validatePassStatus();
 		report.info("Successfully validated pass status");

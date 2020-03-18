@@ -11,7 +11,6 @@
         <methods>
           <include name="teardown"/>
           <include name="preSetup"/>
-          <include name="startTest"/>
           <include name="downloadOption"/>
         </methods>
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption -->

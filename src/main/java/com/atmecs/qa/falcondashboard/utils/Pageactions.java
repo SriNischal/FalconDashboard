@@ -87,7 +87,7 @@ public class Pageactions {
 			WebElement webElement = getLocator(element);
 			webElement.click();
 		} catch (Exception exception) {
-			log.info("element is not displayed and enable to click");
+			 exception.printStackTrace();
 		}
 	}
 

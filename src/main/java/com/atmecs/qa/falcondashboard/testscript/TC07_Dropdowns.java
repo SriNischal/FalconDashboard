@@ -2,6 +2,7 @@ package com.atmecs.qa.falcondashboard.testscript;
 
 import org.testng.annotations.Test;
 
+import com.atmecs.falcon.automation.util.enums.LocatorType;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
 import com.atmecs.qa.falcondashboard.constants.ProjectBaseConstantPaths;
@@ -37,9 +38,10 @@ public class TC07_Dropdowns extends TestSuiteBase {
 	String modulevalue;
 	String statuslocator;
 	String statusvalue;
-	String oslocator;
+	boolean oslocator;
 	String osvalue;
-	boolean value;
+	boolean browserlocaors;
+	String browservalue;
 	/* 
 	 * This test script covers the following functionalities of product page.
 	 * 1. Verifying whether the product is clicked or not 
@@ -81,6 +83,37 @@ public class TC07_Dropdowns extends TestSuiteBase {
 	log.info("STEP#5: Validating the module drop down value");	
 		validate.validateModule();
 	    report.info("Successfully validated module");
+	log.info("STEP#2: Selecting and validating the os option from the dropdown");
+		oslocator = browser.getDropdown().isdropDownPresent(LocatorType.XPATH,"loc.os.ddn");
+		System.out.println(oslocator);
+		if (oslocator == true) {
+			page.clickOnElement(ReadLocators.getPropertyvalue("loc.os.ddn", ProjectBaseConstantPaths.LOCATORS_FILE));
+			report.info("Successfully selected os dropdown");
+			osvalue = ReadLocators.getPropertyvalue("loc.osvalue.ddn", ProjectBaseConstantPaths.LOCATORS_FILE);
+			page.clickOnElement(osvalue);
+			report.info("Successfully selected the os option");
+			Waits.isElementVisible(browser.getDriver(), "loc.browser.ddn");
+			log.info("STEP#5: Validating the module drop down value");
+			validate.validateOS();
+			report.info("Successfully validated os");
+		} else {
+			report.info("Value is not present so it entered the else loop");
+		}
+		Waits.isElementVisible(browser.getDriver(), "loc.status.ddn");
+	log.info("STEP#3: Selecting and validating the browser option from the dropdown");
+	    browserlocaors = browser.getDropdown().isdropDownPresent(LocatorType.XPATH,ReadLocators.getPropertyvalue("loc.browser.ddn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		if (browserlocaors == true) {
+			page.clickOnElement(ReadLocators.getPropertyvalue("loc.browser.ddn", ProjectBaseConstantPaths.LOCATORS_FILE));
+			report.info("Successfully selected browser dropdown");
+			browservalue = ReadLocators.getPropertyvalue("loc.browservalue.ddn", ProjectBaseConstantPaths.LOCATORS_FILE);
+			page.clickOnElement(browservalue);
+			report.info("Successfully selected the browser option");
+			log.info("STEP#5: Validating the module drop down value");
+			validate.validateBrowser();
+			report.info("Successfully validated browser");
+		} else {
+			report.info("Value is not present so it entered the else loop");
+		}
 	log.info("STEP#6: Slecting the status option from the dropdown");	
 	    statuslocator=ReadLocators.getPropertyvalue("loc.status.ddn", ProjectBaseConstantPaths.LOCATORS_FILE);
 	    page.clickOnElement(statuslocator);

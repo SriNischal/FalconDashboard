@@ -50,7 +50,7 @@
   </test> <!-- SampleTest -->
 </suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
 </td></tr>
-<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
 <tr><td>INFO: The value found with Environment variable FalconDemo is: FalconDemo</td></tr>
 <tr><td>INFO: The value found with Environment Module variable Dropdowns is: Dropdowns</td></tr>
 <tr><td>The value found with Environment variable WIN_10_ie_3.150.1,WIN_10_chrome_77,WIN_10_firefox_0.26.0 is: WIN_10_ie_3.150.1,WIN_10_chrome_77,WIN_10_firefox_0.26.0</td></tr>
@@ -103,7 +103,7 @@
   </test> <!-- SampleTest -->
 </suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
 </td></tr>
-<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
 <tr><td>INFO: The value found with Environment variable FalconDemo is: FalconDemo</td></tr>
 <tr><td>INFO: The value found with Environment Module variable Dropdowns is: Dropdowns</td></tr>
 <tr><td>The value found with Environment variable WIN_10_ie_3.150.1,WIN_10_chrome_77,WIN_10_firefox_0.26.0 is: WIN_10_ie_3.150.1,WIN_10_chrome_77,WIN_10_firefox_0.26.0</td></tr>
@@ -163,64 +163,34 @@
 <tr><td>Successfully clicked on the product</td></tr>
 <tr><td>Successfully clicked on the product</td></tr>
 <tr><td>Successfully clicked on the product</td></tr>
-<tr><td>No such element found invalid selector: Unable to locate an element with the xpath expression xpath://select[@name='oss'] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'xpath://select[@name='oss']' is not a valid XPath expression.
+<tr><td>No such element found with xpath invalid selector: Unable to locate an element with the xpath expression xpath://a[@ng-switch-when="next"] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'xpath://a[@ng-switch-when="next"]' is not a valid XPath expression.
   (Session info: chrome=80.0.3987.132)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ATMECSINLT-060', ip: '55.55.52.253', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SRINIS~1.THI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 58f6339dd014d36aa5631c66a9334d4f
-*** Element info: {Using=xpath, value=xpath://select[@name='oss']}</td></tr>
-<tr><td>Value is not present so it entered the else loop</td></tr>
-<tr><td>No such element found Given xpath expression "xpath://select[@name='oss']" is invalid: SyntaxError: The expression is not a legal expression.
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SRINIS~1.THI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64047}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: edbf94f1e1b688d6f2bd9a490e7f4c8a
+*** Element info: {Using=xpath, value=xpath://a[@ng-switch-when="next"]}</td></tr>
+<tr><td>No such element found with xpath Given xpath expression "xpath://a[@ng-switch-when="next"]" is invalid: SyntaxError: The expression is not a legal expression.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ATMECSINLT-060', ip: '55.55.52.253', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 13952, moz:profile: C:\Users\srinischal.thipara..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 31e20a4a-c973-400e-b6f5-628077b64c09
-*** Element info: {Using=xpath, value=xpath://select[@name='oss']}</td></tr>
-<tr><td>Value is not present so it entered the else loop</td></tr>
-<tr><td>No such element found Unable to locate an element with the xpath expression xpath://select[@name='oss'] because of the following error:
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 25444, moz:profile: C:\Users\srinischal.thipara..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac95e26d-cbdc-46fd-8e97-9e0b503c2196
+*** Element info: {Using=xpath, value=xpath://a[@ng-switch-when="next"]}</td></tr>
+<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77\Screenshots\osBrowser_1_.png</td></tr>
+<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_firefox_0.26.0\Screenshots\osBrowser_1_.png</td></tr>
+<tr><td>No such element found with xpath Unable to locate an element with the xpath expression xpath://a[@ng-switch-when="next"] because of the following error:
 Error: Bad token: :
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ATMECSINLT-060', ip: '55.55.52.253', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: true, initialBrowserUrl: http://localhost:3974/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ce3b17e7-e15b-4db0-83a7-86c8b1f5a929
-*** Element info: {Using=xpath, value=xpath://select[@name='oss']}</td></tr>
-<tr><td>Value is not present so it entered the else loop</td></tr>
-<tr><td>No such element found invalid selector: Unable to locate an element with the xpath expression xpath:(//select[@name='browsers']) because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'xpath:(//select[@name='browsers'])' is not a valid XPath expression.
-  (Session info: chrome=80.0.3987.132)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ATMECSINLT-060', ip: '55.55.52.253', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SRINIS~1.THI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 58f6339dd014d36aa5631c66a9334d4f
-*** Element info: {Using=xpath, value=xpath:(//select[@name='browsers'])}</td></tr>
-<tr><td>Value is not present so it entered the else loop</td></tr>
-<tr><td>No such element found Given xpath expression "xpath:(//select[@name='browsers'])" is invalid: SyntaxError: The expression is not a legal expression.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ATMECSINLT-060', ip: '55.55.52.253', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 13952, moz:profile: C:\Users\srinischal.thipara..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 31e20a4a-c973-400e-b6f5-628077b64c09
-*** Element info: {Using=xpath, value=xpath:(//select[@name='browsers'])}</td></tr>
-<tr><td>Value is not present so it entered the else loop</td></tr>
-<tr><td>No such element found Unable to locate an element with the xpath expression xpath:(//select[@name='browsers']) because of the following error:
-Error: Bad token: :
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ATMECSINLT-060', ip: '55.55.52.253', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: true, initialBrowserUrl: http://localhost:3974/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ce3b17e7-e15b-4db0-83a7-86c8b1f5a929
-*** Element info: {Using=xpath, value=xpath:(//select[@name='browsers'])}</td></tr>
-<tr><td>Value is not present so it entered the else loop</td></tr>
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: true, initialBrowserUrl: http://localhost:8649/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cdd28164-fd0e-4c73-bfe6-75ea451d4c7d
+*** Element info: {Using=xpath, value=xpath://a[@ng-switch-when="next"]}</td></tr>
+<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1\Screenshots\osBrowser_1_.png</td></tr>
 </table>

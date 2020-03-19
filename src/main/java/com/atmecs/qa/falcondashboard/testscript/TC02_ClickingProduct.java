@@ -80,16 +80,17 @@ public class TC02_ClickingProduct extends TestSuiteBase {
 		report.info("Successfully clicked on product");
 		page.windowHandle();
 	}
-		/*
-		 * log.info("STEP#7: Clicking on each every product "); for (int x = 0; x <
-		 * index; x++) { WebElement client = list.get(x); client.click();
-		 * page.clickOnElement(read.getPropertyvalue("loc.product.txt",
-		 * ProjectBaseConstantPaths.LOCATORS_FILE));
-		 * report.info("Successfully clicked on product");
-		 * browser.getWait().safeWait(3000);
-		 * page.clickOnElement(read.getPropertyvalue("loc.dashboard.btn",
-		 * ProjectBaseConstantPaths.LOCATORS_FILE)); browser.getWait().safeWait(2000);
-		 */
+		
+	/*
+	 * log.info("STEP#7: Clicking on each every product "); for(int x =
+	 * 0;x<index;x++) { WebElement client = list.get(x); client.click();
+	 * page.clickOnElement(read.getPropertyvalue("loc.product.txt",
+	 * ProjectBaseConstantPaths.LOCATORS_FILE));
+	 * report.info("Successfully clicked on product");
+	 * browser.getWait().safeWait(3000);
+	 * page.clickOnElement(read.getPropertyvalue("loc.dashboard.btn",
+	 * ProjectBaseConstantPaths.LOCATORS_FILE)); browser.getWait().safeWait(2000);
+	 */
 
 	}
 

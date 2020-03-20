@@ -10,7 +10,7 @@
 		    <class name="com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases" />
 			<class name="com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases" />
 			<class name="com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases" />-->
-			<class name="com.atmecs.qa.falcondashboard.testscript.TC39_OSBrowser" />
+			<class name="com.atmecs.qa.falcondashboard.testscript.TC39_DeleltingProduct" />
 		</classes>
 	</test>
 

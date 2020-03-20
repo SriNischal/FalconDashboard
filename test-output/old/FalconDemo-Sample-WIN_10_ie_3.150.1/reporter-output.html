@@ -1,9 +1,9 @@
 <h2>Reporter output</h2><table><tr><td>INFO: The value found with Environment variable FalconDemo is: FalconDemo</td></tr>
-<tr><td>INFO: The value found with Environment Module variable Dropdowns is: Dropdowns</td></tr>
+<tr><td>INFO: The value found with Environment Module variable Dropdowns,DashboardPage,DashboardSlidder,ProductPage,RecentRuns,TestcasesResult,ViewPage is: Dropdowns,DashboardPage,DashboardSlidder,ProductPage,RecentRuns,TestcasesResult,ViewPage</td></tr>
 <tr><td>The value found with Environment variable WIN_10_ie_3.150.1,WIN_10_chrome_77,WIN_10_firefox_0.26.0 is: WIN_10_ie_3.150.1,WIN_10_chrome_77,WIN_10_firefox_0.26.0</td></tr>
 <tr><td>INFO: Clients Found: [FalconDemo]
 </td></tr>
-<tr><td>INFO: Modules Selected: [Dropdowns]
+<tr><td>INFO: Modules Selected: [DashboardPage, DashboardSlidder, Dropdowns, ProductPage, RecentRuns, TestcasesResult, ViewPage]
 </td></tr>
 <tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
 <tr><td><?xml version="1.0" encoding="UTF-8"?>
@@ -15,7 +15,129 @@
   <parameter name="browserVersion" value="77"/>
   <test thread-count="5" name="SampleTest">
     <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC36_StartTime"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC37_EndTime"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases"/>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC39_OSBrowser"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC18_ProductName"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC35_LastRun"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage"/>
     </classes>
   </test> <!-- SampleTest -->
 </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
@@ -30,7 +152,129 @@
   <parameter name="browserVersion" value="0.26.0"/>
   <test thread-count="5" name="SampleTest">
     <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC36_StartTime"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC37_EndTime"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases"/>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC39_OSBrowser"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC18_ProductName"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC35_LastRun"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage"/>
     </classes>
   </test> <!-- SampleTest -->
 </suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
@@ -45,48 +289,73 @@
   <parameter name="browserVersion" value="3.150.1"/>
   <test thread-count="5" name="SampleTest">
     <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_ie_3.150.1">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="browserVersion" value="3.150.1"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC36_StartTime"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC37_EndTime"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_ie_3.150.1">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="browserVersion" value="3.150.1"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases"/>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC39_OSBrowser"/>
     </classes>
   </test> <!-- SampleTest -->
 </suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
 </td></tr>
-<tr><td>Opening browser: firefox</td></tr>
-<tr><td>INFO: The value found with Environment variable FalconDemo is: FalconDemo</td></tr>
-<tr><td>INFO: The value found with Environment Module variable Dropdowns is: Dropdowns</td></tr>
-<tr><td>The value found with Environment variable WIN_10_ie_3.150.1,WIN_10_chrome_77,WIN_10_firefox_0.26.0 is: WIN_10_ie_3.150.1,WIN_10_chrome_77,WIN_10_firefox_0.26.0</td></tr>
-<tr><td>INFO: Clients Found: [FalconDemo]
-</td></tr>
-<tr><td>INFO: Modules Selected: [Dropdowns]
-</td></tr>
-<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
 <tr><td><?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+<suite name="FalconDemo-Sample-WIN_10_ie_3.150.1">
   <parameter name="os" value="WIN"/>
   <parameter name="osVersion" value="10"/>
-  <parameter name="browser" value="chrome"/>
-  <parameter name="browserVersion" value="77"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="browserVersion" value="3.150.1"/>
   <test thread-count="5" name="SampleTest">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC39_OSBrowser"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate"/>
     </classes>
   </test> <!-- SampleTest -->
-</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
-</td></tr>
-<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
-<tr><td><?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
-  <parameter name="os" value="WIN"/>
-  <parameter name="osVersion" value="10"/>
-  <parameter name="browser" value="firefox"/>
-  <parameter name="browserVersion" value="0.26.0"/>
-  <test thread-count="5" name="SampleTest">
-    <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC39_OSBrowser"/>
-    </classes>
-  </test> <!-- SampleTest -->
-</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
+</suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
 </td></tr>
 <tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
 <tr><td><?xml version="1.0" encoding="UTF-8"?>
@@ -98,18 +367,62 @@
   <parameter name="browserVersion" value="3.150.1"/>
   <test thread-count="5" name="SampleTest">
     <classes>
-      <class name="com.atmecs.qa.falcondashboard.testscript.TC39_OSBrowser"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC18_ProductName"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC35_LastRun"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_ie_3.150.1">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="browserVersion" value="3.150.1"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_ie_3.150.1">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="browserVersion" value="3.150.1"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage"/>
     </classes>
   </test> <!-- SampleTest -->
 </suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
 </td></tr>
 <tr><td>Opening browser: chrome</td></tr>
 <tr><td>INFO: The value found with Environment variable FalconDemo is: FalconDemo</td></tr>
-<tr><td>INFO: The value found with Environment Module variable Dropdowns is: Dropdowns</td></tr>
+<tr><td>INFO: The value found with Environment Module variable Dropdowns,DashboardPage,DashboardSlidder,ProductPage,RecentRuns,TestcasesResult,ViewPage is: Dropdowns,DashboardPage,DashboardSlidder,ProductPage,RecentRuns,TestcasesResult,ViewPage</td></tr>
 <tr><td>The value found with Environment variable WIN_10_ie_3.150.1,WIN_10_chrome_77,WIN_10_firefox_0.26.0 is: WIN_10_ie_3.150.1,WIN_10_chrome_77,WIN_10_firefox_0.26.0</td></tr>
 <tr><td>INFO: Clients Found: [FalconDemo]
 </td></tr>
-<tr><td>INFO: Modules Selected: [Dropdowns]
+<tr><td>INFO: Modules Selected: [DashboardPage, DashboardSlidder, Dropdowns, ProductPage, RecentRuns, TestcasesResult, ViewPage]
 </td></tr>
 <tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
 <tr><td><?xml version="1.0" encoding="UTF-8"?>
@@ -121,7 +434,129 @@
   <parameter name="browserVersion" value="77"/>
   <test thread-count="5" name="SampleTest">
     <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC36_StartTime"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC37_EndTime"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases"/>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC39_OSBrowser"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC18_ProductName"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC35_LastRun"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage"/>
     </classes>
   </test> <!-- SampleTest -->
 </suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
@@ -136,7 +571,129 @@
   <parameter name="browserVersion" value="0.26.0"/>
   <test thread-count="5" name="SampleTest">
     <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC36_StartTime"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC37_EndTime"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases"/>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC39_OSBrowser"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC18_ProductName"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC35_LastRun"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage"/>
     </classes>
   </test> <!-- SampleTest -->
 </suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
@@ -151,46 +708,1619 @@
   <parameter name="browserVersion" value="3.150.1"/>
   <test thread-count="5" name="SampleTest">
     <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_ie_3.150.1">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="browserVersion" value="3.150.1"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC36_StartTime"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC37_EndTime"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_ie_3.150.1">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="browserVersion" value="3.150.1"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases"/>
       <class name="com.atmecs.qa.falcondashboard.testscript.TC39_OSBrowser"/>
     </classes>
   </test> <!-- SampleTest -->
 </suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
 </td></tr>
-<tr><td>Opening browser: ie</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_ie_3.150.1">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="browserVersion" value="3.150.1"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_ie_3.150.1">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="browserVersion" value="3.150.1"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC18_ProductName"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC35_LastRun"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_ie_3.150.1">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="browserVersion" value="3.150.1"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_ie_3.150.1">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="browserVersion" value="3.150.1"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
+</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>INFO: The value found with Environment variable FalconDemo is: FalconDemo</td></tr>
+<tr><td>INFO: The value found with Environment Module variable Dropdowns,DashboardPage,DashboardSlidder,ProductPage,RecentRuns,TestcasesResult,ViewPage is: Dropdowns,DashboardPage,DashboardSlidder,ProductPage,RecentRuns,TestcasesResult,ViewPage</td></tr>
+<tr><td>The value found with Environment variable WIN_10_ie_3.150.1,WIN_10_chrome_77,WIN_10_firefox_0.26.0 is: WIN_10_ie_3.150.1,WIN_10_chrome_77,WIN_10_firefox_0.26.0</td></tr>
+<tr><td>INFO: Clients Found: [FalconDemo]
+</td></tr>
+<tr><td>INFO: Modules Selected: [DashboardPage, DashboardSlidder, Dropdowns, ProductPage, RecentRuns, TestcasesResult, ViewPage]
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC36_StartTime"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC37_EndTime"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC39_OSBrowser"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC18_ProductName"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC35_LastRun"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_chrome_77</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_chrome_77">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="77"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_chrome_77 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC36_StartTime"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC37_EndTime"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC39_OSBrowser"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC18_ProductName"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC35_LastRun"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_firefox_0.26.0</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_firefox_0.26.0">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="0.26.0"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_firefox_0.26.0 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_ie_3.150.1">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="browserVersion" value="3.150.1"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC01_DashBoardPage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC02_ClickingProduct"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC03_TestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC04_ProductPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC16_MainNavigation"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC23_Refresh"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC24_ProductSnapShot"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC38_MaximizingWindow"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_ie_3.150.1">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="browserVersion" value="3.150.1"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC08_DashboardSlidder"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC09_ProductEnvironment"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC10_TestPhase"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC36_StartTime"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC37_EndTime"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_ie_3.150.1">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="browserVersion" value="3.150.1"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC07_Dropdowns"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC13_PassedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC14_FailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC15_SkippedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC39_OSBrowser"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_ie_3.150.1">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="browserVersion" value="3.150.1"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC06_ProductMedium"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC12_ExecutionDate"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_ie_3.150.1">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="browserVersion" value="3.150.1"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC18_ProductName"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC35_LastRun"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_ie_3.150.1">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="browserVersion" value="3.150.1"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC20_FailTestCase"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC25_StepsOfProduct"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
+</td></tr>
+<tr><td>INFO: New Suite Created with name: FalconDemo-Sample-WIN_10_ie_3.150.1</td></tr>
+<tr><td><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FalconDemo-Sample-WIN_10_ie_3.150.1">
+  <parameter name="os" value="WIN"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="ie"/>
+  <parameter name="browserVersion" value="3.150.1"/>
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC26_ColorOfTotalTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC27_TotalTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC28_ColorOfPassTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC29_PassedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC30_ColorOfFailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC31_FailedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC32_ColorOfSkippedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC33_SkippedTestCases"/>
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC34_ViewPage"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- FalconDemo-Sample-WIN_10_ie_3.150.1 -->
+</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
 <tr><td>Maximizing browser window</td></tr>
 <tr><td>Maximizing browser window</td></tr>
 <tr><td>Maximizing browser window</td></tr>
 <tr><td>Successfully clicked on the product</td></tr>
+<tr><td>PASS : Validting page url is same as expected or not  : ACTUAL : ATMECS - Falcon Test Repotrs 	EXPECTED :ATMECS - Falcon Test Repotrs</td></tr>
+<tr><td>successfully validated page title</td></tr>
 <tr><td>Successfully clicked on the product</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Dashboard 	EXPECTED :Dashboard</td></tr>
+<tr><td>Successfully validated the dashboard text</td></tr>
+<tr><td>clicked on refresh option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : FALCON 	EXPECTED :FALCON</td></tr>
+<tr><td>Successfully validated falcon</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>Successfully selected customer dropdown</td></tr>
+<tr><td>Successfully selected the customer option</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : CucumberDemo 	EXPECTED :CucumberDemo</td></tr>
+<tr><td>Successfully validated customer</td></tr>
+<tr><td>Successfully selected module dropdown</td></tr>
+<tr><td>Successfully selected the module option</td></tr>
+<tr><td>PASS : Validating the product names is same as expected or not : ACTUAL : CucumberDemo,REST API TEST RESULT,UI WEB TEST RESULT,DotComUI_Mobile,FalconMobileDemo,HEATCLINIC RESULT,HEAT CLINIC RESULT,DotComUITablet,HRIS,MWB,HRIS_Cloud,HRIS_Local,Falcon,CreditSights,CreditSightsMobile,BrowserstackDemo,FalconSampleProj,DotComUITablet,GreyHealthGroup,FluorCorporation,AndroidDemoApp,MWBooking,AutomationDemoClient,APIAutomationDemoClient,APIAutomationClient,FLUOR,Atmecs,CHS,Atmecs,Atmecs,demo,CHS,Atmecs,CHS,TestMobileWeb,TestFalcon_runSessionId,swathi_signup account,Pooja_USAUTOPARTS,USAutoParts,USAutoParts_MUJ,TestMobileWeb_CnameDemo,IOSDemoApp,Mobile_Demo,TestDemoApp,UI BrowserStack Test Result,dbTesting 	EXPECTED :CucumberDemo,REST API TEST RESULT,UI WEB TEST RESULT,DotComUI_Mobile,FalconMobileDemo,HEATCLINIC RESULT,HEAT CLINIC RESULT,DotComUITablet,HRIS,MWB,HRIS_Cloud,HRIS_Local,Falcon,CreditSights,CreditSightsMobile,BrowserstackDemo,FalconSampleProj,DotComUITablet,GreyHealthGroup,FluorCorporation,AndroidDemoApp,MWBooking,AutomationDemoClient,APIAutomationDemoClient,APIAutomationClient,FLUOR,Atmecs,CHS,Atmecs,Atmecs,demo,CHS,Atmecs,CHS,TestMobileWeb,TestFalcon_runSessionId,swathi_signup account,Pooja_USAUTOPARTS,USAutoParts,USAutoParts_MUJ,TestMobileWeb_CnameDemo,IOSDemoApp,Mobile_Demo,TestDemoApp,UI BrowserStack Test Result,dbTesting</td></tr>
+<tr><td>Successfully valdated all the products</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully displayed the execution times</td></tr>
+<tr><td>PASS : Validating the recent execution times of the products is same as expected or not : ACTUAL : 43 seconds ago,1 hour ago,22 hours ago,305 days ago,319 days ago,345 days ago,379 days ago,386 days ago,402 days ago,408 days ago,410 days ago,410 days ago,414 days ago,431 days ago,435 days ago,470 days ago,476 days ago,504 days ago,556 days ago,622 days ago,632 days ago,636 days ago,639 days ago,639 days ago,639 days ago,659 days ago,665 days ago,665 days ago,694 days ago,735 days ago,735 days ago,771 days ago,778 days ago,793 days ago,793 days ago,794 days ago,798 days ago,827 days ago,829 days ago,835 days ago,843 days ago,854 days ago,868 days ago 	EXPECTED :43 seconds ago,1 hour ago,22 hours ago,305 days ago,319 days ago,345 days ago,379 days ago,386 days ago,402 days ago,408 days ago,410 days ago,410 days ago,414 days ago,431 days ago,435 days ago,470 days ago,476 days ago,504 days ago,556 days ago,622 days ago,632 days ago,636 days ago,639 days ago,639 days ago,639 days ago,659 days ago,665 days ago,665 days ago,694 days ago,735 days ago,735 days ago,771 days ago,778 days ago,793 days ago,793 days ago,794 days ago,798 days ago,827 days ago,829 days ago,835 days ago,843 days ago,854 days ago,868 days ago</td></tr>
+<tr><td>Successfully valdated all the recent execution times</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : heatclinic_suite 	EXPECTED :heatclinic_suite</td></tr>
+<tr><td>Successfully validated module</td></tr>
+<tr><td>No such element found no such element: Unable to locate element: {"method":"xpath","selector":"loc.os.ddn"}
+  (Session info: chrome=80.0.3987.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATMECSINLT-060', ip: '55.55.52.253', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SRINIS~1.THI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49250}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 25fc382aeaeeb706c8e74599ee7ff9c8
+*** Element info: {Using=xpath, value=loc.os.ddn}</td></tr>
+<tr><td>Value is not present so it entered the else loop</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
 <tr><td>Successfully clicked on the product</td></tr>
-<tr><td>No such element found with xpath invalid selector: Unable to locate an element with the xpath expression xpath://a[@ng-switch-when="next"] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'xpath://a[@ng-switch-when="next"]' is not a valid XPath expression.
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>No such element found invalid selector: Unable to locate an element with the xpath expression xpath:(//select[@name='browsers']) because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'xpath:(//select[@name='browsers'])' is not a valid XPath expression.
   (Session info: chrome=80.0.3987.132)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ATMECSINLT-060', ip: '55.55.52.253', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SRINIS~1.THI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64047}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: edbf94f1e1b688d6f2bd9a490e7f4c8a
-*** Element info: {Using=xpath, value=xpath://a[@ng-switch-when="next"]}</td></tr>
-<tr><td>No such element found with xpath Given xpath expression "xpath://a[@ng-switch-when="next"]" is invalid: SyntaxError: The expression is not a legal expression.
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SRINIS~1.THI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49250}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 25fc382aeaeeb706c8e74599ee7ff9c8
+*** Element info: {Using=xpath, value=xpath:(//select[@name='browsers'])}</td></tr>
+<tr><td>Value is not present so it entered the else loop</td></tr>
+<tr><td>Successfully selected status dropdown</td></tr>
+<tr><td>Successfully selected the status option</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : QA 	EXPECTED :QA</td></tr>
+<tr><td>Successfully validated the environment</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Fail 	EXPECTED :Fail</td></tr>
+<tr><td>Successfully validated status</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validating the test cases of the products is same as expected or not : ACTUAL : 6,10,4,5,1,1,4,0,1,1,6,6,6,4,3,1,1,1,7,9,2,1,8,10,10,1,4,2,1,8,4,2,1,1,1,1,6,2,1,2,2,1,5 	EXPECTED :6,10,4,5,1,1,4,0,1,1,6,6,6,4,3,1,1,1,7,9,2,1,8,10,10,1,4,2,1,8,4,2,1,1,1,1,6,2,1,2,2,1,5</td></tr>
+<tr><td>Successfully valdated all the test cases</td></tr>
+<tr><td>Successfully mouse hovered the test cases</td></tr>
+<tr><td>PASS : Validating the tooltip message is same as expected or not : ACTUAL : Total Test Cases 	EXPECTED :Total Test Cases</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully clicked on the product</td></tr>
+<tr><td>Successfully mouse hovered the pass%trend</td></tr>
+<tr><td>Successfully selected status dropdown</td></tr>
+<tr><td>Successfully selected the status option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Pass 	EXPECTED :Pass</td></tr>
+<tr><td>Successfully validated pass status</td></tr>
+<tr><td>PASS : Validating the tooltip message is same as expected or not : ACTUAL : Pass % Trend 	EXPECTED :Pass % Trend</td></tr>
+<tr><td>Successfully mouse hovered over the pass percent</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Regression 	EXPECTED :Regression</td></tr>
+<tr><td>Successfully validated the test phase of the product</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Successfully validated the list of pass test cases</td></tr>
+<tr><td>rgba(34, 34, 34, 1)</td></tr>
+<tr><td>PASS : Validating the color of the pass percentage is same as expected or not : ACTUAL : rgba(34, 34, 34, 1) 	EXPECTED :rgba(34, 34, 34, 1)</td></tr>
+<tr><td>Successfully validated the color of the pass percentage</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully mouse hovered over the fail percent and displayed the value</td></tr>
+<tr><td>rgba(244, 67, 54, 1)</td></tr>
+<tr><td>PASS : Validating the color of the fail percentage is same as expected or not : ACTUAL : rgba(244, 67, 54, 1) 	EXPECTED :rgba(244, 67, 54, 1)</td></tr>
+<tr><td>Successfully validated the color of the fail percentage</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>Successfully selected status dropdown</td></tr>
+<tr><td>Successfully selected the status option</td></tr>
+<tr><td>Successfully displayed the start time text</td></tr>
+<tr><td>PASS : Validating the start time text of the product is same as expected or not : ACTUAL : Start Time 	EXPECTED :Start Time</td></tr>
+<tr><td>Successfully validated the text</td></tr>
+<tr><td>Successfully displayed day and date of product</td></tr>
+<tr><td>PASS : Validating the start time of the product is same as expected or not : ACTUAL : Mar20,2020 	EXPECTED :Mar20,2020</td></tr>
+<tr><td>Successfully validated the date</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Fail 	EXPECTED :Fail</td></tr>
+<tr><td>Successfully validated fail status</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Dashboard 	EXPECTED :Dashboard</td></tr>
+<tr><td>Successfully validated dashboard</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Recent Runs 	EXPECTED :Recent Runs</td></tr>
+<tr><td>Successfully validated recent runs</td></tr>
+<tr><td>Successfully displayed the fail test cases</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Recent Runs 	EXPECTED :Recent Runs</td></tr>
+<tr><td>Successfully validated recentruns</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Reports 	EXPECTED :Reports</td></tr>
+<tr><td>Successfully validated recent runs panel title</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : View 	EXPECTED :View</td></tr>
+<tr><td>Successfully validated View</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>End Time</td></tr>
+<tr><td>Successfully displayed the end time text</td></tr>
+<tr><td>PASS : Validating the end time text  of the product is same as expected or not : ACTUAL : End Time 	EXPECTED :End Time</td></tr>
+<tr><td>Successfully validated the text</td></tr>
+<tr><td>Successfully displayed day and date of product</td></tr>
+<tr><td>PASS : Validating the end time of the product is same as expected or not : ACTUAL : Mar20,2020 	EXPECTED :Mar20,2020</td></tr>
+<tr><td>Successfully validated the date</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Tests 	EXPECTED :Tests</td></tr>
+<tr><td>Successfully validated panelview</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully selected status dropdown</td></tr>
+<tr><td>Successfully selected the status option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Product Snapshot 	EXPECTED :Product Snapshot</td></tr>
+<tr><td>Successfully validated product snapshot</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Skip 	EXPECTED :Skip</td></tr>
+<tr><td>Successfully validated skip status</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : CucumberDemo 	EXPECTED :CucumberDemo</td></tr>
+<tr><td>Successfully validated product</td></tr>
+<tr><td>Successfully clicked on the product</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Tests 	EXPECTED :Tests</td></tr>
+<tr><td>Successfully validated panel title</td></tr>
+<tr><td>PASS : Validating the test cases of the product is same as expected or not : ACTUAL : cukesTest 0 Sec Pass,cukesTest 0 Sec Pass,cukesTest 1 Sec Pass,cukesTest 0 Sec Pass,cukesTest 0 Sec Pass,cukesTest 0 Sec Pass 	EXPECTED :cukesTest 0 Sec Pass,cukesTest 0 Sec Pass,cukesTest 1 Sec Pass,cukesTest 0 Sec Pass,cukesTest 0 Sec Pass,cukesTest 0 Sec Pass</td></tr>
+<tr><td>Successfully valdated all the test cases</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Successfully displayed the failed test cases</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Dashboard 	EXPECTED :Dashboard</td></tr>
+<tr><td>Successfully validated dashboard text</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on the refresh option</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully displayed day and date of product</td></tr>
+<tr><td>Successfully displayed medium of product</td></tr>
+<tr><td>PASS : Validating the medium of the product is same as expected or not : ACTUAL :  WEB  	EXPECTED : WEB </td></tr>
+<tr><td>Successfully validated the medium of the product</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Successfully clicked on the recent runs option</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on product snapshot bar</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Product Snapshot 	EXPECTED :Product Snapshot</td></tr>
+<tr><td>Successfully validated product snapshot</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Successfully clicked on the product</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Clicked on download option</td></tr>
+<tr><td>Successfully clicked on the expand button</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Dashboard 	EXPECTED :Dashboard</td></tr>
+<tr><td>clicked on refresh option</td></tr>
+<tr><td>Successfully validated dashboard text</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : FALCON 	EXPECTED :FALCON</td></tr>
+<tr><td>Successfully validated falcon</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>No such element found with xpath //div[@class='tooltip ng-isolate-scope fade in bottom']</td></tr>
+<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77 (2)\Screenshots\downloadOption_1_.png</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Successfully clicked on the expand button</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully clicked on recent runs</td></tr>
+<tr><td>Successfully displayed day and date of product</td></tr>
+<tr><td>PASS : Validating the date of the product is same as expected or not : ACTUAL : Mar20,2020 	EXPECTED :Mar20,2020</td></tr>
+<tr><td>Successfully validated the date</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Recent Runs 	EXPECTED :Recent Runs</td></tr>
+<tr><td>Successfully validated recentruns</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Reports 	EXPECTED :Reports</td></tr>
+<tr><td>Successfully validated reports</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Product Name 	EXPECTED :Product Name</td></tr>
+<tr><td>Successfully validated product name</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Component 	EXPECTED :Component</td></tr>
+<tr><td>Successfully validated the component text</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Testcases # 	EXPECTED :Testcases #</td></tr>
+<tr><td>Successfully validated textcases with # symbol</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Pass % 	EXPECTED :Pass %</td></tr>
+<tr><td>Successfully validated the passpercent with % symbol</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Last Run 	EXPECTED :Last Run</td></tr>
+<tr><td>Successfully validated lastruns</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Successfully clicked on the recent runs</td></tr>
+<tr><td>Successfully selected status dropdown</td></tr>
+<tr><td>Successfully selected the status option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Product Name 	EXPECTED :Product Name</td></tr>
+<tr><td>Successfully validated the product name</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Fail 	EXPECTED :Fail</td></tr>
+<tr><td>Successfully validated status</td></tr>
+<tr><td>Succesfully clicked on the product</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>No such element found with xpath //tr[@class='ng-scope']</td></tr>
+<tr><td>Successfully clicked on test case</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL :  	EXPECTED :</td></tr>
+<tr><td>Successfully validated paneltitle</td></tr>
+<tr><td>Successfully clicked on recent runs</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Successfully clicked on component</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Component 	EXPECTED :Component</td></tr>
+<tr><td>Successfully validated component text</td></tr>
+<tr><td>Successfully clicked on component</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL :  	EXPECTED :</td></tr>
+<tr><td>Successfully validated error message</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Successfully clicked on the recent runs</td></tr>
+<tr><td>Successfully clicked on the product</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Pass % 	EXPECTED :Pass %</td></tr>
+<tr><td>Successfully validated the pass percent</td></tr>
+<tr><td>Successfully clicked on the pass percentage</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Successfully selected status dropdown</td></tr>
+<tr><td>Successfully selected the status option</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully selected the testcase</td></tr>
+<tr><td>Successfully clicked on recent runs</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Status 	EXPECTED :Status</td></tr>
+<tr><td>Successfully validated Status option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Details 	EXPECTED :Details</td></tr>
+<tr><td>Successfully validated Details option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Executing test case 	EXPECTED :Executing test case</td></tr>
+<tr><td>Successfully validated the test case</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Click on Login Link on Heat Clinic page... 	EXPECTED :Click on Login Link on Heat Clinic page...</td></tr>
+<tr><td>Successfully validated Request Body</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Successfully mouse hovered over the delete option</td></tr>
+<tr><td>PASS : Validating the delete run message is same as expected or not : ACTUAL : Delete Run 	EXPECTED :Delete Run</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Successfully clicked on the recent runs</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Last Run 	EXPECTED :Last Run</td></tr>
+<tr><td>Successfully validated the last run</td></tr>
+<tr><td>Successfully clicked on the last runs</td></tr>
+<tr><td>PASS : Validating the color of total test cases box is same as expected is same or not : ACTUAL : rgba(103, 58, 183, 1) 	EXPECTED :rgba(103, 58, 183, 1)</td></tr>
+<tr><td>Successfully validated the color of the total  test cases box</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>PASS : Validting page url is same as expected or not  : ACTUAL : ATMECS - Falcon Test Repotrs 	EXPECTED :ATMECS - Falcon Test Repotrs</td></tr>
+<tr><td>successfully validated page title</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Dashboard 	EXPECTED :Dashboard</td></tr>
+<tr><td>Successfully validated the dashboard text</td></tr>
+<tr><td>clicked on refresh option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : FALCON 	EXPECTED :FALCON</td></tr>
+<tr><td>Successfully validated falcon</td></tr>
+<tr><td>Successfully clicked on the product</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Successfully clicked dashboard slider</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked total test cases</td></tr>
+<tr><td>PASS : Validating the product names is same as expected or not : ACTUAL : CucumberDemo,REST API TEST RESULT,UI WEB TEST RESULT,DotComUI_Mobile,FalconMobileDemo,HEATCLINIC RESULT,HEAT CLINIC RESULT,DotComUITablet,HRIS,MWB,HRIS_Cloud,HRIS_Local,Falcon,CreditSights,CreditSightsMobile,BrowserstackDemo,FalconSampleProj,DotComUITablet,GreyHealthGroup,FluorCorporation,AndroidDemoApp,MWBooking,AutomationDemoClient,APIAutomationDemoClient,APIAutomationClient,FLUOR,Atmecs,CHS,Atmecs,Atmecs,demo,CHS,Atmecs,CHS,TestMobileWeb,TestFalcon_runSessionId,swathi_signup account,Pooja_USAUTOPARTS,USAutoParts,USAutoParts_MUJ,TestMobileWeb_CnameDemo,IOSDemoApp,Mobile_Demo,TestDemoApp,UI BrowserStack Test Result,dbTesting 	EXPECTED :CucumberDemo,REST API TEST RESULT,UI WEB TEST RESULT,DotComUI_Mobile,FalconMobileDemo,HEATCLINIC RESULT,HEAT CLINIC RESULT,DotComUITablet,HRIS,MWB,HRIS_Cloud,HRIS_Local,Falcon,CreditSights,CreditSightsMobile,BrowserstackDemo,FalconSampleProj,DotComUITablet,GreyHealthGroup,FluorCorporation,AndroidDemoApp,MWBooking,AutomationDemoClient,APIAutomationDemoClient,APIAutomationClient,FLUOR,Atmecs,CHS,Atmecs,Atmecs,demo,CHS,Atmecs,CHS,TestMobileWeb,TestFalcon_runSessionId,swathi_signup account,Pooja_USAUTOPARTS,USAutoParts,USAutoParts_MUJ,TestMobileWeb_CnameDemo,IOSDemoApp,Mobile_Demo,TestDemoApp,UI BrowserStack Test Result,dbTesting</td></tr>
+<tr><td>Successfully valdated all the products</td></tr>
+<tr><td>Successfully displayed the execution times</td></tr>
+<tr><td>PASS : Validating the recent execution times of the products is same as expected or not : ACTUAL : 1 hour ago,2 hours ago,22 hours ago,315 days ago,319 days ago,345 days ago,379 days ago,387 days ago,402 days ago,408 days ago,410 days ago,410 days ago,414 days ago,431 days ago,435 days ago,470 days ago,476 days ago,504 days ago,556 days ago,622 days ago,632 days ago,636 days ago,639 days ago,639 days ago,639 days ago,659 days ago,665 days ago,665 days ago,694 days ago,735 days ago,735 days ago,771 days ago,778 days ago,793 days ago,793 days ago,794 days ago,798 days ago,827 days ago,830 days ago,835 days ago,843 days ago,854 days ago,868 days ago 	EXPECTED :1 hour ago,2 hours ago,22 hours ago,315 days ago,319 days ago,345 days ago,379 days ago,387 days ago,402 days ago,408 days ago,410 days ago,410 days ago,414 days ago,431 days ago,435 days ago,470 days ago,476 days ago,504 days ago,556 days ago,622 days ago,632 days ago,636 days ago,639 days ago,639 days ago,639 days ago,659 days ago,665 days ago,665 days ago,694 days ago,735 days ago,735 days ago,771 days ago,778 days ago,793 days ago,793 days ago,794 days ago,798 days ago,827 days ago,830 days ago,835 days ago,843 days ago,854 days ago,868 days ago</td></tr>
+<tr><td>Successfully valdated all the recent execution times</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : 2 TEST(S) 	EXPECTED :2 TEST(S)</td></tr>
+<tr><td>Successfully validated test cases</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : RUN IN - 25 secs 	EXPECTED :RUN IN - 25 secs</td></tr>
+<tr><td>Successfully validated the run time</td></tr>
+<tr><td>Successfully clicked on the product</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : QA 	EXPECTED :QA</td></tr>
+<tr><td>Successfully validated the environment</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validating the test cases of the products is same as expected or not : ACTUAL : 2,10,4,25,1,1,4,0,1,1,6,6,6,4,3,1,1,1,7,9,2,1,8,10,10,1,4,2,1,8,4,2,1,1,1,1,6,2,1,2,2,1,5 	EXPECTED :2,10,4,25,1,1,4,0,1,1,6,6,6,4,3,1,1,1,7,9,2,1,8,10,10,1,4,2,1,8,4,2,1,1,1,1,6,2,1,2,2,1,5</td></tr>
+<tr><td>Successfully valdated all the test cases</td></tr>
+<tr><td>Successfully mouse hovered the test cases</td></tr>
+<tr><td>PASS : Validating the tooltip message is same as expected or not : ACTUAL :  	EXPECTED :</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>Successfully mouse hovered the pass%trend</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validating the tooltip message is same as expected or not : ACTUAL :  	EXPECTED :</td></tr>
+<tr><td>Successfully mouse hovered over the pass percent</td></tr>
+<tr><td>PASS : Validating the color of the pass test cases is same as expected or not : ACTUAL : rgba(0, 150, 136, 1) 	EXPECTED :rgba(0, 150, 136, 1)</td></tr>
+<tr><td>Successfully validated the color of the pass  test cases box</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Successfully clicked on the product</td></tr>
+<tr><td>rgb(34, 34, 34)</td></tr>
+<tr><td>PASS : Validating the color of the pass percentage is same as expected or not : ACTUAL : rgb(34, 34, 34) 	EXPECTED :rgb(34, 34, 34)</td></tr>
+<tr><td>Successfully validated the color of the pass percentage</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Regression 	EXPECTED :Regression</td></tr>
+<tr><td>Successfully validated the test phase of the product</td></tr>
+<tr><td>Successfully mouse hovered over the fail percent and displayed the value</td></tr>
+<tr><td>rgb(244, 67, 54)</td></tr>
+<tr><td>PASS : Validating the color of the fail percentage is same as expected or not : ACTUAL : rgb(244, 67, 54) 	EXPECTED :rgb(244, 67, 54)</td></tr>
+<tr><td>Successfully validated the color of the fail percentage</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked dashboard slider</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully clicked pass test cases</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Dashboard 	EXPECTED :Dashboard</td></tr>
+<tr><td>Successfully validated dashboard</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : 1 	EXPECTED :1</td></tr>
+<tr><td>Successfully validated passed test cases</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : PASS - 50% 	EXPECTED :PASS - 50%</td></tr>
+<tr><td>Successfully validated pass percentage</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Recent Runs 	EXPECTED :Recent Runs</td></tr>
+<tr><td>Successfully validated recent runs</td></tr>
+<tr><td>Successfully displayed the start time text</td></tr>
+<tr><td>PASS : Validating the start time text of the product is same as expected or not : ACTUAL : Start Time 	EXPECTED :Start Time</td></tr>
+<tr><td>Successfully validated the text</td></tr>
+<tr><td>Successfully displayed day and date of product</td></tr>
+<tr><td>PASS : Validating the start time of the product is same as expected or not : ACTUAL : Mar20,2020 	EXPECTED :Mar20,2020</td></tr>
+<tr><td>Successfully validated the date</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Recent Runs 	EXPECTED :Recent Runs</td></tr>
+<tr><td>Successfully validated recentruns</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Reports 	EXPECTED :Reports</td></tr>
+<tr><td>Successfully validated recent runs panel title</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : View 	EXPECTED :View</td></tr>
+<tr><td>Successfully validated View</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Tests 	EXPECTED :Tests</td></tr>
+<tr><td>Successfully validated panelview</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Product Snapshot 	EXPECTED :Product Snapshot</td></tr>
+<tr><td>Successfully validated product snapshot</td></tr>
+<tr><td>End Time</td></tr>
+<tr><td>Successfully displayed the end time text</td></tr>
+<tr><td>PASS : Validating the end time text  of the product is same as expected or not : ACTUAL : End Time 	EXPECTED :End Time</td></tr>
+<tr><td>Successfully validated the text</td></tr>
+<tr><td>Successfully displayed day and date of product</td></tr>
+<tr><td>PASS : Validating the end time of the product is same as expected or not : ACTUAL : Mar20,2020 	EXPECTED :Mar20,2020</td></tr>
+<tr><td>Successfully validated the date</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>PASS : Validating the color of the fail test cases box is same as expected or not : ACTUAL : rgba(244, 67, 54, 1) 	EXPECTED :rgba(244, 67, 54, 1)</td></tr>
+<tr><td>Successfully validated the color of the fail test cases box</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Successfully clicked on the product</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Dashboard 	EXPECTED :Dashboard</td></tr>
+<tr><td>Successfully validated dashboard text</td></tr>
+<tr><td>Successfully selected customer dropdown</td></tr>
+<tr><td>Successfully selected the customer option</td></tr>
+<tr><td>Successfully clicked on the refresh option</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : CucumberDemo 	EXPECTED :CucumberDemo</td></tr>
+<tr><td>Successfully validated customer</td></tr>
+<tr><td>Successfully selected module dropdown</td></tr>
+<tr><td>Successfully selected the module option</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked dashboard slider</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Sample 	EXPECTED :Sample</td></tr>
+<tr><td>Successfully validated module</td></tr>
+<tr><td>No such element found Unable to locate element: loc.os.ddn
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATMECSINLT-060', ip: '55.55.52.253', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 63152, moz:profile: C:\Users\srinischal.thipara..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 210bce46-c986-40a5-8e87-1dd62cbc2b55
+*** Element info: {Using=xpath, value=loc.os.ddn}</td></tr>
+<tr><td>Value is not present so it entered the else loop</td></tr>
+<tr><td>Successfully clicked on product snapshot bar</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Product Snapshot 	EXPECTED :Product Snapshot</td></tr>
+<tr><td>Successfully validated product snapshot</td></tr>
+<tr><td>Successfully clicked fail test cases</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : 1 	EXPECTED :1</td></tr>
+<tr><td>Successfully validated Failed test cases</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : FAIL 	EXPECTED :FAIL</td></tr>
+<tr><td>Successfully validated fail message</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>No such element found Given xpath expression "xpath:(//select[@name='browsers'])" is invalid: SyntaxError: The expression is not a legal expression.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ATMECSINLT-060', ip: '55.55.52.253', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 25444, moz:profile: C:\Users\srinischal.thipara..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ac95e26d-cbdc-46fd-8e97-9e0b503c2196
-*** Element info: {Using=xpath, value=xpath://a[@ng-switch-when="next"]}</td></tr>
-<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77\Screenshots\osBrowser_1_.png</td></tr>
-<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_firefox_0.26.0\Screenshots\osBrowser_1_.png</td></tr>
-<tr><td>No such element found with xpath Unable to locate an element with the xpath expression xpath://a[@ng-switch-when="next"] because of the following error:
-Error: Bad token: :
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ATMECSINLT-060', ip: '55.55.52.253', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: true, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: true, initialBrowserUrl: http://localhost:8649/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: cdd28164-fd0e-4c73-bfe6-75ea451d4c7d
-*** Element info: {Using=xpath, value=xpath://a[@ng-switch-when="next"]}</td></tr>
-<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1\Screenshots\osBrowser_1_.png</td></tr>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 63152, moz:profile: C:\Users\srinischal.thipara..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 210bce46-c986-40a5-8e87-1dd62cbc2b55
+*** Element info: {Using=xpath, value=xpath:(//select[@name='browsers'])}</td></tr>
+<tr><td>Value is not present so it entered the else loop</td></tr>
+<tr><td>Successfully selected status dropdown</td></tr>
+<tr><td>Successfully selected the status option</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Fail 	EXPECTED :Fail</td></tr>
+<tr><td>Successfully validated status</td></tr>
+<tr><td>Successfully clicked on the expand button</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Dashboard 	EXPECTED :Dashboard</td></tr>
+<tr><td>clicked on refresh option</td></tr>
+<tr><td>Successfully validated dashboard text</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : FALCON 	EXPECTED :FALCON</td></tr>
+<tr><td>Successfully validated falcon</td></tr>
+<tr><td>Successfully clicked on the expand button</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>PASS : Validating th ecolor of the skip test cases box is same as expected or not : ACTUAL : rgba(33, 150, 243, 1) 	EXPECTED :rgba(33, 150, 243, 1)</td></tr>
+<tr><td>Successfully validated the color of the skip test cases box</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : CucumberDemo 	EXPECTED :CucumberDemo</td></tr>
+<tr><td>Successfully validated product</td></tr>
+<tr><td>Successfully clicked on the product</td></tr>
+<tr><td>Successfully selected status dropdown</td></tr>
+<tr><td>Successfully selected the status option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Pass 	EXPECTED :Pass</td></tr>
+<tr><td>Successfully validated pass status</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Tests 	EXPECTED :Tests</td></tr>
+<tr><td>Successfully validated panel title</td></tr>
+<tr><td>PASS : Validating the test cases of the product is same as expected or not : ACTUAL : cukesTest 63 Sec Pass,cukesTest 23 Sec Fail,cukesTest 37 Sec Pass,cukesTest 19 Sec Fail,cukesTest 40 Sec Pass,cukesTest 18 Sec Fail 	EXPECTED :cukesTest 63 Sec Pass,cukesTest 23 Sec Fail,cukesTest 37 Sec Pass,cukesTest 19 Sec Fail,cukesTest 40 Sec Pass,cukesTest 18 Sec Fail</td></tr>
+<tr><td>Successfully valdated all the test cases</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>Successfully validated the list of pass test cases</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Successfully clicked dashboard slider</td></tr>
+<tr><td>Successfully clicked pass test cases</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : 0 	EXPECTED :0</td></tr>
+<tr><td>Successfully validated Skipped test cases</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : SKIP 	EXPECTED :SKIP</td></tr>
+<tr><td>Successfully validated skip message</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully displayed day and date of product</td></tr>
+<tr><td>Successfully displayed medium of product</td></tr>
+<tr><td>PASS : Validating the medium of the product is same as expected or not : ACTUAL :   	EXPECTED : </td></tr>
+<tr><td>Successfully validated the medium of the product</td></tr>
+<tr><td>Successfully selected status dropdown</td></tr>
+<tr><td>Successfully selected the status option</td></tr>
+<tr><td>Opening browser: chrome</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Fail 	EXPECTED :Fail</td></tr>
+<tr><td>Successfully validated fail status</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully displayed the fail test cases</td></tr>
+<tr><td>Successfully clicked on the product</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : View 	EXPECTED :View</td></tr>
+<tr><td>Successfully validated views</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Tests 	EXPECTED :Tests</td></tr>
+<tr><td>Successfully validated the views panel title</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>Clicked on download option</td></tr>
+<tr><td>Clicked on download option</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>PASS : Validating the download message of the product is same as expected or not : ACTUAL : Download 	EXPECTED :Download</td></tr>
+<tr><td>Sucessfully validated the tooltip message</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Successfully clicked on recent runs</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Recent Runs 	EXPECTED :Recent Runs</td></tr>
+<tr><td>Successfully validated recentruns</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Reports 	EXPECTED :Reports</td></tr>
+<tr><td>Successfully validated reports</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Product Name 	EXPECTED :Product Name</td></tr>
+<tr><td>Successfully validated product name</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Component 	EXPECTED :Component</td></tr>
+<tr><td>Successfully validated the component text</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Testcases # 	EXPECTED :Testcases #</td></tr>
+<tr><td>Successfully validated textcases with # symbol</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Pass % 	EXPECTED :Pass %</td></tr>
+<tr><td>Successfully validated the passpercent with % symbol</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Last Run 	EXPECTED :Last Run</td></tr>
+<tr><td>Successfully validated lastruns</td></tr>
+<tr><td>Successfully selected status dropdown</td></tr>
+<tr><td>Successfully selected the status option</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Skip 	EXPECTED :Skip</td></tr>
+<tr><td>Successfully validated skip status</td></tr>
+<tr><td>Successfully displayed day and date of product</td></tr>
+<tr><td>PASS : Validating the date of the product is same as expected or not : ACTUAL : Mar20,2020 	EXPECTED :Mar20,2020</td></tr>
+<tr><td>Successfully validated the date</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Successfully clicked on the recent runs</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully displayed the failed test cases</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Product Name 	EXPECTED :Product Name</td></tr>
+<tr><td>Successfully validated the product name</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Succesfully clicked on the product</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully selected status dropdown</td></tr>
+<tr><td>Successfully selected the status option</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on the recent runs option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Fail 	EXPECTED :Fail</td></tr>
+<tr><td>Successfully validated status</td></tr>
+<tr><td>Successfully clicked on test case</td></tr>
+<tr><td>Successfully clicked on recent runs</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Steps - cukesTest 	EXPECTED :Steps - cukesTest</td></tr>
+<tr><td>Successfully validated paneltitle</td></tr>
+<tr><td>Successfully clicked on component</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Component 	EXPECTED :Component</td></tr>
+<tr><td>Successfully validated component text</td></tr>
+<tr><td>Successfully clicked on component</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : cucumber.runtime.CucumberException: java.lang.AssertionError: Verifying element presence at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69) at com.atmecs.heatClinic.runner.AbstractCukesTest.cukesTest(AbstractCukesTest.java:33) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) at java.lang.reflect.Method.invoke(Method.java:498) at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86) at org.testng.internal.Invoker.invokeMethod(Invoker.java:643) at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820) at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128) at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129) at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112) at org.testng.TestRunner.privateRun(TestRunner.java:782) at org.testng.TestRunner.run(TestRunner.java:632) at org.testng.SuiteRunner.runTest(SuiteRunner.java:366) at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361) at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319) at org.testng.SuiteRunner.run(SuiteRunner.java:268) at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86) at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) at java.lang.Thread.run(Thread.java:748) Caused by: java.lang.AssertionError: Verifying element presence at org.testng.Assert.fail(Assert.java:94) at com.atmecs.falcon.automation.verifyresult.VerificationManager.verifyTrueAndStopTest(VerificationManager.java:337) at com.atmecs.heatClinic.pages.LoginPage.getLoginUser(LoginPage.java:114) at com.atmecs.heatClinic.helpers.LoginHelper.verifyLoginUser(LoginHelper.java:78) at com.atmecs.heatClinic.testscript.RegistrationTest.registration_should_be_successful(RegistrationTest.java:69) at ?.Then registration should be successful(src/main/java/com/atmecs/heatClinic/features/registration.feature:9) 	EXPECTED :cucumber.runtime.CucumberException: java.lang.AssertionError: Verifying element presence at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69) at com.atmecs.heatClinic.runner.AbstractCukesTest.cukesTest(AbstractCukesTest.java:33) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) at java.lang.reflect.Method.invoke(Method.java:498) at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86) at org.testng.internal.Invoker.invokeMethod(Invoker.java:643) at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820) at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128) at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129) at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112) at org.testng.TestRunner.privateRun(TestRunner.java:782) at org.testng.TestRunner.run(TestRunner.java:632) at org.testng.SuiteRunner.runTest(SuiteRunner.java:366) at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361) at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319) at org.testng.SuiteRunner.run(SuiteRunner.java:268) at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86) at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) at java.lang.Thread.run(Thread.java:748) Caused by: java.lang.AssertionError: Verifying element presence at org.testng.Assert.fail(Assert.java:94) at com.atmecs.falcon.automation.verifyresult.VerificationManager.verifyTrueAndStopTest(VerificationManager.java:337) at com.atmecs.heatClinic.pages.LoginPage.getLoginUser(LoginPage.java:114) at com.atmecs.heatClinic.helpers.LoginHelper.verifyLoginUser(LoginHelper.java:78) at com.atmecs.heatClinic.testscript.RegistrationTest.registration_should_be_successful(RegistrationTest.java:69) at ?.Then registration should be successful(src/main/java/com/atmecs/heatClinic/features/registration.feature:9)</td></tr>
+<tr><td>Successfully validated error message</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Successfully clicked on the recent runs</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Pass % 	EXPECTED :Pass %</td></tr>
+<tr><td>Successfully validated the pass percent</td></tr>
+<tr><td>Successfully clicked on the pass percentage</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Successfully clicked on the product</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully selected status dropdown</td></tr>
+<tr><td>Successfully selected the status option</td></tr>
+<tr><td>Successfully clicked on recent runs</td></tr>
+<tr><td>Successfully selected the testcase</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully mouse hovered over the delete option</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>PASS : Validating the delete run message is same as expected or not : ACTUAL :  	EXPECTED :</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Status 	EXPECTED :Status</td></tr>
+<tr><td>Successfully validated Status option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Details 	EXPECTED :Details</td></tr>
+<tr><td>Successfully validated Details option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Executing test case 	EXPECTED :Executing test case</td></tr>
+<tr><td>Successfully validated the test case</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Maximize the browser window 	EXPECTED :Maximize the browser window</td></tr>
+<tr><td>Successfully validated Request Body</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully clicked on the recent runs</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Last Run 	EXPECTED :Last Run</td></tr>
+<tr><td>Successfully validated the last run</td></tr>
+<tr><td>Successfully clicked on the last runs</td></tr>
+<tr><td>PASS : Validating the color of total test cases box is same as expected is same or not : ACTUAL : rgb(103, 58, 183) 	EXPECTED :rgb(103, 58, 183)</td></tr>
+<tr><td>Successfully validated the color of the total  test cases box</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>PASS : Validting page url is same as expected or not  : ACTUAL : ATMECS - Falcon Test Repotrs 	EXPECTED :ATMECS - Falcon Test Repotrs</td></tr>
+<tr><td>successfully validated page title</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Dashboard 	EXPECTED :Dashboard</td></tr>
+<tr><td>Successfully validated the dashboard text</td></tr>
+<tr><td>Successfully clicked dashboard slider</td></tr>
+<tr><td>clicked on refresh option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : FALCON 	EXPECTED :FALCON</td></tr>
+<tr><td>Successfully validated falcon</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Successfully clicked total test cases</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : 6 TEST(S) 	EXPECTED :6 TEST(S)</td></tr>
+<tr><td>Successfully validated test cases</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : RUN IN - 1 min 	EXPECTED :RUN IN - 1 min</td></tr>
+<tr><td>Successfully validated the run time</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>PASS : Validating the product names is same as expected or not : ACTUAL : CucumberDemo,REST API TEST RESULT,UI WEB TEST RESULT,DotComUI_Mobile,FalconMobileDemo,HEATCLINIC RESULT,HEAT CLINIC RESULT,DotComUITablet,HRIS,MWB,HRIS_Cloud,HRIS_Local,Falcon,CreditSights,CreditSightsMobile,BrowserstackDemo,FalconSampleProj,DotComUITablet,GreyHealthGroup,FluorCorporation,AndroidDemoApp,MWBooking,AutomationDemoClient,APIAutomationDemoClient,APIAutomationClient,FLUOR,Atmecs,CHS,Atmecs,Atmecs,demo,CHS,Atmecs,CHS,TestMobileWeb,TestFalcon_runSessionId,swathi_signup account,Pooja_USAUTOPARTS,USAutoParts,USAutoParts_MUJ,TestMobileWeb_CnameDemo,IOSDemoApp,Mobile_Demo,TestDemoApp,UI BrowserStack Test Result,dbTesting 	EXPECTED :CucumberDemo,REST API TEST RESULT,UI WEB TEST RESULT,DotComUI_Mobile,FalconMobileDemo,HEATCLINIC RESULT,HEAT CLINIC RESULT,DotComUITablet,HRIS,MWB,HRIS_Cloud,HRIS_Local,Falcon,CreditSights,CreditSightsMobile,BrowserstackDemo,FalconSampleProj,DotComUITablet,GreyHealthGroup,FluorCorporation,AndroidDemoApp,MWBooking,AutomationDemoClient,APIAutomationDemoClient,APIAutomationClient,FLUOR,Atmecs,CHS,Atmecs,Atmecs,demo,CHS,Atmecs,CHS,TestMobileWeb,TestFalcon_runSessionId,swathi_signup account,Pooja_USAUTOPARTS,USAutoParts,USAutoParts_MUJ,TestMobileWeb_CnameDemo,IOSDemoApp,Mobile_Demo,TestDemoApp,UI BrowserStack Test Result,dbTesting</td></tr>
+<tr><td>Successfully valdated all the products</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Successfully displayed the execution times</td></tr>
+<tr><td>PASS : Validating the recent execution times of the products is same as expected or not : ACTUAL : 11 minutes ago,2 hours ago,22 hours ago,315 days ago,319 days ago,346 days ago,379 days ago,387 days ago,402 days ago,408 days ago,410 days ago,410 days ago,414 days ago,431 days ago,435 days ago,470 days ago,476 days ago,504 days ago,556 days ago,622 days ago,632 days ago,636 days ago,639 days ago,639 days ago,639 days ago,659 days ago,665 days ago,665 days ago,694 days ago,735 days ago,735 days ago,771 days ago,778 days ago,793 days ago,793 days ago,794 days ago,798 days ago,827 days ago,830 days ago,835 days ago,843 days ago,854 days ago,868 days ago 	EXPECTED :11 minutes ago,2 hours ago,22 hours ago,315 days ago,319 days ago,346 days ago,379 days ago,387 days ago,402 days ago,408 days ago,410 days ago,410 days ago,414 days ago,431 days ago,435 days ago,470 days ago,476 days ago,504 days ago,556 days ago,622 days ago,632 days ago,636 days ago,639 days ago,639 days ago,639 days ago,659 days ago,665 days ago,665 days ago,694 days ago,735 days ago,735 days ago,771 days ago,778 days ago,793 days ago,793 days ago,794 days ago,798 days ago,827 days ago,830 days ago,835 days ago,843 days ago,854 days ago,868 days ago</td></tr>
+<tr><td>Successfully valdated all the recent execution times</td></tr>
+<tr><td>PASS : Validating the color of the pass test cases is same as expected or not : ACTUAL : rgb(0, 150, 136) 	EXPECTED :rgb(0, 150, 136)</td></tr>
+<tr><td>Successfully validated the color of the pass  test cases box</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked dashboard slider</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked pass test cases</td></tr>
+<tr><td>Successfully clicked on the product</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : 3 	EXPECTED :3</td></tr>
+<tr><td>Successfully validated passed test cases</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : PASS - 50% 	EXPECTED :PASS - 50%</td></tr>
+<tr><td>Successfully validated pass percentage</td></tr>
+<tr><td>No such element found with xpath //label[@class='switch pull-right']</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>PASS : Validating the test cases of the products is same as expected or not : ACTUAL : 6,10,4,25,1,1,4,0,1,1,6,6,6,4,3,1,1,1,7,9,2,1,8,10,10,1,4,2,1,8,4,2,1,1,1,1,6,2,1,2,2,1,5 	EXPECTED :6,10,4,25,1,1,4,0,1,1,6,6,6,4,3,1,1,1,7,9,2,1,8,10,10,1,4,2,1,8,4,2,1,1,1,1,6,2,1,2,2,1,5</td></tr>
+<tr><td>Successfully valdated all the test cases</td></tr>
+<tr><td>Successfully mouse hovered the test cases</td></tr>
+<tr><td>PASS : Validating the tooltip message is same as expected or not : ACTUAL : Total Test Cases 	EXPECTED :Total Test Cases</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on the product</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully mouse hovered the pass%trend</td></tr>
+<tr><td>PASS : Validating the tooltip message is same as expected or not : ACTUAL : Pass % Trend 	EXPECTED :Pass % Trend</td></tr>
+<tr><td>Successfully mouse hovered over the pass percent</td></tr>
+<tr><td>No such element found with xpath //label[@class='switch pull-right']</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>No such element found with xpath (//span[@class='badge ng-binding'])[1]</td></tr>
+<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1 (0)\Screenshots\environmentOfProduct_1_.png</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>rgba(34, 34, 34, 1)</td></tr>
+<tr><td>PASS : Validating the color of the pass percentage is same as expected or not : ACTUAL : rgba(34, 34, 34, 1) 	EXPECTED :rgba(34, 34, 34, 1)</td></tr>
+<tr><td>Successfully validated the color of the pass percentage</td></tr>
+<tr><td>PASS : Validating the color of the fail test cases box is same as expected or not : ACTUAL : rgb(244, 67, 54) 	EXPECTED :rgb(244, 67, 54)</td></tr>
+<tr><td>Successfully validated the color of the fail test cases box</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully mouse hovered over the fail percent and displayed the value</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>rgba(244, 67, 54, 1)</td></tr>
+<tr><td>PASS : Validating the color of the fail percentage is same as expected or not : ACTUAL : rgba(244, 67, 54, 1) 	EXPECTED :rgba(244, 67, 54, 1)</td></tr>
+<tr><td>Successfully validated the color of the fail percentage</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Successfully clicked on the product</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL :  	EXPECTED :</td></tr>
+<tr><td>Successfully validated the test phase of the product</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Successfully clicked dashboard slider</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Dashboard 	EXPECTED :Dashboard</td></tr>
+<tr><td>Successfully validated dashboard</td></tr>
+<tr><td>Successfully clicked fail test cases</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : 3 	EXPECTED :3</td></tr>
+<tr><td>Successfully validated Failed test cases</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : FAIL 	EXPECTED :FAIL</td></tr>
+<tr><td>Successfully validated fail message</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL :  	EXPECTED :</td></tr>
+<tr><td>Successfully validated recent runs</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully displayed the start time text</td></tr>
+<tr><td>FAIL : Validating the start time text of the product is same as expected or not expected [] but found [Start Time]: ACTUAL : Start Time 	EXPECTED :</td></tr>
+<tr><td>Successfully validated the text</td></tr>
+<tr><td>Successfully displayed day and date of product</td></tr>
+<tr><td>PASS : Validating the start time of the product is same as expected or not : ACTUAL : Mar20,2020 	EXPECTED :Mar20,2020</td></tr>
+<tr><td>Successfully validated the date</td></tr>
+<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1 (0)\Screenshots\startTime_1_.png</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Recent Runs 	EXPECTED :Recent Runs</td></tr>
+<tr><td>Successfully validated recentruns</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Reports 	EXPECTED :Reports</td></tr>
+<tr><td>Successfully validated recent runs panel title</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL :  	EXPECTED :</td></tr>
+<tr><td>Successfully validated View</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Tests 	EXPECTED :Tests</td></tr>
+<tr><td>Successfully validated panelview</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>PASS : Validating th ecolor of the skip test cases box is same as expected or not : ACTUAL : rgb(33, 150, 243) 	EXPECTED :rgb(33, 150, 243)</td></tr>
+<tr><td>Successfully validated the color of the skip test cases box</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL :  	EXPECTED :</td></tr>
+<tr><td>Successfully validated product snapshot</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td></td></tr>
+<tr><td>Successfully displayed the end time text</td></tr>
+<tr><td>FAIL : Validating the end time text  of the product is same as expected or not expected [] but found [End Time]: ACTUAL : End Time 	EXPECTED :</td></tr>
+<tr><td>Successfully validated the text</td></tr>
+<tr><td>Successfully displayed day and date of product</td></tr>
+<tr><td>PASS : Validating the end time of the product is same as expected or not : ACTUAL : Mar20,2020 	EXPECTED :Mar20,2020</td></tr>
+<tr><td>Successfully validated the date</td></tr>
+<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1 (0)\Screenshots\endTime_1_.png</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Dashboard 	EXPECTED :Dashboard</td></tr>
+<tr><td>Successfully validated dashboard text</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on the refresh option</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Successfully clicked dashboard slider</td></tr>
+<tr><td>Successfully clicked pass test cases</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : 0 	EXPECTED :0</td></tr>
+<tr><td>Successfully validated Skipped test cases</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : SKIP 	EXPECTED :SKIP</td></tr>
+<tr><td>Successfully validated skip message</td></tr>
+<tr><td>Successfully clicked on the product</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>No such element found with xpath //select[@name='customers']</td></tr>
+<tr><td>Successfully selected customer dropdown</td></tr>
+<tr><td>Opening browser: firefox</td></tr>
+<tr><td>Successfully clicked on product snapshot bar</td></tr>
+<tr><td>No such element found with xpath //select[@name='customers']/option[2]</td></tr>
+<tr><td>Successfully selected the customer option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Product Snapshot 	EXPECTED :Product Snapshot</td></tr>
+<tr><td>Successfully validated product snapshot</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>No such element found with xpath //select[@name='customers']/option[2]</td></tr>
+<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1 (1)\Screenshots\dropdown_1_.png</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : View 	EXPECTED :View</td></tr>
+<tr><td>Successfully validated views</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Tests 	EXPECTED :Tests</td></tr>
+<tr><td>Successfully validated the views panel title</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>Successfully clicked on the expand button</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Dashboard 	EXPECTED :Dashboard</td></tr>
+<tr><td>clicked on refresh option</td></tr>
+<tr><td>Successfully validated dashboard text</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : FALCON 	EXPECTED :FALCON</td></tr>
+<tr><td>Successfully validated falcon</td></tr>
+<tr><td>Clicked on download option</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Successfully clicked on the expand button</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>No such element found with xpath //select[@name='status']</td></tr>
+<tr><td>Successfully selected status dropdown</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : CucumberDemo 	EXPECTED :CucumberDemo</td></tr>
+<tr><td>Successfully validated product</td></tr>
+<tr><td>Successfully clicked on the product</td></tr>
+<tr><td>No such element found with xpath //select[@name='status']/option[2]</td></tr>
+<tr><td>Successfully selected the status option</td></tr>
+<tr><td>No such element found with xpath //select[@name='status']/option[2]</td></tr>
+<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1 (1)\Screenshots\dropdownPassedTestCases_1_.png</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Successfully clicked on recent runs</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Tests 	EXPECTED :Tests</td></tr>
+<tr><td>Successfully validated panel title</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Dashboard 	EXPECTED :Dashboard</td></tr>
+<tr><td>Successfully validated recentruns</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>No such element found with xpath //div[@class='panel-title']</td></tr>
+<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1 (3)\Screenshots\recentrun_1_.png</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>PASS : Validating the test cases of the product is same as expected or not : ACTUAL : cukesTest 63 Sec Pass,cukesTest 23 Sec Fail,cukesTest 37 Sec Pass,cukesTest 19 Sec Fail,cukesTest 40 Sec Pass,cukesTest 18 Sec Fail 	EXPECTED :cukesTest 63 Sec Pass,cukesTest 23 Sec Fail,cukesTest 37 Sec Pass,cukesTest 19 Sec Fail,cukesTest 40 Sec Pass,cukesTest 18 Sec Fail</td></tr>
+<tr><td>Successfully valdated all the test cases</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Successfully selected status dropdown</td></tr>
+<tr><td>Successfully selected the status option</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on the recent runs</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Fail 	EXPECTED :Fail</td></tr>
+<tr><td>Successfully validated fail status</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Product Name 	EXPECTED :Product Name</td></tr>
+<tr><td>Successfully validated the product name</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Succesfully clicked on the product</td></tr>
+<tr><td>Successfully displayed day and date of product</td></tr>
+<tr><td>Successfully displayed medium of product</td></tr>
+<tr><td>PASS : Validating the medium of the product is same as expected or not : ACTUAL :  WEB  	EXPECTED : WEB </td></tr>
+<tr><td>Successfully validated the medium of the product</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Successfully displayed the fail test cases</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on the product</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully clicked on recent runs</td></tr>
+<tr><td>Clicked on download option</td></tr>
+<tr><td>PASS : Validating the download message of the product is same as expected or not : ACTUAL : Download 	EXPECTED :Download</td></tr>
+<tr><td>Sucessfully validated the tooltip message</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Successfully selected status dropdown</td></tr>
+<tr><td>Successfully selected the status option</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Skip 	EXPECTED :Skip</td></tr>
+<tr><td>Successfully validated skip status</td></tr>
+<tr><td>Successfully clicked on component</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Component 	EXPECTED :Component</td></tr>
+<tr><td>Successfully validated component text</td></tr>
+<tr><td>Successfully clicked on component</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully displayed the failed test cases</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>No such element found with xpath //h3[@class='ng-binding ng-scope']</td></tr>
+<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1 (2)\Screenshots\dateOfExecution_1_.png</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Successfully clicked on the recent runs</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>No such element found with xpath (//span[@class='ng-binding sort-indicator'])[4]</td></tr>
+<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1 (3)\Screenshots\rececntPassPercentage_1_.png</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully clicked on the recent runs option</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully selected status dropdown</td></tr>
+<tr><td>Successfully selected the status option</td></tr>
+<tr><td>No such element found with xpath (//span[@ng-bind="page.number"])[8]</td></tr>
+<tr><td>Successfully clicked on recent runs</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Fail 	EXPECTED :Fail</td></tr>
+<tr><td>Successfully validated status</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Successfully clicked on test case</td></tr>
+<tr><td>Successfully mouse hovered over the delete option</td></tr>
+<tr><td>PASS : Validating the delete run message is same as expected or not : ACTUAL : Delete Run 	EXPECTED :Delete Run</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Steps - cukesTest 	EXPECTED :Steps - cukesTest</td></tr>
+<tr><td>Successfully validated paneltitle</td></tr>
+<tr><td>No such element found with xpath //button[@class="confirm"]</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>No such element found with xpath (//span[@ng-bind="page.number"])[8]</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Successfully clicked on the recent runs</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : cucumber.runtime.CucumberException: java.lang.AssertionError: Verifying element presence at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69) at com.atmecs.heatClinic.runner.AbstractCukesTest.cukesTest(AbstractCukesTest.java:33) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) at java.lang.reflect.Method.invoke(Method.java:498) at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86) at org.testng.internal.Invoker.invokeMethod(Invoker.java:643) at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820) at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128) at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129) at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112) at org.testng.TestRunner.privateRun(TestRunner.java:782) at org.testng.TestRunner.run(TestRunner.java:632) at org.testng.SuiteRunner.runTest(SuiteRunner.java:366) at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361) at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319) at org.testng.SuiteRunner.run(SuiteRunner.java:268) at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86) at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) at java.lang.Thread.run(Thread.java:748) Caused by: java.lang.AssertionError: Verifying element presence at org.testng.Assert.fail(Assert.java:94) at com.atmecs.falcon.automation.verifyresult.VerificationManager.verifyTrueAndStopTest(VerificationManager.java:337) at com.atmecs.heatClinic.pages.LoginPage.getLoginUser(LoginPage.java:114) at com.atmecs.heatClinic.helpers.LoginHelper.verifyLoginUser(LoginHelper.java:78) at com.atmecs.heatClinic.testscript.RegistrationTest.registration_should_be_successful(RegistrationTest.java:69) at ?.Then registration should be successful(src/main/java/com/atmecs/heatClinic/features/registration.feature:9) 	EXPECTED :cucumber.runtime.CucumberException: java.lang.AssertionError: Verifying element presence at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69) at com.atmecs.heatClinic.runner.AbstractCukesTest.cukesTest(AbstractCukesTest.java:33) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) at java.lang.reflect.Method.invoke(Method.java:498) at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86) at org.testng.internal.Invoker.invokeMethod(Invoker.java:643) at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820) at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128) at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129) at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112) at org.testng.TestRunner.privateRun(TestRunner.java:782) at org.testng.TestRunner.run(TestRunner.java:632) at org.testng.SuiteRunner.runTest(SuiteRunner.java:366) at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361) at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319) at org.testng.SuiteRunner.run(SuiteRunner.java:268) at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86) at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) at java.lang.Thread.run(Thread.java:748) Caused by: java.lang.AssertionError: Verifying element presence at org.testng.Assert.fail(Assert.java:94) at com.atmecs.falcon.automation.verifyresult.VerificationManager.verifyTrueAndStopTest(VerificationManager.java:337) at com.atmecs.heatClinic.pages.LoginPage.getLoginUser(LoginPage.java:114) at com.atmecs.heatClinic.helpers.LoginHelper.verifyLoginUser(LoginHelper.java:78) at com.atmecs.heatClinic.testscript.RegistrationTest.registration_should_be_successful(RegistrationTest.java:69) at ?.Then registration should be successful(src/main/java/com/atmecs/heatClinic/features/registration.feature:9)</td></tr>
+<tr><td>Successfully validated error message</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Last Run 	EXPECTED :Last Run</td></tr>
+<tr><td>Successfully validated the last run</td></tr>
+<tr><td>No such element found with xpath //button[@class="confirm"]</td></tr>
+<tr><td>Successfully clicked on the last runs</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>No such element found with xpath (//span[@ng-bind="page.number"])[8]</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on the product</td></tr>
+<tr><td>No such element found with xpath //button[@class="confirm"]</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully selected status dropdown</td></tr>
+<tr><td>Successfully selected the status option</td></tr>
+<tr><td>No such element found with xpath (//span[@ng-bind="page.number"])[8]</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Successfully selected the testcase</td></tr>
+<tr><td>PASS : Validating the color of total test cases box is same as expected is same or not : ACTUAL : rgba(103, 58, 183, 1) 	EXPECTED :rgba(103, 58, 183, 1)</td></tr>
+<tr><td>Successfully validated the color of the total  test cases box</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>No such element found with xpath //button[@class="confirm"]</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Status 	EXPECTED :Status</td></tr>
+<tr><td>Successfully validated Status option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Details 	EXPECTED :Details</td></tr>
+<tr><td>Successfully validated Details option</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Executing test case 	EXPECTED :Executing test case</td></tr>
+<tr><td>Successfully validated the test case</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : Maximize the browser window 	EXPECTED :Maximize the browser window</td></tr>
+<tr><td>Successfully validated Request Body</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>No such element found with xpath (//span[@ng-bind="page.number"])[8]</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully clicked dashboard slider</td></tr>
+<tr><td>No such element found with xpath //button[@class="confirm"]</td></tr>
+<tr><td>Successfully clicked total test cases</td></tr>
+<tr><td>No such element found with xpath (//span[@ng-bind="page.number"])[8]</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : 6 TEST(S) 	EXPECTED :6 TEST(S)</td></tr>
+<tr><td>Successfully validated test cases</td></tr>
+<tr><td>No such element found with xpath //button[@class="confirm"]</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : RUN IN - 1 min 	EXPECTED :RUN IN - 1 min</td></tr>
+<tr><td>Successfully validated the run time</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>No such element found with xpath (//span[@ng-bind="page.number"])[8]</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>No such element found with xpath //button[@class="confirm"]</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>No such element found with xpath (//span[@ng-bind="page.number"])[8]</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>PASS : Validating the color of the pass test cases is same as expected or not : ACTUAL : rgba(0, 150, 136, 1) 	EXPECTED :rgba(0, 150, 136, 1)</td></tr>
+<tr><td>Successfully validated the color of the pass  test cases box</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>No such element found with xpath //button[@class="confirm"]</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>No such element found with xpath (//span[@ng-bind="page.number"])[8]</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>No such element found with xpath //label[@class='switch pull-right']</td></tr>
+<tr><td>Successfully clicked dashboard slider</td></tr>
+<tr><td>No such element found with xpath //button[@class="confirm"]</td></tr>
+<tr><td>No such element found with xpath //div[@class='col-xs-4 bg-green text-center']</td></tr>
+<tr><td>Successfully clicked pass test cases</td></tr>
+<tr><td>No such element found with xpath (//span[@ng-bind="page.number"])[8]</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>No such element found with xpath (//h4[@class='mt0 ng-binding'])[2]</td></tr>
+<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1 (5)\Screenshots\passTestCases_1_.png</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>No such element found with xpath //button[@class="confirm"]</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>No such element found with xpath (//span[@ng-bind="page.number"])[8]</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Successfully deleted the last item in the list</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>No such element found with xpath //button[@class="confirm"]</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>PASS : Validating the color of the fail test cases box is same as expected or not : ACTUAL : rgba(244, 67, 54, 1) 	EXPECTED :rgba(244, 67, 54, 1)</td></tr>
+<tr><td>Successfully validated the color of the fail test cases box</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>No such element found with xpath (//span[@ng-bind="page.number"])[8]</td></tr>
+<tr><td>Successfully clicked on the last page of the recent runs</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully clicked dashboard slider</td></tr>
+<tr><td>Successfully clicked fail test cases</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : 3 	EXPECTED :3</td></tr>
+<tr><td>Successfully validated Failed test cases</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : FAIL 	EXPECTED :FAIL</td></tr>
+<tr><td>Successfully validated fail message</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully selected dashboard option</td></tr>
+<tr><td>PASS : Validating th ecolor of the skip test cases box is same as expected or not : ACTUAL : rgba(33, 150, 243, 1) 	EXPECTED :rgba(33, 150, 243, 1)</td></tr>
+<tr><td>Successfully validated the color of the skip test cases box</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>Successfully clicked on product</td></tr>
+<tr><td>Successfully clicked dashboard slider</td></tr>
+<tr><td>Successfully clicked pass test cases</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : 0 	EXPECTED :0</td></tr>
+<tr><td>Successfully validated Skipped test cases</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : SKIP 	EXPECTED :SKIP</td></tr>
+<tr><td>Successfully validated skip message</td></tr>
+<tr><td>Opening browser: ie</td></tr>
+<tr><td>Maximizing browser window</td></tr>
+<tr><td>PASS : Validating the text value : ACTUAL : View 	EXPECTED :View</td></tr>
+<tr><td>Successfully validated views</td></tr>
+<tr><td>No such element found with xpath //div[text()='Tests']</td></tr>
+<tr><td>Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_ie_3.150.1 (5)\Screenshots\viewPage_1_.png</td></tr>
 </table>

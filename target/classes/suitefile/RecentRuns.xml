@@ -6,12 +6,12 @@
 
 	<test name="SampleTest">
 		<classes>
-			<!--  <class name="com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns" />
+			<class name="com.atmecs.qa.falcondashboard.testscript.TC17_RecentRuns" />
 			<class name="com.atmecs.qa.falcondashboard.testscript.TC18_ProductName" />
 			<class name="com.atmecs.qa.falcondashboard.testscript.TC19_ProductComponent" />
-			<class name="com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage" />-->
+			<class name="com.atmecs.qa.falcondashboard.testscript.TC21_PassPercentage" />
 			<class name="com.atmecs.qa.falcondashboard.testscript.TC22_DeleteOption" />
-			<!--  <class name="com.atmecs.qa.falcondashboard.testscript.TC35_LastRun" />-->
+			<class name="com.atmecs.qa.falcondashboard.testscript.TC35_LastRun" />
 		</classes>
 	</test>
 

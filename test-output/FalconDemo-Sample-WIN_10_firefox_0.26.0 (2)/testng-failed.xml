@@ -11,10 +11,16 @@
         <methods>
           <include name="teardown"/>
           <include name="preSetup"/>
-          <include name="startTest"/>
           <include name="downloadOption"/>
         </methods>
       </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC11_DownloadOption -->
+      <class name="com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage">
+        <methods>
+          <include name="productPage"/>
+          <include name="teardown"/>
+          <include name="preSetup"/>
+        </methods>
+      </class> <!-- com.atmecs.qa.falcondashboard.testscript.TC05_ProductPage -->
     </classes>
   </test> <!-- SampleTest(failed) -->
 </suite> <!-- Failed suite [FalconDemo-Sample-WIN_10_firefox_0.26.0 (2)] -->

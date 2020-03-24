@@ -29,13 +29,14 @@ public class TC39_DeleltingProduct extends TestSuiteBase {
 		Waits.isElementVisible(browser.getDriver(), "loc.next.btn");
 		log.info("STEP#2: Clicking on the last page");
 			page.clickOnElement(ReadLocators.getPropertyvalue("loc.next.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
-		Waits.isElementVisible(browser.getDriver(), "loc.trashbox.btn");
+		    Waits.isElementVisible(browser.getDriver(), "loc.trashbox.btn");
 		log.info("STEP#3: Creating the list to display the components of the products");
-		for (int index=10;index>=0;index--) {
+		   for (int index = 200;index >= 1;index--) {
 			/*
 			 * String number = Integer.toString(index); String locatorvalues =
-			 * ReadLocators.getPropertyvalue("loc.trashbox.btn",
-			 * ProjectBaseConstantPaths.LOCATORS_FILE); locatorvalues.replace("*", number);
+			 * ReadLocators.getPropertyvalue("loc.trashbox.btn",ProjectBaseConstantPaths.
+			 * LOCATORS_FILE); String value=locatorvalues.replace("*", number);
+			 * System.out.println(value);
 			 */
 			page.clickOnElement(ReadLocators.getPropertyvalue("loc.trashbox.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 			report.info("Successfully deleted the last item in the list");

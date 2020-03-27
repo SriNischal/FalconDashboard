@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-FalconDemo-Sample-WIN_10_chrome_77" class="navigator-link">
-              <span class="suite-name border-passed">FalconDemo-Sample-WIN_10_chrome_77</span>
+              <span class="suite-name border-failed">FalconDemo-Sample-WIN_10_chrome_77</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-FalconDemo-Sample-WIN_10_chrome_77" class="hide-methods passed suite-FalconDemo-Sample-WIN_10_chrome_77"> (hide)</a> <!-- hide-methods passed suite-FalconDemo-Sample-WIN_10_chrome_77 -->
-                      <a href="#" panel-name="suite-FalconDemo-Sample-WIN_10_chrome_77" class="show-methods passed suite-FalconDemo-Sample-WIN_10_chrome_77"> (show)</a> <!-- show-methods passed suite-FalconDemo-Sample-WIN_10_chrome_77 -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-FalconDemo-Sample-WIN_10_chrome_77" class="hide-methods failed suite-FalconDemo-Sample-WIN_10_chrome_77"> (hide)</a> <!-- hide-methods failed suite-FalconDemo-Sample-WIN_10_chrome_77 -->
+                      <a href="#" panel-name="suite-FalconDemo-Sample-WIN_10_chrome_77" class="show-methods failed suite-FalconDemo-Sample-WIN_10_chrome_77"> (show)</a> <!-- show-methods failed suite-FalconDemo-Sample-WIN_10_chrome_77 -->
                     </span>
-                    <div class="method-list-content passed suite-FalconDemo-Sample-WIN_10_chrome_77">
+                    <div class="method-list-content failed suite-FalconDemo-Sample-WIN_10_chrome_77">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-FalconDemo-Sample-WIN_10_chrome_77" title="com.atmecs.qa.falcondashboard.testscript.TC39_DeleltingProduct" class="method navigator-link" hash-for-method="productDeletion">productDeletion</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-FalconDemo-Sample-WIN_10_chrome_77 -->
+                    </div> <!-- method-list-content failed suite-FalconDemo-Sample-WIN_10_chrome_77 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-FalconDemo-Sample-WIN_10_chrome_77" class="panel FalconDemo-Sample-WIN_10_chrome_77">
-          <div class="suite-FalconDemo-Sample-WIN_10_chrome_77-class-passed">
+          <div class="suite-FalconDemo-Sample-WIN_10_chrome_77-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.atmecs.qa.falcondashboard.testscript.TC39_DeleltingProduct</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,10 +128,17 @@
                   <a name="productDeletion">
                   </a> <!-- productDeletion -->
                   <span class="method-name">productDeletion</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.atmecs.qa.falcondashboard.testscript.TC39_DeleltingProduct.productDeletion(TC39_DeleltingProduct.java:31)
+	at com.atmecs.qa.falcondashboard.runner.TestNGRunner.main(TestNGRunner.java:61)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:294)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-FalconDemo-Sample-WIN_10_chrome_77-class-passed -->
+          </div> <!-- suite-FalconDemo-Sample-WIN_10_chrome_77-class-failed -->
         </div> <!-- panel FalconDemo-Sample-WIN_10_chrome_77 -->
         <div panel-name="test-xml-FalconDemo-Sample-WIN_10_chrome_77" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -192,12 +199,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'productDeletion')
 data.setCell(0, 2, 'com.atmecs.qa.falcondashboard.testscript.TC39_DeleltingProduct')
-data.setCell(0, 3, 6586211);
+data.setCell(0, 3, 33774);
 window.suiteTableData['FalconDemo-Sample-WIN_10_chrome_77']= { tableData: data, tableDiv: 'times-div-FalconDemo-Sample-WIN_10_chrome_77'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 hours</span>
+              <span class="suite-total-time">Total running time: 33 seconds</span>
               <div id="times-div-FalconDemo-Sample-WIN_10_chrome_77">
               </div> <!-- times-div-FalconDemo-Sample-WIN_10_chrome_77 -->
             </div> <!-- times-div -->
@@ -212,406 +219,7 @@ return data;
               <span class="reporter-method-name">productDeletion</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Successfully clicked on the recent runs option</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
-                <span class="reporter-method-output">Successfully deleted the last item in the list</span>
-                <span class="reporter-method-output">Successfully clicked on the last page of the recent runs</span>
+                <span class="reporter-method-output">Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77\Screenshots\productDeletion_1_.png</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -635,12 +243,14 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">productDeletion</span>
-                <span class="method-start">12198 ms</span>
+                <span class="method-start">13139 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">6598430 ms</span>
+                <span class="method-start">48114 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

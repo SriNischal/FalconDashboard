@@ -28,16 +28,19 @@ public class TC39_DeleltingProduct extends TestSuiteBase {
 		report.info("Successfully clicked on the recent runs option");
 		Waits.isElementVisible(browser.getDriver(), "loc.next.btn");
 		log.info("STEP#2: Clicking on the last page");
-			page.clickOnElement(ReadLocators.getPropertyvalue("loc.next.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+		for(int i=9;i>2;i--) {
+			String numbers = Integer.toString(i);
+			String locatorvalue = ReadLocators.getPropertyvalue("loc.next.btn",ProjectBaseConstantPaths.LOCATORS_FILE);
+			String values = locatorvalue.replace("*", numbers);
+			System.out.println(values);
+			page.clickOnElement(ReadLocators.getPropertyvalue(values,ProjectBaseConstantPaths.LOCATORS_FILE));
 		    Waits.isElementVisible(browser.getDriver(), "loc.trashbox.btn");
 		log.info("STEP#3: Creating the list to display the components of the products");
-		   for (int index = 200;index >= 1;index--) {
-			/*
-			 * String number = Integer.toString(index); String locatorvalues =
-			 * ReadLocators.getPropertyvalue("loc.trashbox.btn",ProjectBaseConstantPaths.
-			 * LOCATORS_FILE); String value=locatorvalues.replace("*", number);
-			 * System.out.println(value);
-			 */
+		   for (int index = 10;index >= 1;index--) {
+			String number = Integer.toString(index);
+			String locatorvalues = ReadLocators.getPropertyvalue("loc.trashbox.btn",ProjectBaseConstantPaths.LOCATORS_FILE);
+			String value = locatorvalues.replace("*", number);
+			System.out.println(value);
 			page.clickOnElement(ReadLocators.getPropertyvalue("loc.trashbox.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 			report.info("Successfully deleted the last item in the list");
 			Waits.isElementVisible(browser.getDriver(), "loc.confirm.btn");
@@ -47,4 +50,5 @@ public class TC39_DeleltingProduct extends TestSuiteBase {
 			report.info("Successfully clicked on the last page of the recent runs");
 		}
 	}
+}
 }

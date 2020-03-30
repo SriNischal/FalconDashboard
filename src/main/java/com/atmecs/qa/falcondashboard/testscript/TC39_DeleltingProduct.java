@@ -1,5 +1,8 @@
 package com.atmecs.qa.falcondashboard.testscript;
 
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import com.atmecs.falcon.automation.util.reporter.ReportLogService;
 import com.atmecs.falcon.automation.util.reporter.ReportLogServiceImpl;
@@ -17,7 +20,9 @@ public class TC39_DeleltingProduct extends TestSuiteBase {
 	String values;
 	PropReader propReader = new PropReader(ProjectBaseConstantPaths.LOCATORS_FILE);
 	int index;
+	int i;
 
+	@SuppressWarnings("deprecation")
 	@Test
 	public void productDeletion() throws Exception {
 		Pageactions page = new Pageactions(browser);
@@ -26,27 +31,31 @@ public class TC39_DeleltingProduct extends TestSuiteBase {
 		page.clickOnElement(
 				ReadLocators.getPropertyvalue("loc.recentruns.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 		report.info("Successfully clicked on the recent runs option");
-		Waits.isElementVisible(browser.getDriver(), "loc.next.btn");
+		Waits.isElementVisible(browser.getDriver(), "loc.nextoption.btn");
 		log.info("STEP#2: Clicking on the last page");
-		for(int i=9;i>2;i--) {
+		String locator = ReadLocators.getPropertyvalue("loc.nextoption.btn",ProjectBaseConstantPaths.LOCATORS_FILE);
+		List<WebElement> list = browser.getFindFromBrowser().findElementsByXpath(locator);
+		int length=list.size();
+		for (int i = length; i > 1; i--) {
 			String numbers = Integer.toString(i);
 			String locatorvalue = ReadLocators.getPropertyvalue("loc.next.btn",ProjectBaseConstantPaths.LOCATORS_FILE);
 			String values = locatorvalue.replace("*", numbers);
-			System.out.println(values);
-			page.clickOnElement(ReadLocators.getPropertyvalue(values,ProjectBaseConstantPaths.LOCATORS_FILE));
+			page.clickOnElement(values);
 		    Waits.isElementVisible(browser.getDriver(), "loc.trashbox.btn");
 		log.info("STEP#3: Creating the list to display the components of the products");
-		   for (int index = 10;index >= 1;index--) {
+		   String trashlocator = ReadLocators.getPropertyvalue("loc.trash.btn",ProjectBaseConstantPaths.LOCATORS_FILE);
+		   List<WebElement> lists = browser.getFindFromBrowser().findElementsByXpath(trashlocator);
+		   int trashlength=lists.size();
+		   for (int index = trashlength;index >= 1; index--) {
 			String number = Integer.toString(index);
 			String locatorvalues = ReadLocators.getPropertyvalue("loc.trashbox.btn",ProjectBaseConstantPaths.LOCATORS_FILE);
 			String value = locatorvalues.replace("*", number);
-			System.out.println(value);
-			page.clickOnElement(ReadLocators.getPropertyvalue("loc.trashbox.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+			page.clickOnElement(value);
 			report.info("Successfully deleted the last item in the list");
 			Waits.isElementVisible(browser.getDriver(), "loc.confirm.btn");
 			page.clickOnElement(ReadLocators.getPropertyvalue("loc.confirm.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
 			Waits.isElementVisible(browser.getDriver(), "loc.next.btn");
-			page.clickOnElement(ReadLocators.getPropertyvalue("loc.next.btn", ProjectBaseConstantPaths.LOCATORS_FILE));
+			page.clickOnElement(values);
 			report.info("Successfully clicked on the last page of the recent runs");
 		}
 	}

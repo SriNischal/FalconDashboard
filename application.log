@@ -20024,3 +20024,536 @@ Session ID: 210bce46-c986-40a5-8e87-1dd62cbc2b55
 2020-03-27 18:05:15,442  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
 2020-03-27 18:05:15,683  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
 2020-03-27 18:05:31,776  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 11:36:00,954  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 11:36:11,918  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] CustomListener:49 - Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77\Screenshots\productDeletion_1_.png
+2020-03-30 11:39:11,622  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 11:39:21,153  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 11:39:43,600  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 11:39:44,015  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 11:40:00,168  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 11:40:16,315  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Creating the list to display the components of the products
+2020-03-30 11:40:16,541  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 11:42:56,866  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 11:43:05,081  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 11:43:26,965  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 11:43:27,163  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 11:43:43,296  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 11:43:59,452  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Creating the list to display the components of the products
+2020-03-30 11:43:59,689  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 11:45:58,002  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 11:46:06,171  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 11:46:28,220  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 11:46:28,454  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 11:46:44,526  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 11:47:00,941  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Creating the list to display the components of the products
+2020-03-30 11:47:01,137  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 11:47:38,512 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] Find:164 - Element not found with xpath (//span[@ng-bind="page.number"])[*]
+2020-03-30 11:47:38,525  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 11:47:38,709  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 11:48:44,134  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 11:48:52,434  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 11:49:14,202  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 11:49:14,435  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 11:49:30,561  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 11:50:29,370  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 11:50:37,685  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 11:50:59,185  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Page title validation
+2020-03-30 11:50:59,213  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] VerificationManager:251 - PASS : Validting page url is same as expected or not  Actual value : ATMECS - Falcon Test Repotrs is same as Expected value: ATMECS - Falcon Test Repotrs
+2020-03-30 11:50:59,213  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - successfully validated page title
+2020-03-30 11:50:59,214  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Dashboard Text validation
+2020-03-30 11:51:02,475  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] VerificationManager:251 - PASS : Validating the text value Actual value : Dashboard is same as Expected value: Dashboard
+2020-03-30 11:51:02,476  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully validated the dashboard text
+2020-03-30 11:51:02,477  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Clicking on the refresh option
+2020-03-30 11:51:02,748  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - clicked on refresh option
+2020-03-30 11:51:02,748  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#4: Atmecs logo Text validation
+2020-03-30 11:51:03,142  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] VerificationManager:251 - PASS : Validating the text value Actual value : FALCON is same as Expected value: FALCON
+2020-03-30 11:51:03,143  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully validated falcon
+2020-03-30 11:51:03,711 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2020-03-30 11:51:03,713 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2020-03-30 11:51:03,721 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-03-30 11:51:03,723 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-03-30 11:51:03,724 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/srinischal.thiparani/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-03-30 11:51:04,778  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] TestNGRunner:49 - Response : {"status":"Success","message":"Upload successfully done"}
+2020-03-30 11:52:19,472  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 11:52:27,932  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 11:52:49,818  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 11:52:50,021  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 11:53:06,129  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 11:53:22,607  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Creating the list to display the components of the products
+2020-03-30 11:53:22,821  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 11:53:55,607  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 11:53:55,730  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 11:54:28,306  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 11:54:28,418  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 11:55:19,520  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 11:55:27,952  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 11:55:49,438  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Page title validation
+2020-03-30 11:55:49,468  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] VerificationManager:251 - PASS : Validting page url is same as expected or not  Actual value : ATMECS - Falcon Test Repotrs is same as Expected value: ATMECS - Falcon Test Repotrs
+2020-03-30 11:55:49,469  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - successfully validated page title
+2020-03-30 11:55:49,469  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Dashboard Text validation
+2020-03-30 11:55:50,446  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] VerificationManager:251 - PASS : Validating the text value Actual value : Dashboard is same as Expected value: Dashboard
+2020-03-30 11:55:50,446  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully validated the dashboard text
+2020-03-30 11:55:50,447  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Clicking on the refresh option
+2020-03-30 11:55:50,695  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - clicked on refresh option
+2020-03-30 11:55:50,696  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#4: Atmecs logo Text validation
+2020-03-30 11:55:51,107  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] VerificationManager:251 - PASS : Validating the text value Actual value : FALCON is same as Expected value: FALCON
+2020-03-30 11:55:51,107  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully validated falcon
+2020-03-30 11:55:51,743 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2020-03-30 11:55:51,745 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2020-03-30 11:55:51,748 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-03-30 11:55:51,772 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-03-30 11:55:51,774 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/srinischal.thiparani/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-03-30 11:55:52,843  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] TestNGRunner:49 - Response : {"status":"Success","message":"Upload successfully done"}
+2020-03-30 11:56:53,586  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 11:57:01,726  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 11:57:22,956  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Page title validation
+2020-03-30 11:57:22,984  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] VerificationManager:251 - PASS : Validting page url is same as expected or not  Actual value : ATMECS - Falcon Test Repotrs is same as Expected value: ATMECS - Falcon Test Repotrs
+2020-03-30 11:57:22,985  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - successfully validated page title
+2020-03-30 11:57:22,985  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Dashboard Text validation
+2020-03-30 11:57:24,016  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] VerificationManager:251 - PASS : Validating the text value Actual value : Dashboard is same as Expected value: Dashboard
+2020-03-30 11:57:24,017  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully validated the dashboard text
+2020-03-30 11:57:24,018  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Clicking on the refresh option
+2020-03-30 11:57:24,544  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - clicked on refresh option
+2020-03-30 11:57:24,545  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#4: Atmecs logo Text validation
+2020-03-30 11:57:25,029  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] VerificationManager:251 - PASS : Validating the text value Actual value : FALCON is same as Expected value: FALCON
+2020-03-30 11:57:25,030  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully validated falcon
+2020-03-30 11:57:29,940 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2020-03-30 11:57:29,942 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2020-03-30 11:57:29,947 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-03-30 11:57:29,950 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-03-30 11:57:29,951 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/srinischal.thiparani/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-03-30 11:57:30,956  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] TestNGRunner:49 - Response : {"status":"Success","message":"Upload successfully done"}
+2020-03-30 11:58:36,060  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 11:58:44,327  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 11:59:06,388  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 11:59:06,587  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 11:59:22,756  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 11:59:39,159  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Creating the list to display the components of the products
+2020-03-30 11:59:39,386  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:02:30,847  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 12:02:39,193  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 12:03:01,079  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 12:03:01,263  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 12:03:17,407  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 12:03:22,446 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] Find:164 - Element not found with xpath (//span[@ng-bind="page.number"])[41]
+2020-03-30 12:13:55,291  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 12:14:03,751  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 12:14:25,715  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 12:14:25,953  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 12:14:42,101  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 12:14:58,481  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Creating the list to display the components of the products
+2020-03-30 12:15:03,496 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] Find:164 - Element not found with xpath (//em[@class="fa fa-trash-o fa-lg ng-scope"])[*]
+2020-03-30 12:15:03,508  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:15:56,619  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 12:16:04,626  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 12:16:26,674  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 12:16:26,883  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 12:16:43,020  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 12:16:59,496  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Creating the list to display the components of the products
+2020-03-30 12:16:59,759  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:20:32,706  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 12:20:41,246  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 12:21:03,081  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 12:21:03,283  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 12:21:19,403  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 12:21:35,827  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Creating the list to display the components of the products
+2020-03-30 12:21:36,060  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:22:08,706  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:22:08,861  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:22:41,594  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:22:41,778  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:23:29,903  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:23:30,036  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:24:02,638  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:24:02,771  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:24:35,432  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:24:35,578  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:25:08,223  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:25:08,386  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:25:40,975  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:25:41,115  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:26:13,720  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:26:13,860  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:26:46,380  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:26:46,517  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:27:23,897 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] Find:164 - Element not found with xpath (//span[@ng-bind="page.number"])[9]
+2020-03-30 12:27:23,910  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:27:40,262  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Creating the list to display the components of the products
+2020-03-30 12:27:40,425  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:28:13,076  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:28:13,250  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:28:45,861  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:28:46,003  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:29:18,694  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:29:18,831  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:29:51,616  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:29:51,755  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:30:24,529  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:30:24,674  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:30:57,364  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:30:57,537  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:31:30,083  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:31:30,239  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:32:02,855  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:32:02,982  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:32:35,542  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:32:35,664  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:33:13,034 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] Find:164 - Element not found with xpath (//span[@ng-bind="page.number"])[8]
+2020-03-30 12:33:13,044  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:33:29,408  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Creating the list to display the components of the products
+2020-03-30 12:33:29,583  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:34:02,149  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:34:02,291  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:34:34,927  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:34:35,074  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:35:07,703  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:35:07,842  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:35:40,430  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:35:40,566  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:36:13,131  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:36:13,265  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:36:45,892  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:36:46,023  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:37:18,587  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:37:18,694  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:37:51,272  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:37:51,429  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:38:23,989  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:38:24,120  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:39:01,582 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] Find:164 - Element not found with xpath (//span[@ng-bind="page.number"])[7]
+2020-03-30 12:39:01,591  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:39:18,013  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Creating the list to display the components of the products
+2020-03-30 12:39:18,200  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:39:50,826  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:39:50,966  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:40:23,537  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:40:23,651  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:40:56,315  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:40:56,445  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:41:29,041  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:41:29,189  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:42:01,752  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:42:01,864  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:42:34,466  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:42:34,608  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:43:07,134  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:43:07,260  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:43:39,754  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:43:39,878  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:44:12,441  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:44:12,584  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:44:50,634 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] Find:164 - Element not found with xpath (//span[@ng-bind="page.number"])[6]
+2020-03-30 12:44:50,643  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:45:07,046  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Creating the list to display the components of the products
+2020-03-30 12:45:07,219  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:45:39,817  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:45:39,941  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:46:12,543  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:46:12,679  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:46:45,327  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:46:45,485  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:47:18,134  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:47:18,259  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:47:50,845  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:47:50,986  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:48:23,588  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:48:23,719  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:48:56,288  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:48:56,453  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:49:28,991  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:49:29,137  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:50:01,735  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:50:01,861  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:50:39,206 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] Find:164 - Element not found with xpath (//span[@ng-bind="page.number"])[5]
+2020-03-30 12:50:39,214  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:50:55,594  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Creating the list to display the components of the products
+2020-03-30 12:50:55,804  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:51:28,485  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:51:28,649  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:52:01,279  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:52:01,420  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:52:34,036  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:52:34,159  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:53:06,735  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:53:06,861  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:53:39,376  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:53:39,498  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:54:12,089  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:54:12,206  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:54:44,807  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:54:44,936  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:55:17,385  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:55:17,494  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:55:49,961  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:55:50,066  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:56:27,426 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] Find:164 - Element not found with xpath (//span[@ng-bind="page.number"])[4]
+2020-03-30 12:56:27,435  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:56:43,783  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Creating the list to display the components of the products
+2020-03-30 12:56:43,934  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:57:16,530  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:57:16,677  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:57:49,230  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:57:49,362  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:58:21,876  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:58:22,006  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:58:54,605  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:58:54,760  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 12:59:27,339  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 12:59:27,461  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 13:00:00,024  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 13:00:00,167  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 13:00:32,673  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 13:00:32,797  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 13:01:05,321  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 13:01:05,458  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 13:01:38,200  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 13:01:38,301  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 13:02:15,818 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] Find:164 - Element not found with xpath (//span[@ng-bind="page.number"])[3]
+2020-03-30 13:02:15,829  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 13:02:17,611 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2020-03-30 13:02:17,614 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2020-03-30 13:02:17,616 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-03-30 13:02:17,618 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-03-30 13:02:17,619 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/srinischal.thiparani/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-03-30 13:02:18,817  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] TestNGRunner:49 - Response : {"status":"Success","message":"Upload successfully done"}
+2020-03-30 15:33:51,822  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 15:34:01,335  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 15:34:25,373  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 15:34:25,642  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 15:34:41,786  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 15:34:46,859 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] Find:164 - Element not found with xpath (//span[@ng-bind="page.number"])[38]
+2020-03-30 15:38:20,466  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 15:38:28,821  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 15:38:51,128  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 15:38:51,351  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 15:39:07,545  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 15:45:17,693  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 15:45:26,486  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 15:45:48,543  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 15:45:48,726  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 15:46:04,849  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 15:46:04,923 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] Find:332 - Element not found with xpath invalid selector: Unable to locate an element with the xpath expression xpath:(//span[@ng-bind="page.number"]) because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'xpath:(//span[@ng-bind="page.number"])' is not a valid XPath expression.
+  (Session info: chrome=80.0.3987.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATMECSINLT-060', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SRINIS~1.THI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51467}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d30a37b064cee7906e8b3e2b71f31489
+*** Element info: {Using=xpath, value=xpath:(//span[@ng-bind="page.number"])}
+2020-03-30 15:46:05,816  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] CustomListener:49 - Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77\Screenshots\productDeletion_1_.png
+2020-03-30 15:46:07,206 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2020-03-30 15:46:07,208 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2020-03-30 15:46:07,213 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-03-30 15:46:07,215 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-03-30 15:46:07,216 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/srinischal.thiparani/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-03-30 15:46:08,264  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] TestNGRunner:49 - Response : {"status":"Success","message":"Upload successfully done"}
+2020-03-30 15:49:01,325  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 15:49:09,813  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 15:49:31,858  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 15:49:32,088  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 15:49:48,230  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 15:49:48,266 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] Find:332 - Element not found with xpath invalid selector: Unable to locate an element with the xpath expression xpath:(//span[@ng-bind="page.number"]) because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'xpath:(//span[@ng-bind="page.number"])' is not a valid XPath expression.
+  (Session info: chrome=80.0.3987.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATMECSINLT-060', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SRINIS~1.THI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51622}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f0d01bed0f94c044fe42fd6501d4555d
+*** Element info: {Using=xpath, value=xpath:(//span[@ng-bind="page.number"])}
+2020-03-30 15:49:49,086  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] CustomListener:49 - Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77\Screenshots\productDeletion_1_.png
+2020-03-30 15:49:49,700 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2020-03-30 15:49:49,702 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2020-03-30 15:49:49,706 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-03-30 15:49:49,718 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-03-30 15:49:49,719 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/srinischal.thiparani/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-03-30 15:49:50,964  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] TestNGRunner:49 - Response : {"status":"Success","message":"Upload successfully done"}
+2020-03-30 15:52:25,479  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 15:52:33,680  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 15:52:55,604  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 15:52:55,833  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 15:53:11,963  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 15:53:12,007 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] Find:332 - Element not found with xpath invalid selector: Unable to locate an element with the xpath expression xpath://a[@ng-click="params.page(page.number)"] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'xpath://a[@ng-click="params.page(page.number)"]' is not a valid XPath expression.
+  (Session info: chrome=80.0.3987.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATMECSINLT-060', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SRINIS~1.THI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51754}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6f1d1f07cab582efd8041940b0c9e80a
+*** Element info: {Using=xpath, value=xpath://a[@ng-click="params.page(page.number)"]}
+2020-03-30 15:53:12,442  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] CustomListener:49 - Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77\Screenshots\productDeletion_1_.png
+2020-03-30 15:53:13,303 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2020-03-30 15:53:13,305 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2020-03-30 15:53:13,314 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-03-30 15:53:13,316 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-03-30 15:53:13,317 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/srinischal.thiparani/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-03-30 15:53:14,080  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] TestNGRunner:49 - Response : {"status":"Success","message":"Upload successfully done"}
+2020-03-30 15:55:55,844  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 15:56:04,313  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 15:56:26,218  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 15:56:26,466  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 15:56:42,554  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 15:56:42,593 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] Find:332 - Element not found with xpath invalid selector: Unable to locate an element with the xpath expression xpath://a[@ng-click="params.page(page.number)"] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'xpath://a[@ng-click="params.page(page.number)"]' is not a valid XPath expression.
+  (Session info: chrome=80.0.3987.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATMECSINLT-060', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SRINIS~1.THI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51886}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dc343601219e0f1c66b11a687890d0fc
+*** Element info: {Using=xpath, value=xpath://a[@ng-click="params.page(page.number)"]}
+2020-03-30 15:56:43,437  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] CustomListener:49 - Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77\Screenshots\productDeletion_1_.png
+2020-03-30 15:56:43,685 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2020-03-30 15:56:43,687 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2020-03-30 15:56:43,693 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-03-30 15:56:43,698 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-03-30 15:56:43,699 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/srinischal.thiparani/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-03-30 15:56:44,408  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] TestNGRunner:49 - Response : {"status":"Success","message":"Upload successfully done"}
+2020-03-30 15:57:29,842  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 15:57:37,932  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 15:58:00,171  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 15:58:00,426  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 15:58:16,634  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 15:58:16,677 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] Find:332 - Element not found with xpath invalid selector: Unable to locate an element with the xpath expression xpath:(//span[@ng-bind="page.number"]) because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'xpath:(//span[@ng-bind="page.number"])' is not a valid XPath expression.
+  (Session info: chrome=80.0.3987.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATMECSINLT-060', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SRINIS~1.THI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 63820bc3b3277e7bccd732cadb73d183
+*** Element info: {Using=xpath, value=xpath:(//span[@ng-bind="page.number"])}
+2020-03-30 15:58:17,066  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] CustomListener:49 - Screenshot Captured for failure C:\Users\srinischal.thiparani\FalconDashboardAutomation\falcondashboard\target\FalconDemo-Sample-WIN_10_chrome_77\Screenshots\productDeletion_1_.png
+2020-03-30 15:58:17,739 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2020-03-30 15:58:17,741 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2020-03-30 15:58:17,745 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-03-30 15:58:17,747 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-03-30 15:58:17,748 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/srinischal.thiparani/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-03-30 15:58:18,430  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] TestNGRunner:49 - Response : {"status":"Success","message":"Upload successfully done"}
+2020-03-30 16:04:44,873  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 16:04:53,398  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 16:05:15,490  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 16:05:15,745  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 16:05:31,938  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 16:07:51,073  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 16:07:59,433  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 16:08:21,360  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 16:08:21,632  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 16:08:37,803  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 16:08:54,115  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Creating the list to display the components of the products
+2020-03-30 16:08:54,349  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 16:09:26,875  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 16:09:27,018  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 16:09:59,470  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 16:09:59,585  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 16:10:32,016  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 16:10:32,120  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 16:11:05,389  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 16:11:05,811  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 16:11:38,625  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 16:11:38,750  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 16:12:16,235 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] Find:164 - Element not found with xpath (//span[@ng-bind="page.number"])[3]
+2020-03-30 16:12:16,247  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 16:12:32,650  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Creating the list to display the components of the products
+2020-03-30 16:12:32,795  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 16:13:05,315  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 16:13:05,442  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 16:13:37,980  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 16:13:38,116  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 16:14:10,570  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 16:14:10,667  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 16:14:43,201  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 16:14:43,290  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 16:15:15,801  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 16:15:15,930  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 16:15:48,388  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 16:15:48,518  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 16:16:21,052  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 16:16:21,203  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 16:16:53,623  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 16:16:53,721  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 16:17:26,252  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 16:17:26,348  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 16:18:03,755 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] Find:164 - Element not found with xpath (//span[@ng-bind="page.number"])[2]
+2020-03-30 16:18:03,766  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 16:18:04,819 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2020-03-30 16:18:04,821 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2020-03-30 16:18:04,824 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-03-30 16:18:04,826 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-03-30 16:18:04,827 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/srinischal.thiparani/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-03-30 16:18:05,607  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] TestNGRunner:49 - Response : {"status":"Success","message":"Upload successfully done"}
+2020-03-30 18:01:34,344  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 18:01:42,907  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 18:02:05,021  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 18:02:05,254  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 18:02:21,388  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 18:02:37,690  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Creating the list to display the components of the products
+2020-03-30 18:02:37,937  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 18:02:54,286  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 18:02:54,605 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2020-03-30 18:02:54,611 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2020-03-30 18:02:54,626 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-03-30 18:02:54,628 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-03-30 18:02:54,630 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/srinischal.thiparani/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-03-30 18:02:55,667  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] TestNGRunner:49 - Response : {"status":"Success","message":"Upload successfully done"}
+2020-03-30 18:03:47,638  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 18:03:55,916  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 18:04:17,568  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Page title validation
+2020-03-30 18:04:17,593  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] VerificationManager:251 - PASS : Validting page url is same as expected or not  Actual value : ATMECS - Falcon Test Repotrs is same as Expected value: ATMECS - Falcon Test Repotrs
+2020-03-30 18:04:17,594  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - successfully validated page title
+2020-03-30 18:04:17,595  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Dashboard Text validation
+2020-03-30 18:04:20,576  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] VerificationManager:251 - PASS : Validating the text value Actual value : Dashboard is same as Expected value: Dashboard
+2020-03-30 18:04:20,578  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully validated the dashboard text
+2020-03-30 18:04:20,578  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Clicking on the refresh option
+2020-03-30 18:04:20,956  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - clicked on refresh option
+2020-03-30 18:04:20,957  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#4: Atmecs logo Text validation
+2020-03-30 18:04:21,406  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] VerificationManager:251 - PASS : Validating the text value Actual value : FALCON is same as Expected value: FALCON
+2020-03-30 18:04:21,406  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully validated falcon
+2020-03-30 18:04:25,994 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2020-03-30 18:04:25,996 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2020-03-30 18:04:25,999 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-03-30 18:04:26,001 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-03-30 18:04:26,002 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/srinischal.thiparani/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-03-30 18:04:26,643  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] TestNGRunner:49 - Response : {"status":"Success","message":"Upload successfully done"}
+2020-03-30 18:05:17,337  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 18:05:25,373  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 18:05:47,140  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 18:05:47,357  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 18:06:03,481  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 18:06:19,782  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Creating the list to display the components of the products
+2020-03-30 18:06:19,964  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 18:06:36,302  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 18:06:36,437  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 18:06:52,823  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 18:06:52,943  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 18:07:09,236  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 18:07:09,635 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2020-03-30 18:07:09,643 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2020-03-30 18:07:09,646 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-03-30 18:07:09,648 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-03-30 18:07:09,649 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/srinischal.thiparani/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-03-30 18:07:10,392  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] TestNGRunner:49 - Response : {"status":"Success","message":"Upload successfully done"}
+2020-03-30 18:07:58,564  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Opening browser: chrome
+2020-03-30 18:08:06,800  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Maximizing browser window
+2020-03-30 18:08:28,727  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#1: Clicking on the recent runs
+2020-03-30 18:08:28,908  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the recent runs option
+2020-03-30 18:08:45,023  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#2: Clicking on the last page
+2020-03-30 18:09:01,350  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] LogReport:28 - STEP#3: Creating the list to display the components of the products
+2020-03-30 18:09:01,530  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 18:09:34,031  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 18:09:34,133  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully deleted the last item in the list
+2020-03-30 18:10:11,480 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] Find:164 - Element not found with xpath (//span[@ng-bind="page.number"])[2]
+2020-03-30 18:10:11,492  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] SampleTestScript:49 - Successfully clicked on the last page of the recent runs
+2020-03-30 18:10:11,963 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2020-03-30 18:10:11,965 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2020-03-30 18:10:11,968 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2020-03-30 18:10:11,970 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2020-03-30 18:10:11,972 DEBUG [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/srinischal.thiparani/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-03-30 18:10:12,675  INFO [com.atmecs.qa.falcondashboard.runner.TestNGRunner.main()] TestNGRunner:49 - Response : {"status":"Success","message":"Upload successfully done"}
